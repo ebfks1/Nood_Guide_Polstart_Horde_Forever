@@ -113,11 +113,6 @@ step
   accept 549 object 556670
 
 step
-  along until q98094
-  zone map 1424
-  accept 98094 npc 2215 optional -- From High Executor Darthalia: Scout Support (Forever new)
-
-step
   when level<32
   tip Click the poster to accept Dangerous!
   zone map 1424
@@ -258,6 +253,11 @@ step
   when complete 528
   zone map 1424
   turnin 528 npc 2215
+
+step
+  along until q98094
+  zone map 1424
+  accept 98094 npc 2215 optional -- From High Executor Darthalia: Scout Support (Forever new)
 
 step
   when level<30
@@ -762,11 +762,6 @@ step
   turnin 93680 npc 2410
 
 step
-  tip Then accept Blood in the Streets — Dungeon prereq (Dalaran)
-  zone map 1424
-  accept 92434 npc 2410
-
-step
   tip Turn in Prison Break In — Dungeon prereq (Dalaran)
   zone map 1424
   turnin 544 npc 2410
@@ -775,15 +770,6 @@ step
   tip Then accept (or get it shared): Dalaran Patrols — Dungeon chain (Dalaran)
   zone map 1424
   accept 545 npc 2410
-
-step
-  tip Find the way into Dalaran along Lordamere Lake: Blood in the Streets
-  complete 92434
-
-step
-  tip Turn in to the image of Archmage Modera: Blood in the Streets — Dungeon prereq (Dalaran)
-  zone map 1421
-  turnin 92434 npc 269127
 
 step
   tip Then accept (or get it shared): Heart of Disruption
@@ -828,6 +814,20 @@ step
   tip Turn in Dalaran Patrols — Dungeon chain (Dalaran)
   zone map 1424
   turnin 545 npc 2410
+
+step
+  tip Then accept Blood in the Streets — Dungeon prereq (Dalaran)
+  zone map 1424
+  accept 92434 npc 2410
+
+step
+  tip Find the way into Dalaran along Lordamere Lake: Blood in the Streets
+  complete 92434
+
+step
+  tip Turn in to the image of Archmage Modera: Blood in the Streets — Dungeon prereq (Dalaran)
+  zone map 1421
+  turnin 92434 npc 269127
 
 step
   tip Undercity Fly to Undercity.

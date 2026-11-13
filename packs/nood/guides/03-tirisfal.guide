@@ -280,11 +280,6 @@ step
   accept 5650 npc 2129
 
 step
-  tip Accept Proof of Demise (picked up early)
-  zone map 1420
-  accept 374 npc 1652
-
-step
   only Undead
   tip Turn in to Eleanor Shackleton at the adventurer camp south of Brill: The Adventurer
   zone map 1420
@@ -500,6 +495,11 @@ step
 step
   zone map 1420
   turnin 427 npc 1515
+
+step
+  tip Accept Proof of Demise (picked up early)
+  zone map 1420
+  accept 374 npc 1652
 
 step
   zone map 1420

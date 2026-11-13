@@ -521,11 +521,6 @@ step
   accept 818 npc 3304
 
 step
-  tip Accept Forgotten Loa Idols (Forever new)
-  zone map 1411
-  accept 97225 npc 3304
-
-step
   tip Accept from Sharti: Bloodtalon Matriarch (Forever new)
   zone map 1411
   accept 97223 npc 7953
@@ -533,6 +528,11 @@ step
 step
   zone map 1411
   turnin 805 npc 3188
+
+step
+  tip Accept Forgotten Loa Idols (Forever new)
+  zone map 1411
+  accept 97225 npc 3304
 
 step
   zone map 1411
@@ -1027,10 +1027,6 @@ step
   accept 99051 npc 3142 optional -- Accept the follow-up Threat from Below (Spinefin naga).
 
 step
-  along until q99052
-  accept 99052 npc 3142 optional -- If offered as well, also accept Threat from Below (sea giant on the north coast).
-
-step
   only Warrior,Shaman
   tip Head west into the Barrens.
   zone map 1413
@@ -1381,11 +1377,6 @@ step
   complete 827 @54.06,9.01 map 1411
 
 step
-  along until q99052
-  zone map 1411
-  collect 286009 quest 99052.1 -- Kill the sea giant on the north coast for Agor's belt: Threat from Below
-
-step
   tip Kill Gazz'uz: Hidden Enemies
   zone map 1411
   complete 5726 @51.88,9.56 map 1411
@@ -1586,6 +1577,15 @@ step
   note "- You may need to abandon and re-accept the quest to complete it." only Warlock,Warrior,Rogue,Hunter,Shaman
   note "Razor Hill Hearth to Razor Hill." only Mage,Priest,Hunter,Warlock,Rogue
   turnin 99051 npc 3142
+
+step
+  along until q99052
+  accept 99052 npc 3142 optional -- If offered as well, also accept Threat from Below (sea giant on the north coast).
+
+step
+  along until q99052
+  zone map 1411
+  collect 286009 quest 99052.1 -- Kill the sea giant on the north coast for Agor's belt: Threat from Below
 
 step
   when complete 99052

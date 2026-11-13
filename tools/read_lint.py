@@ -5,12 +5,19 @@ import re, sys, json, os, collections
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ci_data.json')
 old = json.load(open(out)) if os.path.exists(out) else {}
 unk = collections.defaultdict(set)
+pre = collections.defaultdict(set)
+for q, v in old.get('prereq', {}).items():
+    pre[int(q)] |= set(v)
 order = {int(q): {int(a): b for a, b in m.items()} for q, m in old.get('objorder', {}).items()}
 for l in open(sys.argv[1], encoding='utf-8'):
     m = re.match(r'^(\S+?):(\d+): (error|warning): (.*)$', l)
     if not m:
         continue
     msg = m.group(4)
+    n = re.match(r'quest (\d+) needs (\d+) \(.*?\) turned in first', msg)
+    if n:
+        pre[int(n.group(1))].add(int(n.group(2)))
+        continue
     u = re.match(r'(quest|npc|item|object) (\d+) is not in data', msg)
     if u:
         unk[u.group(1)].add(int(u.group(2)))
@@ -24,5 +31,5 @@ for l in open(sys.argv[1], encoding='utf-8'):
 for k, v in old.get('unknown', {}).items():
     if '--fresh' not in sys.argv:
         unk[k] |= set(v)
-json.dump({'unknown': {k: sorted(v) for k, v in unk.items()}, 'objorder': order}, open(out, 'w'), indent=0)
+json.dump({'unknown': {k: sorted(v) for k, v in unk.items()}, 'objorder': order, 'prereq': {q: sorted(v) for q, v in pre.items()}}, open(out, 'w'), indent=0)
 print({k: len(v) for k, v in unk.items()}, len(order), 'quests with another objective order')

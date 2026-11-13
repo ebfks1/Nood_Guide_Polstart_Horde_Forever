@@ -277,11 +277,6 @@ step
   accept 92470 npc 251366
 
 step
-  along until q96638
-  zone map 2521
-  accept 96638 npc 251366 optional -- Accept The Adventurer (Aetheen of the Gales) (camping system intro)
-
-step
   tip Accept Aggressive Encroachment (Valreaa Valewind)
   zone map 2521
   accept 92473 npc 257551
@@ -300,6 +295,11 @@ step
   tip Turn in Foul Matriarch (Aetheen of the Gales)
   zone map 2521
   turnin 92470 npc 251366
+
+step
+  along until q96638
+  zone map 2521
+  accept 96638 npc 251366 optional -- Accept The Adventurer (Aetheen of the Gales) (camping system intro)
 
 step
   tip Turn in Aggressive Encroachment (Valreaa Valewind)
@@ -372,21 +372,6 @@ step
   accept 92517 npc 251523
 
 step
-  tip Accept Infiltrating the Cult (Constable Aonda)
-  zone map 2521
-  accept 93036 npc 251523
-
-step
-  tip Accept The Western Watch (Constable Aonda)
-  zone map 2521
-  accept 93926 npc 251523
-
-step
-  tip Accept Stolen Supplies (Danarii Bellowveil)
-  zone map 2521
-  accept 92551 npc 252172
-
-step
   along until q93318
   zone map 2521
   accept 93318 object 610954 optional -- Accept WANTED: Vulgara the Insatiable (Bounty Available: Vulgara the Insatiable!) (wanted poster)
@@ -422,30 +407,15 @@ step
   accept 92595 npc 251902
 
 step
-  tip Accept Meddlesome Mages (Illaya Amberwind)
-  zone map 2521
-  accept 94411 npc 251902
-
-step
   only Hunter
   along until q94007
   zone map 2521
   accept 94007 npc 254084 optional -- Accept Taming the Beast (available from level 10 — if you're not 10 yet, skip it and come back later)
 
 step
-  tip Turn in Infiltrating the Cult (Sania Silverstream)
-  zone map 2521
-  turnin 93036 npc 251904
-
-step
   tip Accept Falaath Village (Sania Silverstream)
   zone map 2521
   accept 92529 npc 251904
-
-step
-  tip == Shen'dar quest loop: north -> around the village -> southwest -> Western Watch -> Falas -> back to the village == Defeat High Order Apprentices to the north: Meddlesome Mages
-  zone map 2521
-  complete 94411 @46.4,38.9 map 2521
 
 step
   tip Kill Highlands Bandits to the northeast, and 'Badwind' Bennic (50.5,33.6): The Criminal Element
@@ -488,11 +458,6 @@ step
   complete 93951 @36.2,54.2 map 2521
 
 step
-  tip Turn in The Western Watch (Peacekeeper Vaaniel)
-  zone map 2521
-  turnin 93926 npc 252155
-
-step
   tip Accept A Last Request (Peacekeeper Vaaniel)
   zone map 2521
   accept 93927 npc 252155
@@ -513,19 +478,19 @@ step
   complete 92528 @46.8,56.2 map 2521
 
 step
-  tip Click the supply caches (small bags) east of Falas: Stolen Supplies
-  zone map 2521
-  complete 92551 @49.3,55.9 map 2521
-
-step
   tip Turn in The Criminal Element (Constable Aonda)
   zone map 2521
   turnin 92517 npc 251523
 
 step
-  tip Turn in Stolen Supplies (Danarii Bellowveil)
+  tip Accept Infiltrating the Cult (Constable Aonda)
   zone map 2521
-  turnin 92551 npc 252172
+  accept 93036 npc 251523
+
+step
+  tip Turn in Infiltrating the Cult (Sania Silverstream)
+  zone map 2521
+  turnin 93036 npc 251904
 
 step
   when complete 93318
@@ -565,6 +530,16 @@ step
   turnin 92595 npc 251902
 
 step
+  tip Accept Meddlesome Mages (Illaya Amberwind)
+  zone map 2521
+  accept 94411 npc 251902
+
+step
+  tip == Shen'dar quest loop: north -> around the village -> southwest -> Western Watch -> Falas -> back to the village == Defeat High Order Apprentices to the north: Meddlesome Mages
+  zone map 2521
+  complete 94411 @46.4,38.9 map 2521
+
+step
   tip Turn in Meddlesome Mages (Illaya Amberwind)
   zone map 2521
   turnin 94411 npc 251902
@@ -573,6 +548,31 @@ step
   tip == Shen'dar Village == Turn in Among the Faithful (Constable Aonda)
   zone map 2521
   turnin 92528 npc 251523
+
+step
+  tip Accept Stolen Supplies (Danarii Bellowveil)
+  zone map 2521
+  accept 92551 npc 252172
+
+step
+  tip Click the supply caches (small bags) east of Falas: Stolen Supplies
+  zone map 2521
+  complete 92551 @49.3,55.9 map 2521
+
+step
+  tip Turn in Stolen Supplies (Danarii Bellowveil)
+  zone map 2521
+  turnin 92551 npc 252172
+
+step
+  tip Accept The Western Watch (Constable Aonda)
+  zone map 2521
+  accept 93926 npc 251523
+
+step
+  tip Turn in The Western Watch (Peacekeeper Vaaniel)
+  zone map 2521
+  turnin 93926 npc 252155
 
 step
   tip Turn in A Last Request (Constable Aonda)
@@ -650,19 +650,18 @@ step
   only Hunter
   tip Accept Taming the Beast (Quel'ana Quickgale)
   zone map 2521
-  accept 94013 npc 252389
-
-step
-  only Hunter
-  tip Accept Training the Beast (Quel'ana Quickgale)
-  zone map 2521
-  accept 94050 npc 252389
-
-step
-  only Hunter
-  tip Accept Taming the Beast (Quel'ana Quickgale)
-  zone map 2521
   accept 94978 npc 252389
+
+step
+  only Hunter
+  zone map 2521
+  kill 254588 quest 94978.1
+
+step
+  only Hunter
+  tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
+  turnin 94978 npc 252389
 
 step
   only Hunter
@@ -673,21 +672,24 @@ step
 step
   only Hunter
   zone map 2521
-  kill 250874 quest 94013.1
-
-step
-  only Hunter
-  zone map 2521
-  kill 254588 quest 94978.1
-
-step
-  only Hunter
-  zone map 2521
   kill 251707 quest 94979.1
 
 step
   only Hunter
-  complete 94050
+  tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
+  turnin 94979 npc 252389
+
+step
+  only Hunter
+  tip Accept Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
+  accept 94013 npc 252389
+
+step
+  only Hunter
+  zone map 2521
+  kill 250874 quest 94013.1
 
 step
   only Hunter
@@ -697,15 +699,13 @@ step
 
 step
   only Hunter
-  tip Turn in Taming the Beast (Quel'ana Quickgale)
+  tip Accept Training the Beast (Quel'ana Quickgale)
   zone map 2521
-  turnin 94978 npc 252389
+  accept 94050 npc 252389
 
 step
   only Hunter
-  tip Turn in Taming the Beast (Quel'ana Quickgale)
-  zone map 2521
-  turnin 94979 npc 252389
+  complete 94050
 
 step
   only Hunter
@@ -754,14 +754,6 @@ step
   accept 93735 npc 251968
 
 step
-  zone map 2521
-  accept 93746 npc 251968
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
   tip Accept A Grand Adventure (Ayessa Dawnsinger)
   zone map 2521
   accept 92708 npc 251968
@@ -772,27 +764,9 @@ step
   accept 93736 npc 254344
 
 step
-  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
-  zone map 2521
-  complete 93740 @64,65 map 2521
-
-step
-  tip Go to the marked spot to the north: A Firm Response
-  zone map 2521
-  complete 93746 @59.8,57 map 2521
-
-step
   tip Kill Windsong Crawlers to the northwest for their meat: Crab Season
   zone map 2521
   complete 93317 @53.9,64.1 map 2521
-
-step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  zone map 2521
-  turnin 93740 npc 251968
 
 step
   tip Turn in Crab Season (Nyalah Brightfire)
@@ -830,6 +804,32 @@ step
   turnin 93738 npc 251968
 
 step
+  zone map 2521
+  accept 93746 npc 251968
+
+step
+  tip Go to the marked spot to the north: A Firm Response
+  zone map 2521
+  complete 93746 @59.8,57 map 2521
+
+step
+  zone map 2521
+  turnin 93746 npc 251968
+
+step
+  zone map 2521
+  accept 93740 npc 251968
+
+step
+  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
+  zone map 2521
+  complete 93740 @64,65 map 2521
+
+step
+  zone map 2521
+  turnin 93740 npc 251968
+
+step
   tip Turn in A Grand Adventure (Ayessa Dawnsinger)
   zone map 2521
   turnin 92708 npc 251968
@@ -855,11 +855,6 @@ step
   accept 92684 npc 252800
 
 step
-  tip Accept The Hills Have Eyes (Aamelia Windfield)
-  zone map 2521
-  accept 92685 npc 252800
-
-step
   tip Accept What Is My Purpose? (Malfunctioning Cyclone Construct)
   zone map 2521
   accept 92698 npc 250929
@@ -868,11 +863,6 @@ step
   tip Kill Ornery Galestriders west of Valanaar for Lowlands Galestrider Tenderloins: Ornery Ornery Galestriders
   zone map 2521
   complete 92684 @54.6,73.8 map 2521
-
-step
-  tip Kill Bandit Highwaymen north of the orchard for Blood-Stained Bandit Masks: The Hills Have Eyes
-  zone map 2521
-  complete 92685 @48.2,74.9 map 2521
 
 step
   tip In the orchard, click Ripe Stormapples and kill Hungry Bandits (stealthed): Make Yourself Useful
@@ -898,6 +888,16 @@ step
   tip Turn in Ornery Ornery Galestriders (Aamelia Windfield)
   zone map 2521
   turnin 92684 npc 252800
+
+step
+  tip Accept The Hills Have Eyes (Aamelia Windfield)
+  zone map 2521
+  accept 92685 npc 252800
+
+step
+  tip Kill Bandit Highwaymen north of the orchard for Blood-Stained Bandit Masks: The Hills Have Eyes
+  zone map 2521
+  complete 92685 @48.2,74.9 map 2521
 
 step
   tip Turn in The Hills Have Eyes (Aamelia Windfield)
@@ -1009,19 +1009,9 @@ step
   accept 94487 npc 257944
 
 step
-  tip Accept The Ties That Bind (Elegael Thornpaw)
-  zone map 2521
-  accept 94488 npc 257944
-
-step
   tip Accept Tears of the Lady (Elegael Thornpaw)
   zone map 2521
   accept 94485 npc 257944
-
-step
-  tip Accept The Wounds of Betrayal (Elegael Thornpaw)
-  zone map 2521
-  accept 94489 npc 257944
 
 step
   tip Accept Mercy Falls on Deaf Ears (Vayn Moongaze)
@@ -1034,24 +1024,9 @@ step
   accept 93159 npc 251684
 
 step
-  tip Accept The Forest's Bounty (Strange Hermit))
-  zone map 2521
-  accept 93160 npc 251684
-
-step
-  tip Accept Free the Hollows (Strange Hermit))
-  zone map 2521
-  accept 93172 npc 251684
-
-step
   tip Talk to the Strange Hermit to the west: The Strange Hermit
   zone map 2521
   complete 93159 @54,39 map 2521
-
-step
-  tip Click the Zephyrseeds, especially around trees: The Forest's Bounty
-  zone map 2521
-  complete 93160 @58.6,38.9 map 2521
 
 step
   tip Kill Shadowgale Shrieklings to the west for Pristine Shriekling Feathers: Feathers for Binding
@@ -1062,11 +1037,6 @@ step
   tip Click the Lady's Tear Moss on the trees: Tears of the Lady
   zone map 2521
   complete 94485 @60.9,38.4 map 2521
-
-step
-  tip Free the Wind Hollows to the north: Free the Hollows
-  zone map 2521
-  complete 93172 @58.2,32.2 map 2521
 
 step
   tip Same place, Wind Hollows: Unwelcome Spirits
@@ -1084,16 +1054,6 @@ step
   complete 94897 @57,29.5 map 2521
 
 step
-  tip To the east, click the druids and find Jorel Windsinger inside the cave: The Wounds of Betrayal
-  zone map 2521
-  complete 94489 @64.5,34.5 map 2521
-
-step
-  tip Kill Commander Haalien: The Ties That Bind
-  zone map 2521
-  complete 94488 @65.4,36.6 map 2521
-
-step
   tip Kill Al'Aketh Stormchasers and Footsoldiers: Unwanted and Unworthy
   zone map 2521
   complete 94487 @63.7,37.3 map 2521
@@ -1104,17 +1064,13 @@ step
   complete 93165 @63.7,37.3 map 2521
 
 step
-  along until q94490
-  accept 94490 item 265476 optional -- Starts from an item: Ripped Missive (accept when you loot it)
+  tip Turn in Mercy Falls on Deaf Ears (Vayn Moongaze)
+  zone map 2521
+  turnin 93165 npc 254151
 
 step
   along until q93459
   accept 93459 npc 254151 optional -- Starts from an item: More Al'Aketh Ears (accept when you loot it)
-
-step
-  tip Turn in Mercy Falls on Deaf Ears (Vayn Moongaze)
-  zone map 2521
-  turnin 93165 npc 254151
 
 step
   when complete 93459
@@ -1133,14 +1089,38 @@ step
   turnin 94487 npc 257944
 
 step
-  tip Turn in The Ties That Bind (Elegael Thornpaw)
-  zone map 2521
-  turnin 94488 npc 257944
-
-step
   tip Turn in Tears of the Lady (Elegael Thornpaw)
   zone map 2521
   turnin 94485 npc 257944
+
+step
+  along until q94490
+  accept 94490 item 265476 optional -- Starts from an item: Ripped Missive (accept when you loot it)
+
+step
+  tip Accept The Wounds of Betrayal (Elegael Thornpaw)
+  zone map 2521
+  accept 94489 npc 257944
+
+step
+  tip To the east, click the druids and find Jorel Windsinger inside the cave: The Wounds of Betrayal
+  zone map 2521
+  complete 94489 @64.5,34.5 map 2521
+
+step
+  tip Accept The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
+  accept 94488 npc 257944
+
+step
+  tip Kill Commander Haalien: The Ties That Bind
+  zone map 2521
+  complete 94488 @65.4,36.6 map 2521
+
+step
+  tip Turn in The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
+  turnin 94488 npc 257944
 
 step
   tip Turn in The Wounds of Betrayal (Elegael Thornpaw)
@@ -1163,6 +1143,26 @@ step
   tip Turn in The Strange Hermit (Strange Hermit))
   zone map 2521
   turnin 93159 npc 251684
+
+step
+  tip Accept Free the Hollows (Strange Hermit))
+  zone map 2521
+  accept 93172 npc 251684
+
+step
+  tip Free the Wind Hollows to the north: Free the Hollows
+  zone map 2521
+  complete 93172 @58.2,32.2 map 2521
+
+step
+  tip Accept The Forest's Bounty (Strange Hermit))
+  zone map 2521
+  accept 93160 npc 251684
+
+step
+  tip Click the Zephyrseeds, especially around trees: The Forest's Bounty
+  zone map 2521
+  complete 93160 @58.6,38.9 map 2521
 
 step
   tip Turn in The Forest's Bounty (Strange Hermit))

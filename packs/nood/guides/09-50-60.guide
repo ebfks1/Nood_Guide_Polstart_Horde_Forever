@@ -2610,13 +2610,15 @@ step
 step
   tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning
   accept 5122
-  accept 5125
 
 step
   when complete 5122
   label q5122
   tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning
   turnin 5122
+
+step
+  accept 5125
 
 step
   when onquest 5125

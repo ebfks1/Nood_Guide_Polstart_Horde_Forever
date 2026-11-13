@@ -280,11 +280,6 @@ step
   accept 5650 npc 2129
 
 step
-  tip 퀘스트 수락: 죽음의 증거 (미리 수락)
-  zone map 1420
-  accept 374 npc 1652
-
-step
   only Undead
   tip 브릴 남쪽 모험가 야영지의 엘리노어 섀클턴에게 퀘스트 완료: 모험가
   zone map 1420
@@ -500,6 +495,11 @@ step
 step
   zone map 1420
   turnin 427 npc 1515
+
+step
+  tip 퀘스트 수락: 죽음의 증거 (미리 수락)
+  zone map 1420
+  accept 374 npc 1652
 
 step
   zone map 1420

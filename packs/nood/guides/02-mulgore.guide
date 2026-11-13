@@ -207,12 +207,6 @@ step
   turnin 3376 npc 3209
 
 step
-  only Tauren
-  tip Accept The Adventurer (Forever new)
-  zone map 1412
-  accept 96659 npc 2981
-
-step
   only Shaman
   zone map 1412
   turnin 1519 npc 5888
@@ -225,6 +219,12 @@ step
 step
   zone map 1412
   turnin 757 npc 2981
+
+step
+  only Tauren
+  tip Accept The Adventurer (Forever new)
+  zone map 1412
+  accept 96659 npc 2981
 
 step
   zone map 1412

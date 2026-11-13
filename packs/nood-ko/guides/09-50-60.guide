@@ -2610,13 +2610,15 @@ step
 step
   tip 신념의 메달이 나오면 아우리우스에게 가져가 퀘스트를 받고 바로 완료한 뒤 이어서 수락: 신념의 메달신념의 메달아우리우스의 복수
   accept 5122
-  accept 5125
 
 step
   when complete 5122
   label q5122
   tip 신념의 메달이 나오면 아우리우스에게 가져가 퀘스트를 받고 바로 완료한 뒤 이어서 수락: 신념의 메달신념의 메달아우리우스의 복수
   turnin 5122
+
+step
+  accept 5125
 
 step
   when onquest 5125

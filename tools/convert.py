@@ -44,6 +44,8 @@ _ci = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ci_data.json')
 CI = json.load(open(_ci)) if os.path.exists(_ci) else {}
 OBJ_ORDER = {int(q): {int(a): b for a, b in m.items() if b} for q, m in CI.get('objorder', {}).items()}
 UNKNOWN = {k: set(v) for k, v in CI.get('unknown', {}).items()}
+# quest -> the quests the official data wants turned in before it is offered (from lint's prerequisite warnings)
+PREREQ = {int(q): list(v) for q, v in CI.get('prereq', {}).items()}
 
 
 def log_index(qid, mine):
@@ -536,6 +538,7 @@ class Guide:
                     break
             self.pending = []
         self.merge_runs()
+        self.fix_prereqs()
         # an along step is listed until its quest's turn-in step, when a later step carries that label
         for i, st in enumerate(self.steps):
             for qid in st.get('_until') or []:
@@ -543,6 +546,54 @@ class Guide:
                 if any(x.get('label') == lab for x in self.steps[i + 1:]):
                     st['until'] = lab
                     break
+
+    def fix_prereqs(self):
+        """A quest taken before its prerequisite is handed in (as Polestar's data and its own guides order them) moves to
+        right after that hand-in: the accept, and any of the quest's own steps that came before that point."""
+        def quests(st):
+            return {g['quest'] for g in st['goals'] if 'quest' in g}
+        for _ in range(60):
+            last = {}
+            for i, st in enumerate(self.steps):
+                for g in st['goals']:
+                    if g['t'] == 'turnin':
+                        last[g['quest']] = i
+            move = None
+            for i, st in enumerate(self.steps):
+                for g in st['goals']:
+                    if g['t'] != 'accept' or g['quest'] not in PREREQ:
+                        continue
+                    at = [last[p] for p in PREREQ[g['quest']] if p in last]
+                    if at and max(at) > i:
+                        move = (g['quest'], i, max(at))
+                        break
+                if move:
+                    break
+            if not move:
+                break
+            q, first, target = move
+            taken, kept = [], []
+            for i, st in enumerate(self.steps):
+                if first <= i <= target and q in quests(st):
+                    mine = [g for g in st['goals'] if g.get('quest') == q]
+                    rest = [g for g in st['goals'] if g.get('quest') != q]
+                    if any('quest' in g for g in rest):  # shared with other quests: split this quest's goals off
+                        st['goals'] = rest
+                        new = {k: v for k, v in st.items() if k not in ('goals', 'note', 'label')}
+                        new['goals'] = mine
+                        taken.append(new)
+                        kept.append(st)
+                    else:
+                        taken.append(st)
+                        notes = [g for g in rest if g['t'] == 'note' and not g.get('_pre')]
+                    report['prerequisite order: steps moved'] += 1
+                else:
+                    kept.append(st)
+                if i == target:
+                    kept.extend(taken)
+            self.steps = kept
+            report['prerequisite order: quests moved'] += 1
+            notes_log.append('PREREQ %s: quest %d now follows the turn-in of %s (was step %d, hand-in at step %d; %d steps: %s)' % (self.stem, q, PREREQ[q], first, target, len(taken), '+'.join(g['t'] for st in taken for g in st['goals'] if g.get('quest') == q)))
 
     def merge_runs(self):
         """Quest work with no place of its own in a row (inside a dungeon): one step, every goal open together."""

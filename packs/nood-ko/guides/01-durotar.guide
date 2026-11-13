@@ -521,11 +521,6 @@ step
   accept 818 npc 3304
 
 step
-  tip 퀘스트 수락: 잊힌 로아 우상 (포에버 신규)
-  zone map 1411
-  accept 97225 npc 3304
-
-step
   tip 샤르티에게 퀘스트 수락: 붉은발톱랩터 어미 (포에버 신규)
   zone map 1411
   accept 97223 npc 7953
@@ -533,6 +528,11 @@ step
 step
   zone map 1411
   turnin 805 npc 3188
+
+step
+  tip 퀘스트 수락: 잊힌 로아 우상 (포에버 신규)
+  zone map 1411
+  accept 97225 npc 3304
 
 step
   zone map 1411
@@ -1027,10 +1027,6 @@ step
   accept 99051 npc 3142 optional -- 이어지는 저 아래에서 온 위협 (나가 가시지느러미)를 받으세요.
 
 step
-  along until q99052
-  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협 (북쪽 해안 바다 거인)도 받으세요.
-
-step
   only Warrior,Shaman
   tip 서쪽으로 이동해 불모의 땅에 도달하세요.
   zone map 1413
@@ -1381,11 +1377,6 @@ step
   complete 827 @54.06,9.01 map 1411
 
 step
-  along until q99052
-  zone map 1411
-  collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
-
-step
   tip 가즈우즈를 처치하여 완수하세요: 내부의 배신자
   zone map 1411
   complete 5726 @51.88,9.56 map 1411
@@ -1586,6 +1577,15 @@ step
   note "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." only Warlock,Warrior,Rogue,Hunter,Shaman
   note "칼바위 언덕으로 귀환하세요." only Mage,Priest,Hunter,Warlock,Rogue
   turnin 99051 npc 3142
+
+step
+  along until q99052
+  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협 (북쪽 해안 바다 거인)도 받으세요.
+
+step
+  along until q99052
+  zone map 1411
+  collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
 
 step
   when complete 99052

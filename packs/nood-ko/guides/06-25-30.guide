@@ -113,11 +113,6 @@ step
   accept 549 object 556670
 
 step
-  along until q98094
-  zone map 1424
-  accept 98094 npc 2215 optional -- 고위집행관 다살리아에게 Scout Support (포에버 신규)
-
-step
   when level<32
   tip 현상수배지를 클릭해 퀘스트 수락: 위험 인물 수배
   zone map 1424
@@ -258,6 +253,11 @@ step
   when complete 528
   zone map 1424
   turnin 528 npc 2215
+
+step
+  along until q98094
+  zone map 1424
+  accept 98094 npc 2215 optional -- 고위집행관 다살리아에게 Scout Support (포에버 신규)
 
 step
   when level<30
@@ -762,11 +762,6 @@ step
   turnin 93680 npc 2410
 
 step
-  tip 이어서 퀘스트 수락: Blood in the Streets — ◆던전 선행(달라란)
-  zone map 1424
-  accept 92434 npc 2410
-
-step
   tip 퀘스트 완료: 감옥 습격 — ◆던전 선행(달라란)
   zone map 1424
   turnin 544 npc 2410
@@ -775,15 +770,6 @@ step
   tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): 달라란 순찰 — ◆던전 연계(달라란)
   zone map 1424
   accept 545 npc 2410
-
-step
-  tip 로더미어 호수를 따라 달라란으로 들어가는 길을 찾으세요: Blood in the Streets
-  complete 92434
-
-step
-  tip 대마법사 모데라의 환영에게 퀘스트 완료: Blood in the Streets — ◆던전 선행(달라란)
-  zone map 1421
-  turnin 92434 npc 269127
 
 step
   tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): Heart of Disruption
@@ -828,6 +814,20 @@ step
   tip 퀘스트 완료: 달라란 순찰 — ◆던전 연계(달라란)
   zone map 1424
   turnin 545 npc 2410
+
+step
+  tip 이어서 퀘스트 수락: Blood in the Streets — ◆던전 선행(달라란)
+  zone map 1424
+  accept 92434 npc 2410
+
+step
+  tip 로더미어 호수를 따라 달라란으로 들어가는 길을 찾으세요: Blood in the Streets
+  complete 92434
+
+step
+  tip 대마법사 모데라의 환영에게 퀘스트 완료: Blood in the Streets — ◆던전 선행(달라란)
+  zone map 1421
+  turnin 92434 npc 269127
 
 step
   tip 언더시티로 비행하세요.
