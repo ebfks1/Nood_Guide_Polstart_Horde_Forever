@@ -1,0 +1,10 @@
+package-as: PolestarPack_Nood
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - CHANGELOG.md
+  - README.md
+  - tools
