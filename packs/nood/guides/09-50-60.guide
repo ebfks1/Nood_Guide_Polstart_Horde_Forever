@@ -1261,8 +1261,8 @@ step
   zone map 1449
   kill 6509 quest 4145.1
   kill 6512 quest 4145.2
-  kill 6511 quest 4145.3
-  kill 6510 quest 4145.4
+  kill 6510 quest 4145.3
+  kill 6511 quest 4145.4
 
 step
   when level<56
@@ -2077,7 +2077,7 @@ step
 step
   tip Open *Eridan's Supplies* in your bags. Step into the circle and click the book; Aquementas appears. Let him hit you to charge the totem: Aquementas
   zone map 1446
-  collect 11522 quest 4005.4
+  collect 11522 quest 4005.1
 
 step
   tip You can destroy the other 3 items. Marshal's Refuge Fly to Marshal's Refuge.

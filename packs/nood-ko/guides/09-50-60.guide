@@ -1261,8 +1261,8 @@ step
   zone map 1449
   kill 6509 quest 4145.1
   kill 6512 quest 4145.2
-  kill 6511 quest 4145.3
-  kill 6510 quest 4145.4
+  kill 6510 quest 4145.3
+  kill 6511 quest 4145.4
 
 step
   when level<56
@@ -2077,7 +2077,7 @@ step
 step
   tip *에리단의 보급품 가방*을 인벤토리에서 열어 획득하세요. 원 안으로 들어가서 책을 클릭하면, 아쿠아멘타스가 나타납니다. 공격을 받아 토템을 획득하세요: 아쿠에멘타스
   zone map 1446
-  collect 11522 quest 4005.4
+  collect 11522 quest 4005.1
 
 step
   tip 다른 3가지 아이템은 파괴해도 됩니다. 마샬의 야영지로 비행하세요.

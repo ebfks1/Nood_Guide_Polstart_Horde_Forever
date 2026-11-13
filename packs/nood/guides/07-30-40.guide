@@ -354,7 +354,7 @@ step
   kill 2344 quest 541.1
   kill 2345 quest 541.2
   kill 2346 quest 541.3
-  kill 2304 quest 541.3
+  kill 2304 quest 541.4
 
 step
   tip Humbert's Sword drops randomly from Dun Garok dwarves (Mountaineers, Riflemen, Priests) — if it hasn't dropped after your kill counts are done, keep killing until it does: Humbert's Sword
@@ -1140,8 +1140,8 @@ step
   tip Finish killing the naga: Other Fish to Fry
   zone map 1443
   kill 4714 quest 6143.1
-  kill 4712 quest 6143.2
-  kill 4711 quest 6143.3
+  kill 4711 quest 6143.2
+  kill 4712 quest 6143.3
 
 step
   when level<42

@@ -354,7 +354,7 @@ step
   kill 2344 quest 541.1
   kill 2345 quest 541.2
   kill 2346 quest 541.3
-  kill 2304 quest 541.3
+  kill 2304 quest 541.4
 
 step
   tip 험버트의 검은 던 가록 드워프(산악대원·소총병·사제)에게서 무작위로 나옵니다 — 퀘스트 처치 수를 채운 뒤에도 안 나왔으면 나올 때까지 조금 더 잡으세요: 험버트의 검
@@ -1140,8 +1140,8 @@ step
   tip 나가 처치를 완수하세요: 나가 퇴치
   zone map 1443
   kill 4714 quest 6143.1
-  kill 4712 quest 6143.2
-  kill 4711 quest 6143.3
+  kill 4711 quest 6143.2
+  kill 4712 quest 6143.3
 
 step
   when level<42
