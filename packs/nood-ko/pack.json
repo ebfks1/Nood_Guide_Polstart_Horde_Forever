@@ -1,0 +1,11 @@
+{
+	"id": "nood-ko",
+	"title": "Nood 가이드 - 던전 레벨업 (포에버, 한국어)",
+	"author": "씨가",
+	"version": "1.0.0-dev",
+	"license": "All rights reserved",
+	"website": "https://github.com/ebfks1/Nood_Guide_Polstart_Horde_Forever",
+	"source": "발컨 Guidelime 가이드 1.2.2 참고",
+	"notes": "던전 중심 호드 레벨업 1-60 (한국어). 발컨 Guidelime 가이드를 참고했습니다.",
+	"folder": "PolestarPack_NoodKorean"
+}

@@ -1,4 +1,4 @@
--- Nood Guide @VERSION@ for Polestar: sets a few Polestar options once, so the guide behaves like the Guidelime BalCon guide it is based on.
+-- Nood Guide for Polestar (NoodGuide_Setup): sets a few Polestar options once, so the guide behaves like the Guidelime BalCon guide it is based on.
 -- Nood 가이드: 발컨 가이드처럼 동작하도록 Polestar 옵션 몇 가지를 처음 한 번만 맞춥니다.
 --   /nood                       다시 적용 · apply again
 --   /nood undo (되돌리기)        바꾸기 전 값으로 · back to the values from before
@@ -7,7 +7,7 @@ local TAG = "|cffffd200" .. "Nood" .. "|r: "
 
 -- { Polestar setting, value, what it does }
 local WANT = {
-	{ "behavior.suggestFrom", "nood",
+	{ "behavior.suggestFrom", KO and "nood-ko" or "nood",
 		"가이드 추천을 Nood 가이드에서 가져옵니다", "guide suggestions come from Nood Guide" },
 	{ "ui.instance", "show",
 		"던전 안에서도 가이드 창을 보여 줍니다", "the guide window stays visible inside dungeons" },

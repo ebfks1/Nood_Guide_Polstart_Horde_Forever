@@ -1,0 +1,2240 @@
+guide nood/09-50-60
+title 50-60 Nood: Sunken Temple, BRD, LBRS, Stratholme
+levels 50-60
+zone map 1454
+faction Horde
+folder Nood Guide
+why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 50-60: Sunken Temple 52 -> Blackrock Depths 55 -> Lower Blackrock Spire 57 -> Black…
+coords era
+# Written by tools/emit_guide.py from 09_50-60_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  tip >> Next dungeon: Sunken Temple (at about Lv52.5) — about Lv50.0 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Take the road south out of Desolace into Feralas.
+  goto 44,95 r 20 map 1443
+
+step
+  when level<54
+  tip Kill Windwalker harpies to complete: Vengeance on the Northspring
+  complete 3063 @40,15 map 1444
+
+step
+  when level<52
+  accept 7721 npc 14637
+
+step
+  when level<52
+  accept 7003 npc 14637
+
+step
+  tip Use Zorbin's Ultra-Shrinker on the giants before you kill them.
+  goto 46.4,53.4 r 20 map 1444
+
+step
+  when level<52
+  tip Finish collecting the shrinking residue: Zapped Giants
+  collect 18956 quest 7003.1
+
+step
+  when level<52
+  tip Finish collecting the water elemental cores: Fuel for the Zapping
+  collect 18958 quest 7721.1
+
+step
+  when level<52
+  turnin 7003 npc 14637
+
+step
+  when level>=52
+  when complete 7003
+  turnin 7003 npc 14637
+
+step
+  when level<52
+  tip Turn in Fuel for the Zapping (skip the follow-up 'Collecting the Residue')
+  turnin 7721 npc 14637
+
+step
+  when level>=52
+  when complete 7721
+  tip Turn in Fuel for the Zapping (skip the follow-up 'Collecting the Residue')
+  turnin 7721 npc 14637
+
+step
+  when level<52
+  tip Kill Ironfur yetis to complete: Improved Quality
+  complete 7734 @55,34 map 1444
+
+step
+  when level<52
+  tip Go to Camp Mojache and turn in Improved Quality
+  turnin 7734 npc 7854
+
+step
+  when level>=52
+  when complete 7734
+  tip Go to Camp Mojache and turn in Improved Quality
+  turnin 7734 npc 7854
+
+step
+  when onquest 7738
+  turnin 7738 npc 7854
+
+step
+  when level<54
+  turnin 3063 npc 7776
+
+step
+  when level>=54
+  when complete 3063
+  turnin 3063 npc 7776
+
+step
+  tip Gadgetzan Fly to Gadgetzan.
+  accept 7738 item 18972 optional -- If a *Pristine Yeti Hide* drops, click it to accept (skip this if it doesn't drop): Perfect Yeti Hide
+  note "! Your Hearthstone is set to Orgrimmar and is saved for after the Sunken Temple. Fly from Camp Mojache to Gadgetzan here."
+  fly "Gadgetzan"
+
+step
+  tip At Steamwheedle Port to the east, turn in to Yeh'kinya: The Ancient Egg (the egg from The Hinterlands) — *Reward chain · Dungeon prereq (Sunken Temple)
+  turnin 4787 npc 8579
+
+step
+  tip Then accept from Yeh'kinya (or get it shared): The God Hakkar (Sunken Temple — *reward)
+  accept 3528 npc 8579
+
+step
+  tip Accept from Yorba Screwspigot (or get it shared): Yuka Screwspigot (Burning Steppes — Blackrock Depths chain, later)
+  accept 4324 npc 9706
+
+step
+  when level<53
+  tip Back in Gadgetzan, accept Dunemaul Compound
+  accept 5863 npc 11758
+
+step
+  when level<54
+  accept 3362 npc 7876
+
+step
+  when level<53
+  accept 2605 npc 7564
+
+step
+  tip South of Gadgetzan, turn in to Marvon Rivetseeker: The Stone Circle — Dungeon prereq (Sunken Temple)
+  turnin 3444 npc 7771
+
+step
+  tip Then accept from Marvon Rivetseeker (or get it shared): Into the Depths (Sunken Temple prep)
+  accept 3446 npc 7771
+
+step
+  tip Accept from Marvon Rivetseeker (or get it shared): Secret of the Circle (Sunken Temple prep)
+  accept 3447 npc 7771
+
+step
+  when level<52
+  accept 3161 npc 7771
+
+step
+  when level<53
+  tip Kill Gor'marok the Ravager: The Dunemaul Compound
+  kill 12046 quest 5863.3 @40.8,57.2 map 1446
+
+step
+  when level<53
+  tip Kill ogres to complete: The Dunemaul Compound
+  complete 5863 @48,61 map 1446
+
+step
+  when level<52
+  tip Finish collecting the Gahz'ridian ornaments: Gahz'ridian
+  complete 3161 @40,73.4 map 1446
+
+step
+  when level<53
+  tip Collect the Laden Dew: The Thirsty Goblin
+  collect 8428 quest 2605.1
+
+step
+  when level<51
+  tip Kill Centipaar to complete: Noxious Lair Investigation
+  complete 82 @36,50 map 1446
+
+step
+  when level<54
+  tip Kill Thistleshrubs to complete: Thistleshrub Valley
+  complete 3362 @29.4,67.8 map 1446
+
+step
+  when level<52
+  turnin 3161 npc 7771
+
+step
+  when level>=52
+  when complete 3161
+  turnin 3161 npc 7771
+
+step
+  when level<53
+  tip Back in Gadgetzan, turn in The Thirsty Goblin
+  turnin 2605 npc 7564
+
+step
+  when level>=53
+  when complete 2605
+  tip Back in Gadgetzan, turn in The Thirsty Goblin
+  turnin 2605 npc 7564
+
+step
+  when level<53
+  accept 2606 npc 7564
+
+step
+  when level<53
+  turnin 5863 npc 11758
+
+step
+  when level>=53
+  when complete 5863
+  turnin 5863 npc 11758
+
+step
+  tip Turn in In Good Taste (skip the follow-up 'Sprinkle's Secret Ingredient')
+  turnin 2606 npc 7583
+
+step
+  when level<54
+  turnin 3362 npc 7876
+
+step
+  when level>=54
+  when complete 3362
+  turnin 3362 npc 7876
+
+step
+  when level<51
+  turnin 82 npc 5594
+
+step
+  when level>=51
+  when complete 82
+  turnin 82 npc 5594
+
+step
+  when level<52
+  accept 10 npc 7724
+
+step
+  tip Go to the Gaping Chasm to the south.
+  goto 56,61 r 20 map 1446
+
+step
+  tip Keep killing insects until you find the spiral entrance here.
+  goto 55,70 r 20 map 1446
+
+step
+  tip Go down the spiral and enter the second tunnel heading north here.
+  goto 55,69 r 20 map 1446
+
+step
+  when level<52
+  tip At the first fork in the tunnel go right and pass the round room. At the next fork go right again to reach a large square room. Take Scrimshank's Surveying Gear in the west corner: The Scrimshank Redemption
+  complete 10 @55,71 map 1446
+
+step
+  when level<52
+  tip Go back to Gadgetzan. Turn in The Scrimshank Redemption
+  turnin 10 npc 7724
+
+step
+  when level>=52
+  when complete 10
+  tip Go back to Gadgetzan. Turn in The Scrimshank Redemption
+  turnin 10 npc 7724
+
+step
+  when level<52
+  accept 110 npc 7724
+
+step
+  turnin 110 npc 5594
+
+step
+  when level<52
+  accept 113 npc 5594
+
+step
+  turnin 113 npc 7724
+
+step
+  when level<52
+  tip Accept Rise of the Silithid (Orgrimmar — later)
+  accept 32 npc 7724
+
+step
+  tip Ratchet Fly to Ratchet.
+  fly "Ratchet"
+
+step
+  tip Take the boat to Booty Bay from the Ratchet docks.
+  goto 63.7,38.6 r 20 map 1413
+
+step
+  turnin 2874 npc 2501
+
+step
+  tip Stonard Fly to Stonard.
+  fly "Stonard"
+
+step
+  when level<54
+  tip Time to go to the Blasted Lands. Follow the road and go south at the fork. Accept A Boar's Vitality
+  accept 2583 npc 7505
+
+step
+  when level<54
+  accept 2581 npc 7505
+
+step
+  when level<54
+  accept 2601 npc 7506
+
+step
+  when level<54
+  accept 2585 npc 7505
+
+step
+  when level<54
+  accept 2603 npc 7506
+
+step
+  when level<54
+  tip The mobs for these quests are in the northern Blasted Lands. The Dark Portal and the Tainted Scar are level 52+, so stay away from them. Hunt until you have *6 Blasted Boar Lungs*, *6 Scorpok Pincers*, *11 Basilisk Brains*, *5 Snickerfang Jowls* and *14 Vulture Gizzards*. Complete: A Boar's Vitality
+  collect 8392 quest 2583.1
+  collect 8393 quest 2583.2
+  collect 8394 quest 2583.3
+
+step
+  when level<54
+  tip Complete: Snickerfang Jowls
+  collect 8391 quest 2581.1
+  collect 8392 quest 2581.2
+  collect 8393 quest 2581.3
+
+step
+  when level<54
+  tip Complete: The Basilisk's Bite
+  collect 8394 quest 2601.1
+  collect 8396 quest 2601.2
+
+step
+  when level<54
+  tip Complete: The Decisive Striker
+  collect 8393 quest 2585.1
+  collect 8396 quest 2585.2
+  collect 8392 quest 2585.3
+
+step
+  when level<54
+  tip Complete: Vulture's Vigor
+  collect 8396 quest 2603.1
+  collect 8391 quest 2603.2
+
+step
+  tip Each turn-in gives a 1-hour buff.
+  goto 50.6,14.2 r 20 map 1419
+
+step
+  when level<54
+  tip The buffs help while hunting, but they *don't stack*, so use them wisely. Turn in The Decisive Striker (Agility +25)
+  turnin 2585 npc 7505
+
+step
+  when level>=54
+  when complete 2585
+  tip The buffs help while hunting, but they *don't stack*, so use them wisely. Turn in The Decisive Striker (Agility +25)
+  turnin 2585 npc 7505
+
+step
+  when level<54
+  tip Turn in Snickerfang Jowls (Strength +25)
+  turnin 2581 npc 7505
+
+step
+  when level>=54
+  when complete 2581
+  tip Turn in Snickerfang Jowls (Strength +25)
+  turnin 2581 npc 7505
+
+step
+  when level<54
+  tip Turn in A Boar's Vitality (Stamina +25)
+  turnin 2583 npc 7505
+
+step
+  when level>=54
+  when complete 2583
+  tip Turn in A Boar's Vitality (Stamina +25)
+  turnin 2583 npc 7505
+
+step
+  when level<54
+  tip Turn in The Basilisk's Bite (Intellect +25)
+  turnin 2601 npc 7506
+
+step
+  when level>=54
+  when complete 2601
+  tip Turn in The Basilisk's Bite (Intellect +25)
+  turnin 2601 npc 7506
+
+step
+  when level<54
+  tip Turn in Vulture's Vigor (Spirit +25)
+  turnin 2603 npc 7506
+
+step
+  when level>=54
+  when complete 2603
+  tip Turn in Vulture's Vigor (Spirit +25)
+  turnin 2603 npc 7506
+
+step
+  tip While hunting you may get Imperfect Draenethyst Fragments. Find Kum'isha here.
+  goto 51,35 r 20 map 1419
+
+step
+  when complete 3501
+  tip Turn in right away: Everything Counts In Large Amounts
+  turnin 3501 npc 7363
+
+step
+  tip Go back north to Stonard in the Swamp of Sorrows and fly to Kargath.
+  accept 3501 npc 7363 optional -- If you have a fragment, accept Everything Counts In Large Amounts
+  fly "Kargath"
+
+step
+  tip At the far southwest corner here
+  goto 3,61 r 20 map 1418
+
+step
+  when level<52
+  tip you'll find the entrance to the Searing Gorge. Accept Divine Retribution
+  accept 3441 npc 8479
+
+step
+  tip Talk to Kalaran to turn in Divine Retribution
+  turnin 3441 npc 8479
+
+step
+  when level<52
+  accept 3442 npc 8479
+
+step
+  tip Discover the flight path: Thorium Point
+  getfp "Thorium Point"
+
+step
+  when level<52
+  accept 7729 object 179827
+
+step
+  when level<52
+  accept 7728 object 179827
+
+step
+  when level<54
+  accept 7701 object 179827
+
+step
+  when level<53
+  accept 7727 npc 14627
+
+step
+  when level<53
+  accept 7723 npc 14627
+
+step
+  when level<53
+  accept 7724 npc 14627
+
+step
+  when level<54
+  accept 7722 npc 14624
+
+step
+  when level<52
+  tip Kill Steamsmiths to complete: STOLEN: Smithing Tuyere and Lookout's Spyglass
+  collect 18959 quest 7728.1 @41,50 map 1427
+
+step
+  when level<53
+  tip Kill golems to complete: Curse These Fat Fingers
+  complete 7723 @37.2,45.1 map 1427
+
+step
+  when level<52
+  tip Finish collecting the golem oil: The Flawless Flame
+  collect 10511 quest 3442.2 @37.2,45.1 map 1427
+
+step
+  when level<52
+  tip Kill elementals to complete: The Flawless Flame
+  collect 10509 quest 3442.1 @57,46 map 1427
+
+step
+  when level<52
+  tip Kill Dark Iron dwarves to complete: JOB OPPORTUNITY: Culling the Competition
+  kill 5846 quest 7729.1
+  kill 5844 quest 7729.2
+
+step
+  tip Go here and climb the ramp.
+  goto 46,53 r 20 map 1427
+
+step
+  tip Go here and enter the Slag Pit.
+  goto 41,54 r 20 map 1427
+
+step
+  when level<54
+  tip Cross the bridge inside the pit. Go through the gate on the left and head north until you reach a large area with a captured archaeologist. A huge level 52 elite golem lies there (ignore it). Go up the iron ramp; about halfway there is a fork — keep going up. You'll find overseers paired with slavers. Further in, on the right, is Overseer Maltorius with his guards. They are 3 elites, so you can't solo them — find other players to do it together. Kill Maltorius: WANTED: Overseer Maltorius
+  collect 18946 quest 7701.1
+
+step
+  when level<54
+  tip Hunt inside the Slag Pit while you look for a group. Take the secret formula behind the elites: What the Flux?
+  complete 7722 @40.6,35.7 map 1427
+
+step
+  tip Go to the iron bridge opposite the 3 elites. At the far side of the bridge, jump down to the lower level. Head east from here to find the Incendosaurs.
+  goto 50.2,33 r 20 map 1427
+
+step
+  when level<53
+  tip Kill them: Incendosaurs? Whateverosaur is More Like It
+  kill 9318 quest 7727.1
+
+step
+  tip When done, go back up the ramp and leave the pit. Jump into the cauldron area and head west. Go to the ramp at where you came in.
+  goto 46,53 r 20 map 1427
+
+step
+  tip Go up the ramp again, but this time pass the Slag Pit entrance. Take the elevator here.
+  goto 40,54 r 20 map 1427
+
+step
+  when level<52
+  tip The elevator stops on the 1st and 2nd floors — don't get off. Wait until the 3rd floor and you'll come out of the cauldron. Turn in The Flawless Flame
+  turnin 3442 npc 8479
+
+step
+  when level>=52
+  when complete 3442
+  tip The elevator stops on the 1st and 2nd floors — don't get off. Wait until the 3rd floor and you'll come out of the cauldron. Turn in The Flawless Flame
+  turnin 3442 npc 8479
+
+step
+  when level<52
+  accept 3443 npc 8479
+
+step
+  when level<52
+  turnin 7729 npc 14626
+
+step
+  when level>=52
+  when complete 7729
+  turnin 7729 npc 14626
+
+step
+  when level<54
+  turnin 7701 npc 14634
+
+step
+  when level>=54
+  when complete 7701
+  turnin 7701 npc 14634
+
+step
+  when level<53
+  turnin 7727 npc 14627
+
+step
+  when level>=53
+  when complete 7727
+  turnin 7727 npc 14627
+
+step
+  when level<53
+  turnin 7723 npc 14627
+
+step
+  when level>=53
+  when complete 7723
+  turnin 7723 npc 14627
+
+step
+  when level<54
+  turnin 7722 npc 14624
+
+step
+  when level>=54
+  when complete 7722
+  turnin 7722 npc 14624
+
+step
+  when level<53
+  tip Circle the cauldron and kill everything you see. Kill spiders to complete: Fiery Menace!
+  kill 5858 quest 7724.1
+
+step
+  when level<52
+  tip Kill Dark Iron Lookouts to get it: STOLEN: Smithing Tuyere and Lookout's Spyglass
+  collect 18960 quest 7728.2
+
+step
+  when level<52
+  tip Kill Steamsmiths and Slavers to complete: Forging the Shaft
+  collect 10551 quest 3443.1
+
+step
+  when level<52
+  turnin 3443 npc 8479
+
+step
+  when level>=52
+  when complete 3443
+  turnin 3443 npc 8479
+
+step
+  when level<54
+  accept 3452 npc 8479
+
+step
+  when level<54
+  tip Kill the Twilight's Hammer to complete: The Flame's Casing
+  collect 10552 quest 3452.1
+
+step
+  when level<54
+  turnin 3452 npc 8479
+
+step
+  when level>=54
+  when complete 3452
+  turnin 3452 npc 8479
+
+step
+  when level<54
+  accept 3453 npc 8479
+
+step
+  turnin 3453 npc 8479
+
+step
+  when level<54
+  tip Wait for the torch to be made, then accept The Torch of Retribution
+  accept 3454 npc 8479
+
+step
+  tip Click the glowing green torch to turn in The Torch of Retribution
+  turnin 3454 object 149047
+
+step
+  when level<54
+  accept 3462 npc 8479
+
+step
+  turnin 3462 npc 8509
+
+step
+  when level<56
+  accept 3463 npc 8509
+
+step
+  when level<56
+  tip Equip the torch and light it: Set Them Ablaze!
+  interact 149032 quest 3463.4 @33.3,54.5 map 1427
+
+step
+  when level<56
+  tip Equip the torch and light it: Set Them Ablaze!
+  interact 149025 quest 3463.1 @35.7,60.7 map 1427
+
+step
+  when level<56
+  tip Equip the torch and light it: Set Them Ablaze!
+  interact 149030 quest 3463.2 @44,60.9 map 1427
+
+step
+  when level<56
+  tip Equip the torch and light it: Set Them Ablaze!
+  interact 149031 quest 3463.3 @50.1,54.7 map 1427
+
+step
+  when level<56
+  turnin 3463 npc 8509
+
+step
+  when level>=56
+  when complete 3463
+  turnin 3463 npc 8509
+
+step
+  when level<54
+  tip Watch Kalaran turn into a dragon, talk and fly away. Right-click the *Black Dragonflight treasure* chest next to where Kalaran stood: Trinkets...
+  accept 3481 object 149502
+
+step
+  tip Click the chest again to turn in Trinkets...
+  turnin 3481 object 149502
+
+step
+  when level<52
+  tip Open the box in your bags to get the Black Dragonflight Molt. Don't throw it away. Turn in STOLEN: Smithing Tuyere and Lookout's Spyglass
+  turnin 7728 npc 14626
+
+step
+  when level>=52
+  when complete 7728
+  tip Open the box in your bags to get the Black Dragonflight Molt. Don't throw it away. Turn in STOLEN: Smithing Tuyere and Lookout's Spyglass
+  turnin 7728 npc 14626
+
+step
+  when level<53
+  turnin 7724 npc 14627
+
+step
+  when level>=53
+  when complete 7724
+  turnin 7724 npc 14627
+
+step
+  tip Stonard Fly to Stonard.
+  fly "Stonard"
+
+step
+  tip 52 You should be at least Lv52 (healers can go from Lv51). If you are short, run Maraudon once more or kill mobs in the areas you just passed.
+  level 52
+
+step
+  tip Turn in to Fel'zerul: Return to Fel'Zerul (the quest from The Hinterlands) — Dungeon prereq (Sunken Temple)
+  note "* Sunken Temple — Lv52.5 -> about Lv53.2 · recommended Lv51-52 (healer 51 · tank/DPS 52)"
+  turnin 1444 npc 1443
+
+step
+  tip Then accept from Fel'zerul (or get it shared): The Temple of Atal'Hakkar
+  accept 1445 npc 1443
+
+step
+  tip Go down into the sunken temple entrance in the middle of the Pool of Tears to the east.
+  goto 69.9,53.6 r 20 map 1435
+
+step
+  tip Collect 20 Fetishes of Hakkar from the Atal'ai trolls: The Temple of Atal'Hakkar
+  collect 6181 quest 1445.1
+
+step
+  complete 3446 -- Find the Altar of Hakkar (lower level, in the middle): Into the Depths
+  turnin 3446 -- Turn in right at the altar: Into the Depths
+  complete 3447 -- Walk the circle of statues to discover its secret: Secret of the Circle
+  turnin 3447 -- Open the chest that appears to turn in Secret of the Circle
+  complete 1446 -- Kill Jammal'an the Prophet and take his head: Jammal'an the Prophet
+  complete 3528 -- Summon and kill the Avatar of Hakkar, then fill the Ancient Egg (*reward): The God Hakkar
+
+step
+  when onquest 3373
+  tip Place it in the Essence Font in the Shade of Eranikus' lair (*reward): The Essence of Eranikus
+  turnin 3373
+
+step
+  tip == Sunken Temple turn-ins == In Stonard, turn in to Fel'zerul: The Temple of Atal'Hakkar (Jammal'an goes to The Hinterlands and The God Hakkar to Tanaris)
+  accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept: The Essence of Eranikus — *Reward
+  turnin 1445 npc 1443
+  note ">> Next dungeon: Blackrock Depths (at about Lv55.1) — about Lv53.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)."
+
+step
+  hearth "Orgrimmar"
+
+step
+  note "Orgrimmar Hearth to Orgrimmar (set in the 40-50 guide — if it is on cooldown or set elsewhere, fly from Stonard to Grom'gol and take the zeppelin to Orgrimmar)."
+  turnin 32 npc 7010
+
+step
+  when level<57
+  accept 4494 npc 7010
+
+step
+  when level<57
+  tip Accept Betrayed (Azshara — later)
+  accept 3504 npc 4485
+
+step
+  when level<54
+  accept 936 npc 6929
+
+step
+  tip Orgrimmar Set your Hearthstone to Orgrimmar.
+  sethome "Orgrimmar"
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  turnin 936 npc 5769
+
+step
+  when level<54
+  accept 3761 npc 5769
+
+step
+  tip Turn in to Sage Truthseeker: The Platinum Discs (the discs from Uldaman — *reward)
+  turnin 2280 npc 3978
+
+step
+  tip Gadgetzan Fly to Gadgetzan.
+  fly "Gadgetzan"
+
+step
+  tip At Steamwheedle Port, turn in to Yeh'kinya: The God Hakkar (the egg filled in the Sunken Temple — *reward)
+  turnin 3528 npc 8579
+
+step
+  turnin 4494 npc 5594
+
+step
+  when level<57
+  accept 4496 npc 5594
+
+step
+  when level<58
+  accept 4504 npc 7876
+
+step
+  tip Head southwest toward this spot.
+  goto 27,57 r 20 map 1446
+
+step
+  when level<57
+  tip Follow the ramp down into Un'Goro Crater. Accept The Fare of Lar'korwi
+  accept 4290 npc 9619
+
+step
+  when level<59
+  accept 4289 npc 9619
+
+step
+  tip *Look for crystals while you're in Un'Goro Crater.* There are 4 colors: red, blue, yellow and green. *Pick up 7 of each.* Also click the Un'Goro dirt mounds to collect Un'Goro Soil: Un'Goro Soil Kill every dinosaur except the devilsaurs. Go here and accept It's a Secret to Everybody — *Reward chain
+  accept 3844 object 161505
+
+step
+  tip Click the bag in the water to turn in It's a Secret to Everybody — *Reward chain
+  turnin 3844 object 161504
+
+step
+  tip Accept It's a Secret to Everybody — *Reward chain
+  accept 3845 object 161504
+
+step
+  when level<57
+  tip Click a threshadon carcass to get a chunk: The Fare of Lar'korwi
+  complete 4290 @68.6,56.7 map 1449
+
+step
+  when level<57
+  turnin 4290 npc 9619
+
+step
+  when level>=57
+  when complete 4290
+  turnin 4290 npc 9619
+
+step
+  when level<57
+  accept 4291 npc 9619
+
+step
+  tip Go here,
+  goto 67,73 r 20 map 1449
+
+step
+  when level<57
+  tip kill all the dinosaurs around the eggs and stay there. When Larion's mate appears, kill it and take the pheromone gland: The Scent of Lar'korwi
+  collect 11509 quest 4291.1
+
+step
+  when level<57
+  turnin 4291 npc 9619
+
+step
+  when level>=57
+  when complete 4291
+  turnin 4291 npc 9619
+
+step
+  when level<57
+  accept 4243 npc 9618
+
+step
+  when level<55
+  accept 4503 npc 9998
+
+step
+  when level<56
+  accept 4145 npc 9118
+
+step
+  when level<55
+  accept 3882 npc 9272
+
+step
+  when onquest 3884
+  turnin 3884 npc 9270
+
+step
+  when level<57
+  accept 3881 npc 9270
+
+step
+  when level<56
+  accept 3883 npc 9271
+
+step
+  tip Open the small pack in your bags: It's a Secret to Everybody
+  accept 3884 item 11116 optional -- Finish collecting 7 crystals of each color! If a *Crumpled Journal* drops, click it to accept Williden's Journal
+  complete 3845
+
+step
+  tip Turn in It's a Secret to Everybody — *Reward chain
+  turnin 3845 npc 8737
+
+step
+  tip Accept It's a Secret to Everybody (Winterspring — Linken chain *reward, later)
+  accept 3908 npc 8737
+
+step
+  when level<57
+  tip You can destroy the throwing dagger and the faded photograph. Accept Crystals of Power
+  accept 4284 npc 9117
+
+step
+  when level<57
+  turnin 4284 npc 9117
+
+step
+  when level>=57
+  when complete 4284
+  turnin 4284 npc 9117
+
+step
+  when level<57
+  accept 4285 npc 9117
+
+step
+  when level<57
+  accept 4287 npc 9117
+
+step
+  when level<57
+  accept 4288 npc 9117
+
+step
+  tip Discover the flight path: Marshal's Refuge
+  getfp "Marshal's Refuge"
+
+step
+  when level<57
+  tip Click the northern pylon: The Northern Pylon
+  complete 4285 @56,12 map 1449
+
+step
+  when level<59
+  tip Go further north and kill 3 pterrordaxes. From now on kill Bloodpetal sprouts, pterrordaxes and diemetradons whenever you see them. Kill gorillas to complete: The Apes of Un'Goro
+  complete 4289 @63.4,18 map 1449
+
+step
+  tip Find A-Me 01 inside the cave: Chasing A-Me 01
+  turnin 4243 npc 9623
+
+step
+  when level<58
+  tip Kill tar beasts to complete: Super Sticky
+  complete 4504 @60,26 map 1449
+
+step
+  when level<57
+  tip Get the supply crate: Expedition Salvation
+  collect 11113 quest 3881.1 @68,36 map 1449
+
+step
+  when level<57
+  tip Click the eastern pylon: The Eastern Pylon
+  complete 4287 @76,48 map 1449
+
+step
+  when level<59
+  turnin 4289 npc 9619
+
+step
+  when level>=59
+  when complete 4289
+  turnin 4289 npc 9619
+
+step
+  tip Head west to Terror Run. Clear your way to the Gorishi hive here.
+  goto 50,76 r 20 map 1449
+
+step
+  when level<56
+  tip Go inside the hive and take the left path at the first fork to reach a round room. Clear it. Then stand in the middle and use the empty sampling tube from your bags. If it doesn't work, try another spot to get a *Hive Wall Sample*: Alien Ecology
+  collect 11131 quest 3883.1
+
+step
+  when level<57
+  tip Kill insects to complete: Bungle in the Jungle
+  collect 11837 quest 4496.1
+  collect 11018 quest 4496.2
+
+step
+  tip Go to this spot.
+  goto 38,66 r 20 map 1449
+
+step
+  when level<57
+  tip The mobs here are fairly strong, so be careful. Find the pile of crates and take the research equipment: Expedition Salvation
+  collect 11112 quest 3881.2
+
+step
+  when level<59
+  tip Head northwest while avoiding aggro. The lake is fairly safe, so swim across it. Keep going northwest until you reach a huge rock on the far side of the lake. Find Krakle and quickly accept: Finding the Source
+  accept 974 npc 10302
+
+step
+  when level<57
+  tip Click the western pylon: The Western Pylon
+  complete 4288 @23,57 map 1449
+
+step
+  when level<56
+  tip Kill Bloodpetal sprouts to complete: Larion and Muigin
+  kill 6509 quest 4145.1
+  kill 6512 quest 4145.2
+  kill 6510 quest 4145.3
+  kill 6511 quest 4145.4
+
+step
+  when level<56
+  tip Turn in Larion and Muigin (skip the follow-up errand to Ratchet)
+  turnin 4145 npc 9118
+
+step
+  when level>=56
+  when complete 4145
+  tip Turn in Larion and Muigin (skip the follow-up errand to Ratchet)
+  turnin 4145 npc 9118
+
+step
+  when level<56
+  turnin 3883 npc 9271
+
+step
+  when level>=56
+  when complete 3883
+  turnin 3883 npc 9271
+
+step
+  when level<57
+  turnin 3881 npc 9270
+
+step
+  when level>=57
+  when complete 3881
+  turnin 3881 npc 9270
+
+step
+  turnin 4288 npc 9117
+
+step
+  turnin 4287 npc 9117
+
+step
+  turnin 4285 npc 9117
+
+step
+  when level<57
+  accept 4321 npc 9117
+
+step
+  turnin 4321 npc 9117
+
+step
+  tip You can destroy the manual. Gadgetzan Fly to Gadgetzan.
+  fly "Gadgetzan"
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+
+step
+  when level<58
+  turnin 4504 npc 7876
+
+step
+  when level>=58
+  when complete 4504
+  turnin 4504 npc 7876
+
+step
+  when level<57
+  turnin 4496 npc 5594
+
+step
+  when level>=57
+  when complete 4496
+  turnin 4496 npc 5594
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip Splintertree Post Fly to Splintertree Post.
+  note "Orgrimmar Hearth to Orgrimmar."
+  fly "Splintertree Post"
+
+step
+  tip Enter Azshara.
+  goto 93,47.7 r 20 map 1440
+
+step
+  turnin 3504 npc 8576
+
+step
+  when level<57
+  accept 3505 npc 8576
+
+step
+  when level<56
+  accept 3517 npc 8587
+
+step
+  tip Discover the flight path: Valormok
+  getfp "Valormok"
+
+step
+  tip Kill hippogryphs on the way to get *2 feathers*. Run northeast past the Ruins of Eldarath. Avoid the Timbermaw furbolgs — if attacked, don't kill them, just run. Also avoid the other Timbermaw camp, 'Ursolan'; go around it to the east. Keep heading northeast until you reach the steep hill here.
+  goto 53,21 r 20 map 1447
+
+step
+  when level<57
+  tip Climb to the top to go north. At the top, accept Kim'jael Indeed!
+  accept 3601 npc 8420
+
+step
+  when level<57
+  tip Finish collecting Kim'jael's equipment around the camp: Kim'jael Indeed!
+  collect 10717 quest 3601.1
+  collect 10715 quest 3601.2
+  collect 10722 quest 3601.3
+  collect 10718 quest 3601.4
+
+step
+  when level<57
+  tip Complete the quest: Betrayed Betrayed
+  kill 6199 quest 3505.1 @57,30.6 map 1447
+  kill 6198 quest 3505.2 @57,30.6 map 1447
+
+step
+  tip Go to the stone structure and click the altar.
+  goto 59,31 r 20 map 1447
+
+step
+  when level<57
+  turnin 3505 object 151286
+
+step
+  when level>=57
+  when complete 3505
+  turnin 3505 object 151286
+
+step
+  when level<60
+  accept 3506 object 151286
+
+step
+  when level<60
+  tip Three floating crystals appear. Destroying them spawns Blood Elf wardens. Fight the wardens a little away from the stone structure. Kill Magus Rimtori to complete: Betrayed
+  collect 10597 quest 3506.1
+
+step
+  when level<57
+  turnin 3601 npc 8420
+
+step
+  when level>=57
+  when complete 3601
+  turnin 3601 npc 8420
+
+step
+  when level<57
+  accept 5534 npc 8420
+
+step
+  tip Find the Shattered Strand here.
+  goto 45,37 r 20 map 1447
+
+step
+  tip It's southeast of Ursolan. Follow this path down. You'll soon meet naga — kill all of them on the way. Head southwest until you find the path to the Ruins of Eldarath here.
+  goto 41,48 r 20 map 1447
+
+step
+  when level<56
+  tip Collect the tablets in the Ruins of Eldarath. They appear at random spots. Finish collecting the tablets: Stealing Knowledge
+  collect 10538 quest 3517.1
+  collect 10539 quest 3517.2
+  collect 10540 quest 3517.3
+  collect 10541 quest 3517.4
+
+step
+  when level<57
+  tip Kill naga to finish collecting the *rune*: Kim'jael's 'Missing' Equipment
+  collect 13815 quest 5534.1
+
+step
+  tip From the Shattered Strand find the ramp up to the high ground here.
+  goto 46,39 r 20 map 1447
+
+step
+  when level<60
+  turnin 3506 npc 8576
+
+step
+  when level>=60
+  when complete 3506
+  turnin 3506 npc 8576
+
+step
+  when level<57
+  turnin 5534 npc 8420
+
+step
+  when level>=57
+  when complete 5534
+  turnin 5534 npc 8420
+
+step
+  when level<56
+  turnin 3517 npc 8587
+
+step
+  when level>=56
+  when complete 3517
+  turnin 3517 npc 8587
+
+step
+  when level<56
+  accept 3561 npc 8587
+
+step
+  when level<56
+  tip Accept Delivery to Jes'rimon (Orgrimmar)
+  accept 3541 npc 8587
+
+step
+  when level<56
+  tip Accept Delivery to Magatha (Thunder Bluff)
+  accept 3518 npc 8587
+
+step
+  when level<56
+  tip Accept Delivery to Andron Gant (Undercity — when you go to Blackrock Depths)
+  accept 3542 npc 8587
+
+step
+  tip Talk to the elf with the blue question mark (Sanath Lim-yo) to be teleported to the top of the tower.
+  goto 28,50 r 20 map 1447
+
+step
+  tip Find Archmage Xylem at the top of the tower. Turn in Delivery to Archmage Xylem
+  turnin 3561 npc 8379
+
+step
+  when level<56
+  accept 3565 npc 8379
+
+step
+  turnin 3565 npc 8587
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip Turn in Delivery to Jes'rimon (skip the return quest)
+  note "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Valormok in Azshara to Orgrimmar)."
+  turnin 3541 npc 8659
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  tip Turn in Delivery to Magatha (skip the return quest)
+  turnin 3518 npc 4046
+
+step
+  when level<54
+  turnin 3761 npc 9076
+
+step
+  when level>=54
+  when complete 3761
+  turnin 3761 npc 9076
+
+step
+  tip 55 You should be at least Lv55 (healers can go from Lv54). If you are short, run the Sunken Temple once more or kill mobs in the areas you just passed.
+  level 55
+
+step
+  tip Orgrimmar Fly to Orgrimmar.
+  note "* Blackrock Depths (1st) — Lv55.1 -> about Lv56.2 · recommended Lv54-55 (healer 54 · tank/DPS 55)"
+  note "! You just used your Hearthstone (cooldown). Fly from Thunder Bluff to Orgrimmar."
+  fly "Orgrimmar"
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip Turn in Delivery to Andron Gant (skip the return quest)
+  turnin 3542 npc 6522
+
+step
+  tip Turn in Lines of Communication (completed in The Hinterlands)
+  turnin 2995 npc 7825
+
+step
+  tip In the Apothecarium, accept from Apothecary Zinge (or get it shared): Vivian Lagrave (Blackrock Depths prep — deliver to Kargath)
+  accept 4133 npc 5204
+
+step
+  tip Kargath Fly to Kargath.
+  fly "Kargath"
+
+step
+  tip Turn in to Shadowmage Vivian Lagrave: Vivian Lagrave
+  turnin 4133 npc 9078
+
+step
+  tip Then accept from Shadowmage Vivian Lagrave (or get it shared): Lost Thunderbrew Recipe
+  accept 4134 npc 9078
+
+step
+  tip Accept from Thunderheart (or get it shared): Disharmony of Flame — *Reward chain
+  accept 3906 npc 9084
+
+step
+  tip Click WANTED to accept (or get it shared): KILL ON SIGHT: Dark Iron Dwarves (the Kargath wanted board)
+  accept 4081 object 164867
+
+step
+  tip Thorium Point Fly to Thorium Point.
+  fly "Thorium Point"
+
+step
+  tip Enter Blackrock Mountain to the south and follow the chains down to the Blackrock Depths entrance.
+  goto 34.8,83.9 r 20 map 1427
+
+step
+  tip Kill Overmaster Pyron in the quarry near the entrance: Disharmony of Flame
+  complete 3906
+
+step
+  tip Kill the Dark Iron dwarves: KILL ON SIGHT: Dark Iron Dwarves
+  kill 8891 quest 4081.1
+  kill 8890 quest 4081.2
+  kill 8892 quest 4081.3
+
+step
+  along
+  complete 4134 -- Find the Lost Thunderbrew Recipe in the Grim Guzzler tavern: Lost Thunderbrew Recipe
+
+step
+  tip == 1st run turn-ins == Leave the dungeon and fly to Kargath.
+  fly "Kargath"
+
+step
+  tip Turn in to Thunderheart: Disharmony of Flame — *Reward chain
+  turnin 3906 npc 9084
+
+step
+  tip Then accept from Thunderheart (or get it shared): Disharmony of Fire
+  accept 3907 npc 9084
+
+step
+  tip Accept from Galamav the Marksman (or get it shared): Commander Gor'shak (Commander Gor'shak inside — start of Thrall's *reward chain)
+  accept 3981 npc 9081
+
+step
+  tip Accept from Shadowmage Vivian Lagrave (or get it shared): The Last Element
+  accept 7201 npc 9078
+
+step
+  tip Turn in to Warlord Goretooth: KILL ON SIGHT: Dark Iron Dwarves
+  turnin 4081 npc 9077
+
+step
+  tip Then click KILL ON SIGHT to accept (or get it shared): KILL ON SIGHT: High Ranking Dark Iron Officials (the board next to it)
+  accept 4082 object 164868
+
+step
+  when complete 4134
+  tip Turn in to Shadowmage Vivian Lagrave: Lost Thunderbrew Recipe
+  turnin 4134 npc 9078
+
+step
+  tip Thorium Point Fly to Thorium Point and go back into Blackrock Depths with the same group.
+  fly "Thorium Point"
+
+step
+  turnin 3981 -- Turn in to Commander Gor'shak in the prison block: Commander Gor'shak — *Reward chain · Dungeon prereq (Blackrock Depths)
+  accept 3982 -- Then accept: What Is Going On? — *Reward chain
+  complete 3982 -- Hold off the guards and protect Gor'shak: What Is Going On?
+  turnin 3982 -- Turn in to Gor'shak: What Is Going On? — *Reward chain
+  accept 4001 -- Then accept (report to Thrall): What Is Going On? — *Reward chain
+  complete 4001 -- Talk to Kharan Mighthammer in the next cell about the princess: What Is Going On?
+  complete 3907 -- Kill Lord Incendius and take the information he drops: Disharmony of Fire
+  complete 7201 -- Collect 10 Essence of the Elements from golems and golem makers: The Last Element
+
+step
+  tip Kill the high-ranking Dark Iron officials: KILL ON SIGHT: High Ranking Dark Iron Officials
+  complete 4082
+
+step
+  tip == 2nd run turn-ins == Leave the dungeon and fly to Kargath.
+  fly "Kargath"
+
+step
+  tip Turn in to Thunderheart: Disharmony of Fire
+  turnin 3907 npc 9084
+
+step
+  tip Turn in to Shadowmage Vivian Lagrave: The Last Element
+  turnin 7201 npc 9078
+
+step
+  tip Turn in to Warlord Goretooth: KILL ON SIGHT: High Ranking Dark Iron Officials
+  turnin 4082 npc 9077
+  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Blackrock Depths again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Lower Blackrock Spire Lv57.2) is close, go back to zone quests."
+  note ">> Next dungeon: Lower Blackrock Spire (at about Lv57.2) — about Lv56.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip In Orgrimmar, turn in to Thrall: What Is Going On? (the quest from Blackrock Depths) — *Reward chain
+  note "Orgrimmar Hearth to Orgrimmar."
+  turnin 4001 npc 4949
+
+step
+  tip Then accept from Thrall (or get it shared): The Eastern Kingdom — *Reward chain · Dungeon prereq (Blackrock Depths)
+  accept 4002 npc 4949
+
+step
+  tip Turn in to Thrall: The Eastern Kingdom — *Reward chain · Dungeon prereq (Blackrock Depths)
+  turnin 4002 npc 4949
+
+step
+  tip Then accept from Thrall (or get it shared): The Royal Rescue (Blackrock Depths 2nd run — *reward chain)
+  accept 4003 npc 4949
+
+step
+  tip Splintertree Post Fly to Splintertree Post.
+  fly "Splintertree Post"
+
+step
+  tip Go here to enter Felwood.
+  goto 55,29 r 20 map 1440
+
+step
+  tip Follow the western road north and discover the flight path: Bloodvenom Post
+  getfp "Bloodvenom Post"
+
+step
+  tip Enter Timbermaw Hold at the far northeast (the Timbermaw furbolgs won't attack first).
+  goto 64.8,8.2 r 20 map 1448
+
+step
+  tip Take the north branch in the middle of the tunnel to reach Moonglade. Turn in to Keeper Remulos: Seed of Life
+  turnin 7066 npc 11832
+
+step
+  tip Go back into Timbermaw Hold and follow the east tunnel all the way into Winterspring. Turn in It's a Secret to Everybody — *Reward chain
+  turnin 3908 npc 9298
+
+step
+  tip Wait a moment, then accept (Linken chain *reward): The Videre Elixir
+  accept 3909 npc 9298
+
+step
+  tip Discover the flight path in Everlook to the east: Everlook
+  getfp "Everlook"
+
+step
+  when level<59
+  tip Accept Sister Pamela (Eastern Plaguelands — later)
+  accept 5601 npc 11629
+
+step
+  tip Camp Mojache Fly to Camp Mojache.
+  fly "Camp Mojache"
+
+step
+  tip Talk to Gregan Brewspewer first and buy the bait.
+  goto 45,25 r 20 map 1444
+
+step
+  tip Miblon Snarltooth is here.
+  goto 45,11 r 20 map 1444
+
+step
+  tip Put the meat on the stairs. When he moves, the door opens. Collect the ingredients inside. Go back to Gregan Brewspewer and he'll make the *Videre Elixir*.
+  goto 45,25 r 20 map 1444
+
+step
+  tip Everlook Fly to Everlook.
+  fly "Everlook"
+
+step
+  tip Turn in The Videre Elixir — *Reward chain
+  turnin 3909 npc 9298
+
+step
+  tip Accept Meet at the Grave — *Reward chain
+  accept 3912 npc 9298
+
+step
+  tip Gadgetzan Fly to Gadgetzan.
+  fly "Gadgetzan"
+
+step
+  tip Go to the graveyard and drink the Videre Elixir.
+  goto 53,28 r 20 map 1446
+
+step
+  tip You'll die, but don't worry. *Do not resurrect* Turn in Meet at the Grave — *Reward chain
+  turnin 3912 npc 9299
+
+step
+  tip Accept A Grave Situation — *Reward chain
+  accept 3913 npc 9299
+
+step
+  tip Go back to the graveyard and resurrect. Turn in A Grave Situation — *Reward chain
+  turnin 3913 object 148504
+
+step
+  tip Accept Linken's Sword — *Reward chain
+  accept 3914 object 148504
+
+step
+  tip You can destroy the Videre Elixir. Marshal's Refuge Fly to Marshal's Refuge.
+  fly "Marshal's Refuge"
+
+step
+  tip Turn in Linken's Sword — *Reward chain
+  turnin 3914 npc 8737
+
+step
+  tip Accept A Gnome's Assistance — *Reward chain
+  accept 3941 npc 8737
+
+step
+  tip Turn in A Gnome's Assistance — *Reward chain
+  turnin 3941 npc 9117
+
+step
+  tip Accept Linken's Memory — *Reward chain
+  accept 3942 npc 9117
+
+step
+  when level<59
+  tip Accept from Torwa in southeastern Un'Goro: The Mighty U'cha
+  accept 4301 npc 9619
+
+step
+  when level<60
+  accept 4292 npc 9619
+
+step
+  tip There's a giant dinosaur bone here.
+  goto 80,49 r 20 map 1449
+
+step
+  when level<60
+  tip You'll face a level 56 mob, so check your health and mana. Open Torwa's pouch in your bags to get the Preserved Threshadon Meat and the Preserved Pheromone Mixture. Right-click the meat and the pheromones and Larion appears. Kill him and take his head: The Bait for Lar'korwi
+  collect 11510 quest 4292.1
+
+step
+  tip Enter the Fungal Rock cave.
+  goto 63,16 r 20 map 1449
+
+step
+  when level<59
+  tip There's a pool at the end of the cave and U'cha is in the middle. Pull only U'cha and kill him: The Mighty U'cha
+  collect 11476 quest 4301.1
+
+step
+  tip Head southwest until you reach the river.
+  goto 40,27 r 20 map 1449
+
+step
+  when level<55
+  tip You'll see many kinds of dinosaurs and oozes. Kill *Frenzied Pterrordax, Elder Diemetradon and oozes* whenever you see them. Complete the quests: Shizzle's Flyer
+  collect 11830 quest 4503.1
+  collect 11831 quest 4503.2
+
+step
+  when level<55
+  tip Complete the quest: Roll the Bones
+  collect 11114 quest 3882.1
+
+step
+  tip Go to Fire Plume Ridge to the southeast.
+  goto 49,53 r 20 map 1449
+
+step
+  when level<59
+  tip At the top of Fire Plume Ridge, by the lava pool, there's a stone pillar called the 'Hot Spot'. Use Krakle's Thermometer to complete: Finding the Source
+  interact 148503 quest 974.1
+
+step
+  when level<59
+  tip There's a level 56 elite elemental in the cave, so stay away from it. Turn in Finding the Source (skip the follow-up)
+  turnin 974 npc 10302
+
+step
+  when level>=59
+  when complete 974
+  tip There's a level 56 elite elemental in the cave, so stay away from it. Turn in Finding the Source (skip the follow-up)
+  turnin 974 npc 10302
+
+step
+  when level<59
+  turnin 4301 npc 9619
+
+step
+  when level>=59
+  when complete 4301
+  turnin 4301 npc 9619
+
+step
+  when level<60
+  turnin 4292 npc 9619
+
+step
+  when level>=60
+  when complete 4292
+  turnin 4292 npc 9619
+
+step
+  when level<55
+  turnin 3882 npc 9272
+
+step
+  when level>=55
+  when complete 3882
+  turnin 3882 npc 9272
+
+step
+  when level<55
+  turnin 4503 npc 9998
+
+step
+  when level>=55
+  when complete 4503
+  turnin 4503 npc 9998
+
+step
+  tip Bloodvenom Post Fly to Bloodvenom Post.
+  fly "Bloodvenom Post"
+
+step
+  tip Turn in to Eridan Bluewind at the Emerald Sanctuary to the south: Linken's Memory — *Reward chain
+  turnin 3942 npc 9116
+
+step
+  tip Accept Silver Heart — *Reward chain
+  accept 4084 npc 9116
+
+step
+  tip Kill Irontree Stompers around the green pools north of the crater for the Irontree Heart: Silver Heart
+  collect 11173 quest 4084.2 @49,27 map 1448
+
+step
+  tip Go to the high ground east of Irontree Woods. Kill bears and wolves to complete: Silver Heart
+  collect 11172 quest 4084.1 @57,19 map 1448
+
+step
+  tip Back at the Emerald Sanctuary, turn in Silver Heart — *Reward chain
+  turnin 4084 npc 9116
+
+step
+  tip Accept Aquementas — *Reward chain
+  accept 4005 npc 9116
+
+step
+  tip Gadgetzan Fly to Gadgetzan.
+  fly "Gadgetzan"
+
+step
+  tip Go to the pirate cove.
+  goto 68,41 r 20 map 1446
+
+step
+  tip Go all the way through the cove to the far side of the pirate camp, and find the circle of stones.
+  goto 70,49 r 20 map 1446
+
+step
+  tip Open *Eridan's Supplies* in your bags. Step into the circle and click the book; Aquementas appears. Let him hit you to charge the totem: Aquementas
+  collect 11522 quest 4005.1
+
+step
+  tip You can destroy the other 3 items. Marshal's Refuge Fly to Marshal's Refuge.
+  fly "Marshal's Refuge"
+
+step
+  tip Turn in Aquementas — *Reward chain
+  turnin 4005 npc 9117
+
+step
+  tip Accept Linken's Adventure — *Reward
+  accept 3961 npc 9117
+
+step
+  tip Turn in (*reward — Linken's Boomerang and more): Linken's Adventure
+  turnin 3961 npc 8737
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  note "Orgrimmar Hearth to Orgrimmar."
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip In the Apothecarium, accept from Apothecary Zinge (or get it shared): Vivian Lagrave and the Darkstone Tablet (Lower Blackrock Spire prep — requires level 57)
+  accept 4769 npc 5204
+
+step
+  when level<60
+  tip Accept The Champion of the Banshee Queen (Eastern Plaguelands — later)
+  accept 5961 npc 10181
+
+step
+  tip Undercity Set your Hearthstone to Undercity.
+  sethome "Undercity"
+
+step
+  tip Kargath Fly to Kargath.
+  fly "Kargath"
+
+step
+  tip 57 You should be at least Lv57 (healers can go from Lv56). If you are short, run Blackrock Depths once more or kill mobs in the areas you just passed.
+  level 57
+
+step
+  tip Turn in to Shadowmage Vivian Lagrave: Vivian Lagrave and the Darkstone Tablet
+  note "* Lower Blackrock Spire — Lv57.2 -> about Lv58.2 · recommended Lv56-57 (healer 56 · tank/DPS 57)"
+  turnin 4769 npc 9078
+
+step
+  tip Then accept from Shadowmage Vivian Lagrave (or get it shared): The Darkstone Tablet
+  accept 4768 npc 9078
+
+step
+  tip Accept from Warlord Goretooth (or get it shared): Warlord's Command
+  accept 4903 npc 9077
+
+step
+  tip Accept from Galamav the Marksman (or get it shared): The Pack Mistress
+  accept 4724 npc 9081
+
+step
+  tip Accept from Lexlort (or get it shared): Operative Bijou — Dungeon prereq (Lower Blackrock Spire)
+  accept 4981 npc 9080
+
+step
+  tip Thorium Point Fly to Thorium Point.
+  fly "Thorium Point"
+
+step
+  tip Enter Blackrock Mountain and take the north exit into the Burning Steppes.
+  goto 34.8,83.9 r 20 map 1427
+
+step
+  tip Go east to Flame Crest and discover the flight path: Flame Crest
+  getfp "Flame Crest"
+
+step
+  tip Accept from Kibler (or get it shared): Kibler's Exotic Pets
+  accept 4729 npc 10260
+
+step
+  tip Accept from Kibler (or get it shared): En-Ay-Es-Tee-Why
+  accept 4862 npc 10260
+
+step
+  tip Accept from Ragged John (or get it shared): Mother's Milk
+  accept 4866 npc 9563
+
+step
+  tip Accept from Maxwort Uberglint (or get it shared): The Heart of the Mountain (Blackrock Depths 2nd run)
+  accept 4123 npc 9536
+
+step
+  tip Turn in to Yuka Screwspigot: Yuka Screwspigot
+  turnin 4324 npc 9544
+
+step
+  tip Then accept from Yuka Screwspigot (or get it shared): Ribbly Screwspigot (Blackrock Depths 2nd run)
+  accept 4136 npc 9544
+
+step
+  tip Go back west into Blackrock Mountain and enter Blackrock Spire on the upper level.
+  goto 29,38 r 20 map 1428
+
+step
+  tip Read Warosh's scroll near the entrance to accept: Urok Doomhowl
+  accept 4867
+
+step
+  tip Catch a Bloodaxe Worg Pup with the cage: Kibler's Exotic Pets
+  accept 4742 optional -- If you can, accept from the Scarshield spy (Vaelan) near the entrance: Seal of Ascension
+  complete 4729
+
+step
+  complete 4724 -- Kill Halycon, the Bloodaxe pack mistress: The Pack Mistress
+  complete 4862 -- Collect 15 Spire Spider Eggs: En-Ay-Es-Tee-Why
+  complete 4866 -- Get poisoned by Mother Smolderweb (go to Ragged John while still poisoned): Mother's Milk
+  turnin 4981 -- Turn in to Bijou near the prison: Operative Bijou — Dungeon prereq (Lower Blackrock Spire)
+  accept 4982
+  complete 4982 -- Find Bijou's belongings on the bottom floor: Bijou's Belongings
+  turnin 4982 -- Go back to Bijou and turn in Bijou's Belongings
+  accept 4983 -- Then accept (report to Lexlort in Kargath): Bijou's Reconnaissance Report — Dungeon chain (Lower Blackrock Spire)
+
+step
+  accept 5047 -- Accept from Pip Quickwit, who's held captive (Everlook in Winterspring — at the end): Pip Quickwit, At Your Service!
+  accept 5160 -- Accept from Awbee by the eggs (Haleh in Winterspring — at the end): The Matron Protectorate
+  complete 4768 -- Find the Darkstone Tablet: The Darkstone Tablet
+  complete 4903 -- Kill Highlord Omokk, War Master Voone and Overlord Wyrmthalak, and recover the documents: Warlord's Command
+  turnin 4867 -- Summon Urok Doomhowl as Warosh's scroll explains, kill him and turn in to Warosh: Urok Doomhowl
+
+step
+  when complete 4742
+  tip If you gathered the three gemstones and the seal, turn in Seal of Ascension
+  turnin 4742
+
+step
+  tip == Lower Blackrock Spire turn-ins == At Flame Crest, turn in to Ragged John: Mother's Milk
+  turnin 4866 npc 9563
+
+step
+  tip Turn in to Kibler: Kibler's Exotic Pets
+  turnin 4729 npc 10260
+
+step
+  tip Turn in to Kibler: En-Ay-Es-Tee-Why
+  turnin 4862 npc 10260
+
+step
+  tip 58 You should be at least Lv58 (healers can go from Lv57). If you are short, run Lower Blackrock Spire once more or kill mobs in the areas you just passed.
+  level 58
+
+step
+  tip Enter Blackrock Mountain and go down to the Blackrock Depths entrance.
+  note "* Blackrock Depths (2nd) — Lv58.2 -> about Lv59.0 · recommended Lv57-58 (healer 57 · tank/DPS 58)"
+  goto 29,38 r 20 map 1428
+
+step
+  tip Kill Ribbly Screwspigot in the Grim Guzzler kitchen and take his head: Ribbly Screwspigot
+  complete 4136
+
+step
+  along
+  complete 4123 -- Find the Heart of the Mountain in the Vault (the vault must be opened): The Heart of the Mountain
+
+step
+  complete 4003 -- Kill Emperor Dagran Thaurissan to free Princess Moira: The Royal Rescue
+  turnin 4003 -- Turn in to Princess Moira Bronzebeard: The Royal Rescue — *Reward chain
+  accept 4004 -- Then accept (Thrall in Orgrimmar — *reward): The Princess Saved?
+
+step
+  tip == Blackrock Depths 2nd run turn-ins == Leave through the north exit of Blackrock Mountain and go to Flame Crest.
+  goto 65.6,24.2 r 20 map 1428
+
+step
+  tip Turn in to Yuka Screwspigot: Ribbly Screwspigot
+  turnin 4136 npc 9544
+
+step
+  when complete 4123
+  tip Turn in to Maxwort Uberglint: The Heart of the Mountain
+  turnin 4123 npc 9536
+
+step
+  tip Kargath Fly to Kargath.
+  fly "Kargath"
+
+step
+  tip Turn in to Warlord Goretooth: Warlord's Command
+  turnin 4903 npc 9077
+
+step
+  tip Then accept from Warlord Goretooth (or get it shared): Eitrigg's Wisdom (Eitrigg then Thrall in Orgrimmar — at the end) — Dungeon chain (Lower Blackrock Spire)
+  accept 4941 npc 9077
+
+step
+  tip Turn in to Galamav the Marksman: The Pack Mistress
+  turnin 4724 npc 9081
+
+step
+  tip Turn in to Lexlort: Bijou's Reconnaissance Report — Dungeon chain (Lower Blackrock Spire)
+  turnin 4983 npc 9080
+
+step
+  tip Turn in to Shadowmage Vivian Lagrave: The Darkstone Tablet
+  turnin 4768 npc 9078
+  note ">> Next dungeon: Stratholme (at about Lv59.8) — about Lv59.0 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing."
+
+step
+  hearth "Undercity"
+
+step
+  tip Cross the Western Plaguelands to its east end into the Eastern Plaguelands. Accept Demon Dogs — *Reward chain · Dungeon prereq (Stratholme)
+  note "Undercity Hearth to Undercity."
+  accept 5542 npc 1855
+
+step
+  tip Accept Blood Tinged Skies — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5543 npc 1855
+
+step
+  tip Accept Carrion Grubbage — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5544 npc 1855
+
+step
+  tip From now on kill *Plaguehound Runts*, *Carrion Grubs* and *Plaguebats* whenever you see them. Turn in The Champion of the Banshee Queen
+  turnin 5961 npc 11878
+
+step
+  when level<62
+  accept 6022 npc 11878
+
+step
+  when level<62
+  accept 6042 npc 11878
+
+step
+  when level<64
+  accept 6133 npc 11878
+
+step
+  tip Also kill *Noxious Plaguebats* and *Monstrous Plaguebats* whenever you see them. Turn in Sister Pamela
+  turnin 5601 npc 10926
+
+step
+  when level<59
+  accept 5149 npc 10926
+
+step
+  when level<59
+  tip Now you need the three parts of Pamela's doll. They're in the buildings near Pamela — look for brown items on the floor. Each time you get close to a doll part, a level 55 ghost appears and attacks. When you have the left side, right side and head of Pamela's doll, click them in your bags to combine: Pamela's Doll
+  complete 5149
+
+step
+  when level<59
+  turnin 5149 npc 10926
+
+step
+  when level>=59
+  when complete 5149
+  turnin 5149 npc 10926
+
+step
+  when level<60
+  accept 5241 npc 10926
+
+step
+  tip Complete the quest: Blood Tinged Skies
+  kill 8600 quest 5543.1
+
+step
+  tip Complete the quest: Demon Dogs
+  kill 8596 quest 5542.1
+  kill 8597 quest 5542.2
+  kill 8598 quest 5542.3
+
+step
+  when level<62
+  tip Complete the quest: Un-Life's Little Annoyances
+  kill 8601 quest 6042.1
+  kill 8602 quest 6042.2
+
+step
+  tip Complete the quest: Carrion Grubbage
+  collect 13853 quest 5544.1
+
+step
+  tip Discover the flight path: Light's Hope Chapel
+  getfp "Light's Hope Chapel"
+
+step
+  turnin 5241 npc 11063
+
+step
+  tip At Light's Hope Chapel, accept from Betina Bigglezink (or get it shared): The Flesh Does Not Lie (Stratholme prep)
+  accept 5212 npc 11035
+
+step
+  tip Accept from Smokey LaRue (or get it shared): The Great Ezra Grimm (Stratholme prep)
+  accept 5214 npc 11033
+
+step
+  tip Accept from Leonid Barthalomew the Revered (or get it shared): Houses of the Holy (Stratholme prep)
+  accept 5243 npc 11036
+
+step
+  tip Accept from Duke Nicholas Zverenhoff (or get it shared): The Archivist (Stratholme prep)
+  accept 5251 npc 11039
+
+step
+  tip Turn in to Tirion Fordring at the west end: Demon Dogs — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5542 npc 1855
+
+step
+  tip Turn in Blood Tinged Skies — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5543 npc 1855
+
+step
+  tip Turn in Carrion Grubbage — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5544 npc 1855
+
+step
+  tip Accept Redemption — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5742 npc 1855
+
+step
+  tip Listen to the story, then turn in Redemption — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5742 npc 1855
+
+step
+  tip Accept Of Forgotten Memories — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5781 npc 1855
+
+step
+  tip This quest is nearly impossible solo, so find a group. Tirion Fordring's grave is behind the Undercroft.
+  goto 23.7,73.7 r 20 map 1423
+
+step
+  tip Clicking the dirt mound spawns Mercutio and 3 grave robbers. They're not elite but have a lot of health. To do it solo: *right after clicking the mound, run to the other side of the wall. If you go up the hill they stop chasing. The dwarves will stand around the grave.* *Ignore the 3 adds, attack only Mercutio, grab Taelan's Hammer and run*: Of Forgotten Memories
+  collect 14613 quest 5781.1
+
+step
+  when level<64
+  tip Go inside the crypt. Click the torn scroll on the floor to accept: Hameya's Plea
+  accept 6024 object 177667
+
+step
+  tip Turn in Of Forgotten Memories — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5781 npc 1855
+
+step
+  tip Accept Of Lost Honor — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5845 npc 1855
+
+step
+  tip Go to the Plaguewood to the west.
+  goto 37.3,23.4 r 20 map 1423
+
+step
+  tip Go to Quel'Lithien Lodge.
+  goto 44.4,16.2 r 20 map 1423
+
+step
+  when level<64
+  tip Two guards protect the Quel'Thalas Registry, so a group is recommended. Kill elves to complete: The Ranger Lord's Behest
+  kill 8565 quest 6133.1
+  kill 8564 quest 6133.2
+  kill 8563 quest 6133.3
+  collect 15847 quest 6133.4
+
+step
+  tip Go to Zul'Mashar.
+  goto 56,18 r 20 map 1423
+
+step
+  when level<64
+  tip Clear the ramp leading east. You'll find a big pyramid with tombs and trolls wandering around it. *Infiltrator Hameya* is there too. Kill trolls to make a path so you can pull Hameya easily. Kill Hameya and take the key: Hameya's Plea
+  collect 15767 quest 6024.1
+
+step
+  tip Hunt as you leave Zul'Mashar. Next, go southeast to Northdale and dive into the lake south of Northdale. Kill the elementals.
+  goto 62.3,26.1 r 20 map 1423
+
+step
+  tip Click the banner at the bottom of the lake to get the *Symbol of Lost Honor*: Of Lost Honor
+  collect 14625 quest 5845.1
+
+step
+  when level<62
+  tip Run southwest toward Corin's Crossing. Kill undead until you have 7 Living Rot. Living Rot disappears 10 minutes after you loot it, so hurry. When you have 7, grind them with the mortar in your bags into Coagulated Rot: To Kill With Purpose
+  complete 6022
+
+step
+  tip Go west, then slightly south to the Undercroft. There's a different dirt mound from before.
+  goto 23.7,73.7 r 20 map 1423
+
+step
+  when level<64
+  tip Click it to turn in Hameya's Plea
+  turnin 6024 object 177675
+
+step
+  when level>=64
+  when complete 6024
+  tip Click it to turn in Hameya's Plea
+  turnin 6024 object 177675
+
+step
+  when level<64
+  turnin 6133 npc 11878
+
+step
+  when level>=64
+  when complete 6133
+  turnin 6133 npc 11878
+
+step
+  when level<62
+  turnin 6042 npc 11878
+
+step
+  when level>=62
+  when complete 6042
+  turnin 6042 npc 11878
+
+step
+  when level<62
+  turnin 6022 npc 11878
+
+step
+  when level>=62
+  when complete 6022
+  turnin 6022 npc 11878
+
+step
+  tip Turn in Of Lost Honor — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5845 npc 1855
+
+step
+  tip Accept Of Love and Family — *Reward chain · Dungeon prereq (Stratholme)
+  accept 5846 npc 1855
+
+step
+  tip Find Artist Renfray at the east end of the Western Plaguelands.
+  goto 65.6,75.4 r 20 map 1422
+
+step
+  tip Turn in Of Love and Family — *Reward chain · Dungeon prereq (Stratholme)
+  turnin 5846 npc 11936
+
+step
+  tip Accept Of Love and Family (Stratholme *reward chain)
+  accept 5848 npc 11936
+
+step
+  tip 59 You should be at least Lv59 (healers can go from Lv58). If you are short, run Blackrock Depths once more or kill mobs in the areas you just passed.
+  level 59
+
+step
+  tip Enter Stratholme by the main gate at the northern end of the Eastern Plaguelands.
+  note "* Stratholme — Lv59.8 -> about Lv60.0 · recommended Lv58-59 (healer 58 · tank/DPS 59)"
+  goto 26.6,9.4 r 20 map 1423
+
+step
+  complete 5212 -- Collect 10 Plagued Flesh Samples from creatures in Stratholme: The Flesh Does Not Lie
+  complete 5243 -- Collect 5 Stratholme Holy Water from the supply crates in the streets: Houses of the Holy
+  complete 5214 -- Find the box of Grimm's Premium Tobacco in Ezra Grimm's smoke shop: The Great Ezra Grimm
+  complete 5251 -- Kill Archivist Galford in the Scarlet Bastion and burn the archive: The Archivist
+  complete 5848 -- Find the painting "Of Love and Family" inside the Bastion: Of Love and Family
+
+step
+  tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning
+  accept 5122
+  accept 5125
+
+step
+  when complete 5122
+  tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning
+  turnin 5122
+
+step
+  when onquest 5125
+  tip If you clear up to Baron Rivendare, turn in to Aurius: Aurius' Reckoning
+  turnin 5125
+
+step
+  tip == Stratholme turn-ins == Light's Hope Chapel Fly to Light's Hope Chapel (if you don't have the flight path, run).
+  fly "Light's Hope Chapel"
+
+step
+  tip Turn in to Betina Bigglezink: The Flesh Does Not Lie
+  turnin 5212 npc 11035
+
+step
+  tip Turn in to Smokey LaRue: The Great Ezra Grimm
+  accept 5213 npc 11035 optional -- Then accept from Betina Bigglezink (or get it shared): The Active Agent (Stratholme ziggurats — next run) — Dungeon chain (Stratholme)
+  turnin 5214 npc 11033
+
+step
+  tip Turn in to Leonid Barthalomew the Revered: Houses of the Holy
+  turnin 5243 npc 11036
+
+step
+  tip Turn in to Duke Nicholas Zverenhoff: The Archivist
+  turnin 5251 npc 11039
+
+step
+  tip Turn in to Tirion Fordring (*reward): Of Love and Family
+  turnin 5848 npc 1855
+  note "! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing."
+
+step
+  hearth "Undercity"
+
+step
+  tip == Final turn-ins (Kalimdor) == Take the zeppelin to Orgrimmar from the tower east of Undercity.
+  note "Undercity Hearth to Undercity."
+  goto 60.7,58.8 r 20 map 1420
+
+step
+  tip In Orgrimmar, turn in to Thrall: Eitrigg's Wisdom (talk to Eitrigg first) — Dungeon chain (Lower Blackrock Spire)
+  turnin 4941 npc 4949
+
+step
+  tip Turn in to Thrall: The Princess Saved? (*reward)
+  turnin 4004 npc 4949
+
+step
+  tip Everlook Fly to Everlook.
+  fly "Everlook"
+
+step
+  tip Turn in to Malyfous Darkhammer: Pip Quickwit, At Your Service!
+  turnin 5047 npc 10637
+
+step
+  tip To the south, turn in to Haleh: The Matron Protectorate (above the Mazthoril cave)
+  turnin 5160 npc 10929
+  note "That's the end of the BalCon 1-60 guide. Congratulations on level 60! Do the remaining Stratholme quests (The Active Agent, and the Balnazzar chain unlocked by The Archivist) on your next Stratholme run."

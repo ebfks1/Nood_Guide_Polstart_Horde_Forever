@@ -1,0 +1,192 @@
+name: Build and release
+
+# packs/ 의 가이드 원본(.guide)을 Polestar 공식 컴파일러(forge)로 검사·빌드합니다.
+#  1) build   : 읽기 권한만. Polestar 를 tools/polestar.ref 의 커밋으로 받아 forge 를 만들고,
+#               참조 데이터를 만든 뒤 두 팩(nood, nood-ko)을 lint → pack 합니다.
+#  2) publish : 결과(로그·애드온 폴더)를 build 브랜치에 올립니다.
+#               packs/nood/pack.json 의 version 이 아직 배포되지 않은 번호이고(같은 이름의 GitHub Release 없음),
+#               번호에 dev 가 없고, lint 오류가 0 이면 태그(v번호)를 만들고 커스포지에 올립니다.
+#               예) 1.0.0-beta → 커스포지 Beta,  1.0.0 → Release,  1.0.0-dev → 빌드만 (배포 안 함)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packs/**'
+      - 'setup/**'
+      - 'tools/polestar.ref'
+      - '.pkgmeta'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    outputs:
+      version: ${{ steps.result.outputs.version }}
+      errors: ${{ steps.result.outputs.errors }}
+      packed: ${{ steps.result.outputs.packed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Polestar commit
+        id: ref
+        run: echo "sha=$(head -n1 tools/polestar.ref | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+
+      - name: Restore Polestar tools
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/polestar-tools
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v1
+
+      - name: Build Polestar tools (forge and the reference data)
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/polestar-tools/bin ~/polestar-tools/logs
+          git init -q "$RUNNER_TEMP/polestar"
+          cd "$RUNNER_TEMP/polestar"
+          git remote add origin https://github.com/fitzforge/polestar.git
+          git fetch -q --depth 1 origin "${{ steps.ref.outputs.sha }}"
+          git checkout -q FETCH_HEAD
+          cargo build --release --locked --manifest-path rust/Cargo.toml -p forge
+          F=rust/target/release/forge
+          $F --version 2>&1 | tee ~/polestar-tools/logs/forge-version.txt || true
+          if $F data build --no-web-xp --no-web-zones > ~/polestar-tools/logs/data-build.txt 2>&1; then
+            echo "data: built with every source" | tee ~/polestar-tools/logs/data-mode.txt
+          else
+            tail -n 40 ~/polestar-tools/logs/data-build.txt
+            $F data build --no-web-xp --no-web-zones --no-questie > ~/polestar-tools/logs/data-build-no-questie.txt 2>&1 || { tail -n 60 ~/polestar-tools/logs/data-build-no-questie.txt; exit 1; }
+            echo "data: built without QuestieDB (--no-questie)" | tee ~/polestar-tools/logs/data-mode.txt
+          fi
+          cp $F ~/polestar-tools/bin/forge
+          rm -rf rust/target data/sources .git
+          mv "$RUNNER_TEMP/polestar" ~/polestar-tools/polestar
+          du -sh ~/polestar-tools
+
+      - name: Save Polestar tools
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/polestar-tools
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v1
+
+      - name: Lint and pack
+        id: result
+        run: |
+          ROOT=~/polestar-tools/polestar
+          FORGE=~/polestar-tools/bin/forge
+          mkdir -p out/logs out/addons out/zips
+          cp ~/polestar-tools/logs/* out/logs/ 2>/dev/null || true
+          echo "${{ steps.ref.outputs.sha }}" > out/logs/polestar-commit.txt
+          errors=0; packed=true
+          for p in nood nood-ko; do
+            $FORGE guide lint "packs/$p" --root "$ROOT" --format json > "out/logs/lint-$p.json" 2> "out/logs/lint-$p.stderr.txt" || true
+            $FORGE guide lint "packs/$p" --root "$ROOT" > "out/logs/lint-$p.txt" 2>&1 || true
+            n=$(jq '[.. | objects | select(.severity? == "error")] | length' "out/logs/lint-$p.json" 2>/dev/null || echo 999)
+            echo "lint $p: $n errors"; tail -n 3 "out/logs/lint-$p.txt" || true
+            errors=$((errors + n))
+            if $FORGE release pack "packs/$p" --root "$ROOT" > "out/logs/pack-$p.txt" 2>&1; then
+              cp packs/$p/dist/*.zip out/zips/
+            else
+              packed=false; tail -n 20 "out/logs/pack-$p.txt"
+            fi
+          done
+          for z in out/zips/*.zip; do [ -f "$z" ] && unzip -q -o "$z" -d out/addons; done
+          ls -la out/addons out/zips || true
+          echo "version=$(jq -r .version packs/nood/pack.json)" >> "$GITHUB_OUTPUT"
+          echo "errors=$errors" >> "$GITHUB_OUTPUT"
+          echo "packed=$packed" >> "$GITHUB_OUTPUT"
+          echo "errors=$errors packed=$packed" > out/logs/summary.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: out
+          path: out
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: out
+          path: ${{ runner.temp }}/out
+
+      - name: Push the result to the build branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          B="$RUNNER_TEMP/b"
+          mkdir "$B" && cd "$B" && git init -q
+          cp -r "$RUNNER_TEMP/out/." .
+          rm -rf zips
+          printf 'Build output of %s (main %s).\nlogs/: lint and pack logs. addons/: the addon folders the compiler wrote.\n' "$GITHUB_REPOSITORY" "$GITHUB_SHA" > README.txt
+          git add -A && git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "build of $GITHUB_SHA"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/build
+
+      - name: Decide
+        id: ver
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ needs.build.outputs.version }}
+          ERRORS: ${{ needs.build.outputs.errors }}
+          PACKED: ${{ needs.build.outputs.packed }}
+        run: |
+          echo "tag=v$V" >> "$GITHUB_OUTPUT"
+          new=true
+          case "$V" in ''|*dev*) new=false; echo "version '$V': build only";; esac
+          [ "$ERRORS" = "0" ] || { new=false; echo "$ERRORS lint errors: not released"; }
+          [ "$PACKED" = "true" ] || { new=false; echo "pack failed: not released"; }
+          if [ "$new" = true ] && gh release view "v$V" >/dev/null 2>&1; then new=false; echo "v$V is already released"; fi
+          echo "new=$new" >> "$GITHUB_OUTPUT"
+
+      - name: Stage the addon folders and tag
+        if: steps.ver.outputs.new == 'true'
+        env:
+          TAG: ${{ steps.ver.outputs.tag }}
+        run: |
+          A="$RUNNER_TEMP/out/addons"
+          test -f "$A/PolestarPack_Nood/PolestarPack_Nood.toc"
+          cp -r "$A/PolestarPack_Nood/." .
+          iface=$(grep -m1 '^## Interface:' PolestarPack_Nood.toc | sed 's/^## Interface:[[:space:]]*//' | tr -d '\r')
+          printf '\nmove-folders:\n' >> .pkgmeta
+          for d in "$A"/*/; do
+            n=$(basename "$d"); [ "$n" = PolestarPack_Nood ] && continue
+            cp -r "$d" "./$n"; git add -f "$n"
+            echo "  PolestarPack_Nood/$n: $n" >> .pkgmeta
+          done
+          cp -r setup/NoodGuide_Setup ./NoodGuide_Setup
+          sed -i "s/@INTERFACE@/$iface/" NoodGuide_Setup/NoodGuide_Setup.toc
+          echo "  PolestarPack_Nood/NoodGuide_Setup: NoodGuide_Setup" >> .pkgmeta
+          cat .pkgmeta
+          git add -f -A .
+          git commit -q -m "release $TAG (built from $GITHUB_SHA)"
+          git tag -f "$TAG"
+          git push -f origin "refs/tags/$TAG"
+
+      - name: Package and upload to CurseForge
+        if: steps.ver.outputs.new == 'true'
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.ver.outputs.tag }}
+        run: |
+          # 이 작업은 브랜치 push 로 시작됐지만, 패키저가 태그 배포로 처리하도록 알려 줍니다.
+          export GITHUB_REF="refs/tags/$TAG" GITHUB_REF_NAME="$TAG" GITHUB_REF_TYPE=tag
+          curl -fsSL https://raw.githubusercontent.com/BigWigsMods/packager/v2/release.sh -o "$RUNNER_TEMP/release.sh"
+          bash "$RUNNER_TEMP/release.sh" -p 1801649 -n "{package-name}-{project-version}:{package-name}-{project-version}"

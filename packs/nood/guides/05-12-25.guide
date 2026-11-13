@@ -1,0 +1,1256 @@
+guide nood/05-12-25
+title 12-25 Nood: RFC, Ruins of Lordaeron, WC, SFK, BFD
+levels 12-25
+zone map 1454
+faction Horde
+folder Nood Guide
+why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 12-25: Thrall's 'Hidden Enemies' at 12 -> (Barrens if not 13 yet) -> Ragefire Chasm…
+coords era
+next nood/06-25-30
+# Written by tools/emit_guide.py from 05_12-25_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  only Tauren
+  tip Follow the road north out of Mulgore to the Crossroads in the Barrens, discover the flight path, then run up the main road north to Orgrimmar.
+  getfp "Crossroads"
+
+step
+  only Skyborne
+  tip Coming down southeast from Thunder Bluff, discover the Camp Taurajo flight path.
+  note "If you ended the 1-12 guide early at level 12: take the skyship from the dock west of Valanaar to Thunder Bluff, then follow the steps below."
+  getfp "Camp Taurajo"
+
+step
+  only Skyborne
+  tip From Thunder Bluff head southeast, follow the main road to the Crossroads, then run up the main road north to Orgrimmar.
+  getfp "Crossroads"
+
+step
+  only Undead
+  tip Take the zeppelin to Orgrimmar from the tower east of Undercity.
+  goto 60.7,58.8 r 20 map 1420
+
+step
+  only Undead
+  when level<17
+  tip In the Valley of Wisdom, accept from Thrall: Journey to the Crossroads (Forever new)
+  accept 98024 npc 4949
+
+step
+  tip Discover the Orgrimmar flight path (skipped automatically if you already have it).
+  note "This guide starts at level 12. First, go to Thrall in Orgrimmar for the Ragefire Chasm prerequisite \"Hidden Enemies\"."
+  note "*Spells*: this note means you can train new spells."
+  note "Save gold for your level 40 mount, though — only train the important spells."
+  note "== Joining from your starting zone =="
+  note "If you finished the 1-12 guide: follow the main road north from Razor Hill to Orgrimmar." only Orc,Troll
+  getfp "Orgrimmar"
+
+step
+  tip Accept from Thrall in the Valley of Wisdom: Hidden Enemies — Dungeon prereq (Ragefire Chasm)
+  note "== Step 1: level 12 — Thrall's \"Hidden Enemies\" (Ragefire Chasm prerequisite) == You need this chain for the Ragefire Chasm quest \"Hidden Enemies\"."
+  accept 5726 npc 4949
+
+step
+  only Skyborne
+  tip Skyborne: turn in to Thrall here: Welcome to Azeroth
+  turnin 95350 npc 4949
+
+step
+  tip Get the Lieutenant's Insignia from the Burning Blade Fanatics and Apprentices in the Skull Rock cave (about 20% drop — it can take a while; keep killing until it drops): Hidden Enemies
+  complete 5726 @51.9,9.6 map 1411
+
+step
+  tip Turn in to Thrall: Hidden Enemies — Dungeon prereq (Ragefire Chasm)
+  turnin 5726 npc 4949
+
+step
+  tip Then accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)
+  accept 5727 npc 4949
+
+step
+  tip Talk to Neeru Fireblade in the Cleft of Shadow: Hidden Enemies
+  complete 5727 @49.4,50.5 map 1454
+
+step
+  tip Go back to Thrall and turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)
+  turnin 5727 npc 4949
+
+step
+  tip Then accept Hidden Enemies (Ragefire Chasm)
+  accept 5728 npc 4949
+
+step
+  tip Accept from Neeru Fireblade in the Cleft of Shadow (or get it shared): Slaying the Beast
+  accept 5761 npc 3216
+  note "! If you are level 13 now, skip the optional \"Barrens\" steps below and go straight to \"* Get the Ragefire Chasm quests\". If not, do the Barrens steps to reach level 13."
+
+step
+  when level<13
+  tip == Step 2 (optional): Barrens if you are not 13 yet — start the Wailing Caverns chain == Leave Orgrimmar by the west gate and take the main road south to the Crossroads (if you have the flight path, The Crossroads fly there).
+  fly "Crossroads"
+
+step
+  when level<13
+  tip Discover the The Crossroads flight path (skipped automatically if you already have it).
+  getfp "Crossroads"
+
+step
+  when level<13
+  tip Set your Hearthstone to The Crossroads with the innkeeper (you hearth back here after the Ruins of Lordaeron).
+  sethome "The Crossroads"
+  note "! Don't go hunting plainstriders, raptors and zhevras separately — kill them whenever you see them while moving. Try to finish Raptor Thieves — its follow-up \"Stolen Silver\" is done at the raptor grounds during the Wailing Caverns prerequisites."
+
+step
+  when level<13
+  when level<15
+  accept 1492 npc 3390
+
+step
+  when level<13
+  when level<19
+  accept 848 npc 3390
+
+step
+  only Undead
+  when onquest 98024
+  turnin 98024 npc 3429
+
+step
+  when level<13
+  when level<16
+  accept 844 npc 3338
+
+step
+  when level<13
+  when level<17
+  accept 869 npc 3464
+
+step
+  when level<13
+  tip First step of the Wailing Caverns chain — accept from Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
+  accept 870 npc 3448
+
+step
+  when level<13
+  when level<16
+  tip Don't finish Raptor Thieves in one go; work on it whenever you're around. Walk around the Crossroads and finish Plainstrider Menace
+  collect 5087 quest 844.1
+
+step
+  when complete 844
+  turnin 844 npc 3338
+
+step
+  when level<13
+  when level<17
+  accept 845 npc 3338
+
+step
+  when level<13
+  when level<20
+  accept 850 npc 3389
+
+step
+  when level<13
+  tip Accept from Regthar Deathgate: Centaur Bracers — no need to finish at once. Collect them whenever you kill centaurs (leaders too) and fill up the 15 when you kill Hezrul Bloodmark at the end.
+  accept 855 npc 3389
+
+step
+  when level<13
+  when level<19
+  tip On the way, kill raptors and zhevra. Head north toward the centaur camp. Pick up the mushrooms around the pools: Fungal Spores
+  collect 5012 quest 848.1
+
+step
+  when level<13
+  tip Explore the crevasse at the bottom of the pool (exploration only, so a low level is fine): The Forgotten Pools
+  complete 870 @44,22 map 1413
+
+step
+  when level<13
+  when level<20
+  tip Kill Barak Kodobane: Kolkar Leaders
+  complete 850 @42.8,23.4 map 1413
+
+step
+  when complete 850
+  tip Turn in to Regthar Deathgate: Kolkar Leaders
+  turnin 850 npc 3389
+
+step
+  when level<13
+  tip Accept Verog the Dervish (done right before Wailing Caverns)
+  accept 851 npc 3389
+
+step
+  when level<13
+  when level<17
+  collect 5086 quest 845.1
+
+step
+  when complete 845
+  turnin 845 npc 3338
+
+step
+  when complete 848
+  turnin 848 npc 3390
+
+step
+  when onquest 870
+  tip Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
+  note "Don't accept Apothecary Zamah (you'll get Serpentbloom directly in Thunder Bluff)."
+  turnin 870 npc 3448
+
+step
+  when level<13
+  tip Accept The Stagnant Oasis — Dungeon prereq (Wailing Caverns)
+  accept 877 npc 3448
+
+step
+  when level<13
+  when level<17
+  tip Finish the raptor heads: Raptor Thieves
+  collect 5062 quest 869.1
+
+step
+  when complete 869
+  tip Turn in to Gazrog: Raptor Thieves
+  turnin 869 npc 3464
+
+step
+  when level<13
+  tip Then accept from Gazrog: Stolen Silver — done at the raptor grounds during the Wailing Caverns prerequisites.
+  accept 3281 npc 3464
+
+step
+  only Undead,Orc,Troll,Skyborne
+  tip (If you couldn't get the Thunder Bluff quests shared) follow the main road south from the Crossroads past Camp Taurajo to Thunder Bluff in Mulgore (if you have the flight path, Thunder Bluff fly there). Tauren already picked these up in Mulgore.
+  fly "Thunder Bluff"
+
+step
+  tip Accept from Rahauro on the Elder Rise (or get it shared): Testing an Enemy's Strength
+  note "! Stop collecting items here. The rest of the Wailing Caverns prerequisites (Dead Oasis and so on) come after the Ruins of Lordaeron. Get the Ragefire quests and clear the dungeon first — the levels make the remaining quests much easier."
+  note "== Getting the Ragefire Chasm quests == If party members can share the Ragefire Chasm quests, get them shared: Searching for the Lost Satchel and Testing an Enemy's Strength (Thunder Bluff), The Power to Destroy... (Undercity). Shared quests make the accept steps below disappear automatically."
+  accept 5728 npc 4949 optional -- * Get the Ragefire Chasm quests (each gets checked when you accept it or get it shared — unchecked ones are the quests you are missing): Hidden Enemies(not shareable) Slaying the Beast(shareable) Testing an Enemy's Strength(shareable) Searching for the Lost Satchel(shareable) The Power to Destroy...(shareable)
+  accept 5761 npc 3216 optional
+  accept 5723 npc 11833 optional
+  accept 5722 npc 11833 optional
+  accept 5725 npc 2425 optional
+  accept 5723 npc 11833
+
+step
+  tip Accept (or get it shared): Searching for the Lost Satchel
+  accept 5722 npc 11833
+
+step
+  tip Discover the Thunder Bluff flight path at the flight master.
+  getfp "Thunder Bluff"
+
+step
+  tip Orgrimmar Fly to Orgrimmar (if you didn't go to Thunder Bluff, Orgrimmar fly to Orgrimmar from the Crossroads or run north).
+  fly "Orgrimmar"
+
+step
+  along
+  level 13 -- You need to be level 13. If not, grind a little around the Crossroads.
+
+step
+  tip == Ragefire Chasm == Ragefire Chasm entrance (Cleft of Shadow)
+  note "Getting the Undercity quest \"The Power to Destroy...\" shared is recommended (Undead already picked it up in Tirisfal). The zeppelin round trip is long, so if you can't get it shared you can go without it — in that case click to close this line and the three Undercity lines below."
+  note "(Optional) Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate."
+  accept 5725 npc 2425 optional -- Accept from Varimathras in the Royal Quarter (sharing recommended): The Power to Destroy...
+  note "(Optional) Take the zeppelin to Orgrimmar from the tower east of Undercity."
+  note "* Ragefire Chasm — Lv13.3 -> about Lv14.8 · recommended Lv13-14 (healer 13 · tank/DPS 14)"
+  goto 52.6,49.2 r 20 map 1454
+
+step
+  complete 5723 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
+  complete 5722 -- Loot the satchel from Maur Grimtotem's corpse: Searching for the Lost Satchel
+  turnin 5722 -- Turn it in right at the corpse: Searching for the Lost Satchel
+  accept 5724 -- Then accept Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
+  complete 5728 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
+  complete 5761 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
+
+step
+  along
+  complete 5725 -- Two books (spellbook and tome): The Power to Destroy...
+
+step
+  tip Leave the dungeon and turn in to Thrall: Hidden Enemies
+  turnin 5728 npc 4949
+
+step
+  tip Then accept Hidden Enemies — Dungeon chain (Ragefire Chasm)
+  accept 5729 npc 4949
+
+step
+  tip Turn in to Neeru Fireblade: Slaying the Beast
+  turnin 5761 npc 3216
+
+step
+  tip Talk to Neeru to turn in Hidden Enemies — Dungeon chain (Ragefire Chasm)
+  turnin 5729 npc 3216
+
+step
+  tip Then accept Hidden Enemies — Dungeon chain (Ragefire Chasm)
+  accept 5730 npc 3216
+
+step
+  tip Turn in to Thrall: Hidden Enemies — Dungeon chain (Ragefire Chasm)
+  turnin 5730 npc 4949
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff (no flight path yet: run down the main road south from the Crossroads).
+  note "== Step 3: Ragefire turn-ins — Orgrimmar -> Thunder Bluff -> Undercity =="
+  fly "Thunder Bluff"
+
+step
+  when complete 5723
+  tip Turn in to Rahauro on the Elder Rise: Testing an Enemy's Strength
+  turnin 5723 npc 11833
+
+step
+  when onquest 5724
+  tip Turn in Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
+  turnin 5724 npc 11833
+
+step
+  tip Discover the Thunder Bluff flight path (skipped automatically if you already have it).
+  getfp "Thunder Bluff"
+
+step
+  tip Orgrimmar Fly to Orgrimmar.
+  fly "Orgrimmar"
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  note "! If you have \"The Power to Destroy...\" (Varimathras), turn it in in Undercity below."
+  note ">> Next dungeon: Ruins of Lordaeron (at Lv16) — about Lv15.2 now. Until then, do the Ruins prerequisites in Undercity and Silverpine Forest (the \"A Recipe For Death\" chain and \"Rear Guard Patrol\") plus a few Silverpine quests to reach level 16."
+  note "== Step 4: Ruins of Lordaeron prerequisites (Undercity and Silverpine Forest, to level 16) == \"The New Plague\" is only offered after all three steps of \"A Recipe For Death\"."
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  when complete 5725
+  turnin 5725 npc 2425
+
+step
+  tip Accept from Morbin Lightbane in the Royal Quarter (or get it shared): Light's Justice
+  accept 92421 npc 266484
+
+step
+  tip Leave Undercity, run west to the Sepulcher in Silverpine Forest and accept from Tabitha Heartweaver (or get it shared): A Frightened Request
+  accept 92401 npc 250686
+
+step
+  tip Discover the The Sepulcher flight path at the Sepulcher flight master.
+  getfp "The Sepulcher"
+
+step
+  tip Accept from High Executor Hadrec: The Dead Fields
+  accept 437 npc 1952
+
+step
+  tip Accept from Apothecary Renferrel at the Sepulcher: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  accept 447 npc 1937
+
+step
+  tip Kill Ferocious Grizzled Bears on the hills northeast of the Sepulcher for 6 Grizzled Bear Hearts: A Recipe For Death
+  collect 3253 quest 447.1 @49.6,34 map 1421
+
+step
+  tip At the Dead Fields to the north, kill Rot Hide gnolls until Nightlash appears, then kill her and take her essence: The Dead Fields
+  complete 437 @45,21 map 1421
+
+step
+  tip Go up to the north coast and collect 6 Skittering Blood from Moss Stalkers and Mist Creepers: A Recipe For Death
+  collect 3254 quest 447.2 @35.4,12 map 1421
+
+step
+  tip Leave Silverpine by the north road and go back to Undercity.
+  goto 60.7,58.8 r 20 map 1420
+
+step
+  tip Turn in to Master Apothecary Faranell in the Apothecarium: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  turnin 447 npc 2055
+
+step
+  tip Then accept: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  accept 450 npc 2055
+
+step
+  tip The Sepulcher Fly to the Sepulcher.
+  fly "The Sepulcher"
+
+step
+  tip Turn in to Hadrec at the Sepulcher: The Dead Fields
+  turnin 437 npc 1952
+
+step
+  tip Then accept: The Decrepit Ferry (done together at the lake)
+  accept 438 npc 1952
+
+step
+  tip Click Berard's Bookshelf in Pyrewood Village to the south for Berard's Journal: A Recipe For Death
+  note "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"."
+  accept 452 npc 2058 optional -- (party only) Accept from Deathstalker Faerleia southeast of Pyrewood Village: Pyrewood Ambush — several elite council members show up, so skip it if you are solo.
+  complete 450 @43,73.2 map 1421
+
+step
+  along
+  complete 452 @46.5,74.4 map 1421 -- (party only) Help Faerleia kill the Pyrewood council: Pyrewood Ambush
+
+step
+  when onquest 452
+  tip (party only) Turn in to Faerleia: Pyrewood Ambush
+  turnin 452 npc 2058
+
+step
+  tip Back at the Sepulcher, turn in to Renferrel: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  turnin 450 npc 1937
+
+step
+  tip Then accept: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  accept 451 npc 1937
+
+step
+  tip On the east shore of Lordamere Lake, kill Lake Skulkers for 6 Lake Skulker Moss: A Recipe For Death
+  collect 3256 quest 451.1 @72,35 map 1421
+
+step
+  tip Check the Corpse Laden Boat on the lake shore to turn in The Decrepit Ferry
+  turnin 438 object 1593
+
+step
+  tip Further north along the shore, kill Lake Creepers (level 17-18) for 6 Lake Creeper Moss: A Recipe For Death
+  collect 3257 quest 451.2 @77,26 map 1421
+
+step
+  tip Get 1 Hardened Tumor from the Vile Fin murlocs along the shore (about 5% drop - kill murlocs whenever you see them while collecting the moss): A Recipe For Death
+  collect 3258 quest 451.3
+
+step
+  tip Take the road north of the lake back to Undercity.
+  goto 60.7,58.8 r 20 map 1420
+
+step
+  tip Turn in to Faranell: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)
+  turnin 451 npc 2055
+
+step
+  tip Accept from Theodore Griffs right next to him (or get it shared): The New Plague
+  accept 95216 npc 11835
+
+step
+  along
+  level 16 -- You need to be level 16. If not, grind a little in eastern Tirisfal while doing "Rear Guard Patrol" below, or go to the Ruins of Lordaeron at 15 (healers).
+
+step
+  tip Leave Undercity and go east to the camp near Brill. Right next to Kristof, accept from Deathguard Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron) Kristof only offers 'The Wrath of Rath'mael' after both steps of Linnea's 'Rear Guard Patrol' (skipped automatically if you already did it in Tirisfal).
+  note "* Ruins of Lordaeron — Lv16.0 -> about Lv18.2 · recommended Lv15-16 (healer 15 · tank/DPS 16)"
+  accept 356 npc 1495
+
+step
+  tip To the east, kill 8 Bleeding Horrors and 8 Wandering Spirits: Rear Guard Patrol
+  complete 356 @76.2,60.6 map 1420
+
+step
+  tip Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)
+  turnin 356 npc 1495
+
+step
+  tip Then accept: Rear Guard Patrol (new in Forever) — Dungeon prereq (Ruins of Lordaeron)
+  accept 99156 npc 1495
+
+step
+  tip Kill Riptear, the level 13 elite patrolling the northeast coast, and take its heart: Rear Guard Patrol
+  complete 99156 @81.3,44.5 map 1420
+
+step
+  tip Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)
+  turnin 99156 npc 1495
+
+step
+  tip Accept from Deathguard Kristof (or get it shared): The Wrath of Rath'mael
+  accept 92422 npc 251001
+
+step
+  tip Enter the Ruins of Lordaeron above the Undercity entrance (approximate entrance location)
+  goto 62,68 r 20 map 1420
+
+step
+  complete 95216 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
+  complete 92421 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
+  accept 97288 item 280438 -- Accept from the Baron's "Abominable Head": Unending Torment
+
+step
+  tip Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
+  accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lordaeron
+  complete 92401
+
+step
+  tip Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
+  complete 92422
+
+step
+  tip Turn in to Deathguard Kristof: The Wrath of Rath'mael
+  turnin 92422 npc 251001
+
+step
+  tip Turn in to Theodore Griffs: The New Plague
+  turnin 95216 npc 11835
+
+step
+  tip Turn in to Master Apothecary Faranell: Unending Torment
+  turnin 97288 npc 2055
+
+step
+  accept 97289 npc 2055
+
+step
+  tip Turn in to the Unfinished Abomination (Osmar's body): Unending Torment
+  turnin 97289 npc 271613
+
+step
+  accept 97290 npc 271613
+
+step
+  tip Turn in to Faranell: Unending Torment
+  turnin 97290 npc 2055
+
+step
+  accept 97291 npc 2055
+
+step
+  tip Toxic Skullcap (Tawny Grisette, Trade Quarter), Blisterweed (pot behind the herbalist), Essence of Agony (poison vendor, Rogues' Quarter): Unending Torment
+  collect 281246 quest 97291.1
+  collect 281300 quest 97291.2
+  collect 8923 quest 97291.3
+
+step
+  tip Turn in to Faranell: Unending Torment
+  turnin 97291 npc 2055
+
+step
+  accept 97292 npc 2055
+
+step
+  tip Inject the Hissing Serum into the device on Osmar's body: Unending Torment
+  complete 97292
+
+step
+  tip Turn in to Faranell: Unending Torment
+  turnin 97292 npc 2055
+
+step
+  when onquest 95204
+  tip Turn in to Oran Snakewrithe: Crest of Lordaeron
+  turnin 95204 npc 7825
+
+step
+  tip Turn in to Morbin Lightbane: Light's Justice
+  turnin 92421 npc 266484
+  note "! \"A Frightened Request\" is turned in at the Sepulcher on the way to Shadowfang Keep (keep it)."
+  note "! Your Hearthstone should be set to the Crossroads. If not, take the zeppelin to Orgrimmar from the tower east of Undercity, then fly or run to the Crossroads."
+  note "== Step 5: finish the Wailing Caverns prerequisites (Barrens, Ratchet, Thunder Bluff) == The Crossroads Hearth to the Crossroads."
+
+step
+  hearth "The Crossroads"
+
+step
+  tip Set your Hearthstone to The Crossroads with the innkeeper (you hearth back here after the Ruins of Lordaeron).
+  sethome "The Crossroads"
+
+step
+  tip Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener
+  accept 97003 npc 267310 optional -- Accept from Gur'ak: Chol'aruk the Ravener — group quest (new in Forever · 4,100 XP). Doing it at about Lv18 gives the best XP — 2-3 players recommended; if solo, keep it and kill him with your Wailing Caverns group.
+  complete 97003 @57.8,27 map 1413
+
+step
+  tip Turn in to Gur'ak: Chol'aruk the Ravener
+  turnin 97003 npc 267310
+
+step
+  tip First step of the Wailing Caverns chain — accept from Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
+  note "! If you skipped the Barrens steps before Ragefire, do the steps below (they disappear by themselves if already done)."
+  accept 870 npc 3448
+
+step
+  tip Explore the crevasse at the bottom of the pool (exploration only, so a low level is fine): The Forgotten Pools
+  complete 870 @44,22 map 1413
+
+step
+  tip Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
+  turnin 870 npc 3448
+
+step
+  when level<20
+  accept 850 npc 3389
+
+step
+  tip Accept from Regthar Deathgate: Centaur Bracers — no need to finish at once. Collect them whenever you kill centaurs (leaders too) and fill up the 15 when you kill Hezrul Bloodmark at the end.
+  accept 855 npc 3389
+
+step
+  when level<20
+  tip Kill Barak Kodobane: Kolkar Leaders
+  complete 850 @42.8,23.4 map 1413
+
+step
+  when level<20
+  tip Turn in to Regthar Deathgate: Kolkar Leaders
+  turnin 850 npc 3389
+
+step
+  when level>=20
+  when complete 850
+  tip Turn in to Regthar Deathgate: Kolkar Leaders
+  turnin 850 npc 3389
+
+step
+  tip Accept Verog the Dervish (done right before Wailing Caverns)
+  accept 851 npc 3389
+
+step
+  when level<19
+  tip Accept Prowlers of the Barrens (done on the way to Ratchet)
+  accept 903 npc 3338
+
+step
+  tip Then accept from Gazrog: Stolen Silver — done at the raptor grounds during the Wailing Caverns prerequisites.
+  accept 3281 npc 3464
+
+step
+  tip Accept The Stagnant Oasis — Dungeon prereq (Wailing Caverns)
+  accept 877 npc 3448
+
+step
+  tip Plant the seed in the crevasse under the water of the Stagnant Oasis to the south (you only plant the seed and leave, so a low level is fine; avoid the centaur camp next to it): The Stagnant Oasis
+  complete 877 @55,42 map 1413
+
+step
+  tip Turn in to Tonga Runetotem: The Stagnant Oasis — Dungeon prereq (Wailing Caverns)
+  turnin 877 npc 3448
+
+step
+  tip Accept Altered Beings (done after Ragefire Chasm) — Dungeon prereq (Wailing Caverns)
+  accept 880 npc 3448
+
+step
+  tip Kill the oasis creatures at the Lushwater Oasis to the southwest (south of Wailing Caverns): Altered Beings
+  complete 880 @47.6,40 map 1413
+
+step
+  tip Turn in to Tonga Runetotem at the Crossroads: Altered Beings — Dungeon prereq (Wailing Caverns)
+  turnin 880 npc 3448
+
+step
+  tip Then accept Hamuul Runetotem — Dungeon prereq (Wailing Caverns)
+  accept 1489 npc 3448
+
+step
+  when level<19
+  tip On the way east to Ratchet, kill the Savannah Prowlers in the grass: Prowlers of the Barrens
+  complete 903 @59,37.6 map 1413
+
+step
+  tip Discover the Ratchet flight path.
+  getfp "Ratchet"
+
+step
+  when level<18
+  accept 887 npc 3391
+
+step
+  tip Accept from Wrenix the Wretched: Parts and Pieces (Forever new)
+  accept 97253 npc 7161
+
+step
+  when level<20
+  tip Click the Wanted poster to accept WANTED: Baron Longshore
+  accept 895 object 3972
+
+step
+  tip Accept from Mebok Mizzyrix: Raptor Horns (prerequisite for 'Smart Drinks') — Dungeon prereq (Wailing Caverns)
+  accept 865 npc 3446
+
+step
+  tip Accept from Crane Operator Bigglefuzz (or get it shared): Trouble at the Docks (Wailing Caverns quest)
+  accept 959 npc 3665
+
+step
+  turnin 1492 npc 3453
+
+step
+  when level<18
+  tip Kill pirates at the pirate camp on the south coast: Southsea Freebooters
+  complete 887 @63.4,49.2 map 1413
+
+step
+  tip 5 Handfuls of Intricate Parts from above the pirate camp: Parts and Pieces
+  collect 277331 quest 97253.1
+
+step
+  when level<20
+  tip Kill Baron Longshore near the tents: WANTED: Baron Longshore
+  collect 5084 quest 895.1
+
+step
+  tip Kill raptors at the raptor grounds to the west for 5 horns: Raptor Horns
+  complete 865 @57,52 map 1413
+
+step
+  tip Collect the Stolen Silver from the same raptors: Stolen Silver
+  collect 5061 quest 3281.1
+
+step
+  when level<18
+  tip Go back to Ratchet and turn in Southsea Freebooters
+  turnin 887 npc 3391
+
+step
+  when level>=18
+  when complete 887
+  tip Go back to Ratchet and turn in Southsea Freebooters
+  turnin 887 npc 3391
+
+step
+  when level<20
+  turnin 895 npc 3391
+
+step
+  when level>=20
+  when complete 895
+  turnin 895 npc 3391
+
+step
+  turnin 97253 npc 7161
+
+step
+  tip Turn in to Mebok: Raptor Horns — Dungeon prereq (Wailing Caverns)
+  turnin 865 npc 3446
+
+step
+  tip Then accept (or get it shared): Smart Drinks (Wailing Caverns quest)
+  accept 1491 npc 3446
+
+step
+  when level<19
+  tip Go back to the Crossroads and turn in to Sergra: Prowlers of the Barrens (don't take Echeyakee)
+  turnin 903 npc 3338
+
+step
+  when level>=19
+  when complete 903
+  tip Go back to the Crossroads and turn in to Sergra: Prowlers of the Barrens (don't take Echeyakee)
+  turnin 903 npc 3338
+
+step
+  tip Turn in to Gazrog: Stolen Silver
+  turnin 3281 npc 3464
+
+step
+  tip Follow the main road south from the Crossroads to Thunder Bluff (if you have the flight path, Thunder Bluff fly there).
+  fly "Thunder Bluff"
+
+step
+  tip Turn in to Arch Druid Hamuul Runetotem on the Elder Rise: Hamuul Runetotem — Dungeon prereq (Wailing Caverns)
+  turnin 1489 npc 5769
+
+step
+  tip Then accept Nara Wildmane — Dungeon prereq (Wailing Caverns)
+  accept 1490 npc 5769
+
+step
+  tip Turn in to Nara Wildmane: Nara Wildmane — Dungeon prereq (Wailing Caverns)
+  turnin 1490 npc 5770
+
+step
+  tip Then accept Leaders of the Fang (Wailing Caverns quest)
+  accept 914 npc 5770
+
+step
+  tip Accept from Apothecary Zamah in the Pools of Vision (or get it shared): Serpentbloom (Wailing Caverns quest)
+  accept 962 npc 3419
+
+step
+  tip Discover the Thunder Bluff flight path at the flight master.
+  getfp "Thunder Bluff"
+
+step
+  tip == Step 6: Wailing Caverns == The Crossroads Fly to the Crossroads.
+  note "*Spells* Train your new spells up to level 19 at your class trainer."
+  fly "Crossroads"
+
+step
+  along
+  level 18 -- You need to be level 18. If not, kill centaurs on the way to Verog the Dervish below.
+
+step
+  tip Centaur camp next to the Stagnant Oasis to the south: kill centaurs until you hear 'I am here!', then kill Verog the Dervish: Verog the Dervish
+  note "* Wailing Caverns — Lv19.2 -> about Lv20.9 · recommended Lv16-17 (healer 16 · tank/DPS 17)"
+  complete 851 @53,41.6 map 1413
+
+step
+  tip Go back north to Regthar Deathgate and turn in: Verog the Dervish
+  turnin 851 npc 3389
+
+step
+  tip Then accept from Regthar: Hezrul Bloodmark
+  accept 852 npc 3389
+
+step
+  tip Hezrul Bloodmark near the Wailing Caverns entrance (2 escorts, group recommended): Hezrul Bloodmark
+  complete 852 @46,37.6 map 1413
+
+step
+  tip Accept from Nalpak above the entrance (or get it shared): Deviate Hides
+  accept 1486 npc 5767
+
+step
+  tip Accept from Ebru (or get it shared): Deviate Eradication
+  accept 1487 npc 5768
+
+step
+  tip Enter Wailing Caverns
+  goto 46,36.4 r 20 map 1413
+
+step
+  tip 20 Deviate Hides: Deviate Hides
+  collect 6443 quest 1486.1
+
+step
+  tip 7 each of Deviate Ravagers, Vipers, Shamblers and Dreadfangs: Deviate Eradication
+  complete 1487
+
+step
+  tip Mad Magglish's wine: Trouble at the Docks
+  collect 5334 quest 959.1
+
+step
+  tip 10 Serpentbloom: Serpentbloom
+  collect 5339 quest 962.1
+
+step
+  tip Gems from the 4 Fang leaders (Cobrahn, Anacondra, Pythas, Serpentis): Leaders of the Fang
+  complete 914
+
+step
+  tip 6 Wailing Essences: Smart Drinks
+  collect 6464 quest 1491.1
+
+step
+  tip Accept from the 'Glowing Shard' dropped by the final boss Mutanus: The Glowing Shard
+  accept 6981 item 10441
+
+step
+  tip Turn in to Nalpak: Deviate Hides
+  turnin 1486 npc 5767
+
+step
+  turnin 1487 npc 5768
+
+step
+  tip Turn in to Falla Sagewind on the hill above the cave: The Glowing Shard
+  turnin 6981 npc 8418
+
+step
+  tip Then accept In Nightmares (turned in to Hamuul Runetotem in Thunder Bluff)
+  accept 3369 npc 8418
+
+step
+  tip Fill up the 15 Centaur Bracers (centaurs around Verog and Hezrul): Centaur Bracers
+  collect 5030 quest 855.1
+
+step
+  tip Go north and turn in to Regthar: Hezrul Bloodmark
+  turnin 852 npc 3389
+
+step
+  tip Turn in to Regthar: Centaur Bracers
+  turnin 855 npc 3389
+
+step
+  tip Run to the Crossroads and Ratchet fly to Ratchet.
+  fly "Ratchet"
+
+step
+  tip Turn in to Mebok Mizzyrix: Smart Drinks
+  turnin 1491 npc 3446
+
+step
+  tip Turn in to Crane Operator Bigglefuzz: Trouble at the Docks
+  turnin 959 npc 3665
+
+step
+  tip Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz
+  accept 92706 object 3972 optional -- Click the Wanted board in Ratchet to accept: WANTED: Bruuz — group quest (new in Forever · elite 20). Best done with your Wailing Caverns group.
+  complete 92706 @64.3,41.7 map 1413
+
+step
+  tip Turn in to Gazlowe: WANTED: Bruuz
+  turnin 92706 npc 3391
+
+step
+  tip Ratchet Fly to Ratchet (if you don't have the flight path, run).
+  note "! \"Leaders of the Fang\", \"Serpentbloom\" and \"In Nightmares\" are turned in when the route passes through Thunder Bluff (keep them)."
+  note "Sell junk to Halija and repair your gear."
+  fly "Ratchet"
+
+step
+  only Warrior,Tauren
+  tip Turn in to Uzzek at Far Watch Post: Veteran Uzzek
+  turnin 1505 npc 5810
+
+step
+  only Shaman,Tauren
+  when onquest 2984
+  tip Turn in to Kranal Fiss: Call of Fire
+  turnin 2984 npc 5907
+
+step
+  tip Go to this point and discover the Ratchet flight path.
+  getfp "Ratchet"
+
+step
+  turnin 1492 npc 3453
+
+step
+  tip The lions are only found in the grass. The Crossroads Fly to the Crossroads.
+  fly "Crossroads"
+  note "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)"
+
+step
+  when level<24
+  accept 4921 npc 3432
+
+step
+  only Tauren,Skyborne
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  only Undead,Orc,Troll
+  when level<24
+  tip Follow the main road south toward Camp Taurajo. Find the clue at this point: Lost in Battle
+  complete 4921 @49,50 map 1413
+
+step
+  when complete 914
+  turnin 914 npc 5770
+
+step
+  when complete 962
+  turnin 962 npc 3419
+
+step
+  when onquest 3369
+  tip Turn in to Hamuul Runetotem on the Elder Rise: In Nightmares
+  turnin 3369 npc 5769
+
+step
+  only Priest,Warlock
+  tip (Option) Discover the flight path at Zoram'gar Outpost.
+  note "! (Priest/Warlock option) If a high-level player can help you, run Blackfathom Deeps now for the \"Blackfathom Villainy\" reward wand *Gravestone Scepter*. It makes questing up to 24-25 much faster. With no helper, skip the (Option) steps below."
+  note "(Option) Go with your helper to Zoram'gar Outpost on the west coast of Ashenvale (no flight path yet: from the Crossroads take the north road into Ashenvale and head to the west coast)."
+  getfp "Zoram'gar Outpost"
+
+step
+  only Priest,Warlock
+  along
+  complete 6561 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
+
+step
+  only Priest,Warlock
+  tip (Option) Leave the dungeon and fly to Thunder Bluff.
+  note "(Option) Enter Blackfathom Deeps on the north coast (underwater passage). Only the quest below this time - the other Blackfathom quests are for your 24-25 visit."
+  accept 6561 optional -- (Option) Accept from Argent Guard Thaelrid: Blackfathom Villainy
+  fly "Thunder Bluff"
+
+step
+  only Priest,Warlock
+  when complete 6561
+  tip (Option) Turn in to Bashana Runetotem on the Elder Rise and pick *Gravestone Scepter* (wand) as your reward: Blackfathom Villainy — *Reward
+  turnin 6561 npc 9087
+
+step
+  only Tauren,Skyborne
+  tip Camp Taurajo Fly to Camp Taurajo.
+  fly "Camp Taurajo"
+
+step
+  only Tauren,Skyborne
+  when level<24
+  tip Find the clue at this point: Lost in Battle
+  complete 4921 @49,50 map 1413
+
+step
+  only Undead,Orc,Troll
+  tip Discover the Thunder Bluff flight path.
+  getfp "Thunder Bluff"
+
+step
+  only Undead,Orc,Troll
+  tip The Crossroads Fly to the Crossroads.
+  fly "Crossroads"
+
+step
+  only Tauren,Skyborne
+  tip Run to the Crossroads and turn in Lost in Battle
+  turnin 4921 npc 3432
+
+step
+  only Undead,Orc,Troll
+  turnin 4921 npc 3432
+
+step
+  tip Orgrimmar Fly to Orgrimmar.
+  fly "Orgrimmar"
+
+step
+  tip Leave Orgrimmar and go to the zeppelin tower. Take the zeppelin to Undercity. Orgrimmar Fly to Orgrimmar.
+  note "*Spells*: this note means you can train new spells. Save gold for your level 40 mount, though — only train the important spells. Head to Orgrimmar. (Keep your Hearthstone at the Crossroads — you hearth there after Shadowfang Keep.)"
+  fly "Orgrimmar"
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip Undercity Fly to Undercity (if you don't have the flight path, run).
+  fly "Undercity"
+
+step
+  tip Discover the Undercity flight path.
+  getfp "Undercity"
+
+step
+  tip Accept from Keeper Bel'dugur in the Apothecarium (or get it shared): The Book of Ur
+  accept 1013 npc 2934
+
+step
+  tip == Undercity new quests (optional) == Leave Undercity and head to Silverpine Forest. Discover the The Sepulcher flight path.
+  getfp "The Sepulcher"
+
+step
+  tip Turn in to Tabitha Heartweaver: A Frightened Request (the quest from the Ruins of Lordaeron)
+  turnin 92401 npc 250686
+
+step
+  when level<25
+  accept 516 npc 2121
+
+step
+  only Orc,Undead,Tauren
+  when level<24
+  tip Accept Watching the Roads (Forever new)
+  accept 95981 npc 2121
+
+step
+  tip Accept from High Executor Hadrec (or get it shared): Deathstalkers in Shadowfang
+  accept 1098 npc 1952
+
+step
+  tip Accept from Dalar Dawnweaver (or get it shared): Arugal Must Die
+  accept 1014 npc 1938
+
+step
+  tip Head in this direction.
+  goto 58,77 r 20 map 1421
+
+step
+  tip At this point:
+  goto 60,74 r 20 map 1421
+
+step
+  when level<25
+  tip Kill the Ravenclaw mobs inside the cave: Beren's Peril
+  kill 1974 quest 516.1
+  kill 1973 quest 516.2
+
+step
+  only Orc,Undead,Tauren
+  when level<24
+  tip Kill 8 Dalaran Conjurers and 8 Watchers south of the cave: Watching the Roads
+  complete 95981 @57,77.4 map 1421
+
+step
+  along
+  level 22 -- You need to be level 22 (healers can go at 21). If not, grind a little near the keep entrance.
+
+step
+  tip Enter Shadowfang Keep to the south
+  note "* Shadowfang Keep — Lv22.0 -> about Lv23.1 · recommended Lv21-22 (healer 21 · tank/DPS 22)"
+  goto 44.8,67.8 r 20 map 1421
+
+step
+  complete 1098 -- Find Deathstalkers Adamant and Vincent: Deathstalkers in Shadowfang
+  complete 1013 -- The Book of Ur (library): The Book of Ur
+  complete 1014 -- Head of the final boss, Archmage Arugal: Arugal Must Die
+  turnin 1098 -- Turn in to Deathstalker Vincent inside the dungeon: Deathstalkers in Shadowfang
+
+step
+  tip Turn in to Dalar Dawnweaver at the Sepulcher: Arugal Must Die
+  turnin 1014 npc 1938
+
+step
+  when level<25
+  turnin 516 npc 2121
+
+step
+  when level>=25
+  when complete 516
+  turnin 516 npc 2121
+
+step
+  only Orc,Undead,Tauren
+  when level<24
+  turnin 95981 npc 2121
+
+step
+  only Orc,Undead,Tauren
+  when level>=24
+  when complete 95981
+  turnin 95981 npc 2121
+
+step
+  tip == Shadowfang Keep turn-ins == Undercity Fly to Undercity (if you don't have the flight path, run).
+  fly "Undercity"
+  note ">> Next dungeon: Blackfathom Deeps (at about Lv24) — about Lv23.1 now. You don't have the Zoram'gar flight path yet, so walk there through Stonetalon Mountains via Sun Rock Retreat, doing the quests on the way."
+  note "! Your Hearthstone should be set to the Crossroads. If not, fly or run to the Crossroads instead."
+
+step
+  when complete 1013
+  turnin 1013 npc 2934
+
+step
+  hearth "The Crossroads"
+
+step
+  tip Ratchet Fly to Ratchet.
+  note "The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity, then go to the Crossroads)."
+  fly "Ratchet"
+
+step
+  when level<24
+  tip Accept from Mebok Mizzyrix: Deepmoss Spider Eggs
+  accept 1069 npc 3446
+
+step
+  tip The Crossroads Fly to the Crossroads.
+  fly "Crossroads"
+
+step
+  tip Go to this point.
+  goto 70,87 r 20 map 1442
+
+step
+  tip Wait for Kaya Flathoof to appear.
+  goto 73.4,85.6 r 20 map 1442
+
+step
+  tip Head into Stonetalon Mountains. Turn left at this point to get up the hill.
+  goto 69,88.6 r 20 map 1442
+
+step
+  when level<23
+  accept 6461 npc 12816
+
+step
+  tip Go to the Webwinder Path at this point.
+  goto 53,76 r 20 map 1442
+
+step
+  when level<23
+  tip Kill spiders: Blood Feeders
+  kill 4005 quest 6461.1
+  kill 4007 quest 6461.2
+
+step
+  when level<24
+  tip Pick up the eggs: Deepmoss Spider Eggs
+  collect 5570 quest 1069.1
+
+step
+  when level<23
+  tip Go back to Malaka'jin and turn in Blood Feeders
+  turnin 6461 npc 12816
+
+step
+  when level>=23
+  when complete 6461
+  tip Go back to Malaka'jin and turn in Blood Feeders
+  turnin 6461 npc 12816
+
+step
+  tip Go to this point and head west to reach Sun Rock Retreat.
+  goto 52,60 r 20 map 1442
+
+step
+  tip Discover the Sun Rock Retreat flight path.
+  accept 6562 npc 11862 optional -- (Optional) Accept from Tsunaman: Trouble in the Deeps — a breadcrumb to Zoram'gar. You can get every Blackfathom quest without it.
+  getfp "Sun Rock Retreat"
+
+step
+  tip Discover the Zoram'gar Outpost flight path.
+  note "From Sun Rock Retreat, follow the road north out of Stonetalon Mountains to Zoram'gar Outpost on the west coast of Ashenvale (on foot if you don't have the Zoram'gar flight path yet)."
+  getfp "Zoram'gar Outpost"
+  note "! After Shadowfang you are about level 23. Reach 24 with the Zoram Strand naga and the sapphires in the Blackfathom entrance cave (party recommended), then go into Blackfathom Deeps."
+
+step
+  when onquest 6562
+  tip (Optional) Turn in to Je'neu Sancrea at Zoram'gar Outpost: Trouble in the Deeps
+  turnin 6562 npc 12736
+
+step
+  tip Accept (or get it shared): The Essence of Aku'Mai
+  accept 6563 npc 12736
+
+step
+  tip Accept (or get it shared): Amongst The Ruins
+  accept 6921 npc 12736
+
+step
+  tip Accept from Marukai at Zoram'gar Outpost: Naga at the Zoram Strand
+  accept 6442 npc 12719
+
+step
+  tip Kill Wrathtail naga on the coast north of Zoram'gar for 20 heads: Naga at the Zoram Strand
+  complete 6442 @13,24 map 1440
+
+step
+  tip Turn in to Marukai: Naga at the Zoram Strand
+  turnin 6442 npc 12719
+
+step
+  tip (party recommended) Mine 20 Sapphires of Aku'Mai from the walls of the Blackfathom entrance cave on the north coast (before the dungeon portal): The Essence of Aku'Mai
+  complete 6563 @13.5,12.5 map 1440
+
+step
+  turnin 6563 npc 12736
+
+step
+  along
+  level 24 -- You need to be level 24 (tanks and DPS are better at 25). If not, grind a little around Zoram'gar.
+
+step
+  tip Enter Blackfathom Deeps on the north coast (underwater passage)
+  note "* Blackfathom Deeps — Lv24.0 -> about Lv25.3 · recommended Lv24-25 (healer 24 · tank/DPS 25)"
+  goto 14.2,14 r 20 map 1440
+
+step
+  accept 6564 item 16790 -- Pick up the Damp Note near the entrance to accept Allegiance to the Old Gods
+  accept 6561 -- Accept from Argent Guard Thaelrid: Blackfathom Villainy
+  complete 6921 -- Fathom Core: Amongst The Ruins
+  accept 6922 item 16782 -- Accept from Lord Aquanis's Strange Water Globe (Fathom Core -> altar): Baron Aquanis
+  complete 6561 -- Head of Twilight Lord Kelris: Blackfathom Villainy
+
+step
+  tip Turn in to Je'neu Sancrea at Zoram'gar Outpost: Amongst The Ruins
+  turnin 6921 npc 12736
+
+step
+  turnin 6564 npc 12736
+
+step
+  turnin 6922 npc 12736
+  note "That's the end of 12-25. Move on to the 25-30 guide (Excavation Site, Dalaran)."

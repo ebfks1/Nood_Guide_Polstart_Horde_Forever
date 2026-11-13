@@ -1,0 +1,918 @@
+guide nood-ko/02-mulgore
+title 1-12 멀고어 (타우렌) Nood
+levels 1-12
+zone map 1412
+faction Horde
+race Tauren
+folder Nood 가이드
+why 1~12 시작 지역 가이드입니다. 좌표는 포에버 클라이언트 자료, 퀘스트는 와우헤드 포에버 기준으로 맞췄고, 포에버 신규 퀘스트와 신규 직업 조합(오크 마법사·트롤 흑마법사·언데드 성기사·스카이본)을 넣었으며, 동선에서 지나가는 던전 선행 퀘스트와 선택형 던전 단계(★)를 추가했습니다. 던전·선택 표시가 붙은 단계는 건너뛰어도 진행이 멈추지 않습니다.
+coords era
+next nood-ko/05-12-25
+# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  note "※ 12레벨이 되면 이 가이드를 여기서 마치고 12-25 Nood 가이드로 넘어가는 것을 권장합니다. Polestar 가이드 메뉴에서 \"12-25 Nood\"를 고르세요. 여기 남긴 퀘스트의 평판은 받지 못합니다."
+  accept 747 npc 2980
+
+step
+  accept 752 npc 2981
+
+step
+  complete 747 @50.2,79.4 map 1412
+
+step
+  along
+  level 2 -- 레벨 2가 되어야 합니다. 아직 아니라면 사냥하세요.
+
+step
+  turnin 752 npc 2991
+
+step
+  accept 753 npc 2991
+
+step
+  tip 우물에 있는 물병을 획득하세요: 작은 부탁
+  complete 753 @48.9,81.1 map 1412
+
+step
+  only Druid
+  tip 무단 선그레인에게 맑은 샘물을 5개 구매하세요.
+  goto 44.3,78.2 r 20 map 1412
+
+step
+  note "무단 선그레인에게 잡템을 판매하세요."
+  turnin 747 npc 2980
+
+step
+  accept 750 npc 2980
+
+step
+  only Druid
+  accept 3094 npc 2980
+
+step
+  only Hunter
+  accept 3092 npc 2980
+
+step
+  only Shaman
+  accept 3093 npc 2980
+
+step
+  only Warrior
+  accept 3091 npc 2980
+
+step
+  turnin 753 npc 2981
+
+step
+  accept 755 npc 2981
+
+step
+  only Druid
+  turnin 3094 npc 3060
+
+step
+  only Hunter
+  turnin 3092 npc 3061
+
+step
+  only Shaman
+  turnin 3093 npc 3062
+
+step
+  only Warrior
+  turnin 3091 npc 3059
+
+step
+  note "가트 미스트러너에게 스킬을 습득하세요." only Druid
+  note "랑카 파샷에게 스킬을 습득하세요." only Hunter
+  note "카우니 소프트브리즈에게 소형 탄환을 구매하세요." only Hunter
+  note "밀라 던스트라이더를 방문해 스킬을 습득하세요." only Shaman
+  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  complete 750 @45.8,90.5 map 1412
+
+step
+  along
+  level 3.64 -- 레벨 3에 경험치 900점까지 사냥하세요.
+
+step
+  note "레벨이 모자라 아직 못 받는 퀘스트: 대지의 부름(4레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Shaman
+  accept 1656 npc 6775
+
+step
+  turnin 755 npc 2982
+
+step
+  accept 757 npc 2982
+
+step
+  only Tauren
+  tip 퀘스트 수락: 안쉬와 무샤의 은총 (포에버 신규)
+  accept 95805 npc 2982
+
+step
+  only Tauren
+  tip 10분 안에 남동쪽 언덕의 의식의 불로 가서 향을 바치세요: 안쉬와 무샤의 은총
+  turnin 95805 object 660739
+
+step
+  turnin 750 npc 2980
+
+step
+  accept 780 npc 2980
+
+step
+  along
+  level 4 -- 레벨 4가 되어야 합니다. 아직 아니라면 사냥하세요.
+
+step
+  accept 3376 npc 3209
+
+step
+  only Shaman
+  note "밀라 던스트라이더를 방문해 스킬을 습득하세요."
+  accept 1519 npc 5888
+
+step
+  only Shaman
+  complete 1519 @61.3,78.8 map 1412
+
+step
+  note "카우니 소프트브리즈에게 잡템을 판매하세요."
+  note "가트 미스트러너를 방문해 스킬을 습득하세요." only Druid
+  note "랑카 파샷을 방문해 스킬을 습득하세요." only Hunter
+  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  complete 3376 @60.5,77.5 map 1412
+
+step
+  tip 뾰족털일족의 작전도를 클릭해 퀘스트 수락: 나라체 야영지에 대한 공격
+  accept 781 @59.8,82.2 map 1412
+
+step
+  along
+  level 5 -- 레벨 5가 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  complete 757 @60.4,78.6 map 1412
+
+step
+  complete 780 @53.5,83.2 map 1412
+
+step
+  along
+  level 5.31 -- 레벨 5에 경험치 865점까지 사냥하세요.
+
+step
+  note "무단 선그레인을 방문하여 잡템을 판매하세요."
+  turnin 780 npc 2980
+
+step
+  turnin 3376 npc 3209
+
+step
+  only Tauren
+  tip 퀘스트 수락: 모험가 (포에버 신규)
+  accept 96659 npc 2981
+
+step
+  only Shaman
+  turnin 1519 npc 5888
+
+step
+  only Shaman
+  accept 1520 npc 5888
+
+step
+  turnin 757 npc 2981
+
+step
+  accept 763 npc 2981
+
+step
+  turnin 781 npc 2981
+
+step
+  along
+  level 6 -- 레벨 6이 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  only Shaman
+  note "밀라 던스트라이더를 방문해 스킬을 습득하세요."
+  turnin 1520 npc 5891
+
+step
+  only Shaman
+  accept 1521 npc 5891
+
+step
+  only Shaman
+  turnin 1521 npc 5888
+
+step
+  only Tauren
+  tip 길가 모험가 야영지의 카가 와일드후프에게 퀘스트 완료: 모험가
+  turnin 96659 npc 265810
+
+step
+  only Tauren
+  accept 96605 npc 265810
+
+step
+  only Tauren
+  tip 모닥불 옆에서 /앉기 를 입력해 '휴식 강화' 효과를 받으세요: 드넓은 야외
+  complete 96605 @46.2,67.3 map 1412
+
+step
+  only Tauren
+  turnin 96605 npc 265810
+
+step
+  only Tauren
+  tip 퀘스트 수락: 야영 입문: 요리 (포에버 신규)
+  accept 96661 npc 265810
+
+step
+  note "가트 미스트러너를 방문해 스킬을 습득하세요." only Druid
+  note "랑카 파샷을 방문해 스킬을 습득하세요." only Hunter
+  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  accept 743 npc 2985
+
+step
+  only Tauren
+  accept 748 npc 2948
+
+step
+  accept 761 npc 2947
+
+step
+  only Tauren
+  tip 용사 와일드러너에게 퀘스트 수락: 성큼걸이 정찰병 말라 (포에버 신규)
+  accept 99079 npc 3222
+
+step
+  tip 나라체 야영지 외곽의 길을 따라가세요.
+  goto 46.6,63.4 r 20 map 1412
+
+step
+  turnin 763 npc 2993
+
+step
+  accept 745 npc 2993
+
+step
+  accept 746 npc 2993
+
+step
+  accept 767 npc 2993
+
+step
+  turnin 1656 npc 6747
+
+step
+  only Hunter
+  tip 케나 호크스아이에게 *화려한 나팔총*을 구매하세요.
+  goto 45,62 r 20 map 1412
+
+step
+  only Hunter
+  tip 케나 호크스아이에게 소형 탄환을 구매하세요.
+  goto 45,62 r 20 map 1412
+
+step
+  tip 요 샤프메인에게 퀘스트 수락: 차쿠야크 (포에버 신규)
+  accept 96130 npc 3065
+
+step
+  tip 아합 휘트후프에게 퀘스트 수락: Kyle's Gone Missing! (포에버 신규)
+  accept 99411 npc 277182
+
+step
+  accept 766 npc 3055
+
+step
+  turnin 767 npc 3054
+
+step
+  accept 771 npc 3054
+
+step
+  tip 마을 남쪽 나무 아래 바닥에 떨어진 호박도토리를 주우세요 (2개): 예언의 의식
+  note "레벨이 모자라 아직 못 받는 퀘스트: 야수 길들이기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Hunter
+  goto 47.7,66.9 r 20 map 1412
+
+step
+  tip 모자라면 남동쪽 나무 아래에서 더 주우세요: 예언의 의식
+  goto 50.4,66.5 r 20 map 1412
+
+step
+  tip 그래도 모자라면 더 남쪽 나무 아래에서 주우세요: 예언의 의식
+  goto 49.7,72.5 r 20 map 1412
+
+step
+  tip 바로 서쪽의 차쿠야크를 처치하고 가죽을 얻으세요: 차쿠야크
+  complete 96130 @39.4,66 map 1412
+
+step
+  only Tauren
+  tip 서쪽 창백갈기 바위의 페리스 스톰후프에게 퀘스트 수락: The Longwalkers (포에버 신규)
+  accept 98430 npc 272203
+
+step
+  only Tauren
+  tip 페리스를 바위 밖까지 호위하세요: The Longwalkers
+  complete 98430 @37.1,64.8 map 1412
+
+step
+  only Tauren
+  complete 748 @49.4,68.8 map 1412
+
+step
+  along
+  level 7 -- 레벨 7이 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  only Shaman,Druid
+  tip 시원한 우유를 구매하세요.
+  goto 46.8,64.5 r 20 map 1412
+
+step
+  only Tauren
+  turnin 748 npc 2948
+
+step
+  only Tauren
+  accept 754 npc 2948
+
+step
+  only Druid
+  tip 마흐노트 러프운드에게 *보행용 지팡이*를 구매하세요.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  only Shaman
+  tip 마흐노트 러프운드에게 *보행용 지팡이*를 구매하세요.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  only Warrior,Tauren
+  tip 마흐노트 러프운드에게 *나무 망치*를 구매하세요.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  tip 호박도토리가 아직 모자라면 이 근처 나무 아래에서 더 주우세요: 예언의 의식
+  note "쟈우나 오트윈드를 방문하여 잡템을 판매하세요."
+  goto 50.4,66.5 r 20 map 1412
+
+step
+  note "이 근처 다 큰 초원타조를 잡아 \"연한 초원타조 고기\" 1개를 챙기세요 (카일에게 먹일 것)."
+  complete 745 @36.5,65.1 map 1412
+
+step
+  tip 남동쪽 우물 주변 바닥의 우물돌 2개를 주우세요: 예언의 의식
+  goto 51.9,68.5 r 20 map 1412
+
+step
+  only Tauren
+  complete 754 @51.9,68.5 map 1412
+
+step
+  only Tauren
+  tip 동쪽 언덕의 말라 롱윈드에게 퀘스트 완료: 성큼걸이 정찰병 말라
+  turnin 99079 npc 275789
+
+step
+  only Tauren
+  accept 99081 npc 275789
+
+step
+  accept 749 npc 2988
+
+step
+  complete 761 @49.8,23.7 map 1412
+
+step
+  complete 771 @51.6,68.1 map 1412
+
+step
+  turnin 749 object 2908
+
+step
+  accept 751 object 2908
+
+step
+  along
+  level 8 -- 레벨 8이 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  turnin 751 npc 2988
+
+step
+  accept 764 npc 2988
+
+step
+  accept 765 npc 2988
+
+step
+  complete 766 @51.5,50.9 map 1412
+
+step
+  tip 크랑 스톤후프에게 퀘스트 수락: Sparring Match (포에버 신규)
+  accept 99108 npc 3063
+
+step
+  tip 바로 옆 초보 전사에게 말을 걸어 3번 이기세요 (다른 플레이어와 결투해 이겨도 됩니다): Sparring Match
+  complete 99108 @48.8,63.7 map 1412
+
+step
+  tip 크랑 스톤후프에게 퀘스트 완료: Sparring Match
+  turnin 99108 npc 3063
+
+step
+  only Tauren
+  tip 용사 와일드러너에게 퀘스트 완료: 암울한 소식
+  turnin 99081 npc 3222
+
+step
+  only Tauren
+  accept 99101 npc 3222
+
+step
+  only Tauren
+  tip 바인 블러드후프에게 퀘스트 완료: Our Ancient Enemy
+  turnin 99101 npc 2993
+
+step
+  only Tauren
+  accept 99080 npc 2993
+
+step
+  only Tauren
+  turnin 754 npc 2948
+
+step
+  only Tauren
+  accept 756 npc 2948
+
+step
+  note "크랑 스톤후프를 방문해 스킬을 습득하세요." only Warrior
+  turnin 761 npc 2947
+
+step
+  note "제니아 룬토템을 방문해 스킬을 습득하세요." only Druid
+  note "나름 스카이체이서를 방문해 스킬을 습득하세요." only Shaman
+  turnin 745 npc 2993
+
+step
+  only Shaman,Druid
+  tip 마그린 리버메인에게 시원한 우유를 구매하세요.
+  goto 46,63.8 r 20 map 1412
+
+step
+  only Tauren
+  tip 요리 전문가 파이얼 사일런트스트라이드에게 요리를 배우고 퀘스트 완료: 야영 입문: 요리
+  turnin 96661 npc 3067
+
+step
+  note "비라 영후프를 방문해 응급치료를 습득하세요."
+  note "전문기술 습득 가능: 무두질을 습득하세요."
+  note "전문기술 습득 가능: 가죽세공을 습득하세요."
+  note "잡템을 판매하세요."
+  turnin 766 npc 3055
+
+step
+  tip 블러드후프 마을 둘레를 시계 방향으로 뛰어다니는 광분한 카일에게 연한 초원타조 고기를 사용하세요: Kyle's Gone Missing!
+  complete 99411 @46.4,61.7 map 1412
+
+step
+  tip 아합 휘트후프에게 퀘스트 완료: Kyle's Gone Missing!
+  turnin 99411 npc 277182
+
+step
+  tip 요 샤프메인에게 퀘스트 완료: 차쿠야크
+  turnin 96130 npc 3065
+
+step
+  turnin 771 npc 3054
+
+step
+  accept 772 npc 3054
+
+step
+  note "레벨이 모자라 아직 못 받는 퀘스트: 사냥꾼의 길(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다."
+  note "레벨이 모자라 아직 못 받는 퀘스트: 부름에 응하기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Druid
+  note "요 샤프메인을 방문해 스킬을 습득하세요." only Hunter
+  turnin 772 npc 2984
+
+step
+  accept 773 npc 2984
+
+step
+  tip 이동 중 유령울음늑대를 처치하여 *악마의 흔적이 남은 망토*를 획득하세요. 망토를 클릭하여 퀘스트 수락: 악마의 흔적이 남은 가죽망토
+  accept 770 @34.7,34.2 map 1412
+
+step
+  complete 743 @34,47.5 map 1412
+
+step
+  along
+  level 9 -- 레벨 9가 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  complete 746 @33.1,54.8 map 1412
+
+step
+  only Tauren
+  complete 756 @55.6,53.7 map 1412
+
+step
+  note "한 롱캐스트를 방문해 잡템을 판매하세요."
+  turnin 770 npc 3052
+
+step
+  turnin 746 npc 2993
+
+step
+  turnin 743 npc 2985
+
+step
+  only Tauren
+  turnin 756 npc 2948
+
+step
+  only Tauren
+  accept 758 npc 2948
+
+step
+  only Tauren
+  tip 마을 북쪽 썬더혼 우물에서 완수하세요: 썬더혼 정화
+  complete 758 @44.2,51 map 1412
+
+step
+  along
+  level 9.89 -- 레벨 9에 XP5800이 될 때까지 사냥하세요.
+
+step
+  only Tauren
+  turnin 758 npc 2948
+
+step
+  only Tauren
+  accept 759 npc 2948
+
+step
+  along
+  level 10 -- 레벨 10이 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  accept 861 npc 3052
+
+step
+  only Druid
+  accept 5928 npc 3064
+
+step
+  only Hunter
+  tip 케나 호크스아이에게 중형 탄환을 구매하세요.
+  goto 45,62 r 20 map 1412
+
+step
+  only Hunter
+  accept 6061 npc 3065
+
+step
+  only Hunter
+  note "요 샤프메인에게 스킬을 습득하세요."
+  complete 6061 @41,59.6 map 1412
+
+step
+  only Hunter
+  turnin 6061 npc 3065
+
+step
+  only Hunter
+  accept 6087 npc 3065
+
+step
+  only Hunter
+  complete 6087 @47.3,51 map 1412
+
+step
+  only Hunter
+  turnin 6087 npc 3065
+
+step
+  only Hunter
+  accept 6088 npc 3065
+
+step
+  only Hunter
+  complete 6088 @47.2,41.3 map 1412
+
+step
+  only Hunter
+  turnin 6088 npc 3065
+
+step
+  only Hunter
+  accept 6089 npc 3065
+
+step
+  only Hunter
+  accept 744 npc 2987
+
+step
+  only Hunter
+  turnin 6089 npc 3039
+
+step
+  accept 1505 npc 3063 optional only Warrior
+  note "크랑 스톤후프에게 스킬을 습득하세요." only Warrior
+  note "제니아 룬토템에게 스킬을 습득하세요." only Druid
+  accept 2984 npc 3066 optional only Shaman
+  note "나름 스카이체이서에게 스킬을 습득하세요." only Shaman
+  accept 833 npc 3233
+
+step
+  turnin 773 npc 2994
+
+step
+  accept 775 npc 2994
+
+step
+  complete 833 @58,29.9 map 1412
+
+step
+  turnin 833 npc 3233
+
+step
+  only Tauren
+  complete 759 @63.2,66.5 map 1412
+
+step
+  complete 861 @44.3,27.7 map 1412
+
+step
+  complete 764 @58.8,54.1 map 1412
+
+step
+  tip 동굴 입구에서 동쪽으로 쭉 이동하세요. 목재를 달고 있는 크레인 옆에 작은 방이 있습니다. 피즈스프로켓을 처치하세요: 감독관 피즈스프로켓
+  complete 765 @61.4,49.3 map 1412
+
+step
+  along
+  complete 98424 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
+
+step
+  only Tauren
+  tip 갈라크 켄타우로스 6·정찰꾼 4를 처치하고 약탈자 헤라크의 머리를 얻으세요: 몰아내기
+  complete 99080 @64,61.6 map 1412
+
+step
+  accept 98424 @61.4,49.3 map 1412 optional -- 광산에서 피즈스프로켓의 문서를 주우면 수락: 피즈스프로켓의 기록
+  turnin 764 npc 2988
+
+step
+  when complete 98424
+  tip 모린 클라우드스토커에게: 피즈스프로켓의 기록
+  turnin 98424 npc 2988
+
+step
+  turnin 765 npc 2988
+
+step
+  only Tauren
+  turnin 759 npc 2948
+
+step
+  only Tauren
+  accept 760 npc 2948
+
+step
+  only Tauren
+  tip 바인 블러드후프에게 퀘스트 완료: 몰아내기
+  turnin 99080 npc 2993
+
+step
+  only Tauren
+  accept 99082 npc 2993
+
+step
+  only Warrior,Warlock,Rogue,Shaman,Druid,Mage,Priest
+  accept 744 npc 2987
+
+step
+  only Hunter
+  tip 안세크화를 방문해 무기 숙련을 습득하세요.
+  goto 40.9,62.7 r 20 map 1456
+
+step
+  only Warrior
+  tip 안세크화를 방문해 필요한 무기 숙련을 습득하세요.
+  goto 40.9,62.7 r 20 map 1456
+
+step
+  tip 나알 미스트러너에게 부드러운 양념을 구매하세요.
+  note "진 스톤후프를 방문해 수리하세요."
+  note "나알 미스트러너를 방문해 잡템을 판매하세요."
+  goto 51,52.5 r 20 map 1456
+
+step
+  turnin 775 npc 3057
+
+step
+  when complete 768
+  tip 얇은 가죽 12개를 건네고 퀘스트 완료: 가죽 수집
+  turnin 768 npc 3050
+
+step
+  when complete 769
+  tip 바로 퀘스트 완료: 코도 가죽 자루
+  turnin 769 npc 3050
+
+step
+  only Tauren
+  turnin 98430 npc 3057
+
+step
+  accept 768 npc 3050 optional -- 무두질을 배웠고 *얇은 가죽* 12개(경매장)가 있다면 베렌 톨스트라이더에게 퀘스트 수락: 가죽 수집
+  accept 769 npc 3050 optional -- *얇은 가죽* 4개·*굵은 실타래* 4개(잡화 상인)가 더 있다면 이어서 퀘스트 수락: 코도 가죽 자루
+  accept 776 npc 3057
+
+step
+  only Tauren
+  tip 케른 블러드후프에게 퀘스트 완료: The High Chieftain
+  turnin 99082 npc 3057
+
+step
+  tip 탄드에게 작은 갈색 가방 하나를 구매하세요.
+  note "탄드를 방문해 잡템을 판매하세요."
+  goto 49.1,34.2 r 20 map 1456
+
+step
+  along
+  level 11 -- 레벨 11이 되어야 합니다. 아직 아니라면, 조금 더 사냥하세요.
+
+step
+  tip *성난불길 협곡 던전 퀘스트입니다.*
+  goto 70.4,32.2 r 20 map 1456
+
+step
+  only Druid
+  turnin 5928 npc 3033
+
+step
+  only Druid
+  accept 5922 npc 3033
+
+step
+  accept 5722 npc 11833 optional -- 퀘스트 수락: *잃어버린 가방 찾기* (성난불길 협곡 던전, 선택)
+  accept 5723 npc 11833 optional -- 퀘스트 수락: *성난불길 협곡의 트로그* (선택)
+  accept 886 npc 5769
+
+step
+  complete 744 @33.4,36.7 map 1412
+
+step
+  only Druid
+  note "마법책을 열어 *순간이동: 달의 숲* 주문을 사용하세요."
+  turnin 5922 npc 11802
+
+step
+  only Druid
+  accept 5930 npc 11802
+
+step
+  only Druid
+  complete 5930 @39,27 map 1450
+
+step
+  only Druid
+  turnin 5930 npc 11802
+
+step
+  only Druid
+  accept 5932 npc 11802
+
+step
+  only Druid
+  tip 썬더 블러프로 비행하세요.
+  fly "Thunder Bluff"
+
+step
+  complete 776 @47.6,26.6 map 1412
+
+step
+  only Tauren
+  complete 760 @42.5,24.7 map 1412
+
+step
+  tip 작은 갈색 가방 하나를 구매하세요.
+  note "탄드를 방문해 잡템을 판매하세요."
+  goto 49.1,34.2 r 20 map 1456
+
+step
+  turnin 776 npc 3057
+
+step
+  only Druid
+  turnin 5932 npc 3033
+
+step
+  only Druid
+  accept 6002 npc 3033
+
+step
+  turnin 744 npc 2987
+
+step
+  turnin 861 npc 3441
+
+step
+  accept 860 npc 3441
+
+step
+  only Tauren
+  turnin 760 npc 2948
+
+step
+  only Tauren
+  accept 98435 npc 2948
+
+step
+  along
+  level 12 -- 레벨 12가 되어야 합니다. 아직 아니라면, 사냥해서 12레벨에 맞추세요.
+
+step
+  tip 이제 멀고어를 벗어날 차례입니다. 지점에서 새로운 비행 지점을 발견하세요.
+  getfp "Camp Taurajo"
+
+step
+  accept 854 npc 3418
+
+step
+  only Druid
+  tip 타우라조 서쪽 달빛 바위에 세나리온 달빛가루를 쓰고 루나클로를 처치하세요: 육체와 정신
+  complete 6002 @42,60.8 map 1413
+
+step
+  tip 북쪽으로 큰길을 쭉 달리면 크로스로드에 도달할 수 있습니다. 꽤 긴 여정이에요. 퀘스트 완료: 불모의 땅 오아시스
+  turnin 886 npc 3448
+
+step
+  tip 셀그라 다크쏜에게 퀘스트 완료: 셀그라 다크쏜
+  turnin 860 npc 3338
+
+step
+  turnin 854 npc 3429
+
+step
+  tip 지점에 있는 자안 호크윙에게 퀘스트 수락: 가죽 묶음
+  accept 6361 npc 3483
+
+step
+  tip 새로운 비행 지점을 발견하세요.
+  getfp "Crossroads"
+
+step
+  turnin 6361 npc 3615
+
+step
+  accept 6362 npc 3615
+
+step
+  tip 썬더 블러프로 비행하세요.
+  fly "Thunder Bluff"
+
+step
+  turnin 6362 npc 8359
+
+step
+  accept 6363 npc 8359
+
+step
+  turnin 6363 npc 2995
+
+step
+  accept 6364 npc 2995
+
+step
+  only Tauren
+  tip 하뮬 룬토템에게 퀘스트 완료: Thunderhorn's Report
+  turnin 98435 npc 5769
+
+step
+  only Druid
+  tip 투락 룬토템에게 퀘스트 완료: 육체와 정신 — 곰 변신
+  turnin 6002 npc 3033
+
+step
+  tip 크로스로드로 비행하세요.
+  fly "Crossroads"
+
+step
+  turnin 6364 npc 3483
+
+step
+  tip 여관주인에게 크로스로드를 귀환 장소로 설정하세요.
+  sethome "The Crossroads"

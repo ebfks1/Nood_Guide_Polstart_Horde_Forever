@@ -400,6 +400,7 @@ class Guide:
             near = nearest_cluster(refs, pos or self.here, q and q['zone']) if refs else None
             if pos:
                 loc = pos
+                g['_w'] = True
                 if near and near[2] == pos[0] and dist((near[3], near[4]), (pos[1], pos[2])) <= 4:
                     self.name_entity(g, near[1])
                     report['%s: giver named' % verb] += 1
@@ -422,6 +423,7 @@ class Guide:
         else:
             if pos:
                 loc = pos
+                g['_w'] = True
             elif q:
                 near = nearest_cluster(objective_refs(q), self.here, q['zone'])
                 if near and near[0] < 5000:
@@ -460,6 +462,8 @@ class Guide:
             else:
                 return None
             loc = pos
+            if pos:
+                g['_w'] = True
             if not loc:
                 refs = [id] if kind == 1 else [-id] if kind == 3 else objective_refs(dict(objs=[(kind, id, cnt)]))
                 near = nearest_cluster(refs, self.here, q['zone'])
@@ -678,6 +682,7 @@ class Guide:
                     g['frac'] = frac
             if positions:
                 g.update(place(*positions[0][1]))
+                g['_w'] = True
                 self.here = positions[0][1]
             if line.oc or opt:
                 self.emit(step_of([g], when_block, {'along': True}), holding=False, block=block)
@@ -831,7 +836,7 @@ def main():
     json.dump({'stats': stats, 'report': dict(report)}, open(OUT + '/report.json', 'w'), ensure_ascii=False, indent=1)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__' and not os.environ.get('NOOD_GUIDE_ONLY'):
     main()
 
 
@@ -881,5 +886,5 @@ Polestar.RegisterMapFrames({ era = {} }, "%s")
     w('Setup.lua', open(os.path.dirname(os.path.abspath(__file__)) + '/Setup.lua', encoding='utf-8').read().replace('@VERSION@', VERSION))
 
 
-if __name__ == '__main__':
+if __name__ == '__main__' and not os.environ.get('NOOD_GUIDE_ONLY'):
     write_addon()

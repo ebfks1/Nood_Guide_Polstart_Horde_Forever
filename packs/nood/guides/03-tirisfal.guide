@@ -1,0 +1,599 @@
+guide nood/03-tirisfal
+title 1-12 Tirisfal Glades (Undead) Nood
+levels 1-12
+zone map 1420
+faction Horde
+race Undead
+folder Nood Guide
+why Levels 1-12 starting-zone guide. Coordinates follow the WoW Forever client data and quests follow Wowhead Forever, with WoW Forever's new quests and new race/class combos (Orc Mage, Troll Warlock, Undead Paladin, Skyborne) added…
+coords era
+next nood/05-12-25
+# Written by tools/emit_guide.py from 03_1-12_Tirisfal.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
+  accept 363 npc 1568
+
+step
+  along
+  level 2
+
+step
+  accept 376 npc 1661
+
+step
+  only Paladin,Undead
+  tip Accept from Shadow Priest Sarvis: A Difficult Path (Forever new)
+  accept 98601 npc 1569
+
+step
+  only Paladin,Undead
+  tip Turn in to Aramis Hammerhand inside the chapel: A Difficult Path
+  turnin 98601 npc 244808
+
+step
+  only Paladin,Undead
+  accept 90902 npc 244808
+
+step
+  only Paladin,Undead
+  tip Heal 5 wounded Deathguards with Holy Light: Rediscovering the Light
+  complete 90902 @31.4,64.8 map 1420
+
+step
+  only Paladin,Undead
+  turnin 90902 npc 244808
+
+step
+  tip Skip the Mindless Zombies / Rattlecage Skeletons quest unless there are few players and no competition for mobs. Then accept and do your class quest. Kill bats and wolves: The Damned
+  collect 3265 quest 376.1
+  collect 3264 quest 376.2
+
+step
+  turnin 376 npc 1661
+
+step
+  turnin 363 npc 1569
+
+step
+  note "Buy water or bread from the vendor."
+  accept 6395 npc 1661
+  accept 380 npc 1570
+  accept 3902 npc 1740
+
+step
+  only Undead
+  tip Accept from Aramis Hammerhand: A Light in the Darkness (Forever new)
+  accept 98389 npc 244808
+
+step
+  only Paladin,Undead
+  accept 91208 npc 244808
+
+step
+  only Paladin,Undead
+  tip Talk to the frightened paladin on the way to the spider cave: Coming to Terms
+  complete 91208 @27.6,63.8 map 1420
+
+step
+  along
+  collect 11127 quest 3902.1 -- Check supply crates while you're in Deathknell: Scavenging Deathknell
+
+step
+  tip While doing Scavenging Deathknell, check the supply crates around you. (optional) Kill Samuel Fipps and loot his remains. Marla's Last Wish
+  interact 178090 quest 6395.1
+
+step
+  kill 1504 quest 380.1
+  kill 1505 quest 380.2
+
+step
+  only Undead
+  tip Free 6 web-wrapped Forsaken inside the spider cave: A Light in the Darkness
+  complete 98389 @24.5,59.3 map 1420
+
+step
+  tip *Die or use the graveyard teleport (Help '?' button at the bottom right > Character Stuck > teleport to graveyard), then resurrect instantly at the Spirit Healer.* Bury Samuel's remains: Marla's Last Wish
+  interact 178090 quest 6395.1
+
+step
+  turnin 6395 npc 1661
+
+step
+  turnin 380 npc 1570
+
+step
+  when complete 3902
+  tip If you collected all the supplies, turn in to Deathguard Saltain: Scavenging Deathknell
+  turnin 3902 npc 1740
+
+step
+  only Undead
+  tip Turn in to Aramis Hammerhand: A Light in the Darkness
+  turnin 98389 npc 244808
+
+step
+  only Paladin,Undead
+  turnin 91208 npc 244808
+
+step
+  only Paladin,Undead
+  accept 91209 npc 244808
+
+step
+  note "Sell junk and buy food/water if needed."
+  note "Train level 4 spells at your class trainer." only Priest
+  note "Train level 4 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  accept 381 npc 1570
+
+step
+  collect 3266 quest 381.1
+
+step
+  turnin 381 npc 1570
+
+step
+  accept 382 npc 1570
+
+step
+  collect 2885 quest 382.1
+
+step
+  turnin 382 npc 1570
+
+step
+  only Priest
+  accept 5651 npc 2123
+
+step
+  accept 383 npc 1570
+
+step
+  only Undead
+  tip Accept from Executor Arren: The Adventurer (Forever new)
+  accept 96656 npc 1570
+
+step
+  tip Time to leave Deathknell! Accept A Rogue's Deal, Fields of Grief
+  accept 8 npc 6784
+  accept 365 npc 1519
+
+step
+  collect 2846 quest 365.1
+
+step
+  along
+  level 5.53 -- Grind until you are level 5 with 1475 XP.
+
+step
+  tip *Die or use the graveyard teleport (Help '?' button at the bottom right > Character Stuck > teleport to graveyard), then resurrect instantly at the Spirit Healer.* Accept A Putrid Task
+  accept 404 npc 1496
+
+step
+  turnin 365 npc 1518
+
+step
+  accept 407 npc 1518
+  accept 367 npc 1518
+
+step
+  turnin 383 npc 1515
+
+step
+  accept 427 npc 1515
+  accept 398 object 711
+  accept 358 npc 1499
+
+step
+  only Undead
+  tip Accept Discipline (Forever new)
+  accept 99134 npc 1515
+
+step
+  only Undead
+  tip Accept Patience (Forever new)
+  accept 99141 npc 1515
+
+step
+  only Undead
+  tip Talk sternly to 5 Deathguards around Brill: Discipline
+  complete 99134
+
+step
+  only Undead
+  tip Turn in to Executor Zygand: Discipline
+  turnin 99134 npc 1515
+
+step
+  only Undead
+  tip Get the report from Deathguard Dillinger: Patience
+  complete 99141 @58.2,51.4 map 1420
+
+step
+  only Paladin,Undead
+  tip Turn in to Shari Stilwell: Continue Your Training
+  turnin 91209 npc 246152
+
+step
+  turnin 8 npc 5688
+
+step
+  turnin 407 npc 1931
+
+step
+  only Priest
+  turnin 5651 npc 2129
+
+step
+  only Priest
+  accept 5650 npc 2129
+
+step
+  tip Accept Proof of Demise (picked up early)
+  accept 374 npc 1652
+
+step
+  only Undead
+  tip Turn in to Eleanor Shackleton at the adventurer camp south of Brill: The Adventurer
+  turnin 96656 npc 265812
+
+step
+  only Undead
+  accept 96607 npc 265812
+
+step
+  only Undead
+  tip Type /sit next to the campfire and get the 'Boosted Rest' buff: The Great Outdoors
+  complete 96607
+
+step
+  only Undead
+  turnin 96607 npc 265812
+
+step
+  only Undead
+  tip Accept Camping 101: Cooking (Forever new)
+  accept 96658 npc 265812
+
+step
+  only Undead
+  tip Accept from Deathguard Bartholomew: Sticks and Bones
+  accept 86784 npc 1742
+
+step
+  only Undead
+  tip Pick up 6 dry sticks around the camp: Sticks and Bones
+  collect 279991 quest 86784.1
+
+step
+  only Undead
+  turnin 86784 npc 265812
+
+step
+  tip Find Gordo. He patrols the paths of Tirisfal Glades. Accept from Gordo: Gordo's Task
+  note "Not available yet (level too low): The Chill of Death (level 7) — you'll pick it up the next time you're in town. Train level 6 spells at your class trainer." only Priest
+  note "Train level 6 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  note "Sell junk and buy food/water if needed."
+  accept 5481 @56.1,52.4 map 1420
+
+step
+  only Undead
+  tip Get the report from Gordo: Patience
+  collect 286200 quest 99141.1
+  collect 286201 quest 99141.2
+  collect 286202 quest 99141.3
+
+step
+  along
+  collect 2858 quest 367.1
+  collect 2855 quest 404.1
+
+step
+  collect 12737 quest 5481.1
+
+step
+  turnin 5481 npc 10665
+
+step
+  accept 5482 npc 10665
+
+step
+  only Priest
+  kill 12428 quest 5650.1
+
+step
+  kill 1941 quest 358.1
+  kill 1675 quest 358.2
+  collect 2834 quest 358.3
+
+step
+  collect 13702 quest 5482.1
+
+step
+  collect 3635 quest 398.1
+
+step
+  collect 2858 quest 367.1
+
+step
+  collect 2855 quest 404.1
+
+step
+  along
+  level 7.26 -- Grind until you are level 7 with at least 1170 XP.
+
+step
+  tip Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in Doom Weed
+  turnin 5482 npc 10665
+
+step
+  tip Accept the follow-up Tomb Weed (Forever new)
+  accept 99142 npc 10665
+
+step
+  turnin 404 npc 1496
+
+step
+  only Priest
+  tip Turn in to Dark Cleric Beryl: Garments of Darkness
+  turnin 5650 npc 2129
+
+step
+  accept 426 npc 1496
+
+step
+  turnin 367 npc 1518
+
+step
+  accept 368 npc 1518
+
+step
+  turnin 398 npc 1515
+
+step
+  turnin 358 npc 1499
+
+step
+  accept 359 npc 1499
+  accept 405 npc 1499
+
+step
+  accept 354 npc 1500
+  accept 362 npc 1500
+
+step
+  accept 375 npc 1521
+
+step
+  only Undead
+  tip Learn Cooking from William Pickman and turn in Camping 101: Cooking
+  turnin 96658 npc 265944
+
+step
+  along
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
+
+step
+  note "Train level 8 spells at your class trainer." only Priest
+  note "Train level 8 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  note "Sell junk, and buy food/water and *bags* if needed."
+  accept 361 item 2839 optional -- If you loot the quest item *Thurman's Letter*, click it to accept A Letter Undelivered
+  collect 2831 quest 362.1
+  collect 2829 quest 354.1
+  collect 2828 quest 354.2
+  collect 2830 quest 354.3
+  collect 3162 quest 426.1
+  collect 3163 quest 426.2
+  collect 2859 quest 368.1
+  kill 1535 quest 427.1
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
+
+step
+  along
+  level 9.26 -- Grind until you are level 9 with 1675 XP.
+
+step
+  tip Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in The Mills Overrun
+  turnin 426 npc 1496
+
+step
+  turnin 368 npc 1518
+
+step
+  accept 369 npc 1518
+  accept 445 npc 1518
+
+step
+  turnin 427 npc 1515
+
+step
+  accept 370 npc 1515
+
+step
+  note "Buy one Coarse Thread."
+  turnin 354 npc 1500
+
+step
+  turnin 362 npc 1500
+
+step
+  accept 355 npc 1500
+
+step
+  turnin 361 npc 1560
+
+step
+  turnin 375 npc 1521
+
+step
+  note "Train level 10 spells at your class trainer." only Priest
+  note "Train level 10 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  note "Sell junk and buy food/water if needed."
+  turnin 355 npc 1499
+
+step
+  complete 370 @51.8,67.4 map 1420
+
+step
+  turnin 370 npc 1515
+
+step
+  accept 371 npc 1515
+
+step
+  tip Head to Silverpine Forest. Keep any Discolored Worg Hearts, you'll need them for a later quest. Accept from Deathstalker Erland at this point (wait if he isn't there): Escorting Erland
+  accept 435 npc 1978
+
+step
+  tip Finish the escort: Escorting Erland
+  complete 435
+
+step
+  turnin 435 npc 1950
+
+step
+  accept 449 npc 1950
+
+step
+  tip Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Accept Prove Your Worth
+  accept 421 npc 1938
+
+step
+  note "Sell junk and buy food/water if needed."
+  accept 6321 npc 6389
+
+step
+  turnin 449 npc 1952
+
+step
+  accept 3221 npc 1952
+
+step
+  turnin 445 npc 1937
+
+step
+  turnin 3221 npc 1937
+
+step
+  complete 421 @49.2,37.8 map 1421
+
+step
+  turnin 421 npc 1938
+
+step
+  turnin 6321 npc 2226
+
+step
+  accept 6323 npc 2226
+
+step
+  tip Discover the The Sepulcher flight path.
+  getfp "The Sepulcher"
+
+step
+  tip Undercity Fly to Undercity.
+  fly "Undercity"
+
+step
+  tip >> Next zone Tirisfal Glades (main quests Lv6-11): expected now Lv10 · comfortable at Lv10 · minimum Lv7. Set your Hearthstone to Undercity.
+  sethome "Undercity"
+
+step
+  turnin 6323 npc 4556
+
+step
+  accept 6322 npc 4556
+
+step
+  turnin 405 npc 1498
+
+step
+  accept 357 npc 1498
+
+step
+  tip Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in Forsaken Duties
+  turnin 359 npc 1495
+
+step
+  only Undead
+  tip Get the report from Deathguard Kristof right next to him: Patience
+  complete 99141 @65.2,60.2 map 1420
+
+step
+  accept 360 npc 1495
+  accept 356 npc 1495
+
+step
+  complete 356 @76,62 map 1420
+
+step
+  tip Pick up 5 Tomb Weed growing on the ground at Balnir Farmstead: Tomb Weed
+  complete 99142 @75,59.4 map 1420
+
+step
+  complete 371 @80.2,54.4 map 1420
+  complete 374 @80.2,54.4 map 1420
+
+step
+  complete 369 @86.2,53.4 map 1420
+
+step
+  tip On Gunther's island, loot the Lich's Spellbook from Gunther's Books: The Lich's Identity
+  complete 357 @67.9,42 map 1420
+
+step
+  along
+  level 11.05 -- Grind until you are level 11 with 445 XP.
+
+step
+  turnin 356 npc 1495
+
+step
+  turnin 374 npc 1652
+
+step
+  tip Turn in to Junior Apothecary Holland, who patrols the Brill graveyard: Tomb Weed
+  turnin 99142 npc 10665
+
+step
+  turnin 371 npc 1515
+
+step
+  only Undead
+  turnin 99141 npc 1515
+
+step
+  turnin 360 npc 1499
+
+step
+  turnin 369 npc 1518
+
+step
+  accept 492 npc 1518
+
+step
+  turnin 492 npc 2211
+  note "! Your Hearthstone must be set to Undercity. If it's set elsewhere, run or fly there instead of hearthing."
+
+step
+  hearth "Undercity"
+
+step
+  note "Undercity Hearth to Undercity."
+  note "Sell junk and buy food/water if needed."
+  turnin 6322 npc 4551
+
+step
+  turnin 357 npc 1498
+
+step
+  tip Accept from Varimathras in the Royal Quarter: The Power to Destroy... (Ragefire Chasm quest)
+  accept 5725 npc 2425
+  note "Train level 12 spells at your class trainer." only Priest
+  note "Train level 12 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+
+step
+  along
+  level 12 -- You should now be level 12. If not, grind until you are!

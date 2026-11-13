@@ -1,0 +1,1433 @@
+guide nood/07-30-40
+title 30-40 Nood: RFK, SM Graveyard, Library, Armory, RFD, Cathedral
+levels 30-40
+zone map 1456
+faction Horde
+folder Nood Guide
+why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 30-40: Razorfen Kraul 31 -> SM Graveyard and Library 32-33 (together) -> The Drowne…
+coords era
+next nood/08-40-50
+# Written by tools/emit_guide.py from 07_30-40_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff (a quick stop for a Razorfen Kraul quest).
+  note "* Razorfen Kraul — Lv31.3 -> about Lv32.0 · recommended Lv30-31 (healer 30 · tank/DPS 31)"
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  note "Orgrimmar Hearth to Orgrimmar (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity)."
+  fly "Thunder Bluff"
+
+step
+  tip On the Hunter Rise, accept from Auld Stonespire: A Vengeful Fate — Dungeon prereq (Razorfen Kraul) · 8,500 XP
+  accept 1102 npc 4451
+
+step
+  tip Ratchet Fly to Ratchet.
+  fly "Ratchet"
+
+step
+  tip Accept from Mebok Mizzyrix in Ratchet (or get it shared): Blueleaf Tubers (grab the crate, control rod and manual next to him)
+  accept 1221 npc 3446
+
+step
+  tip Enter Razorfen Kraul at the southern end of the Barrens
+  goto 42.3,89.9 r 20 map 1413
+
+step
+  tip Use the crate with air holes to summon Snufflenose and collect 6 Blueleaf Tubers: Blueleaf Tubers
+  collect 5876 quest 1221.1
+  collect 5880 quest 1221.2
+  collect 5897 quest 1221.3
+  collect 6684 quest 1221.4
+
+step
+  complete 1109 -- Get the Kraul Guano from the Kraul bats: Going, Going, Guano!
+  accept 1144 -- Accept from Willix the Importer (escort): Willix the Importer
+  complete 1144 -- Escort Willix to the entrance: Willix the Importer
+  turnin 1144 -- When the escort ends, turn in to Willix right away: Willix the Importer
+  complete 1102 -- Kill the last boss, Charlga Razorflank, and take Razorflank's Heart: A Vengeful Fate
+  accept 6522 item 17008 -- Kill the final boss Charlga Razorflank and pick up the "Small Scroll" to accept An Unholy Alliance — Dungeon prereq (Razorfen Downs)
+
+step
+  tip == Razorfen Kraul turn-ins == Thunder Bluff Fly to Thunder Bluff (if you don't have the flight path, run).
+  fly "Thunder Bluff"
+
+step
+  when complete 6561
+  turnin 6561 npc 9087
+
+step
+  when complete 95664
+  turnin 95664 npc 9087
+
+step
+  accept 98823 npc 9087 optional -- Then accept from Bashana Runetotem: Earthen Echo (Forever new)
+  turnin 1102 npc 4451
+
+step
+  only Orc,Troll,Tauren
+  tip Accept from Sage Truthseeker (or get it shared): Compendium of the Fallen (SM Library — 32-45 part)
+  accept 1049 npc 3978
+
+step
+  when onquest 98823
+  tip Turn in to Muln Earthfury at Skywatcher Plateau northwest of Thunder Bluff: Earthen Echo
+  turnin 98823 npc 259118
+
+step
+  tip Ratchet Fly to Ratchet (if you don't have the flight path, run).
+  fly "Ratchet"
+
+step
+  when complete 1221
+  turnin 1221 npc 3446
+
+step
+  tip Orgrimmar Fly to Orgrimmar (if you don't have the flight path, run).
+  fly "Orgrimmar"
+
+step
+  when complete 95697
+  turnin 95697 npc 3368
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  note "* Scarlet Monastery (Graveyard and Library together) — Lv32.0 -> about Lv33.5 · Graveyard recommended Lv31-32 (healer 31 · tank/DPS 32), Library recommended Lv32-33 (healer 32 · tank/DPS 33)"
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip Undercity Fly to Undercity (walk if you're close).
+  fly "Undercity"
+
+step
+  tip Turn in to Varimathras in the Royal Quarter: An Unholy Alliance (the quest from Razorfen Kraul) — Dungeon prereq (Razorfen Downs)
+  turnin 6522 npc 2425
+
+step
+  tip Then accept from Varimathras (or get it shared): An Unholy Alliance (Ambassador Malcin outside Razorfen Downs — 32-45 part)
+  accept 6521 npc 2425
+
+step
+  tip In the Apothecarium, turn in to Master Apothecary Faranell: Going, Going, Guano! (the guano from Razorfen Kraul)
+  turnin 1109 npc 2055
+
+step
+  tip In the Undercity Apothecarium, accept from Master Apothecary Faranell (or get it shared): Hearts of Zeal (dropped by Scarlet mobs — collect them over the Library, Armory and Cathedral)
+  accept 1113 npc 2055
+
+step
+  tip In the Royal Quarter, accept from Varimathras (or get it shared): Into The Scarlet Monastery (4 bosses across the Library, Armory and Cathedral)
+  accept 1048 npc 2425
+
+step
+  tip Scarlet Monastery Graveyard entrance
+  goto 82.6,33.8 r 20 map 1420
+
+step
+  tip Accept from Vorrel Sengutz inside the Graveyard: Vorrel's Revenge
+  accept 1051
+
+step
+  tip Clear the Graveyard up to Bloodmage Thalnos. When you get Vorrel's Wedding Ring: Vorrel's Revenge
+  collect 5538 quest 1051.1
+
+step
+  tip 33 The Library is better at Lv33 (healers can go at 32). Varimathras' 'Into The Scarlet Monastery' needs level 33, so at 32 accept it once you reach 33 (its Houndmaster Loksey objective is only in the Library).
+  level 33
+
+step
+  tip Go to the Scarlet Monastery and enter the Library wing (keep collecting Hearts of Zeal from Scarlet mobs).
+  goto 82.6,33.8 r 20 map 1420
+
+step
+  tip Kill Houndmaster Loksey: Into The Scarlet Monastery
+  kill 3974 quest 1048.4
+
+step
+  only Orc,Troll,Tauren
+  tip Find the 'Compendium of the Fallen' on a bookshelf in the hall before Arcanist Doan's room: Compendium of the Fallen
+  complete 1049
+
+step
+  tip == Scarlet Monastery (Graveyard) turn-ins == Tarren Mill Fly to Tarren Mill (if you don't have the flight path, run).
+  note "Clear the Library up to Arcanist Doan and leave the Monastery (the Compendium is turned in when you pass through Thunder Bluff)."
+  fly "Tarren Mill"
+
+step
+  when complete 1051
+  turnin 1051 npc 3982
+
+step
+  tip Accept from Deathguard Humbert: Humbert's Sword
+  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running the Graveyard/Library again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Drowned City Lv37.5) is close, go back to zone quests."
+  note ">> Next dungeon: The Drowned City (at about Lv37.5 — new in Forever) — about Lv33.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)."
+  accept 547 npc 2419
+
+step
+  when level<36
+  tip Accept from Keeper Bel'varil: Stone Tokens
+  accept 556 npc 2437
+
+step
+  when level<36
+  tip Accept from Tallow: The Hammer May Fall (Arathi Highlands)
+  accept 676 npc 2770
+
+step
+  when level<37
+  tip Accept from Novice Thaivand: Helcular's Revenge
+  accept 552 npc 2429
+
+step
+  when level<38
+  tip Accept from Krusk: Infiltration
+  accept 533 npc 2229
+
+step
+  tip Tarren Mill Set your Hearthstone to Tarren Mill.
+  sethome "Tarren Mill"
+
+step
+  when level<37
+  tip Kill yetis for Helcular's Rod: Helcular's Revenge
+  complete 552 @45.4,33.6 map 1424
+
+step
+  when level<37
+  tip Back in Tarren Mill, turn in to Novice Thaivand: Helcular's Revenge
+  turnin 552 npc 2429
+
+step
+  when level>=37
+  when complete 552
+  tip Back in Tarren Mill, turn in to Novice Thaivand: Helcular's Revenge
+  turnin 552 npc 2429
+
+step
+  when level<37
+  tip Then accept from Novice Thaivand: Helcular's Revenge
+  accept 553 npc 2429
+
+step
+  tip Go back into the yeti cave.
+  goto 46.3,31.7 r 20 map 1424
+
+step
+  when level<37
+  tip Infuse the flame here: Helcular's Revenge
+  interact 1768 quest 553.1 @44,28 map 1424
+
+step
+  when level<37
+  tip Infuse the flame on the lower level: Helcular's Revenge
+  interact 1769 quest 553.2 @44,27 map 1424
+
+step
+  tip Enter the Alterac Mountains.
+  goto 57.6,69.4 r 20 map 1416
+  note "! Your Hearthstone must be set to Tarren Mill. If it's set elsewhere, fly or run to Tarren Mill instead of hearthing."
+
+step
+  when level<38
+  tip Kill Syndicate members to complete: Infiltration
+  collect 3601 quest 533.1
+
+step
+  when level<37
+  tip Infuse the flame inside the cave: Helcular's Revenge
+  interact 1770 quest 553.3 @38,66 map 1416
+
+step
+  when level<36
+  tip Kill the Dalaran mobs outside Dalaran to finish collecting the stones: Stone Tokens
+  complete 556 @21,80 map 1416
+
+step
+  hearth "Tarren Mill"
+
+step
+  when level<38
+  note "Tarren Mill Hearth to Tarren Mill."
+  turnin 533 npc 2229
+
+step
+  when level>=38
+  when complete 533
+  turnin 533 npc 2229
+
+step
+  when level<36
+  tip Turn in to Keeper Bel'varil: Stone Tokens (skip the follow-up 'Bracers of Binding')
+  turnin 556 npc 2437
+
+step
+  when level>=36
+  when complete 556
+  tip Turn in to Keeper Bel'varil: Stone Tokens (skip the follow-up 'Bracers of Binding')
+  turnin 556 npc 2437
+
+step
+  tip Go to this spot.
+  goto 52,53 r 20 map 1424
+
+step
+  when level<37
+  tip Click Helcular's grave to turn in Helcular's Revenge There are guards nearby, so run away afterwards.
+  turnin 553 object 1767
+
+step
+  when level>=37
+  when complete 553
+  tip Click Helcular's grave to turn in Helcular's Revenge There are guards nearby, so run away afterwards.
+  turnin 553 object 1767
+
+step
+  tip *Dun Garok elite trio (group of 2-3 recommended · 8,050 XP total)*: Battle of Hillsbrad part 6 (2,450) + Humbert's Sword (3,050) + the Undercity report that follows (2,550). From Helcular's grave go southeast to the dwarven fortress of Dun Garok. Elites 28-30, Captain Ironhill is a 32 elite — gather a group in Tarren Mill.
+  goto 69,73 r 20 map 1424
+
+step
+  tip Kill Captain Ironhill: Battle of Hillsbrad
+  kill 2304 quest 541.4
+
+step
+  tip Kill dwarves to complete: Battle of Hillsbrad
+  kill 2344 quest 541.1
+  kill 2345 quest 541.2
+  kill 2346 quest 541.3
+  kill 2304 quest 541.4
+
+step
+  tip Humbert's Sword drops randomly from Dun Garok dwarves (Mountaineers, Riflemen, Priests) — if it hasn't dropped after your kill counts are done, keep killing until it does: Humbert's Sword
+  collect 3693 quest 547.1
+
+step
+  tip Head east into the Arathi Highlands!
+  goto 32.4,46 r 20 map 1417
+
+step
+  when level<36
+  tip Kill ogres to complete: The Hammer May Fall
+  kill 2562 quest 676.1
+  kill 2564 quest 676.2
+
+step
+  tip Head northeast toward Hammerfall. Discover the flight path: Hammerfall
+  getfp "Hammerfall"
+
+step
+  when level<36
+  tip Turn in to Drum Fel: The Hammer May Fall
+  turnin 676 npc 2771
+
+step
+  when level>=36
+  when complete 676
+  tip Turn in to Drum Fel: The Hammer May Fall
+  turnin 676 npc 2771
+
+step
+  when level<36
+  tip Then accept from Drum Fel: Call to Arms
+  accept 677 npc 2771
+
+step
+  when level<38
+  tip Accept from Gor'mul: Hammerfall
+  accept 655 npc 2792
+
+step
+  tip Turn in to Tor'gan: Hammerfall
+  turnin 655 npc 2706
+
+step
+  when level<38
+  tip Then accept from Tor'gan: Raising Spirits
+  accept 672 npc 2706
+
+step
+  when level<36
+  tip Kill trolls to complete: Call to Arms
+  complete 677 @67,63.4 map 1417
+
+step
+  when level<38
+  tip Kill raptors on the way back to Hammerfall to finish collecting the eyes: Raising Spirits
+  collect 4512 quest 672.1
+
+step
+  when level<36
+  tip Turn in to Drum Fel: Call to Arms
+  turnin 677 npc 2771
+
+step
+  when level>=36
+  when complete 677
+  tip Turn in to Drum Fel: Call to Arms
+  turnin 677 npc 2771
+
+step
+  when level<38
+  tip Turn in to Tor'gan: Raising Spirits
+  turnin 672 npc 2706
+
+step
+  when level>=38
+  when complete 672
+  tip Turn in to Tor'gan: Raising Spirits
+  turnin 672 npc 2706
+
+step
+  when level<38
+  tip Then accept from Tor'gan: Raising Spirits
+  accept 674 npc 2706
+
+step
+  tip Turn in to Gor'mul: Raising Spirits
+  turnin 674 npc 2792
+
+step
+  when level<38
+  tip Then accept from Gor'mul: Raising Spirits
+  accept 675 npc 2792
+
+step
+  tip Turn in to Tor'gan: Raising Spirits
+  turnin 675 npc 2706
+
+step
+  tip Tarren Mill Fly to Tarren Mill.
+  fly "Tarren Mill"
+
+step
+  tip Turn in to High Executor Darthalia: Battle of Hillsbrad
+  turnin 541 npc 2215
+
+step
+  tip Turn in to Deathguard Humbert: Humbert's Sword
+  turnin 547 npc 2419
+
+step
+  tip Then accept from High Executor Darthalia: Battle of Hillsbrad (deliver to Varimathras in Undercity)
+  accept 550 npc 2215
+
+step
+  tip Undercity Fly to Undercity.
+  fly "Undercity"
+
+step
+  tip In the Royal Quarter, turn in to Varimathras: Battle of Hillsbrad
+  turnin 550 npc 2425
+
+step
+  tip Take the zeppelin to Stranglethorn Vale (Grom'gol) from the tower east of Undercity.
+  goto 61.9,59.1 r 20 map 1420
+
+step
+  tip Discover the flight path: Grom'gol Base Camp
+  getfp "Grom'gol"
+
+step
+  when level<38
+  tip Accept from Nimboya: Hunt for Yenniku
+  accept 581 npc 2497
+
+step
+  when level<41
+  tip Accept from Kin'weelay: Bloody Bone Necklaces
+  accept 596 npc 2519
+
+step
+  when level<41
+  tip Accept from Kin'weelay: The Vile Reef
+  accept 629 npc 2519
+
+step
+  tip Accept from Kin'weelay: Locating the Lost City — Dungeon prereq (Drowned City)
+  accept 95770 npc 2519
+
+step
+  when level<40
+  tip Accept from Commander Aggro'gosh: The Defense of Grom'gol (finished later)
+  accept 568 npc 2464
+
+step
+  tip Accept from Commander Aggro'gosh: Enemies in the Water — Dungeon prereq (Drowned City)
+  accept 95773 @32.2,28.9 map 1434
+
+step
+  tip Head north to Nesingwary's Expedition.
+  goto 35.6,10.8 r 20 map 1434
+
+step
+  tip Accept from Barnil Stonepot: Welcome to the Jungle
+  accept 583 npc 716
+
+step
+  tip Turn in to Hemet Nesingwary: Welcome to the Jungle
+  turnin 583 npc 715
+
+step
+  tip Accept from Ajeck Rouack: Tiger Mastery
+  accept 185 npc 717
+
+step
+  tip Accept from Sir S. J. Erlgadin: Panther Mastery
+  accept 190 npc 718
+
+step
+  tip Accept from Hemet Nesingwary: Raptor Mastery
+  accept 194 npc 715
+
+step
+  tip Kill Young Stranglethorn Tigers to complete: Tiger Mastery
+  complete 185 @33.8,13.2 map 1434
+
+step
+  tip Kill Young Panthers to complete: Panther Mastery
+  complete 190 @42.4,13.2 map 1434
+
+step
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 185 npc 717
+
+step
+  when level<37
+  tip Then accept from Ajeck Rouack: Tiger Mastery
+  accept 186 npc 717
+
+step
+  tip Turn in to Sir S. J. Erlgadin: Panther Mastery
+  turnin 190 npc 718
+
+step
+  when level<37
+  tip Then accept from Sir S. J. Erlgadin: Panther Mastery
+  accept 191 npc 718
+
+step
+  when level<37
+  tip Kill Stranglethorn Tigers to complete: Tiger Mastery
+  complete 186 @31,14.4 map 1434
+
+step
+  when level<37
+  tip Kill Panthers to complete: Panther Mastery
+  kill 736 quest 191.1
+
+step
+  tip Kill Stranglethorn Raptors: Raptor Mastery
+  complete 194 @27.6,17.4 map 1434
+
+step
+  tip Swim to this spot.
+  goto 24,22 r 20 map 1434
+
+step
+  when level<41
+  tip If the mobs around here worry you, group up or ask for help. Collect the tablet shards: The Vile Reef
+  collect 4094 quest 629.1
+
+step
+  tip Find the underwater cave southwest of the Vile Reef (the Drowned City entrance): Locating the Lost City
+  complete 95770 @21.4,27.9 map 1434
+
+step
+  tip Kill Brinescale Skirmishers around the cave for 10 tridents: Enemies in the Water
+  complete 95773 @23.1,30.6 map 1434
+
+step
+  when level<41
+  tip Kill Bloodscalp trolls to complete: Bloody Bone Necklaces
+  complete 596 @29.8,21.4 map 1434
+
+step
+  when level<38
+  tip The trolls elsewhere are level 36-37 and harder. Complete the quest: Hunt for Yenniku
+  collect 3901 quest 581.1
+
+step
+  when level<37
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 186 npc 717
+
+step
+  when level>=37
+  when complete 186
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 186 npc 717
+
+step
+  when level<39
+  tip Then accept from Ajeck Rouack: Tiger Mastery
+  accept 187 npc 717
+
+step
+  when level<37
+  tip Turn in to Sir S. J. Erlgadin: Panther Mastery
+  turnin 191 npc 718
+
+step
+  when level>=37
+  when complete 191
+  tip Turn in to Sir S. J. Erlgadin: Panther Mastery
+  turnin 191 npc 718
+
+step
+  when level<42
+  tip Then accept from Sir S. J. Erlgadin: Panther Mastery (finished later)
+  accept 192 npc 718
+
+step
+  tip Turn in to Hemet Nesingwary: Raptor Mastery
+  turnin 194 npc 715
+
+step
+  when level<40
+  tip Then accept from Hemet Nesingwary: Raptor Mastery
+  accept 195 npc 715
+
+step
+  when level<39
+  tip Kill Elder Stranglethorn Tigers: Tiger Mastery
+  complete 187 @33,19 map 1434
+
+step
+  when level<39
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 187 npc 717
+
+step
+  when level>=39
+  when complete 187
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 187 npc 717
+
+step
+  when level<41
+  tip Then accept from Ajeck Rouack: Tiger Mastery (finished later)
+  accept 188 npc 717
+
+step
+  when level<40
+  tip Kill Lashtail Raptors to complete: Raptor Mastery
+  complete 195 @32.2,22.8 map 1434
+
+step
+  when level<40
+  tip Turn in to Hemet Nesingwary: Raptor Mastery
+  turnin 195 npc 715
+
+step
+  when level>=40
+  when complete 195
+  tip Turn in to Hemet Nesingwary: Raptor Mastery
+  turnin 195 npc 715
+
+step
+  when level<45
+  tip Then accept from Hemet Nesingwary: Raptor Mastery (finished later)
+  accept 196 npc 715
+
+step
+  when level<38
+  tip Back at Grom'gol, turn in to Nimboya: Hunt for Yenniku
+  turnin 581 npc 2497
+
+step
+  when level>=38
+  when complete 581
+  tip Back at Grom'gol, turn in to Nimboya: Hunt for Yenniku
+  turnin 581 npc 2497
+
+step
+  when level<41
+  tip Turn in to Kin'weelay: The Vile Reef
+  turnin 629 npc 2519
+
+step
+  when level>=41
+  when complete 629
+  tip Turn in to Kin'weelay: The Vile Reef
+  turnin 629 npc 2519
+
+step
+  when level<41
+  tip Turn in to Kin'weelay: Bloody Bone Necklaces
+  turnin 596 npc 2519
+
+step
+  when level>=41
+  when complete 596
+  tip Turn in to Kin'weelay: Bloody Bone Necklaces
+  turnin 596 npc 2519
+
+step
+  tip Turn in to Kin'weelay: Locating the Lost City
+  turnin 95770 npc 2519
+
+step
+  when level<41
+  tip Accept from Nimboya: Trollbane (deliver to Hammerfall in Arathi — later)
+  accept 638 npc 2497
+
+step
+  when level<41
+  tip Accept from Nimboya: Headhunting (finished later)
+  accept 582 npc 2497
+
+step
+  tip Turn in to Commander Aggro'gosh: Enemies in the Water
+  accept 95775 @32.3,27.7 map 1434 optional -- If offered, accept next: The Drowned City (giver not confirmed yet — otherwise pick it up inside the dungeon)
+  turnin 95773 @32.2,28.9 map 1434
+
+step
+  tip Take the zeppelin to Orgrimmar from the Grom'gol zeppelin tower.
+  accept 95776 @32.2,28.9 map 1434 optional -- If offered, accept next: The Only Good Brinescale... (giver not confirmed yet — otherwise pick it up inside the dungeon)
+  goto 32.4,29.2 r 20 map 1434
+
+step
+  tip Orgrimmar Set your Hearthstone to Orgrimmar.
+  sethome "Orgrimmar"
+
+step
+  tip Accept from Craven Drok: Alliance Relations (start of the Desolace chain)
+  accept 1431 npc 5639
+
+step
+  tip Turn in to Keldran: Alliance Relations
+  turnin 1431 npc 5640
+
+step
+  tip Then accept from Keldran: Alliance Relations
+  accept 1432 npc 5640
+
+step
+  tip The Crossroads Fly to The Crossroads.
+  fly "Crossroads"
+
+step
+  tip Accept from Regthar Deathgate: The Kolkar of Desolace (prerequisite for Khan Dez'hepah in Desolace)
+  accept 1362 npc 3389
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  only Orc,Troll,Tauren
+  tip Turn in to Sage Truthseeker: Compendium of the Fallen (the book from the Library)
+  turnin 1049 npc 3978
+
+step
+  tip Sun Rock Retreat Fly to Sun Rock Retreat.
+  fly "Sun Rock Retreat"
+
+step
+  when level<43
+  note "Head south into Desolace."
+  accept 5501 npc 11438
+
+step
+  when level<37
+  accept 5741 npc 11863
+
+step
+  tip Click the book on the ground here.
+  goto 36,30 r 20 map 1443
+
+step
+  when level<40
+  accept 6161 object 177787
+
+step
+  when level<37
+  accept 1368 npc 5412
+
+step
+  tip Turn in to Felgur Twocuts: The Kolkar of Desolace
+  turnin 1362 npc 5395
+
+step
+  when level<39
+  accept 1365 npc 5395
+
+step
+  when level<41
+  accept 5386 npc 11259
+
+step
+  turnin 1432 npc 5641
+
+step
+  when level<37
+  accept 1433 npc 5641
+
+step
+  when level<37
+  accept 1434 npc 5641
+
+step
+  turnin 1433 npc 4498
+
+step
+  when level<37
+  accept 1435 npc 4498
+
+step
+  when level<42
+  accept 5381 npc 11624
+
+step
+  when level<40
+  accept 6143 npc 12340
+
+step
+  when level<39
+  accept 6142 npc 12031
+
+step
+  tip Discover the flight path: Shadowprey Village
+  getfp "Shadowprey Village"
+
+step
+  when level<41
+  tip Click the crawdad traps in the water to collect 10 crawdads. Bring them to *Jinar'Zillen* to get 2 *Red Snapper*: Catch of the Day
+  complete 5386 @22.4,73 map 1443
+
+step
+  when level<38
+  accept 5561 npc 11596
+
+step
+  when level<38
+  tip Use the lure at the Kodo Graveyard and lead each tamed kodo back to Smeed. Complete 5: Kodo Roundup
+  kill 4700 quest 5561.1
+
+step
+  when level<38
+  turnin 5561 npc 11596
+
+step
+  when level>=38
+  when complete 5561
+  turnin 5561 npc 11596
+
+step
+  when level<43
+  tip Finish it at the Kodo Graveyard as well: Bone Collector
+  collect 13703 quest 5501.1
+
+step
+  when level<37
+  tip Kill Magram centaurs until you are Friendly with the Gelkis: Gelkis Alliance
+  complete 1368 @73,73 map 1443
+
+step
+  when level<39
+  tip Kill the Khan: Khan Dez'hepah
+  note "Khan Dez'hepah spawns at one of three spots."
+  collect 6066 quest 1365.1
+
+step
+  when level<39
+  turnin 1365 npc 5395
+
+step
+  when level>=39
+  when complete 1365
+  turnin 1365 npc 5395
+
+step
+  when level<41
+  turnin 5386 npc 11259
+
+step
+  when level>=41
+  when complete 5386
+  turnin 5386 npc 11259
+
+step
+  when level<43
+  turnin 5501 npc 11438
+
+step
+  when level>=43
+  when complete 5501
+  turnin 5501 npc 11438
+
+step
+  when level<37
+  tip Kill satyrs to complete: Befouled by Satyr
+  complete 1434 @75,26 map 1443
+
+step
+  tip Go to Thunder Axe Fortress and enter through the front gate.
+  goto 56,29 r 20 map 1443
+
+step
+  when level<37
+  tip Put the 'Burning Gem' from your bags on your action bar. Use the gem on Burning Blade mobs when they are below 20% health. Kill the Sage on top of the watchtower: Sceptre of Light
+  complete 5741 @55,30 map 1443
+
+step
+  when level<42
+  tip Click Iruxos' crystal, kill the demon spirit and take the box: Hand of Iruxos
+  complete 5381 @55,26.4 map 1443
+
+step
+  when level<37
+  tip Collect 15 infused burning gems: The Burning of Spirits
+  collect 6435 quest 1435.1
+
+step
+  when level<37
+  turnin 5741 npc 11863
+
+step
+  when level>=37
+  when complete 5741
+  turnin 5741 npc 11863
+
+step
+  when level<42
+  accept 6027 npc 11863
+
+step
+  when level<39
+  tip Open the clams in the water here to collect 10 *Soft-shelled Clam Meat*: Clam Bait
+  complete 6142 @33,31 map 1443
+
+step
+  when level<40
+  tip Kill makrura until you get the Silver Key: Claim Rackmore's Treasure!
+  collect 15878 quest 6161.1
+
+step
+  when level<40
+  tip Kill naga until you get the Golden Key: Claim Rackmore's Treasure!
+  collect 15881 quest 6161.2 @33,16.8 map 1443
+
+step
+  when level<40
+  tip Click the chest here. Turn in Claim Rackmore's Treasure!
+  turnin 6161 object 177786
+
+step
+  when level>=40
+  when complete 6161
+  tip Click the chest here. Turn in Claim Rackmore's Treasure!
+  turnin 6161 object 177786
+
+step
+  tip Go to the island here.
+  accept 1480 item 20310 optional -- If a *Demon Hide* drops, click it in your bags to accept (skip this if it doesn't drop): The Corrupter
+  goto 28.2,6.4 r 20 map 1443
+
+step
+  when level<42
+  tip Click the serpent statue and kill Lord Kragaru when he appears: Book of the Ancients
+  collect 15803 quest 6027.1
+
+step
+  when level<40
+  tip Finish killing the naga: Other Fish to Fry
+  kill 4714 quest 6143.1
+  kill 4711 quest 6143.2
+  kill 4712 quest 6143.3
+
+step
+  when level<42
+  turnin 6027 npc 11863
+
+step
+  when level>=42
+  when complete 6027
+  turnin 6027 npc 11863
+
+step
+  when onquest 1480
+  turnin 1480 npc 4498
+
+step
+  when level<37
+  turnin 1435 npc 4498
+
+step
+  when level>=37
+  when complete 1435
+  turnin 1435 npc 4498
+
+step
+  when level<37
+  turnin 1434 npc 5641
+
+step
+  when level>=37
+  when complete 1434
+  turnin 1434 npc 5641
+
+step
+  when level<37
+  accept 1436 npc 5641
+
+step
+  tip Go to Gelkis Village.
+  goto 36.2,79.2 r 20 map 1443
+
+step
+  turnin 1368 npc 5397
+
+step
+  tip Go to Shadowprey Village.
+  goto 23.2,72.8 r 20 map 1443
+
+step
+  when level<40
+  turnin 6143 npc 12340
+
+step
+  when level>=40
+  when complete 6143
+  turnin 6143 npc 12340
+
+step
+  when level<42
+  turnin 5381 npc 11624
+
+step
+  when level>=42
+  when complete 5381
+  turnin 5381 npc 11624
+
+step
+  when level<39
+  tip Turn in right away: Clam Bait
+  turnin 6142 npc 12031
+
+step
+  when level>=39
+  when complete 6142
+  tip Turn in right away: Clam Bait
+  turnin 6142 npc 12031
+
+step
+  when level<42
+  tip Then accept from Taiga Wisemane: Portals of the Legion
+  accept 5581 npc 11624
+
+step
+  when level<42
+  tip Banish 6 Demon Portals at Mannoroc Coven: Portals of the Legion
+  complete 5581 @52.9,79.2 map 1443
+
+step
+  when level<42
+  tip Back in Shadowprey Village, turn in to Taiga Wisemane: Portals of the Legion
+  turnin 5581 npc 11624
+
+step
+  when level>=42
+  when complete 5581
+  tip Back in Shadowprey Village, turn in to Taiga Wisemane: Portals of the Legion
+  turnin 5581 npc 11624
+
+step
+  hearth "Orgrimmar"
+
+step
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  note "Orgrimmar Hearth to Orgrimmar."
+  turnin 1436 npc 5640
+
+step
+  tip Take the zeppelin to Grom'gol (Stranglethorn Vale) from the tower outside Orgrimmar's north gate.
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip Run south along the road to Booty Bay.
+  goto 27,77 r 20 map 1434
+
+step
+  tip Discover the flight path: Booty Bay
+  getfp "Booty Bay"
+
+step
+  when level<39
+  tip Accept from Crank Fizzlebub: Singing Blue Shards
+  accept 605 npc 2498
+
+step
+  when level<39
+  tip Accept from Kebok: Bloodscalp Ears
+  accept 189 npc 737
+
+step
+  when level<40
+  tip Accept from Kebok: Hostile Takeover
+  accept 213 npc 737
+
+step
+  tip Grom'gol Base Camp Fly to Grom'gol Base Camp.
+  fly "Grom'gol"
+
+step
+  when level<42
+  tip Accept from Far Seer Mok'thardin: Mok'thardin's Enchantment
+  accept 570 npc 2465
+
+step
+  when level<42
+  tip Kill Shadowmaw Panthers and Tigresses to complete: Panther Mastery
+  complete 192 @39.8,36.8 map 1434
+
+step
+  when level<42
+  tip Collect the Shadowmaw Claws and the Pristine Tigress Fang there too: Mok'thardin's Enchantment
+  collect 3838 quest 570.1
+  collect 3839 quest 570.2
+
+step
+  when level<39
+  tip Kill basilisks to complete: Singing Blue Shards
+  complete 605 @24,16 map 1434
+
+step
+  when level<39
+  tip Kill Bloodscalp trolls to finish collecting the ears: Bloodscalp Ears
+  complete 189 @29.8,21.4 map 1434
+
+step
+  when level<41
+  tip Kill trolls to complete: Headhunting (Shrunken Heads drop only from Bloodscalp Headhunters · about 33%)
+  complete 582 @21.4,11.4 map 1434
+
+step
+  when level<41
+  tip Kill Sin'Dall: Tiger Mastery
+  complete 188 @33.6,19.2 map 1434
+
+step
+  when level<41
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 188 npc 717
+
+step
+  when level>=41
+  when complete 188
+  tip Turn in to Ajeck Rouack: Tiger Mastery
+  turnin 188 npc 717
+
+step
+  when level<42
+  tip Turn in to Sir S. J. Erlgadin: Panther Mastery
+  turnin 192 npc 718
+
+step
+  when level>=42
+  when complete 192
+  tip Turn in to Sir S. J. Erlgadin: Panther Mastery
+  turnin 192 npc 718
+
+step
+  when level<44
+  tip Then accept from Sir S. J. Erlgadin: Panther Mastery (finished later)
+  accept 193 npc 718
+
+step
+  when level<40
+  tip Kill the Venture Co. mobs to the north to complete: Hostile Takeover
+  complete 213 @42,18 map 1434
+
+step
+  when level<40
+  tip Finish it around Grom'gol: Defense of Grom'gol
+  complete 568 @32.2,22.8 map 1434
+
+step
+  when level<41
+  tip Back at Grom'gol, turn in to Nimboya: Headhunting
+  turnin 582 npc 2497
+
+step
+  when level>=41
+  when complete 582
+  tip Back at Grom'gol, turn in to Nimboya: Headhunting
+  turnin 582 npc 2497
+
+step
+  when level<45
+  tip Then accept from Nimboya: Bloodscalp Clan Heads (finished later)
+  accept 584 npc 2497
+
+step
+  when level<40
+  tip Turn in to Commander Aggro'gosh: The Defense of Grom'gol
+  turnin 568 npc 2464
+
+step
+  when level>=40
+  when complete 568
+  tip Turn in to Commander Aggro'gosh: The Defense of Grom'gol
+  turnin 568 npc 2464
+
+step
+  when level<42
+  tip Turn in to Far Seer Mok'thardin: Mok'thardin's Enchantment
+  turnin 570 npc 2465
+
+step
+  when level>=42
+  when complete 570
+  tip Turn in to Far Seer Mok'thardin: Mok'thardin's Enchantment
+  turnin 570 npc 2465
+
+step
+  when level<45
+  tip Then accept from Far Seer Mok'thardin: Mok'thardin's Enchantment (finished later)
+  accept 572 npc 2465
+
+step
+  tip Swim west from Grom'gol past the Vile Reef and enter the underwater cave (form your group in Grom'gol).
+  note "* The Drowned City — about Lv37.5 -> about Lv38.3 · recommended Lv35-40 (healer 35 · tank/DPS 36) · new Forever dungeon"
+  note "! The entrance is an underwater cave, so watch your breath. Undead are fine; warlocks use Unending Breath; others bring Water Breathing potions."
+  goto 21.4,27.9 r 20 map 1434
+
+step
+  tip Make rubbings of the four Tablets of I'lalai with the hide and charcoal: The Drowned City
+  accept 95775 optional -- * Get the dungeon quests inside (only the ones you are missing): The Drowned City The Only Good Brinescale...
+  accept 95776 optional
+  note "! Pick up any other quests offered inside (two Saltseer quests and others) and do them too."
+  complete 95775
+
+step
+  tip Kill Var'Taka, leader of the Brinescale naga: The Only Good Brinescale...
+  complete 95776
+
+step
+  when onquest 95776
+  tip Back in Grom'gol, turn in: The Only Good Brinescale... (turn-in NPC not confirmed — if not Commander Aggro'gosh, check your quest log)
+  note "Clear to the last boss, Captain Dreadrise, then leave the dungeon."
+  turnin 95776 @32.2,28.9 map 1434
+
+step
+  when complete 95775
+  tip Turn in: The Drowned City (turn-in NPC not confirmed — Kin'weelay or Master Gadrin in Sen'jin Village)
+  turnin 95775
+
+step
+  tip Booty Bay Fly to Booty Bay.
+  fly "Booty Bay"
+
+step
+  when level<39
+  tip Turn in to Crank Fizzlebub: Singing Blue Shards
+  turnin 605 npc 2498
+
+step
+  when level>=39
+  when complete 605
+  tip Turn in to Crank Fizzlebub: Singing Blue Shards
+  turnin 605 npc 2498
+
+step
+  when level<45
+  tip Then accept from Crank Fizzlebub: Venture Company Mining (finished later)
+  accept 600 npc 2498
+
+step
+  when level<39
+  turnin 189 npc 737
+
+step
+  when level>=39
+  when complete 189
+  turnin 189 npc 737
+
+step
+  when level<40
+  turnin 213 npc 737
+
+step
+  when level>=40
+  when complete 213
+  turnin 213 npc 737
+
+step
+  when level<46
+  tip Then accept from Kebok: Skullsplitter Tusks (finished later)
+  accept 209 npc 737
+
+step
+  tip Take the boat to Ratchet from the Booty Bay docks.
+  goto 25.9,73.1 r 20 map 1434
+
+step
+  tip >> Next dungeon: Scarlet Monastery Armory + Cathedral (together, at about Lv39.0) — about Lv38.3 now. Until then, do the zone quests below. Camp Taurajo Fly to Camp Taurajo (run if you don't have the flight path), then take the road east of Camp Taurajo into Dustwallow Marsh.
+  fly "Camp Taurajo"
+
+step
+  tip Discover the flight path in Brackenwall Village to the north: Brackenwall Village
+  getfp "Brackenwall Village"
+
+step
+  when level<39
+  tip Accept from Nazeer Bloodpike: Theramore Spies
+  accept 1201 npc 4791
+
+step
+  when level<40
+  tip Accept from Mudcrush Durtfeet: Hungry!
+  accept 1177 npc 4503
+
+step
+  when level<39
+  tip Kill 9 Theramore Infiltrators hiding northeast of the village: Theramore Spies
+  complete 1201 @39.3,26.2 map 1445
+
+step
+  when level<40
+  tip Collect 12 Mirefin Heads from the Mirefin murlocs on the northeast coast: Hungry!
+  complete 1177 @58,15 map 1445
+
+step
+  when level<40
+  tip Turn in to Mudcrush Durtfeet: Hungry!
+  turnin 1177 npc 4503
+
+step
+  when level>=40
+  when complete 1177
+  tip Turn in to Mudcrush Durtfeet: Hungry!
+  turnin 1177 npc 4503
+
+step
+  when level<39
+  tip Turn in to Nazeer Bloodpike: Theramore Spies (skip the follow-up 'The Theramore Docks')
+  turnin 1201 npc 4791
+
+step
+  when level>=39
+  when complete 1201
+  tip Turn in to Nazeer Bloodpike: Theramore Spies (skip the follow-up 'The Theramore Docks')
+  turnin 1201 npc 4791
+
+step
+  hearth "Orgrimmar"
+
+step
+  tip Accept from Dran Droffers (or get it shared): Necklace Recovery (Uldaman prep — requires level 37)
+  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  note "Orgrimmar Hearth to Orgrimmar."
+  accept 2283 npc 6986
+
+step
+  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  tip Set your Hearthstone to Undercity with the innkeeper (you hearth back here after the Armory/Cathedral to turn in, and again after Razorfen Downs).
+  sethome "Undercity"
+
+step
+  tip 38 Lv38.5+ is best (healers can go at 38). You run the Armory and the Cathedral back to back with the same group — the Cathedral bosses are Lv42, so don't go too low. If short, run the Drowned City again or hunt mobs along the way.
+  level 38
+
+step
+  tip In the Undercity Magic Quarter, accept from Andrew Brownell (or get it shared): Bring the End (Razorfen Downs — requires level 37, prep for the next dungeon)
+  note "* Scarlet Monastery (Armory + Cathedral together) — about Lv39.0 -> about Lv40.3 · recommended Lv38.5-39 (healer 38 · tank/DPS 38.5-39)"
+  accept 3341 npc 2308
+
+step
+  tip Enter the Scarlet Monastery Armory wing first (keep collecting Vials of Zeal).
+  goto 82.6,33.8 r 20 map 1420
+
+step
+  tip Kill Herod, the Scarlet Champion at the end of the Armory: Into The Scarlet Monastery
+  kill 3975 quest 1048.3
+
+step
+  tip Finish collecting 20 Hearts of Zeal from Scarlet mobs: Hearts of Zeal
+  note "After the Armory, go straight into the Cathedral wing with the same group."
+  collect 5805 quest 1113.1
+
+step
+  tip Kill Scarlet Commander Mograine: Into The Scarlet Monastery
+  kill 3976 quest 1048.2
+
+step
+  tip Kill High Inquisitor Whitemane (she revives Mograine): Into The Scarlet Monastery
+  kill 3977 quest 1048.1
+  note "== Scarlet Monastery turn-ins == Leave the dungeon and Undercity hearth to Undercity (if it is on cooldown, run west to Undercity)."
+
+step
+  hearth "Undercity"
+
+step
+  tip In the Apothecarium, turn in to Master Apothecary Faranell: Hearts of Zeal
+  turnin 1113 npc 2055
+
+step
+  tip Accept from Patrick Garrett (or get it shared): Reclaimed Treasures (Uldaman prep)
+  accept 2342 npc 5651
+
+step
+  tip In the Royal Quarter, turn in to Varimathras: Into The Scarlet Monastery
+  turnin 1048 npc 2425
+
+step
+  tip >> Next dungeon: Razorfen Downs (about Lv40.5 — retuned to a 40-50 dungeon in Forever). Take the zeppelin to Orgrimmar from the tower east of Undercity.
+  goto 60.7,58.8 r 20 map 1420
+
+step
+  tip Camp Taurajo Fly to Camp Taurajo.
+  fly "Camp Taurajo"
+
+step
+  tip Follow the road south to the Razorfen Downs entrance at the southern edge of the Barrens.
+  note "* Razorfen Downs — about Lv40.3 -> about Lv41.2 · recommended Lv40-41 (healer 40 · tank/DPS 40.5) · a 40-50 dungeon in Forever"
+  goto 49,93 r 20 map 1413
+
+step
+  tip Near the entrance, accept from Myriam Moonsinger (or get it shared): A Host of Evil
+  accept 6626 npc 12866
+
+step
+  tip Kill Ambassador Malcin, who walks the hills outside the entrance, and take his scalp: An Unholy Alliance
+  complete 6521 @47.8,92 map 1413
+
+step
+  accept 3523 -- Accept from Belnistrasz inside the dungeon: Scourge of the Downs — *Reward chain · Dungeon prereq (Razorfen Downs)
+  turnin 3523 -- Hand the Oathstone back to him right away: Scourge of the Downs — *Reward chain · Dungeon prereq (Razorfen Downs)
+  accept 3525 -- Then accept (escort): Extinguishing the Idol — *Reward
+  complete 3525 -- Escort Belnistrasz to the idol and protect him until the ritual ends: Extinguishing the Idol
+  turnin 3525 -- When the ritual ends, click the brazier (*reward): Extinguishing the Idol
+
+step
+  tip Kill 8 each of Razorfen Battleguards, Thornweavers and Death's Head Cultists: A Host of Evil
+  kill 7873 quest 6626.1
+  kill 7874 quest 6626.2
+  kill 7872 quest 6626.3
+
+step
+  tip Kill the final boss Amnennar the Coldbringer and take his skull: Bring the End
+  complete 3341
+
+step
+  tip == Razorfen Downs turn-ins == Near the entrance, turn in to Myriam Moonsinger: A Host of Evil (An Unholy Alliance and Bring the End are turned in at Undercity)
+  turnin 6626 npc 12866
+  note "! Your Hearthstone should be set to Undercity (set above). The Hearthstone you used after the Monastery comes off cooldown while you run Razorfen Downs. If it is still on cooldown or set elsewhere, fly to Orgrimmar and take the zeppelin to Undercity."
+
+step
+  hearth "Undercity"
+
+step
+  tip In the Royal Quarter, turn in to Varimathras: An Unholy Alliance (Ambassador Malcin's Head from outside Razorfen Downs)
+  note "Undercity Hearth to Undercity."
+  turnin 6521 npc 2425
+
+step
+  tip In the Magic Quarter, turn in to Andrew Brownell: Bring the End
+  turnin 3341 npc 2308
+  note "That's the end of 30-40. Move on to the 40-50 guide (Krol'dok Stronghold, Uldaman, ZF, Maraudon)."

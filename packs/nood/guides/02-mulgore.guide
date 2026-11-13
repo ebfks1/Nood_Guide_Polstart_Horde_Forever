@@ -1,0 +1,918 @@
+guide nood/02-mulgore
+title 1-12 Mulgore (Tauren) Nood
+levels 1-12
+zone map 1412
+faction Horde
+race Tauren
+folder Nood Guide
+why Levels 1-12 starting-zone guide. Coordinates follow the WoW Forever client data and quests follow Wowhead Forever, with WoW Forever's new quests and new race/class combos (Orc Mage, Troll Warlock, Undead Paladin, Skyborne) added…
+coords era
+next nood/05-12-25
+# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
+  accept 747 npc 2980
+
+step
+  accept 752 npc 2981
+
+step
+  complete 747 @50.2,79.4 map 1412
+
+step
+  along
+  level 2 -- You need to be level 2. If not, grind.
+
+step
+  turnin 752 npc 2991
+
+step
+  accept 753 npc 2991
+
+step
+  tip Loot the water pitcher at the well: A Humble Task
+  complete 753 @48.9,81.1 map 1412
+
+step
+  only Druid
+  tip Buy 5 Refreshing Spring Water from Moodan Sungrain.
+  goto 44.3,78.2 r 20 map 1412
+
+step
+  note "Sell junk to Moodan Sungrain."
+  turnin 747 npc 2980
+
+step
+  accept 750 npc 2980
+
+step
+  only Druid
+  accept 3094 npc 2980
+
+step
+  only Hunter
+  accept 3092 npc 2980
+
+step
+  only Shaman
+  accept 3093 npc 2980
+
+step
+  only Warrior
+  accept 3091 npc 2980
+
+step
+  turnin 753 npc 2981
+
+step
+  accept 755 npc 2981
+
+step
+  only Druid
+  turnin 3094 npc 3060
+
+step
+  only Hunter
+  turnin 3092 npc 3061
+
+step
+  only Shaman
+  turnin 3093 npc 3062
+
+step
+  only Warrior
+  turnin 3091 npc 3059
+
+step
+  note "Train spells at Gart Mistrunner." only Druid
+  note "Train spells at Lanka Farshot." only Hunter
+  note "Buy Light Shot from Kawnie Softbreeze." only Hunter
+  note "Train spells at Meela Dawnstrider." only Shaman
+  note "Train spells at Harutt Thunderhorn." only Warrior
+  complete 750 @45.8,90.5 map 1412
+
+step
+  along
+  level 3.64 -- Grind until you are level 3 with 900 XP.
+
+step
+  note "Not available yet (level too low): Call of Earth (level 4) — you'll pick it up the next time you're in town." only Shaman
+  accept 1656 npc 6775
+
+step
+  turnin 755 npc 2982
+
+step
+  accept 757 npc 2982
+
+step
+  only Tauren
+  tip Accept Grace of An'she and Mu'sha (Forever new)
+  accept 95805 npc 2982
+
+step
+  only Tauren
+  tip Within 10 minutes, go to the ritual fire on the southeastern hill and offer the incense: Grace of An'she and Mu'sha
+  turnin 95805 object 660739
+
+step
+  turnin 750 npc 2980
+
+step
+  accept 780 npc 2980
+
+step
+  along
+  level 4 -- You need to be level 4. If not, grind.
+
+step
+  accept 3376 npc 3209
+
+step
+  only Shaman
+  note "Train spells at Meela Dawnstrider."
+  accept 1519 npc 5888
+
+step
+  only Shaman
+  complete 1519 @61.3,78.8 map 1412
+
+step
+  note "Sell junk to Kawnie Softbreeze."
+  note "Train spells at Gart Mistrunner." only Druid
+  note "Train spells at Lanka Farshot." only Hunter
+  note "Train spells at Harutt Thunderhorn." only Warrior
+  complete 3376 @60.5,77.5 map 1412
+
+step
+  tip Click the Bristleback battle plans to accept Attack on Camp Narache
+  accept 781 @59.8,82.2 map 1412
+
+step
+  along
+  level 5 -- You need to be level 5. If not, grind a little more.
+
+step
+  complete 757 @60.4,78.6 map 1412
+
+step
+  complete 780 @53.5,83.2 map 1412
+
+step
+  along
+  level 5.31 -- Grind until you are level 5 with 865 XP.
+
+step
+  note "Sell junk to Moodan Sungrain."
+  turnin 780 npc 2980
+
+step
+  turnin 3376 npc 3209
+
+step
+  only Tauren
+  tip Accept The Adventurer (Forever new)
+  accept 96659 npc 2981
+
+step
+  only Shaman
+  turnin 1519 npc 5888
+
+step
+  only Shaman
+  accept 1520 npc 5888
+
+step
+  turnin 757 npc 2981
+
+step
+  accept 763 npc 2981
+
+step
+  turnin 781 npc 2981
+
+step
+  along
+  level 6 -- You need to be level 6. If not, grind a little more.
+
+step
+  only Shaman
+  note "Train spells at Meela Dawnstrider."
+  turnin 1520 npc 5891
+
+step
+  only Shaman
+  accept 1521 npc 5891
+
+step
+  only Shaman
+  turnin 1521 npc 5888
+
+step
+  only Tauren
+  tip Turn in to Kaga Wildhoof at the adventurer camp by the road: The Adventurer
+  turnin 96659 npc 265810
+
+step
+  only Tauren
+  accept 96605 npc 265810
+
+step
+  only Tauren
+  tip Type /sit next to the campfire and get the 'Boosted Rest' buff: The Great Outdoors
+  complete 96605 @46.2,67.3 map 1412
+
+step
+  only Tauren
+  turnin 96605 npc 265810
+
+step
+  only Tauren
+  tip Accept Camping 101: Cooking (Forever new)
+  accept 96661 npc 265810
+
+step
+  note "Train spells at Gart Mistrunner." only Druid
+  note "Train spells at Lanka Farshot." only Hunter
+  note "Train spells at Harutt Thunderhorn." only Warrior
+  accept 743 npc 2985
+
+step
+  only Tauren
+  accept 748 npc 2948
+
+step
+  accept 761 npc 2947
+
+step
+  only Tauren
+  tip Accept from Brave Wildrunner: Longwalker Malah (Forever new)
+  accept 99079 npc 3222
+
+step
+  tip Follow the road around the edge of Bloodhoof Village.
+  goto 46.6,63.4 r 20 map 1412
+
+step
+  turnin 763 npc 2993
+
+step
+  accept 745 npc 2993
+
+step
+  accept 746 npc 2993
+
+step
+  accept 767 npc 2993
+
+step
+  turnin 1656 npc 6747
+
+step
+  only Hunter
+  tip Buy an *Ornate Blunderbuss* from Kennah Hawkseye.
+  goto 45,62 r 20 map 1412
+
+step
+  only Hunter
+  tip Buy Light Shot from Kennah Hawkseye.
+  goto 45,62 r 20 map 1412
+
+step
+  tip Accept from Yaw Sharpmane: Chakuyak (Forever new)
+  accept 96130 npc 3065
+
+step
+  tip Accept from Ahab Wheathoof: Kyle's Gone Missing! (Forever new)
+  accept 99411 npc 277182
+
+step
+  accept 766 npc 3055
+
+step
+  turnin 767 npc 3054
+
+step
+  accept 771 npc 3054
+
+step
+  tip Pick up Ambercorns from the ground under the trees south of the village (2): Rite of Vision
+  note "Not available yet (level too low): Taming the Beast (level 10) — you'll pick it up the next time you're in town." only Hunter
+  goto 47.7,66.9 r 20 map 1412
+
+step
+  tip If you need more, check under the trees to the southeast: Rite of Vision
+  goto 50.4,66.5 r 20 map 1412
+
+step
+  tip Still short? Check under the trees further south: Rite of Vision
+  goto 49.7,72.5 r 20 map 1412
+
+step
+  tip Kill Chakuyak just to the west and loot its pelt: Chakuyak
+  complete 96130 @39.4,66 map 1412
+
+step
+  only Tauren
+  tip Accept from Ferris Stormhoof at Palemane Rock to the west: The Longwalkers (Forever new)
+  accept 98430 npc 272203
+
+step
+  only Tauren
+  tip Escort Ferris out of the rock: The Longwalkers
+  complete 98430 @37.1,64.8 map 1412
+
+step
+  only Tauren
+  complete 748 @49.4,68.8 map 1412
+
+step
+  along
+  level 7 -- You need to be level 7. If not, grind a little more.
+
+step
+  only Shaman,Druid
+  tip Buy Ice Cold Milk.
+  goto 46.8,64.5 r 20 map 1412
+
+step
+  only Tauren
+  turnin 748 npc 2948
+
+step
+  only Tauren
+  accept 754 npc 2948
+
+step
+  only Druid
+  tip Buy a *Walking Stick* from Mahnott Roughwound.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  only Shaman
+  tip Buy a *Walking Stick* from Mahnott Roughwound.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  only Warrior,Tauren
+  tip Buy a *Wooden Mallet* from Mahnott Roughwound.
+  goto 45.2,62.1 r 20 map 1412
+
+step
+  tip If you still need Ambercorns, pick up more under the trees nearby: Rite of Vision
+  note "Sell junk to Jhawna Oatwind."
+  goto 50.4,66.5 r 20 map 1412
+
+step
+  note "Kill an Adult Plainstrider nearby and keep 1 \"Tender Strider Meat\" (to feed Kyle)."
+  complete 745 @36.5,65.1 map 1412
+
+step
+  tip Pick up 2 Well Stones on the ground around the southeast well: Rite of Vision
+  goto 51.9,68.5 r 20 map 1412
+
+step
+  only Tauren
+  complete 754 @51.9,68.5 map 1412
+
+step
+  only Tauren
+  tip Turn in to Malah Longwind on the eastern hill: Longwalker Malah
+  turnin 99079 npc 275789
+
+step
+  only Tauren
+  accept 99081 npc 275789
+
+step
+  accept 749 npc 2988
+
+step
+  complete 761 @49.8,23.7 map 1412
+
+step
+  complete 771 @51.6,68.1 map 1412
+
+step
+  turnin 749 object 2908
+
+step
+  accept 751 object 2908
+
+step
+  along
+  level 8 -- You need to be level 8. If not, grind a little more.
+
+step
+  turnin 751 npc 2988
+
+step
+  accept 764 npc 2988
+
+step
+  accept 765 npc 2988
+
+step
+  complete 766 @51.5,50.9 map 1412
+
+step
+  tip Accept from Krang Stonehoof: Sparring Match (Forever new)
+  accept 99108 npc 3063
+
+step
+  tip Talk to the Novice Warriors right next to him and beat them 3 times (winning duels against other players also counts): Sparring Match
+  complete 99108 @48.8,63.7 map 1412
+
+step
+  tip Turn in to Krang Stonehoof: Sparring Match
+  turnin 99108 npc 3063
+
+step
+  only Tauren
+  tip Turn in to Brave Wildrunner: Grim Tidings
+  turnin 99081 npc 3222
+
+step
+  only Tauren
+  accept 99101 npc 3222
+
+step
+  only Tauren
+  tip Turn in to Baine Bloodhoof: Our Ancient Enemy
+  turnin 99101 npc 2993
+
+step
+  only Tauren
+  accept 99080 npc 2993
+
+step
+  only Tauren
+  turnin 754 npc 2948
+
+step
+  only Tauren
+  accept 756 npc 2948
+
+step
+  note "Train spells at Krang Stonehoof." only Warrior
+  turnin 761 npc 2947
+
+step
+  note "Train spells at Gennia Runetotem." only Druid
+  note "Train spells at Narm Skychaser." only Shaman
+  turnin 745 npc 2993
+
+step
+  only Shaman,Druid
+  tip Buy Ice Cold Milk from Moorane Hearthgrain.
+  goto 46,63.8 r 20 map 1412
+
+step
+  only Tauren
+  tip Learn Cooking from Pyall Silentstride and turn in Camping 101: Cooking
+  turnin 96661 npc 3067
+
+step
+  note "Learn First Aid from Vira Younghoof."
+  note "Profession available: Skinning."
+  note "Profession available: Leatherworking."
+  note "Sell junk."
+  turnin 766 npc 3055
+
+step
+  tip Use the Tender Strider Meat on Kyle the Frenzied, who runs clockwise around Bloodhoof Village: Kyle's Gone Missing!
+  complete 99411 @46.4,61.7 map 1412
+
+step
+  tip Turn in to Ahab Wheathoof: Kyle's Gone Missing!
+  turnin 99411 npc 277182
+
+step
+  tip Turn in to Yaw Sharpmane: Chakuyak
+  turnin 96130 npc 3065
+
+step
+  turnin 771 npc 3054
+
+step
+  accept 772 npc 3054
+
+step
+  note "Not available yet (level too low): The Hunter's Way (level 10) — you'll pick it up the next time you're in town."
+  note "Not available yet (level too low): Heeding the Call (level 10) — you'll pick it up the next time you're in town." only Druid
+  note "Train spells at Yaw Sharpmane." only Hunter
+  turnin 772 npc 2984
+
+step
+  accept 773 npc 2984
+
+step
+  tip On the way, kill Ghost Howl (a wandering wolf) for the *Demon Scarred Cloak*. Click the cloak to accept The Demon Scarred Cloak
+  accept 770 @34.7,34.2 map 1412
+
+step
+  complete 743 @34,47.5 map 1412
+
+step
+  along
+  level 9 -- You need to be level 9. If not, grind a little more.
+
+step
+  complete 746 @33.1,54.8 map 1412
+
+step
+  only Tauren
+  complete 756 @55.6,53.7 map 1412
+
+step
+  note "Sell junk to Harn Longcast."
+  turnin 770 npc 3052
+
+step
+  turnin 746 npc 2993
+
+step
+  turnin 743 npc 2985
+
+step
+  only Tauren
+  turnin 756 npc 2948
+
+step
+  only Tauren
+  accept 758 npc 2948
+
+step
+  only Tauren
+  tip Finish at the Thunderhorn Water Well north of the village: Thunderhorn Cleansing
+  complete 758 @44.2,51 map 1412
+
+step
+  along
+  level 9.89 -- Grind until you are level 9 with 5800 XP.
+
+step
+  only Tauren
+  turnin 758 npc 2948
+
+step
+  only Tauren
+  accept 759 npc 2948
+
+step
+  along
+  level 10 -- You need to be level 10. If not, grind a little more.
+
+step
+  accept 861 npc 3052
+
+step
+  only Druid
+  accept 5928 npc 3064
+
+step
+  only Hunter
+  tip Buy Heavy Shot from Kennah Hawkseye.
+  goto 45,62 r 20 map 1412
+
+step
+  only Hunter
+  accept 6061 npc 3065
+
+step
+  only Hunter
+  note "Train spells at Yaw Sharpmane."
+  complete 6061 @41,59.6 map 1412
+
+step
+  only Hunter
+  turnin 6061 npc 3065
+
+step
+  only Hunter
+  accept 6087 npc 3065
+
+step
+  only Hunter
+  complete 6087 @47.3,51 map 1412
+
+step
+  only Hunter
+  turnin 6087 npc 3065
+
+step
+  only Hunter
+  accept 6088 npc 3065
+
+step
+  only Hunter
+  complete 6088 @47.2,41.3 map 1412
+
+step
+  only Hunter
+  turnin 6088 npc 3065
+
+step
+  only Hunter
+  accept 6089 npc 3065
+
+step
+  only Hunter
+  accept 744 npc 2987
+
+step
+  only Hunter
+  turnin 6089 npc 3039
+
+step
+  accept 1505 npc 3063 optional only Warrior
+  note "Train spells at Krang Stonehoof." only Warrior
+  note "Train spells at Gennia Runetotem." only Druid
+  accept 2984 npc 3066 optional only Shaman
+  note "Train spells at Narm Skychaser." only Shaman
+  accept 833 npc 3233
+
+step
+  turnin 773 npc 2994
+
+step
+  accept 775 npc 2994
+
+step
+  complete 833 @58,29.9 map 1412
+
+step
+  turnin 833 npc 3233
+
+step
+  only Tauren
+  complete 759 @63.2,66.5 map 1412
+
+step
+  complete 861 @44.3,27.7 map 1412
+
+step
+  complete 764 @58.8,54.1 map 1412
+
+step
+  tip From the mine entrance, keep going east. There is a small room next to the crane carrying lumber. Kill Fizsprocket: Supervisor Fizsprocket
+  complete 765 @61.4,49.3 map 1412
+
+step
+  along
+  complete 98424 @61.8,47.3 map 1412 -- Collect the other 4 documents: Fizsprocket's Notes
+
+step
+  only Tauren
+  tip Kill 6 Galak centaurs and 4 scouts and loot Raider Herak's head: Drive Them Out
+  complete 99080 @64,61.6 map 1412
+
+step
+  accept 98424 @61.4,49.3 map 1412 optional -- When you pick up Fizsprocket's notes in the mine, accept Fizsprocket's Notes
+  turnin 764 npc 2988
+
+step
+  when complete 98424
+  tip Turn in to Morin Cloudstalker: Fizsprocket's Notes
+  turnin 98424 npc 2988
+
+step
+  turnin 765 npc 2988
+
+step
+  only Tauren
+  turnin 759 npc 2948
+
+step
+  only Tauren
+  accept 760 npc 2948
+
+step
+  only Tauren
+  tip Turn in to Baine Bloodhoof: Drive Them Out
+  turnin 99080 npc 2993
+
+step
+  only Tauren
+  accept 99082 npc 2993
+
+step
+  only Warrior,Warlock,Rogue,Shaman,Druid,Mage,Priest
+  accept 744 npc 2987
+
+step
+  only Hunter
+  tip Learn weapon skills from Ansekhwa.
+  goto 40.9,62.7 r 20 map 1456
+
+step
+  only Warrior
+  tip Learn the weapon skills you need from Ansekhwa.
+  goto 40.9,62.7 r 20 map 1456
+
+step
+  tip Buy Mild Spices from Naal Mistrunner.
+  note "Repair at Jyn Stonehoof."
+  note "Sell junk to Naal Mistrunner."
+  goto 51,52.5 r 20 map 1456
+
+step
+  turnin 775 npc 3057
+
+step
+  when complete 768
+  tip Hand over the 12 Light Leather and turn in Gathering Leather
+  turnin 768 npc 3050
+
+step
+  when complete 769
+  tip Turn it in right away: Kodo Hide Bag
+  turnin 769 npc 3050
+
+step
+  only Tauren
+  turnin 98430 npc 3057
+
+step
+  accept 768 npc 3050 optional -- If you learned Skinning and have 12 *Light Leather* (Auction House), accept from Veren Tallstrider: Gathering Leather
+  accept 769 npc 3050 optional -- If you also have 4 *Light Leather* and 4 *Coarse Thread* (trade goods vendor), accept the follow-up Kodo Hide Bag
+  accept 776 npc 3057
+
+step
+  only Tauren
+  tip Turn in to Cairne Bloodhoof: The High Chieftain
+  turnin 99082 npc 3057
+
+step
+  tip Buy a Small Brown Pouch from Thrumn.
+  note "Sell junk to Thrumn."
+  goto 49.1,34.2 r 20 map 1456
+
+step
+  along
+  level 11 -- You need to be level 11. If not, grind a little more.
+
+step
+  tip *These are Ragefire Chasm dungeon quests.*
+  goto 70.4,32.2 r 20 map 1456
+
+step
+  only Druid
+  turnin 5928 npc 3033
+
+step
+  only Druid
+  accept 5922 npc 3033
+
+step
+  accept 5722 npc 11833 optional -- Accept *Searching for the Lost Satchel* (Ragefire Chasm dungeon, optional)
+  accept 5723 npc 11833 optional -- Accept *Testing an Enemy's Strength* (optional)
+  accept 886 npc 5769
+
+step
+  complete 744 @33.4,36.7 map 1412
+
+step
+  only Druid
+  note "Open your spellbook and cast *Teleport: Moonglade*."
+  turnin 5922 npc 11802
+
+step
+  only Druid
+  accept 5930 npc 11802
+
+step
+  only Druid
+  complete 5930 @39,27 map 1450
+
+step
+  only Druid
+  turnin 5930 npc 11802
+
+step
+  only Druid
+  accept 5932 npc 11802
+
+step
+  only Druid
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  complete 776 @47.6,26.6 map 1412
+
+step
+  only Tauren
+  complete 760 @42.5,24.7 map 1412
+
+step
+  tip Buy a Small Brown Pouch.
+  note "Sell junk to Thrumn."
+  goto 49.1,34.2 r 20 map 1456
+
+step
+  turnin 776 npc 3057
+
+step
+  only Druid
+  turnin 5932 npc 3033
+
+step
+  only Druid
+  accept 6002 npc 3033
+
+step
+  turnin 744 npc 2987
+
+step
+  turnin 861 npc 3441
+
+step
+  accept 860 npc 3441
+
+step
+  only Tauren
+  turnin 760 npc 2948
+
+step
+  only Tauren
+  accept 98435 npc 2948
+
+step
+  along
+  level 12 -- You need to be level 12. If not, grind until you are level 12.
+
+step
+  tip Time to leave Mulgore. Discover the Camp Taurajo flight path.
+  getfp "Camp Taurajo"
+
+step
+  accept 854 npc 3418
+
+step
+  only Druid
+  tip Use the Cenarion Moondust on the Moonkin Stone west of Taurajo and kill Lunaclaw: Body and Heart
+  complete 6002 @42,60.8 map 1413
+
+step
+  tip Run north along the main road to reach the Crossroads. It's a long run. Turn in The Barrens Oases
+  turnin 886 npc 3448
+
+step
+  tip Turn in to Sergra Darkthorn: Sergra Darkthorn
+  turnin 860 npc 3338
+
+step
+  turnin 854 npc 3429
+
+step
+  tip Accept from Zargh at this point: A Bundle of Hides
+  accept 6361 npc 3483
+
+step
+  tip Discover the The Crossroads flight path.
+  getfp "Crossroads"
+
+step
+  turnin 6361 npc 3615
+
+step
+  accept 6362 npc 3615
+
+step
+  tip Thunder Bluff Fly to Thunder Bluff.
+  fly "Thunder Bluff"
+
+step
+  turnin 6362 npc 8359
+
+step
+  accept 6363 npc 8359
+
+step
+  turnin 6363 npc 2995
+
+step
+  accept 6364 npc 2995
+
+step
+  only Tauren
+  tip Turn in to Hamuul Runetotem: Thunderhorn's Report
+  turnin 98435 npc 5769
+
+step
+  only Druid
+  tip Turn in to Turak Runetotem: Body and Heart — Bear Form
+  turnin 6002 npc 3033
+
+step
+  tip The Crossroads Fly to the Crossroads.
+  fly "Crossroads"
+
+step
+  turnin 6364 npc 3483
+
+step
+  tip Set your Hearthstone to The Crossroads with the innkeeper.
+  sethome "The Crossroads"

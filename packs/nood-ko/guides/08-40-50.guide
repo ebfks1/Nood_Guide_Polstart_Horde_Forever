@@ -1,0 +1,2076 @@
+guide nood-ko/08-40-50
+title 40-50 Nood: 울다만·줄파락·마라우돈
+levels 40-50
+zone map 1458
+faction Horde
+folder Nood 가이드
+why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 40-50 구간: 크롤독 보루 42.5 (포에버 신규) → 울다만 43.5 → 줄파락 46 → 마라우돈 49.
+coords era
+next nood-ko/09-50-60
+# Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+
+step
+  tip ▶ 다음 던전: 크롤독 보루 (약 Lv42.5에 갑니다 — 포에버 신규) — 지금 약 Lv41.2. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 해머폴로 비행하세요.
+  fly "Hammerfall"
+
+step
+  tip 젠구에게 퀘스트 완료: 트롤베인 (그롬골에서 받은 퀘스트)
+  turnin 638 npc 2703
+
+step
+  when level<42
+  tip 드럼 펠에게 퀘스트 수락: 전장으로
+  accept 678 npc 2771
+
+step
+  when level<41
+  tip 토건에게 퀘스트 수락: 랩터의 기민함
+  accept 701 npc 2706
+
+step
+  when level<41
+  tip 젠구에게 퀘스트 수락: 스트롬의 인장
+  accept 639 npc 2703
+
+step
+  when level<42
+  tip 오우거를 처치하여 완수하세요: 전장으로
+  complete 678 @53,76.8 map 1417
+
+step
+  when level<41
+  tip 랩터들을 처치하여 완수하세요: 랩터의 기민함
+  collect 4513 quest 701.1
+
+step
+  when level<41
+  tip 서쪽 스트롬가드에서 스트롬의 인장을 찾으세요 (주변 스트롬가드 수호병·트롤사냥꾼): 스트롬의 인장
+  complete 639 @24,59 map 1417
+
+step
+  tip 서쪽 팔디르의 만으로 가세요. 작은 터널을 따라가면 팔디르의 만에 도착할 수 있습니다.
+  goto 31,64 r 20 map 1417
+
+step
+  accept 663 npc 2766
+
+step
+  turnin 663 npc 2610
+
+step
+  when level<44
+  accept 662 npc 2767
+
+step
+  when level<44
+  accept 664 npc 2769
+
+step
+  when level<44
+  accept 665 npc 2768
+
+step
+  when level<44
+  tip 호위 퀘스트를 완수하세요: 가라앉은 보물
+  complete 665
+
+step
+  turnin 665 npc 2774
+
+step
+  when level<44
+  accept 666 npc 2774
+
+step
+  when level<44
+  tip 보물찾기 고글을 착용하고, 수중 호흡의 비약을 복용하세요 (언데드는 필요 없음). 나가들을 처치해 완수하세요: 비통한 마음
+  kill 2595 quest 664.1
+  kill 2596 quest 664.2
+
+step
+  when level<44
+  tip 엘프의 보석을 획득해 완수하세요: 가라앉은 보물
+  collect 4492 quest 666.1
+
+step
+  when level<44
+  tip 지점에서 획득하세요: 실버파인호 해도
+  collect 4488 quest 662.3 @20.4,85.6 map 1417
+
+step
+  when level<44
+  tip 지점에서 획득하세요: 실버파인호 항해일지
+  collect 4490 quest 662.4 @20.7,85.1 map 1417
+
+step
+  when level<44
+  tip 지점에서 획득하세요: 폴리호 항해일지
+  collect 4489 quest 662.2 @23.4,85.1 map 1417
+
+step
+  when level<44
+  tip 지점에서 획득하세요: 폴리호 해도
+  collect 4487 quest 662.1 @23,84.4 map 1417
+
+step
+  when level<44
+  turnin 662 npc 2767
+
+step
+  when level>=44
+  when complete 662
+  turnin 662 npc 2767
+
+step
+  when level<44
+  turnin 664 npc 2769
+
+step
+  when level>=44
+  when complete 664
+  turnin 664 npc 2769
+
+step
+  when level<44
+  turnin 666 npc 2774
+
+step
+  when level>=44
+  when complete 666
+  turnin 666 npc 2774
+
+step
+  when level<44
+  accept 668 npc 2774
+
+step
+  turnin 668 npc 2610
+
+step
+  when level<44
+  tip 퀘스트 수락: 가라앉은 보물 (무법항에 전달 — 나중에)
+  accept 669 npc 2610
+
+step
+  tip 해머폴로 비행하세요 (비행 지점이 없으면 달려서 이동).
+  fly "Hammerfall"
+
+step
+  when level<41
+  tip 토건에게 퀘스트 완료: 랩터의 기민함
+  turnin 701 npc 2706
+
+step
+  when level>=41
+  when complete 701
+  tip 토건에게 퀘스트 완료: 랩터의 기민함
+  turnin 701 npc 2706
+
+step
+  when level<41
+  tip 이어서 토건에게 퀘스트 수락: 랩터의 기민함
+  accept 702 npc 2706
+
+step
+  tip 고르멀에게 퀘스트 완료: 랩터의 기민함
+  turnin 702 npc 2792
+
+step
+  when level<41
+  tip 젠구에게 퀘스트 완료: 스트롬의 인장 (이어지는 인장 연계는 받지 않습니다)
+  turnin 639 npc 2703
+
+step
+  when level>=41
+  when complete 639
+  tip 젠구에게 퀘스트 완료: 스트롬의 인장 (이어지는 인장 연계는 받지 않습니다)
+  turnin 639 npc 2703
+
+step
+  when level<42
+  tip 드럼 펠에게 퀘스트 완료: 전장으로
+  turnin 678 npc 2771
+
+step
+  when level>=42
+  when complete 678
+  tip 드럼 펠에게 퀘스트 완료: 전장으로
+  turnin 678 npc 2771
+
+step
+  tip 남쪽으로 내려가 탄돌 다리를 건너 저습지로 가세요.
+  goto 48,85 r 20 map 1417
+
+step
+  tip 지점에 있는 던 알가즈로 이동하세요.
+  goto 54,70 r 20 map 1437
+
+step
+  tip 터널을 따라가면 모단 호수에 진입할 수 있습니다. 지점으로 이동하여 황야의 땅에 진입하세요.
+  goto 47,76.4 r 20 map 1432
+
+step
+  when level<41
+  accept 710 npc 2921
+
+step
+  when level<41
+  tip 정령들을 처치해 완수하세요: 바위의 정령 연구
+  complete 710 @20.2,46.2 map 1418
+
+step
+  when level<41
+  turnin 710 npc 2921
+
+step
+  when level>=41
+  when complete 710
+  turnin 710 npc 2921
+
+step
+  when level<43
+  accept 711 npc 2921
+
+step
+  tip 새로운 비행 지점을 발견하세요: 카르가스
+  getfp "Kargath"
+
+step
+  when level<44
+  tip 퀘스트 수락: 헬그럼에게 보고 (슬픔의 늪에 전달)
+  accept 1420 npc 5394
+
+step
+  when level<44
+  accept 1419 npc 5394
+
+step
+  tip 퀘스트 수락: 황야의 땅에서 재료 찾기 — ◆던전 선행(울다만)
+  accept 2258 npc 6868
+
+step
+  when level<47
+  accept 782 npc 1068
+
+step
+  when level<44
+  accept 703 npc 2817
+
+step
+  tip 리글퍼즈에게 퀘스트 수락 (또는 파티원에게 공유받기): 마법석 (울다만 준비)
+  accept 2418 npc 2817
+
+step
+  tip 실성한 텔두린에게 퀘스트 수락 (또는 파티원에게 공유받기): 멸망의 해결책 (울다만 준비)
+  accept 709 npc 2785
+
+step
+  tip 코요테를 처치해 완수하세요: 도둑 코요테송곳니 획득
+  collect 6166 quest 1419.1
+  collect 7846 quest 2258.2
+
+step
+  tip 독수리를 처치해 완수하세요: 모래주머니 획득날개 획득
+  collect 7847 quest 2258.1
+  complete 703
+
+step
+  tip 바위 정령을 처치해 완수하세요: 바위의 정령 연구정령 파편 획득
+  complete 711 @40,78 map 1418
+  collect 7848 quest 2258.3 @40,78 map 1418
+
+step
+  when level<44
+  turnin 703 npc 2817
+
+step
+  when level>=44
+  when complete 703
+  turnin 703 npc 2817
+
+step
+  when level<43
+  turnin 711 npc 2921
+
+step
+  when level>=43
+  when complete 711
+  turnin 711 npc 2921
+
+step
+  when level<46
+  accept 712 npc 2921
+
+step
+  when level<46
+  tip 상급 정령을 처치해 완수하세요: 바위의 정령 연구
+  complete 712 @9.4,73.6 map 1418
+
+step
+  when level<46
+  tip 퀘스트 완료: 바위의 정령 연구 (이어지는 연금술·기계공학 재료 퀘스트는 받지 않습니다)
+  turnin 712 npc 2921
+
+step
+  when level>=46
+  when complete 712
+  tip 퀘스트 완료: 바위의 정령 연구 (이어지는 연금술·기계공학 재료 퀘스트는 받지 않습니다)
+  turnin 712 npc 2921
+
+step
+  when level<44
+  turnin 1419 npc 5394
+
+step
+  when level>=44
+  when complete 1419
+  turnin 1419 npc 5394
+
+step
+  tip 퀘스트 완료: 황야의 땅에서 재료 찾기 — ◆던전 선행(울다만)
+  turnin 2258 npc 6868
+
+step
+  tip 이어서 자칼 모스멜드에게 퀘스트 수락 (또는 파티원에게 공유받기): 울다만에서 재료 찾기 (울다만 준비)
+  accept 2202 npc 6868
+
+step
+  tip 그롬골 주둔지로 비행하세요.
+  fly "Grom'gol"
+
+step
+  tip 지점에서 북쪽으로 가면 그늘숲에 진입할 수 있습니다.
+  goto 39.8,6.6 r 20 map 1434
+
+step
+  tip 지점으로 이동하여 길을 따라 동쪽으로 이동하면
+  goto 81.8,19.8 r 20 map 1431
+
+step
+  tip 죽음의 고개에 진입할 수 있습니다. 길을 따라서 쭉 동쪽으로 이동하면 슬픔의 늪에 도달합니다! 이제 슬픔의 늪으로 달려보죠.
+  goto 43,55 r 20 map 1435
+
+step
+  tip 새로운 비행 지점을 발견하세요: 스토나드
+  getfp "Stonard"
+
+step
+  turnin 1420 npc 1442
+
+step
+  tip 펠제룰에게 퀘스트 수락: 눈물의 연못 (아탈학카르 신전 연계의 시작) — ◆던전 선행(아탈학카르 신전)
+  accept 1424 npc 1443
+
+step
+  when level<44
+  accept 698 npc 5591
+
+step
+  when level<48
+  tip 다르에게 퀘스트 수락: 싱싱한 고기
+  accept 1430 npc 5591
+
+step
+  when level<44
+  tip 스토나드 주변에 있는 톱니악어를 처치해 완수하세요: 보급품 보충
+  collect 6169 quest 698.1
+
+step
+  tip 눈물의 연못 주변에서 유물 획득을 완수하세요: 눈물의 연못
+  collect 6175 quest 1424.1
+
+step
+  when level<44
+  turnin 698 npc 5592
+
+step
+  when level>=44
+  when complete 698
+  turnin 698 npc 5592
+
+step
+  when level<46
+  accept 699 npc 5592
+
+step
+  when level<46
+  tip 무쇠턱 톱니악어를 처치해 완수하세요: 보급품 보충
+  complete 699 @83.2,70.2 map 1435
+
+step
+  when level<46
+  turnin 699 npc 5592
+
+step
+  when level>=46
+  when complete 699
+  turnin 699 npc 5592
+
+step
+  when level<49
+  accept 1422 npc 5592
+
+step
+  turnin 1422 npc 5593
+
+step
+  when level<47
+  accept 1426 npc 5593
+
+step
+  when level<47
+  tip 근처 멀록을 처치해 완수하세요: 바다의 위협
+  kill 747 quest 1426.1
+  kill 750 quest 1426.2
+  kill 751 quest 1426.3
+
+step
+  when level<48
+  tip 동쪽 해안의 괴물게를 처치해 다리 10개를 모으세요: 싱싱한 고기
+  complete 1430 @95,58 map 1435
+
+step
+  when level<47
+  turnin 1426 npc 5593
+
+step
+  when level>=47
+  when complete 1426
+  turnin 1426 npc 5593
+
+step
+  when level<47
+  accept 1427 npc 5593
+
+step
+  turnin 1427 npc 5592
+
+step
+  when level<49
+  accept 1428 npc 5593
+
+step
+  when level<49
+  tip 멀록을 처치해 완수하세요: 계속되는 위협
+  kill 750 quest 1428.1
+  kill 751 quest 1428.2
+  kill 752 quest 1428.3
+
+step
+  when level<49
+  turnin 1428 npc 5593
+
+step
+  when level>=49
+  when complete 1428
+  turnin 1428 npc 5593
+
+step
+  when level<48
+  tip 스토나드로 돌아와 다르에게 퀘스트 완료: 싱싱한 고기
+  turnin 1430 npc 5591
+
+step
+  when level>=48
+  when complete 1430
+  tip 스토나드로 돌아와 다르에게 퀘스트 완료: 싱싱한 고기
+  turnin 1430 npc 5591
+
+step
+  tip 펠제룰에게 퀘스트 완료: 눈물의 연못 — ◆던전 선행(아탈학카르 신전)
+  turnin 1424 npc 1443
+
+step
+  tip 이어서 펠제룰에게 퀘스트 수락: 추방된 아탈라이 트롤 (동부 내륙지 — 45-60 구간에서 보고) — ◆던전 선행(아탈학카르 신전)
+  accept 1429 npc 1443
+
+step
+  tip 무법항으로 비행하세요.
+  fly "Booty Bay"
+
+step
+  turnin 669 npc 2487
+
+step
+  when level<49
+  accept 2864 npc 773
+
+step
+  when level<48
+  accept 621 npc 2498
+
+step
+  tip 무법항을 귀환 장소로 설정하세요.
+  sethome "Booty Bay"
+
+step
+  when level<47
+  accept 617 npc 2494
+
+step
+  when level<45
+  accept 606 npc 2501
+
+step
+  when level<49
+  accept 2872 npc 2501
+
+step
+  when level<45
+  accept 595 npc 2490
+
+step
+  turnin 595 object 2083
+
+step
+  when level<45
+  accept 597 object 2083
+
+step
+  when level<47
+  tip 나가를 처치해 완수하세요: 아키리스 묶음
+  complete 617 @27.2,63 map 1434
+
+step
+  when level<45
+  tip 고릴라를 처치해 완수하세요: 겁쟁이
+  complete 606 @33.2,65.8 map 1434
+
+step
+  when level<45
+  turnin 606 npc 2502
+
+step
+  when level>=45
+  when complete 606
+  turnin 606 npc 2502
+
+step
+  when level<47
+  turnin 617 npc 2494
+
+step
+  when level>=47
+  when complete 617
+  turnin 617 npc 2494
+
+step
+  when level<45
+  accept 607 npc 2502
+
+step
+  turnin 597 npc 2490
+
+step
+  when level<45
+  accept 599 npc 2490
+
+step
+  turnin 607 npc 2501
+
+step
+  when level<48
+  accept 609 npc 2501
+
+step
+  turnin 599 npc 2487
+
+step
+  when level<47
+  accept 604 npc 2487
+
+step
+  when level<45
+  accept 587 npc 2488
+
+step
+  when level<46
+  accept 576 npc 2493
+
+step
+  when level<47
+  tip 해도를 획득하세요: 붉은해적단 해도
+  collect 3920 quest 604.2 @27.7,83.1 map 1434
+
+step
+  when level<47
+  tip 명령서를 획득하세요: 붉은해적단 명령서
+  collect 3921 quest 604.3
+
+step
+  when level<47
+  tip 칼잡이를 처치해 완수하세요: 칼잡이 처치
+  kill 1563 quest 604.1
+
+step
+  when level<45
+  tip 붉은해적단 아무나 잡아도 획득할 수 있습니다. 코담배 획득을 완수하세요: 코담배를 찾아서
+  collect 3910 quest 587.1
+
+step
+  when level<46
+  tip 디지의 눈을 획득하세요: 잃어버린 눈
+  collect 3897 quest 576.1
+
+step
+  hearth "Booty Bay"
+
+step
+  when level<47
+  note "무법항으로 귀환하세요."
+  turnin 604 npc 2487
+
+step
+  when level>=47
+  when complete 604
+  turnin 604 npc 2487
+
+step
+  when level<49
+  accept 608 npc 2487
+
+step
+  when level<45
+  turnin 587 npc 2488
+
+step
+  when level>=45
+  when complete 587
+  turnin 587 npc 2488
+
+step
+  when level<46
+  turnin 576 npc 2493
+
+step
+  when level>=46
+  when complete 576
+  turnin 576 npc 2493
+
+step
+  when level<45
+  tip 고블린을 처치해 완수하세요: 투자개발회사 채광
+  complete 600 @40,44 map 1434
+
+step
+  tip 파티를 권장합니다. 바그테라를 *찾으세요*
+  note "※ 귀환석이 무법항으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 무법항까지 비행하거나 달려가세요."
+  goto 48,20 r 20 map 1434
+
+step
+  when level<44
+  tip 바그테라를 처치하세요: 퓨마 사냥법 익히기
+  note "없다면 위치도 확인해 보세요."
+  collect 3876 quest 193.1
+
+step
+  when level<45
+  tip 줄무늬정글랩터를 처치해 완수하세요: 랩터 사냥법 익히기
+  complete 196 @29.8,44.2 map 1434
+
+step
+  when level<45
+  tip 줄무늬정글랩터 깃털 10개도 함께 모으세요: 모크타르딘의 마법
+  collect 3863 quest 572.1
+
+step
+  tip 파티를 권장합니다.
+  goto 23,9 r 20 map 1434
+
+step
+  when level<45
+  tip 간줄라와 네즐뤼크를 찾아 처치하세요: 붉은머리부족의 머리카락
+  collect 3904 quest 584.1
+  collect 3905 quest 584.2
+
+step
+  when level<45
+  turnin 196 npc 715
+
+step
+  when level>=45
+  when complete 196
+  turnin 196 npc 715
+
+step
+  when level<44
+  turnin 193 npc 718
+
+step
+  when level>=44
+  when complete 193
+  turnin 193 npc 718
+
+step
+  when level<45
+  tip 예언자 모크타르딘에게 퀘스트 완료: 모크타르딘의 마법 (이어지는 퀘스트는 받지 않습니다)
+  turnin 572 npc 2465
+
+step
+  when level>=45
+  when complete 572
+  tip 예언자 모크타르딘에게 퀘스트 완료: 모크타르딘의 마법 (이어지는 퀘스트는 받지 않습니다)
+  turnin 572 npc 2465
+
+step
+  when level<45
+  tip 가마솥을 클릭해 퀘스트 완료: 붉은머리부족의 머리카락
+  turnin 584 object 2076
+
+step
+  when level>=45
+  when complete 584
+  tip 가마솥을 클릭해 퀘스트 완료: 붉은머리부족의 머리카락
+  turnin 584 object 2076
+
+step
+  when level<44
+  accept 585 object 2076
+
+step
+  when level<50
+  accept 586 object 2076
+
+step
+  when level<46
+  tip 킨윌레이에게 퀘스트 수락: 부서진 뼈목걸이 (앞의 두 퀘스트를 했으면 받을 수 있습니다)
+  accept 598 npc 2519
+
+step
+  when level<44
+  tip 전리품 해골을 획득하세요: 지아타자이 해골
+  collect 3907 quest 585.2 @42.2,36.1 map 1434
+
+step
+  when level<44
+  tip 전리품 해골을 획득하세요: 발리아마 해골
+  collect 3906 quest 585.1 @46.1,32.4 map 1434
+
+step
+  when level<44
+  tip 전리품 해골을 획득하세요: 줄맘웨 해골
+  collect 3908 quest 585.3 @47.6,39.5 map 1434
+
+step
+  when level<50
+  tip 백골가루부족 트롤들을 처치해 완수하세요: 간줄라와의 대화
+  kill 669 quest 586.1
+  kill 781 quest 586.2
+  kill 783 quest 586.3
+  collect 3909 quest 586.4
+
+step
+  when level<46
+  tip 어금니 획득을 완수하세요: 백골가루부족 어금니
+  collect 1524 quest 209.1
+
+step
+  when level<46
+  tip 뼈목걸이 획득을 완수하세요: 부서진 뼈목걸이
+  collect 3916 quest 598.1
+
+step
+  when level<50
+  tip 아나텍을 *찾아* 처치하세요: 아나텍의 갑옷
+  collect 3909 quest 586.4 @44,44 map 1434
+
+step
+  when level<46
+  turnin 598 npc 2519
+
+step
+  when level>=46
+  when complete 598
+  turnin 598 npc 2519
+
+step
+  when level<44
+  turnin 585 object 2076
+
+step
+  when level>=44
+  when complete 585
+  turnin 585 object 2076
+
+step
+  when level<50
+  turnin 586 object 2076
+
+step
+  when level>=50
+  when complete 586
+  turnin 586 object 2076
+
+step
+  when level<49
+  accept 588 object 2076
+
+step
+  turnin 588 npc 2519
+
+step
+  when level<49
+  accept 589 npc 2519
+
+step
+  when level<49
+  tip 동굴 안에 있는 바실리스크를 처치해 완수하세요: 고동치는 푸른 수정
+  complete 589 @41,51 map 1434
+
+step
+  when level<48
+  tip 마우리를 처치하세요: 마우리의 의족
+  collect 3924 quest 609.1 @35,51 map 1434
+
+step
+  when level<48
+  tip 존존을 처치하세요: 존존의 황금 망원경
+  collect 3925 quest 609.2 @33.4,52.8 map 1434
+
+step
+  when level<48
+  tip 처키를 처치하세요: 처키의 큰 반지
+  collect 3926 quest 609.3 @40,58.2 map 1434
+
+step
+  when level<49
+  tip 최남단에 있는 작은 섬에 3척의 배가 있습니다. 선장 킬하울을 처치하세요: 킬하울 처치
+  kill 2548 quest 608.2 @29.2,88.4 map 1434
+
+step
+  when level<49
+  tip 함장 피랠론을 처치하세요: 피랠론 처치
+  kill 2546 quest 608.3 @30.6,90.4 map 1434
+
+step
+  when level<49
+  tip 선장 스틸워터를 처치하세요: 스틸워터 처치
+  kill 2550 quest 608.1 @33,88.2 map 1434
+
+step
+  tip 코르텔로의 수수께끼를 찾아서(3척의 배 중 하나에 있습니다), 퀘스트 수락 (★보상 연계): 코르텔로의 수수께끼
+  accept 624 item 4056
+  note "※ 귀환석이 무법항으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 무법항까지 비행하거나 달려가세요."
+
+step
+  hearth "Booty Bay"
+
+step
+  when level<48
+  note "무법항으로 귀환하세요."
+  turnin 621 npc 2498
+
+step
+  when level>=48
+  when complete 621
+  turnin 621 npc 2498
+
+step
+  when level<45
+  turnin 600 npc 2498
+
+step
+  when level>=45
+  when complete 600
+  turnin 600 npc 2498
+
+step
+  when level<46
+  turnin 209 npc 737
+
+step
+  when level>=46
+  when complete 209
+  turnin 209 npc 737
+
+step
+  when level<49
+  turnin 608 npc 2487
+
+step
+  when level>=49
+  when complete 608
+  turnin 608 npc 2487
+
+step
+  when level<48
+  turnin 609 npc 2501
+
+step
+  when level>=48
+  when complete 609
+  turnin 609 npc 2501
+
+step
+  tip 그롬골 주둔지로 비행하세요.
+  fly "Grom'gol"
+
+step
+  when level<49
+  turnin 589 npc 2519
+
+step
+  when level>=49
+  when complete 589
+  turnin 589 npc 2519
+
+step
+  tip 스토나드로 비행하세요.
+  fly "Stonard"
+
+step
+  tip 퀘스트 완료: 코르텔로의 수수께끼 — ★보상 연계
+  turnin 624 object 2553
+
+step
+  tip 퀘스트 수락: 코르텔로의 수수께끼 (먼지진흙 습지대 — 45-60 구간) — ★보상 연계
+  accept 625 object 2553
+  note "── 크롤독 보루 (포에버 신규 던전) ── 리버글레이드는 신규 지역이라 지도 화살표 좌표가 없습니다. 슬픔의 늪 북쪽(스토나드 북쪽)으로 올라가 리버글레이드의 호드 거점 로그마르와 비행 지점을 찾으세요. 길이 막혀 있으면 타나리스 동쪽 스팀휘들 항구에서 파우더퓨즈 항구행 배를 타세요."
+
+step
+  when onquest 94973
+  tip 로그마르에서 거푸집을 아는 사람을 찾아 퀘스트 완료: 크롤독 거푸집
+  turnin 94973 "크롤독 거푸집"
+
+step
+  when onquest 94974
+  tip 질긴 가죽 4개와 철괴 12개(경매장)를 크레자 다크쏜에게 주고 크롤독 열쇠를 받으세요: 열쇠 재료
+  turnin 94974 "열쇠 재료"
+
+step
+  tip 황혼의 망치단 신도에게서 귀 15개를 모으세요: 복수의 증표
+  accept 94973 "크롤독 거푸집" optional -- 크롤독 거푸집(리버글레이드 오우거 드롭)을 주웠다면 퀘스트 수락: 크롤독 거푸집 — ◆던전 선행(크롤독 보루)
+  accept 94974 "열쇠 재료" optional -- 이어서 크레자 다크쏜에게 퀘스트 수락: 열쇠 재료 — ◆던전 선행(크롤독 보루)
+  note "★ 크롤독 보루 — 약 Lv42.5 → 약 Lv43.5 · 권장 Lv40~45 (힐러 40 · 탱커·딜러 41) · 포에버 신규 던전"
+  note "리버글레이드 북쪽 요새 정문 서쪽 동굴(지도 좌표 37.5, 37.5)로 들어가세요."
+  accept 94975 "복수의 증표" optional -- ★ 던전 안 퀘스트 받기 (못 받은 것만): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
+  accept 94972 "황혼의 고서" optional
+  accept 95056 "크롤독은 이제 그만!" optional
+  complete 94975 "복수의 증표"
+
+step
+  complete 94972 "황혼의 고서" -- 나르구르크를 처치해 황혼의 고서를 얻으세요: 황혼의 고서
+  complete 95056 "크롤독은 이제 그만!" -- 던전 퀘스트를 완수하세요: 크롤독은 이제 그만!
+
+step
+  when onquest 94975
+  tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
+  turnin 94975 "복수의 증표"
+
+step
+  when onquest 94972
+  tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
+  turnin 94972 "황혼의 고서"
+
+step
+  when onquest 95056
+  tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
+  turnin 95056 "크롤독은 이제 그만!"
+
+step
+  when onquest 94968
+  tip 로그마르의 크롬로쉬에게 퀘스트 완료: 머그의 눈
+  turnin 94968 "머그의 눈"
+
+step
+  tip 카르가스로 비행하세요 (로그마르에서, 또는 스토나드로 돌아와서).
+  accept 94968 "머그의 눈" optional -- 우두머리 머그를 처치하고 머그의 눈을 주우면 퀘스트 수락: 머그의 눈
+  fly "Kargath"
+
+step
+  when level<47
+  tip 우두머리 토그룬을 *찾아* 처치하세요: 깨어진 동맹
+  complete 782 @62,72 map 1418
+
+step
+  when level<47
+  turnin 782 npc 1068
+
+step
+  when level>=47
+  when complete 782
+  turnin 782 npc 1068
+
+step
+  tip 43 Lv43 이상이어야 합니다 (힐러는 Lv42부터 가도 됩니다). 모자라면 붉은십자군 수도원 대성당에 한 번 더 다녀오거나 지나온 곳의 몹을 사냥하세요.
+  level 43
+
+step
+  tip 황야의 땅 북쪽 울다만 입구로 들어가세요 (입구 앞 발굴 현장의 그림자괴철로 드워프도 마법석을 떨어뜨립니다).
+  note "★ 울다만 — Lv43.5 → 약 Lv44.2 · 권장 Lv42~43 (힐러 42 · 탱커·딜러 43)"
+  goto 44.4,12.2 r 20 map 1418
+
+step
+  tip 그림자괴철로 드워프에게서 덴트리움·안알레움 마법석을 8개씩 모으세요: 마법석
+  collect 8009 quest 2418.1
+  collect 8052 quest 2418.2
+
+step
+  tip 남쪽 대전당의 궤짝에서 가레트가의 보물을 꺼내세요: 보물 되찾기
+  collect 8026 quest 2342.1
+
+step
+  tip 던전 안에서 값진 목걸이를 찾으세요 (부서진 것도 됩니다): 목걸이 회수
+  collect 7666 quest 2283.1
+
+step
+  tip 던전 안의 자홍버섯 12개를 모으세요: 울다만에서 재료 찾기
+  collect 8047 quest 2202.1
+
+step
+  tip 류네의 서판을 찾으세요: 멸망의 해결책
+  collect 4631 quest 709.1
+
+step
+  accept 2278 -- 노르간논의 원반 앞 바위감시자와 대화한 뒤 원반을 가동하세요: 백금 원반 — ★보상 연계
+  turnin 2278 -- 바위감시자와 다시 대화해 퀘스트 완료: 백금 원반 — ★보상 연계
+  accept 2280 -- 원반을 다시 클릭해 이어서 퀘스트 수락 (썬더 블러프 현자에게 보고 — 45-60 구간): 백금 원반 — ★보상
+
+step
+  tip ── 울다만 보고 ── 리글퍼즈에게 퀘스트 완료: 마법석
+  note "마지막 보스 아카에다스까지 정리하세요."
+  turnin 2418 npc 2817
+
+step
+  tip 실성한 텔두린에게 퀘스트 완료: 멸망의 해결책
+  turnin 709 npc 2785
+
+step
+  tip 카르가스로 비행하세요 (비행 지점이 없으면 달려서 이동).
+  fly "Kargath"
+
+step
+  tip 자칼 모스멜드에게 퀘스트 완료: 울다만에서 재료 찾기
+  turnin 2202 npc 6868
+
+step
+  when level<48
+  tip 이어서 자칼 모스멜드에게 퀘스트 수락: 황야의 땅에서 재료 찾기 — ◆던전 연계(울다만)
+  accept 2203 npc 6868
+
+step
+  when level<48
+  tip 동쪽의 화염의 수호비룡에게 빈 그릇을 사용해 채우세요: 황야의 땅에서 재료 찾기
+  complete 2203 @81.4,52.9 map 1418
+
+step
+  when level<48
+  tip 카르가스로 돌아와 자칼 모스멜드에게 퀘스트 완료: 황야의 땅에서 재료 찾기 — ◆던전 연계(울다만)
+  turnin 2203 npc 6868
+
+step
+  when level>=48
+  when complete 2203
+  tip 카르가스로 돌아와 자칼 모스멜드에게 퀘스트 완료: 황야의 땅에서 재료 찾기 — ◆던전 연계(울다만)
+  turnin 2203 npc 6868
+
+step
+  tip ▶ 다음 던전: 줄파락 (약 Lv46.3에 갑니다) — 지금 약 Lv44.2. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 그롬골 주둔지로 비행하세요 (이미 칼림도어라면 오그리마로 가세요).
+  fly "Grom'gol"
+
+step
+  tip 그롬골로 비행하세요.
+  fly "Grom'gol"
+
+step
+  tip 그롬골 비행선 탑에서 오그리마행 비행선을 타세요.
+  goto 32.4,29.2 r 20 map 1434
+
+step
+  tip 오그리마 드란 드로퍼스에게 퀘스트 완료: 목걸이 회수 (울다만에서 찾은 목걸이 — 이어지는 2차 시도는 받지 않습니다)
+  turnin 2283 npc 6986
+
+step
+  tip 이어서 드란 드로퍼스에게 퀘스트 수락: 리플 회수 (동부 내륙지 연계 — 바로 옆 말톤에게 전달)
+  accept 649 npc 6986
+
+step
+  tip 말톤 드로퍼스에게 퀘스트 완료: 리플 회수
+  turnin 649 npc 6987
+
+step
+  tip 이어서 말톤 드로퍼스에게 퀘스트 수락: 리플 회수 (동부 내륙지 — 나중에)
+  accept 650 npc 6987
+
+step
+  when level<47
+  tip 벨그롬 록마울에게 퀘스트 수락: 페랄라스의 위협 (페랄라스 — 나중에)
+  accept 2981 npc 4485
+
+step
+  tip 우텔나이에게 퀘스트 수락 (또는 파티원에게 공유받기): 음영석 조각 (마라우돈 준비)
+  accept 7068 npc 7311
+
+step
+  tip 담쟁이 마을로 비행하세요.
+  fly "Brackenwall Village"
+
+step
+  when level<47
+  accept 1166 npc 4500
+
+step
+  when level<47
+  accept 1168 npc 4502
+
+step
+  when level<47
+  accept 1169 npc 4501
+
+step
+  tip 남쪽 타베사에게 퀘스트 수락 (또는 파티원에게 공유받기): 심연의 티아라 (줄파락 준비 ★보상)
+  accept 2846 npc 6546
+
+step
+  when level<47
+  tip 용들을 처치해 완수하세요: 검은용군단
+  complete 1168 @46.4,66.4 map 1445
+
+step
+  when level<47
+  tip 혓바닥과 심장 획득을 완수하세요: 근원 추적
+  collect 5840 quest 1169.1
+  collect 5841 quest 1169.2
+
+step
+  when level<47
+  tip 코담배통을 획득하세요: 모크모로크의 코담배통
+  collect 5834 quest 1166.1 @44.4,66 map 1445
+
+step
+  when level<47
+  tip 그로그주를 획득하세요: 모크모로크의 그로그주
+  collect 5835 quest 1166.2 @38.7,65.5 map 1445
+
+step
+  when level<47
+  tip 금고를 획득하세요: 모크모로크의 금고
+  collect 5836 quest 1166.3 @36.6,69.6 map 1445
+
+step
+  tip 지점으로 이동하여 동굴 안으로 들어가세요.
+  goto 33,66 r 20 map 1445
+
+step
+  tip 퀘스트 완료: 코르텔로의 수수께끼 — ★보상 연계
+  turnin 625 object 2555
+
+step
+  tip 퀘스트 수락: 코르텔로의 수수께끼 (동부 내륙지 — ★보상, 나중에)
+  accept 626 object 2555
+
+step
+  when level<47
+  turnin 1166 npc 4500
+
+step
+  when level>=47
+  when complete 1166
+  turnin 1166 npc 4500
+
+step
+  when level<47
+  turnin 1168 npc 4502
+
+step
+  when level>=47
+  when complete 1168
+  turnin 1168 npc 4502
+
+step
+  when level<47
+  tip 퀘스트 완료: 근원 추적 (이어지는 오닉시아 일당 연계는 받지 않습니다)
+  turnin 1169 npc 4501
+
+step
+  when level>=47
+  when complete 1169
+  tip 퀘스트 완료: 근원 추적 (이어지는 오닉시아 일당 연계는 받지 않습니다)
+  turnin 1169 npc 4501
+
+step
+  tip 높새바람 봉우리로 비행하세요.
+  fly "Freewind Post"
+
+step
+  tip 동쪽 소금 평원으로 달려가세요.
+  goto 78,77 r 20 map 1441
+
+step
+  tip 위즐 브라스볼츠에게 퀘스트 수락 (또는 파티원에게 공유받기): 가즈릴라 (줄파락 — 줄파락의 나무망치가 있는 파티원이 있으면 할 수 있는 ★보상 퀘스트)
+  accept 2770 npc 4453
+
+step
+  tip 남쪽으로 이동하여 타나리스에 진입하세요. 새로운 비행 지점을 발견하세요: 가젯잔
+  getfp "Gadgetzan"
+
+step
+  turnin 2864 npc 7876
+
+step
+  tip 이어서 트란렉에게 퀘스트 수락 (또는 파티원에게 공유받기): 왕쇠똥구리 껍질 (줄파락 준비)
+  accept 2865 npc 7876
+
+step
+  tip 트렌튼 라이트해머에게 퀘스트 수락 (또는 파티원에게 공유받기): 트롤 경화제 (줄파락 준비)
+  accept 3042 npc 7804
+
+step
+  tip 선임기술자 빌지위즐에게 퀘스트 수락 (또는 파티원에게 공유받기): 자동 탐사막대 (줄파락 준비)
+  accept 2768 npc 7407
+
+step
+  when level<47
+  accept 1690 npc 7407
+
+step
+  when level<48
+  accept 1707 npc 7408
+
+step
+  when level<50
+  accept 992 npc 7724
+
+step
+  when level<50
+  tip 현상수배지를 클릭해 퀘스트 수락: 현상수배 칼리프 스콜피드스팅
+  accept 2781 object 150075
+
+step
+  when level<49
+  accept 2875 object 150075
+
+step
+  tip 가젯잔을 귀환 장소로 설정하세요.
+  sethome "Gadgetzan"
+
+step
+  when level<47
+  tip 사막유랑단을 처치해 완수하세요: 사막유랑단 처단
+  complete 1690 @63.6,33.6 map 1446
+
+step
+  when level<48
+  tip 물주머니 획득을 완수하세요: 물주머니 현상금
+  collect 8483 quest 1707.1
+
+step
+  when level<50
+  tip 칼리프 스콜피드스팅을 처치하세요: 현상수배 칼리프 스콜피드스팅
+  complete 2781 @61.2,36.4 map 1446
+
+step
+  tip 북동쪽 스팀휘들 항구 예킨야에게 퀘스트 수락 (또는 파티원에게 공유받기): 계곡천둥매의 영혼 (줄파락 '모쉬아루의 예언' 선행 — 페랄라스에서 완수) — ★보상 연계 · ◆던전 선행(줄파락)
+  accept 3520 npc 8579
+
+step
+  when level<49
+  accept 8365 npc 15165
+
+step
+  when level<49
+  accept 8366 npc 7882
+
+step
+  turnin 2872 npc 7881
+
+step
+  when level<49
+  accept 2873 npc 7881
+
+step
+  tip 지점으로 이동하여 해적단 소굴로 들어가세요.
+  goto 68,41 r 20 map 1446
+
+step
+  when level<49
+  tip 해적들을 처치해 완수하세요: 남쪽바다해적단 처리반
+  complete 8366 @73.4,46 map 1446
+
+step
+  when level<49
+  tip 모자 획득을 완수하세요: 최신 유행 해적 모자
+  collect 20519 quest 8365.1
+
+step
+  when level<49
+  tip 앙드레를 처치하세요: 현상수배 앙드레 파이어비어드
+  complete 2875 @73.4,47 map 1446
+
+step
+  when level<49
+  tip 건물 2층에서 스톨리의 뱃짐을 획득하세요: 스톨리의 뱃짐
+  complete 2873 @72.2,46.7 map 1446
+
+step
+  when level<49
+  turnin 2875 npc 7882
+
+step
+  when level>=49
+  when complete 2875
+  turnin 2875 npc 7882
+
+step
+  when level<49
+  turnin 8366 npc 7882
+
+step
+  when level>=49
+  when complete 8366
+  turnin 8366 npc 7882
+
+step
+  when level<49
+  turnin 2873 npc 7881
+
+step
+  when level>=49
+  when complete 2873
+  turnin 2873 npc 7881
+
+step
+  when level<49
+  tip 퀘스트 수락: 맥킨리에게 배달 (무법항 — 나중에)
+  accept 2874 npc 7881
+
+step
+  when level<49
+  turnin 8365 npc 15165
+
+step
+  when level>=49
+  when complete 8365
+  turnin 8365 npc 15165
+
+step
+  when level<48
+  tip 가젯잔으로 돌아와 퀘스트 완료: 물주머니 현상금
+  turnin 1707 npc 7408
+
+step
+  when level>=48
+  when complete 1707
+  tip 가젯잔으로 돌아와 퀘스트 완료: 물주머니 현상금
+  turnin 1707 npc 7408
+
+step
+  when level<47
+  turnin 1690 npc 7407
+
+step
+  when level>=47
+  when complete 1690
+  turnin 1690 npc 7407
+
+step
+  when level<50
+  turnin 2781 npc 7407
+
+step
+  when level>=50
+  when complete 2781
+  turnin 2781 npc 7407
+
+step
+  tip 높새바람 봉우리로 비행하세요.
+  fly "Freewind Post"
+
+step
+  tip 서쪽으로 버섯구름 봉우리를 지나 페랄라스 모자케 야영지로 달려가세요. 새로운 비행 지점을 발견하세요: 모자케 야영지
+  getfp "Camp Mojache"
+
+step
+  turnin 2981 npc 7777
+
+step
+  when level<49
+  accept 2973 npc 4544
+
+step
+  when level<47
+  accept 2987 npc 8021
+
+step
+  when level<46
+  accept 2862 npc 7875
+
+step
+  when level<50
+  accept 2822 npc 7854
+
+step
+  when level<47
+  accept 2975 npc 7777
+
+step
+  when level<54
+  accept 3063 npc 7776
+
+step
+  tip 의술사 우제리에게 퀘스트 수락 (또는 파티원에게 공유받기): 가라앉은 사원 (아탈학카르 신전 준비) — ◆던전 선행(아탈학카르 신전)
+  accept 3380 npc 8115
+
+step
+  when level<46
+  tip 덩굴발일족 몬스터를 처치하세요: 덩굴발일족과의 전투
+  complete 2862 @76,54 map 1444
+
+step
+  when level<46
+  turnin 2862 npc 7875
+
+step
+  when level>=46
+  when complete 2862
+  turnin 2862 npc 7875
+
+step
+  when level<47
+  accept 2863 npc 7875
+
+step
+  when level<47
+  tip 제한시간이 끝나기 전에 우두머리를 모두 처치하세요: 우두머리 공격
+  complete 2863 @71.6,55.2 map 1444
+
+step
+  when level<47
+  turnin 2863 npc 7875
+
+step
+  when level>=47
+  when complete 2863
+  turnin 2863 npc 7875
+
+step
+  when level<47
+  accept 2902 npc 7875
+
+step
+  when level<47
+  tip 오우거를 처치해 완수하세요: 페랄라스의 오우거
+  complete 2975 @75,36 map 1444
+
+step
+  when level<47
+  tip 푸르게 빛나는 지면에다 인벤토리에 있는 올윈의 삽을 사용하세요. 코발트 획득을 완수하세요: 골두니 코발트
+  complete 2987 @76.3,34.4 map 1444
+
+step
+  tip 골두니 두루마리를 *찾아서* 획득하세요.
+  goto 75.1,29.8 r 20 map 1444
+
+step
+  when level<47
+  tip 두루마리를 클릭해 퀘스트 수락: 골두니 두루마리
+  accept 2978 item 9370
+
+step
+  when level<49
+  tip 화살요정용을 처치해 완수하세요: 화려한 새 망토
+  complete 2973 @67.8,48 map 1444
+
+step
+  tip 전투계획서를 클릭해 퀘스트 완료: 덩굴발일족 조사
+  turnin 2902 object 142195
+
+step
+  when level<47
+  accept 2903 object 142195
+
+step
+  when level<47
+  turnin 2975 npc 7777
+
+step
+  when level>=47
+  when complete 2975
+  turnin 2975 npc 7777
+
+step
+  when level<48
+  accept 2980 npc 7777
+
+step
+  turnin 2978 npc 7777
+
+step
+  when level<50
+  accept 2979 npc 7777
+
+step
+  when level<47
+  turnin 2987 npc 8021
+
+step
+  when level>=47
+  when complete 2987
+  turnin 2987 npc 8021
+
+step
+  turnin 2903 npc 7875
+
+step
+  when level<49
+  accept 7730 npc 7875
+
+step
+  when level<51
+  accept 7731 npc 7875
+
+step
+  when level<49
+  turnin 2973 npc 4544
+
+step
+  when level>=49
+  when complete 2973
+  turnin 2973 npc 4544
+
+step
+  when level<49
+  accept 2974 npc 4544
+
+step
+  when level<51
+  tip 채찍쐐기를 *찾아* 처치하세요: 채찍쐐기
+  complete 7731 @75,62.6 map 1444
+
+step
+  when level<49
+  tip 주크애쉬들을 처치해 완수하세요: 주크애쉬 출몰
+  complete 7730 @74,62 map 1444
+
+step
+  when level<48
+  tip 오우거들을 처치해 완수하세요: 페랄라스의 오우거
+  complete 2980 @59.4,62.8 map 1444
+
+step
+  when level<50
+  tip 대마법사를 처치해 완수하세요: 암흑의 의식
+  complete 2979 @59.2,73.6 map 1444
+
+step
+  when level<50
+  tip 지점으로 이동하여 원시 설인을 처치하세요: 품질 표시
+  complete 2822 @55,56 map 1444
+
+step
+  tip 계곡천둥매를 처치하고 시체를 대상으로 *예킨야의 나뭇가지*를 사용해 영혼을 획득할 수 있습니다.
+  goto 57.2,52.4 r 20 map 1444
+
+step
+  tip 영혼 획득을 완수하세요: 계곡천둥매의 영혼
+  kill 8612 quest 3520.1
+
+step
+  when level<49
+  tip 모자케 야영지 바로 서쪽 그림토템 주둔지에서 그림토템 일족을 처치해 완수하세요: 불길한 발견
+  complete 2974 @68.8,47 map 1444
+
+step
+  when level<49
+  turnin 7730 npc 7875
+
+step
+  when level>=49
+  when complete 7730
+  turnin 7730 npc 7875
+
+step
+  when level<50
+  turnin 2822 npc 7854
+
+step
+  when level>=50
+  when complete 2822
+  turnin 2822 npc 7854
+
+step
+  when level<51
+  turnin 7731 npc 7875
+
+step
+  when level>=51
+  when complete 7731
+  turnin 7731 npc 7875
+
+step
+  when level<52
+  tip 퀘스트 수락: 주크애쉬 보고서 (오그리마 — 나중에)
+  accept 7732 npc 7875
+
+step
+  when level<52
+  accept 7734 npc 7854
+
+step
+  when level<48
+  turnin 2980 npc 7777
+
+step
+  when level>=48
+  when complete 2980
+  turnin 2980 npc 7777
+
+step
+  when level<50
+  turnin 2979 npc 7777
+
+step
+  when level>=50
+  when complete 2979
+  turnin 2979 npc 7777
+
+step
+  when level<51
+  tip 퀘스트 수락: 골두니 수정구 (오그리마 — 나중에)
+  accept 3002 npc 7777
+
+step
+  when level<49
+  turnin 2974 npc 4544
+
+step
+  when level>=49
+  when complete 2974
+  turnin 2974 npc 4544
+
+step
+  when level<49
+  tip 퀘스트 수락: 불길한 발견 (오그리마 — 나중에)
+  accept 2976 npc 4544
+
+step
+  tip 46 Lv46 이상이어야 합니다 (힐러는 Lv45부터 가도 됩니다). 모자라면 울다만에 한 번 더 다녀오거나 지나온 곳의 몹을 사냥하세요.
+  level 46
+  note "★ 줄파락 — Lv46.3 → 약 Lv47.5 · 권장 Lv45~46 (힐러 45 · 탱커·딜러 46)"
+  note "※ 귀환석이 가젯잔으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 가젯잔까지 비행하거나 달려가세요."
+
+step
+  hearth "Gadgetzan"
+
+step
+  tip 스팀휘들 항구 예킨야에게 퀘스트 완료: 계곡천둥매의 영혼 — ★보상 연계 · ◆던전 선행(줄파락)
+  note "가젯잔으로 귀환하세요."
+  turnin 3520 npc 8579
+
+step
+  tip 이어서 예킨야에게 퀘스트 수락 (또는 파티원에게 공유받기): 모쉬아루의 예언 — ★보상 연계
+  accept 3527 npc 8579
+
+step
+  when level<50
+  tip 줄파락으로 가는 길에 탐사장치를 클릭하여 물을 채우세요: 가젯잔 수자원 측량
+  complete 992 @39,30 map 1446
+
+step
+  tip 북서쪽 줄파락 입구로 들어가세요.
+  goto 38.7,20 r 20 map 1446
+
+step
+  complete 2865 -- 던전 안 쇠똥구리를 처치해 껍질 5개를 모으세요: 왕쇠똥구리 껍질
+  complete 3042 -- 모래폭풍일족 트롤에게서 트롤 경화제 20개를 모으세요: 트롤 경화제
+  complete 2768 -- 하사관 블라이를 처치하고 자동 탐사막대를 챙기세요: 자동 탐사막대
+  complete 3527 -- 순교자 데카와 유체술사 벨라타를 처치해 서판 두 개를 모으세요: 모쉬아루의 예언
+  complete 2846 -- 유체술사 벨라타에게서 심연의 티아라를 챙기세요: 심연의 티아라
+
+step
+  along
+  complete 2770 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요: 가즈릴라
+
+step
+  hearth "Gadgetzan"
+
+step
+  tip ── 줄파락 보고 ── 가젯잔으로 돌아와 퀘스트 완료: 트롤 경화제
+  note "던전을 나와 가젯잔으로 귀환하세요 (던전 전에 쓴 귀환석은 줄파락을 도는 동안 다시 쓸 수 있게 됩니다. 재사용 대기 중이면 남동쪽 가젯잔까지 달려가세요)."
+  turnin 3042 npc 7804
+
+step
+  turnin 2865 npc 7876
+
+step
+  turnin 2768 npc 7407
+
+step
+  when level<50
+  turnin 992 npc 7724
+
+step
+  when level>=50
+  when complete 992
+  turnin 992 npc 7724
+
+step
+  when level<51
+  accept 82 npc 7724
+
+step
+  tip 스팀휘들 항구 예킨야에게 퀘스트 완료: 모쉬아루의 예언 — ★보상 연계
+  turnin 3527 npc 8579
+
+step
+  tip 이어서 예킨야에게 퀘스트 수락 (또는 파티원에게 공유받기): 고대의 알 (동부 내륙지에서 알을 찾아옵니다 — 아탈학카르 신전 '학카르의 화신' ★보상의 선행)
+  accept 4787 npc 8579
+
+step
+  tip 가젯잔 남쪽 마본 리벳시커에게 퀘스트 완료: 가라앉은 사원 — ◆던전 선행(아탈학카르 신전)
+  turnin 3380 npc 7771
+
+step
+  tip 이어서 마본 리벳시커에게 퀘스트 수락 (또는 파티원에게 공유받기): 돌무리 (톱니항 마본의 작업장 궤짝) — ◆던전 선행(아탈학카르 신전)
+  accept 3444 npc 7771
+
+step
+  when complete 2770
+  tip 가즈릴라를 잡았다면 북쪽 소금 평원으로 가서 퀘스트 완료 (★보상): 가즈릴라
+  turnin 2770 npc 4453
+
+step
+  tip 담쟁이 마을로 비행하세요.
+  fly "Brackenwall Village"
+
+step
+  tip 타베사에게 퀘스트 완료: 심연의 티아라 (★보상)
+  turnin 2846 npc 6546
+
+step
+  tip 톱니항으로 비행하세요.
+  fly "Ratchet"
+
+step
+  tip 톱니항 마본의 작업장 궤짝을 열어 돌무리를 획득하세요: 돌무리
+  complete 3444 @62.5,38.5 map 1413
+
+step
+  tip ▶ 다음 던전: 마라우돈 (약 Lv49.0에 갑니다) — 지금 약 Lv47.5. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 오그리마로 비행하세요.
+  note "※ 한 바퀴 더 (선택): 11월 8일부터 던전 몹 처치 경험치가 50% 올랐습니다. 파티가 빠르면 줄파락을(를) 한 번 더 도는 것도 좋습니다 — 파티를 모을 때 처음부터 \"2바퀴\"로 모으는 것을 추천합니다. 두 번째부터는 퀘스트 경험치가 없으니 다음 던전 레벨(마라우돈 Lv49)이 가까우면 지역 퀘스트로 넘어가세요."
+  fly "Orgrimmar"
+
+step
+  turnin 7732 npc 7010
+
+step
+  turnin 3002 npc 7311
+
+step
+  turnin 2976 npc 4485
+
+step
+  tip 힘의 골짜기 여관주인에게 오그리마를 귀환 장소로 설정하세요 (동부 내륙지를 마치고 귀환석으로 바로 돌아옵니다 — 마라우돈 다음 아탈학카르 신전 뒤에도 씁니다).
+  sethome "Orgrimmar"
+
+step
+  tip 오그리마 북문 밖 비행선 탑에서 언더시티행 비행선을 타세요.
+  goto 50.8,13.6 r 20 map 1411
+
+step
+  accept 2995 npc 7825
+
+step
+  tip 타렌 밀농장으로 비행하세요.
+  fly "Tarren Mill"
+
+step
+  tip 지점으로 이동하여 동부 내륙지에 진입하세요.
+  goto 84,32 r 20 map 1424
+
+step
+  turnin 650 npc 7801
+
+step
+  accept 77 npc 7801
+
+step
+  tip 기록문을 파괴하세요: 기록문 파괴
+  interact 144071 quest 2995.1 @32,47 map 1425
+
+step
+  tip 메모를 파괴하세요: 메모 파괴
+  interact 144072 quest 2995.2 @30,49 map 1425
+
+step
+  tip 보고서를 파괴하세요: 보고서 파괴
+  interact 144073 quest 2995.3 @29,46 map 1425
+
+step
+  tip 남쪽 언덕 위 추방된 아탈라이트롤에게 퀘스트 완료: 추방된 아탈라이 트롤 — ◆던전 선행(아탈학카르 신전)
+  turnin 1429 npc 5598
+
+step
+  tip 이어서 추방된 아탈라이트롤에게 퀘스트 수락: 펠제룰에게 돌아가기 (슬픔의 늪 펠제룰 — 아탈학카르 신전 때) — ◆던전 선행(아탈학카르 신전)
+  accept 1444 npc 5598
+
+step
+  tip 이어서 추방된 아탈라이트롤에게 퀘스트 수락 (또는 파티원에게 공유받기): 예언자 잠말란 (아탈학카르 신전 준비)
+  accept 1446 npc 5598
+
+step
+  tip 주변에서 호드 보급품들을 찾아 완수하세요: 까다로운 임무
+  complete 77 @58,43 map 1425
+
+step
+  tip 지점으로 이동하여, 물 속으로 뛰어드세요.
+  goto 79,48 r 20 map 1425
+
+step
+  tip 상자를 클릭해 퀘스트 완료 (★보상): 코르텔로의 수수께끼
+  turnin 626 object 2556
+
+step
+  tip 남쪽으로 수영하여 상륙한 뒤, 레반터스크 마을로 달리세요. 새로운 비행 지점을 발견하세요: 레반터스크 마을
+  getfp "Revantusk Village"
+
+step
+  when level<52
+  accept 7839 npc 14737
+
+step
+  when level<53
+  accept 7840 npc 14731
+
+step
+  when level<52
+  accept 7828 npc 14741
+
+step
+  when level<52
+  accept 7829 npc 14741
+
+step
+  when level<52
+  accept 7830 npc 14741
+
+step
+  when level<52
+  accept 7841 npc 14738
+
+step
+  when level<52
+  accept 7844 npc 14739
+
+step
+  when level<54
+  accept 7815 npc 14740
+
+step
+  when level<54
+  tip 무쇠턱바다거북을 처치해 완수하세요: 무쇠턱바다거북 처치
+  complete 7815 @77,65 map 1425
+
+step
+  when level<52
+  tip 은빛갈기늑대들을 처치해 완숳세요: 은빛갈기늑대 추적
+  kill 2926 quest 7828.1
+  kill 2925 quest 7828.2
+
+step
+  when level<52
+  tip 잃어버린 연장을 찾아 획득하세요: 썩은가지부족 불량배
+  note "5개의 지점 중 하나에 있는"
+  collect 19033 quest 7839.1
+
+step
+  when level<52
+  tip 썩은가지부족 트롤들을 처치하세요: 동족을 잡아먹는 사촌
+  kill 4466 quest 7844.1
+  kill 4467 quest 7844.2
+
+step
+  when level<52
+  tip 올빼미야수를 처치해 완수하세요: 포악한 올빼미야수 사냥
+  kill 2929 quest 7829.1
+
+step
+  when level<52
+  tip 우두머리 뾰족부리 그리핀을 처치해 완수하세요: 트롤의 복수
+  complete 7830 @57.2,49.8 map 1425
+
+step
+  when level<52
+  tip 엘프들을 처치해 완수하세요: 첫 번째 통첩장
+  complete 7841 @33,51.2 map 1425
+
+step
+  turnin 77 npc 7801
+
+step
+  tip 퀘스트 수락: 리플 배달 (오그리마 — 나중에)
+  accept 81 npc 7801
+
+step
+  when level<52
+  tip 트롤들을 처치해 완수하세요: 동족을 잡아먹는 사촌
+  complete 7844 @45,62.4 map 1425
+
+step
+  tip 진타알로 남쪽 아래 둥지에서 고대의 알을 챙기세요: 고대의 알
+  complete 4787 @57.6,86.8 map 1425
+
+step
+  tip 라드의 점심을 클릭하세요.
+  goto 84,41 r 20 map 1425
+
+step
+  when level<53
+  tip 3마리가 나타나는데, 하나만 잡고 획득하세요: 잃어버린 라드의 점심
+  collect 19034 quest 7840.1
+
+step
+  when level<54
+  tip 이후에는 도망쳐도 됩니다. 퀘스트 완료: 무쇠턱바다거북 처치
+  turnin 7815 npc 14740
+
+step
+  when level>=54
+  when complete 7815
+  tip 이후에는 도망쳐도 됩니다. 퀘스트 완료: 무쇠턱바다거북 처치
+  turnin 7815 npc 14740
+
+step
+  when level<52
+  turnin 7828 npc 14741
+
+step
+  when level>=52
+  when complete 7828
+  turnin 7828 npc 14741
+
+step
+  when level<52
+  turnin 7829 npc 14741
+
+step
+  when level>=52
+  when complete 7829
+  turnin 7829 npc 14741
+
+step
+  when level<52
+  turnin 7830 npc 14741
+
+step
+  when level>=52
+  when complete 7830
+  turnin 7830 npc 14741
+
+step
+  when level<52
+  turnin 7839 npc 14737
+
+step
+  when level>=52
+  when complete 7839
+  turnin 7839 npc 14737
+
+step
+  when level<52
+  turnin 7841 npc 14738
+
+step
+  when level>=52
+  when complete 7841
+  turnin 7841 npc 14738
+
+step
+  when level<52
+  turnin 7844 npc 14739
+
+step
+  when level>=52
+  when complete 7844
+  turnin 7844 npc 14739
+
+step
+  when level<53
+  turnin 7840 npc 14731
+
+step
+  when level>=53
+  when complete 7840
+  turnin 7840 npc 14731
+
+step
+  hearth "Orgrimmar"
+
+step
+  note "※ 귀환석이 오그리마로 지정돼 있어야 합니다 (위에서 지정). \"연락망\"은 나중에 언더시티에 들를 때(50-60 가이드) 보고합니다."
+  note "오그리마로 귀환하세요 (재사용 대기 중이면 레반터스크 마을에서 언더시티로 비행한 뒤 오그리마행 비행선)."
+  turnin 81 npc 6986
+
+step
+  tip 그늘수렵 마을로 비행하세요.
+  fly "Shadowprey Village"
+
+step
+  tip 49 Lv49 이상이어야 합니다 (힐러는 Lv48부터 가도 됩니다). 모자라면 줄파락에 한 번 더 다녀오거나 지나온 곳의 몹을 사냥하세요.
+  level 49
+
+step
+  tip 그늘수렵 마을 바르크 배틀스카에게 퀘스트 수락 (또는 파티원에게 공유받기): 바일텅의 타락
+  note "★ 마라우돈 — Lv49.0 → 약 Lv50.0 · 권장 Lv48~49 (힐러 48 · 탱커·딜러 49)"
+  accept 7029 npc 11823
+
+step
+  tip 셀렌드라에게 퀘스트 수락 (또는 파티원에게 공유받기): 대지와 씨앗의 오염 (요구 레벨 45) — ★보상
+  accept 7064 npc 13699
+
+step
+  tip 마라우돈 입구 앞 카빈드라에게 퀘스트 수락 (또는 파티원에게 공유받기): 마라우돈의 전설
+  accept 7044 npc 13697
+
+step
+  tip 남동쪽 만노로크 집회지 남쪽 켄타우로스 추방자에게 퀘스트 수락 (또는 파티원에게 공유받기): 추방자의 지시서
+  accept 7067 npc 13717
+
+step
+  tip 북동쪽 코도 무덤 북쪽 윌로우에게 퀘스트 수락 (또는 파티원에게 공유받기): 뒤틀린 악마
+  accept 7028 npc 13656
+
+step
+  tip 잊혀진 땅 서쪽 마라우돈 입구로 들어가세요 (안쪽 보라색·주황색 갈래로 나뉩니다).
+  goto 29.1,62.5 r 20 map 1443
+
+step
+  tip 음영석 조각 10개를 모으세요 (안쪽 수정 몹): 음영석 조각
+  collect 17756 quest 7068.1
+
+step
+  tip 테라드릭 수정 조각품 15개를 모으세요: 뒤틀린 악마
+  collect 17684 quest 7028.1
+
+step
+  tip 주황색 수정 웅덩이에서 코팅된 하늘빛 약병을 채우세요: 바일텅의 타락
+  kill 13696 quest 7029.1
+  collect 17696 quest 7029.2
+
+step
+  complete 7067 -- 켄타우로스 칸의 영혼들에게서 결합의 부적을 모으세요: 추방자의 지시서
+  complete 7044 -- 군주 바일텅(셀레브리안 지팡이)과 녹시온(셀레브리안 다이아몬드)을 처치하세요: 마라우돈의 전설
+  turnin 7044 -- 회복된 셀레브라스에게 퀘스트 완료: 마라우돈의 전설
+  accept 7046
+  complete 7046 -- 셀레브라스가 홀을 만드는 동안 지켜 주세요: 셀레브라스의 홀
+  turnin 7046 -- 셀레브라스에게 퀘스트 완료: 셀레브라스의 홀
+  complete 7064 -- 마지막 보스 공주 테라드라스를 처치하세요: 대지와 씨앗의 오염
+  accept 7066 -- 테라드라스를 처치하면 나타나는 재타르의 영혼에게 퀘스트 수락 (달의 숲 레물로스 — 나중에): 생명의 씨앗
+
+step
+  tip ── 마라우돈 보고 ── 셀렌드라에게 퀘스트 완료: 대지와 씨앗의 오염 (★보상)
+  turnin 7064 npc 13699
+
+step
+  tip 바르크 배틀스카에게 퀘스트 완료: 바일텅의 타락
+  turnin 7029 npc 11823
+
+step
+  tip 윌로우에게 퀘스트 완료: 뒤틀린 악마
+  turnin 7028 npc 13656
+
+step
+  tip 켄타우로스 추방자에게 퀘스트 완료: 추방자의 지시서
+  turnin 7067 npc 13717
+  note "※ 한 바퀴 더 (선택): 11월 8일부터 던전 몹 처치 경험치가 50% 올랐습니다. 파티가 빠르면 마라우돈을(를) 한 번 더 도는 것도 좋습니다 — 파티를 모을 때 처음부터 \"2바퀴\"로 모으는 것을 추천합니다. 두 번째부터는 퀘스트 경험치가 없으니 다음 던전 레벨(아탈학카르 신전 Lv52.5)이 가까우면 지역 퀘스트로 넘어가세요."
+  note "40-50 구간은 여기까지입니다. 50-60 가이드로 넘어가세요."
