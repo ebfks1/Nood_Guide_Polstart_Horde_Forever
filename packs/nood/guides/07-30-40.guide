@@ -60,17 +60,23 @@ step
 
 step
   when complete 6561
+  label q6561
   zone map 1456
   turnin 6561 npc 9087
 
 step
   when complete 95664
+  label q95664
   zone map 1456
   turnin 95664 npc 9087
 
 step
+  along until q98823
   zone map 1456
   accept 98823 npc 9087 optional -- Then accept from Bashana Runetotem: Earthen Echo (Forever new)
+
+step
+  zone map 1456
   turnin 1102 npc 4451
 
 step
@@ -81,6 +87,7 @@ step
 
 step
   when onquest 98823
+  label q98823
   tip Turn in to Muln Earthfury at Skywatcher Plateau northwest of Thunder Bluff: Earthen Echo
   zone map 1412
   turnin 98823 npc 259118
@@ -91,6 +98,7 @@ step
 
 step
   when complete 1221
+  label q1221
   zone map 1413
   turnin 1221 npc 3446
 
@@ -100,6 +108,7 @@ step
 
 step
   when complete 95697
+  label q95697
   zone map 1454
   turnin 95697 npc 3368
 
@@ -163,7 +172,7 @@ step
 
 step
   tip Kill Houndmaster Loksey: Into The Scarlet Monastery
-  kill 3977 quest 1048.4
+  kill 3974 quest 1048.4
 
 step
   only Orc,Troll,Tauren
@@ -177,6 +186,7 @@ step
 
 step
   when complete 1051
+  label q1051
   zone map 1424
   turnin 1051 npc 3982
 
@@ -336,15 +346,15 @@ step
 step
   tip Kill Captain Ironhill: Battle of Hillsbrad
   zone map 1424
-  kill 2346 quest 541.4
+  kill 2304 quest 541.4
 
 step
   tip Kill dwarves to complete: Battle of Hillsbrad
   zone map 1424
-  kill 2304 quest 541.1
-  kill 2344 quest 541.2
-  kill 2345 quest 541.3
-  kill 2346 quest 541.4
+  kill 2344 quest 541.1
+  kill 2345 quest 541.2
+  kill 2346 quest 541.3
+  kill 2304 quest 541.3
 
 step
   tip Humbert's Sword drops randomly from Dun Garok dwarves (Mountaineers, Riflemen, Priests) — if it hasn't dropped after your kill counts are done, keep killing until it does: Humbert's Sword
@@ -795,6 +805,11 @@ step
   turnin 95770 npc 2519
 
 step
+  along until q95775
+  zone map 1434
+  accept 95775 @32.3,27.7 map 1434 optional -- If offered, accept next: The Drowned City (giver not confirmed yet — otherwise pick it up inside the dungeon)
+
+step
   when level<41
   tip Accept from Nimboya: Trollbane (deliver to Hammerfall in Arathi — later)
   zone map 1434
@@ -809,13 +824,16 @@ step
 step
   tip Turn in to Commander Aggro'gosh: Enemies in the Water
   zone map 1434
-  accept 95775 @32.3,27.7 map 1434 optional -- If offered, accept next: The Drowned City (giver not confirmed yet — otherwise pick it up inside the dungeon)
   turnin 95773 @32.2,28.9 map 1434
+
+step
+  along until q95776
+  zone map 1434
+  accept 95776 @32.2,28.9 map 1434 optional -- If offered, accept next: The Only Good Brinescale... (giver not confirmed yet — otherwise pick it up inside the dungeon)
 
 step
   tip Take the zeppelin to Orgrimmar from the Grom'gol zeppelin tower.
   zone map 1434
-  accept 95776 @32.2,28.9 map 1434 optional -- If offered, accept next: The Only Good Brinescale... (giver not confirmed yet — otherwise pick it up inside the dungeon)
   goto 32.4,29.2 r 20 map 1434
 
 step
@@ -1056,6 +1074,10 @@ step
   collect 6435 quest 1435.1
 
 step
+  along until q1480
+  accept 1480 item 20310 optional -- If a *Demon Hide* drops, click it in your bags to accept (skip this if it doesn't drop): The Corrupter
+
+step
   when level<37
   zone map 1443
   turnin 5741 npc 11863
@@ -1105,7 +1127,6 @@ step
 step
   tip Go to the island here.
   zone map 1443
-  accept 1480 item 20310 optional -- If a *Demon Hide* drops, click it in your bags to accept (skip this if it doesn't drop): The Corrupter
   goto 28.2,6.4 r 20 map 1443
 
 step
@@ -1118,9 +1139,9 @@ step
   when level<40
   tip Finish killing the naga: Other Fish to Fry
   zone map 1443
-  kill 4711 quest 6143.1
+  kill 4714 quest 6143.1
   kill 4712 quest 6143.2
-  kill 4714 quest 6143.3
+  kill 4711 quest 6143.3
 
 step
   when level<42
@@ -1135,6 +1156,7 @@ step
 
 step
   when onquest 1480
+  label q1480
   zone map 1443
   turnin 1480 npc 4498
 
@@ -1433,9 +1455,12 @@ step
   goto 21.4,27.9 r 20 map 1434
 
 step
-  tip Make rubbings of the four Tablets of I'lalai with the hide and charcoal: The Drowned City
+  along until q95775
   accept 95775 optional -- * Get the dungeon quests inside (only the ones you are missing): The Drowned City The Only Good Brinescale...
   accept 95776 optional
+
+step
+  tip Make rubbings of the four Tablets of I'lalai with the hide and charcoal: The Drowned City
   note "! Pick up any other quests offered inside (two Saltseer quests and others) and do them too."
   complete 95775
 
@@ -1445,6 +1470,7 @@ step
 
 step
   when onquest 95776
+  label q95776
   tip Back in Grom'gol, turn in: The Only Good Brinescale... (turn-in NPC not confirmed — if not Commander Aggro'gosh, check your quest log)
   zone map 1434
   note "Clear to the last boss, Captain Dreadrise, then leave the dungeon."
@@ -1452,6 +1478,7 @@ step
 
 step
   when complete 95775
+  label q95775
   tip Turn in: The Drowned City (turn-in NPC not confirmed — Kin'weelay or Master Gadrin in Sen'jin Village)
   turnin 95775
 
@@ -1607,7 +1634,7 @@ step
 
 step
   tip Kill Herod, the Scarlet Champion at the end of the Armory: Into The Scarlet Monastery
-  kill 3976 quest 1048.3
+  kill 3975 quest 1048.3
 
 step
   tip Finish collecting 20 Hearts of Zeal from Scarlet mobs: Hearts of Zeal
@@ -1617,11 +1644,11 @@ step
 
 step
   tip Kill Scarlet Commander Mograine: Into The Scarlet Monastery
-  kill 3975 quest 1048.2
+  kill 3976 quest 1048.2
 
 step
   tip Kill High Inquisitor Whitemane (she revives Mograine): Into The Scarlet Monastery
-  kill 3974 quest 1048.1
+  kill 3977 quest 1048.1
   note "== Scarlet Monastery turn-ins == Leave the dungeon and Undercity hearth to Undercity (if it is on cooldown, run west to Undercity)."
 
 step
@@ -1677,9 +1704,9 @@ step
 step
   tip Kill 8 each of Razorfen Battleguards, Thornweavers and Death's Head Cultists: A Host of Evil
   zone map 1413
-  kill 7872 quest 6626.1
-  kill 7873 quest 6626.2
-  kill 7874 quest 6626.3
+  kill 7873 quest 6626.1
+  kill 7874 quest 6626.2
+  kill 7872 quest 6626.3
 
 step
   tip Kill the final boss Amnennar the Coldbringer and take his skull: Bring the End

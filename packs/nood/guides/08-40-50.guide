@@ -115,7 +115,7 @@ step
   when level<44
   tip Get it here: Deep Sea Salvage
   zone map 1417
-  collect 4489 quest 662.3 @20.4,85.6 map 1417
+  collect 4488 quest 662.3 @20.4,85.6 map 1417
 
 step
   when level<44
@@ -127,7 +127,7 @@ step
   when level<44
   tip Get it here: Deep Sea Salvage
   zone map 1417
-  collect 4488 quest 662.2 @23.4,85.1 map 1417
+  collect 4489 quest 662.2 @23.4,85.1 map 1417
 
 step
   when level<44
@@ -326,12 +326,12 @@ step
   tip Kill coyotes to complete: Coyote Thieves Badlands Reagent Run
   zone map 1418
   collect 6166 quest 1419.1
-  collect 7847 quest 2258.2
+  collect 7846 quest 2258.2
 
 step
   tip Kill buzzards to complete: Badlands Reagent Run Barbecued Buzzard Wings
   zone map 1418
-  collect 7846 quest 2258.1
+  collect 7847 quest 2258.1
   complete 703
 
 step
@@ -1032,13 +1032,13 @@ step
   when level<49
   tip Kill Fleet Master Firallon: The Bloodsail Buccaneers
   zone map 1434
-  kill 2550 quest 608.3 @30.6,90.4 map 1434
+  kill 2546 quest 608.3 @30.6,90.4 map 1434
 
 step
   when level<49
   tip Kill Captain Stillwater: The Bloodsail Buccaneers
   zone map 1434
-  kill 2546 quest 608.1 @33,88.2 map 1434
+  kill 2550 quest 608.1 @33,88.2 map 1434
 
 step
   tip Find Cortello's Riddle (it's on one of the 3 ships) and accept (*reward chain): Cortello's Riddle
@@ -1133,26 +1133,37 @@ step
   zone map 1435
   accept 625 object 2553
   note "== Krol'dok Stronghold (new Forever dungeon) == The Riverglades is a new zone, so there are no map-arrow coordinates yet. Go north of the Swamp of Sorrows (north of Stonard) into the Riverglades and find the Horde base Rog'mar and its flight path. If the way is blocked, take the boat from Steamwheedle Port (east Tanaris) to Powderfuse Port."
+  note "* Krol'dok Stronghold — about Lv42.5 -> about Lv43.5 · recommended Lv40-45 (healer 40 · tank/DPS 41) · new Forever dungeon"
+
+step
+  along until q94973
+  accept 94973 "Krol'dok Moulding" optional -- If you looted a Krol'dok Moulding (Riverglades ogre drop), accept: Krol'dok Moulding — Dungeon prereq (Krol'dok Stronghold)
 
 step
   when onquest 94973
+  label q94973
   tip Find someone in Rog'mar who knows about the mould and turn in: Krol'dok Moulding
   turnin 94973 "Krol'dok Moulding"
 
 step
+  along until q94974
+  accept 94974 "Key Ingredients" optional -- Then accept from Kreza Darkthorn: Key Ingredients — Dungeon prereq (Krol'dok Stronghold)
+
+step
   when onquest 94974
+  label q94974
   tip Bring 4 Thick Leather and 12 Iron Bars (auction house) to Kreza Darkthorn for the Krol'dok key: Key Ingredients
   turnin 94974 "Key Ingredients"
 
 step
-  tip Collect 15 Cultist Ears from the Twilight's Hammer: A Token of Vengeance
-  accept 94973 "Krol'dok Moulding" optional -- If you looted a Krol'dok Moulding (Riverglades ogre drop), accept: Krol'dok Moulding — Dungeon prereq (Krol'dok Stronghold)
-  accept 94974 "Key Ingredients" optional -- Then accept from Kreza Darkthorn: Key Ingredients — Dungeon prereq (Krol'dok Stronghold)
-  note "* Krol'dok Stronghold — about Lv42.5 -> about Lv43.5 · recommended Lv40-45 (healer 40 · tank/DPS 41) · new Forever dungeon"
-  note "Enter the cave west of the fortress gates in the north of the Riverglades (map 37.5, 37.5)."
+  along until q94975
   accept 94975 "A Token of Vengeance" optional -- * Get the dungeon quests inside (only the ones you are missing): A Token of Vengeance Tome of Twilight Krol'dok No More!
   accept 94972 "Tome of Twilight" optional
   accept 95056 "Krol'dok No More!" optional
+
+step
+  tip Collect 15 Cultist Ears from the Twilight's Hammer: A Token of Vengeance
+  note "Enter the cave west of the fortress gates in the north of the Riverglades (map 37.5, 37.5)."
   complete 94975 "A Token of Vengeance"
 
 step
@@ -1160,28 +1171,35 @@ step
   complete 95056 "Krol'dok No More!" -- Complete the dungeon quest: Krol'dok No More!
 
 step
+  along until q94968
+  accept 94968 "Eye of Mugg" optional -- Kill Overlord Mugg; if you loot the Eye of Mugg, accept: Eye of Mugg
+
+step
   when onquest 94975
+  label q94975
   tip Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!
   turnin 94975 "A Token of Vengeance"
 
 step
   when onquest 94972
+  label q94972
   tip Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!
   turnin 94972 "Tome of Twilight"
 
 step
   when onquest 95056
+  label q95056
   tip Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!
   turnin 95056 "Krol'dok No More!"
 
 step
   when onquest 94968
+  label q94968
   tip Turn in to Krom'rosh in Rog'mar: Eye of Mugg
   turnin 94968 "Eye of Mugg"
 
 step
   tip Kargath Fly to Kargath (from Rog'mar, or back at Stonard).
-  accept 94968 "Eye of Mugg" optional -- Kill Overlord Mugg; if you loot the Eye of Mugg, accept: Eye of Mugg
   fly "Kargath"
 
 step
@@ -2037,7 +2055,7 @@ step
   complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
 
 step
-  along
+  along until q2770
   complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
 
 step
@@ -2095,6 +2113,7 @@ step
 
 step
   when complete 2770
+  label q2770
   tip If you killed Gahz'rilla, go north to the Shimmering Flats and turn in (*reward): Gahz'rilla
   zone map 1441
   turnin 2770 npc 4453
@@ -2268,8 +2287,8 @@ step
   when level<52
   tip Kill Silvermane wolves to complete: Stalking the Stalkers
   zone map 1425
-  kill 2925 quest 7828.1
-  kill 2926 quest 7828.2
+  kill 2926 quest 7828.1
+  kill 2925 quest 7828.2
 
 step
   when level<52

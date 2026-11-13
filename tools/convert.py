@@ -51,6 +51,10 @@ def log_index(qid, mine):
     return OBJ_ORDER.get(qid, {}).get(mine, mine)
 
 
+ALL_RACES = ['Orc', 'Troll', 'Tauren', 'Scourge', 'Skyborne']
+# Quests the official data (client race mask) offers to these races only; BalCon lists them for others.
+RACE_ONLY = {98024: ['Skyborne']}
+
 report = collections.Counter()
 notes_log = []
 
@@ -292,6 +296,7 @@ class Guide:
         self.here = None
         self.title = self.next = self.desc = None
         self.min = self.max = None
+        self.labels = set()  # quests whose turn-in step carries the label q<id>
         self.clean_block = {}  # line index -> level
         self.find_clean()
 
@@ -531,6 +536,13 @@ class Guide:
                     break
             self.pending = []
         self.merge_runs()
+        # an along step is listed until its quest's turn-in step, when a later step carries that label
+        for i, st in enumerate(self.steps):
+            for qid in st.get('_until') or []:
+                lab = 'q%d' % qid
+                if any(x.get('label') == lab for x in self.steps[i + 1:]):
+                    st['until'] = lab
+                    break
 
     def merge_runs(self):
         """Quest work with no place of its own in a row (inside a dungeon): one step, every goal open together."""
@@ -586,6 +598,18 @@ class Guide:
             return positions[0][1] if positions else None
 
         qtags = [(i, t) for i, t in enumerate(line.t) if t[0] == 'tag' and t[1] in ('QA', 'QT', 'QC')]
+        # a quest the game data offers to other races only: left out for this line's characters
+        had = bool(qtags)
+        aud = (line.only or {}).get('races') or self.races or ALL_RACES
+        def offered(t):
+            qid = int(re.match(r'^\s*(\d+)', t[2]).group(1))
+            ok = qid not in RACE_ONLY or any(r in RACE_ONLY[qid] for r in aud)
+            if not ok:
+                report['left out: quest %d is for %s only' % (qid, '/'.join(RACE_ONLY[qid]))] += 1
+            return ok
+        qtags = [(i, t) for i, t in qtags if offered(t)]
+        if had and not qtags:
+            return
         tip = T(line.en, line.ko) if len(bare(line.t)) >= 6 else None
 
         def step_of(goals, when=None, extra=None):
@@ -620,22 +644,20 @@ class Guide:
                         g = self.quest_goal('complete', qid, title, line, pos)
                     completes.append((qid, g))
 
-            # optional or "with the next step": never hold the route
+            # optional or "with the next step": never hold the route. One step done along the way: take the quest
+            # and do its work, listed until the route reaches the quest's turn-in.
             if (opt or line.oc) and not turnins:
-                if completes:
-                    self.emit(step_of([g for _, g in completes], extra={'along': True}), holding=False, block=block)
-                    report['along steps'] += 1
-                first = True
+                goals = []
                 for qid, g in accepts:
                     g = dict(g, optional=True)
                     if not positions:
                         for k in ('map', 'x', 'y', 'f'):
                             g.pop(k, None)
-                    if first and tip:
-                        g['note'] = tip
-                    first = False
-                    self.add_pending(g, line.only, True, block)
+                    goals.append(g)
                     report['optional goals'] += 1
+                goals += [g for _, g in completes]
+                self.emit(step_of(goals, when_block, {'along': True, '_until': [qid for qid, _ in accepts + completes]}), holding=False, block=block)
+                report['along steps'] += 1
                 return
 
             emitted = False
@@ -664,7 +686,11 @@ class Guide:
                 if opt or line.oc or block:
                     k = 'complete' if has_work else 'onquest'
                     w = {'k': k, 'q': qid if k == 'complete' else [qid]}
-                    self.emit(step_of([g], [w]), block=block)
+                    extra = None
+                    if qid not in self.labels:
+                        self.labels.add(qid)
+                        extra = {'label': 'q%d' % qid}
+                    self.emit(step_of([g], [w], extra), block=block)
                     report['turn-ins only when you have it'] += 1
                 elif n and has_work:
                     self.emit(step_of([g], [{'k': 'level', 'op': '<', 'n': n}]))

@@ -54,8 +54,8 @@ step
 step
   tip 얼빠진 좀비와 덜그럭거리는 해골 퀘스트는 생략하세요. 단, 유저가 적어 몹 경쟁이 없을 때는 수행하세요. 이후, 직업 퀘스트를 수락하시고 수행하세요. 박쥐와 승냥이를 처치하여 완수하세요: 저주받은 존재
   zone map 1420
-  collect 3264 quest 376.1
-  collect 3265 quest 376.2
+  collect 3265 quest 376.1
+  collect 3264 quest 376.2
 
 step
   zone map 1420
@@ -90,7 +90,7 @@ step
   complete 91208 @27.6,63.8 map 1420
 
 step
-  along
+  along until q3902
   zone map 1420
   collect 11127 quest 3902.1 -- 데스넬에 있는 동안 보급 상자들을 확인하여 완수하세요: 데스넬에서의 폐품 수집
 
@@ -125,6 +125,7 @@ step
 
 step
   when complete 3902
+  label q3902
   tip 보급품을 다 모았다면 죽음의경비병 살테인에게: 데스넬에서의 폐품 수집
   zone map 1420
   turnin 3902 npc 1740
@@ -368,8 +369,8 @@ step
 
 step
   zone map 1420
-  kill 1675 quest 358.1
-  kill 1941 quest 358.2
+  kill 1941 quest 358.1
+  kill 1675 quest 358.2
   collect 2834 quest 358.3
 
 step
@@ -455,25 +456,28 @@ step
 step
   along
   zone map 1420
-  collect 2320 quest 375.1
-  collect 2876 quest 375.2
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
+
+step
+  along
+  accept 361 item 2839 optional -- 퀘스트 아이템 *투르만의 편지*가 나왔다면 클릭하여 퀘스트 수락: 배달되지 않은 편지
 
 step
   zone map 1420
   note "직업 상급자에게 레벨 8 스킬을 습득하세요." only Priest
   note "직업 상급자에게 레벨 8 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
   note "잡템을 판매하시고, 필요하다면 물빵과 *가방*을 구매하세요."
-  accept 361 item 2839 optional -- 퀘스트 아이템 *투르만의 편지*가 나왔다면 클릭하여 퀘스트 수락: 배달되지 않은 편지
   collect 2831 quest 362.1
-  collect 2828 quest 354.1
-  collect 2829 quest 354.2
+  collect 2829 quest 354.1
+  collect 2828 quest 354.2
   collect 2830 quest 354.3
   collect 3162 quest 426.1
   collect 3163 quest 426.2
   collect 2859 quest 368.1
   kill 1535 quest 427.1
-  collect 2320 quest 375.1
-  collect 2876 quest 375.2
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
 
 step
   along

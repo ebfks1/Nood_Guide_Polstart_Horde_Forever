@@ -697,9 +697,21 @@ step
   accept 861 npc 3052
 
 step
+  only Warrior
+  along
+  zone map 1412
+  accept 1505 npc 3063 optional
+
+step
   only Druid
   zone map 1412
   accept 5928 npc 3064
+
+step
+  only Shaman
+  along
+  zone map 1412
+  accept 2984 npc 3066 optional
 
 step
   only Hunter
@@ -770,10 +782,8 @@ step
 
 step
   zone map 1412
-  accept 1505 npc 3063 optional only Warrior
   note "Train spells at Krang Stonehoof." only Warrior
   note "Train spells at Gennia Runetotem." only Druid
-  accept 2984 npc 3066 optional only Shaman
   note "Train spells at Narm Skychaser." only Shaman
   accept 833 npc 3233
 
@@ -812,7 +822,12 @@ step
   complete 765 @61.4,49.3 map 1412
 
 step
-  along
+  along until q98424
+  zone map 1412
+  accept 98424 @61.4,49.3 map 1412 optional -- When you pick up Fizsprocket's notes in the mine, accept Fizsprocket's Notes
+
+step
+  along until q98424
   zone map 1412
   complete 98424 @61.8,47.3 map 1412 -- Collect the other 4 documents: Fizsprocket's Notes
 
@@ -824,11 +839,11 @@ step
 
 step
   zone map 1412
-  accept 98424 @61.4,49.3 map 1412 optional -- When you pick up Fizsprocket's notes in the mine, accept Fizsprocket's Notes
   turnin 764 npc 2988
 
 step
   when complete 98424
+  label q98424
   tip Turn in to Morin Cloudstalker: Fizsprocket's Notes
   zone map 1412
   turnin 98424 npc 2988
@@ -887,13 +902,25 @@ step
   turnin 775 npc 3057
 
 step
+  along until q768
+  zone map 1456
+  accept 768 npc 3050 optional -- If you learned Skinning and have 12 *Light Leather* (Auction House), accept from Veren Tallstrider: Gathering Leather
+
+step
   when complete 768
+  label q768
   tip Hand over the 12 Light Leather and turn in Gathering Leather
   zone map 1456
   turnin 768 npc 3050
 
 step
+  along until q769
+  zone map 1456
+  accept 769 npc 3050 optional -- If you also have 4 *Light Leather* and 4 *Coarse Thread* (trade goods vendor), accept the follow-up Kodo Hide Bag
+
+step
   when complete 769
+  label q769
   tip Turn it in right away: Kodo Hide Bag
   zone map 1456
   turnin 769 npc 3050
@@ -905,8 +932,6 @@ step
 
 step
   zone map 1456
-  accept 768 npc 3050 optional -- If you learned Skinning and have 12 *Light Leather* (Auction House), accept from Veren Tallstrider: Gathering Leather
-  accept 769 npc 3050 optional -- If you also have 4 *Light Leather* and 4 *Coarse Thread* (trade goods vendor), accept the follow-up Kodo Hide Bag
   accept 776 npc 3057
 
 step
@@ -931,6 +956,16 @@ step
   goto 70.4,32.2 r 20 map 1456
 
 step
+  along
+  zone map 1456
+  accept 5722 npc 11833 optional -- Accept *Searching for the Lost Satchel* (Ragefire Chasm dungeon, optional)
+
+step
+  along
+  zone map 1456
+  accept 5723 npc 11833 optional -- Accept *Testing an Enemy's Strength* (optional)
+
+step
   only Druid
   zone map 1456
   turnin 5928 npc 3033
@@ -942,8 +977,6 @@ step
 
 step
   zone map 1456
-  accept 5722 npc 11833 optional -- Accept *Searching for the Lost Satchel* (Ragefire Chasm dungeon, optional)
-  accept 5723 npc 11833 optional -- Accept *Testing an Enemy's Strength* (optional)
   accept 886 npc 5769
 
 step

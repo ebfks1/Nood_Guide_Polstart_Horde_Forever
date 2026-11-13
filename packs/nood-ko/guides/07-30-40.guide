@@ -60,17 +60,23 @@ step
 
 step
   when complete 6561
+  label q6561
   zone map 1456
   turnin 6561 npc 9087
 
 step
   when complete 95664
+  label q95664
   zone map 1456
   turnin 95664 npc 9087
 
 step
+  along until q98823
   zone map 1456
   accept 98823 npc 9087 optional -- 바샤나 룬토템에게 이어서 퀘스트 수락: 대지의 메아리 (포에버 신규)
+
+step
+  zone map 1456
   turnin 1102 npc 4451
 
 step
@@ -81,6 +87,7 @@ step
 
 step
   when onquest 98823
+  label q98823
   tip 썬더 블러프 북서쪽 하늘감시자 고원 멀른 어스퓨리에게 퀘스트 완료: 대지의 메아리
   zone map 1412
   turnin 98823 npc 259118
@@ -91,6 +98,7 @@ step
 
 step
   when complete 1221
+  label q1221
   zone map 1413
   turnin 1221 npc 3446
 
@@ -100,6 +108,7 @@ step
 
 step
   when complete 95697
+  label q95697
   zone map 1454
   turnin 95697 npc 3368
 
@@ -163,7 +172,7 @@ step
 
 step
   tip 사냥개조련사 록시를 처치하세요: 붉은십자군 수도원으로
-  kill 3977 quest 1048.4
+  kill 3974 quest 1048.4
 
 step
   only Orc,Troll,Tauren
@@ -177,6 +186,7 @@ step
 
 step
   when complete 1051
+  label q1051
   zone map 1424
   turnin 1051 npc 3982
 
@@ -336,15 +346,15 @@ step
 step
   tip 부대장 아이언힐을 처치하세요: 아이언힐 처치
   zone map 1424
-  kill 2346 quest 541.4
+  kill 2304 quest 541.4
 
 step
   tip 드워프들을 처치해 완수하세요: 힐스브래드 전투
   zone map 1424
-  kill 2304 quest 541.1
-  kill 2344 quest 541.2
-  kill 2345 quest 541.3
-  kill 2346 quest 541.4
+  kill 2344 quest 541.1
+  kill 2345 quest 541.2
+  kill 2346 quest 541.3
+  kill 2304 quest 541.3
 
 step
   tip 험버트의 검은 던 가록 드워프(산악대원·소총병·사제)에게서 무작위로 나옵니다 — 퀘스트 처치 수를 채운 뒤에도 안 나왔으면 나올 때까지 조금 더 잡으세요: 험버트의 검
@@ -795,6 +805,11 @@ step
   turnin 95770 npc 2519
 
 step
+  along until q95775
+  zone map 1434
+  accept 95775 @32.3,27.7 map 1434 optional -- 이어서 받을 수 있으면 퀘스트 수락: 가라앉은 도시 (주는 NPC가 아직 확인되지 않았습니다 — 없으면 던전 안에서 받습니다)
+
+step
   when level<41
   tip 님보야에게 퀘스트 수락: 트롤베인 (아라시 고원 해머폴에 전달 — 나중에)
   zone map 1434
@@ -809,13 +824,16 @@ step
 step
   tip 사령관 아그로고쉬에게 퀘스트 완료: 물속의 적
   zone map 1434
-  accept 95775 @32.3,27.7 map 1434 optional -- 이어서 받을 수 있으면 퀘스트 수락: 가라앉은 도시 (주는 NPC가 아직 확인되지 않았습니다 — 없으면 던전 안에서 받습니다)
   turnin 95773 @32.2,28.9 map 1434
+
+step
+  along until q95776
+  zone map 1434
+  accept 95776 @32.2,28.9 map 1434 optional -- 이어서 받을 수 있으면 퀘스트 수락: 죽은 브라인스케일만이… (주는 NPC가 아직 확인되지 않았습니다 — 없으면 던전 안에서 받습니다)
 
 step
   tip 그롬골 비행선 탑에서 오그리마행 비행선을 타세요.
   zone map 1434
-  accept 95776 @32.2,28.9 map 1434 optional -- 이어서 받을 수 있으면 퀘스트 수락: 죽은 브라인스케일만이… (주는 NPC가 아직 확인되지 않았습니다 — 없으면 던전 안에서 받습니다)
   goto 32.4,29.2 r 20 map 1434
 
 step
@@ -1056,6 +1074,10 @@ step
   collect 6435 quest 1435.1
 
 step
+  along until q1480
+  accept 1480 item 20310 optional -- *악마의 가죽*이 나오면 인벤토리에서 눌러 퀘스트 수락 (안 나오면 건너뛰세요): 타락자
+
+step
   when level<37
   zone map 1443
   turnin 5741 npc 11863
@@ -1105,7 +1127,6 @@ step
 step
   tip 지점에 있는 섬으로 이동하세요.
   zone map 1443
-  accept 1480 item 20310 optional -- *악마의 가죽*이 나오면 인벤토리에서 눌러 퀘스트 수락 (안 나오면 건너뛰세요): 타락자
   goto 28.2,6.4 r 20 map 1443
 
 step
@@ -1118,9 +1139,9 @@ step
   when level<40
   tip 나가 처치를 완수하세요: 나가 퇴치
   zone map 1443
-  kill 4711 quest 6143.1
+  kill 4714 quest 6143.1
   kill 4712 quest 6143.2
-  kill 4714 quest 6143.3
+  kill 4711 quest 6143.3
 
 step
   when level<42
@@ -1135,6 +1156,7 @@ step
 
 step
   when onquest 1480
+  label q1480
   zone map 1443
   turnin 1480 npc 4498
 
@@ -1433,9 +1455,12 @@ step
   goto 21.4,27.9 r 20 map 1434
 
 step
-  tip 던전 곳곳의 이랄라이 석판 4개를 받은 가죽과 목탄으로 탁본하세요: 가라앉은 도시
+  along until q95775
   accept 95775 optional -- ★ 던전 안 퀘스트 받기 (못 받은 것만): 가라앉은 도시 죽은 브라인스케일만이…
   accept 95776 optional
+
+step
+  tip 던전 곳곳의 이랄라이 석판 4개를 받은 가죽과 목탄으로 탁본하세요: 가라앉은 도시
   note "※ 던전 안에서 주는 다른 퀘스트(소금선견자 관련 2개 등)도 보이면 받아서 함께 하세요."
   complete 95775
 
@@ -1445,6 +1470,7 @@ step
 
 step
   when onquest 95776
+  label q95776
   tip 그롬골로 돌아와 퀘스트 완료: 죽은 브라인스케일만이… (완료 NPC 미확인 — 사령관 아그로고쉬에게 없으면 퀘스트 목록에서 완료 NPC를 확인하세요)
   zone map 1434
   note "마지막 우두머리 선장 드레드라이즈까지 정리하고 던전을 나오세요."
@@ -1452,6 +1478,7 @@ step
 
 step
   when complete 95775
+  label q95775
   tip 퀘스트 완료: 가라앉은 도시 (완료 NPC 미확인 — 킨윌레이 또는 센진 마을 대장 가드린)
   turnin 95775
 
@@ -1607,7 +1634,7 @@ step
 
 step
   tip 무기고 끝 붉은십자군 용사 헤로드를 처치하세요: 붉은십자군 수도원으로
-  kill 3976 quest 1048.3
+  kill 3975 quest 1048.3
 
 step
   tip 붉은십자군 몹에게서 열정의 증거 20개를 마저 모으세요: 열정의 증거
@@ -1617,11 +1644,11 @@ step
 
 step
   tip 붉은십자군 사령관 모그레인을 처치하세요: 붉은십자군 수도원으로
-  kill 3975 quest 1048.2
+  kill 3976 quest 1048.2
 
 step
   tip 되살아난 모그레인과 함께 종교재판관 화이트메인을 처치하세요: 붉은십자군 수도원으로
-  kill 3974 quest 1048.1
+  kill 3977 quest 1048.1
   note "── 붉은십자군 수도원 보고 ── 던전을 나와 언더시티로 귀환하세요 (재사용 대기 중이면 서쪽 길로 언더시티까지 달려가세요)."
 
 step
@@ -1677,9 +1704,9 @@ step
 step
   tip 가시덩굴일족 전투호위병·가시마술사·죽음의 머리교 신도를 8마리씩 처치하세요: 악의 무리
   zone map 1413
-  kill 7872 quest 6626.1
-  kill 7873 quest 6626.2
-  kill 7874 quest 6626.3
+  kill 7873 quest 6626.1
+  kill 7874 quest 6626.2
+  kill 7872 quest 6626.3
 
 step
   tip 마지막 보스 혹한의 암네나르를 처치하고 해골을 챙기세요: 암네나르 처치

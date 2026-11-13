@@ -77,6 +77,10 @@ step
   complete 7734 @55,34 map 1444
 
 step
+  along until q7738
+  accept 7738 item 18972 optional -- If a *Pristine Yeti Hide* drops, click it to accept (skip this if it doesn't drop): Perfect Yeti Hide
+
+step
   when level<52
   tip Go to Camp Mojache and turn in Improved Quality
   zone map 1444
@@ -91,6 +95,7 @@ step
 
 step
   when onquest 7738
+  label q7738
   zone map 1444
   turnin 7738 npc 7854
 
@@ -107,7 +112,6 @@ step
 
 step
   tip Gadgetzan Fly to Gadgetzan.
-  accept 7738 item 18972 optional -- If a *Pristine Yeti Hide* drops, click it to accept (skip this if it doesn't drop): Perfect Yeti Hide
   note "! Your Hearthstone is set to Orgrimmar and is saved for after the Sunken Temple. Fly from Camp Mojache to Gadgetzan here."
   fly "Gadgetzan"
 
@@ -402,16 +406,16 @@ step
   when level<54
   tip Complete: The Decisive Striker
   zone map 1419
-  collect 8392 quest 2585.1
-  collect 8393 quest 2585.2
-  collect 8396 quest 2585.3
+  collect 8393 quest 2585.1
+  collect 8396 quest 2585.2
+  collect 8392 quest 2585.3
 
 step
   when level<54
   tip Complete: Vulture's Vigor
   zone map 1419
-  collect 8391 quest 2603.1
-  collect 8396 quest 2603.2
+  collect 8396 quest 2603.1
+  collect 8391 quest 2603.2
 
 step
   tip Each turn-in gives a 1-hour buff.
@@ -489,14 +493,18 @@ step
   goto 51,35 r 20 map 1419
 
 step
+  along until q3501
+  accept 3501 npc 7363 optional -- If you have a fragment, accept Everything Counts In Large Amounts
+
+step
   when complete 3501
+  label q3501
   tip Turn in right away: Everything Counts In Large Amounts
   zone map 1419
   turnin 3501 npc 7363
 
 step
   tip Go back north to Stonard in the Swamp of Sorrows and fly to Kargath.
-  accept 3501 npc 7363 optional -- If you have a fragment, accept Everything Counts In Large Amounts
   fly "Kargath"
 
 step
@@ -589,8 +597,8 @@ step
   when level<52
   tip Kill Dark Iron dwarves to complete: JOB OPPORTUNITY: Culling the Competition
   zone map 1427
-  kill 5844 quest 7729.1
-  kill 5846 quest 7729.2
+  kill 5846 quest 7729.1
+  kill 5844 quest 7729.2
 
 step
   tip Go here and climb the ramp.
@@ -905,14 +913,18 @@ step
   complete 3528 -- Summon and kill the Avatar of Hakkar, then fill the Ancient Egg (*reward): The God Hakkar
 
 step
+  along until q3373
+  accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept: The Essence of Eranikus — *Reward
+
+step
   when onquest 3373
+  label q3373
   tip Place it in the Essence Font in the Shade of Eranikus' lair (*reward): The Essence of Eranikus
   turnin 3373
 
 step
   tip == Sunken Temple turn-ins == In Stonard, turn in to Fel'zerul: The Temple of Atal'Hakkar (Jammal'an goes to The Hinterlands and The God Hakkar to Tanaris)
   zone map 1435
-  accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept: The Essence of Eranikus — *Reward
   turnin 1445 npc 1443
   note ">> Next dungeon: Blackrock Depths (at about Lv55.1) — about Lv53.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)."
 
@@ -1065,6 +1077,10 @@ step
   turnin 4291 npc 9619
 
 step
+  along until q3884
+  accept 3884 item 11116 optional -- Finish collecting 7 crystals of each color! If a *Crumpled Journal* drops, click it to accept Williden's Journal
+
+step
   when level<57
   zone map 1449
   accept 4243 npc 9618
@@ -1086,6 +1102,7 @@ step
 
 step
   when onquest 3884
+  label q3884
   zone map 1449
   turnin 3884 npc 9270
 
@@ -1101,7 +1118,6 @@ step
 
 step
   tip Open the small pack in your bags: It's a Secret to Everybody
-  accept 3884 item 11116 optional -- Finish collecting 7 crystals of each color! If a *Crumpled Journal* drops, click it to accept Williden's Journal
   complete 3845
 
 step
@@ -1179,7 +1195,7 @@ step
   when level<57
   tip Get the supply crate: Expedition Salvation
   zone map 1449
-  collect 11112 quest 3881.1 @68,36 map 1449
+  collect 11113 quest 3881.1 @68,36 map 1449
 
 step
   when level<57
@@ -1213,8 +1229,8 @@ step
   when level<57
   tip Kill insects to complete: Bungle in the Jungle
   zone map 1449
-  collect 11018 quest 4496.1
-  collect 11837 quest 4496.2
+  collect 11837 quest 4496.1
+  collect 11018 quest 4496.2
 
 step
   tip Go to this spot.
@@ -1225,7 +1241,7 @@ step
   when level<57
   tip The mobs here are fairly strong, so be careful. Find the pile of crates and take the research equipment: Expedition Salvation
   zone map 1449
-  collect 11113 quest 3881.2
+  collect 11112 quest 3881.2
 
 step
   when level<59
@@ -1244,9 +1260,9 @@ step
   tip Kill Bloodpetal sprouts to complete: Larion and Muigin
   zone map 1449
   kill 6509 quest 4145.1
-  kill 6510 quest 4145.2
+  kill 6512 quest 4145.2
   kill 6511 quest 4145.3
-  kill 6512 quest 4145.4
+  kill 6510 quest 4145.4
 
 step
   when level<56
@@ -1383,17 +1399,17 @@ step
   when level<57
   tip Finish collecting Kim'jael's equipment around the camp: Kim'jael Indeed!
   zone map 1447
-  collect 10715 quest 3601.1
-  collect 10717 quest 3601.2
-  collect 10718 quest 3601.3
-  collect 10722 quest 3601.4
+  collect 10717 quest 3601.1
+  collect 10715 quest 3601.2
+  collect 10722 quest 3601.3
+  collect 10718 quest 3601.4
 
 step
   when level<57
   tip Complete the quest: Betrayed Betrayed
   zone map 1447
-  kill 6198 quest 3505.1 @57,30.6 map 1447
-  kill 6199 quest 3505.2 @57,30.6 map 1447
+  kill 6199 quest 3505.1 @57,30.6 map 1447
+  kill 6198 quest 3505.2 @57,30.6 map 1447
 
 step
   tip Go to the stone structure and click the altar.
@@ -1648,12 +1664,12 @@ step
 step
   tip Kill the Dark Iron dwarves: KILL ON SIGHT: Dark Iron Dwarves
   zone map 1427
-  kill 8890 quest 4081.1
-  kill 8891 quest 4081.2
+  kill 8891 quest 4081.1
+  kill 8890 quest 4081.2
   kill 8892 quest 4081.3
 
 step
-  along
+  along until q4134
   complete 4134 -- Find the Lost Thunderbrew Recipe in the Grim Guzzler tavern: Lost Thunderbrew Recipe
 
 step
@@ -1692,6 +1708,7 @@ step
 
 step
   when complete 4134
+  label q4134
   tip Turn in to Shadowmage Vivian Lagrave: Lost Thunderbrew Recipe
   zone map 1418
   turnin 4134 npc 9078
@@ -2195,11 +2212,11 @@ step
   accept 4867
 
 step
-  tip Catch a Bloodaxe Worg Pup with the cage: Kibler's Exotic Pets
+  along until q4742
   accept 4742 optional -- If you can, accept from the Scarshield spy (Vaelan) near the entrance: Seal of Ascension
-  complete 4729
 
 step
+  complete 4729 -- Catch a Bloodaxe Worg Pup with the cage: Kibler's Exotic Pets
   complete 4724 -- Kill Halycon, the Bloodaxe pack mistress: The Pack Mistress
   complete 4862 -- Collect 15 Spire Spider Eggs: En-Ay-Es-Tee-Why
   complete 4866 -- Get poisoned by Mother Smolderweb (go to Ragged John while still poisoned): Mother's Milk
@@ -2207,9 +2224,9 @@ step
   accept 4982
   complete 4982 -- Find Bijou's belongings on the bottom floor: Bijou's Belongings
   turnin 4982 -- Go back to Bijou and turn in Bijou's Belongings
-  accept 4983 -- Then accept (report to Lexlort in Kargath): Bijou's Reconnaissance Report — Dungeon chain (Lower Blackrock Spire)
 
 step
+  accept 4983 -- Then accept (report to Lexlort in Kargath): Bijou's Reconnaissance Report — Dungeon chain (Lower Blackrock Spire)
   accept 5047 -- Accept from Pip Quickwit, who's held captive (Everlook in Winterspring — at the end): Pip Quickwit, At Your Service!
   accept 5160 -- Accept from Awbee by the eggs (Haleh in Winterspring — at the end): The Matron Protectorate
   complete 4768 -- Find the Darkstone Tablet: The Darkstone Tablet
@@ -2218,6 +2235,7 @@ step
 
 step
   when complete 4742
+  label q4742
   tip If you gathered the three gemstones and the seal, turn in Seal of Ascension
   turnin 4742
 
@@ -2251,7 +2269,7 @@ step
   complete 4136
 
 step
-  along
+  along until q4123
   complete 4123 -- Find the Heart of the Mountain in the Vault (the vault must be opened): The Heart of the Mountain
 
 step
@@ -2271,6 +2289,7 @@ step
 
 step
   when complete 4123
+  label q4123
   tip Turn in to Maxwort Uberglint: The Heart of the Mountain
   zone map 1428
   turnin 4123 npc 9536
@@ -2495,9 +2514,9 @@ step
 step
   tip Two guards protect the Quel'Thalas Registry, so a group is recommended. Kill elves to complete: The Ranger Lord's Behest
   zone map 1423
-  kill 8563 quest 6133.1
+  kill 8565 quest 6133.1
   kill 8564 quest 6133.2
-  kill 8565 quest 6133.3
+  kill 8563 quest 6133.3
   collect 15847 quest 6133.4
 
 step
@@ -2595,11 +2614,13 @@ step
 
 step
   when complete 5122
+  label q5122
   tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning
   turnin 5122
 
 step
   when onquest 5125
+  label q5125
   tip If you clear up to Baron Rivendare, turn in to Aurius: Aurius' Reckoning
   turnin 5125
 
@@ -2613,9 +2634,13 @@ step
   turnin 5212 npc 11035
 
 step
-  tip Turn in to Smokey LaRue: The Great Ezra Grimm
+  along
   zone map 1423
   accept 5213 npc 11035 optional -- Then accept from Betina Bigglezink (or get it shared): The Active Agent (Stratholme ziggurats — next run) — Dungeon chain (Stratholme)
+
+step
+  tip Turn in to Smokey LaRue: The Great Ezra Grimm
+  zone map 1423
   turnin 5214 npc 11033
 
 step

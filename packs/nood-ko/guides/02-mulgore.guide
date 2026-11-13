@@ -697,9 +697,21 @@ step
   accept 861 npc 3052
 
 step
+  only Warrior
+  along
+  zone map 1412
+  accept 1505 npc 3063 optional
+
+step
   only Druid
   zone map 1412
   accept 5928 npc 3064
+
+step
+  only Shaman
+  along
+  zone map 1412
+  accept 2984 npc 3066 optional
 
 step
   only Hunter
@@ -770,10 +782,8 @@ step
 
 step
   zone map 1412
-  accept 1505 npc 3063 optional only Warrior
   note "크랑 스톤후프에게 스킬을 습득하세요." only Warrior
   note "제니아 룬토템에게 스킬을 습득하세요." only Druid
-  accept 2984 npc 3066 optional only Shaman
   note "나름 스카이체이서에게 스킬을 습득하세요." only Shaman
   accept 833 npc 3233
 
@@ -812,7 +822,12 @@ step
   complete 765 @61.4,49.3 map 1412
 
 step
-  along
+  along until q98424
+  zone map 1412
+  accept 98424 @61.4,49.3 map 1412 optional -- 광산에서 피즈스프로켓의 문서를 주우면 수락: 피즈스프로켓의 기록
+
+step
+  along until q98424
   zone map 1412
   complete 98424 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
 
@@ -824,11 +839,11 @@ step
 
 step
   zone map 1412
-  accept 98424 @61.4,49.3 map 1412 optional -- 광산에서 피즈스프로켓의 문서를 주우면 수락: 피즈스프로켓의 기록
   turnin 764 npc 2988
 
 step
   when complete 98424
+  label q98424
   tip 모린 클라우드스토커에게: 피즈스프로켓의 기록
   zone map 1412
   turnin 98424 npc 2988
@@ -887,13 +902,25 @@ step
   turnin 775 npc 3057
 
 step
+  along until q768
+  zone map 1456
+  accept 768 npc 3050 optional -- 무두질을 배웠고 *얇은 가죽* 12개(경매장)가 있다면 베렌 톨스트라이더에게 퀘스트 수락: 가죽 수집
+
+step
   when complete 768
+  label q768
   tip 얇은 가죽 12개를 건네고 퀘스트 완료: 가죽 수집
   zone map 1456
   turnin 768 npc 3050
 
 step
+  along until q769
+  zone map 1456
+  accept 769 npc 3050 optional -- *얇은 가죽* 4개·*굵은 실타래* 4개(잡화 상인)가 더 있다면 이어서 퀘스트 수락: 코도 가죽 자루
+
+step
   when complete 769
+  label q769
   tip 바로 퀘스트 완료: 코도 가죽 자루
   zone map 1456
   turnin 769 npc 3050
@@ -905,8 +932,6 @@ step
 
 step
   zone map 1456
-  accept 768 npc 3050 optional -- 무두질을 배웠고 *얇은 가죽* 12개(경매장)가 있다면 베렌 톨스트라이더에게 퀘스트 수락: 가죽 수집
-  accept 769 npc 3050 optional -- *얇은 가죽* 4개·*굵은 실타래* 4개(잡화 상인)가 더 있다면 이어서 퀘스트 수락: 코도 가죽 자루
   accept 776 npc 3057
 
 step
@@ -931,6 +956,16 @@ step
   goto 70.4,32.2 r 20 map 1456
 
 step
+  along
+  zone map 1456
+  accept 5722 npc 11833 optional -- 퀘스트 수락: *잃어버린 가방 찾기* (성난불길 협곡 던전, 선택)
+
+step
+  along
+  zone map 1456
+  accept 5723 npc 11833 optional -- 퀘스트 수락: *성난불길 협곡의 트로그* (선택)
+
+step
   only Druid
   zone map 1456
   turnin 5928 npc 3033
@@ -942,8 +977,6 @@ step
 
 step
   zone map 1456
-  accept 5722 npc 11833 optional -- 퀘스트 수락: *잃어버린 가방 찾기* (성난불길 협곡 던전, 선택)
-  accept 5723 npc 11833 optional -- 퀘스트 수락: *성난불길 협곡의 트로그* (선택)
   accept 886 npc 5769
 
 step

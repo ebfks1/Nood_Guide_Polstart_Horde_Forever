@@ -103,9 +103,13 @@ step
   accept 92462 npc 251368
 
 step
-  tip Accept Harvesting Windstones (Dalia the Collector)
+  along until q94414
   zone map 2521
   accept 94414 npc 257554 optional -- Accept The Anchors of Zephras (Halaan Hawk-Eye)
+
+step
+  tip Accept Harvesting Windstones (Dalia the Collector)
+  zone map 2521
   accept 93552 npc 251363
 
 step
@@ -114,9 +118,13 @@ step
   accept 92598 npc 251487
 
 step
-  tip Kill Pesky Cirrusflies to the southeast: Infestation Investigation
+  along until q92474
   zone map 2521
   accept 92474 npc 263113 optional -- Accept Falling With Style (Myriaal Mistwake)
+
+step
+  tip Kill Pesky Cirrusflies to the southeast: Infestation Investigation
+  zone map 2521
   complete 92462 @45.5,27.3 map 2521
 
 step
@@ -125,11 +133,11 @@ step
   complete 93552 @44.7,25.7 map 2521
 
 step
-  along
+  along until q94414
   complete 94414
 
 step
-  along
+  along until q92474
   complete 92474
 
 step
@@ -159,6 +167,7 @@ step
 
 step
   when onquest 94414
+  label q94414
   tip Turn in The Anchors of Zephras (Halaan Hawk-Eye)
   zone map 2521
   turnin 94414 npc 257554
@@ -170,6 +179,7 @@ step
 
 step
   when onquest 92474
+  label q92474
   tip Turn in Falling With Style (Rorian the Dayseeker)
   zone map 2521
   turnin 92474 npc 251361
@@ -267,9 +277,13 @@ step
   accept 92470 npc 251366
 
 step
-  tip Accept Aggressive Encroachment (Valreaa Valewind)
+  along until q96638
   zone map 2521
   accept 96638 npc 251366 optional -- Accept The Adventurer (Aetheen of the Gales) (camping system intro)
+
+step
+  tip Accept Aggressive Encroachment (Valreaa Valewind)
+  zone map 2521
   accept 92473 npc 257551
 
 step
@@ -298,28 +312,41 @@ step
   accept 92472 npc 251366
 
 step
-  along
+  along until q92544
+  zone map 2521
+  accept 92544 npc 252095 optional -- == On the way to Shen'dar Village (the western detour is optional) == Accept Al'Aketh Thugs (Hanaa Nightwind)
+
+step
+  along until q92544
   zone map 2521
   complete 92544 @36.5,33 map 2521 -- Kill Al'Aketh Brutes and Neophytes, and Malduko Cloudcrush atop the temple: Al'Aketh Thugs
 
 step
   when complete 92544
+  label q92544
   tip Turn in Al'Aketh Thugs (Hanaa Nightwind)
   zone map 2521
   turnin 92544 npc 252095
 
 step
   when onquest 96638
+  label q96638
   tip == Shen'dar Village (5-9) == Turn in The Adventurer (Raan Wildwind)
   zone map 2521
   turnin 96638 npc 263664
 
 step
-  along
+  along until q96101
+  zone map 2521
+  accept 96101 npc 263664 optional -- Accept The Great Outdoors (Raan Wildwind)
+
+step
+  along until q96101
   complete 96101
 
 step
   when complete 96101
+  label q96101
   tip Turn in The Great Outdoors (Raan Wildwind)
   zone map 2521
   turnin 96101 npc 263664
@@ -327,8 +354,6 @@ step
 step
   tip The Camping 101 quests (cooking, gathering, crafting, etc.) are available from Raan Wildwind — do them when you learn professions. Turn in The Next Step (Constable Aonda)
   zone map 2521
-  accept 92544 npc 252095 optional -- == On the way to Shen'dar Village (the western detour is optional) == Accept Al'Aketh Thugs (Hanaa Nightwind)
-  accept 96101 npc 263664 optional -- Accept The Great Outdoors (Raan Wildwind)
   turnin 92472 npc 251523
 
 step
@@ -362,9 +387,13 @@ step
   accept 92551 npc 252172
 
 step
-  tip Accept Hippogryph Harassment (Teeri Wellwind)
+  along until q93318
   zone map 2521
   accept 93318 object 610954 optional -- Accept WANTED: Vulgara the Insatiable (Bounty Available: Vulgara the Insatiable!) (wanted poster)
+
+step
+  tip Accept Hippogryph Harassment (Teeri Wellwind)
+  zone map 2521
   accept 92516 npc 251906
 
 step
@@ -398,9 +427,14 @@ step
   accept 94411 npc 251902
 
 step
+  only Hunter
+  along until q94007
+  zone map 2521
+  accept 94007 npc 254084 optional -- Accept Taming the Beast (available from level 10 — if you're not 10 yet, skip it and come back later)
+
+step
   tip Turn in Infiltrating the Cult (Sania Silverstream)
   zone map 2521
-  accept 94007 npc 254084 optional only Hunter -- Accept Taming the Beast (available from level 10 — if you're not 10 yet, skip it and come back later)
   turnin 93036 npc 251904
 
 step
@@ -439,7 +473,7 @@ step
   complete 92595 @43.5,44.8 map 2521
 
 step
-  along
+  along until q93318
   zone map 2521
   complete 93318 @42.6,52.2 map 2521 -- Kill Vulgara (level 8 elite) on the mountain to the south: WANTED: Vulgara the Insatiable
 
@@ -495,6 +529,7 @@ step
 
 step
   when complete 93318
+  label q93318
   tip Turn in WANTED: Vulgara the Insatiable (Danarii Bellowveil)
   zone map 2521
   turnin 93318 npc 252172
@@ -607,6 +642,7 @@ step
 step
   only Hunter
   when onquest 94007
+  label q94007
   zone map 2521
   turnin 94007 npc 252389
 
@@ -1068,14 +1104,21 @@ step
   complete 93165 @63.7,37.3 map 2521
 
 step
+  along until q94490
+  accept 94490 item 265476 optional -- Starts from an item: Ripped Missive (accept when you loot it)
+
+step
+  along until q93459
+  accept 93459 npc 254151 optional -- Starts from an item: More Al'Aketh Ears (accept when you loot it)
+
+step
   tip Turn in Mercy Falls on Deaf Ears (Vayn Moongaze)
   zone map 2521
-  accept 94490 item 265476 optional -- Starts from an item: Ripped Missive (accept when you loot it)
-  accept 93459 npc 254151 optional -- Starts from an item: More Al'Aketh Ears (accept when you loot it)
   turnin 93165 npc 254151
 
 step
   when complete 93459
+  label q93459
   zone map 2521
   turnin 93459 npc 254151
 
@@ -1106,6 +1149,7 @@ step
 
 step
   when onquest 94490
+  label q94490
   tip Turn in Ripped Missive (Elegael Thornpaw)
   zone map 2521
   turnin 94490 npc 257944
@@ -1152,40 +1196,70 @@ step
   note "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff."
 
 step
+  along until q92871
+  zone map 2521
+  accept 92871 npc 251968 optional
+
+step
   when onquest 92871
+  label q92871
   zone map 2521
   turnin 92871 npc 252383
 
 step
+  along until q93320
+  zone map 2521
+  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
+
+step
   when onquest 93320
+  label q93320
   tip Turn in Tower Defense (Yorana Windyreed)
   zone map 2521
   turnin 93320 npc 252378
 
 step
-  along
+  along until q92642
+  zone map 2521
+  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
+
+step
+  along until q92645
+  zone map 2521
+  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
+
+step
+  along until q92642
   zone map 2521
   complete 92642 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
 
 step
-  along
+  along until q92645
   zone map 2521
   complete 92645 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
 
 step
   when complete 92642
+  label q92642
   tip Turn in Disrupting Logistics (Yorana Windyreed)
   zone map 2521
   turnin 92642 npc 252378
 
 step
   when complete 92645
+  label q92645
   tip Turn in Breaking the Breaker (Yorana Windyreed)
   zone map 2521
   turnin 92645 npc 252378
 
 step
+  along until q92880
+  zone map 2521
+  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
+
+step
   when onquest 92880
+  label q92880
   tip Turn in Return to Valanaar (Valennia Stormfist)
   zone map 2521
   turnin 92880 npc 252383
@@ -1215,12 +1289,6 @@ step
   turnin 94638 npc 255853
 
 step
-  zone map 2521
-  accept 92871 npc 251968 optional
-  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
-  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
-  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
-  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
   level 12
 
 step
@@ -1234,6 +1302,11 @@ step
   getfp "Thunder Bluff"
 
 step
+  along
+  zone map 1412
+  accept 95350 npc 259119 optional -- Accept from Alaana Stormwalker: Welcome to Azeroth — turn it in to Thrall in Orgrimmar (when you pass through Orgrimmar).
+
+step
   only Druid
   tip Accept from Muln Earthfury: Child of Nature
   zone map 1412
@@ -1244,6 +1317,5 @@ step
   tip Turn in to Turak Runetotem on the Elder Rise in Thunder Bluff: Child of Nature
   zone map 1456
   turnin 94911 npc 3033
-  accept 95350 npc 259119 optional -- Accept from Alaana Stormwalker: Welcome to Azeroth — turn it in to Thrall in Orgrimmar (when you pass through Orgrimmar).
   note "== Level 12: on to BalCon 12-25 =="
   note "Continue with the next guide \"12-25 BalCon: RFC, Ruins of Lordaeron, WC, SFK, BFD\" (it starts at the Crossroads)."

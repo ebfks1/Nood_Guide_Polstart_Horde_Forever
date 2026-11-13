@@ -1023,6 +1023,14 @@ step
   turnin 99049 npc 3142
 
 step
+  along until q99051
+  accept 99051 npc 3142 optional -- Accept the follow-up Threat from Below (Spinefin naga).
+
+step
+  along until q99052
+  accept 99052 npc 3142 optional -- If offered as well, also accept Threat from Below (sea giant on the north coast).
+
+step
   only Warrior,Shaman
   tip Head west into the Barrens.
   zone map 1413
@@ -1231,8 +1239,6 @@ step
 step
   tip Go to Thrall and accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
-  accept 99051 npc 3142 optional -- Accept the follow-up Threat from Below (Spinefin naga).
-  accept 99052 npc 3142 optional -- If offered as well, also accept Threat from Below (sea giant on the north coast).
   note ">> Next zone Durotar (main quests Lv9-12): expected now Lv10 · comfortable at Lv11 · minimum Lv8."
   note "Buy food/water if needed."
   note "Train: Frost Nova (Rank 1), Frost Armor (Rank 2), Conjure Water (Rank 2)" only Mage
@@ -1297,6 +1303,10 @@ step
   complete 816 @37.03,18.22 map 1411
 
 step
+  along until q97281
+  accept 97281 item 277661 optional -- If a Thunder Lizard drops a Dull Storm Orb, click it to accept A Simmering Storm
+
+step
   only Warrior
   zone map 1411
   complete 1498 @39.2,28.5 map 1411
@@ -1304,11 +1314,11 @@ step
 step
   tip Kill Fizzle Darkstorm: Dark Storms
   zone map 1411
-  accept 97281 item 277661 optional -- If a Thunder Lizard drops a Dull Storm Orb, click it to accept A Simmering Storm
   complete 806 @42.07,26.63 map 1411
 
 step
   when onquest 97281
+  label q97281
   tip If you have the orb, turn in to Rezlak: A Simmering Storm
   zone map 1411
   turnin 97281 npc 3293
@@ -1338,7 +1348,7 @@ step
   collect 6652 quest 1525.2 @52.82,29.2 map 1411
 
 step
-  along
+  along until q99051
   zone map 1411
   complete 99051 @58.6,26 map 1411 -- On the way to Margoz, loot 9 Spinefin from the Spinefin naga (scouts/servants) on the east coast: Threat from Below
 
@@ -1371,7 +1381,7 @@ step
   complete 827 @54.06,9.01 map 1411
 
 step
-  along
+  along until q99052
   zone map 1411
   collect 286009 quest 99052.1 -- Kill the sea giant on the north coast for Agor's belt: Threat from Below
 
@@ -1465,9 +1475,8 @@ step
   turnin 5727 npc 4949
 
 step
-  tip Accept Journey to the Crossroads (Forever new)
-  zone map 1454
-  accept 98024 npc 4949
+  along
+  accept 5728 npc 4949 optional -- Accept Hidden Enemies (Ragefire Chasm dungeon quest, optional)
 
 step
   only Rogue
@@ -1484,7 +1493,6 @@ step
 step
   tip Leave through the Orgrimmar front gate. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1411
-  accept 5728 npc 4949 optional -- Accept Hidden Enemies (Ragefire Chasm dungeon quest, optional)
   note "Train new spells" only Priest
   note "Train new spells" only Shaman
   note "Train: Conjure Water (Rank 2), Dampen Magic (Rank 1), Fireball (Rank 3)" only Mage
@@ -1561,12 +1569,6 @@ step
   goto 52.2,31 r 20 map 1413
 
 step
-  only Warrior,Shaman
-  tip Turn in to Thork at the Crossroads: Journey to the Crossroads
-  zone map 1413
-  turnin 98024 npc 3429
-
-step
   only Mage,Priest,Hunter,Warlock,Rogue
   hearth "Razor Hill"
 
@@ -1577,6 +1579,7 @@ step
 
 step
   when complete 99051
+  label q99051
   tip If you finished Orgnil's quests, turn them in: Threat from Below
   zone map 1411
   note "- You may need to abandon and re-accept the quest to complete it." only Mage,Priest
@@ -1586,6 +1589,7 @@ step
 
 step
   when complete 99052
+  label q99052
   zone map 1411
   turnin 99052 npc 3142
 
@@ -1605,11 +1609,6 @@ step
   tip Run to the Crossroads, killing mobs on the way. Turn in Crossroads Conscription
   zone map 1413
   turnin 842 npc 3338
-
-step
-  only Mage,Priest,Hunter,Warlock,Rogue
-  zone map 1413
-  turnin 98024 npc 3429
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll

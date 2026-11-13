@@ -115,7 +115,7 @@ step
   when level<44
   tip 지점에서 획득하세요: 실버파인호 해도
   zone map 1417
-  collect 4489 quest 662.3 @20.4,85.6 map 1417
+  collect 4488 quest 662.3 @20.4,85.6 map 1417
 
 step
   when level<44
@@ -127,7 +127,7 @@ step
   when level<44
   tip 지점에서 획득하세요: 폴리호 항해일지
   zone map 1417
-  collect 4488 quest 662.2 @23.4,85.1 map 1417
+  collect 4489 quest 662.2 @23.4,85.1 map 1417
 
 step
   when level<44
@@ -326,12 +326,12 @@ step
   tip 코요테를 처치해 완수하세요: 도둑 코요테송곳니 획득
   zone map 1418
   collect 6166 quest 1419.1
-  collect 7847 quest 2258.2
+  collect 7846 quest 2258.2
 
 step
   tip 독수리를 처치해 완수하세요: 모래주머니 획득날개 획득
   zone map 1418
-  collect 7846 quest 2258.1
+  collect 7847 quest 2258.1
   complete 703
 
 step
@@ -1032,13 +1032,13 @@ step
   when level<49
   tip 함장 피랠론을 처치하세요: 피랠론 처치
   zone map 1434
-  kill 2550 quest 608.3 @30.6,90.4 map 1434
+  kill 2546 quest 608.3 @30.6,90.4 map 1434
 
 step
   when level<49
   tip 선장 스틸워터를 처치하세요: 스틸워터 처치
   zone map 1434
-  kill 2546 quest 608.1 @33,88.2 map 1434
+  kill 2550 quest 608.1 @33,88.2 map 1434
 
 step
   tip 코르텔로의 수수께끼를 찾아서(3척의 배 중 하나에 있습니다), 퀘스트 수락 (★보상 연계): 코르텔로의 수수께끼
@@ -1133,26 +1133,37 @@ step
   zone map 1435
   accept 625 object 2553
   note "── 크롤독 보루 (포에버 신규 던전) ── 리버글레이드는 신규 지역이라 지도 화살표 좌표가 없습니다. 슬픔의 늪 북쪽(스토나드 북쪽)으로 올라가 리버글레이드의 호드 거점 로그마르와 비행 지점을 찾으세요. 길이 막혀 있으면 타나리스 동쪽 스팀휘들 항구에서 파우더퓨즈 항구행 배를 타세요."
+  note "★ 크롤독 보루 — 약 Lv42.5 → 약 Lv43.5 · 권장 Lv40~45 (힐러 40 · 탱커·딜러 41) · 포에버 신규 던전"
+
+step
+  along until q94973
+  accept 94973 "크롤독 거푸집" optional -- 크롤독 거푸집(리버글레이드 오우거 드롭)을 주웠다면 퀘스트 수락: 크롤독 거푸집 — ◆던전 선행(크롤독 보루)
 
 step
   when onquest 94973
+  label q94973
   tip 로그마르에서 거푸집을 아는 사람을 찾아 퀘스트 완료: 크롤독 거푸집
   turnin 94973 "크롤독 거푸집"
 
 step
+  along until q94974
+  accept 94974 "열쇠 재료" optional -- 이어서 크레자 다크쏜에게 퀘스트 수락: 열쇠 재료 — ◆던전 선행(크롤독 보루)
+
+step
   when onquest 94974
+  label q94974
   tip 질긴 가죽 4개와 철괴 12개(경매장)를 크레자 다크쏜에게 주고 크롤독 열쇠를 받으세요: 열쇠 재료
   turnin 94974 "열쇠 재료"
 
 step
-  tip 황혼의 망치단 신도에게서 귀 15개를 모으세요: 복수의 증표
-  accept 94973 "크롤독 거푸집" optional -- 크롤독 거푸집(리버글레이드 오우거 드롭)을 주웠다면 퀘스트 수락: 크롤독 거푸집 — ◆던전 선행(크롤독 보루)
-  accept 94974 "열쇠 재료" optional -- 이어서 크레자 다크쏜에게 퀘스트 수락: 열쇠 재료 — ◆던전 선행(크롤독 보루)
-  note "★ 크롤독 보루 — 약 Lv42.5 → 약 Lv43.5 · 권장 Lv40~45 (힐러 40 · 탱커·딜러 41) · 포에버 신규 던전"
-  note "리버글레이드 북쪽 요새 정문 서쪽 동굴(지도 좌표 37.5, 37.5)로 들어가세요."
+  along until q94975
   accept 94975 "복수의 증표" optional -- ★ 던전 안 퀘스트 받기 (못 받은 것만): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
   accept 94972 "황혼의 고서" optional
   accept 95056 "크롤독은 이제 그만!" optional
+
+step
+  tip 황혼의 망치단 신도에게서 귀 15개를 모으세요: 복수의 증표
+  note "리버글레이드 북쪽 요새 정문 서쪽 동굴(지도 좌표 37.5, 37.5)로 들어가세요."
   complete 94975 "복수의 증표"
 
 step
@@ -1160,28 +1171,35 @@ step
   complete 95056 "크롤독은 이제 그만!" -- 던전 퀘스트를 완수하세요: 크롤독은 이제 그만!
 
 step
+  along until q94968
+  accept 94968 "머그의 눈" optional -- 우두머리 머그를 처치하고 머그의 눈을 주우면 퀘스트 수락: 머그의 눈
+
+step
   when onquest 94975
+  label q94975
   tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
   turnin 94975 "복수의 증표"
 
 step
   when onquest 94972
+  label q94972
   tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
   turnin 94972 "황혼의 고서"
 
 step
   when onquest 95056
+  label q95056
   tip 던전을 나와 로그마르에서 퀘스트 완료 (완료 NPC 미확인 — 퀘스트 목록 확인): 복수의 증표 황혼의 고서 크롤독은 이제 그만!
   turnin 95056 "크롤독은 이제 그만!"
 
 step
   when onquest 94968
+  label q94968
   tip 로그마르의 크롬로쉬에게 퀘스트 완료: 머그의 눈
   turnin 94968 "머그의 눈"
 
 step
   tip 카르가스로 비행하세요 (로그마르에서, 또는 스토나드로 돌아와서).
-  accept 94968 "머그의 눈" optional -- 우두머리 머그를 처치하고 머그의 눈을 주우면 퀘스트 수락: 머그의 눈
   fly "Kargath"
 
 step
@@ -2037,7 +2055,7 @@ step
   complete 2846 -- 유체술사 벨라타에게서 심연의 티아라를 챙기세요: 심연의 티아라
 
 step
-  along
+  along until q2770
   complete 2770 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요: 가즈릴라
 
 step
@@ -2095,6 +2113,7 @@ step
 
 step
   when complete 2770
+  label q2770
   tip 가즈릴라를 잡았다면 북쪽 소금 평원으로 가서 퀘스트 완료 (★보상): 가즈릴라
   zone map 1441
   turnin 2770 npc 4453
@@ -2268,8 +2287,8 @@ step
   when level<52
   tip 은빛갈기늑대들을 처치해 완숳세요: 은빛갈기늑대 추적
   zone map 1425
-  kill 2925 quest 7828.1
-  kill 2926 quest 7828.2
+  kill 2926 quest 7828.1
+  kill 2925 quest 7828.2
 
 step
   when level<52

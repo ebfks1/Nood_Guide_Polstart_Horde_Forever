@@ -54,8 +54,8 @@ step
 step
   tip Skip the Mindless Zombies / Rattlecage Skeletons quest unless there are few players and no competition for mobs. Then accept and do your class quest. Kill bats and wolves: The Damned
   zone map 1420
-  collect 3264 quest 376.1
-  collect 3265 quest 376.2
+  collect 3265 quest 376.1
+  collect 3264 quest 376.2
 
 step
   zone map 1420
@@ -90,7 +90,7 @@ step
   complete 91208 @27.6,63.8 map 1420
 
 step
-  along
+  along until q3902
   zone map 1420
   collect 11127 quest 3902.1 -- Check supply crates while you're in Deathknell: Scavenging Deathknell
 
@@ -125,6 +125,7 @@ step
 
 step
   when complete 3902
+  label q3902
   tip If you collected all the supplies, turn in to Deathguard Saltain: Scavenging Deathknell
   zone map 1420
   turnin 3902 npc 1740
@@ -368,8 +369,8 @@ step
 
 step
   zone map 1420
-  kill 1675 quest 358.1
-  kill 1941 quest 358.2
+  kill 1941 quest 358.1
+  kill 1675 quest 358.2
   collect 2834 quest 358.3
 
 step
@@ -455,25 +456,28 @@ step
 step
   along
   zone map 1420
-  collect 2320 quest 375.1
-  collect 2876 quest 375.2
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
+
+step
+  along
+  accept 361 item 2839 optional -- If you loot the quest item *Thurman's Letter*, click it to accept A Letter Undelivered
 
 step
   zone map 1420
   note "Train level 8 spells at your class trainer." only Priest
   note "Train level 8 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
   note "Sell junk, and buy food/water and *bags* if needed."
-  accept 361 item 2839 optional -- If you loot the quest item *Thurman's Letter*, click it to accept A Letter Undelivered
   collect 2831 quest 362.1
-  collect 2828 quest 354.1
-  collect 2829 quest 354.2
+  collect 2829 quest 354.1
+  collect 2828 quest 354.2
   collect 2830 quest 354.3
   collect 3162 quest 426.1
   collect 3163 quest 426.2
   collect 2859 quest 368.1
   kill 1535 quest 427.1
-  collect 2320 quest 375.1
-  collect 2876 quest 375.2
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
 
 step
   along

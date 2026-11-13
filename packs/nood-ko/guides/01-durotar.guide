@@ -1023,6 +1023,14 @@ step
   turnin 99049 npc 3142
 
 step
+  along until q99051
+  accept 99051 npc 3142 optional -- 이어지는 저 아래에서 온 위협 (나가 가시지느러미)를 받으세요.
+
+step
+  along until q99052
+  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협 (북쪽 해안 바다 거인)도 받으세요.
+
+step
   only Warrior,Shaman
   tip 서쪽으로 이동해 불모의 땅에 도달하세요.
   zone map 1413
@@ -1231,8 +1239,6 @@ step
 step
   tip 스랄에게 이동하여 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
-  accept 99051 npc 3142 optional -- 이어지는 저 아래에서 온 위협 (나가 가시지느러미)를 받으세요.
-  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협 (북쪽 해안 바다 거인)도 받으세요.
   note "▶ 다음 지역 듀로타 (주요 퀘스트 Lv9~12): 지금 예상 Lv10 · 수월하려면 Lv11 · 최소 Lv8."
   note "필요하다면 물빵을 구매하세요."
   note "새로운 스킬을 습득하세요: 얼음 회오리 (1 레벨), 냉기 갑옷 (2 레벨), 음료 창조 (2 레벨)" only Mage
@@ -1297,6 +1303,10 @@ step
   complete 816 @37.03,18.22 map 1411
 
 step
+  along until q97281
+  accept 97281 item 277661 optional -- 천둥도마뱀에게서 흐릿한 폭풍 구슬을 얻으면 클릭해 수락: A Simmering Storm
+
+step
   only Warrior
   zone map 1411
   complete 1498 @39.2,28.5 map 1411
@@ -1304,11 +1314,11 @@ step
 step
   tip 피즐을 처치하여 완수하세요: 다크스톰
   zone map 1411
-  accept 97281 item 277661 optional -- 천둥도마뱀에게서 흐릿한 폭풍 구슬을 얻으면 클릭해 수락: A Simmering Storm
   complete 806 @42.07,26.63 map 1411
 
 step
   when onquest 97281
+  label q97281
   tip 구슬이 있다면 레즐락에게: A Simmering Storm
   zone map 1411
   turnin 97281 npc 3293
@@ -1338,7 +1348,7 @@ step
   collect 6652 quest 1525.2 @52.82,29.2 map 1411
 
 step
-  along
+  along until q99051
   zone map 1411
   complete 99051 @58.6,26 map 1411 -- 마르고즈에게 가는 길에 동쪽 해안의 가시지느러미 나가(척후병·시종)에게서 가시지느러미 9개: 저 아래에서 온 위협
 
@@ -1371,7 +1381,7 @@ step
   complete 827 @54.06,9.01 map 1411
 
 step
-  along
+  along until q99052
   zone map 1411
   collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
 
@@ -1465,9 +1475,8 @@ step
   turnin 5727 npc 4949
 
 step
-  tip 퀘스트 수락: 크로스로드로의 여정 (포에버 신규)
-  zone map 1454
-  accept 98024 npc 4949
+  along
+  accept 5728 npc 4949 optional -- 퀘스트 수락: 내부의 배신자 (성난불길 협곡 던전 퀘스트, 선택)
 
 step
   only Rogue
@@ -1484,7 +1493,6 @@ step
 step
   tip 오그리마 정문으로 나가세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)
   zone map 1411
-  accept 5728 npc 4949 optional -- 퀘스트 수락: 내부의 배신자 (성난불길 협곡 던전 퀘스트, 선택)
   note "새로운 스킬을 습득하세요" only Priest
   note "새로운 스킬을 습득하세요" only Shaman
   note "새로운 스킬을 습득하세요: 음료 창조 (2 레벨), 마법 감쇠 (1 레벨), 화염구 (3 레벨)" only Mage
@@ -1561,12 +1569,6 @@ step
   goto 52.2,31 r 20 map 1413
 
 step
-  only Warrior,Shaman
-  tip 크로스로드의 톨크에게 퀘스트 완료: 크로스로드로의 여정
-  zone map 1413
-  turnin 98024 npc 3429
-
-step
   only Mage,Priest,Hunter,Warlock,Rogue
   hearth "Razor Hill"
 
@@ -1577,6 +1579,7 @@ step
 
 step
   when complete 99051
+  label q99051
   tip 받아 둔 오르그닐 퀘스트가 끝났다면 보고: 저 아래에서 온 위협
   zone map 1411
   note "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." only Mage,Priest
@@ -1586,6 +1589,7 @@ step
 
 step
   when complete 99052
+  label q99052
   zone map 1411
   turnin 99052 npc 3142
 
@@ -1605,11 +1609,6 @@ step
   tip 크로스로드를 향해 달리시고, 가는 길에 보이는 몹들을 사냥하세요. 퀘스트 완료: 크로스로드의 징병
   zone map 1413
   turnin 842 npc 3338
-
-step
-  only Mage,Priest,Hunter,Warlock,Rogue
-  zone map 1413
-  turnin 98024 npc 3429
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll

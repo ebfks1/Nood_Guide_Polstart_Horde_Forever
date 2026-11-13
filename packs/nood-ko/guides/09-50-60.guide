@@ -77,6 +77,10 @@ step
   complete 7734 @55,34 map 1444
 
 step
+  along until q7738
+  accept 7738 item 18972 optional -- *완전한 설인 가죽*이 나오면 눌러 퀘스트 수락 (안 나오면 건너뛰세요): 완전한 설인 가죽
+
+step
   when level<52
   tip 모자케 야영지로 가서 퀘스트 완료: 품질 향상
   zone map 1444
@@ -91,6 +95,7 @@ step
 
 step
   when onquest 7738
+  label q7738
   zone map 1444
   turnin 7738 npc 7854
 
@@ -107,7 +112,6 @@ step
 
 step
   tip 가젯잔으로 비행하세요.
-  accept 7738 item 18972 optional -- *완전한 설인 가죽*이 나오면 눌러 퀘스트 수락 (안 나오면 건너뛰세요): 완전한 설인 가죽
   note "※ 귀환석은 오그리마로 지정돼 있어 아탈학카르 신전 뒤에 씁니다. 여기서는 모자케 야영지에서 가젯잔으로 비행하세요."
   fly "Gadgetzan"
 
@@ -402,16 +406,16 @@ step
   when level<54
   tip 퀘스트 완수: 민첩한 스콜포크
   zone map 1419
-  collect 8392 quest 2585.1
-  collect 8393 quest 2585.2
-  collect 8396 quest 2585.3
+  collect 8393 quest 2585.1
+  collect 8396 quest 2585.2
+  collect 8392 quest 2585.3
 
 step
   when level<54
   tip 퀘스트 완수: 독수리의 면역력
   zone map 1419
-  collect 8391 quest 2603.1
-  collect 8396 quest 2603.2
+  collect 8396 quest 2603.1
+  collect 8391 quest 2603.2
 
 step
   tip 퀘스트를 완료하면 각각 1시간짜리 버프를 받을 수 있습니다.
@@ -489,14 +493,18 @@ step
   goto 51,35 r 20 map 1419
 
 step
+  along until q3501
+  accept 3501 npc 7363 optional -- 조각이 있다면 퀘스트 수락: 불완전한 드레니시스트 조각
+
+step
   when complete 3501
+  label q3501
   tip 바로 완료: 불완전한 드레니시스트 조각
   zone map 1419
   turnin 3501 npc 7363
 
 step
   tip 북쪽 슬픔의 늪 스토나드로 돌아가 카르가스로 비행하세요.
-  accept 3501 npc 7363 optional -- 조각이 있다면 퀘스트 수락: 불완전한 드레니시스트 조각
   fly "Kargath"
 
 step
@@ -589,8 +597,8 @@ step
   when level<52
   tip 검은무쇠단을 처치해 완수하세요: 구인광고 경쟁 선별
   zone map 1427
-  kill 5844 quest 7729.1
-  kill 5846 quest 7729.2
+  kill 5846 quest 7729.1
+  kill 5844 quest 7729.2
 
 step
   tip 지점으로 이동하여 경사로를 오르세요.
@@ -905,14 +913,18 @@ step
   complete 3528 -- 학카르의 화신을 불러내 처치한 뒤 고대의 알을 채우세요 (★보상): 학카르의 화신
 
 step
+  along until q3373
+  accept 3373 item 10454 optional -- 에라니쿠스의 정수가 나오면 눌러 퀘스트 수락: 에라니쿠스의 정수 — ★보상
+
+step
   when onquest 3373
+  label q3373
   tip 에라니쿠스의 그림자 굴 안 정수의 샘에 넣어 퀘스트 완료 (★보상): 에라니쿠스의 정수
   turnin 3373
 
 step
   tip ── 아탈학카르 신전 보고 ── 스토나드 펠제룰에게 퀘스트 완료: 아탈학카르 신전 (예언자 잠말란은 동부 내륙지, 학카르의 화신은 타나리스에서 보고)
   zone map 1435
-  accept 3373 item 10454 optional -- 에라니쿠스의 정수가 나오면 눌러 퀘스트 수락: 에라니쿠스의 정수 — ★보상
   turnin 1445 npc 1443
   note "▶ 다음 던전: 검은바위 나락 (약 Lv55.1에 갑니다) — 지금 약 Lv53.2. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다)."
 
@@ -1065,6 +1077,10 @@ step
   turnin 4291 npc 9619
 
 step
+  along until q3884
+  accept 3884 item 11116 optional -- 수정 획득을 각각 7개씩 완수하세요! *구겨진 일지*가 나오면 클릭하여 퀘스트 수락: 윌리덴의 일지
+
+step
   when level<57
   zone map 1449
   accept 4243 npc 9618
@@ -1086,6 +1102,7 @@ step
 
 step
   when onquest 3884
+  label q3884
   zone map 1449
   turnin 3884 npc 9270
 
@@ -1101,7 +1118,6 @@ step
 
 step
   tip 인벤토리에 있는 작은 배낭을 여세요: 아무도 모르는 비밀
-  accept 3884 item 11116 optional -- 수정 획득을 각각 7개씩 완수하세요! *구겨진 일지*가 나오면 클릭하여 퀘스트 수락: 윌리덴의 일지
   complete 3845
 
 step
@@ -1179,7 +1195,7 @@ step
   when level<57
   tip 식량 상자를 획득하세요: 식량 상자
   zone map 1449
-  collect 11112 quest 3881.1 @68,36 map 1449
+  collect 11113 quest 3881.1 @68,36 map 1449
 
 step
   when level<57
@@ -1213,8 +1229,8 @@ step
   when level<57
   tip 벌레들을 처치하여 완수하세요: 고리쉬 향낭
   zone map 1449
-  collect 11018 quest 4496.1
-  collect 11837 quest 4496.2
+  collect 11837 quest 4496.1
+  collect 11018 quest 4496.2
 
 step
   tip 지점으로 이동하세요.
@@ -1225,7 +1241,7 @@ step
   when level<57
   tip 여기 몹들은 꽤 강력하기 때문에 주의하세요. 상자 더미를 찾아 탐사 장비를 획득하세요: 탐사 장비
   zone map 1449
-  collect 11113 quest 3881.2
+  collect 11112 quest 3881.2
 
 step
   when level<59
@@ -1244,9 +1260,9 @@ step
   tip 붉은꽃잎덩굴손을 처치해 완수하세요: 라리온과 무이긴
   zone map 1449
   kill 6509 quest 4145.1
-  kill 6510 quest 4145.2
+  kill 6512 quest 4145.2
   kill 6511 quest 4145.3
-  kill 6512 quest 4145.4
+  kill 6510 quest 4145.4
 
 step
   when level<56
@@ -1383,17 +1399,17 @@ step
   when level<57
   tip 주둔지 곳곳에 있는 킴야엘의 장비 획득을 완수하세요: 킴야엘
   zone map 1447
-  collect 10715 quest 3601.1
-  collect 10717 quest 3601.2
-  collect 10718 quest 3601.3
-  collect 10722 quest 3601.4
+  collect 10717 quest 3601.1
+  collect 10715 quest 3601.2
+  collect 10722 quest 3601.3
+  collect 10718 quest 3601.4
 
 step
   when level<57
   tip 퀘스트를 완수하세요: 수색꾼 처치 감정관 처치
   zone map 1447
-  kill 6198 quest 3505.1 @57,30.6 map 1447
-  kill 6199 quest 3505.2 @57,30.6 map 1447
+  kill 6199 quest 3505.1 @57,30.6 map 1447
+  kill 6198 quest 3505.2 @57,30.6 map 1447
 
 step
   tip 돌 구조물로 이동하여, 제단을 클릭하세요.
@@ -1648,12 +1664,12 @@ step
 step
   tip 검은무쇠단 드워프를 처치하세요: 죽음의 본보기: 검은무쇠단 드워프
   zone map 1427
-  kill 8890 quest 4081.1
-  kill 8891 quest 4081.2
+  kill 8891 quest 4081.1
+  kill 8890 quest 4081.2
   kill 8892 quest 4081.3
 
 step
-  along
+  along until q4134
   complete 4134 -- 술집 그림 거즐러에서 잃어버린 썬더브루 제조법을 찾으세요: 잃어버린 썬더브루 제조법
 
 step
@@ -1692,6 +1708,7 @@ step
 
 step
   when complete 4134
+  label q4134
   tip 어둠마법사 비비안 라그레이브에게 퀘스트 완료: 잃어버린 썬더브루 제조법
   zone map 1418
   turnin 4134 npc 9078
@@ -2195,11 +2212,11 @@ step
   accept 4867
 
 step
-  tip 도끼부대 새끼 검은늑대를 우리에 담아 오세요: 키블러의 진귀한 애완동물
+  along until q4742
   accept 4742 optional -- 입구 근처 방패부대 첩보원(바엘란)에게 받을 수 있으면 퀘스트 수락: 승천의 인장
-  complete 4729
 
 step
+  complete 4729 -- 도끼부대 새끼 검은늑대를 우리에 담아 오세요: 키블러의 진귀한 애완동물
   complete 4724 -- 검은늑대 무리의 어미 할리콘을 처치하세요: 검은늑대 무리의 어미
   complete 4862 -- 첨탑거미 알 15개를 모으세요: 더러운 거미알
   complete 4866 -- 여왕 불그물거미에게 독을 맞으세요 (맞은 채로 털보 존에게 가야 합니다): 여왕 거미의 독
@@ -2207,9 +2224,9 @@ step
   accept 4982
   complete 4982 -- 아래층에서 비쥬의 물건을 찾으세요: 비쥬의 물건들
   turnin 4982 -- 비쥬에게 돌아가 퀘스트 완료: 비쥬의 물건들
-  accept 4983 -- 이어서 퀘스트 수락 (카르가스 렉스로트에게 보고): 비쥬의 정찰 보고 — ◆던전 연계(검은바위 첨탑 하층)
 
 step
+  accept 4983 -- 이어서 퀘스트 수락 (카르가스 렉스로트에게 보고): 비쥬의 정찰 보고 — ◆던전 연계(검은바위 첨탑 하층)
   accept 5047 -- 갇혀 있는 핍 퀵윗에게 퀘스트 수락 (여명의 설원 눈망루 마을 — 마지막에): 핍 퀵윗, 명을 받듭니다!
   accept 5160 -- 알 무더기 근처 아우비에게 퀘스트 수락 (여명의 설원 헬레 — 마지막에): 대섭정
   complete 4768 -- 다크스톤 서판을 찾으세요: 다크스톤 서판
@@ -2218,6 +2235,7 @@ step
 
 step
   when complete 4742
+  label q4742
   tip 보석 세 개와 인장을 모았으면 퀘스트 완료: 승천의 인장
   turnin 4742
 
@@ -2251,7 +2269,7 @@ step
   complete 4136
 
 step
-  along
+  along until q4123
   complete 4123 -- 금고 구역에서 산의 정수를 찾으세요 (금고를 열어야 합니다): 산의 정수
 
 step
@@ -2271,6 +2289,7 @@ step
 
 step
   when complete 4123
+  label q4123
   tip 맥스워트 우버글린트에게 퀘스트 완료: 산의 정수
   zone map 1428
   turnin 4123 npc 9536
@@ -2495,9 +2514,9 @@ step
 step
   tip 쿠엘탈라스 기록부를 지키고 있는 경비병 2마리가 있으므로 파티를 권장합니다. 엘프들을 처치하여 완수하세요: 순찰대장의 명령
   zone map 1423
-  kill 8563 quest 6133.1
+  kill 8565 quest 6133.1
   kill 8564 quest 6133.2
-  kill 8565 quest 6133.3
+  kill 8563 quest 6133.3
   collect 15847 quest 6133.4
 
 step
@@ -2595,11 +2614,13 @@ step
 
 step
   when complete 5122
+  label q5122
   tip 신념의 메달이 나오면 아우리우스에게 가져가 퀘스트를 받고 바로 완료한 뒤 이어서 수락: 신념의 메달신념의 메달아우리우스의 복수
   turnin 5122
 
 step
   when onquest 5125
+  label q5125
   tip 남작 리븐데어까지 정리하면 아우리우스에게 퀘스트 완료: 아우리우스의 복수
   turnin 5125
 
@@ -2613,9 +2634,13 @@ step
   turnin 5212 npc 11035
 
 step
-  tip 스모키 라루에게 퀘스트 완료: 위대한 에즈라 그림
+  along
   zone map 1423
   accept 5213 npc 11035 optional -- 이어서 베티나 비글징크에게 퀘스트 수락 (또는 파티원에게 공유받기): 활성 역병 인자 (스트라솔름 지구라트 — 다음 판에) — ◆던전 연계(스트라솔름)
+
+step
+  tip 스모키 라루에게 퀘스트 완료: 위대한 에즈라 그림
+  zone map 1423
   turnin 5214 npc 11033
 
 step

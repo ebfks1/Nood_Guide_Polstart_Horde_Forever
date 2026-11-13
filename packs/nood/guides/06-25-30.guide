@@ -113,6 +113,11 @@ step
   accept 549 object 556670
 
 step
+  along until q98094
+  zone map 1424
+  accept 98094 npc 2215 optional -- From High Executor Darthalia: Scout Support (Forever new)
+
+step
   when level<32
   tip Click the poster to accept Dangerous!
   zone map 1424
@@ -121,7 +126,6 @@ step
 step
   tip Grind your way to Durnholde Keep at this point.
   zone map 1424
-  accept 98094 npc 2215 optional -- From High Executor Darthalia: Scout Support (Forever new)
   goto 76,46 r 20 map 1424
 
 step
@@ -206,9 +210,9 @@ step
 step
   when level<28
   zone map 1424
-  kill 232 quest 527.1
-  kill 2266 quest 527.2
-  kill 2360 quest 527.3
+  kill 2266 quest 527.1
+  kill 2360 quest 527.2
+  kill 232 quest 527.3
   kill 2403 quest 527.4
 
 step
@@ -296,12 +300,15 @@ step
 
 step
   along
+  accept 95664 item 270866 optional -- If a Relic Guardian drops a "Titan Relic", pick it up and accept Elder Knowledge
+
+step
+  along
   complete 95697 -- If you got "Changing Tastes" from Vorstan in Orgrimmar, collect the Thicket Raptor meat: Changing Tastes
 
 step
   tip Turn in to the Deathstalker: Open the Maw
   zone map 1437
-  accept 95664 item 270866 optional -- If a Relic Guardian drops a "Titan Relic", pick it up and accept Elder Knowledge
   turnin 95682 npc 13155
   note "! Your Hearthstone should be set to the Crossroads (set in the 12-25 guide). If not, fly or run to Splintertree Post instead."
   note ">> Next dungeon: Dalaran (at about Lv30.1) — about Lv28.1 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, fly from Hammerfall to Tarren Mill, then take the zeppelin to Orgrimmar from the tower east of Undercity)."
@@ -662,8 +669,8 @@ step
   when level<32
   tip Kill Hillsbrad miners and Foreman Bonds: Battle of Hillsbrad
   zone map 1424
-  kill 2269 quest 539.1
-  kill 2305 quest 539.2
+  kill 2305 quest 539.1
+  kill 2269 quest 539.2
 
 step
   tip Leave the mine and go to.
@@ -678,6 +685,7 @@ step
 
 step
   when onquest 98094
+  label q98094
   tip Turn in to Deathstalker Mathoz outside Durnholde: Scout Support
   zone map 1424
   turnin 98094 npc 270438
@@ -788,18 +796,22 @@ step
   complete 96984 -- Collect the arcane motes inside Dalaran: Heart of Disruption
 
 step
-  along
+  along until q96987
+  accept 96987 optional -- If Lexi Copperclutch near the entrance offers it, accept Opportunistic Education
+
+step
+  along until q96987
   complete 96987 -- The book "The Founding of Dalaran": Opportunistic Education
 
 step
   when complete 96987
+  label q96987
   tip Turn in to Lexi Copperclutch: Opportunistic Education
   turnin 96987
 
 step
   tip Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 Enslaved Earth Elementals: Dalaran Patrols
   zone map 1416
-  accept 96987 optional -- If Lexi Copperclutch near the entrance offers it, accept Opportunistic Education
   complete 545 @21,80 map 1416
 
 step

@@ -35,13 +35,6 @@ step
   goto 60.7,58.8 r 20 map 1420
 
 step
-  only Undead
-  when level<17
-  tip 오그리마 지혜의 골짜기에서 스랄에게 퀘스트 수락: 크로스로드로의 여정 (포에버 신규)
-  zone map 1454
-  accept 98024 npc 4949
-
-step
   tip 오그리마 비행 조련사에게 오그리마를 발견하세요 (이미 있으면 저절로 넘어갑니다).
   zone map 1454
   note "이 가이드는 12레벨에서 시작합니다. 먼저 오그리마 스랄에게 성난불길 협곡 선행 퀘스트(\"내부의 배신자\")를 받으러 갑니다."
@@ -131,12 +124,6 @@ step
   accept 848 npc 3390
 
 step
-  only Undead
-  when onquest 98024
-  zone map 1413
-  turnin 98024 npc 3429
-
-step
   when level<13
   when level<16
   zone map 1413
@@ -163,6 +150,7 @@ step
 
 step
   when complete 844
+  label q844
   zone map 1413
   turnin 844 npc 3338
 
@@ -206,6 +194,7 @@ step
 
 step
   when complete 850
+  label q850
   tip 레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자
   zone map 1413
   turnin 850 npc 3389
@@ -224,16 +213,19 @@ step
 
 step
   when complete 845
+  label q845
   zone map 1413
   turnin 845 npc 3338
 
 step
   when complete 848
+  label q848
   zone map 1413
   turnin 848 npc 3390
 
 step
   when onquest 870
+  label q870
   tip 통가 룬토템에게 퀘스트 완료: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)
   zone map 1413
   note "연금술사 자마 퀘스트는 받지 마세요 (불뱀꽃은 썬더 블러프에서 바로 받습니다)."
@@ -254,6 +246,7 @@ step
 
 step
   when complete 869
+  label q869
   tip 가즈로그에게 퀘스트 완료: 도둑 랩터
   zone map 1413
   turnin 869 npc 3464
@@ -265,6 +258,14 @@ step
   accept 3281 npc 3464
 
 step
+  along until q5723
+  accept 5728 npc 4949 optional -- ★ 성난불길 협곡 퀘스트 받기 (받거나 공유받으면 체크됩니다 — 체크 안 된 것이 못 받은 퀘스트): 내부의 배신자(공유 불가) 야수 처단(공유 가능) 성난불길 협곡의 트로그(공유 가능) 잃어버린 가방 찾기(공유 가능) 파괴해야 할 힘(공유 가능)
+  accept 5761 npc 3216 optional
+  accept 5723 npc 11833 optional
+  accept 5722 npc 11833 optional
+  accept 5725 npc 2425 optional
+
+step
   only Undead,Orc,Troll,Skyborne
   tip (썬더 블러프 퀘스트를 공유받지 못했다면) 크로스로드에서 남쪽 큰길을 따라 타우라조 야영지를 지나 멀고어의 썬더 블러프로 가세요 (비행 지점이 있으면 썬더 블러프로 비행). 타우렌은 멀고어에서 이미 받아 왔습니다.
   fly "Thunder Bluff"
@@ -274,11 +275,6 @@ step
   zone map 1456
   note "※ 여기서 아이템 모으기를 멈추세요. 죽은 오아시스 등 남은 통곡 선행은 로데론의 폐허 뒤에 합니다. 먼저 성난불길 퀘스트를 받고 던전부터 클리어하세요 — 레벨이 올라 나머지 퀘스트가 훨씬 쉬워집니다."
   note "── 성난불길 협곡 퀘스트 받기 ── 성난불길 퀘스트는 파티원에게 공유받을 수 있으면 공유받으세요: 성난불길 협곡의 트로그·잃어버린 가방 찾기(썬더 블러프), 파괴해야 할 힘(언더시티). 공유받으면 아래 수락 단계는 저절로 사라집니다."
-  accept 5728 npc 4949 optional -- ★ 성난불길 협곡 퀘스트 받기 (받거나 공유받으면 체크됩니다 — 체크 안 된 것이 못 받은 퀘스트): 내부의 배신자(공유 불가) 야수 처단(공유 가능) 성난불길 협곡의 트로그(공유 가능) 잃어버린 가방 찾기(공유 가능) 파괴해야 할 힘(공유 가능)
-  accept 5761 npc 3216 optional
-  accept 5723 npc 11833 optional
-  accept 5722 npc 11833 optional
-  accept 5725 npc 2425 optional
   accept 5723 npc 11833
 
 step
@@ -296,15 +292,19 @@ step
   fly "Orgrimmar"
 
 step
+  along until q5725
+  zone map 1458
+  accept 5725 npc 2425 optional -- 왕실 지구 바리마트라스에게 퀘스트 수락 (공유받기 권장): 파괴해야 할 힘
+
+step
   along
   level 13 -- 레벨 13이 되어야 합니다. 아직이라면 크로스로드 주변에서 조금 사냥하세요.
 
 step
   tip ── 성난불길 협곡 ── 성난불길 협곡 입구 (어둠의 틈)
-  zone map 1458
+  zone map 1454
   note "언더시티 퀘스트 \"파괴해야 할 힘\"은 파티원에게 공유받기를 권장합니다 (언데드는 티리스팔에서 이미 받아 왔습니다). 비행선 왕복이 길어서, 공유를 못 받았다면 이 퀘스트 없이 가도 됩니다 — 그럴 때는 이 줄과 아래 언더시티 세 줄을 눌러 닫으세요."
   note "(선택) 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요."
-  accept 5725 npc 2425 optional -- 왕실 지구 바리마트라스에게 퀘스트 수락 (공유받기 권장): 파괴해야 할 힘
   note "(선택) 언더시티 동쪽 탑에서 오그리마행 비행선을 타세요."
   note "★ 성난불길 협곡 — Lv13.3 → 약 Lv14.8 · 권장 Lv13~14 (힐러 13 · 탱커·딜러 14)"
   goto 52.6,49.2 r 20 map 1454
@@ -318,7 +318,7 @@ step
   complete 5761 -- 마지막 보스 굶주린 타라가만을 처치하고 심장을 획득하세요: 야수 처단
 
 step
-  along
+  along until q5725
   complete 5725 -- 책 두 권 (주술서·마법서): 파괴해야 할 힘
 
 step
@@ -358,12 +358,14 @@ step
 
 step
   when complete 5723
+  label q5723
   tip 장로의 봉우리 라하우로에게 퀘스트 완료: 성난불길 협곡의 트로그
   zone map 1456
   turnin 5723 npc 11833
 
 step
   when onquest 5724
+  label q5724
   tip 퀘스트 완료: 잃어버린 가방 돌려주기 — ◆던전 연계(성난불길 협곡)
   zone map 1456
   turnin 5724 npc 11833
@@ -387,6 +389,7 @@ step
 
 step
   when complete 5725
+  label q5725
   zone map 1458
   turnin 5725 npc 2425
 
@@ -458,21 +461,26 @@ step
   tip 이어서 퀘스트 수락: 오래된 나루터 (호숫가에서 함께 합니다)
   zone map 1421
   accept 438 npc 1952
+  note "※ 장작나무 마을의 파수병·보초·장로는 13~15레벨 정예입니다. 파티가 있으면 함께 가세요. 혼자라면: 마을 서쪽 언덕 쪽에서 접근해, 베랄드의 책장이 있는 집까지 가는 길의 정예만 하나씩 끌어내 잡으세요 (여러 마리가 붙으면 바로 빠지세요). 그래도 어렵다면 아래 호숫가 단계로 레벨을 조금 더 올린 뒤 다시 오세요 — 이 책이 없으면 \"새로운 역병\"을 받을 수 없습니다."
+
+step
+  along until q452
+  zone map 1421
+  accept 452 npc 2058 optional -- (파티일 때만) 장작나무 마을 남동쪽 죽음의추적자 페를레이아에게 퀘스트 수락: 장작나무 마을 매복 — 정예 원로원이 여러 명 나오므로 혼자라면 받지 마세요.
 
 step
   tip 남쪽 장작나무 마을의 베랄드의 책장을 클릭해 베랄드의 일지를 챙기세요: 죽음의 비법
   zone map 1421
-  note "※ 장작나무 마을의 파수병·보초·장로는 13~15레벨 정예입니다. 파티가 있으면 함께 가세요. 혼자라면: 마을 서쪽 언덕 쪽에서 접근해, 베랄드의 책장이 있는 집까지 가는 길의 정예만 하나씩 끌어내 잡으세요 (여러 마리가 붙으면 바로 빠지세요). 그래도 어렵다면 아래 호숫가 단계로 레벨을 조금 더 올린 뒤 다시 오세요 — 이 책이 없으면 \"새로운 역병\"을 받을 수 없습니다."
-  accept 452 npc 2058 optional -- (파티일 때만) 장작나무 마을 남동쪽 죽음의추적자 페를레이아에게 퀘스트 수락: 장작나무 마을 매복 — 정예 원로원이 여러 명 나오므로 혼자라면 받지 마세요.
   complete 450 @43,73.2 map 1421
 
 step
-  along
+  along until q452
   zone map 1421
   complete 452 @46.5,74.4 map 1421 -- (파티일 때만) 페를레이아를 도와 장작나무 마을 원로원을 처치하세요: 장작나무 마을 매복
 
 step
   when onquest 452
+  label q452
   tip (파티일 때만) 페를레이아에게 퀘스트 완료: 장작나무 마을 매복
   zone map 1421
   turnin 452 npc 2058
@@ -573,13 +581,12 @@ step
   accept 97288 item 280438 -- 남작의 "흉측한 머리"로 퀘스트 수락: 끝없는 고통
 
 step
-  tip 라스마엘이 있는 묘지 구역에서 에드워드 하트위버의 흔적을 조사하세요: 두려움에 찬 부탁
+  along until q95204
   accept 95204 item 275521 optional -- "로데론의 문장"이 나오면 주워서 퀘스트 수락: 로데론의 문장
-  complete 92401
 
 step
-  tip 울타리 너머로 보이는 마지막 보스 라스마엘을 처치하세요: 라스마엘의 격노
-  complete 92422
+  complete 92401 -- 라스마엘이 있는 묘지 구역에서 에드워드 하트위버의 흔적을 조사하세요: 두려움에 찬 부탁
+  complete 92422 -- 울타리 너머로 보이는 마지막 보스 라스마엘을 처치하세요: 라스마엘의 격노
 
 step
   tip 죽음경비병 크리스토프에게 퀘스트 완료: 라스마엘의 격노
@@ -645,6 +652,7 @@ step
 
 step
   when onquest 95204
+  label q95204
   tip 오란 스네이크레이드에게 퀘스트 완료: 로데론의 문장
   zone map 1458
   turnin 95204 npc 7825
@@ -666,9 +674,13 @@ step
   sethome "The Crossroads"
 
 step
-  tip 크로스로드 바로 동쪽 언덕의 약탈자 촐아룩(20)을 처치하고 전리품을 챙기세요: 약탈자 촐아룩
+  along
   zone map 1413
   accept 97003 npc 267310 optional -- 구락에게 퀘스트 수락: 약탈자 촐아룩 — 그룹 퀘스트 (포에버 신규 · 경험치 4,100). 지금 Lv18 정도가 경험치 효율이 가장 좋습니다 — 파티 2~3명 권장, 혼자면 받아 두고 통곡 파티와 함께 잡으세요.
+
+step
+  tip 크로스로드 바로 동쪽 언덕의 약탈자 촐아룩(20)을 처치하고 전리품을 챙기세요: 약탈자 촐아룩
+  zone map 1413
   complete 97003 @57.8,27 map 1413
 
 step
@@ -1057,9 +1069,13 @@ step
   turnin 959 npc 3665
 
 step
-  tip 톱니항 바로 남쪽 해안의 브루즈(정예)를 처치하세요: 수배: 브루즈
+  along
   zone map 1413
   accept 92706 object 3972 optional -- 톱니항 현상수배 게시판을 클릭해 퀘스트 수락: 수배: 브루즈 — 그룹 퀘스트 (포에버 신규 · 정예 20). 통곡 파티와 함께 하면 좋습니다.
+
+step
+  tip 톱니항 바로 남쪽 해안의 브루즈(정예)를 처치하세요: 수배: 브루즈
+  zone map 1413
   complete 92706 @64.3,41.7 map 1413
 
 step
@@ -1083,6 +1099,7 @@ step
 step
   only Shaman,Tauren
   when onquest 2984
+  label q2984
   tip 크라날 피스에게 퀘스트 완료: 불의 부름
   zone map 1413
   turnin 2984 npc 5907
@@ -1121,16 +1138,19 @@ step
 
 step
   when complete 914
+  label q914
   zone map 1456
   turnin 914 npc 5770
 
 step
   when complete 962
+  label q962
   zone map 1456
   turnin 962 npc 3419
 
 step
   when onquest 3369
+  label q3369
   tip 장로의 봉우리 하뮬 룬토템에게 퀘스트 완료: 악몽
   zone map 1456
   turnin 3369 npc 5769
@@ -1145,19 +1165,24 @@ step
 
 step
   only Priest,Warlock
-  along
+  along until q6561
+  accept 6561 optional -- (선택) 은빛경비병 타엘리드에게 퀘스트 수락: 검은심연의 음모
+
+step
+  only Priest,Warlock
+  along until q6561
   complete 6561 -- (선택) 마지막 보스 황혼의 군주 켈리스를 잡고 머리를 주우세요 (도와주는 분이 잡아도 됩니다): 검은심연의 음모
 
 step
   only Priest,Warlock
   tip (선택) 던전을 나와 썬더 블러프로 비행하세요.
   note "(선택) 북쪽 해안 검은심연의 나락으로 들어가세요 (물속 통로). 이번에는 아래 퀘스트 하나만 합니다 — 다른 검은심연 퀘스트는 24~25에 다시 올 때 합니다."
-  accept 6561 optional -- (선택) 은빛경비병 타엘리드에게 퀘스트 수락: 검은심연의 음모
   fly "Thunder Bluff"
 
 step
   only Priest,Warlock
   when complete 6561
+  label q6561
   tip (선택) 장로의 봉우리 바샤나 룬토템에게 퀘스트 완료 — 보상으로 *묘비의 홀*(마법봉)을 고르세요: 검은심연의 음모 — ★보상
   zone map 1456
   turnin 6561 npc 9087
@@ -1272,8 +1297,8 @@ step
   when level<25
   tip 동굴 안에서 까마귀발톱들을 처치해 완수하세요: 베렌의 동굴
   zone map 1421
-  kill 1973 quest 516.1
-  kill 1974 quest 516.2
+  kill 1974 quest 516.1
+  kill 1973 quest 516.2
 
 step
   only Orc,Undead,Tauren
@@ -1335,6 +1360,7 @@ step
 
 step
   when complete 1013
+  label q1013
   zone map 1458
   turnin 1013 npc 2934
 
@@ -1413,9 +1439,13 @@ step
   goto 52,60 r 20 map 1442
 
 step
-  tip 새로운 비행 지점을 발견하세요.
+  along until q6562
   zone map 1442
   accept 6562 npc 11862 optional -- (선택) 츄나만에게 퀘스트 수락: 검은심연의 나락으로 — 조람가르로 가는 안내 퀘스트입니다. 안 해도 검은심연 퀘스트는 모두 받을 수 있습니다.
+
+step
+  tip 새로운 비행 지점을 발견하세요.
+  zone map 1442
   getfp "Sun Rock Retreat"
 
 step
@@ -1427,6 +1457,7 @@ step
 
 step
   when onquest 6562
+  label q6562
   tip (선택) 조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 검은심연의 나락으로
   zone map 1440
   turnin 6562 npc 12736

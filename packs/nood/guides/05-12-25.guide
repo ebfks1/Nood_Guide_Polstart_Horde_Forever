@@ -35,13 +35,6 @@ step
   goto 60.7,58.8 r 20 map 1420
 
 step
-  only Undead
-  when level<17
-  tip In the Valley of Wisdom, accept from Thrall: Journey to the Crossroads (Forever new)
-  zone map 1454
-  accept 98024 npc 4949
-
-step
   tip Discover the Orgrimmar flight path (skipped automatically if you already have it).
   zone map 1454
   note "This guide starts at level 12. First, go to Thrall in Orgrimmar for the Ragefire Chasm prerequisite \"Hidden Enemies\"."
@@ -131,12 +124,6 @@ step
   accept 848 npc 3390
 
 step
-  only Undead
-  when onquest 98024
-  zone map 1413
-  turnin 98024 npc 3429
-
-step
   when level<13
   when level<16
   zone map 1413
@@ -163,6 +150,7 @@ step
 
 step
   when complete 844
+  label q844
   zone map 1413
   turnin 844 npc 3338
 
@@ -206,6 +194,7 @@ step
 
 step
   when complete 850
+  label q850
   tip Turn in to Regthar Deathgate: Kolkar Leaders
   zone map 1413
   turnin 850 npc 3389
@@ -224,16 +213,19 @@ step
 
 step
   when complete 845
+  label q845
   zone map 1413
   turnin 845 npc 3338
 
 step
   when complete 848
+  label q848
   zone map 1413
   turnin 848 npc 3390
 
 step
   when onquest 870
+  label q870
   tip Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
   zone map 1413
   note "Don't accept Apothecary Zamah (you'll get Serpentbloom directly in Thunder Bluff)."
@@ -254,6 +246,7 @@ step
 
 step
   when complete 869
+  label q869
   tip Turn in to Gazrog: Raptor Thieves
   zone map 1413
   turnin 869 npc 3464
@@ -265,6 +258,14 @@ step
   accept 3281 npc 3464
 
 step
+  along until q5723
+  accept 5728 npc 4949 optional -- * Get the Ragefire Chasm quests (each gets checked when you accept it or get it shared — unchecked ones are the quests you are missing): Hidden Enemies(not shareable) Slaying the Beast(shareable) Testing an Enemy's Strength(shareable) Searching for the Lost Satchel(shareable) The Power to Destroy...(shareable)
+  accept 5761 npc 3216 optional
+  accept 5723 npc 11833 optional
+  accept 5722 npc 11833 optional
+  accept 5725 npc 2425 optional
+
+step
   only Undead,Orc,Troll,Skyborne
   tip (If you couldn't get the Thunder Bluff quests shared) follow the main road south from the Crossroads past Camp Taurajo to Thunder Bluff in Mulgore (if you have the flight path, Thunder Bluff fly there). Tauren already picked these up in Mulgore.
   fly "Thunder Bluff"
@@ -274,11 +275,6 @@ step
   zone map 1456
   note "! Stop collecting items here. The rest of the Wailing Caverns prerequisites (Dead Oasis and so on) come after the Ruins of Lordaeron. Get the Ragefire quests and clear the dungeon first — the levels make the remaining quests much easier."
   note "== Getting the Ragefire Chasm quests == If party members can share the Ragefire Chasm quests, get them shared: Searching for the Lost Satchel and Testing an Enemy's Strength (Thunder Bluff), The Power to Destroy... (Undercity). Shared quests make the accept steps below disappear automatically."
-  accept 5728 npc 4949 optional -- * Get the Ragefire Chasm quests (each gets checked when you accept it or get it shared — unchecked ones are the quests you are missing): Hidden Enemies(not shareable) Slaying the Beast(shareable) Testing an Enemy's Strength(shareable) Searching for the Lost Satchel(shareable) The Power to Destroy...(shareable)
-  accept 5761 npc 3216 optional
-  accept 5723 npc 11833 optional
-  accept 5722 npc 11833 optional
-  accept 5725 npc 2425 optional
   accept 5723 npc 11833
 
 step
@@ -296,15 +292,19 @@ step
   fly "Orgrimmar"
 
 step
+  along until q5725
+  zone map 1458
+  accept 5725 npc 2425 optional -- Accept from Varimathras in the Royal Quarter (sharing recommended): The Power to Destroy...
+
+step
   along
   level 13 -- You need to be level 13. If not, grind a little around the Crossroads.
 
 step
   tip == Ragefire Chasm == Ragefire Chasm entrance (Cleft of Shadow)
-  zone map 1458
+  zone map 1454
   note "Getting the Undercity quest \"The Power to Destroy...\" shared is recommended (Undead already picked it up in Tirisfal). The zeppelin round trip is long, so if you can't get it shared you can go without it — in that case click to close this line and the three Undercity lines below."
   note "(Optional) Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate."
-  accept 5725 npc 2425 optional -- Accept from Varimathras in the Royal Quarter (sharing recommended): The Power to Destroy...
   note "(Optional) Take the zeppelin to Orgrimmar from the tower east of Undercity."
   note "* Ragefire Chasm — Lv13.3 -> about Lv14.8 · recommended Lv13-14 (healer 13 · tank/DPS 14)"
   goto 52.6,49.2 r 20 map 1454
@@ -318,7 +318,7 @@ step
   complete 5761 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
 
 step
-  along
+  along until q5725
   complete 5725 -- Two books (spellbook and tome): The Power to Destroy...
 
 step
@@ -358,12 +358,14 @@ step
 
 step
   when complete 5723
+  label q5723
   tip Turn in to Rahauro on the Elder Rise: Testing an Enemy's Strength
   zone map 1456
   turnin 5723 npc 11833
 
 step
   when onquest 5724
+  label q5724
   tip Turn in Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
   zone map 1456
   turnin 5724 npc 11833
@@ -387,6 +389,7 @@ step
 
 step
   when complete 5725
+  label q5725
   zone map 1458
   turnin 5725 npc 2425
 
@@ -458,21 +461,26 @@ step
   tip Then accept: The Decrepit Ferry (done together at the lake)
   zone map 1421
   accept 438 npc 1952
+  note "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"."
+
+step
+  along until q452
+  zone map 1421
+  accept 452 npc 2058 optional -- (party only) Accept from Deathstalker Faerleia southeast of Pyrewood Village: Pyrewood Ambush — several elite council members show up, so skip it if you are solo.
 
 step
   tip Click Berard's Bookshelf in Pyrewood Village to the south for Berard's Journal: A Recipe For Death
   zone map 1421
-  note "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"."
-  accept 452 npc 2058 optional -- (party only) Accept from Deathstalker Faerleia southeast of Pyrewood Village: Pyrewood Ambush — several elite council members show up, so skip it if you are solo.
   complete 450 @43,73.2 map 1421
 
 step
-  along
+  along until q452
   zone map 1421
   complete 452 @46.5,74.4 map 1421 -- (party only) Help Faerleia kill the Pyrewood council: Pyrewood Ambush
 
 step
   when onquest 452
+  label q452
   tip (party only) Turn in to Faerleia: Pyrewood Ambush
   zone map 1421
   turnin 452 npc 2058
@@ -573,13 +581,12 @@ step
   accept 97288 item 280438 -- Accept from the Baron's "Abominable Head": Unending Torment
 
 step
-  tip Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
+  along until q95204
   accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lordaeron
-  complete 92401
 
 step
-  tip Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
-  complete 92422
+  complete 92401 -- Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
+  complete 92422 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
 
 step
   tip Turn in to Deathguard Kristof: The Wrath of Rath'mael
@@ -645,6 +652,7 @@ step
 
 step
   when onquest 95204
+  label q95204
   tip Turn in to Oran Snakewrithe: Crest of Lordaeron
   zone map 1458
   turnin 95204 npc 7825
@@ -666,9 +674,13 @@ step
   sethome "The Crossroads"
 
 step
-  tip Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener
+  along
   zone map 1413
   accept 97003 npc 267310 optional -- Accept from Gur'ak: Chol'aruk the Ravener — group quest (new in Forever · 4,100 XP). Doing it at about Lv18 gives the best XP — 2-3 players recommended; if solo, keep it and kill him with your Wailing Caverns group.
+
+step
+  tip Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener
+  zone map 1413
   complete 97003 @57.8,27 map 1413
 
 step
@@ -1057,9 +1069,13 @@ step
   turnin 959 npc 3665
 
 step
-  tip Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz
+  along
   zone map 1413
   accept 92706 object 3972 optional -- Click the Wanted board in Ratchet to accept: WANTED: Bruuz — group quest (new in Forever · elite 20). Best done with your Wailing Caverns group.
+
+step
+  tip Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz
+  zone map 1413
   complete 92706 @64.3,41.7 map 1413
 
 step
@@ -1083,6 +1099,7 @@ step
 step
   only Shaman,Tauren
   when onquest 2984
+  label q2984
   tip Turn in to Kranal Fiss: Call of Fire
   zone map 1413
   turnin 2984 npc 5907
@@ -1121,16 +1138,19 @@ step
 
 step
   when complete 914
+  label q914
   zone map 1456
   turnin 914 npc 5770
 
 step
   when complete 962
+  label q962
   zone map 1456
   turnin 962 npc 3419
 
 step
   when onquest 3369
+  label q3369
   tip Turn in to Hamuul Runetotem on the Elder Rise: In Nightmares
   zone map 1456
   turnin 3369 npc 5769
@@ -1145,19 +1165,24 @@ step
 
 step
   only Priest,Warlock
-  along
+  along until q6561
+  accept 6561 optional -- (Option) Accept from Argent Guard Thaelrid: Blackfathom Villainy
+
+step
+  only Priest,Warlock
+  along until q6561
   complete 6561 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
 
 step
   only Priest,Warlock
   tip (Option) Leave the dungeon and fly to Thunder Bluff.
   note "(Option) Enter Blackfathom Deeps on the north coast (underwater passage). Only the quest below this time - the other Blackfathom quests are for your 24-25 visit."
-  accept 6561 optional -- (Option) Accept from Argent Guard Thaelrid: Blackfathom Villainy
   fly "Thunder Bluff"
 
 step
   only Priest,Warlock
   when complete 6561
+  label q6561
   tip (Option) Turn in to Bashana Runetotem on the Elder Rise and pick *Gravestone Scepter* (wand) as your reward: Blackfathom Villainy — *Reward
   zone map 1456
   turnin 6561 npc 9087
@@ -1272,8 +1297,8 @@ step
   when level<25
   tip Kill the Ravenclaw mobs inside the cave: Beren's Peril
   zone map 1421
-  kill 1973 quest 516.1
-  kill 1974 quest 516.2
+  kill 1974 quest 516.1
+  kill 1973 quest 516.2
 
 step
   only Orc,Undead,Tauren
@@ -1335,6 +1360,7 @@ step
 
 step
   when complete 1013
+  label q1013
   zone map 1458
   turnin 1013 npc 2934
 
@@ -1413,9 +1439,13 @@ step
   goto 52,60 r 20 map 1442
 
 step
-  tip Discover the Sun Rock Retreat flight path.
+  along until q6562
   zone map 1442
   accept 6562 npc 11862 optional -- (Optional) Accept from Tsunaman: Trouble in the Deeps — a breadcrumb to Zoram'gar. You can get every Blackfathom quest without it.
+
+step
+  tip Discover the Sun Rock Retreat flight path.
+  zone map 1442
   getfp "Sun Rock Retreat"
 
 step
@@ -1427,6 +1457,7 @@ step
 
 step
   when onquest 6562
+  label q6562
   tip (Optional) Turn in to Je'neu Sancrea at Zoram'gar Outpost: Trouble in the Deeps
   zone map 1440
   turnin 6562 npc 12736

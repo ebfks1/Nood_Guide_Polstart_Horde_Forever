@@ -197,7 +197,9 @@ def guide_text(g, guides, lang, pack, stats):
         for w in st.get('when') or []:
             L.append('  ' + when_line(w))
         if st.get('along'):
-            L.append('  along')
+            L.append('  along until ' + st['until'] if st.get('until') else '  along')
+        if st.get('label'):
+            L.append('  label ' + st['label'])
         if st.get('note'):
             L.append('  tip ' + plain(txt(st['note'], lang)))
         maps = [x['map'] for x in st['goals'] if 'map' in x]
