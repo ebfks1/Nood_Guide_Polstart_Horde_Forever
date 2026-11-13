@@ -1,5 +1,9 @@
 package-as: PolestarPack_Nood
 
+# 커스포지 필수 의존성: https://www.curseforge.com/wow/addons/polestar
+required-dependencies:
+  - polestar
+
 manual-changelog:
   filename: CHANGELOG.md
   markup-type: markdown
