@@ -45,10 +45,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v1
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v2
 
       - name: Build Polestar tools (forge and the reference data)
         if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p ~/polestar-tools/bin ~/polestar-tools/logs
           git init -q "$RUNNER_TEMP/polestar"
@@ -59,13 +61,25 @@ jobs:
           cargo build --release --locked --manifest-path rust/Cargo.toml -p forge
           F=rust/target/release/forge
           $F --version 2>&1 | tee ~/polestar-tools/logs/forge-version.txt || true
-          if $F data build --no-web-xp --no-web-zones > ~/polestar-tools/logs/data-build.txt 2>&1; then
-            echo "data: built with every source" | tee ~/polestar-tools/logs/data-mode.txt
+          # QuestieDB 의 Forever 자료(공개 배포본): Polestar 문서가 안내하는 대로 데이터 빌드의 원본으로 씁니다.
+          # 없으면 포에버 신규 퀘스트가 데이터에서 빠집니다. 받지 못하면 --no-questie 로 계속합니다.
+          Q="$RUNNER_TEMP/questie"; mkdir -p "$Q"; QDIR=""
+          if gh release view -R Questie/QuestieDB --json tagName,assets --jq '{tag: .tagName, assets: [.assets[].name]}' > ~/polestar-tools/logs/questie-release.json 2>&1 \
+             && gh release download -R Questie/QuestieDB -D "$Q" --pattern '*.zip' >> ~/polestar-tools/logs/questie-release.json 2>&1; then
+            for z in "$Q"/*.zip; do unzip -q -o "$z" -d "$Q/x-$(basename "$z" .zip)" || true; done
+            toc=$(find "$Q" -name QuestieDB_Forever.toc | head -n1)
+            [ -n "$toc" ] && QDIR=$(dirname "$toc")
+          fi
+          cat ~/polestar-tools/logs/questie-release.json || true
+          echo "QuestieDB folder: ${QDIR:-none}"
+          if [ -n "$QDIR" ] && $F data build --no-web-xp --no-web-zones --questie "$QDIR" > ~/polestar-tools/logs/data-build.txt 2>&1; then
+            echo "data: built with QuestieDB ($(jq -r .tag ~/polestar-tools/logs/questie-release.json 2>/dev/null))" | tee ~/polestar-tools/logs/data-mode.txt
           else
-            tail -n 40 ~/polestar-tools/logs/data-build.txt
+            tail -n 40 ~/polestar-tools/logs/data-build.txt 2>/dev/null || true
             $F data build --no-web-xp --no-web-zones --no-questie > ~/polestar-tools/logs/data-build-no-questie.txt 2>&1 || { tail -n 60 ~/polestar-tools/logs/data-build-no-questie.txt; exit 1; }
             echo "data: built without QuestieDB (--no-questie)" | tee ~/polestar-tools/logs/data-mode.txt
           fi
+          tail -n 3 ~/polestar-tools/logs/data-build*.txt
           cp $F ~/polestar-tools/bin/forge
           rm -rf rust/target data/sources .git
           mv "$RUNNER_TEMP/polestar" ~/polestar-tools/polestar
@@ -76,7 +90,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v1
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v2
 
       - name: Lint and pack
         id: result

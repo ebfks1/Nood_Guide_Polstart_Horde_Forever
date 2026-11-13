@@ -38,6 +38,19 @@ TAG = re.compile(r'\[(QA|QT|QC|QS|OC|XP|GA|NX|Q|O|N|D|G|L|A|F|P|H|S|T|V|R)([^\]]
 COORD = re.compile(r'^\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*(.*)$')
 IMPORTANT = re.compile(r'^\s*(──|==|★|\*|※|!|▶|>>)')
 
+# What the official data build says differently from the addon's own tables (read from the lint log by tools/read_lint.py):
+# objective order per quest {quest: {index here: index in the quest log}} and the ids the build does not know.
+_ci = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ci_data.json')
+CI = json.load(open(_ci)) if os.path.exists(_ci) else {}
+OBJ_ORDER = {int(q): {int(a): b for a, b in m.items() if b} for q, m in CI.get('objorder', {}).items()}
+UNKNOWN = {k: set(v) for k, v in CI.get('unknown', {}).items()}
+
+
+def log_index(qid, mine):
+    """The quest log's number of the objective this file's tables list as number `mine`."""
+    return OBJ_ORDER.get(qid, {}).get(mine, mine)
+
+
 report = collections.Counter()
 notes_log = []
 
@@ -314,7 +327,8 @@ class Guide:
     def gate(self, qid):
         if not self.autoskip or qid in KEEP or qid not in QLV:
             return None
-        return QLV[qid] + MARGIN
+        n = QLV[qid] + MARGIN
+        return n if n <= 60 else None  # past the level cap the rule never leaves a quest out
 
     def emit(self, step, holding=True, block=None):
         """block: the level of the "before level N" stretch the step belongs to, or None."""
@@ -451,7 +465,9 @@ class Guide:
         """[QC id,n]: that one objective, where the data names it."""
         q = db.quest(qid)
         if q and 1 <= oi <= len(q['objs']):
-            kind, id, cnt = q['objs'][oi - 1]
+            # `oi` is the quest log's number (Guidelime's); find the objective these tables list under it
+            mine = next((j for j in range(1, len(q['objs']) + 1) if log_index(qid, j) == oi), oi)
+            kind, id, cnt = q['objs'][mine - 1]
             base = {'quest': qid, 'oi': oi, 'title': T(title_en, line.ko_title(qid, title_en))}
             if kind == 1 and db.entity(id):
                 g = dict(t='kill', target=db.entity(id)[0], npc=id, count=cnt, **base)
@@ -654,6 +670,9 @@ class Guide:
                     self.emit(step_of([g], [{'k': 'level', 'op': '<', 'n': n}]))
                     self.emit(step_of([dict(g)], [{'k': 'level', 'op': '>=', 'n': n}, {'k': 'complete', 'q': qid}]))
                     report['turn-ins with the level rule'] += 1
+                elif n:
+                    self.emit(step_of([g], [{'k': 'onquest', 'q': [qid]}]))
+                    report['turn-ins only when you have it'] += 1
                 else:
                     self.emit(step_of([g]))
                 emitted = True

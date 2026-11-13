@@ -65,6 +65,15 @@ def when_line(w):
     raise ValueError(w)
 
 
+def unknown(kind, id):
+    return id in C.UNKNOWN.get(kind, ())
+
+
+def named(kind, id, name):
+    """An id with its name when the data build lacks it."""
+    return '%d %s' % (id, quoted(name)) if unknown(kind, id) and name else str(id)
+
+
 def quest_objectives(qid):
     """One goal per objective, placed by the compiler's data; None when an objective is of a kind with no verb."""
     q = db.quest(qid)
@@ -73,14 +82,14 @@ def quest_objectives(qid):
     out = []
     for oi, (kind, id, cnt) in enumerate(q['objs'], 1):
         if kind == 1 and db.entity(id):
-            out.append('kill %d quest %d.%d' % (id, qid, oi))
+            out.append('kill %s quest %d.%d' % (named('npc', id, db.entity(id)[0]), qid, C.log_index(qid, oi)))
         elif kind == 2 and db.item(id):
-            out.append('collect %d quest %d.%d' % (id, qid, oi))
+            out.append('collect %s quest %d.%d' % (named('item', id, db.item(id)[0]), qid, C.log_index(qid, oi)))
         elif kind == 3 and db.entity(-id):
-            out.append('interact %d quest %d.%d' % (id, qid, oi))
+            out.append('interact %s quest %d.%d' % (named('object', id, db.entity(-id)[0]), qid, C.log_index(qid, oi)))
         else:
             return None
-    return out
+    return sorted(out, key=lambda x: int(x.rsplit('.', 1)[1]))
 
 
 def goal_lines(g, lang, along, stats):
@@ -94,20 +103,20 @@ def goal_lines(g, lang, along, stats):
     note = txt(g.get('note'), lang) if g.get('note') else None
     note = (' -- ' + re.sub(r'\s*[\r\n]+\s*', ' ', note).strip()) if note else ''
     written = g.get('_w') and 'map' in g
-    known = db.quest(g['quest']) is not None if 'quest' in g else True
+    known = (db.quest(g['quest']) is not None and not unknown('quest', g['quest'])) if 'quest' in g else True
 
     if t in ('accept', 'turnin'):
         s = '%s %d' % (t, g['quest'])
         if not known:
             s += ' ' + quoted(txt(g['title'], lang))
             stats['quests named by the guide'] += 1
-        if 'npc' in g and known:
+        if 'npc' in g and known and not unknown('npc', g['npc']):
             s += ' npc %d' % g['npc']
-        elif 'object' in g and known:
+        elif 'object' in g and known and not unknown('object', g['object']):
             s += ' object %d' % g['object']
         elif 'item' in g and t == 'accept':
             s += ' item %d' % g['item']
-        elif 'map' in g and (written or not known):
+        elif 'map' in g:
             s += ' ' + at(g)
             stats['%s: place written in the guide' % t] += 1
         if t == 'accept' and g.get('qlvl') and not known:
@@ -128,9 +137,14 @@ def goal_lines(g, lang, along, stats):
         stats['complete: whole quest, no place'] += 1
         return ['complete %d' % g['quest'] + tail + note]
     if t in OBJ_VERBS:
-        id = g['npc'] if t == 'kill' else g['item'] if t == 'collect' else g['object']
-        s = '%s %d quest %d.%d' % (t, id, g['quest'], g['oi'])
-        if written:
+        if not known:
+            s = 'complete %d %s' % (g['quest'], quoted(txt(g['title'], lang)))
+            if 'map' in g:
+                s += ' ' + at(g)
+            return [s + tail + note]
+        id, kind, name = (g['npc'], 'npc', g['target']) if t == 'kill' else (g['item'], 'item', g['itemName']) if t == 'collect' else (g['object'], 'object', g['objName'])
+        s = '%s %s quest %d.%d' % (t, named(kind, id, name), g['quest'], g['oi'])
+        if written or (unknown(kind, id) and 'map' in g):
             s += ' ' + at(g)
         return [s + tail + note]
     if t == 'goto':
@@ -186,6 +200,9 @@ def guide_text(g, guides, lang, pack, stats):
             L.append('  along')
         if st.get('note'):
             L.append('  tip ' + plain(txt(st['note'], lang)))
+        maps = [x['map'] for x in st['goals'] if 'map' in x]
+        if maps:
+            L.append('  zone map %d' % maps[0])
         L += ['  ' + x for x in goals]
         stats['steps'] += 1
         stats['goal lines'] += len(goals)

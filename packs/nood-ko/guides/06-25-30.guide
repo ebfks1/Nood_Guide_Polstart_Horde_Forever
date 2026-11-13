@@ -11,30 +11,36 @@ next nood-ko/07-30-40
 
 step
   tip 조람가르에서 동쪽으로 잿빛 골짜기를 가로질러 토막나무 주둔지로 가서 새로운 비행 지점을 발견하세요.
+  zone map 1440
   note "▶ 다음 던전: 발굴 현장: 저습지 (약 Lv27에 갑니다) — 지금 약 Lv25.3. 그때까지 잿빛 골짜기·힐스브래드 구릉지 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다)."
   getfp "Splintertree Post"
 
 step
   when level<30
+  zone map 1440
   accept 6441 npc 12724
 
 step
   when level<29
+  zone map 1440
   accept 25 npc 12737
 
 step
   when level<34
+  zone map 1440
   accept 6504 npc 12718
 
 step
   when level<34
   tip 벌목기 페이지를 합치시고 퀘스트 완료: 잃어버린 열 두쪽
+  zone map 1440
   turnin 6504 npc 12718
 
 step
   when level>=34
   when complete 6504
   tip 벌목기 페이지를 합치시고 퀘스트 완료: 잃어버린 열 두쪽
+  zone map 1440
   turnin 6504 npc 12718
 
 step
@@ -43,10 +49,12 @@ step
 
 step
   tip 오그리마 보르스탄에게 퀘스트 수락: 달라지는 입맛 (포에버 신규 · 발굴 현장 던전 퀘스트)
+  zone map 1454
   accept 95697 npc 3368
 
 step
   tip 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요.
+  zone map 1411
   goto 50.8,13.6 r 20 map 1411
 
 step
@@ -55,166 +63,206 @@ step
 
 step
   when level<24
+  zone map 1421
   accept 493 npc 1937
 
 step
   tip 길을 따라서 힐스브래드 구릉지로 이동하세요.
+  zone map 1424
   goto 20.8,47.4 r 20 map 1424
 
 step
   when level<24
+  zone map 1424
   accept 494 npc 2214
 
 step
   tip 큰길을 따라 쭉 이동하세요. 첫 번째 갈림길에서는 직진하시고, 두 번째 갈림길에서 좌회전하시면 타렌 밀농장에 곧 도착합니다. 새로운 비행 지점을 발견하세요:타렌 밀농장
+  zone map 1424
   getfp "Tarren Mill"
 
 step
+  when onquest 493
+  zone map 1424
   turnin 493 npc 2216
 
 step
   when level<26
+  zone map 1424
   accept 496 npc 2216
 
 step
+  when onquest 494
+  zone map 1424
   turnin 494 npc 2215
 
 step
   when level<28
+  zone map 1424
   accept 527 npc 2215
 
 step
   when level<26
+  zone map 1424
   accept 498 npc 2229
 
 step
   when level<26
   tip 현상수배지를 클릭해 퀘스트 수락: 비밀결사대원 현상수배
+  zone map 1424
   accept 549 object 556670
 
 step
   when level<32
   tip 현상수배지를 클릭해 퀘스트 수락: 위험 인물 수배
+  zone map 1424
   accept 567 object 556669
 
 step
   tip 지점에 있는 던홀드 요새로 이동하며 사냥하세요.
+  zone map 1424
   accept 98094 npc 2215 optional -- 고위집행관 다살리아에게 Scout Support (포에버 신규)
   goto 76,46 r 20 map 1424
 
 step
   tip 요새 내부로 들어가세요. 지점에서 교도관 마리젠을 처치하고 열쇠를 주워
+  zone map 1424
   goto 78,40.5 r 20 map 1424
 
 step
   when level<26
   tip 토그타르를 구출하세요: 토그타르 구출
+  zone map 1424
   interact 1722 quest 498.2
 
 step
   when level<26
   tip 교도관 에스턴도 주변 어딘가에 있습니다. 처치하시고, 열쇠를 주워 드럴을 구출하세요. 드럴 구출
+  zone map 1424
   interact 1721 quest 498.1
 
 step
   when level<26
   tip 비밀결사대원들을 처치해 완수하세요: 비밀결사대원 현상수배
+  zone map 1424
   kill 2260 quest 549.1
   kill 2261 quest 549.2
 
 step
   when level<26
   tip 타렌 밀농장으로 돌아가세요. 가는 길에 곰과 거미들을 처치해 완수하세요: 괴로움의 비약
+  zone map 1424
   collect 3476 quest 496.1
   collect 3477 quest 496.2
 
 step
   when level<26
+  zone map 1424
   turnin 498 npc 2229
 
 step
   when level>=26
   when complete 498
+  zone map 1424
   turnin 498 npc 2229
 
 step
   when level<26
+  zone map 1424
   turnin 549 npc 2215
 
 step
   when level>=26
   when complete 549
+  zone map 1424
   turnin 549 npc 2215
 
 step
   when level<26
+  zone map 1424
   turnin 496 npc 2216
 
 step
   when level>=26
   when complete 496
+  zone map 1424
   turnin 496 npc 2216
 
 step
   when level<26
+  zone map 1424
   accept 499 npc 2216
 
 step
+  when onquest 499
+  zone map 1424
   turnin 499 npc 2230
 
 step
   tip 서쪽에 있는 농장으로 이동하세요.
+  zone map 1424
   goto 35.2,42.6 r 20 map 1424
 
 step
   when level<28
-  kill 2266 quest 527.1
-  kill 2360 quest 527.2
-  kill 232 quest 527.3
+  zone map 1424
+  kill 232 quest 527.1
+  kill 2266 quest 527.2
+  kill 2360 quest 527.3
   kill 2403 quest 527.4
 
 step
   when level<28
+  zone map 1424
   turnin 527 npc 2215
 
 step
   when level>=28
   when complete 527
+  zone map 1424
   turnin 527 npc 2215
 
 step
   when level<29
+  zone map 1424
   accept 528 npc 2215
 
 step
   tip 농장으로 돌아가세요.
+  zone map 1424
   goto 32.6,35.4 r 20 map 1424
 
 step
   when level<29
   tip 소작농을 처치해 완수하세요: 힐스브래드 전투
+  zone map 1424
   complete 528 @35.2,47 map 1424
 
 step
   when level<32
   tip 농부 칼라바를 처치하세요: 농부 칼라바 처치
+  zone map 1424
   kill 2451 quest 567.4 @36,46 map 1424
 
 step
   when level<29
+  zone map 1424
   turnin 528 npc 2215
 
 step
   when level>=29
   when complete 528
+  zone map 1424
   turnin 528 npc 2215
 
 step
   when level<30
+  zone map 1424
   accept 529 npc 2215
 
 step
   when level<32
+  zone map 1424
   accept 509 npc 2216
 
 step
@@ -223,19 +271,23 @@ step
 
 step
   tip 타렌 밀농장에서 동쪽으로 아라시 고원을 가로질러 해머폴까지 가서 새로운 비행 지점을 발견하세요.
+  zone map 1417
   note "★ 발굴 현장: 저습지 — Lv27.1 → 약 Lv28.1 · 권장 Lv26~27 (힐러 26 · 탱커·딜러 27)"
   getfp "Hammerfall"
 
 step
   tip 해머폴 자루크에게 퀘스트 수락: 용아귀 소문
+  zone map 1417
   accept 95663 npc 2787
 
 step
   tip 용아귀 야영지 위 언덕 죽음의 추적자에게 퀘스트 완료: 용아귀 소문
+  zone map 1437
   turnin 95663 npc 13155
 
 step
   tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): Open the Maw
+  zone map 1437
   accept 95682 npc 13155
 
 step
@@ -248,6 +300,7 @@ step
 
 step
   tip 죽음의 추적자에게 퀘스트 완료: Open the Maw
+  zone map 1437
   accept 95664 item 270866 optional -- 유물 수호자에게서 "티탄의 유물"이 나오면 주워서 퀘스트 수락: 장로의 지식
   turnin 95682 npc 13155
   note "※ 귀환석이 크로스로드로 지정돼 있어야 합니다 (12-25 가이드에서 지정). 다른 곳이라면 토막나무 주둔지까지 비행하거나 달려가세요."
@@ -262,16 +315,19 @@ step
 
 step
   tip 지점으로 이동하세요.
+  zone map 1440
   goto 66,74 r 20 map 1440
 
 step
   when level<29
   tip 은빛날개 전초기지에 있는 모든 나이트 엘프들을 정리하세요. 호수에 있는 정령을 처치해 완수하세요: 물의 정령 처치
+  zone map 1440
   kill 3917 quest 25.1
 
 step
   when level<29
   tip 가운데에 있는 작은 섬 움막 근처에 있는 타이더레스를 처치하세요: 돌발톱 산맥의 정체 해결
+  zone map 1440
   kill 3917 quest 25.1
 
 step
@@ -281,22 +337,28 @@ step
 
 step
   tip 지점으로 이동하세요.
+  zone map 1440
   goto 40,65 r 20 map 1440
 
 step
   tip 흰색 곰 우르산고우스는 주변을 돌아다닙니다. 지점으로 이동하세요.
+  zone map 1440
   goto 54,62 r 20 map 1440
 
 step
   when level<29
+  zone map 1440
   turnin 25 npc 12737
 
 step
   when level>=29
   when complete 25
+  zone map 1440
   turnin 25 npc 12737
 
 step
+  when onquest 1918
+  zone map 1440
   turnin 1918 npc 12737
 
 step
@@ -306,25 +368,30 @@ step
 
 step
   tip 나중에 필요하므로 혈석 파편은 전부 주우세요. 길을 따라 북쪽으로 조금 이동하고, 동쪽에 있는 북부 전초기지 방향으로 이동하세요. 북부 전초기지의 지점으로 이동해,
+  zone map 1413
   goto 63.2,56.6 r 20 map 1413
 
 step
   tip 탑 아래로 내려와, 지점으로 이동해,
+  zone map 1413
   goto 60.4,54.8 r 20 map 1413
 
 step
   tip 언덕 아래로 내려와, 지점으로 이동합니다.
+  zone map 1413
   goto 61.9,54.6 r 20 map 1413
 
 step
   when level<24
   tip 이후 계단으로 탑 아래층에 내려오세요. 장거리 호위이기 때문에 파티를 맺는 것이 좋습니다. 퀘스트 완료: 동굴이끼거미알
+  zone map 1413
   turnin 1069 npc 3446
 
 step
   when level>=24
   when complete 1069
   tip 이후 계단으로 탑 아래층에 내려오세요. 장거리 호위이기 때문에 파티를 맺는 것이 좋습니다. 퀘스트 완료: 동굴이끼거미알
+  zone map 1413
   turnin 1069 npc 3446
 
 step
@@ -333,6 +400,7 @@ step
 
 step
   tip 지점에서, 워시트 포우니를 찾으세요.
+  zone map 1413
   goto 42,80 r 20 map 1413
 
 step
@@ -342,13 +410,17 @@ step
 
 step
   tip 길을 따라 위아래로 순찰하고 있는 갠 스톤스파이어를 찾으세요. 바엘 모단 발굴지에서
+  zone map 1413
   goto 47.6,85.2 r 20 map 1413
 
 step
   tip 발굴지 위쪽에 있는 드워프 요새로 들어가서
+  zone map 1413
   goto 48.4,84 r 20 map 1413
 
 step
+  when onquest 885
+  zone map 1413
   turnin 885 npc 3387
 
 step
@@ -358,6 +430,7 @@ step
 
 step
   tip 힘의 골짜기 여관주인에게 오그리마를 귀환 장소로 설정하세요 (이후 가이드는 오그리마 귀환 기준입니다).
+  zone map 1454
   sethome "Orgrimmar"
 
 step
@@ -366,25 +439,30 @@ step
 
 step
   tip 지점으로 이동하세요.
+  zone map 1440
   goto 57,56 r 20 map 1440
 
 step
   tip 샤둠브라가 나오거나 올 때까지 지점에서 미소띤 자매들을 처치하세요. 지점에 있는 사티르나르로 이동하세요.
+  zone map 1440
   goto 81,52 r 20 map 1440
   note "※ 귀환석이 오그리마로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 오그리마까지 비행하거나 달려가세요."
 
 step
   when level<30
   tip 사티로스들을 잡아 퀘스트를 완수하세요: 사티로스의 뿔
+  zone map 1440
   collect 5481 quest 6441.1
 
 step
   when level<30
+  zone map 1440
   turnin 6441 npc 12724
 
 step
   when level>=30
   when complete 6441
+  zone map 1440
   turnin 6441 npc 12724
 
 step
@@ -398,34 +476,43 @@ step
 
 step
   tip 지점에 있는 구름 승강장으로 이동하세요.
+  zone map 1441
   goto 32,22 r 20 map 1441
 
 step
   tip 지점에 있는 높새바람 봉우리로 이동하세요.
+  zone map 1441
   goto 45.6,50.6 r 20 map 1441
 
 step
   tip 새로운 비행 지점을 발견하세요.
+  zone map 1441
   getfp "Freewind Post"
 
 step
   tip 잔디아에게 퀘스트 수락: 도둑맞은 높새바람 보급품 (포에버 신규)
+  zone map 1441
   accept 98069 npc 4877
 
 step
   tip 잔디아에게 퀘스트 수락: 비명소리를 멈춰라 (포에버 신규)
+  zone map 1441
   accept 98070 npc 4877
 
 step
   when level<30
+  zone map 1441
   accept 1149 npc 2986
 
 step
+  when onquest 1149
   tip 순간이동한 뒤에 뛰어내리세요. 퀘스트 완료: 믿음의 시험
+  zone map 1441
   turnin 1149 npc 2986
 
 step
   tip 서쪽 마루둥지로 가는 길의 비명 하피(하피·도적깃털·바람술사) 5마리씩 처치: 비명소리를 멈춰라
+  zone map 1441
   note "알은 다음 위치도 확인하세요."
   complete 98070 @26.8,54.5 map 1441
 
@@ -435,11 +522,13 @@ step
 
 step
   tip 지점의 마루둥지로 이동하세요.
+  zone map 1441
   goto 12,32 r 20 map 1441
 
 step
   when level<33
   tip 알을 주우면서 와이번들을 사냥하세요. 퀘스트 수락: 집으로
+  zone map 1441
   accept 4770 npc 10427
 
 step
@@ -448,14 +537,18 @@ step
   complete 4770
 
 step
+  when onquest 4770
+  zone map 1441
   turnin 4770 npc 10428
 
 step
   tip 높새바람 봉우리로 돌아와 잔디아에게 퀘스트 완료: 도둑맞은 높새바람 보급품
+  zone map 1441
   turnin 98069 npc 4877
 
 step
   tip 잔디아에게 퀘스트 완료: 비명소리를 멈춰라
+  zone map 1441
   turnin 98070 npc 4877
 
 step
@@ -464,10 +557,12 @@ step
 
 step
   tip 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요.
+  zone map 1411
   goto 50.8,13.6 r 20 map 1411
 
 step
   tip 연금술 실험실 박사 마틴 펠벤에게 퀘스트 수락 (또는 파티원에게 공유받기): Source of Power
+  zone map 1458
   note "── 달라란 준비 ── 비행선에서 내려 언더시티로 들어가세요 (Lv30이 필요한 감옥 습격·Key to the City·Blood in the Streets는 힐스브래드를 마친 뒤 타렌 밀농장에서 받습니다)."
   accept 96988 npc 11044
 
@@ -479,163 +574,198 @@ step
 step
   when level<30
   tip 농장에서 퀘스트를 완수하세요: 힐스브래드 전투
+  zone map 1424
   complete 529 @33,48.8 map 1424
 
 step
   when level<30
+  zone map 1424
   turnin 529 npc 2215
 
 step
   when level>=30
   when complete 529
+  zone map 1424
   turnin 529 npc 2215
 
 step
   when level<30
+  zone map 1424
   accept 532 npc 2215
 
 step
   when level<32
   tip 시청으로 들어가 서기관 호레이스 화이트스타드를 처치하세요: 화이트스타드 처치
+  zone map 1424
   kill 2448 quest 567.1 @29.4,43 map 1424
 
 step
   when level<30
   tip 집정관 번사이드를 처치하세요: 번사이드 처치
+  zone map 1424
   kill 2335 quest 532.1 @30,42.8 map 1424
 
 step
   when level<30
   tip 번사이드 앞에 있는 선언문을 파괴하세요: 선언문 파괴
+  zone map 1424
   interact 1761 quest 532.3
 
 step
   when level<30
   tip 마을의 기록부를 빼내오세요: 마을의 기록부
+  zone map 1424
   collect 3657 quest 532.4 @29.6,41.6 map 1424
 
 step
   when level<30
   tip 힐스브래드 원로를 처치를 완수하세요: 원로 처치
+  zone map 1424
   kill 2387 quest 532.2
 
 step
   when level<32
   tip 민간인 월카스를 *찾아서* 처치하세요: 윌카스 처치
+  zone map 1424
   kill 2449 quest 567.2 @34,38.8 map 1424
 
 step
   when level<30
   tip 타렌 밀농장으로 되돌아가세요. 퀘스트 완료: 힐스브래드 전투
+  zone map 1424
   turnin 532 npc 2215
 
 step
   when level>=30
   when complete 532
   tip 타렌 밀농장으로 되돌아가세요. 퀘스트 완료: 힐스브래드 전투
+  zone map 1424
   turnin 532 npc 2215
 
 step
   when level<32
+  zone map 1424
   accept 539 npc 2215
 
 step
   tip 청금석 광산을 향해 남서쪽으로 이동하여, 지점에 있는 낮은 입구로 들어가세요.
+  zone map 1424
   goto 26,58 r 20 map 1424
 
 step
   when level<32
   tip 광부 하켓을 찾아 처치하세요: 하켓 처치
+  zone map 1424
   kill 2450 quest 567.3
 
 step
   when level<32
   tip 힐스브래드 광부들과 현장감독 본즈를 처치해 완수하세요: 힐스브래드 전투
-  kill 2305 quest 539.1
-  kill 2269 quest 539.2
+  zone map 1424
+  kill 2269 quest 539.1
+  kill 2305 quest 539.2
 
 step
   tip 광산 밖으로 나오셔서 지점으로 이동하세요.
+  zone map 1424
   goto 65,60 r 20 map 1424
 
 step
   when level<32
   tip 진흙주둥이꽃을 획득해 완수하세요: 죽음의 비약
+  zone map 1424
   collect 3502 quest 509.1
 
 step
   when onquest 98094
   tip 던 가록 바깥의 죽음추적자 마소즈에게 Scout Support
+  zone map 1424
   turnin 98094 npc 270438
 
 step
   when level<32
   tip 타렌 밀농장으로 되돌아가세요. 퀘스트 완료: 위험 인물 수배
+  zone map 1424
   turnin 567 npc 2215
 
 step
   when level>=32
   when complete 567
   tip 타렌 밀농장으로 되돌아가세요. 퀘스트 완료: 위험 인물 수배
+  zone map 1424
   turnin 567 npc 2215
 
 step
   when level<32
+  zone map 1424
   turnin 539 npc 2215
 
 step
   when level>=32
   when complete 539
+  zone map 1424
   turnin 539 npc 2215
 
 step
   tip 이어서 고위집행관 다살리아에게 퀘스트 수락: 힐스브래드 전투 (던 가록 정예 — 30-40 가이드에서 험버트의 검과 함께 2~3인 파티로 합니다)
+  zone map 1424
   accept 541 npc 2215
 
 step
   when level<32
+  zone map 1424
   turnin 509 npc 2216
 
 step
   when level>=32
   when complete 509
+  zone map 1424
   turnin 509 npc 2216
 
 step
   tip 타렌 밀농장 멜리사라에게 퀘스트 수락 (또는 파티원에게 공유받기): 무덤 기사
+  zone map 1424
   note "★ 달라란 — Lv30.1 → 약 Lv31.3 · 권장 Lv30 (퀘스트 요구 레벨 30)"
   accept 96986 npc 2278
 
 step
   tip 학자 워딘 보이드글레어에게 퀘스트 수락 (또는 파티원에게 공유받기): Key to the City — ◆던전 선행(달라란)
+  zone map 1424
   accept 93680 npc 2410
 
 step
   tip 퀘스트 수락 (또는 파티원에게 공유받기): 감옥 습격 — ◆던전 선행(달라란)
+  zone map 1424
   accept 544 npc 2410
 
 step
   tip 알터랙 산맥 남서쪽(로더미어 호수 쪽) 교도관의 사물함에서 때 묻은 열쇠: Key to the City
+  zone map 1416
   complete 93680 @16.4,89.3 map 1416
 
 step
   tip 바로 북쪽 달라란 수용소: 언데드 배반자 4명(릭터·알리나·더모트·케건)에게서 혈석 4개: 감옥 습격
+  zone map 1416
   complete 544 @21,84 map 1416
 
 step
   tip 타렌 밀농장으로 돌아와 워딘에게 퀘스트 완료: Key to the City — ◆던전 선행(달라란)
+  zone map 1424
   turnin 93680 npc 2410
 
 step
   tip 이어서 퀘스트 수락: Blood in the Streets — ◆던전 선행(달라란)
+  zone map 1424
   accept 92434 npc 2410
 
 step
   tip 퀘스트 완료: 감옥 습격 — ◆던전 선행(달라란)
+  zone map 1424
   turnin 544 npc 2410
 
 step
   tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): 달라란 순찰 — ◆던전 연계(달라란)
+  zone map 1424
   accept 545 npc 2410
 
 step
@@ -644,10 +774,12 @@ step
 
 step
   tip 대마법사 모데라의 환영에게 퀘스트 완료: Blood in the Streets — ◆던전 선행(달라란)
+  zone map 1421
   turnin 92434 npc 269127
 
 step
   tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): Heart of Disruption
+  zone map 1421
   accept 96984 npc 269127
 
 step
@@ -666,19 +798,23 @@ step
 
 step
   tip 던전을 나와 달라란 외곽에서 달라란 소환사 6명·노예 바위 정령 8마리: 달라란 순찰
+  zone map 1416
   accept 96987 optional -- 입구 근처 렉시 코퍼클러치에게 받을 수 있다면 퀘스트 수락: Opportunistic Education
   complete 545 @21,80 map 1416
 
 step
   tip 타렌 밀농장 멜리사라에게 퀘스트 완료: 무덤 기사
+  zone map 1424
   turnin 96986 npc 2278
 
 step
   tip 학자 워딘 보이드글레어에게 퀘스트 완료: Heart of Disruption
+  zone map 1424
   turnin 96984 npc 2410
 
 step
   tip 퀘스트 완료: 달라란 순찰 — ◆던전 연계(달라란)
+  zone map 1424
   turnin 545 npc 2410
 
 step
@@ -687,9 +823,11 @@ step
 
 step
   tip 연금술 실험실 박사 마틴 펠벤에게 퀘스트 완료: Source of Power
+  zone map 1458
   turnin 96988 npc 11044
 
 step
   tip 연금술 실험실 수석 연금술사 파라넬에게 퀘스트 수락 (또는 파티원에게 공유받기): 조분석을 나에게! (가시덩굴 우리에서 조분석 — 32-45 구간 '열정의 증거'의 선행)
+  zone map 1458
   accept 1109 npc 2055
   note "25-30 구간은 여기까지입니다. 30-40 가이드(가시덩굴·묘지·도서관·무기고·구릉·대성당)로 넘어가세요."

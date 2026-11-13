@@ -12,96 +12,116 @@ next nood-ko/05-12-25
 
 step
   tip 제프라스 섬 — 스카이본 전용 1~12. 직업 퀘스트는 내 직업 것만 보입니다. ── 탄달 마을 (1~5) ── 수락: 성년식 (에일리 파하트)
+  zone map 2521
   note "※ 12레벨이 되면 이 가이드를 여기서 마치고 12-25 Nood 가이드로 넘어가는 것을 권장합니다. Polestar 가이드 메뉴에서 \"12-25 Nood\"를 고르세요. 여기 남긴 퀘스트의 평판은 받지 못합니다."
   accept 92460 npc 251362
 
 step
   tip 완료: 성년식 (낮의 탐구자 로리안)
+  zone map 2521
   turnin 92460 npc 251361
 
 step
   tip 수락: 균형 속의 조화 (낮의 탐구자 로리안)
+  zone map 2521
   accept 92461 npc 251361
 
 step
   tip 마을 동쪽의 어린 벌드렌:
+  zone map 2521
   complete 92461 @44.8,25.6 map 2521
 
 step
   tip 완료: 균형 속의 조화 (낮의 탐구자 로리안)
+  zone map 2521
   turnin 92461 npc 251361
 
 step
   only Hunter
   tip 수락: The Way of the Hunter (낮의 탐구자 로리안)
+  zone map 2521
   accept 92482 npc 251361
 
 step
   only Rogue
   tip 수락: At Home in the Shadows (낮의 탐구자 로리안)
+  zone map 2521
   accept 92483 npc 251361
 
 step
   only Shaman
   tip 수락: 원소의 포옹 (낮의 탐구자 로리안)
+  zone map 2521
   accept 92484 npc 251361
 
 step
   only Druid
   tip 수락: A Student of Nature (낮의 탐구자 로리안)
+  zone map 2521
   accept 92485 npc 251361
 
 step
   only Warrior
   tip 수락: The Warrior's Path (낮의 탐구자 로리안)
+  zone map 2521
   accept 92532 npc 251361
 
 step
   only Hunter
   tip 완료: The Way of the Hunter (타이리 파사이트)
+  zone map 2521
   turnin 92482 npc 251376
 
 step
   only Rogue
   tip 완료: At Home in the Shadows (아케리 더스크블레이드)
+  zone map 2521
   turnin 92483 npc 251389
 
 step
   only Shaman
   tip 완료: 원소의 포옹 (바람구체자 보로)
+  zone map 2521
   turnin 92484 npc 251374
 
 step
   only Druid
   tip 완료: A Student of Nature (자이톤 실버윈드)
+  zone map 2521
   turnin 92485 npc 251373
 
 step
   only Warrior
   tip 완료: The Warrior's Path (검귀 렌)
+  zone map 2521
   turnin 92532 npc 251964
 
 step
   tip 수락: 들끓는 해충 조사 (엘라트렐 페더라이트)
+  zone map 2521
   note "직업 입문 퀘스트: 내 직업 것만 표시됩니다."
   accept 92462 npc 251368
 
 step
   tip 수락: 바람석 채취 (수집가 달리아)
+  zone map 2521
   accept 94414 npc 257554 optional -- 수락: 제프라스의 닻 (매의 눈 할란)
   accept 93552 npc 251363
 
 step
   tip 수락: 창공안의 선물 (벤타리 브라이트위시)
+  zone map 2521
   accept 92598 npc 251487
 
 step
   tip 남동쪽의 성가신 구름벌레:
+  zone map 2521
   accept 92474 npc 263113 optional -- 수락: Falling With Style (미리알 미스트웨이크)
   complete 92462 @45.5,27.3 map 2521
 
 step
   tip 마을 주변 바람석 원석(채광 노드):
+  zone map 2521
   complete 93552 @44.7,25.7 map 2521
 
 step
@@ -114,150 +134,184 @@ step
 
 step
   tip 완료: 들끓는 해충 조사 (엘라트렐 페더라이트)
+  zone map 2521
   turnin 92462 npc 251368
 
 step
   tip 수락: 구름벌레 여왕 (엘라트렐 페더라이트)
+  zone map 2521
   accept 92463 npc 251368
 
 step
   tip 구름벌레 여왕:
+  zone map 2521
   complete 92463 @47.7,28.6 map 2521
 
 step
   tip 완료: 구름벌레 여왕 (엘라트렐 페더라이트)
+  zone map 2521
   turnin 92463 npc 251368
 
 step
   tip 완료: 바람석 채취 (수집가 달리아)
+  zone map 2521
   turnin 93552 npc 251363
 
 step
   when onquest 94414
   tip 완료: 제프라스의 닻 (매의 눈 할란)
+  zone map 2521
   turnin 94414 npc 257554
 
 step
   tip 완료: 창공안의 선물 (벤타리 브라이트위시)
+  zone map 2521
   turnin 92598 npc 251487
 
 step
   when onquest 92474
   tip 완료: Falling With Style (낮의 탐구자 로리안)
+  zone map 2521
   turnin 92474 npc 251361
 
 step
   only Shaman
   tip 수락: 대지의 부름 (바람구체자 보로)
+  zone map 2521
   accept 92466 npc 251374
 
 step
   only Shaman
+  zone map 2521
   collect 251924 quest 92466.1
 
 step
   only Shaman
   tip 완료: 대지의 부름 (바람구체자 보로)
+  zone map 2521
   turnin 92466 npc 251374
 
 step
   only Shaman
   tip 수락: 대지의 부름 (바람구체자 보로)
+  zone map 2521
   accept 92467 npc 251374
 
 step
   tip 수락: 정기의 불안 (낮의 탐구자 로리안)
+  zone map 2521
   accept 92464 npc 251361
 
 step
   tip ── 탄달 숲 동쪽 ── 완료: 정기의 불안 (얄라 윈드워처)
+  zone map 2521
   turnin 92464 npc 249363
 
 step
   tip 수락: 선동자들 (얄라 윈드워처)
+  zone map 2521
   accept 92465 npc 249363
 
 step
   tip 얄라 북쪽의 휘몰아치는 바람·알아케스 전향자:
+  zone map 2521
   complete 92465 @47.2,19.9 map 2521
 
 step
   only Shaman
   tip 완료: 대지의 부름 (하급 대지의 현신)
+  zone map 2521
   turnin 92467 npc 251166
 
 step
   only Shaman
   tip 수락: 대지의 부름 (하급 대지의 현신)
+  zone map 2521
   accept 92468 npc 251166
 
 step
   tip 완료: 선동자들 (얄라 윈드워처)
+  zone map 2521
   turnin 92465 npc 249363
 
 step
   tip 수락: 다시 로리안에게로 (얄라 윈드워처)
+  zone map 2521
   accept 92469 npc 249363
   note "── 탄달 마을 ──"
 
 step
   only Shaman
   tip 완료: 대지의 부름 (바람구체자 보로)
+  zone map 2521
   turnin 92468 npc 251374
 
 step
   tip 완료: 다시 로리안에게로 (낮의 탐구자 로리안)
+  zone map 2521
   turnin 92469 npc 251361
 
 step
   tip 수락: 강풍의 아이신 (낮의 탐구자 로리안)
+  zone map 2521
   accept 92471 npc 251361
 
 step
   tip 완료: 강풍의 아이신 (강풍의 아이신)
+  zone map 2521
   turnin 92471 npc 251366
 
 step
   tip 수락: 부정한 어미 (강풍의 아이신)
+  zone map 2521
   accept 92470 npc 251366
 
 step
   tip 수락: 공격적인 침범 (발레아 베일윈드)
+  zone map 2521
   accept 96638 npc 251366 optional -- 수락: 모험가 (강풍의 아이신) (야영 시스템 안내)
   accept 92473 npc 257551
 
 step
   tip 더 서쪽의 우르세라 청소부와 우르사나(35.4,25.3):
+  zone map 2521
   complete 92470 @36.8,25.5 map 2521
 
 step
   tip 마을 서쪽의 깡마른 우르세라:
+  zone map 2521
   complete 92473 @39.5,27 map 2521
 
 step
   tip 완료: 부정한 어미 (강풍의 아이신)
+  zone map 2521
   turnin 92470 npc 251366
 
 step
   tip 완료: 공격적인 침범 (발레아 베일윈드)
+  zone map 2521
   turnin 92473 npc 257551
 
 step
   tip 수락: 다음 걸음 (강풍의 아이신)
+  zone map 2521
   accept 92472 npc 251366
 
 step
   along
+  zone map 2521
   complete 92544 @36.5,33 map 2521 -- 알아케스 투사·수련사와 말두코 클라우드크러시:
 
 step
   when complete 92544
   tip 완료: 알아케스 폭력배 (하나아 나이트윈드)
+  zone map 2521
   turnin 92544 npc 252095
 
 step
   when onquest 96638
   tip ── 셴다르 마을 (5~9) ── 완료: 모험가 (란 와일드윈드)
+  zone map 2521
   turnin 96638 npc 263664
 
 step
@@ -267,268 +321,332 @@ step
 step
   when complete 96101
   tip 완료: 드넓은 야외 (란 와일드윈드)
+  zone map 2521
   turnin 96101 npc 263664
 
 step
   tip 야영 입문(요리·채집·제작 등) 퀘스트는 란 와일드윈드에게서 받을 수 있습니다. 전문기술을 배울 때 같이 하세요. 완료: 다음 걸음 (순경 아온다)
+  zone map 2521
   accept 92544 npc 252095 optional -- ── 셴다르 마을 가는 길 (서쪽 우회는 선택) ── 수락: 알아케스 폭력배 (하나아 나이트윈드)
   accept 96101 npc 263664 optional -- 수락: 드넓은 야외 (란 와일드윈드)
   turnin 92472 npc 251523
 
 step
   tip 수락: 셴다르 마을에 오신 것을 환영합니다 (순경 아온다)
+  zone map 2521
   accept 92514 npc 251523
 
 step
   tip 완료: 셴다르 마을에 오신 것을 환영합니다 (순경 아온다)
+  zone map 2521
   turnin 92514 npc 251523
 
 step
   tip 수락: 범죄 세력 (순경 아온다)
+  zone map 2521
   accept 92517 npc 251523
 
 step
   tip 수락: 이교도 잠입 (순경 아온다)
+  zone map 2521
   accept 93036 npc 251523
 
 step
   tip 수락: 서부 감시터 (순경 아온다)
+  zone map 2521
   accept 93926 npc 251523
 
 step
   tip 수락: 도난당한 보급품 (다나리 벨로베일)
+  zone map 2521
   accept 92551 npc 252172
 
 step
   tip 수락: 히포그리프의 괴롭힘 (티리 웰윈드)
+  zone map 2521
   accept 93318 object 610954 optional -- 수락: 현상 수배: 탐욕의 불가라 (다나리 벨로베일) (현상 수배)
   accept 92516 npc 251906
 
 step
   tip 수락: 훔친 바람석 (티리 웰윈드)
+  zone map 2521
   accept 93319 npc 251906
 
 step
   tip 수락: 무리발톱 문제 (인다리 썬심)
+  zone map 2521
   accept 92515 npc 251993
 
 step
   tip 수락: 작은 아름다움 (탈린 시머스레드)
+  zone map 2521
   accept 93951 npc 251991
 
 step
   tip 수락: 곳간 채우기 (제릴 소프트브리즈)
+  zone map 2521
   accept 92553 npc 251905
 
 step
   tip 수락: 바람구체자 (일라야 앰버윈드)
+  zone map 2521
   accept 92595 npc 251902
 
 step
   tip 수락: 참견하는 마법사들 (일라야 앰버윈드)
+  zone map 2521
   accept 94411 npc 251902
 
 step
   tip 완료: 이교도 잠입 (사니아 실버스트림)
+  zone map 2521
   accept 94007 npc 254084 optional only Hunter -- 수락: Taming the Beast (엘라야 이즈윈드) (10레벨부터 받을 수 있음 — 레벨이 안 되면 건너뛰고 나중에 받으세요)
   turnin 93036 npc 251904
 
 step
   tip 수락: 팔라스 마을 (사니아 실버스트림)
+  zone map 2521
   accept 92529 npc 251904
 
 step
   tip ── 셴다르 마을 퀘스트 한 바퀴: 북쪽 → 마을 주변 → 남서쪽 → 서부 감시터 → 팔라스 마을 → 마을 ── 북쪽 고등 마법원 수습생:
+  zone map 2521
   complete 94411 @46.4,38.9 map 2521
 
 step
   tip 북동쪽 고원 좀도둑, '사악한 바람' 베닉(50.5,33.6):
+  zone map 2521
   complete 92517 @49,36.4 map 2521
 
 step
   tip 같은 곳 고원 좀도둑·베닉에게서 훔친 바람석:
+  zone map 2521
   complete 93319 @49,36.4 map 2521
 
 step
   tip 마을 주변 무리발톱:
+  zone map 2521
   complete 92515 @42.6,45.2 map 2521
 
 step
   tip 마을 주변 돌풍타조 고기 (남서쪽 히포그리프 고기도 인정):
+  zone map 2521
   complete 92553 @42,44.9 map 2521
 
 step
   tip 마을 안 일라야 앰버윈드:
+  zone map 2521
   complete 92595 @43.5,44.8 map 2521
 
 step
   along
+  zone map 2521
   complete 93318 @42.6,52.2 map 2521 -- 남쪽 탐욕의 불가라:
 
 step
   tip 남서쪽 히포그리프 어미·수호자·어린 히포그리프:
+  zone map 2521
   complete 92516 @35.4,53.5 map 2521
 
 step
   tip 같은 곳 히포그리프 솜털:
+  zone map 2521
   complete 93951 @36.2,54.2 map 2521
 
 step
   tip 완료: 서부 감시터 (평화감시자 바니엘)
+  zone map 2521
   turnin 93926 npc 252155
 
 step
   tip 수락: 마지막 부탁 (평화감시자 바니엘)
+  zone map 2521
   accept 93927 npc 252155
 
 step
   tip 완료: 팔라스 마을 (선교사 자산)
+  zone map 2521
   turnin 92529 npc 257065
 
 step
   tip 수락: 신도들 사이에서 (선교사 자산)
+  zone map 2521
   accept 92528 npc 257065
 
 step
   tip 팔라스 마을 신도들 사이에서:
+  zone map 2521
   complete 92528 @46.8,56.2 map 2521
 
 step
   tip 팔라스 마을 동쪽 보급품 상자:
+  zone map 2521
   complete 92551 @49.3,55.9 map 2521
 
 step
   tip 완료: 범죄 세력 (순경 아온다)
+  zone map 2521
   turnin 92517 npc 251523
 
 step
   tip 완료: 도난당한 보급품 (다나리 벨로베일)
+  zone map 2521
   turnin 92551 npc 252172
 
 step
   when complete 93318
   tip 완료: 현상 수배: 탐욕의 불가라 (다나리 벨로베일)
+  zone map 2521
   turnin 93318 npc 252172
 
 step
   tip 완료: 히포그리프의 괴롭힘 (티리 웰윈드)
+  zone map 2521
   turnin 92516 npc 251906
 
 step
   tip 완료: 훔친 바람석 (티리 웰윈드)
+  zone map 2521
   turnin 93319 npc 251906
 
 step
   tip 완료: 무리발톱 문제 (인다리 썬심)
+  zone map 2521
   turnin 92515 npc 251993
 
 step
   tip 완료: 작은 아름다움 (탈린 시머스레드)
+  zone map 2521
   turnin 93951 npc 251991
 
 step
   tip 완료: 곳간 채우기 (제릴 소프트브리즈)
+  zone map 2521
   turnin 92553 npc 251905
 
 step
   tip 완료: 바람구체자 (일라야 앰버윈드)
+  zone map 2521
   turnin 92595 npc 251902
 
 step
   tip 완료: 참견하는 마법사들 (일라야 앰버윈드)
+  zone map 2521
   turnin 94411 npc 251902
 
 step
   tip ── 셴다르 마을 ── 완료: 신도들 사이에서 (순경 아온다)
+  zone map 2521
   turnin 92528 npc 251523
 
 step
   tip 완료: 마지막 부탁 (순경 아온다)
+  zone map 2521
   turnin 93927 npc 251523
 
 step
   tip 수락: 고원의 혼란 (순경 아온다)
+  zone map 2521
   accept 92550 npc 251523
 
 step
   tip 살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):
+  zone map 2521
   complete 92550 @48.6,55.7 map 2521
 
 step
   tip 완료: 고원의 혼란 (순경 아온다)
+  zone map 2521
   turnin 92550 npc 251523
 
 step
   tip 수락: 발라나르로 (순경 아온다)
+  zone map 2521
   accept 92579 npc 251523
 
 step
   tip 수락: 인장 전달 (순경 아온다)
+  zone map 2521
   accept 93948 npc 251523
 
 step
   tip ── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)
+  zone map 2521
   turnin 92579 npc 252383
 
 step
   tip 완료: 인장 전달 (탈라니스 섀도송)
+  zone map 2521
   turnin 93948 npc 252476
 
 step
   tip 수락: 대하늘선견자 (발레니아 스톰피스트)
+  zone map 2521
   accept 92700 npc 252383
 
 step
   tip 수락: 게잡이 철 (니알라 브라이트파이어)
+  zone map 2521
   accept 93317 npc 257006
 
 step
   tip 수락: 붉은 헌금 (알바리온 윈드필드)
+  zone map 2521
   accept 92679 npc 252448
 
 step
   tip 수락: 피난민 지원 (엘라네 님버스워커) — 북쪽이라 나중에 북쪽 갈 때 처리
+  zone map 2521
   accept 94896 npc 259012
 
 step
   tip 수락: 사랑하는 이의 운명 (엘라네 님버스워커) — 북쪽이라 나중에 북쪽 갈 때 처리
+  zone map 2521
   accept 94897 npc 259012
 
 step
   only Hunter
   when onquest 94007
+  zone map 2521
   turnin 94007 npc 252389
 
 step
   only Hunter
   tip 수락: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   accept 94013 npc 252389
 
 step
   only Hunter
   tip 수락: Training the Beast (퀠라나 퀵게일)
+  zone map 2521
   accept 94050 npc 252389
 
 step
   only Hunter
   tip 수락: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   accept 94978 npc 252389
 
 step
   only Hunter
   tip 수락: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   accept 94979 npc 252389
 
 step
   only Hunter
+  zone map 2521
   kill 250874 quest 94013.1
 
 step
   only Hunter
+  zone map 2521
   kill 254588 quest 94978.1
 
 step
   only Hunter
+  zone map 2521
   kill 251707 quest 94979.1
 
 step
@@ -538,458 +656,566 @@ step
 step
   only Hunter
   tip 완료: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   turnin 94013 npc 252389
 
 step
   only Hunter
   tip 완료: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   turnin 94978 npc 252389
 
 step
   only Hunter
   tip 완료: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
   turnin 94979 npc 252389
 
 step
   only Hunter
   tip 완료: Training the Beast (퀠도라 퀵게일)
+  zone map 2521
   turnin 94050 npc 254411
 
 step
   only Warrior
   tip 수락: The Skybreaker Bulwark (시나 스카이브레이커)
+  zone map 2521
   accept 94003 npc 252377
 
 step
   only Warrior
+  zone map 2521
   collect 263993 quest 94003.1
 
 step
   only Warrior
   tip 완료: The Skybreaker Bulwark (시나 스카이브레이커)
+  zone map 2521
   turnin 94003 npc 252377
 
 step
   only Druid
   tip 수락: 위대한 우르세라 정령 (로셀룸 스타브리즈)
+  zone map 2521
   accept 94006 npc 252359
 
 step
   only Shaman
   tip 수락: 불의 부름 (세사리아 스카이스트라이드)
+  zone map 2521
   accept 97243 npc 252382
 
 step
   tip 완료: 대하늘선견자 (아에사 돈싱어)
+  zone map 2521
   note "직업 퀘스트 (10레벨)"
   turnin 92700 npc 251968
 
 step
   tip 수락: 부서진 피조물 (아에사 돈싱어)
+  zone map 2521
   accept 93735 npc 251968
 
 step
+  zone map 2521
   accept 93746 npc 251968
 
 step
+  zone map 2521
   accept 93740 npc 251968
 
 step
   tip 수락: 위대한 모험 (아에사 돈싱어)
+  zone map 2521
   accept 92708 npc 251968
 
 step
   tip 수락: 반갑지 않은 정령 (엔다리아 미스트게이즈) — 북쪽(58,32)이라 나중에 북쪽 갈 때 처리
+  zone map 2521
   accept 93736 npc 254344
 
 step
   tip 발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:
+  zone map 2521
   complete 93740 @64,65 map 2521
 
 step
   tip 북쪽 벨라탄 브라이트위시:
+  zone map 2521
   complete 93746 @59.8,57 map 2521
 
 step
   tip 북서쪽 바람노래 집게발:
+  zone map 2521
   complete 93317 @53.9,64.1 map 2521
 
 step
+  zone map 2521
   turnin 93746 npc 251968
 
 step
+  zone map 2521
   turnin 93740 npc 251968
 
 step
   tip 완료: 게잡이 철 (니알라 브라이트파이어)
+  zone map 2521
   turnin 93317 npc 257006
 
 step
   tip 완료: 부서진 피조물 (리아니 나이트윈드)
+  zone map 2521
   turnin 93735 npc 256083
 
 step
   tip 수락: 부서진 피조물 (리아니 나이트윈드)
+  zone map 2521
   accept 93737 npc 256083
 
 step
   tip 리아니 나이트윈드:
+  zone map 2521
   complete 93737 @59,73 map 2521
 
 step
   tip 완료: 부서진 피조물 (리아니 나이트윈드)
+  zone map 2521
   turnin 93737 npc 256083
 
 step
   tip 수락: The Broken Construct (리아니 나이트윈드)
+  zone map 2521
   accept 93738 npc 256083
 
 step
   tip 완료: The Broken Construct (아에사 돈싱어)
+  zone map 2521
   turnin 93738 npc 251968
 
 step
   tip 완료: 위대한 모험 (아에사 돈싱어)
+  zone map 2521
   turnin 92708 npc 251968
 
 step
   tip ── 윈드필드 과수원 (서남쪽) ── 완료: 붉은 헌금 (아멜리아 윈드필드)
+  zone map 2521
   turnin 92679 npc 252800
 
 step
   tip 수락: 쓸모 있는 사람이 되길 (아멜리아 윈드필드)
+  zone map 2521
   accept 92682 npc 252800
 
 step
   tip 수락: 펄럭날개 가루 (아멜리아 윈드필드)
+  zone map 2521
   accept 92683 npc 252800
 
 step
   tip 수락: 심술궂고 심술궂은 돌풍타조 (아멜리아 윈드필드)
+  zone map 2521
   accept 92684 npc 252800
 
 step
   tip 수락: 그 언덕에 눈이 있으니 (아멜리아 윈드필드)
+  zone map 2521
   accept 92685 npc 252800
 
 step
   tip 수락: 나는 왜 존재하는가? (고장 난 회오리 피조물)
+  zone map 2521
   accept 92698 npc 250929
 
 step
   tip 발라나르 서쪽 심술궂은 돌풍타조:
+  zone map 2521
   complete 92684 @54.6,73.8 map 2521
 
 step
   tip 과수원 북쪽 산적 노상강도:
+  zone map 2521
   complete 92685 @48.2,74.9 map 2521
 
 step
   tip 과수원 굶주린 좀도둑:
+  zone map 2521
   complete 92682 @47.1,80.5 map 2521
 
 step
   tip 과수원 동쪽 펄럭날개 가루:
+  zone map 2521
   complete 92683 @50,79 map 2521
 
 step
   tip 완료: 쓸모 있는 사람이 되길 (아멜리아 윈드필드)
+  zone map 2521
   turnin 92682 npc 252800
 
 step
   tip 완료: 펄럭날개 가루 (아멜리아 윈드필드)
+  zone map 2521
   turnin 92683 npc 252800
 
 step
   tip 완료: 심술궂고 심술궂은 돌풍타조 (아멜리아 윈드필드)
+  zone map 2521
   turnin 92684 npc 252800
 
 step
   tip 완료: 그 언덕에 눈이 있으니 (아멜리아 윈드필드)
+  zone map 2521
   turnin 92685 npc 252800
 
 step
   tip 완료: 나는 왜 존재하는가? (아멜리아 윈드필드)
+  zone map 2521
   turnin 92698 npc 252800
 
 step
   tip 수락: 소식 전달 (아멜리아 윈드필드)
+  zone map 2521
   accept 92703 npc 252800
 
 step
   only Shaman
   tip 완료: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   turnin 97243 npc 268592
 
 step
   only Shaman
   tip 수락: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   accept 97244 npc 268592
 
 step
   only Shaman
+  zone map 2521
   collect 277267 quest 97244.1
 
 step
   only Shaman
   tip 완료: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   turnin 97244 npc 268592
 
 step
   only Shaman
   tip 수락: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   accept 97245 npc 268592
 
 step
   only Shaman
+  zone map 2521
   collect 277269 quest 97245.1
 
 step
   only Shaman
   tip 완료: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   turnin 97245 npc 268592
 
 step
   only Shaman
   tip 수락: 불의 부름 (올라리안 스위프트번)
+  zone map 2521
   accept 97257 npc 268592
 
 step
   only Shaman
   tip 완료: 불의 부름 (세사리아 스카이스트라이드)
+  zone map 2521
   turnin 97257 npc 252382
 
 step
   tip 완료: 소식 전달 (알바리온 윈드필드)
+  zone map 2521
   note "── 발라나르 ──"
   turnin 92703 npc 252448
 
 step
   tip 수락: 불길한 침묵 (로셀룸 스타브리즈)
+  zone map 2521
   accept 94484 npc 252359
 
 step
   tip 수락: 알아케스 암살자 (펜달 윈드스톤)
+  zone map 2521
   note "── 북쪽 (11~12) ──"
   accept 98512 npc 273017
 
 step
   tip 알아케스 암살자:
+  zone map 2521
   complete 98512 @55.6,60.3 map 2521
 
 step
   tip 완료: 알아케스 암살자 (펜달 윈드스톤)
+  zone map 2521
   turnin 98512 npc 273017
 
 step
   tip 완료: 불길한 침묵 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94484 npc 257944
 
 step
   tip 수락: 상처를 묶을 깃털 (엘레게일 쏜포우)
+  zone map 2521
   accept 94486 npc 257944
 
 step
   tip 수락: 원치 않는 자, 자격 없는 자 (엘레게일 쏜포우)
+  zone map 2521
   accept 94487 npc 257944
 
 step
   tip 수락: 하나로 묶는 유대 (엘레게일 쏜포우)
+  zone map 2521
   accept 94488 npc 257944
 
 step
   tip 수락: 여신의 눈물 (엘레게일 쏜포우)
+  zone map 2521
   accept 94485 npc 257944
 
 step
   tip 수락: 배신이 남긴 상처 (엘레게일 쏜포우)
+  zone map 2521
   accept 94489 npc 257944
 
 step
   tip 수락: 자비는 닫힌 귀에 닿지 않는다 (베인 문게이즈)
+  zone map 2521
   accept 93165 npc 254151
 
 step
   tip 수락: 수상한 은둔자 ((이름 미확인))
+  zone map 2521
   accept 93159 npc 251684
 
 step
   tip 수락: 숲이 내린 선물 ((이름 미확인))
+  zone map 2521
   accept 93160 npc 251684
 
 step
   tip 수락: 유령 해방 ((이름 미확인))
+  zone map 2521
   accept 93172 npc 251684
 
 step
   tip 서쪽 수상한 은둔자:
+  zone map 2521
   complete 93159 @54,39 map 2521
 
 step
   tip 서풍씨앗 방울:
+  zone map 2521
   complete 93160 @58.6,38.9 map 2521
 
 step
   tip 서쪽 그늘돌풍 괴성조:
+  zone map 2521
   complete 94486 @59.2,38.5 map 2521
 
 step
   tip 여신의 눈물 이끼:
+  zone map 2521
   complete 94485 @60.9,38.4 map 2521
 
 step
   tip 북쪽 바람의 유령:
+  zone map 2521
   complete 93172 @58.2,32.2 map 2521
 
 step
   tip 같은 곳 바람의 유령:
+  zone map 2521
   complete 93736 @58.2,32.2 map 2521
 
 step
   tip 같은 곳 버려진 소지품:
+  zone map 2521
   complete 94896 @58.1,31.9 map 2521
 
 step
   tip 조금 더 북쪽 레산 님버스워커:
+  zone map 2521
   complete 94897 @57,29.5 map 2521
 
 step
   tip 동쪽 조렐 윈드싱어 일행:
+  zone map 2521
   complete 94489 @64.5,34.5 map 2521
 
 step
   tip 사령관 할리엔:
+  zone map 2521
   complete 94488 @65.4,36.6 map 2521
 
 step
   tip 알아케스 폭풍추격자·보병:
+  zone map 2521
   complete 94487 @63.7,37.3 map 2521
 
 step
   tip 알아케스(귀 모으기):
+  zone map 2521
   complete 93165 @63.7,37.3 map 2521
 
 step
   tip 완료: 자비는 닫힌 귀에 닿지 않는다 (베인 문게이즈)
+  zone map 2521
   accept 94490 item 265476 optional -- 아이템으로 시작: 찢어진 서신 (주우면 수락)
   accept 93459 npc 254151 optional -- 아이템으로 시작: 알아케스의 귀 더 모으기 (주우면 수락)
   turnin 93165 npc 254151
 
 step
   when complete 93459
+  zone map 2521
   turnin 93459 npc 254151
 
 step
   tip 완료: 상처를 묶을 깃털 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94486 npc 257944
 
 step
   tip 완료: 원치 않는 자, 자격 없는 자 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94487 npc 257944
 
 step
   tip 완료: 하나로 묶는 유대 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94488 npc 257944
 
 step
   tip 완료: 여신의 눈물 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94485 npc 257944
 
 step
   tip 완료: 배신이 남긴 상처 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94489 npc 257944
 
 step
   when onquest 94490
   tip 완료: 찢어진 서신 (엘레게일 쏜포우)
+  zone map 2521
   turnin 94490 npc 257944
 
 step
   tip 수락: 소굴의 운명 (엘레게일 쏜포우)
+  zone map 2521
   accept 94491 npc 257944
 
 step
   tip 완료: 수상한 은둔자 ((이름 미확인))
+  zone map 2521
   turnin 93159 npc 251684
 
 step
   tip 완료: 숲이 내린 선물 ((이름 미확인))
+  zone map 2521
   turnin 93160 npc 251684
 
 step
   tip 완료: 유령 해방 ((이름 미확인))
+  zone map 2521
   turnin 93172 npc 251684
 
 step
   tip ── 발라나르 ── 완료: 소굴의 운명 (로셀룸 스타브리즈)
+  zone map 2521
   turnin 94491 npc 252359
 
 step
   tip 완료: 반갑지 않은 정령 (엔다리아 미스트게이즈)
+  zone map 2521
   turnin 93736 npc 254344
 
 step
   tip 완료: 피난민 지원 (엘라네 님버스워커)
+  zone map 2521
   turnin 94896 npc 259012
 
 step
   tip 완료: 사랑하는 이의 운명 (엘라네 님버스워커)
+  zone map 2521
   turnin 94897 npc 259012
   note "── 12레벨이 안 됐다면 (선택) ── 발라나르 동쪽 감시탑 퀘스트로 채우세요. 12레벨이면 건너뛰고 바로 썬더 블러프로 가도 됩니다."
 
 step
   when onquest 92871
+  zone map 2521
   turnin 92871 npc 252383
 
 step
   when onquest 93320
   tip 완료: 감시탑 방어 (요라나 윈디리드)
+  zone map 2521
   turnin 93320 npc 252378
 
 step
   along
+  zone map 2521
   complete 92642 @65.5,67 map 2521 -- 감시탑 서쪽 알아케스 치유사·싸움꾼:
 
 step
   along
+  zone map 2521
   complete 92645 @65.6,65.5 map 2521 -- 사령관 벨길로스:
 
 step
   when complete 92642
   tip 완료: 보급 교란 (요라나 윈디리드)
+  zone map 2521
   turnin 92642 npc 252378
 
 step
   when complete 92645
   tip 완료: 파괴자 파괴하기 (요라나 윈디리드)
+  zone map 2521
   turnin 92645 npc 252378
 
 step
   when onquest 92880
   tip 완료: 발라나르로의 귀환 (발레니아 스톰피스트)
+  zone map 2521
   turnin 92880 npc 252383
 
 step
   only Druid
   tip 완료: 위대한 우르세라 정령 (우르센드리스)
+  zone map 2521
   note "── 드루이드 직업 퀘스트 ── 감시탑 북쪽 우르센드리스에게 다녀오세요."
   turnin 94006 npc 255853
 
 step
   only Druid
   tip 수락: 힘과 자비 (우르센드리스)
+  zone map 2521
   accept 94638 npc 255853
 
 step
   only Druid
+  zone map 2521
   kill 258443 quest 94638.1
 
 step
   only Druid
   tip 완료: 힘과 자비 (우르센드리스)
+  zone map 2521
   turnin 94638 npc 255853
 
 step
+  zone map 2521
   accept 92871 npc 251968 optional
   accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
   accept 92642 npc 252378 optional -- 수락: 보급 교란 (요라나 윈디리드)
@@ -999,20 +1225,24 @@ step
 
 step
   tip ── 썬더 블러프로 이동 ── 발라나르 서쪽 선착장에서 썬더 블러프행 하늘배 탑승:
+  zone map 2521
   goto 57.9,80.9 r 20 map 2521
 
 step
   tip Thunder Bluff Discover the Thunder Bluff flight path:
+  zone map 1456
   getfp "Thunder Bluff"
 
 step
   only Druid
   tip 멀른 어스퓨리에게 퀘스트 수락: Child of Nature
+  zone map 1412
   accept 94911 npc 259118
 
 step
   only Druid
   tip 썬더 블러프 장로의 봉우리 투락 룬토템에게 퀘스트 완료: Child of Nature
+  zone map 1456
   turnin 94911 npc 3033
   accept 95350 npc 259119 optional -- 알라나 스톰워커에게 퀘스트 수락: 아제로스에 오신 걸 환영합니다 — 오그리마의 스랄에게 보고합니다 (오그리마를 지날 때).
   note "── 12레벨: 발컨 12-25 으로 ──"

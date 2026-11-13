@@ -12,96 +12,116 @@ next nood/05-12-25
 
 step
   tip Zephras Isle — Skyborne only, levels 1-12. You only see the class quests for your own class. == Starting village (1-5) == Accept Coming of Age (Ailee Farheart)
+  zone map 2521
   note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
   accept 92460 npc 251362
 
 step
   tip Turn in Coming of Age (Rorian the Dayseeker)
+  zone map 2521
   turnin 92460 npc 251361
 
 step
   tip Accept Harmony in Balance (Rorian the Dayseeker)
+  zone map 2521
   accept 92461 npc 251361
 
 step
   tip Kill Juvenile Vuldrens east of the village: Harmony in Balance
+  zone map 2521
   complete 92461 @44.8,25.6 map 2521
 
 step
   tip Turn in Harmony in Balance (Rorian the Dayseeker)
+  zone map 2521
   turnin 92461 npc 251361
 
 step
   only Hunter
   tip Accept The Way of the Hunter (Rorian the Dayseeker)
+  zone map 2521
   accept 92482 npc 251361
 
 step
   only Rogue
   tip Accept At Home in the Shadows (Rorian the Dayseeker)
+  zone map 2521
   accept 92483 npc 251361
 
 step
   only Shaman
   tip Accept Embracing the Elements (Rorian the Dayseeker)
+  zone map 2521
   accept 92484 npc 251361
 
 step
   only Druid
   tip Accept A Student of Nature (Rorian the Dayseeker)
+  zone map 2521
   accept 92485 npc 251361
 
 step
   only Warrior
   tip Accept The Warrior's Path (Rorian the Dayseeker)
+  zone map 2521
   accept 92532 npc 251361
 
 step
   only Hunter
   tip Turn in The Way of the Hunter (Tai'ree Farsight)
+  zone map 2521
   turnin 92482 npc 251376
 
 step
   only Rogue
   tip Turn in At Home in the Shadows (Akeri Duskblade)
+  zone map 2521
   turnin 92483 npc 251389
 
 step
   only Shaman
   tip Turn in Embracing the Elements (Windshaper Boro)
+  zone map 2521
   turnin 92484 npc 251374
 
 step
   only Druid
   tip Turn in A Student of Nature (Xyton Silverwind)
+  zone map 2521
   turnin 92485 npc 251373
 
 step
   only Warrior
   tip Turn in The Warrior's Path (Blademaster Ren)
+  zone map 2521
   turnin 92532 npc 251964
 
 step
   tip Accept Infestation Investigation (Elatrell Featherlight)
+  zone map 2521
   note "Class intro quest: only the one for your class is shown."
   accept 92462 npc 251368
 
 step
   tip Accept Harvesting Windstones (Dalia the Collector)
+  zone map 2521
   accept 94414 npc 257554 optional -- Accept The Anchors of Zephras (Halaan Hawk-Eye)
   accept 93552 npc 251363
 
 step
   tip Accept The Gift of Skysight (Ventaari Brightwish)
+  zone map 2521
   accept 92598 npc 251487
 
 step
   tip Kill Pesky Cirrusflies to the southeast: Infestation Investigation
+  zone map 2521
   accept 92474 npc 263113 optional -- Accept Falling With Style (Myriaal Mistwake)
   complete 92462 @45.5,27.3 map 2521
 
 step
   tip Click Windstone Clusters (crystals) around the village: Harvesting Windstones
+  zone map 2521
   complete 93552 @44.7,25.7 map 2521
 
 step
@@ -114,150 +134,184 @@ step
 
 step
   tip Turn in Infestation Investigation (Elatrell Featherlight)
+  zone map 2521
   turnin 92462 npc 251368
 
 step
   tip Accept The Cirrusfly Queen (Elatrell Featherlight)
+  zone map 2521
   accept 92463 npc 251368
 
 step
   tip Kill the Cirrusfly Queen: The Cirrusfly Queen
+  zone map 2521
   complete 92463 @47.7,28.6 map 2521
 
 step
   tip Turn in The Cirrusfly Queen (Elatrell Featherlight)
+  zone map 2521
   turnin 92463 npc 251368
 
 step
   tip Turn in Harvesting Windstones (Dalia the Collector)
+  zone map 2521
   turnin 93552 npc 251363
 
 step
   when onquest 94414
   tip Turn in The Anchors of Zephras (Halaan Hawk-Eye)
+  zone map 2521
   turnin 94414 npc 257554
 
 step
   tip Turn in The Gift of Skysight (Ventaari Brightwish)
+  zone map 2521
   turnin 92598 npc 251487
 
 step
   when onquest 92474
   tip Turn in Falling With Style (Rorian the Dayseeker)
+  zone map 2521
   turnin 92474 npc 251361
 
 step
   only Shaman
   tip Accept Call of Earth (Windshaper Boro)
+  zone map 2521
   accept 92466 npc 251374
 
 step
   only Shaman
+  zone map 2521
   collect 251924 quest 92466.1
 
 step
   only Shaman
   tip Turn in Call of Earth (Windshaper Boro)
+  zone map 2521
   turnin 92466 npc 251374
 
 step
   only Shaman
   tip Accept Call of Earth (Windshaper Boro)
+  zone map 2521
   accept 92467 npc 251374
 
 step
   tip Accept Elemental Unrest (Rorian the Dayseeker)
+  zone map 2521
   accept 92464 npc 251361
 
 step
   tip == East of the starting village == Turn in Elemental Unrest (Yala Windwatcher)
+  zone map 2521
   turnin 92464 npc 249363
 
 step
   tip Accept Agitators (Yala Windwatcher)
+  zone map 2521
   accept 92465 npc 249363
 
 step
   tip Kill Roiling Winds and Al'Aketh Converts north of Yala: Agitators
+  zone map 2521
   complete 92465 @47.2,19.9 map 2521
 
 step
   only Shaman
   tip Turn in Call of Earth (Minor Manifestation of Earth)
+  zone map 2521
   turnin 92467 npc 251166
 
 step
   only Shaman
   tip Accept Call of Earth (Minor Manifestation of Earth)
+  zone map 2521
   accept 92468 npc 251166
 
 step
   tip Turn in Agitators (Yala Windwatcher)
+  zone map 2521
   turnin 92465 npc 249363
 
 step
   tip Accept Return to Rorian (Yala Windwatcher)
+  zone map 2521
   accept 92469 npc 249363
   note "== Back to the starting village =="
 
 step
   only Shaman
   tip Turn in Call of Earth (Windshaper Boro)
+  zone map 2521
   turnin 92468 npc 251374
 
 step
   tip Turn in Return to Rorian (Rorian the Dayseeker)
+  zone map 2521
   turnin 92469 npc 251361
 
 step
   tip Accept Aetheen of the Gales — Unlocks at 4 (Rorian the Dayseeker)
+  zone map 2521
   accept 92471 npc 251361
 
 step
   tip Turn in Aetheen of the Gales — Unlocks at 4 (Aetheen of the Gales)
+  zone map 2521
   turnin 92471 npc 251366
 
 step
   tip Accept Foul Matriarch (Aetheen of the Gales)
+  zone map 2521
   accept 92470 npc 251366
 
 step
   tip Accept Aggressive Encroachment (Valreaa Valewind)
+  zone map 2521
   accept 96638 npc 251366 optional -- Accept The Adventurer (Aetheen of the Gales) (camping system intro)
   accept 92473 npc 257551
 
 step
   tip Further west, kill Ursera Scavengers and Urs'anah (35.4,25.3): Foul Matriarch
+  zone map 2521
   complete 92470 @36.8,25.5 map 2521
 
 step
   tip Kill bears west of the village for Scrawny Ursera Claws: Aggressive Encroachment
+  zone map 2521
   complete 92473 @39.5,27 map 2521
 
 step
   tip Turn in Foul Matriarch (Aetheen of the Gales)
+  zone map 2521
   turnin 92470 npc 251366
 
 step
   tip Turn in Aggressive Encroachment (Valreaa Valewind)
+  zone map 2521
   turnin 92473 npc 257551
 
 step
   tip Accept The Next Step (Aetheen of the Gales)
+  zone map 2521
   accept 92472 npc 251366
 
 step
   along
+  zone map 2521
   complete 92544 @36.5,33 map 2521 -- Kill Al'Aketh Brutes and Neophytes, and Malduko Cloudcrush atop the temple: Al'Aketh Thugs
 
 step
   when complete 92544
   tip Turn in Al'Aketh Thugs (Hanaa Nightwind)
+  zone map 2521
   turnin 92544 npc 252095
 
 step
   when onquest 96638
   tip == Shen'dar Village (5-9) == Turn in The Adventurer (Raan Wildwind)
+  zone map 2521
   turnin 96638 npc 263664
 
 step
@@ -267,268 +321,332 @@ step
 step
   when complete 96101
   tip Turn in The Great Outdoors (Raan Wildwind)
+  zone map 2521
   turnin 96101 npc 263664
 
 step
   tip The Camping 101 quests (cooking, gathering, crafting, etc.) are available from Raan Wildwind — do them when you learn professions. Turn in The Next Step (Constable Aonda)
+  zone map 2521
   accept 92544 npc 252095 optional -- == On the way to Shen'dar Village (the western detour is optional) == Accept Al'Aketh Thugs (Hanaa Nightwind)
   accept 96101 npc 263664 optional -- Accept The Great Outdoors (Raan Wildwind)
   turnin 92472 npc 251523
 
 step
   tip Accept Welcome to Shen'dar Village (Constable Aonda)
+  zone map 2521
   accept 92514 npc 251523
 
 step
   tip Turn in Welcome to Shen'dar Village (Constable Aonda)
+  zone map 2521
   turnin 92514 npc 251523
 
 step
   tip Accept The Criminal Element (Constable Aonda)
+  zone map 2521
   accept 92517 npc 251523
 
 step
   tip Accept Infiltrating the Cult (Constable Aonda)
+  zone map 2521
   accept 93036 npc 251523
 
 step
   tip Accept The Western Watch (Constable Aonda)
+  zone map 2521
   accept 93926 npc 251523
 
 step
   tip Accept Stolen Supplies (Danarii Bellowveil)
+  zone map 2521
   accept 92551 npc 252172
 
 step
   tip Accept Hippogryph Harassment (Teeri Wellwind)
+  zone map 2521
   accept 93318 object 610954 optional -- Accept WANTED: Vulgara the Insatiable (Bounty Available: Vulgara the Insatiable!) (wanted poster)
   accept 92516 npc 251906
 
 step
   tip Accept Pilfered Windstones (Teeri Wellwind)
+  zone map 2521
   accept 93319 npc 251906
 
 step
   tip Accept The Problem With Prideclaws (Indari Sunseam)
+  zone map 2521
   accept 92515 npc 251993
 
 step
   tip Accept A Little Beauty (Taleen Shimmerthread)
+  zone map 2521
   accept 93951 npc 251991
 
 step
   tip Accept Restocking the Larders (Zerril Softbreeze)
+  zone map 2521
   accept 92553 npc 251905
 
 step
   tip Accept The Windshapers (Illaya Amberwind)
+  zone map 2521
   accept 92595 npc 251902
 
 step
   tip Accept Meddlesome Mages (Illaya Amberwind)
+  zone map 2521
   accept 94411 npc 251902
 
 step
   tip Turn in Infiltrating the Cult (Sania Silverstream)
+  zone map 2521
   accept 94007 npc 254084 optional only Hunter -- Accept Taming the Beast (available from level 10 — if you're not 10 yet, skip it and come back later)
   turnin 93036 npc 251904
 
 step
   tip Accept Falaath Village (Sania Silverstream)
+  zone map 2521
   accept 92529 npc 251904
 
 step
   tip == Shen'dar quest loop: north -> around the village -> southwest -> Western Watch -> Falas -> back to the village == Defeat High Order Apprentices to the north: Meddlesome Mages
+  zone map 2521
   complete 94411 @46.4,38.9 map 2521
 
 step
   tip Kill Highlands Bandits to the northeast, and 'Badwind' Bennic (50.5,33.6): The Criminal Element
+  zone map 2521
   complete 92517 @49,36.4 map 2521
 
 step
   tip Same place: loot Pilfered Windstones from the Highlands Bandits and Bennic: Pilfered Windstones
+  zone map 2521
   complete 93319 @49,36.4 map 2521
 
 step
   tip Kill Prideclaws around the village for their pelts: The Problem With Prideclaws
+  zone map 2521
   complete 92515 @42.6,45.2 map 2521
 
 step
   tip Kill Galestriders around the village for Strider Meat and Small Eggs: Restocking the Larders
+  zone map 2521
   complete 92553 @42,44.9 map 2521
 
 step
   tip Talk to Illaya Amberwind in the village: The Windshapers
+  zone map 2521
   complete 92595 @43.5,44.8 map 2521
 
 step
   along
+  zone map 2521
   complete 93318 @42.6,52.2 map 2521 -- Kill Vulgara (level 8 elite) on the mountain to the south: WANTED: Vulgara the Insatiable
 
 step
   tip Kill Hippogryph Youths, Protectors and the Hippogryph Matriarch to the southwest: Hippogryph Harassment
+  zone map 2521
   complete 92516 @35.4,53.5 map 2521
 
 step
   tip Same place: click Hippogryph Downs: A Little Beauty
+  zone map 2521
   complete 93951 @36.2,54.2 map 2521
 
 step
   tip Turn in The Western Watch (Peacekeeper Vaaniel)
+  zone map 2521
   turnin 93926 npc 252155
 
 step
   tip Accept A Last Request (Peacekeeper Vaaniel)
+  zone map 2521
   accept 93927 npc 252155
 
 step
   tip Turn in Falaath Village (Missionary Jasaan)
+  zone map 2521
   turnin 92529 npc 257065
 
 step
   tip Accept Among the Faithful (Missionary Jasaan)
+  zone map 2521
   accept 92528 npc 257065
 
 step
   tip Among the cultists in Falas: click the wardrobe, then return to the village: Among the Faithful
+  zone map 2521
   complete 92528 @46.8,56.2 map 2521
 
 step
   tip Click the supply caches (small bags) east of Falas: Stolen Supplies
+  zone map 2521
   complete 92551 @49.3,55.9 map 2521
 
 step
   tip Turn in The Criminal Element (Constable Aonda)
+  zone map 2521
   turnin 92517 npc 251523
 
 step
   tip Turn in Stolen Supplies (Danarii Bellowveil)
+  zone map 2521
   turnin 92551 npc 252172
 
 step
   when complete 93318
   tip Turn in WANTED: Vulgara the Insatiable (Danarii Bellowveil)
+  zone map 2521
   turnin 93318 npc 252172
 
 step
   tip Turn in Hippogryph Harassment (Teeri Wellwind)
+  zone map 2521
   turnin 92516 npc 251906
 
 step
   tip Turn in Pilfered Windstones (Teeri Wellwind)
+  zone map 2521
   turnin 93319 npc 251906
 
 step
   tip Turn in The Problem With Prideclaws (Indari Sunseam)
+  zone map 2521
   turnin 92515 npc 251993
 
 step
   tip Turn in A Little Beauty (Taleen Shimmerthread)
+  zone map 2521
   turnin 93951 npc 251991
 
 step
   tip Turn in Restocking the Larders (Zerril Softbreeze)
+  zone map 2521
   turnin 92553 npc 251905
 
 step
   tip Turn in The Windshapers (Illaya Amberwind)
+  zone map 2521
   turnin 92595 npc 251902
 
 step
   tip Turn in Meddlesome Mages (Illaya Amberwind)
+  zone map 2521
   turnin 94411 npc 251902
 
 step
   tip == Shen'dar Village == Turn in Among the Faithful (Constable Aonda)
+  zone map 2521
   turnin 92528 npc 251523
 
 step
   tip Turn in A Last Request (Constable Aonda)
+  zone map 2521
   turnin 93927 npc 251523
 
 step
   tip Accept Havoc in the Highlands (Constable Aonda)
+  zone map 2521
   accept 92550 npc 251523
 
 step
   tip Kill Living Lightning and Al'Aketh Stormcallers, and Commander Cyclas (50.1,56.7): Havoc in the Highlands
+  zone map 2521
   complete 92550 @48.6,55.7 map 2521
 
 step
   tip Turn in Havoc in the Highlands (Constable Aonda)
+  zone map 2521
   turnin 92550 npc 251523
 
 step
   tip Accept To Valanaar (Constable Aonda)
+  zone map 2521
   accept 92579 npc 251523
 
 step
   tip Accept Deliver the Signet (Constable Aonda)
+  zone map 2521
   accept 93948 npc 251523
 
 step
   tip == Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)
+  zone map 2521
   turnin 92579 npc 252383
 
 step
   tip Turn in Deliver the Signet (Talaanis Shadowsong)
+  zone map 2521
   turnin 93948 npc 252476
 
 step
   tip Accept The Grand Skyseer (Valennia Stormfist)
+  zone map 2521
   accept 92700 npc 252383
 
 step
   tip Accept Crab Season (Nyalah Brightfire)
+  zone map 2521
   accept 93317 npc 257006
 
 step
   tip Accept Blood Tithe (Alvarion Windfield)
+  zone map 2521
   accept 92679 npc 252448
 
 step
   tip Accept Aid For The Refugees (Ealaane Nimbuswalker) — it's to the north, so do it later when you go north
+  zone map 2521
   accept 94896 npc 259012
 
 step
   tip Accept The Fate of a Loved One (Ealaane Nimbuswalker) — it's to the north, so do it later when you go north
+  zone map 2521
   accept 94897 npc 259012
 
 step
   only Hunter
   when onquest 94007
+  zone map 2521
   turnin 94007 npc 252389
 
 step
   only Hunter
   tip Accept Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   accept 94013 npc 252389
 
 step
   only Hunter
   tip Accept Training the Beast (Quel'ana Quickgale)
+  zone map 2521
   accept 94050 npc 252389
 
 step
   only Hunter
   tip Accept Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   accept 94978 npc 252389
 
 step
   only Hunter
   tip Accept Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   accept 94979 npc 252389
 
 step
   only Hunter
+  zone map 2521
   kill 250874 quest 94013.1
 
 step
   only Hunter
+  zone map 2521
   kill 254588 quest 94978.1
 
 step
   only Hunter
+  zone map 2521
   kill 251707 quest 94979.1
 
 step
@@ -538,458 +656,566 @@ step
 step
   only Hunter
   tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   turnin 94013 npc 252389
 
 step
   only Hunter
   tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   turnin 94978 npc 252389
 
 step
   only Hunter
   tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
   turnin 94979 npc 252389
 
 step
   only Hunter
   tip Turn in Training the Beast (Quel'dora Quickgale)
+  zone map 2521
   turnin 94050 npc 254411
 
 step
   only Warrior
   tip Accept The Skybreaker Bulwark (Seena Skybreaker)
+  zone map 2521
   accept 94003 npc 252377
 
 step
   only Warrior
+  zone map 2521
   collect 263993 quest 94003.1
 
 step
   only Warrior
   tip Turn in The Skybreaker Bulwark (Seena Skybreaker)
+  zone map 2521
   turnin 94003 npc 252377
 
 step
   only Druid
   tip Accept The Great Ursera Spirit (Lotheluum Starbreeze)
+  zone map 2521
   accept 94006 npc 252359
 
 step
   only Shaman
   tip Accept Call of Fire (Sessaria Skystride)
+  zone map 2521
   accept 97243 npc 252382
 
 step
   tip Turn in The Grand Skyseer (Ayessa Dawnsinger)
+  zone map 2521
   note "Class quests (level 10)"
   turnin 92700 npc 251968
 
 step
   tip Accept The Broken Construct 1 (Ayessa Dawnsinger)
+  zone map 2521
   accept 93735 npc 251968
 
 step
+  zone map 2521
   accept 93746 npc 251968
 
 step
+  zone map 2521
   accept 93740 npc 251968
 
 step
   tip Accept A Grand Adventure (Ayessa Dawnsinger)
+  zone map 2521
   accept 92708 npc 251968
 
 step
   tip Accept Unwelcome Spirits (Endaria Mistgaze) — it's to the north (58,32), so do it later when you go north
+  zone map 2521
   accept 93736 npc 254344
 
 step
   tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
+  zone map 2521
   complete 93740 @64,65 map 2521
 
 step
   tip Go to the marked spot to the north: A Firm Response
+  zone map 2521
   complete 93746 @59.8,57 map 2521
 
 step
   tip Kill Windsong Crawlers to the northwest for their meat: Crab Season
+  zone map 2521
   complete 93317 @53.9,64.1 map 2521
 
 step
+  zone map 2521
   turnin 93746 npc 251968
 
 step
+  zone map 2521
   turnin 93740 npc 251968
 
 step
   tip Turn in Crab Season (Nyalah Brightfire)
+  zone map 2521
   turnin 93317 npc 257006
 
 step
   tip Turn in The Broken Construct 1 (Riaani Nightwind)
+  zone map 2521
   turnin 93735 npc 256083
 
 step
   tip Accept The Broken Construct 2 (Riaani Nightwind)
+  zone map 2521
   accept 93737 npc 256083
 
 step
   tip Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2
+  zone map 2521
   complete 93737 @59,73 map 2521
 
 step
   tip Turn in The Broken Construct 2 (Riaani Nightwind)
+  zone map 2521
   turnin 93737 npc 256083
 
 step
   tip Accept The Broken Construct (Riaani Nightwind)
+  zone map 2521
   accept 93738 npc 256083
 
 step
   tip Turn in The Broken Construct (Ayessa Dawnsinger)
+  zone map 2521
   turnin 93738 npc 251968
 
 step
   tip Turn in A Grand Adventure (Ayessa Dawnsinger)
+  zone map 2521
   turnin 92708 npc 251968
 
 step
   tip == Windfield Orchard (southwest) == Turn in Blood Tithe (Aamelia Windfield)
+  zone map 2521
   turnin 92679 npc 252800
 
 step
   tip Accept Make Yourself Useful (Aamelia Windfield)
+  zone map 2521
   accept 92682 npc 252800
 
 step
   tip Accept Flutterfly Dust (Aamelia Windfield)
+  zone map 2521
   accept 92683 npc 252800
 
 step
   tip Accept Ornery Ornery Galestriders (Aamelia Windfield)
+  zone map 2521
   accept 92684 npc 252800
 
 step
   tip Accept The Hills Have Eyes (Aamelia Windfield)
+  zone map 2521
   accept 92685 npc 252800
 
 step
   tip Accept What Is My Purpose? (Malfunctioning Cyclone Construct)
+  zone map 2521
   accept 92698 npc 250929
 
 step
   tip Kill Ornery Galestriders west of Valanaar for Lowlands Galestrider Tenderloins: Ornery Ornery Galestriders
+  zone map 2521
   complete 92684 @54.6,73.8 map 2521
 
 step
   tip Kill Bandit Highwaymen north of the orchard for Blood-Stained Bandit Masks: The Hills Have Eyes
+  zone map 2521
   complete 92685 @48.2,74.9 map 2521
 
 step
   tip In the orchard, click Ripe Stormapples and kill Hungry Bandits (stealthed): Make Yourself Useful
+  zone map 2521
   complete 92682 @47.1,80.5 map 2521
 
 step
   tip East of the orchard, use the Flutterfly Swatter on Flutterflies and pick up their dust: Flutterfly Dust
+  zone map 2521
   complete 92683 @50,79 map 2521
 
 step
   tip Turn in Make Yourself Useful (Aamelia Windfield)
+  zone map 2521
   turnin 92682 npc 252800
 
 step
   tip Turn in Flutterfly Dust (Aamelia Windfield)
+  zone map 2521
   turnin 92683 npc 252800
 
 step
   tip Turn in Ornery Ornery Galestriders (Aamelia Windfield)
+  zone map 2521
   turnin 92684 npc 252800
 
 step
   tip Turn in The Hills Have Eyes (Aamelia Windfield)
+  zone map 2521
   turnin 92685 npc 252800
 
 step
   tip Turn in What Is My Purpose? (Aamelia Windfield)
+  zone map 2521
   turnin 92698 npc 252800
 
 step
   tip Accept Deliver the News (Aamelia Windfield)
+  zone map 2521
   accept 92703 npc 252800
 
 step
   only Shaman
   tip Turn in Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   turnin 97243 npc 268592
 
 step
   only Shaman
   tip Accept Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   accept 97244 npc 268592
 
 step
   only Shaman
+  zone map 2521
   collect 277267 quest 97244.1
 
 step
   only Shaman
   tip Turn in Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   turnin 97244 npc 268592
 
 step
   only Shaman
   tip Accept Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   accept 97245 npc 268592
 
 step
   only Shaman
+  zone map 2521
   collect 277269 quest 97245.1
 
 step
   only Shaman
   tip Turn in Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   turnin 97245 npc 268592
 
 step
   only Shaman
   tip Accept Call of Fire (Olariaan Swiftburn)
+  zone map 2521
   accept 97257 npc 268592
 
 step
   only Shaman
   tip Turn in Call of Fire (Sessaria Skystride)
+  zone map 2521
   turnin 97257 npc 252382
 
 step
   tip Turn in Deliver the News (Alvarion Windfield)
+  zone map 2521
   note "== Valanaar =="
   turnin 92703 npc 252448
 
 step
   tip Accept Unnerving Silence (Lotheluum Starbreeze)
+  zone map 2521
   accept 94484 npc 252359
 
 step
   tip Accept Al'Aketh Assassins (Fendaal Windstone)
+  zone map 2521
   note "== North (11-12) =="
   accept 98512 npc 273017
 
 step
   tip Kill Al'Aketh Assassins: Al'Aketh Assassins
+  zone map 2521
   complete 98512 @55.6,60.3 map 2521
 
 step
   tip Turn in Al'Aketh Assassins (Fendaal Windstone)
+  zone map 2521
   turnin 98512 npc 273017
 
 step
   tip Turn in Unnerving Silence (Elegael Thornpaw)
+  zone map 2521
   turnin 94484 npc 257944
 
 step
   tip Accept Feathers for Binding (Elegael Thornpaw)
+  zone map 2521
   accept 94486 npc 257944
 
 step
   tip Accept Unwanted and Unworthy (Elegael Thornpaw)
+  zone map 2521
   accept 94487 npc 257944
 
 step
   tip Accept The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
   accept 94488 npc 257944
 
 step
   tip Accept Tears of the Lady (Elegael Thornpaw)
+  zone map 2521
   accept 94485 npc 257944
 
 step
   tip Accept The Wounds of Betrayal (Elegael Thornpaw)
+  zone map 2521
   accept 94489 npc 257944
 
 step
   tip Accept Mercy Falls on Deaf Ears (Vayn Moongaze)
+  zone map 2521
   accept 93165 npc 254151
 
 step
   tip Accept The Strange Hermit (Strange Hermit))
+  zone map 2521
   accept 93159 npc 251684
 
 step
   tip Accept The Forest's Bounty (Strange Hermit))
+  zone map 2521
   accept 93160 npc 251684
 
 step
   tip Accept Free the Hollows (Strange Hermit))
+  zone map 2521
   accept 93172 npc 251684
 
 step
   tip Talk to the Strange Hermit to the west: The Strange Hermit
+  zone map 2521
   complete 93159 @54,39 map 2521
 
 step
   tip Click the Zephyrseeds, especially around trees: The Forest's Bounty
+  zone map 2521
   complete 93160 @58.6,38.9 map 2521
 
 step
   tip Kill Shadowgale Shrieklings to the west for Pristine Shriekling Feathers: Feathers for Binding
+  zone map 2521
   complete 94486 @59.2,38.5 map 2521
 
 step
   tip Click the Lady's Tear Moss on the trees: Tears of the Lady
+  zone map 2521
   complete 94485 @60.9,38.4 map 2521
 
 step
   tip Free the Wind Hollows to the north: Free the Hollows
+  zone map 2521
   complete 93172 @58.2,32.2 map 2521
 
 step
   tip Same place, Wind Hollows: Unwelcome Spirits
+  zone map 2521
   complete 93736 @58.2,32.2 map 2521
 
 step
   tip Same place, click the crates (Abandoned Belongings): Aid For The Refugees
+  zone map 2521
   complete 94896 @58.1,31.9 map 2521
 
 step
   tip A bit further north, click Resaan Nimbuswalker: The Fate of a Loved One
+  zone map 2521
   complete 94897 @57,29.5 map 2521
 
 step
   tip To the east, click the druids and find Jorel Windsinger inside the cave: The Wounds of Betrayal
+  zone map 2521
   complete 94489 @64.5,34.5 map 2521
 
 step
   tip Kill Commander Haalien: The Ties That Bind
+  zone map 2521
   complete 94488 @65.4,36.6 map 2521
 
 step
   tip Kill Al'Aketh Stormchasers and Footsoldiers: Unwanted and Unworthy
+  zone map 2521
   complete 94487 @63.7,37.3 map 2521
 
 step
   tip Same Al'Aketh (collect their ears): Mercy Falls on Deaf Ears
+  zone map 2521
   complete 93165 @63.7,37.3 map 2521
 
 step
   tip Turn in Mercy Falls on Deaf Ears (Vayn Moongaze)
+  zone map 2521
   accept 94490 item 265476 optional -- Starts from an item: Ripped Missive (accept when you loot it)
   accept 93459 npc 254151 optional -- Starts from an item: More Al'Aketh Ears (accept when you loot it)
   turnin 93165 npc 254151
 
 step
   when complete 93459
+  zone map 2521
   turnin 93459 npc 254151
 
 step
   tip Turn in Feathers for Binding (Elegael Thornpaw)
+  zone map 2521
   turnin 94486 npc 257944
 
 step
   tip Turn in Unwanted and Unworthy (Elegael Thornpaw)
+  zone map 2521
   turnin 94487 npc 257944
 
 step
   tip Turn in The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
   turnin 94488 npc 257944
 
 step
   tip Turn in Tears of the Lady (Elegael Thornpaw)
+  zone map 2521
   turnin 94485 npc 257944
 
 step
   tip Turn in The Wounds of Betrayal (Elegael Thornpaw)
+  zone map 2521
   turnin 94489 npc 257944
 
 step
   when onquest 94490
   tip Turn in Ripped Missive (Elegael Thornpaw)
+  zone map 2521
   turnin 94490 npc 257944
 
 step
   tip Accept The Fate of the Den (Elegael Thornpaw)
+  zone map 2521
   accept 94491 npc 257944
 
 step
   tip Turn in The Strange Hermit (Strange Hermit))
+  zone map 2521
   turnin 93159 npc 251684
 
 step
   tip Turn in The Forest's Bounty (Strange Hermit))
+  zone map 2521
   turnin 93160 npc 251684
 
 step
   tip Turn in Free the Hollows (Strange Hermit))
+  zone map 2521
   turnin 93172 npc 251684
 
 step
   tip == Valanaar == Turn in The Fate of the Den (Lotheluum Starbreeze)
+  zone map 2521
   turnin 94491 npc 252359
 
 step
   tip Turn in Unwelcome Spirits (Endaria Mistgaze)
+  zone map 2521
   turnin 93736 npc 254344
 
 step
   tip Turn in Aid For The Refugees (Ealaane Nimbuswalker)
+  zone map 2521
   turnin 94896 npc 259012
 
 step
   tip Turn in The Fate of a Loved One (Ealaane Nimbuswalker)
+  zone map 2521
   turnin 94897 npc 259012
   note "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff."
 
 step
   when onquest 92871
+  zone map 2521
   turnin 92871 npc 252383
 
 step
   when onquest 93320
   tip Turn in Tower Defense (Yorana Windyreed)
+  zone map 2521
   turnin 93320 npc 252378
 
 step
   along
+  zone map 2521
   complete 92642 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
 
 step
   along
+  zone map 2521
   complete 92645 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
 
 step
   when complete 92642
   tip Turn in Disrupting Logistics (Yorana Windyreed)
+  zone map 2521
   turnin 92642 npc 252378
 
 step
   when complete 92645
   tip Turn in Breaking the Breaker (Yorana Windyreed)
+  zone map 2521
   turnin 92645 npc 252378
 
 step
   when onquest 92880
   tip Turn in Return to Valanaar (Valennia Stormfist)
+  zone map 2521
   turnin 92880 npc 252383
 
 step
   only Druid
   tip Turn in The Great Ursera Spirit (Urs'endris)
+  zone map 2521
   note "== Druid class quest == Visit Urs'endris north of the Watchtower."
   turnin 94006 npc 255853
 
 step
   only Druid
   tip Accept Strength and Mercy (Urs'endris)
+  zone map 2521
   accept 94638 npc 255853
 
 step
   only Druid
+  zone map 2521
   kill 258443 quest 94638.1
 
 step
   only Druid
   tip Turn in Strength and Mercy (Urs'endris)
+  zone map 2521
   turnin 94638 npc 255853
 
 step
+  zone map 2521
   accept 92871 npc 251968 optional
   accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
   accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
@@ -999,20 +1225,24 @@ step
 
 step
   tip == To Thunder Bluff == Take the skyship to Thunder Bluff from the dock west of Valanaar:
+  zone map 2521
   goto 57.9,80.9 r 20 map 2521
 
 step
   tip Thunder Bluff Discover the Thunder Bluff flight path:
+  zone map 1456
   getfp "Thunder Bluff"
 
 step
   only Druid
   tip Accept from Muln Earthfury: Child of Nature
+  zone map 1412
   accept 94911 npc 259118
 
 step
   only Druid
   tip Turn in to Turak Runetotem on the Elder Rise in Thunder Bluff: Child of Nature
+  zone map 1456
   turnin 94911 npc 3033
   accept 95350 npc 259119 optional -- Accept from Alaana Stormwalker: Welcome to Azeroth — turn it in to Thrall in Orgrimmar (when you pass through Orgrimmar).
   note "== Level 12: on to BalCon 12-25 =="
