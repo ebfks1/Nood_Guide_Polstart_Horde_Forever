@@ -685,21 +685,6 @@ step
   accept 97243 npc 252382
 
 step
-  tip Accept The Broken Construct 1 (Ayessa Dawnsinger)
-  zone map 2521
-  accept 93735 npc 251968
-
-step
-  tip Accept A Grand Adventure (Ayessa Dawnsinger)
-  zone map 2521
-  accept 92708 npc 251968
-
-step
-  tip Accept Unwelcome Spirits (Endaria Mistgaze) — it's to the north (58,32), so do it later when you go north
-  zone map 2521
-  accept 93736 npc 254344
-
-step
   only Hunter
   zone map 2521
   kill 250874 quest 94013.1
@@ -713,45 +698,6 @@ step
   tip Turn in Crab Season (Nyalah Brightfire)
   zone map 2521
   turnin 93317 npc 257006
-
-step
-  tip Turn in The Broken Construct 1 (Riaani Nightwind)
-  zone map 2521
-  turnin 93735 npc 256083
-
-step
-  tip Accept The Broken Construct 2 (Riaani Nightwind)
-  zone map 2521
-  accept 93737 npc 256083
-
-step
-  tip Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2
-  zone map 2521
-  complete 93737 @59,73 map 2521
-
-step
-  tip Turn in The Broken Construct 2 (Riaani Nightwind)
-  zone map 2521
-  turnin 93737 npc 256083
-
-step
-  tip Accept The Broken Construct (Riaani Nightwind)
-  zone map 2521
-  accept 93738 npc 256083
-
-step
-  tip Turn in The Broken Construct (Ayessa Dawnsinger)
-  zone map 2521
-  turnin 93738 npc 251968
-
-step
-  zone map 2521
-  accept 93746 npc 251968
-
-step
-  tip Turn in A Grand Adventure (Ayessa Dawnsinger)
-  zone map 2521
-  turnin 92708 npc 251968
 
 step
   tip == Windfield Orchard (southwest) == Turn in Blood Tithe (Aamelia Windfield)
@@ -950,19 +896,14 @@ step
   turnin 98512 npc 273017
 
 step
-  tip Go to the marked spot to the north: A Firm Response
-  zone map 2521
-  complete 93746 @59.8,57 map 2521
-
-step
   tip Turn in A Last Request (Constable Aonda)
   zone map 2521
   turnin 93927 npc 251523
 
 step
-  tip Accept To Valanaar (Constable Aonda)
+  tip Turn in Havoc in the Highlands (Constable Aonda)
   zone map 2521
-  accept 92579 npc 251523
+  turnin 92550 npc 251523
 
 step
   tip Accept Deliver the Signet (Constable Aonda)
@@ -970,9 +911,9 @@ step
   accept 93948 npc 251523
 
 step
-  tip Turn in Havoc in the Highlands (Constable Aonda)
+  tip Accept To Valanaar (Constable Aonda)
   zone map 2521
-  turnin 92550 npc 251523
+  accept 92579 npc 251523
 
 step
   tip Turn in Stolen Supplies (Danarii Bellowveil)
@@ -1023,11 +964,6 @@ step
   tip Click the Lady's Tear Moss on the trees: Tears of the Lady
   zone map 2521
   complete 94485 @60.9,38.4 map 2521
-
-step
-  tip Same place, Wind Hollows: Unwelcome Spirits
-  zone map 2521
-  complete 93736 @58.2,32.2 map 2521
 
 step
   tip Same place, click the crates (Abandoned Belongings): Aid For The Refugees
@@ -1116,16 +1052,6 @@ step
   accept 94491 npc 257944
 
 step
-  tip Kill Commander Haalien: The Ties That Bind
-  zone map 2521
-  complete 94488 @65.4,36.6 map 2521
-
-step
-  tip Turn in The Ties That Bind (Elegael Thornpaw)
-  zone map 2521
-  turnin 94488 npc 257944
-
-step
   tip Turn in The Strange Hermit (Strange Hermit))
   zone map 2521
   turnin 93159 npc 251684
@@ -1166,11 +1092,6 @@ step
   turnin 94491 npc 252359
 
 step
-  tip Turn in Unwelcome Spirits (Endaria Mistgaze)
-  zone map 2521
-  turnin 93736 npc 254344
-
-step
   tip Turn in Aid For The Refugees (Ealaane Nimbuswalker)
   zone map 2521
   turnin 94896 npc 259012
@@ -1182,19 +1103,6 @@ step
   note "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff."
 
 step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
-  along until q92871
-  zone map 2521
-  accept 92871 npc 251968 optional
-
-step
   tip == Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)
   zone map 2521
   turnin 92579 npc 252383
@@ -1203,12 +1111,6 @@ step
   tip Accept The Grand Skyseer (Valennia Stormfist)
   zone map 2521
   accept 92700 npc 252383
-
-step
-  when onquest 92871
-  label q92871
-  zone map 2521
-  turnin 92871 npc 252383
 
 step
   along until q93320
@@ -1287,11 +1189,6 @@ step
   accept 94638 npc 255853
 
 step
-  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
-  zone map 2521
-  complete 93740 @64,65 map 2521
-
-step
   only Druid
   zone map 2521
   kill 258443 quest 94638.1
@@ -1303,14 +1200,30 @@ step
   turnin 94638 npc 255853
 
 step
-  zone map 2521
-  turnin 93740 npc 251968
-
-step
   tip Turn in The Grand Skyseer (Ayessa Dawnsinger)
   zone map 2521
   note "Class quests (level 10)"
   turnin 92700 npc 251968
+
+step
+  tip Accept Unwelcome Spirits (Endaria Mistgaze) — it's to the north (58,32), so do it later when you go north
+  zone map 2521
+  accept 93736 npc 254344
+
+step
+  tip Accept A Grand Adventure (Ayessa Dawnsinger)
+  zone map 2521
+  accept 92708 npc 251968
+
+step
+  tip Turn in A Grand Adventure (Ayessa Dawnsinger)
+  zone map 2521
+  turnin 92708 npc 251968
+
+step
+  tip Accept The Broken Construct 1 (Ayessa Dawnsinger)
+  zone map 2521
+  accept 93735 npc 251968
 
 step
   level 12
@@ -1319,6 +1232,93 @@ step
   tip == To Thunder Bluff == Take the skyship to Thunder Bluff from the dock west of Valanaar:
   zone map 2521
   goto 57.9,80.9 r 20 map 2521
+
+step
+  tip Turn in The Broken Construct 1 (Riaani Nightwind)
+  zone map 2521
+  turnin 93735 npc 256083
+
+step
+  tip Accept The Broken Construct 2 (Riaani Nightwind)
+  zone map 2521
+  accept 93737 npc 256083
+
+step
+  tip Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2
+  zone map 2521
+  complete 93737 @59,73 map 2521
+
+step
+  tip Turn in The Broken Construct 2 (Riaani Nightwind)
+  zone map 2521
+  turnin 93737 npc 256083
+
+step
+  tip Accept The Broken Construct (Riaani Nightwind)
+  zone map 2521
+  accept 93738 npc 256083
+
+step
+  tip Kill Commander Haalien: The Ties That Bind
+  zone map 2521
+  complete 94488 @65.4,36.6 map 2521
+
+step
+  tip Same place, Wind Hollows: Unwelcome Spirits
+  zone map 2521
+  complete 93736 @58.2,32.2 map 2521
+
+step
+  tip Turn in The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
+  turnin 94488 npc 257944
+
+step
+  tip Turn in Unwelcome Spirits (Endaria Mistgaze)
+  zone map 2521
+  turnin 93736 npc 254344
+
+step
+  tip Turn in The Broken Construct (Ayessa Dawnsinger)
+  zone map 2521
+  turnin 93738 npc 251968
+
+step
+  zone map 2521
+  accept 93746 npc 251968
+
+step
+  tip Go to the marked spot to the north: A Firm Response
+  zone map 2521
+  complete 93746 @59.8,57 map 2521
+
+step
+  zone map 2521
+  turnin 93746 npc 251968
+
+step
+  along until q92871
+  zone map 2521
+  accept 92871 npc 251968 optional
+
+step
+  zone map 2521
+  accept 93740 npc 251968
+
+step
+  when onquest 92871
+  label q92871
+  zone map 2521
+  turnin 92871 npc 252383
+
+step
+  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
+  zone map 2521
+  complete 93740 @64,65 map 2521
+
+step
+  zone map 2521
+  turnin 93740 npc 251968
 
 step
   tip Thunder Bluff Discover the Thunder Bluff flight path:

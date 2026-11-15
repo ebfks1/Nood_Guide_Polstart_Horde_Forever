@@ -628,25 +628,46 @@ class Guide:
                 prev = p
         return n
 
+    def unlocked_at(self, qid, last):
+        """The step whose hand-in makes this quest available (None: nothing in this guide to wait for).
+        A starting guide has no guide before it, so the game data's own lists decide; later guides go by what
+        lint reported, which knows the guides chaining into them."""
+        at = []
+        q = db.quest(qid)
+        if self.races and q:
+            have = [last[p] for p in q['preAll'] if p in last]
+            if have:
+                at.append(max(have))
+            some = [last[p] for p in q['pre'] if p in last]
+            if some and len(some) == len(q['pre']):
+                at.append(min(some))
+        elif qid in PREREQ:
+            have = [last[p] for p in PREREQ[qid] if p in last]
+            if have:
+                at.append(max(have))
+        return max(at) if at else None
+
     def fix_prereqs(self):
         """A quest taken before its prerequisite is handed in (as Polestar's data and its own guides order them) moves to
         right after that hand-in: the accept, and any of the quest's own steps that came before that point."""
         def quests(st):
             return {g['quest'] for g in st['goals'] if 'quest' in g}
         for _ in range(300):
-            last = {}
+            last = {}  # quest -> the step of its first hand-in (the later twin of a level-rule pair counts with it)
             for i, st in enumerate(self.steps):
                 for g in st['goals']:
                     if g['t'] == 'turnin':
-                        last[g['quest']] = i
+                        q0 = g['quest']
+                        if q0 not in last or (last[q0] == i - 1 and st.get('when')):
+                            last[q0] = i
             move = None
             for i, st in enumerate(self.steps):
                 for g in st['goals']:
-                    if g['t'] != 'accept' or g['quest'] not in PREREQ:
+                    if g['t'] != 'accept':
                         continue
-                    at = [last[p] for p in PREREQ[g['quest']] if p in last]
-                    if at and max(at) > i:
-                        move = (g['quest'], i, max(at))
+                    target = self.unlocked_at(g['quest'], last)
+                    if target is not None and target > i:
+                        move = (g['quest'], i, target)
                         break
                 if move:
                     break
@@ -696,7 +717,7 @@ class Guide:
                 lo = best + 1
             self.steps = kept
             report['prerequisite order: quests moved'] += 1
-            notes_log.append('PREREQ %s: quest %d now follows the turn-in of %s (was step %d, hand-in at step %d; %d steps: %s)' % (self.stem, q, PREREQ[q], first, target, len(taken), '+'.join(g['t'] for st in taken for g in st['goals'] if g.get('quest') == q)))
+            notes_log.append('PREREQ %s: quest %d now follows the turn-in of %s (was step %d, hand-in at step %d; %d steps: %s)' % (self.stem, q, (db.quest(q) or {}).get('preAll') or (db.quest(q) or {}).get('pre') or PREREQ.get(q), first, target, len(taken), '+'.join(g['t'] for st in taken for g in st['goals'] if g.get('quest') == q)))
 
     def merge_runs(self):
         """Quest work with no place of its own in a row (inside a dungeon): one step, every goal open together."""
