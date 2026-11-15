@@ -296,9 +296,7 @@ step
 
 step
   tip 바로 아래 발굴 현장 던전 입구로 들어가세요 용아귀 수호병·파괴공작원을 처치하고 용아귀 마술사에게서 물건을 회수하세요: Open the Maw
-  kill 275045 quest 95682.1
-  kill 275044 quest 95682.2
-  collect 284844 quest 95682.3
+  complete 95682
 
 step
   along
@@ -306,7 +304,7 @@ step
 
 step
   along
-  collect 271100 quest 95697.1 -- 오그리마 보르스탄의 "달라지는 입맛"을 받아 왔다면 덤불 랩터 고기: 달라지는 입맛
+  complete 95697 -- 오그리마 보르스탄의 "달라지는 입맛"을 받아 왔다면 덤불 랩터 고기: 달라지는 입맛
 
 step
   tip 죽음의 추적자에게 퀘스트 완료: Open the Maw
@@ -529,7 +527,7 @@ step
 
 step
   tip 같은 곳에서 도둑맞은 보급품 8개를 모으세요: 도둑맞은 높새바람 보급품
-  collect 279383 quest 98069.1
+  complete 98069
 
 step
   tip 지점의 마루둥지로 이동하세요.
@@ -755,7 +753,7 @@ step
 step
   tip 알터랙 산맥 남서쪽(로더미어 호수 쪽) 교도관의 사물함에서 때 묻은 열쇠: Key to the City
   zone map 1416
-  collect 279469 quest 93680.1 @16.4,89.3 map 1416
+  complete 93680 @16.4,89.3 map 1416
 
 step
   tip 바로 북쪽 달라란 수용소: 언데드 배반자 4명(릭터·알리나·더모트·케건)에게서 혈석 4개: 감옥 습격
@@ -781,8 +779,8 @@ step
   accept 545 npc 2410
 
 step
-  collect 275997 quest 96988.1 -- 달라란 던전 입구로 들어가세요 부서진 파수꾼에게서 금 간 파수꾼 핵 6개: Source of Power
-  kill 247126 quest 96986.1 -- 무덤 기사 아트렉시스를 처치하세요: 무덤 기사
+  complete 96988 -- 달라란 던전 입구로 들어가세요 부서진 파수꾼에게서 금 간 파수꾼 핵 6개: Source of Power
+  complete 96986 -- 무덤 기사 아트렉시스를 처치하세요: 무덤 기사
 
 step
   along until q96987
@@ -790,7 +788,7 @@ step
 
 step
   along until q96987
-  collect 275996 quest 96987.1 -- "달라란의 창건" 책: Opportunistic Education
+  complete 96987 -- "달라란의 창건" 책: Opportunistic Education
 
 step
   when complete 96987
@@ -834,7 +832,7 @@ step
   accept 96984 npc 269127
 
 step
-  collect 251961 quest 96984.1 -- 달라란 안의 비전 티끌을 모으세요: Heart of Disruption
+  complete 96984 -- 달라란 안의 비전 티끌을 모으세요: Heart of Disruption
 
 step
   tip 학자 워딘 보이드글레어에게 퀘스트 완료: Heart of Disruption

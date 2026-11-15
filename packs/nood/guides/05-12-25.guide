@@ -310,19 +310,16 @@ step
   goto 52.6,49.2 r 20 map 1454
 
 step
-  kill 11318 quest 5723.1 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
-  kill 11319 quest 5723.2
+  complete 5723 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
   complete 5722 -- Loot the satchel from Maur Grimtotem's corpse: Searching for the Lost Satchel
   turnin 5722 -- Turn it in right at the corpse: Searching for the Lost Satchel
   accept 5724 -- Then accept Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
-  kill 11519 quest 5728.1 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
-  kill 11518 quest 5728.2
-  collect 14540 quest 5761.1 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
+  complete 5728 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
+  complete 5761 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
 
 step
   along until q5725
-  collect 14395 quest 5725.1 -- Two books (spellbook and tome): The Power to Destroy...
-  collect 14396 quest 5725.2
+  complete 5725 -- Two books (spellbook and tome): The Power to Destroy...
 
 step
   tip Leave the dungeon and turn in to Thrall: Hidden Enemies
@@ -562,7 +559,7 @@ step
 step
   tip Kill Riptear, the level 13 elite patrolling the northeast coast, and take its heart: Rear Guard Patrol
   zone map 1420
-  collect 286326 quest 99156.1 @81.3,44.5 map 1420
+  complete 99156 @81.3,44.5 map 1420
 
 step
   tip Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)
@@ -580,8 +577,8 @@ step
   goto 62,68 r 20 map 1420
 
 step
-  collect 275443 quest 95216.1 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
-  collect 268580 quest 92421.1 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
+  complete 95216 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
+  complete 92421 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
   accept 97288 item 280438 -- Accept from the Baron's "Abominable Head": Unending Torment
 
 step
@@ -590,7 +587,7 @@ step
 
 step
   complete 92401 -- Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
-  kill 250657 quest 92422.1 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
+  complete 92422 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
 
 step
   tip Turn in to Deathguard Kristof: The Wrath of Rath'mael
@@ -632,9 +629,7 @@ step
 step
   tip Toxic Skullcap (Tawny Grisette, Trade Quarter), Blisterweed (pot behind the herbalist), Essence of Agony (poison vendor, Rogues' Quarter): Unending Torment
   zone map 1458
-  collect 281246 quest 97291.1
-  collect 281300 quest 97291.2
-  collect 8923 quest 97291.3
+  complete 97291
 
 step
   tip Turn in to Faranell: Unending Torment
@@ -685,7 +680,7 @@ step
 step
   tip Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener
   zone map 1413
-  collect 276070 quest 97003.1 @57.8,27 map 1413
+  complete 97003 @57.8,27 map 1413
 
 step
   tip Turn in to Gur'ak: Chol'aruk the Ravener
@@ -996,19 +991,16 @@ step
 step
   tip 20 Deviate Hides: Deviate Hides
   zone map 1413
-  collect 6443 quest 1486.1
+  complete 1486
 
 step
   tip 7 each of Deviate Ravagers, Vipers, Shamblers and Dreadfangs: Deviate Eradication
-  kill 3636 quest 1487.1
-  kill 5755 quest 1487.2
-  kill 5761 quest 1487.3
-  kill 5056 quest 1487.4
+  complete 1487
 
 step
   tip Mad Magglish's wine: Trouble at the Docks
   zone map 1413
-  collect 5334 quest 959.1
+  complete 959
 
 step
   tip 10 Serpentbloom: Serpentbloom
@@ -1017,15 +1009,12 @@ step
 
 step
   tip Gems from the 4 Fang leaders (Cobrahn, Anacondra, Pythas, Serpentis): Leaders of the Fang
-  collect 9738 quest 914.1
-  collect 9739 quest 914.2
-  collect 9740 quest 914.3
-  collect 9741 quest 914.4
+  complete 914
 
 step
   tip 6 Wailing Essences: Smart Drinks
   zone map 1413
-  collect 6464 quest 1491.1
+  complete 1491
 
 step
   tip Accept from the 'Glowing Shard' dropped by the final boss Mutanus: The Glowing Shard
@@ -1082,7 +1071,7 @@ step
 step
   tip Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz
   zone map 1413
-  collect 253710 quest 92706.1 @64.3,41.7 map 1413
+  complete 92706 @64.3,41.7 map 1413
 
 step
   tip Turn in to Gazlowe: WANTED: Bruuz
@@ -1187,7 +1176,7 @@ step
 step
   only Priest,Warlock
   along until q6561
-  collect 5881 quest 6561.1 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
+  complete 6561 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
 
 step
   only Priest,Warlock
@@ -1336,8 +1325,8 @@ step
 
 step
   complete 1098 -- Find Deathstalkers Adamant and Vincent: Deathstalkers in Shadowfang
-  collect 6283 quest 1013.1 -- The Book of Ur (library): The Book of Ur
-  collect 5442 quest 1014.1 -- Head of the final boss, Archmage Arugal: Arugal Must Die
+  complete 1013 -- The Book of Ur (library): The Book of Ur
+  complete 1014 -- Head of the final boss, Archmage Arugal: Arugal Must Die
   turnin 1098 -- Turn in to Deathstalker Vincent inside the dungeon: Deathstalkers in Shadowfang
 
 step
@@ -1526,9 +1515,9 @@ step
 step
   accept 6564 item 16790 -- Pick up the Damp Note near the entrance to accept Allegiance to the Old Gods
   accept 6561 -- Accept from Argent Guard Thaelrid: Blackfathom Villainy
-  collect 16762 quest 6921.1 -- Fathom Core: Amongst The Ruins
+  complete 6921 -- Fathom Core: Amongst The Ruins
   accept 6922 item 16782 -- Accept from Lord Aquanis's Strange Water Globe (Fathom Core -> altar): Baron Aquanis
-  collect 5881 quest 6561.1 -- Head of Twilight Lord Kelris: Blackfathom Villainy
+  complete 6561 -- Head of Twilight Lord Kelris: Blackfathom Villainy
 
 step
   tip Turn in to Je'neu Sancrea at Zoram'gar Outpost: Amongst The Ruins

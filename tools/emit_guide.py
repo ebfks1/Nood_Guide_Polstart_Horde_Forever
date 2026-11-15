@@ -80,6 +80,26 @@ def named(kind, id, name):
     return '%d %s' % (id, quoted(name)) if unknown(kind, id) and name else str(id)
 
 
+ELITE = set(C.CI.get('elite', []))
+
+
+def splittable(qid, place):
+    """A whole-quest goal is written as one goal per objective only when nothing is lost: every objective has a
+    known spawn (else that goal has no place and no arrow), none is elite (a dungeon quest stays one goal), and,
+    when the guide wrote a hunting spot, every objective spawns near it (the spot stays the arrow's target)."""
+    q = db.quest(qid)
+    if not q or not q['objs'] or qid in ELITE:
+        return False
+    for kind, id, cnt in q['objs']:
+        refs = C.objective_refs({'objs': [(kind, id, cnt)]})
+        spots = [(mp, x, y) for r in refs for e in [db.entity(r)] if e for mp, era, x, y, rr in e[1]]
+        if not spots:
+            return False
+        if place and not any(mp == place['map'] and C.dist((x, y), (place['x'], place['y'])) <= 8 for mp, x, y in spots):
+            return False
+    return True
+
+
 def quest_objectives(qid):
     """One goal per objective, placed by the compiler's data; None when an objective is of a kind with no verb."""
     q = db.quest(qid)
@@ -131,7 +151,7 @@ def goal_lines(g, lang, along, stats):
     if t == 'complete':
         # one goal per objective wherever the data allows: Polestar's "While you're here" panel (Dynamic Questing)
         # offers kill/collect/interact goals of later steps when you pass them, never a whole-quest `complete`
-        objs = quest_objectives(g['quest']) if known else None
+        objs = quest_objectives(g['quest']) if known and splittable(g['quest'], g if written else None) else None
         if objs:
             if written:
                 stats['complete: one goal per objective, at the guide\'s place'] += 1

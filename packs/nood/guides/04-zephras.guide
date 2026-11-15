@@ -439,8 +439,7 @@ step
 step
   tip Kill Galestriders around the village for Strider Meat and Small Eggs: Restocking the Larders
   zone map 2521
-  collect 6889 quest 92553.1 @42,44.9 map 2521
-  collect 5469 quest 92553.2 @42,44.9 map 2521
+  complete 92553 @42,44.9 map 2521
 
 step
   tip Talk to Illaya Amberwind in the village: The Windshapers
@@ -450,7 +449,7 @@ step
 step
   along until q93318
   zone map 2521
-  collect 257942 quest 93318.1 @42.6,52.2 map 2521 -- Kill Vulgara (level 8 elite) on the mountain to the south: WANTED: Vulgara the Insatiable
+  complete 93318 @42.6,52.2 map 2521 -- Kill Vulgara (level 8 elite) on the mountain to the south: WANTED: Vulgara the Insatiable
 
 step
   tip Kill Hippogryph Youths, Protectors and the Hippogryph Matriarch to the southwest: Hippogryph Harassment
@@ -1199,9 +1198,7 @@ step
 step
   tip Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2
   zone map 2521
-  collect 260881 quest 93737.1 @59,73 map 2521
-  collect 260883 quest 93737.2 @59,73 map 2521
-  collect 260880 quest 93737.3 @59,73 map 2521
+  complete 93737 @59,73 map 2521
 
 step
   tip Turn in The Broken Construct 2 (Riaani Nightwind)

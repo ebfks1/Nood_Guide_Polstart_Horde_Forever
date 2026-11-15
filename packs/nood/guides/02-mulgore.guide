@@ -516,10 +516,7 @@ step
 
 step
   zone map 1412
-  collect 4804 quest 766.1 @51.5,50.9 map 1412
-  collect 4805 quest 766.2 @51.5,50.9 map 1412
-  collect 4806 quest 766.3 @51.5,50.9 map 1412
-  collect 4807 quest 766.4 @51.5,50.9 map 1412
+  complete 766 @51.5,50.9 map 1412
 
 step
   tip Accept from Krang Stonehoof: Sparring Match (Forever new)

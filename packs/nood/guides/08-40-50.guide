@@ -54,7 +54,7 @@ step
   when level<41
   tip Find the Sigil of Strom in Stromgarde to the west (Stromgarde Defenders and Troll Hunters around it): Sigil of Strom
   zone map 1417
-  collect 4440 quest 639.1 @24,59 map 1417
+  complete 639 @24,59 map 1417
 
 step
   tip Head west to Faldir's Cove — follow the small tunnel down to the cove.
@@ -816,7 +816,7 @@ step
   tip Kill Bhag'thera: Panther Mastery
   zone map 1434
   note "If she's not there, check this spot too."
-  collect 3876 quest 193.1
+  complete 193
 
 step
   when level<45
@@ -1207,7 +1207,7 @@ step
   when level<47
   tip *Find* and kill Boss Tho'grun: Broken Alliances
   zone map 1418
-  collect 4640 quest 782.1 @62,72 map 1418
+  complete 782 @62,72 map 1418
 
 step
   when level<47
@@ -1233,8 +1233,7 @@ step
 step
   tip Collect 8 Dentrium and 8 An'Alleum Power Stones from Shadowforge dwarves: Power Stones
   zone map 1418
-  collect 8009 quest 2418.1
-  collect 8052 quest 2418.2
+  complete 2418
 
 step
   tip Take the Garrett family treasure from the chest in the South Common Hall: Reclaimed Treasures
@@ -1244,7 +1243,7 @@ step
 step
   tip Find the valuable necklace inside (a damaged one counts): Necklace Recovery
   zone map 1418
-  collect 7666 quest 2283.1
+  complete 2283
 
 step
   tip Collect 12 Magenta Fungus Caps inside: Uldaman Reagent Run
@@ -1291,7 +1290,7 @@ step
   when level<48
   tip Use the empty vessels on the Scorched Guardians in the east: Badlands Reagent Run II
   zone map 1418
-  collect 7867 quest 2203.1 @81.4,52.9 map 1418
+  complete 2203 @81.4,52.9 map 1418
 
 step
   when level<48
@@ -2059,16 +2058,15 @@ step
   goto 38.7,20 r 20 map 1446
 
 step
-  collect 9238 quest 2865.1 -- Kill the scarabs inside for 5 Uncracked Scarab Shells: Scarab Shells
-  collect 9523 quest 3042.1 -- Collect 20 Vials of Troll Temper from the Sandfury trolls: Troll Temper
-  collect 8548 quest 2768.1 -- Kill Sergeant Bly and take the Divino-matic Rod: Divino-matic Rod
-  collect 10660 quest 3527.1 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets: The Prophecy of Mosh'aru
-  collect 10661 quest 3527.2
-  collect 9234 quest 2846.1 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
+  complete 2865 -- Kill the scarabs inside for 5 Uncracked Scarab Shells: Scarab Shells
+  complete 3042 -- Collect 20 Vials of Troll Temper from the Sandfury trolls: Troll Temper
+  complete 2768 -- Kill Sergeant Bly and take the Divino-matic Rod: Divino-matic Rod
+  complete 3527 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets: The Prophecy of Mosh'aru
+  complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
 
 step
   along until q2770
-  collect 8707 quest 2770.1 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
+  complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
 
 step
   hearth "Gadgetzan"
@@ -2510,7 +2508,7 @@ step
 step
   tip Collect 10 Shadowshard Fragments (from the crystal mobs inside): Shadowshard Fragments
   zone map 1443
-  collect 17756 quest 7068.1
+  complete 7068
 
 step
   tip Collect 15 Theradric Crystal Carvings: Twisted Evils
@@ -2520,18 +2518,16 @@ step
 step
   tip Fill the Coated Cerulean Vial at the orange crystal pool: Vyletongue Corruption
   zone map 1443
-  kill 13696 quest 7029.1
-  collect 17696 quest 7029.2
+  complete 7029
 
 step
-  collect 17758 quest 7067.1 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions
-  collect 17703 quest 7044.1 -- Kill Lord Vyletongue (Celebrian Rod) and Noxxion (Celebrian Diamond): Legends of Maraudon
-  collect 17702 quest 7044.2
+  complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions
+  complete 7044 -- Kill Lord Vyletongue (Celebrian Rod) and Noxxion (Celebrian Diamond): Legends of Maraudon
   turnin 7044 -- Turn in to Celebras the Redeemed: Legends of Maraudon
   accept 7046
   complete 7046 -- Protect Celebras while he creates the scepter: The Scepter of Celebras
   turnin 7046 -- Turn in to Celebras: The Scepter of Celebras
-  kill 12201 quest 7064.1 -- Kill the final boss Princess Theradras: Corruption of Earth and Seed
+  complete 7064 -- Kill the final boss Princess Theradras: Corruption of Earth and Seed
   accept 7066 -- Accept from Zaetar's Spirit, who appears after Theradras dies (Remulos in Moonglade — later): Seed of Life
 
 step

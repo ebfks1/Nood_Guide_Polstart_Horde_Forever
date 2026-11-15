@@ -285,9 +285,7 @@ step
   only Undead
   tip Get the report from Deathguard Dillinger: Patience
   zone map 1420
-  collect 286200 quest 99141.1 @58.2,51.4 map 1420
-  collect 286201 quest 99141.2 @58.2,51.4 map 1420
-  collect 286202 quest 99141.3 @58.2,51.4 map 1420
+  complete 99141 @58.2,51.4 map 1420
 
 step
   only Paladin,Undead
@@ -485,8 +483,7 @@ step
 step
   along
   zone map 1420
-  collect 2876 quest 375.1
-  collect 2320 quest 375.2
+  complete 375
 
 step
   along
@@ -505,8 +502,7 @@ step
   collect 3163 quest 426.2
   collect 2859 quest 368.1
   kill 1535 quest 427.1
-  collect 2876 quest 375.1
-  collect 2320 quest 375.2
+  complete 375
 
 step
   along
@@ -679,9 +675,7 @@ step
   only Undead
   tip Get the report from Deathguard Kristof right next to him: Patience
   zone map 1420
-  collect 286200 quest 99141.1 @65.2,60.2 map 1420
-  collect 286201 quest 99141.2 @65.2,60.2 map 1420
-  collect 286202 quest 99141.3 @65.2,60.2 map 1420
+  complete 99141 @65.2,60.2 map 1420
 
 step
   zone map 1420

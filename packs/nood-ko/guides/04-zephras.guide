@@ -439,8 +439,7 @@ step
 step
   tip 마을 주변 돌풍타조 고기 (남서쪽 히포그리프 고기도 인정):
   zone map 2521
-  collect 6889 quest 92553.1 @42,44.9 map 2521
-  collect 5469 quest 92553.2 @42,44.9 map 2521
+  complete 92553 @42,44.9 map 2521
 
 step
   tip 마을 안 일라야 앰버윈드:
@@ -450,7 +449,7 @@ step
 step
   along until q93318
   zone map 2521
-  collect 257942 quest 93318.1 @42.6,52.2 map 2521 -- 남쪽 탐욕의 불가라:
+  complete 93318 @42.6,52.2 map 2521 -- 남쪽 탐욕의 불가라:
 
 step
   tip 남서쪽 히포그리프 어미·수호자·어린 히포그리프:
@@ -1199,9 +1198,7 @@ step
 step
   tip 리아니 나이트윈드:
   zone map 2521
-  collect 260881 quest 93737.1 @59,73 map 2521
-  collect 260883 quest 93737.2 @59,73 map 2521
-  collect 260880 quest 93737.3 @59,73 map 2521
+  complete 93737 @59,73 map 2521
 
 step
   tip 완료: 부서진 피조물 (리아니 나이트윈드)

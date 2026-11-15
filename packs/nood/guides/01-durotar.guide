@@ -1590,7 +1590,7 @@ step
 step
   along until q99052
   zone map 1411
-  collect 286009 quest 99052.1 -- Kill the sea giant on the north coast for Agor's belt: Threat from Below
+  complete 99052 -- Kill the sea giant on the north coast for Agor's belt: Threat from Below
 
 step
   when complete 99052

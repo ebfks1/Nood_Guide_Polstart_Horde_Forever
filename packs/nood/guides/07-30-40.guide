@@ -41,17 +41,14 @@ step
 step
   tip Use the crate with air holes to summon Snufflenose and collect 6 Blueleaf Tubers: Blueleaf Tubers
   zone map 1413
-  collect 5876 quest 1221.1
-  collect 5880 quest 1221.2
-  collect 5897 quest 1221.3
-  collect 6684 quest 1221.4
+  complete 1221
 
 step
-  collect 5801 quest 1109.1 -- Get the Kraul Guano from the Kraul bats: Going, Going, Guano!
+  complete 1109 -- Get the Kraul Guano from the Kraul bats: Going, Going, Guano!
   accept 1144 -- Accept from Willix the Importer (escort): Willix the Importer
   complete 1144 -- Escort Willix to the entrance: Willix the Importer
   turnin 1144 -- When the escort ends, turn in to Willix right away: Willix the Importer
-  collect 5793 quest 1102.1 -- Kill the last boss, Charlga Razorflank, and take Razorflank's Heart: A Vengeful Fate
+  complete 1102 -- Kill the last boss, Charlga Razorflank, and take Razorflank's Heart: A Vengeful Fate
   accept 6522 item 17008 -- Kill the final boss Charlga Razorflank and pick up the "Small Scroll" to accept An Unholy Alliance — Dungeon prereq (Razorfen Downs)
 
 step
@@ -159,7 +156,7 @@ step
 step
   tip Clear the Graveyard up to Bloodmage Thalnos. When you get Vorrel's Wedding Ring: Vorrel's Revenge
   zone map 1416
-  collect 5538 quest 1051.1
+  complete 1051
 
 step
   tip 33 The Library is better at Lv33 (healers can go at 32). Varimathras' 'Into The Scarlet Monastery' needs level 33, so at 32 accept it once you reach 33 (its Houndmaster Loksey objective is only in the Library).
@@ -177,7 +174,7 @@ step
 step
   only Orc,Troll,Tauren
   tip Find the 'Compendium of the Fallen' on a bookshelf in the hall before Arcanist Doan's room: Compendium of the Fallen
-  collect 5535 quest 1049.1
+  complete 1049
 
 step
   tip == Scarlet Monastery (Graveyard) turn-ins == Tarren Mill Fly to Tarren Mill (if you don't have the flight path, run).
@@ -351,15 +348,12 @@ step
 step
   tip Kill dwarves to complete: Battle of Hillsbrad
   zone map 1424
-  kill 2344 quest 541.1
-  kill 2345 quest 541.2
-  kill 2346 quest 541.3
-  kill 2304 quest 541.4
+  complete 541
 
 step
   tip Humbert's Sword drops randomly from Dun Garok dwarves (Mountaineers, Riflemen, Priests) — if it hasn't dropped after your kill counts are done, keep killing until it does: Humbert's Sword
   zone map 1424
-  collect 3693 quest 547.1
+  complete 547
 
 step
   tip Head east into the Arathi Highlands!
@@ -1467,10 +1461,7 @@ step
 step
   tip Make rubbings of the four Tablets of I'lalai with the hide and charcoal: The Drowned City
   note "! Pick up any other quests offered inside (two Saltseer quests and others) and do them too."
-  collect 270308 quest 95775.1
-  collect 270309 quest 95775.2
-  collect 270310 quest 95775.3
-  collect 270311 quest 95775.4
+  complete 95775
 
 step
   tip Kill Var'Taka, leader of the Brinescale naga: The Only Good Brinescale...
@@ -1648,7 +1639,7 @@ step
   tip Finish collecting 20 Hearts of Zeal from Scarlet mobs: Hearts of Zeal
   zone map 1420
   note "After the Armory, go straight into the Cathedral wing with the same group."
-  collect 5805 quest 1113.1
+  complete 1113
 
 step
   tip Kill Scarlet Commander Mograine: Into The Scarlet Monastery
@@ -1700,7 +1691,7 @@ step
 step
   tip Kill Ambassador Malcin, who walks the hills outside the entrance, and take his scalp: An Unholy Alliance
   zone map 1413
-  collect 17009 quest 6521.1 @47.8,92 map 1413
+  complete 6521 @47.8,92 map 1413
 
 step
   accept 3523 -- Accept from Belnistrasz inside the dungeon: Scourge of the Downs — *Reward chain · Dungeon prereq (Razorfen Downs)
@@ -1712,13 +1703,11 @@ step
 step
   tip Kill 8 each of Razorfen Battleguards, Thornweavers and Death's Head Cultists: A Host of Evil
   zone map 1413
-  kill 7873 quest 6626.1
-  kill 7874 quest 6626.2
-  kill 7872 quest 6626.3
+  complete 6626
 
 step
   tip Kill the final boss Amnennar the Coldbringer and take his skull: Bring the End
-  collect 10420 quest 3341.1
+  complete 3341
 
 step
   tip == Razorfen Downs turn-ins == Near the entrance, turn in to Myriam Moonsinger: A Host of Evil (An Unholy Alliance and Bring the End are turned in at Undercity)
