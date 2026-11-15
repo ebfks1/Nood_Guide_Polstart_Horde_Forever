@@ -529,21 +529,6 @@ step
   accept 92529 npc 251904
 
 step
-  tip Accept Havoc in the Highlands (Constable Aonda)
-  zone map 2521
-  accept 92550 npc 251523
-
-step
-  tip Kill Living Lightning and Al'Aketh Stormcallers, and Commander Cyclas (50.1,56.7): Havoc in the Highlands
-  zone map 2521
-  complete 92550 @48.6,55.7 map 2521
-
-step
-  tip Turn in Havoc in the Highlands (Constable Aonda)
-  zone map 2521
-  turnin 92550 npc 251523
-
-step
   tip Turn in Falaath Village (Missionary Jasaan)
   zone map 2521
   turnin 92529 npc 257065
@@ -557,11 +542,6 @@ step
   tip Among the cultists in Falas: click the wardrobe, then return to the village: Among the Faithful
   zone map 2521
   complete 92528 @46.8,56.2 map 2521
-
-step
-  tip Accept The Grand Skyseer (Valennia Stormfist)
-  zone map 2521
-  accept 92700 npc 252383
 
 step
   tip Accept Crab Season (Nyalah Brightfire)
@@ -647,6 +627,11 @@ step
   turnin 92528 npc 251523
 
 step
+  tip Accept Havoc in the Highlands (Constable Aonda)
+  zone map 2521
+  accept 92550 npc 251523
+
+step
   tip Accept The Western Watch (Constable Aonda)
   zone map 2521
   accept 93926 npc 251523
@@ -665,6 +650,11 @@ step
   tip Click the supply caches (small bags) east of Falas: Stolen Supplies
   zone map 2521
   complete 92551 @49.3,55.9 map 2521
+
+step
+  tip Kill Living Lightning and Al'Aketh Stormcallers, and Commander Cyclas (50.1,56.7): Havoc in the Highlands
+  zone map 2521
+  complete 92550 @48.6,55.7 map 2521
 
 step
   tip Turn in The Western Watch (Peacekeeper Vaaniel)
@@ -693,12 +683,6 @@ step
   tip Accept Call of Fire (Sessaria Skystride)
   zone map 2521
   accept 97243 npc 252382
-
-step
-  tip Turn in The Grand Skyseer (Ayessa Dawnsinger)
-  zone map 2521
-  note "Class quests (level 10)"
-  turnin 92700 npc 251968
 
 step
   tip Accept The Broken Construct 1 (Ayessa Dawnsinger)
@@ -986,6 +970,11 @@ step
   accept 93948 npc 251523
 
 step
+  tip Turn in Havoc in the Highlands (Constable Aonda)
+  zone map 2521
+  turnin 92550 npc 251523
+
+step
   tip Turn in Stolen Supplies (Danarii Bellowveil)
   zone map 2521
   turnin 92551 npc 252172
@@ -1211,6 +1200,11 @@ step
   turnin 92579 npc 252383
 
 step
+  tip Accept The Grand Skyseer (Valennia Stormfist)
+  zone map 2521
+  accept 92700 npc 252383
+
+step
   when onquest 92871
   label q92871
   zone map 2521
@@ -1311,6 +1305,12 @@ step
 step
   zone map 2521
   turnin 93740 npc 251968
+
+step
+  tip Turn in The Grand Skyseer (Ayessa Dawnsinger)
+  zone map 2521
+  note "Class quests (level 10)"
+  turnin 92700 npc 251968
 
 step
   level 12

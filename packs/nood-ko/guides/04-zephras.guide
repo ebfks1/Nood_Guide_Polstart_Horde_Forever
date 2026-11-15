@@ -529,21 +529,6 @@ step
   accept 92529 npc 251904
 
 step
-  tip 수락: 고원의 혼란 (순경 아온다)
-  zone map 2521
-  accept 92550 npc 251523
-
-step
-  tip 살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):
-  zone map 2521
-  complete 92550 @48.6,55.7 map 2521
-
-step
-  tip 완료: 고원의 혼란 (순경 아온다)
-  zone map 2521
-  turnin 92550 npc 251523
-
-step
   tip 완료: 팔라스 마을 (선교사 자산)
   zone map 2521
   turnin 92529 npc 257065
@@ -557,11 +542,6 @@ step
   tip 팔라스 마을 신도들 사이에서:
   zone map 2521
   complete 92528 @46.8,56.2 map 2521
-
-step
-  tip 수락: 대하늘선견자 (발레니아 스톰피스트)
-  zone map 2521
-  accept 92700 npc 252383
 
 step
   tip 수락: 게잡이 철 (니알라 브라이트파이어)
@@ -647,6 +627,11 @@ step
   turnin 92528 npc 251523
 
 step
+  tip 수락: 고원의 혼란 (순경 아온다)
+  zone map 2521
+  accept 92550 npc 251523
+
+step
   tip 수락: 서부 감시터 (순경 아온다)
   zone map 2521
   accept 93926 npc 251523
@@ -665,6 +650,11 @@ step
   tip 팔라스 마을 동쪽 보급품 상자:
   zone map 2521
   complete 92551 @49.3,55.9 map 2521
+
+step
+  tip 살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):
+  zone map 2521
+  complete 92550 @48.6,55.7 map 2521
 
 step
   tip 완료: 서부 감시터 (평화감시자 바니엘)
@@ -693,12 +683,6 @@ step
   tip 수락: 불의 부름 (세사리아 스카이스트라이드)
   zone map 2521
   accept 97243 npc 252382
-
-step
-  tip 완료: 대하늘선견자 (아에사 돈싱어)
-  zone map 2521
-  note "직업 퀘스트 (10레벨)"
-  turnin 92700 npc 251968
 
 step
   tip 수락: 부서진 피조물 (아에사 돈싱어)
@@ -986,6 +970,11 @@ step
   accept 93948 npc 251523
 
 step
+  tip 완료: 고원의 혼란 (순경 아온다)
+  zone map 2521
+  turnin 92550 npc 251523
+
+step
   tip 완료: 도난당한 보급품 (다나리 벨로베일)
   zone map 2521
   turnin 92551 npc 252172
@@ -1211,6 +1200,11 @@ step
   turnin 92579 npc 252383
 
 step
+  tip 수락: 대하늘선견자 (발레니아 스톰피스트)
+  zone map 2521
+  accept 92700 npc 252383
+
+step
   when onquest 92871
   label q92871
   zone map 2521
@@ -1311,6 +1305,12 @@ step
 step
   zone map 2521
   turnin 93740 npc 251968
+
+step
+  tip 완료: 대하늘선견자 (아에사 돈싱어)
+  zone map 2521
+  note "직업 퀘스트 (10레벨)"
+  turnin 92700 npc 251968
 
 step
   level 12
