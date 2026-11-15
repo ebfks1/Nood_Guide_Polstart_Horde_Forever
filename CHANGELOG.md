@@ -1,5 +1,14 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.3-beta
+- 1-12 가이드가 11레벨에서 끝나 버리던 문제 수정: 가이드 끝에 "12레벨 달성" 단계를 넣어, 12레벨이 되면 12-25 Nood 로 이어집니다.
+- Polestar "근처에서 할 일"(Dynamic Questing)이 더 많이 뜨도록, 퀘스트 목표를 처치·수집·상호작용별로 나눴습니다 (발컨 사냥터 위치는 그대로). 던전·정예 퀘스트는 그대로 둡니다.
+- 12레벨 안내 문구와 제프라스 마지막 안내의 가이드 이름(12-25 Nood)을 정리했습니다.
+
+- The 1-12 guides no longer end at level 11: a final "reach level 12" step holds them, then 12-25 Nood follows.
+- Quest goals are split into kill/collect/interact objectives where nothing is lost, so Polestar's Dynamic Questing ("While you're here") offers them when you pass by (BalCon's hunting spots kept; dungeon and elite quests stay whole).
+- Tidied the level-12 note and the guide name at the end of Zephras (12-25 Nood).
+
 ## 1.0.2-beta
 - 발컨 가이드 1.2.3 의 수정 사항을 반영했습니다.
 - 멀고어 1-12: 사냥터 위치 보정 (검독수리, 썬더혼 토템상, 와일드메인 토템상, 사냥꾼의 길, 사냥꾼 길들이기 2종).
