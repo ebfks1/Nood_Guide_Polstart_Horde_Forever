@@ -1,5 +1,10 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.4-beta
+- 가이드의 설명·선택 메모(ⓘ 줄)에 체크박스를 달았습니다. 체크하면 완료로 접혀 화면이 정리되고, 체크하지 않아도 가이드는 그대로 넘어갑니다.
+
+- The guide's notes (the ⓘ lines) now have a checkbox: tick one and it folds away with the done goals; unticked, they never hold the step.
+
 ## 1.0.3-beta
 - 1-12 가이드가 11레벨에서 끝나 버리던 문제 수정: 가이드 끝에 "12레벨 달성" 단계를 넣어, 12레벨이 되면 12-25 Nood 로 이어집니다.
 - Polestar "근처에서 할 일"(Dynamic Questing)이 더 많이 뜨도록, 퀘스트 목표를 처치·수집·상호작용별로 나눴습니다 (발컨 사냥터 위치는 그대로). 던전·정예 퀘스트는 그대로 둡니다.
