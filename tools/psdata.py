@@ -67,7 +67,8 @@ class DB:
         obj = lst(r[11])
         objs = [(int(obj[k]), int(obj[k + 1]), int(obj[k + 2])) for k in range(0, len(obj) - 2, 3)]
         return dict(title=r[0], level=r[1], min=r[2], start=[int(x) for x in lst(r[6])], finish=[int(x) for x in lst(r[7])],
-                    startItem=r[8], objs=objs, zone=r[12])
+                    startItem=r[8], objs=objs, zone=r[12],
+                    pre=[int(x) for x in lst(r[9])], preAll=[int(x) for x in lst(r[16])])
 
     def entity(self, ref):
         """ref > 0 npc, < 0 object -> (name, [(map, era, x, y, r)])"""
