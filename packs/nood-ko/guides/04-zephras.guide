@@ -417,11 +417,6 @@ step
   accept 94007 npc 254084 optional -- 수락: Taming the Beast (엘라야 이즈윈드) (10레벨부터 받을 수 있음 — 레벨이 안 되면 건너뛰고 나중에 받으세요)
 
 step
-  tip 수락: 팔라스 마을 (사니아 실버스트림)
-  zone map 2521
-  accept 92529 npc 251904
-
-step
   tip 북동쪽 고원 좀도둑, '사악한 바람' 베닉(50.5,33.6):
   zone map 2521
   complete 92517 @49,36.4 map 2521
@@ -460,16 +455,6 @@ step
   tip 같은 곳 히포그리프 솜털:
   zone map 2521
   complete 93951 @36.2,54.2 map 2521
-
-step
-  tip 수락: 마지막 부탁 (평화감시자 바니엘)
-  zone map 2521
-  accept 93927 npc 252155
-
-step
-  tip 완료: 팔라스 마을 (선교사 자산)
-  zone map 2521
-  turnin 92529 npc 257065
 
 step
   tip 수락: 신도들 사이에서 (선교사 자산)
@@ -549,6 +534,11 @@ step
   turnin 93036 npc 251904
 
 step
+  tip 수락: 팔라스 마을 (사니아 실버스트림)
+  zone map 2521
+  accept 92529 npc 251904
+
+step
   tip ── 셴다르 마을 ── 완료: 신도들 사이에서 (순경 아온다)
   zone map 2521
   turnin 92528 npc 251523
@@ -562,11 +552,6 @@ step
   tip 수락: 서부 감시터 (순경 아온다)
   zone map 2521
   accept 93926 npc 251523
-
-step
-  tip 완료: 마지막 부탁 (순경 아온다)
-  zone map 2521
-  turnin 93927 npc 251523
 
 step
   tip 수락: 고원의 혼란 (순경 아온다)
@@ -604,9 +589,19 @@ step
   turnin 92551 npc 252172
 
 step
+  tip 완료: 팔라스 마을 (선교사 자산)
+  zone map 2521
+  turnin 92529 npc 257065
+
+step
   tip 완료: 서부 감시터 (평화감시자 바니엘)
   zone map 2521
   turnin 93926 npc 252155
+
+step
+  tip 수락: 마지막 부탁 (평화감시자 바니엘)
+  zone map 2521
+  accept 93927 npc 252155
 
 step
   tip ── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)
@@ -700,6 +695,11 @@ step
   tip 수락: The Skybreaker Bulwark (시나 스카이브레이커)
   zone map 2521
   accept 94003 npc 252377
+
+step
+  tip 완료: 마지막 부탁 (순경 아온다)
+  zone map 2521
+  turnin 93927 npc 251523
 
 step
   only Warrior
@@ -882,7 +882,7 @@ step
 step
   tip 아멜리아에게 준비됐다고 말한 뒤 습격자들을 처치하세요:
   zone map 2521
-  kill 252863 quest 92693.1
+  complete 92693 @46.6,81.8 map 2521
 
 step
   tip 완료: Standing Our Ground (아멜리아 윈드필드)

@@ -93,8 +93,8 @@ PATCHES = {
         ('[QA92703', [
             ('Accept [QA92693 Standing Our Ground] (Aamelia Windfield)[G46.6,81.8Zephras Isle]',
              '수락: [QA92693 Standing Our Ground] (아멜리아 윈드필드)[G46.6,81.8Zephras Isle]'),
-            ("Tell Aamelia you're ready, then defeat the attackers: [QC92693]",
-             '아멜리아에게 준비됐다고 말한 뒤 습격자들을 처치하세요: [QC92693]'),
+            ("[G46.6,81.8Zephras Isle]Tell Aamelia you're ready, then defeat the attackers: [QC92693]",
+             '[G46.6,81.8Zephras Isle]아멜리아에게 준비됐다고 말한 뒤 습격자들을 처치하세요: [QC92693]'),
             ('Turn in [QT92693 Standing Our Ground] (Aamelia Windfield)[G46.6,81.8Zephras Isle]',
              '완료: [QT92693 Standing Our Ground] (아멜리아 윈드필드)[G46.6,81.8Zephras Isle]'),
         ]),

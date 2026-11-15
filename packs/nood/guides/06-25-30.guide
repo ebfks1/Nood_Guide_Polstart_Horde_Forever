@@ -772,14 +772,8 @@ step
   accept 545 npc 2410
 
 step
-  tip Then accept (or get it shared): Heart of Disruption
-  zone map 1421
-  accept 96984 npc 269127
-
-step
   complete 96988 -- Enter the Dalaran dungeon and collect 6 Cracked Warden Cores from the Broken Wardens: Source of Power
   complete 96986 -- Kill the Grave Knight Atrexis: The Grave Knight
-  complete 96984 -- Collect the arcane motes inside Dalaran: Heart of Disruption
 
 step
   along until q96987
@@ -806,11 +800,6 @@ step
   turnin 96986 npc 2278
 
 step
-  tip Turn in to Magus Wordeen Voidglare: Heart of Disruption
-  zone map 1424
-  turnin 96984 npc 2410
-
-step
   tip Turn in Dalaran Patrols — Dungeon chain (Dalaran)
   zone map 1424
   turnin 545 npc 2410
@@ -828,6 +817,19 @@ step
   tip Turn in to the image of Archmage Modera: Blood in the Streets — Dungeon prereq (Dalaran)
   zone map 1421
   turnin 92434 npc 269127
+
+step
+  tip Then accept (or get it shared): Heart of Disruption
+  zone map 1421
+  accept 96984 npc 269127
+
+step
+  complete 96984 -- Collect the arcane motes inside Dalaran: Heart of Disruption
+
+step
+  tip Turn in to Magus Wordeen Voidglare: Heart of Disruption
+  zone map 1424
+  turnin 96984 npc 2410
 
 step
   tip Undercity Fly to Undercity.

@@ -772,14 +772,8 @@ step
   accept 545 npc 2410
 
 step
-  tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): Heart of Disruption
-  zone map 1421
-  accept 96984 npc 269127
-
-step
   complete 96988 -- 달라란 던전 입구로 들어가세요 부서진 파수꾼에게서 금 간 파수꾼 핵 6개: Source of Power
   complete 96986 -- 무덤 기사 아트렉시스를 처치하세요: 무덤 기사
-  complete 96984 -- 달라란 안의 비전 티끌을 모으세요: Heart of Disruption
 
 step
   along until q96987
@@ -806,11 +800,6 @@ step
   turnin 96986 npc 2278
 
 step
-  tip 학자 워딘 보이드글레어에게 퀘스트 완료: Heart of Disruption
-  zone map 1424
-  turnin 96984 npc 2410
-
-step
   tip 퀘스트 완료: 달라란 순찰 — ◆던전 연계(달라란)
   zone map 1424
   turnin 545 npc 2410
@@ -828,6 +817,19 @@ step
   tip 대마법사 모데라의 환영에게 퀘스트 완료: Blood in the Streets — ◆던전 선행(달라란)
   zone map 1421
   turnin 92434 npc 269127
+
+step
+  tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): Heart of Disruption
+  zone map 1421
+  accept 96984 npc 269127
+
+step
+  complete 96984 -- 달라란 안의 비전 티끌을 모으세요: Heart of Disruption
+
+step
+  tip 학자 워딘 보이드글레어에게 퀘스트 완료: Heart of Disruption
+  zone map 1424
+  turnin 96984 npc 2410
 
 step
   tip 언더시티로 비행하세요.

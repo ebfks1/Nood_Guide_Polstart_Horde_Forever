@@ -417,11 +417,6 @@ step
   accept 94007 npc 254084 optional -- Accept Taming the Beast (available from level 10 — if you're not 10 yet, skip it and come back later)
 
 step
-  tip Accept Falaath Village (Sania Silverstream)
-  zone map 2521
-  accept 92529 npc 251904
-
-step
   tip Kill Highlands Bandits to the northeast, and 'Badwind' Bennic (50.5,33.6): The Criminal Element
   zone map 2521
   complete 92517 @49,36.4 map 2521
@@ -460,16 +455,6 @@ step
   tip Same place: click Hippogryph Downs: A Little Beauty
   zone map 2521
   complete 93951 @36.2,54.2 map 2521
-
-step
-  tip Accept A Last Request (Peacekeeper Vaaniel)
-  zone map 2521
-  accept 93927 npc 252155
-
-step
-  tip Turn in Falaath Village (Missionary Jasaan)
-  zone map 2521
-  turnin 92529 npc 257065
 
 step
   tip Accept Among the Faithful (Missionary Jasaan)
@@ -549,6 +534,11 @@ step
   turnin 93036 npc 251904
 
 step
+  tip Accept Falaath Village (Sania Silverstream)
+  zone map 2521
+  accept 92529 npc 251904
+
+step
   tip == Shen'dar Village == Turn in Among the Faithful (Constable Aonda)
   zone map 2521
   turnin 92528 npc 251523
@@ -562,11 +552,6 @@ step
   tip Accept The Western Watch (Constable Aonda)
   zone map 2521
   accept 93926 npc 251523
-
-step
-  tip Turn in A Last Request (Constable Aonda)
-  zone map 2521
-  turnin 93927 npc 251523
 
 step
   tip Accept Havoc in the Highlands (Constable Aonda)
@@ -604,9 +589,19 @@ step
   turnin 92551 npc 252172
 
 step
+  tip Turn in Falaath Village (Missionary Jasaan)
+  zone map 2521
+  turnin 92529 npc 257065
+
+step
   tip Turn in The Western Watch (Peacekeeper Vaaniel)
   zone map 2521
   turnin 93926 npc 252155
+
+step
+  tip Accept A Last Request (Peacekeeper Vaaniel)
+  zone map 2521
+  accept 93927 npc 252155
 
 step
   tip == Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)
@@ -700,6 +695,11 @@ step
   tip Accept The Skybreaker Bulwark (Seena Skybreaker)
   zone map 2521
   accept 94003 npc 252377
+
+step
+  tip Turn in A Last Request (Constable Aonda)
+  zone map 2521
+  turnin 93927 npc 251523
 
 step
   only Warrior
@@ -882,7 +882,7 @@ step
 step
   tip Tell Aamelia you're ready, then defeat the attackers:
   zone map 2521
-  kill 252863 quest 92693.1
+  complete 92693 @46.6,81.8 map 2521
 
 step
   tip Turn in Standing Our Ground (Aamelia Windfield)
