@@ -16,3 +16,7 @@ ignore:
   - setup
 
 # move-folders 는 배포 때 워크플로가 빌드 결과(폴더 목록)에 맞춰 이 아래에 덧붙입니다.
+
+move-folders:
+  PolestarPack_Nood/PolestarPack_NoodKorean: PolestarPack_NoodKorean
+  PolestarPack_Nood/NoodGuide_Setup: NoodGuide_Setup
