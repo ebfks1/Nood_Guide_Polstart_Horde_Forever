@@ -457,16 +457,6 @@ step
   complete 93951 @36.2,54.2 map 2521
 
 step
-  tip 수락: 신도들 사이에서 (선교사 자산)
-  zone map 2521
-  accept 92528 npc 257065
-
-step
-  tip 팔라스 마을 신도들 사이에서:
-  zone map 2521
-  complete 92528 @46.8,56.2 map 2521
-
-step
   tip 완료: 범죄 세력 (순경 아온다)
   zone map 2521
   turnin 92517 npc 251523
@@ -539,29 +529,9 @@ step
   accept 92529 npc 251904
 
 step
-  tip ── 셴다르 마을 ── 완료: 신도들 사이에서 (순경 아온다)
-  zone map 2521
-  turnin 92528 npc 251523
-
-step
-  tip 수락: 도난당한 보급품 (다나리 벨로베일)
-  zone map 2521
-  accept 92551 npc 252172
-
-step
-  tip 수락: 서부 감시터 (순경 아온다)
-  zone map 2521
-  accept 93926 npc 251523
-
-step
   tip 수락: 고원의 혼란 (순경 아온다)
   zone map 2521
   accept 92550 npc 251523
-
-step
-  tip 팔라스 마을 동쪽 보급품 상자:
-  zone map 2521
-  complete 92551 @49.3,55.9 map 2521
 
 step
   tip 살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):
@@ -574,44 +544,19 @@ step
   turnin 92550 npc 251523
 
 step
-  tip 수락: 발라나르로 (순경 아온다)
-  zone map 2521
-  accept 92579 npc 251523
-
-step
-  tip 수락: 인장 전달 (순경 아온다)
-  zone map 2521
-  accept 93948 npc 251523
-
-step
-  tip 완료: 도난당한 보급품 (다나리 벨로베일)
-  zone map 2521
-  turnin 92551 npc 252172
-
-step
   tip 완료: 팔라스 마을 (선교사 자산)
   zone map 2521
   turnin 92529 npc 257065
 
 step
-  tip 완료: 서부 감시터 (평화감시자 바니엘)
+  tip 수락: 신도들 사이에서 (선교사 자산)
   zone map 2521
-  turnin 93926 npc 252155
+  accept 92528 npc 257065
 
 step
-  tip 수락: 마지막 부탁 (평화감시자 바니엘)
+  tip 팔라스 마을 신도들 사이에서:
   zone map 2521
-  accept 93927 npc 252155
-
-step
-  tip ── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)
-  zone map 2521
-  turnin 92579 npc 252383
-
-step
-  tip 완료: 인장 전달 (탈라니스 섀도송)
-  zone map 2521
-  turnin 93948 npc 252476
+  complete 92528 @46.8,56.2 map 2521
 
 step
   tip 수락: 대하늘선견자 (발레니아 스톰피스트)
@@ -697,14 +642,39 @@ step
   accept 94003 npc 252377
 
 step
-  tip 완료: 마지막 부탁 (순경 아온다)
+  tip ── 셴다르 마을 ── 완료: 신도들 사이에서 (순경 아온다)
   zone map 2521
-  turnin 93927 npc 251523
+  turnin 92528 npc 251523
+
+step
+  tip 수락: 서부 감시터 (순경 아온다)
+  zone map 2521
+  accept 93926 npc 251523
+
+step
+  tip 수락: 도난당한 보급품 (다나리 벨로베일)
+  zone map 2521
+  accept 92551 npc 252172
 
 step
   only Warrior
   zone map 2521
   collect 263993 quest 94003.1
+
+step
+  tip 팔라스 마을 동쪽 보급품 상자:
+  zone map 2521
+  complete 92551 @49.3,55.9 map 2521
+
+step
+  tip 완료: 서부 감시터 (평화감시자 바니엘)
+  zone map 2521
+  turnin 93926 npc 252155
+
+step
+  tip 수락: 마지막 부탁 (평화감시자 바니엘)
+  zone map 2521
+  accept 93927 npc 252155
 
 step
   only Warrior
@@ -1001,6 +971,26 @@ step
   complete 93746 @59.8,57 map 2521
 
 step
+  tip 완료: 마지막 부탁 (순경 아온다)
+  zone map 2521
+  turnin 93927 npc 251523
+
+step
+  tip 수락: 발라나르로 (순경 아온다)
+  zone map 2521
+  accept 92579 npc 251523
+
+step
+  tip 수락: 인장 전달 (순경 아온다)
+  zone map 2521
+  accept 93948 npc 251523
+
+step
+  tip 완료: 도난당한 보급품 (다나리 벨로베일)
+  zone map 2521
+  turnin 92551 npc 252172
+
+step
   tip 완료: 불길한 침묵 (엘레게일 쏜포우)
   zone map 2521
   turnin 94484 npc 257944
@@ -1216,6 +1206,11 @@ step
   accept 92871 npc 251968 optional
 
 step
+  tip ── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)
+  zone map 2521
+  turnin 92579 npc 252383
+
+step
   when onquest 92871
   label q92871
   zone map 2521
@@ -1225,6 +1220,11 @@ step
   along until q93320
   zone map 2521
   accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
+
+step
+  tip 완료: 인장 전달 (탈라니스 섀도송)
+  zone map 2521
+  turnin 93948 npc 252476
 
 step
   when onquest 93320
