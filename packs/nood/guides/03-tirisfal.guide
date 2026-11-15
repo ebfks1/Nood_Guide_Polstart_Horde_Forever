@@ -12,7 +12,7 @@ next nood/05-12-25
 
 step
   zone map 1420
-  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
+  task "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation." optional
   accept 363 npc 1568
 
 step
@@ -90,7 +90,7 @@ step
 
 step
   tip Grind to level 3 (Marla's Last Wish needs level 3).
-  note "Buy water or bread from the vendor."
+  task "Buy water or bread from the vendor." optional
   level 3
 
 step
@@ -180,9 +180,9 @@ step
 
 step
   zone map 1420
-  note "Sell junk and buy food/water if needed."
-  note "Train level 4 spells at your class trainer." only Priest
-  note "Train level 4 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  task "Sell junk and buy food/water if needed." optional
+  task "Train level 4 spells at your class trainer." optional only Priest
+  task "Train level 4 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
   accept 381 npc 1570
 
 step
@@ -358,9 +358,9 @@ step
 step
   tip Find Gordo. He patrols the paths of Tirisfal Glades. Accept from Gordo: Gordo's Task
   zone map 1420
-  note "Not available yet (level too low): The Chill of Death (level 7) — you'll pick it up the next time you're in town. Train level 6 spells at your class trainer." only Priest
-  note "Train level 6 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "Sell junk and buy food/water if needed."
+  task "Not available yet (level too low): The Chill of Death (level 7) — you'll pick it up the next time you're in town. Train level 6 spells at your class trainer." optional only Priest
+  task "Train level 6 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "Sell junk and buy food/water if needed." optional
   accept 5481 @56.1,52.4 map 1420
 
 step
@@ -492,9 +492,9 @@ step
 
 step
   zone map 1420
-  note "Train level 8 spells at your class trainer." only Priest
-  note "Train level 8 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "Sell junk, and buy food/water and *bags* if needed."
+  task "Train level 8 spells at your class trainer." optional only Priest
+  task "Train level 8 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "Sell junk, and buy food/water and *bags* if needed." optional
   collect 2831 quest 362.1
   collect 2829 quest 354.1
   collect 2828 quest 354.2
@@ -539,7 +539,7 @@ step
 
 step
   zone map 1420
-  note "Buy one Coarse Thread."
+  task "Buy one Coarse Thread." optional
   turnin 354 npc 1500
 
 step
@@ -560,9 +560,9 @@ step
 
 step
   zone map 1420
-  note "Train level 10 spells at your class trainer." only Priest
-  note "Train level 10 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "Sell junk and buy food/water if needed."
+  task "Train level 10 spells at your class trainer." optional only Priest
+  task "Train level 10 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "Sell junk and buy food/water if needed." optional
   turnin 355 npc 1499
 
 step
@@ -603,7 +603,7 @@ step
 
 step
   zone map 1421
-  note "Sell junk and buy food/water if needed."
+  task "Sell junk and buy food/water if needed." optional
   accept 6321 npc 6389
 
 step
@@ -749,15 +749,15 @@ step
 step
   zone map 1420
   turnin 492 npc 2211
-  note "! Your Hearthstone must be set to Undercity. If it's set elsewhere, run or fly there instead of hearthing."
+  task "! Your Hearthstone must be set to Undercity. If it's set elsewhere, run or fly there instead of hearthing." optional
 
 step
   hearth "Undercity"
 
 step
   zone map 1458
-  note "Undercity Hearth to Undercity."
-  note "Sell junk and buy food/water if needed."
+  task "Undercity Hearth to Undercity." optional
+  task "Sell junk and buy food/water if needed." optional
   turnin 6322 npc 4551
 
 step
@@ -768,8 +768,8 @@ step
   tip Accept from Varimathras in the Royal Quarter: The Power to Destroy... (Ragefire Chasm quest)
   zone map 1458
   accept 5725 npc 2425
-  note "Train level 12 spells at your class trainer." only Priest
-  note "Train level 12 spells at your class trainer." only Warrior,Rogue,Mage,Warlock,Paladin
+  task "Train level 12 spells at your class trainer." optional only Priest
+  task "Train level 12 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
 
 step
   along

@@ -12,7 +12,7 @@ next nood/05-12-25
 
 step
   zone map 1412
-  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
+  task "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation." optional
   accept 747 npc 2980
 
 step
@@ -49,7 +49,7 @@ step
 
 step
   zone map 1412
-  note "Sell junk to Moodan Sungrain."
+  task "Sell junk to Moodan Sungrain." optional
   turnin 747 npc 2980
 
 step
@@ -106,11 +106,11 @@ step
 
 step
   zone map 1412
-  note "Train spells at Gart Mistrunner." only Druid
-  note "Train spells at Lanka Farshot." only Hunter
-  note "Buy Light Shot from Kawnie Softbreeze." only Hunter
-  note "Train spells at Meela Dawnstrider." only Shaman
-  note "Train spells at Harutt Thunderhorn." only Warrior
+  task "Train spells at Gart Mistrunner." optional only Druid
+  task "Train spells at Lanka Farshot." optional only Hunter
+  task "Buy Light Shot from Kawnie Softbreeze." optional only Hunter
+  task "Train spells at Meela Dawnstrider." optional only Shaman
+  task "Train spells at Harutt Thunderhorn." optional only Warrior
   collect 4742 quest 750.1 @45.8,90.5 map 1412
 
 step
@@ -119,7 +119,7 @@ step
 
 step
   zone map 1412
-  note "Not available yet (level too low): Call of Earth (level 4) — you'll pick it up the next time you're in town." only Shaman
+  task "Not available yet (level too low): Call of Earth (level 4) — you'll pick it up the next time you're in town." optional only Shaman
   accept 1656 npc 6775
 
 step
@@ -161,7 +161,7 @@ step
 step
   only Shaman
   zone map 1412
-  note "Train spells at Meela Dawnstrider."
+  task "Train spells at Meela Dawnstrider." optional
   accept 1519 npc 5888
 
 step
@@ -171,10 +171,10 @@ step
 
 step
   zone map 1412
-  note "Sell junk to Kawnie Softbreeze."
-  note "Train spells at Gart Mistrunner." only Druid
-  note "Train spells at Lanka Farshot." only Hunter
-  note "Train spells at Harutt Thunderhorn." only Warrior
+  task "Sell junk to Kawnie Softbreeze." optional
+  task "Train spells at Gart Mistrunner." optional only Druid
+  task "Train spells at Lanka Farshot." optional only Hunter
+  task "Train spells at Harutt Thunderhorn." optional only Warrior
   collect 10459 quest 3376.1 @60.5,77.5 map 1412
 
 step
@@ -201,7 +201,7 @@ step
 
 step
   zone map 1412
-  note "Sell junk to Moodan Sungrain."
+  task "Sell junk to Moodan Sungrain." optional
   turnin 780 npc 2980
 
 step
@@ -243,7 +243,7 @@ step
 step
   only Shaman
   zone map 1412
-  note "Train spells at Meela Dawnstrider."
+  task "Train spells at Meela Dawnstrider." optional
   turnin 1520 npc 5891
 
 step
@@ -286,9 +286,9 @@ step
 
 step
   zone map 1412
-  note "Train spells at Gart Mistrunner." only Druid
-  note "Train spells at Lanka Farshot." only Hunter
-  note "Train spells at Harutt Thunderhorn." only Warrior
+  task "Train spells at Gart Mistrunner." optional only Druid
+  task "Train spells at Lanka Farshot." optional only Hunter
+  task "Train spells at Harutt Thunderhorn." optional only Warrior
   accept 743 npc 2985
 
 step
@@ -368,7 +368,7 @@ step
 step
   tip Pick up Ambercorns from the ground under the trees south of the village (2): Rite of Vision
   zone map 1412
-  note "Not available yet (level too low): Taming the Beast (level 10) — you'll pick it up the next time you're in town." only Hunter
+  task "Not available yet (level too low): Taming the Beast (level 10) — you'll pick it up the next time you're in town." optional only Hunter
   goto 47.7,66.9 r 20 map 1412
 
 step
@@ -445,12 +445,12 @@ step
 step
   tip If you still need Ambercorns, pick up more under the trees nearby: Rite of Vision
   zone map 1412
-  note "Sell junk to Jhawna Oatwind."
+  task "Sell junk to Jhawna Oatwind." optional
   goto 50.4,66.5 r 20 map 1412
 
 step
   zone map 1412
-  note "Kill an Adult Plainstrider nearby and keep 1 \"Tender Strider Meat\" (to feed Kyle)."
+  task "Kill an Adult Plainstrider nearby and keep 1 \"Tender Strider Meat\" (to feed Kyle)." optional
   complete 745 @36.5,65.1 map 1412
 
 step
@@ -565,13 +565,13 @@ step
 
 step
   zone map 1412
-  note "Train spells at Krang Stonehoof." only Warrior
+  task "Train spells at Krang Stonehoof." optional only Warrior
   turnin 761 npc 2947
 
 step
   zone map 1412
-  note "Train spells at Gennia Runetotem." only Druid
-  note "Train spells at Narm Skychaser." only Shaman
+  task "Train spells at Gennia Runetotem." optional only Druid
+  task "Train spells at Narm Skychaser." optional only Shaman
   turnin 745 npc 2993
 
 step
@@ -588,10 +588,10 @@ step
 
 step
   zone map 1412
-  note "Learn First Aid from Vira Younghoof."
-  note "Profession available: Skinning."
-  note "Profession available: Leatherworking."
-  note "Sell junk."
+  task "Learn First Aid from Vira Younghoof." optional
+  task "Profession available: Skinning." optional
+  task "Profession available: Leatherworking." optional
+  task "Sell junk." optional
   turnin 766 npc 3055
 
 step
@@ -619,9 +619,9 @@ step
 
 step
   zone map 1412
-  note "Not available yet (level too low): The Hunter's Way (level 10) — you'll pick it up the next time you're in town."
-  note "Not available yet (level too low): Heeding the Call (level 10) — you'll pick it up the next time you're in town." only Druid
-  note "Train spells at Yaw Sharpmane." only Hunter
+  task "Not available yet (level too low): The Hunter's Way (level 10) — you'll pick it up the next time you're in town." optional
+  task "Not available yet (level too low): Heeding the Call (level 10) — you'll pick it up the next time you're in town." optional only Druid
+  task "Train spells at Yaw Sharpmane." optional only Hunter
   turnin 772 npc 2984
 
 step
@@ -653,7 +653,7 @@ step
 
 step
   zone map 1412
-  note "Sell junk to Harn Longcast."
+  task "Sell junk to Harn Longcast." optional
   turnin 770 npc 3052
 
 step
@@ -733,7 +733,7 @@ step
 step
   only Hunter
   zone map 1412
-  note "Train spells at Yaw Sharpmane."
+  task "Train spells at Yaw Sharpmane." optional
   kill 2956 quest 6061.1 @57.8,60.5 map 1412
 
 step
@@ -788,9 +788,9 @@ step
 
 step
   zone map 1412
-  note "Train spells at Krang Stonehoof." only Warrior
-  note "Train spells at Gennia Runetotem." only Druid
-  note "Train spells at Narm Skychaser." only Shaman
+  task "Train spells at Krang Stonehoof." optional only Warrior
+  task "Train spells at Gennia Runetotem." optional only Druid
+  task "Train spells at Narm Skychaser." optional only Shaman
   accept 833 npc 3233
 
 step
@@ -901,8 +901,8 @@ step
 step
   tip Buy Mild Spices from Naal Mistrunner.
   zone map 1456
-  note "Repair at Jyn Stonehoof."
-  note "Sell junk to Naal Mistrunner."
+  task "Repair at Jyn Stonehoof." optional
+  task "Sell junk to Naal Mistrunner." optional
   goto 51,52.5 r 20 map 1456
 
 step
@@ -951,7 +951,7 @@ step
 step
   tip Buy a Small Brown Pouch from Thrumn.
   zone map 1456
-  note "Sell junk to Thrumn."
+  task "Sell junk to Thrumn." optional
   goto 49.1,34.2 r 20 map 1456
 
 step
@@ -995,7 +995,7 @@ step
 step
   only Druid
   zone map 1450
-  note "Open your spellbook and cast *Teleport: Moonglade*."
+  task "Open your spellbook and cast *Teleport: Moonglade*." optional
   turnin 5922 npc 11802
 
 step
@@ -1035,7 +1035,7 @@ step
 step
   tip Buy a Small Brown Pouch.
   zone map 1456
-  note "Sell junk to Thrumn."
+  task "Sell junk to Thrumn." optional
   goto 49.1,34.2 r 20 map 1456
 
 step

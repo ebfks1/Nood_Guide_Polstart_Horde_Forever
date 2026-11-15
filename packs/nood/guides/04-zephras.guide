@@ -13,7 +13,7 @@ next nood/05-12-25
 step
   tip Zephras Isle — Skyborne only, levels 1-12. You only see the class quests for your own class. == Starting village (1-5) == Accept Coming of Age (Ailee Farheart)
   zone map 2521
-  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
+  task "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation." optional
   accept 92460 npc 251362
 
 step
@@ -38,7 +38,7 @@ step
 
 step
   tip Grind to level 2 on the cirrusflies by the village (the class quests need level 2).
-  note "Class intro quest: only the one for your class is shown."
+  task "Class intro quest: only the one for your class is shown." optional
   level 2
 
 step
@@ -253,7 +253,7 @@ step
   tip Accept Return to Rorian (Yala Windwatcher)
   zone map 2521
   accept 92469 npc 249363
-  note "== Back to the starting village =="
+  task "== Back to the starting village ==" optional
 
 step
   only Shaman
@@ -880,7 +880,7 @@ step
 step
   tip Turn in Deliver the News (Alvarion Windfield)
   zone map 2521
-  note "== Valanaar =="
+  task "== Valanaar ==" optional
   turnin 92703 npc 252448
 
 step
@@ -891,7 +891,7 @@ step
 step
   tip Accept Al'Aketh Assassins (Fendaal Windstone)
   zone map 2521
-  note "== North (11-12) =="
+  task "== North (11-12) ==" optional
   accept 98512 npc 273017
 
 step
@@ -1109,7 +1109,7 @@ step
   tip Turn in The Fate of a Loved One (Ealaane Nimbuswalker)
   zone map 2521
   turnin 94897 npc 259012
-  note "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff."
+  task "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff." optional
 
 step
   tip == Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)
@@ -1130,7 +1130,7 @@ step
   only Druid
   tip Turn in The Great Ursera Spirit (Urs'endris)
   zone map 2521
-  note "== Druid class quest == Visit Urs'endris north of the Watchtower."
+  task "== Druid class quest == Visit Urs'endris north of the Watchtower." optional
   turnin 94006 npc 255853
 
 step
@@ -1153,7 +1153,7 @@ step
 step
   tip Turn in The Grand Skyseer (Ayessa Dawnsinger)
   zone map 2521
-  note "Class quests (level 10)"
+  task "Class quests (level 10)" optional
   turnin 92700 npc 251968
 
 step
@@ -1351,8 +1351,8 @@ step
   tip Turn in to Turak Runetotem on the Elder Rise in Thunder Bluff: Child of Nature
   zone map 1456
   turnin 94911 npc 3033
-  note "== Level 12: on to Nood 12-25 =="
-  note "Continue with the next guide \"12-25 Nood: RFC, Ruins of Lordaeron, WC, SFK, BFD\" (it starts at the Crossroads)."
+  task "== Level 12: on to Nood 12-25 ==" optional
+  task "Continue with the next guide \"12-25 Nood: RFC, Ruins of Lordaeron, WC, SFK, BFD\" (it starts at the Crossroads)." optional
 
 step
   tip Reach level 12; then the 12-25 Nood guide follows.

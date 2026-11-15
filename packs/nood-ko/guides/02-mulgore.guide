@@ -12,7 +12,7 @@ next nood-ko/05-12-25
 
 step
   zone map 1412
-  note "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다."
+  task "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다." optional
   accept 747 npc 2980
 
 step
@@ -49,7 +49,7 @@ step
 
 step
   zone map 1412
-  note "무단 선그레인에게 잡템을 판매하세요."
+  task "무단 선그레인에게 잡템을 판매하세요." optional
   turnin 747 npc 2980
 
 step
@@ -106,11 +106,11 @@ step
 
 step
   zone map 1412
-  note "가트 미스트러너에게 스킬을 습득하세요." only Druid
-  note "랑카 파샷에게 스킬을 습득하세요." only Hunter
-  note "카우니 소프트브리즈에게 소형 탄환을 구매하세요." only Hunter
-  note "밀라 던스트라이더를 방문해 스킬을 습득하세요." only Shaman
-  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  task "가트 미스트러너에게 스킬을 습득하세요." optional only Druid
+  task "랑카 파샷에게 스킬을 습득하세요." optional only Hunter
+  task "카우니 소프트브리즈에게 소형 탄환을 구매하세요." optional only Hunter
+  task "밀라 던스트라이더를 방문해 스킬을 습득하세요." optional only Shaman
+  task "하루트 썬더혼을 방문해 스킬을 습득하세요." optional only Warrior
   collect 4742 quest 750.1 @45.8,90.5 map 1412
 
 step
@@ -119,7 +119,7 @@ step
 
 step
   zone map 1412
-  note "레벨이 모자라 아직 못 받는 퀘스트: 대지의 부름(4레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Shaman
+  task "레벨이 모자라 아직 못 받는 퀘스트: 대지의 부름(4레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Shaman
   accept 1656 npc 6775
 
 step
@@ -161,7 +161,7 @@ step
 step
   only Shaman
   zone map 1412
-  note "밀라 던스트라이더를 방문해 스킬을 습득하세요."
+  task "밀라 던스트라이더를 방문해 스킬을 습득하세요." optional
   accept 1519 npc 5888
 
 step
@@ -171,10 +171,10 @@ step
 
 step
   zone map 1412
-  note "카우니 소프트브리즈에게 잡템을 판매하세요."
-  note "가트 미스트러너를 방문해 스킬을 습득하세요." only Druid
-  note "랑카 파샷을 방문해 스킬을 습득하세요." only Hunter
-  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  task "카우니 소프트브리즈에게 잡템을 판매하세요." optional
+  task "가트 미스트러너를 방문해 스킬을 습득하세요." optional only Druid
+  task "랑카 파샷을 방문해 스킬을 습득하세요." optional only Hunter
+  task "하루트 썬더혼을 방문해 스킬을 습득하세요." optional only Warrior
   collect 10459 quest 3376.1 @60.5,77.5 map 1412
 
 step
@@ -201,7 +201,7 @@ step
 
 step
   zone map 1412
-  note "무단 선그레인을 방문하여 잡템을 판매하세요."
+  task "무단 선그레인을 방문하여 잡템을 판매하세요." optional
   turnin 780 npc 2980
 
 step
@@ -243,7 +243,7 @@ step
 step
   only Shaman
   zone map 1412
-  note "밀라 던스트라이더를 방문해 스킬을 습득하세요."
+  task "밀라 던스트라이더를 방문해 스킬을 습득하세요." optional
   turnin 1520 npc 5891
 
 step
@@ -286,9 +286,9 @@ step
 
 step
   zone map 1412
-  note "가트 미스트러너를 방문해 스킬을 습득하세요." only Druid
-  note "랑카 파샷을 방문해 스킬을 습득하세요." only Hunter
-  note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
+  task "가트 미스트러너를 방문해 스킬을 습득하세요." optional only Druid
+  task "랑카 파샷을 방문해 스킬을 습득하세요." optional only Hunter
+  task "하루트 썬더혼을 방문해 스킬을 습득하세요." optional only Warrior
   accept 743 npc 2985
 
 step
@@ -368,7 +368,7 @@ step
 step
   tip 마을 남쪽 나무 아래 바닥에 떨어진 호박도토리를 주우세요 (2개): 예언의 의식
   zone map 1412
-  note "레벨이 모자라 아직 못 받는 퀘스트: 야수 길들이기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Hunter
+  task "레벨이 모자라 아직 못 받는 퀘스트: 야수 길들이기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Hunter
   goto 47.7,66.9 r 20 map 1412
 
 step
@@ -445,12 +445,12 @@ step
 step
   tip 호박도토리가 아직 모자라면 이 근처 나무 아래에서 더 주우세요: 예언의 의식
   zone map 1412
-  note "쟈우나 오트윈드를 방문하여 잡템을 판매하세요."
+  task "쟈우나 오트윈드를 방문하여 잡템을 판매하세요." optional
   goto 50.4,66.5 r 20 map 1412
 
 step
   zone map 1412
-  note "이 근처 다 큰 초원타조를 잡아 \"연한 초원타조 고기\" 1개를 챙기세요 (카일에게 먹일 것)."
+  task "이 근처 다 큰 초원타조를 잡아 \"연한 초원타조 고기\" 1개를 챙기세요 (카일에게 먹일 것)." optional
   complete 745 @36.5,65.1 map 1412
 
 step
@@ -565,13 +565,13 @@ step
 
 step
   zone map 1412
-  note "크랑 스톤후프를 방문해 스킬을 습득하세요." only Warrior
+  task "크랑 스톤후프를 방문해 스킬을 습득하세요." optional only Warrior
   turnin 761 npc 2947
 
 step
   zone map 1412
-  note "제니아 룬토템을 방문해 스킬을 습득하세요." only Druid
-  note "나름 스카이체이서를 방문해 스킬을 습득하세요." only Shaman
+  task "제니아 룬토템을 방문해 스킬을 습득하세요." optional only Druid
+  task "나름 스카이체이서를 방문해 스킬을 습득하세요." optional only Shaman
   turnin 745 npc 2993
 
 step
@@ -588,10 +588,10 @@ step
 
 step
   zone map 1412
-  note "비라 영후프를 방문해 응급치료를 습득하세요."
-  note "전문기술 습득 가능: 무두질을 습득하세요."
-  note "전문기술 습득 가능: 가죽세공을 습득하세요."
-  note "잡템을 판매하세요."
+  task "비라 영후프를 방문해 응급치료를 습득하세요." optional
+  task "전문기술 습득 가능: 무두질을 습득하세요." optional
+  task "전문기술 습득 가능: 가죽세공을 습득하세요." optional
+  task "잡템을 판매하세요." optional
   turnin 766 npc 3055
 
 step
@@ -619,9 +619,9 @@ step
 
 step
   zone map 1412
-  note "레벨이 모자라 아직 못 받는 퀘스트: 사냥꾼의 길(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다."
-  note "레벨이 모자라 아직 못 받는 퀘스트: 부름에 응하기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Druid
-  note "요 샤프메인을 방문해 스킬을 습득하세요." only Hunter
+  task "레벨이 모자라 아직 못 받는 퀘스트: 사냥꾼의 길(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional
+  task "레벨이 모자라 아직 못 받는 퀘스트: 부름에 응하기(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Druid
+  task "요 샤프메인을 방문해 스킬을 습득하세요." optional only Hunter
   turnin 772 npc 2984
 
 step
@@ -653,7 +653,7 @@ step
 
 step
   zone map 1412
-  note "한 롱캐스트를 방문해 잡템을 판매하세요."
+  task "한 롱캐스트를 방문해 잡템을 판매하세요." optional
   turnin 770 npc 3052
 
 step
@@ -733,7 +733,7 @@ step
 step
   only Hunter
   zone map 1412
-  note "요 샤프메인에게 스킬을 습득하세요."
+  task "요 샤프메인에게 스킬을 습득하세요." optional
   kill 2956 quest 6061.1 @57.8,60.5 map 1412
 
 step
@@ -788,9 +788,9 @@ step
 
 step
   zone map 1412
-  note "크랑 스톤후프에게 스킬을 습득하세요." only Warrior
-  note "제니아 룬토템에게 스킬을 습득하세요." only Druid
-  note "나름 스카이체이서에게 스킬을 습득하세요." only Shaman
+  task "크랑 스톤후프에게 스킬을 습득하세요." optional only Warrior
+  task "제니아 룬토템에게 스킬을 습득하세요." optional only Druid
+  task "나름 스카이체이서에게 스킬을 습득하세요." optional only Shaman
   accept 833 npc 3233
 
 step
@@ -901,8 +901,8 @@ step
 step
   tip 나알 미스트러너에게 부드러운 양념을 구매하세요.
   zone map 1456
-  note "진 스톤후프를 방문해 수리하세요."
-  note "나알 미스트러너를 방문해 잡템을 판매하세요."
+  task "진 스톤후프를 방문해 수리하세요." optional
+  task "나알 미스트러너를 방문해 잡템을 판매하세요." optional
   goto 51,52.5 r 20 map 1456
 
 step
@@ -951,7 +951,7 @@ step
 step
   tip 탄드에게 작은 갈색 가방 하나를 구매하세요.
   zone map 1456
-  note "탄드를 방문해 잡템을 판매하세요."
+  task "탄드를 방문해 잡템을 판매하세요." optional
   goto 49.1,34.2 r 20 map 1456
 
 step
@@ -995,7 +995,7 @@ step
 step
   only Druid
   zone map 1450
-  note "마법책을 열어 *순간이동: 달의 숲* 주문을 사용하세요."
+  task "마법책을 열어 *순간이동: 달의 숲* 주문을 사용하세요." optional
   turnin 5922 npc 11802
 
 step
@@ -1035,7 +1035,7 @@ step
 step
   tip 작은 갈색 가방 하나를 구매하세요.
   zone map 1456
-  note "탄드를 방문해 잡템을 판매하세요."
+  task "탄드를 방문해 잡템을 판매하세요." optional
   goto 49.1,34.2 r 20 map 1456
 
 step

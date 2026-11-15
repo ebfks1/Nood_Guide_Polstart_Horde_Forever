@@ -763,7 +763,7 @@ step
 step
   when level<47
   zone map 1434
-  note "Booty Bay Hearth to Booty Bay."
+  task "Booty Bay Hearth to Booty Bay." optional
   turnin 604 npc 2487
 
 step
@@ -808,14 +808,14 @@ step
 step
   tip A group is recommended. *Find* Bhag'thera
   zone map 1434
-  note "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing."
+  task "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing." optional
   goto 48,20 r 20 map 1434
 
 step
   when level<44
   tip Kill Bhag'thera: Panther Mastery
   zone map 1434
-  note "If she's not there, check this spot too."
+  task "If she's not there, check this spot too." optional
   collect 3876 quest 193.1
 
 step
@@ -1044,7 +1044,7 @@ step
 step
   tip Find Cortello's Riddle (it's on one of the 3 ships) and accept (*reward chain): Cortello's Riddle
   accept 624 item 4056
-  note "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing."
+  task "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing." optional
 
 step
   hearth "Booty Bay"
@@ -1052,7 +1052,7 @@ step
 step
   when level<48
   zone map 1434
-  note "Booty Bay Hearth to Booty Bay."
+  task "Booty Bay Hearth to Booty Bay." optional
   turnin 621 npc 2498
 
 step
@@ -1133,8 +1133,8 @@ step
   tip Accept Cortello's Riddle (Dustwallow Marsh — 45-60 part) — *Reward chain
   zone map 1435
   accept 625 object 2553
-  note "== Krol'dok Stronghold (new Forever dungeon) == The Riverglades is a new zone, so there are no map-arrow coordinates yet. Go north of the Swamp of Sorrows (north of Stonard) into the Riverglades and find the Horde base Rog'mar and its flight path. If the way is blocked, take the boat from Steamwheedle Port (east Tanaris) to Powderfuse Port."
-  note "* Krol'dok Stronghold — about Lv42.5 -> about Lv43.5 · recommended Lv40-45 (healer 40 · tank/DPS 41) · new Forever dungeon"
+  task "== Krol'dok Stronghold (new Forever dungeon) == The Riverglades is a new zone, so there are no map-arrow coordinates yet. Go north of the Swamp of Sorrows (north of Stonard) into the Riverglades and find the Horde base Rog'mar and its flight path. If the way is blocked, take the boat from Steamwheedle Port (east Tanaris) to Powderfuse Port." optional
+  task "* Krol'dok Stronghold — about Lv42.5 -> about Lv43.5 · recommended Lv40-45 (healer 40 · tank/DPS 41) · new Forever dungeon" optional
 
 step
   along until q94973
@@ -1164,7 +1164,7 @@ step
 
 step
   tip Collect 15 Cultist Ears from the Twilight's Hammer: A Token of Vengeance
-  note "Enter the cave west of the fortress gates in the north of the Riverglades (map 37.5, 37.5)."
+  task "Enter the cave west of the fortress gates in the north of the Riverglades (map 37.5, 37.5)." optional
   complete 94975 "A Token of Vengeance"
 
 step
@@ -1227,7 +1227,7 @@ step
 step
   tip Enter Uldaman in northern Badlands (the Shadowforge dwarves in the dig site outside also drop Power Stones).
   zone map 1418
-  note "* Uldaman — Lv43.5 -> about Lv44.2 · recommended Lv42-43 (healer 42 · tank/DPS 43)"
+  task "* Uldaman — Lv43.5 -> about Lv44.2 · recommended Lv42-43 (healer 42 · tank/DPS 43)" optional
   goto 44.4,12.2 r 20 map 1418
 
 step
@@ -1264,7 +1264,7 @@ step
 step
   tip == Uldaman turn-ins == Turn in to Rigglefuzz: Power Stones
   zone map 1418
-  note "Clear up to the final boss Archaedas."
+  task "Clear up to the final boss Archaedas." optional
   turnin 2418 npc 2817
 
 step
@@ -2023,8 +2023,8 @@ step
 step
   tip 46 You should be at least Lv46 (healers can go from Lv45). If you are short, run Uldaman once more or kill mobs in the areas you just passed.
   level 46
-  note "* Zul'Farrak — Lv46.3 -> about Lv47.5 · recommended Lv45-46 (healer 45 · tank/DPS 46)"
-  note "! Your Hearthstone must be set to Gadgetzan. If it's set elsewhere, fly or run to Gadgetzan instead of hearthing."
+  task "* Zul'Farrak — Lv46.3 -> about Lv47.5 · recommended Lv45-46 (healer 45 · tank/DPS 46)" optional
+  task "! Your Hearthstone must be set to Gadgetzan. If it's set elsewhere, fly or run to Gadgetzan instead of hearthing." optional
 
 step
   hearth "Gadgetzan"
@@ -2032,7 +2032,7 @@ step
 step
   tip At Steamwheedle Port, turn in to Yeh'kinya: Screecher Spirits — *Reward chain · Dungeon prereq (Zul'Farrak)
   zone map 1446
-  note "Gadgetzan Hearth to Gadgetzan."
+  task "Gadgetzan Hearth to Gadgetzan." optional
   turnin 3520 npc 8579
 
 step
@@ -2068,7 +2068,7 @@ step
 step
   tip == Zul'Farrak turn-ins == Back in Gadgetzan, turn in Troll Temper
   zone map 1446
-  note "Leave the dungeon and Gadgetzan hearth to Gadgetzan (the Hearthstone you used before the dungeon comes off cooldown during the run; if not, ride southeast to Gadgetzan)."
+  task "Leave the dungeon and Gadgetzan hearth to Gadgetzan (the Hearthstone you used before the dungeon comes off cooldown during the run; if not, ride southeast to Gadgetzan)." optional
   turnin 3042 npc 7804
 
 step
@@ -2142,7 +2142,7 @@ step
 
 step
   tip >> Next dungeon: Maraudon (at about Lv49.0) — about Lv47.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Orgrimmar Fly to Orgrimmar.
-  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Zul'Farrak again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Maraudon Lv49) is close, go back to zone quests."
+  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Zul'Farrak again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Maraudon Lv49) is close, go back to zone quests." optional
   fly "Orgrimmar"
 
 step
@@ -2298,7 +2298,7 @@ step
   when level<52
   tip Find and take the lost tools: Vilebranch Hooligans
   zone map 1425
-  note "It's at one of the 5 spots:"
+  task "It's at one of the 5 spots:" optional
   collect 19033 quest 7839.1
 
 step
@@ -2452,8 +2452,8 @@ step
 
 step
   zone map 1454
-  note "! Your Hearthstone should be set to Orgrimmar (set above). \"Lines of Communication\" is turned in later when you pass through Undercity (50-60 guide)."
-  note "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Revantusk Village to Undercity and take the zeppelin to Orgrimmar)."
+  task "! Your Hearthstone should be set to Orgrimmar (set above). \"Lines of Communication\" is turned in later when you pass through Undercity (50-60 guide)." optional
+  task "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Revantusk Village to Undercity and take the zeppelin to Orgrimmar)." optional
   turnin 81 npc 6986
 
 step
@@ -2467,7 +2467,7 @@ step
 step
   tip In Shadowprey Village, accept from Vark Battlescar (or get it shared): Vyletongue Corruption
   zone map 1443
-  note "* Maraudon — Lv49.0 -> about Lv50.0 · recommended Lv48-49 (healer 48 · tank/DPS 49)"
+  task "* Maraudon — Lv49.0 -> about Lv50.0 · recommended Lv48-49 (healer 48 · tank/DPS 49)" optional
   accept 7029 npc 11823
 
 step
@@ -2540,5 +2540,5 @@ step
   tip Turn in to Centaur Pariah: The Pariah's Instructions
   zone map 1443
   turnin 7067 npc 13717
-  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Maraudon again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Sunken Temple Lv52.5) is close, go back to zone quests."
-  note "That's the end of 40-50. Move on to the 50-60 guide."
+  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Maraudon again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Sunken Temple Lv52.5) is close, go back to zone quests." optional
+  task "That's the end of 40-50. Move on to the 50-60 guide." optional

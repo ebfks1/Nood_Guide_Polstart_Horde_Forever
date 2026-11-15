@@ -12,7 +12,7 @@ next nood-ko/05-12-25
 
 step
   zone map 1411
-  note "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다."
+  task "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다." optional
   accept 4641 npc 10176
 
 step
@@ -35,10 +35,10 @@ step
 
 step
   zone map 1411
-  note "레벨이 모자라 아직 못 받는 퀘스트: 악마의 하수인(2레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  note "레벨이 모자라 아직 못 받는 퀘스트: 게으른 일꾼들(3레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다."
-  note "다리, 신발, 무기 장비를 해제하고 질긴 쇠고기와 함께 행상인에게 판매하세요." only Warlock
-  note "적어도 10코퍼는 획득할 겁니다. 새로운 스킬을 배우세요: 제물 (1 레벨)." only Warlock
+  task "레벨이 모자라 아직 못 받는 퀘스트: 악마의 하수인(2레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "레벨이 모자라 아직 못 받는 퀘스트: 게으른 일꾼들(3레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional
+  task "다리, 신발, 무기 장비를 해제하고 질긴 쇠고기와 함께 행상인에게 판매하세요." optional only Warlock
+  task "적어도 10코퍼는 획득할 겁니다. 새로운 스킬을 배우세요: 제물 (1 레벨)." optional only Warlock
   accept 790 npc 3287
 
 step
@@ -212,8 +212,8 @@ step
 
 step
   zone map 1411
-  note "동굴 안으로 더 들어가서 아이템 판매" only Warlock
-  note "새로운 스킬을 습득하세요: 부패 (1 레벨)" only Warlock
+  task "동굴 안으로 더 들어가서 아이템 판매" optional only Warlock
+  task "새로운 스킬을 습득하세요: 부패 (1 레벨)" optional only Warlock
   accept 4402 npc 9796
 
 step
@@ -272,11 +272,11 @@ step
 
 step
   zone map 1411
-  note "여기서 잡템을 판매하세요."
-  note "새로운 스킬을 습득하세요: 신비한 지능 (1 레벨)" only Mage
-  note "새로운 스킬을 습득하세요: 신의 권능: 인내 (1 레벨)" only Priest
-  note "새로운 스킬을 습득하세요: 대지의 무기 (1 레벨)" only Shaman
-  note "새로운 스킬을 습득하세요: 전투의 외침 (1 레벨)" only Warrior
+  task "여기서 잡템을 판매하세요." optional
+  task "새로운 스킬을 습득하세요: 신비한 지능 (1 레벨)" optional only Mage
+  task "새로운 스킬을 습득하세요: 신의 권능: 인내 (1 레벨)" optional only Priest
+  task "새로운 스킬을 습득하세요: 대지의 무기 (1 레벨)" optional only Shaman
+  task "새로운 스킬을 습득하세요: 전투의 외침 (1 레벨)" optional only Warrior
   accept 5441 npc 11378
 
 step
@@ -307,7 +307,7 @@ step
   only Warlock
   tip 게으른 일꾼 퀘스트가 완료되면 우선 마을로 돌아갑니다. 다른 퀘스트를 지금 완료할 필요는 없습니다. 퀘스트 완료: 게으른 일꾼들
   zone map 1411
-  note "(지도에 있는 아이콘 위치를 보세요.)"
+  task "(지도에 있는 아이콘 위치를 보세요.)" optional
   turnin 5441 npc 11378
 
 step
@@ -333,7 +333,7 @@ step
   tip 동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요: 불타는 칼날단 메달
   zone map 1411
   collect 4859 quest 794.1 @42.7,53 map 1411
-  note "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요."
+  task "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요." optional
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -345,7 +345,7 @@ step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip 함께 수행하세요: 완수하세요: 갈가르의 선인장 사과 별미
   zone map 1411
-  note "(지도에 있는 아이콘 위치를 보세요.)"
+  task "(지도에 있는 아이콘 위치를 보세요.)" optional
   collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
@@ -367,8 +367,8 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  note "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요."
-  note "시험의 골짜기로 귀환하세요."
+  task "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요." optional
+  task "시험의 골짜기로 귀환하세요." optional
   turnin 5441 npc 11378
 
 step
@@ -378,12 +378,12 @@ step
 
 step
   zone map 1411
-  note "시험의 골짜기로 귀환하세요." only Warlock
+  task "시험의 골짜기로 귀환하세요." optional only Warlock
   turnin 4402 npc 9796
 
 step
   zone map 1411
-  note "잡템을 정리하세요."
+  task "잡템을 정리하세요." optional
   turnin 789 npc 3143
 
 step
@@ -412,18 +412,18 @@ step
   only Shaman
   tip 동굴 안에 있는 지옥사냥개를 처치하여 완수하세요: 대지의 부름.
   zone map 1411
-  note "새로운 스킬을 습득하세요: 대지 충격(1 레벨)"
+  task "새로운 스킬을 습득하세요: 대지 충격(1 레벨)" optional
   collect 6640 quest 1516.1
 
 step
   zone map 1411
-  note "새로운 스킬을 습득하세요: 어둠의 권능: 고통 (1 레벨), 하급 치유 (2 레벨)" only Priest
-  note "새로운 스킬을 습득하세요: 음료 창조 (1 레벨), 얼음 화살 (1 레벨)" only Mage
-  note "레벨이 모자라 아직 못 받는 퀘스트: 숭고한 정신의 추종자(5레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Priest
-  note "새로운 스킬을 습득하세요: 전갈 쐐기 (1 레벨)" only Hunter
-  note "새로운 스킬을 습득하세요: 돌진 (1 레벨)" only Warrior
-  note "※ 이 단계는 귀환석 대신 무덤으로 순간이동을 씁니다." only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  note "야로그가 있는 지점에서 무덤으로 순간이동 (우측 하단 물음표 버튼>캐릭터 고립>무덤으로 순간이동)" only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "새로운 스킬을 습득하세요: 어둠의 권능: 고통 (1 레벨), 하급 치유 (2 레벨)" optional only Priest
+  task "새로운 스킬을 습득하세요: 음료 창조 (1 레벨), 얼음 화살 (1 레벨)" optional only Mage
+  task "레벨이 모자라 아직 못 받는 퀘스트: 숭고한 정신의 추종자(5레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Priest
+  task "새로운 스킬을 습득하세요: 전갈 쐐기 (1 레벨)" optional only Hunter
+  task "새로운 스킬을 습득하세요: 돌진 (1 레벨)" optional only Warrior
+  task "※ 이 단계는 귀환석 대신 무덤으로 순간이동을 씁니다." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "야로그가 있는 지점에서 무덤으로 순간이동 (우측 하단 물음표 버튼>캐릭터 고립>무덤으로 순간이동)" optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   turnin 794 npc 3145
 
 step
@@ -447,7 +447,7 @@ step
 
 step
   zone map 1411
-  note "여기서 잡템을 판매하세요."
+  task "여기서 잡템을 판매하세요." optional
   turnin 6394 npc 11378
 
 step
@@ -565,7 +565,7 @@ step
   only Mage
   tip 칼바위 언덕을 향해 북쪽으로 향하세요. 퀘스트 완료: 오르그닐에게 보고
   zone map 1411
-  note "새로운 스킬을 습득하세요: 화염구 (1 레벨), 음식 창조 (1 레벨), 화염 작렬 (1 레벨)"
+  task "새로운 스킬을 습득하세요: 화염구 (1 레벨), 음식 창조 (1 레벨), 화염 작렬 (1 레벨)" optional
   turnin 823 npc 3142
 
 step
@@ -576,13 +576,13 @@ step
 step
   tip 가르톡에게 퀘스트 수락: 배신자 처단, 영토 침범
   zone map 1411
-  note "*스틸레토*를 구매하세요 - 4 실버" only Rogue
-  note "*뿔나무 곡궁*을 구매하세요 - 3 실버" only Hunter
-  note "*보행용 지팡이*를 구매하세요 - 5 실버" only Shaman
-  note "*큰 도끼*를 구매하세요 - 5 실버" only Warrior
-  note "전문기술 습득 가능: 연금술"
-  note "전문기술 습득 가능: 약초채집"
-  note "칼바위 언덕을 향해 북쪽으로 향하세요."
+  task "*스틸레토*를 구매하세요 - 4 실버" optional only Rogue
+  task "*뿔나무 곡궁*을 구매하세요 - 3 실버" optional only Hunter
+  task "*보행용 지팡이*를 구매하세요 - 5 실버" optional only Shaman
+  task "*큰 도끼*를 구매하세요 - 5 실버" optional only Warrior
+  task "전문기술 습득 가능: 연금술" optional
+  task "전문기술 습득 가능: 약초채집" optional
+  task "칼바위 언덕을 향해 북쪽으로 향하세요." optional
   accept 784 npc 3139
   accept 837 npc 3139
 
@@ -593,8 +593,8 @@ step
 
 step
   zone map 1411
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요: 사악한 일격 (2 레벨)" only Rogue
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요: 원숭이의 상, 신비한 사격 (1 레벨), 사냥꾼의 징표 (1 레벨)" only Hunter
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 사악한 일격 (2 레벨)" optional only Rogue
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 원숭이의 상, 신비한 사격 (1 레벨), 사냥꾼의 징표 (1 레벨)" optional only Hunter
   accept 815 npc 3191
 
 step
@@ -610,7 +610,7 @@ step
 step
   tip 여관으로 들어가서 퀘스트 완료: 일꾼의 짐
   zone map 1411
-  note "새로운 스킬을 습득하세요: 생명력 전환 (1 레벨), 어둠의 화살 (2 레벨)" only Warlock
+  task "새로운 스킬을 습득하세요: 생명력 전환 (1 레벨), 어둠의 화살 (2 레벨)" optional only Warlock
   turnin 2161 npc 6928
 
 step
@@ -632,18 +632,18 @@ step
   only Priest
   tip 코르자를 치유하세요. 코르자에게 신의 권능: 인내를 시전하세요: 신비한 주술의 로브
   zone map 1411
-  note "새로운 스킬을 습득하세요: 신의 권능: 보호막 (1 레벨), 성스러운 일격 (2 레벨)"
+  task "새로운 스킬을 습득하세요: 신의 권능: 보호막 (1 레벨), 성스러운 일격 (2 레벨)" optional
   kill 12430 quest 5648.1 @53.1,46.5 map 1411
 
 step
   tip 남쪽 길가 모험가 야영지의 브라크에게 퀘스트 완료: 모험가
   zone map 1411
-  note "잡템을 판매하세요. 필요하다면 물빵을 구매하세요."
-  note "(단, 응급치료 습득에 필요한 1실버는 남기세요). 병영 안으로 들어가서, 좌회전하세요. 응급치료를 *습득*하세요."
-  note "지금부터는 한가할 때마다 붕대를 만들 수 있습니다."
-  note "추후에 응급치료 숙련도 40이 필요합니다."
-  note "새로운 스킬을 습득하세요: 분쇄 (1 레벨), 무기 막기 (패시브)" only Warrior
-  note "전문기술 습득 가능: 채광, 대장기술, 기계공학"
+  task "잡템을 판매하세요. 필요하다면 물빵을 구매하세요." optional
+  task "(단, 응급치료 습득에 필요한 1실버는 남기세요). 병영 안으로 들어가서, 좌회전하세요. 응급치료를 *습득*하세요." optional
+  task "지금부터는 한가할 때마다 붕대를 만들 수 있습니다." optional
+  task "추후에 응급치료 숙련도 40이 필요합니다." optional
+  task "새로운 스킬을 습득하세요: 분쇄 (1 레벨), 무기 막기 (패시브)" optional only Warrior
+  task "전문기술 습득 가능: 채광, 대장기술, 기계공학" optional
   turnin 96652 npc 265809
 
 step
@@ -773,12 +773,12 @@ step
 step
   tip 남쪽으로 내려가며 사냥하세요. 시험의 골짜기 공격 계획서를 불태우세요: 콜카르일족 침략 저지
   zone map 1411
-  note "새로운 스킬을 습득하세요: 고통의 저주 (1 레벨), 공포 (1 레벨)" only Warlock
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요: 후려치기 (1 레벨), 회피, 절개 (2 레벨)" only Rogue
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요: 무기 막기 (패시브), 충격포, 랩터의 일격 (2 레벨)" only Hunter
-  note "병영 안으로 들어가 새로운 스킬을 습득하세요: 번개 화살 (2 레벨), 번개 보호막 (1 레벨), 대지의 무기 (2 레벨), 대지 충격 (2 레벨), 치유의 물결 (2 레벨))" only Shaman
-  note "새로운 스킬을 습득하세요: 영웅의 일격 (2 레벨), 무력화 (1 레벨)" only Warrior
-  note "새로운 스킬을 습득하세요: 소생 (1 레벨), 소실 (1 레벨))" only Priest
+  task "새로운 스킬을 습득하세요: 고통의 저주 (1 레벨), 공포 (1 레벨)" optional only Warlock
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 후려치기 (1 레벨), 회피, 절개 (2 레벨)" optional only Rogue
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 무기 막기 (패시브), 충격포, 랩터의 일격 (2 레벨)" optional only Hunter
+  task "병영 안으로 들어가 새로운 스킬을 습득하세요: 번개 화살 (2 레벨), 번개 보호막 (1 레벨), 대지의 무기 (2 레벨), 대지 충격 (2 레벨), 치유의 물결 (2 레벨))" optional only Shaman
+  task "새로운 스킬을 습득하세요: 영웅의 일격 (2 레벨), 무력화 (1 레벨)" optional only Warrior
+  task "새로운 스킬을 습득하세요: 소생 (1 레벨), 소실 (1 레벨))" optional only Priest
   interact 3189 quest 786.1 @49.81,81.31 map 1411
 
 step
@@ -809,7 +809,7 @@ step
 step
   tip 퀘스트 완료: 콜카르일족 침략 저지(NPC 돌아다님)
   zone map 1411
-  note "전문기술 습득 가능: 낚시"
+  task "전문기술 습득 가능: 낚시" optional
   turnin 786 npc 3140
 
 step
@@ -824,8 +824,8 @@ step
 step
   tip 메아리 섬으로 건너가기 전, 센진 마을 동쪽 해안의 붉은발톱랩터 어미를 처치해 알을 획득: 붉은발톱랩터 어미
   zone map 1411
-  note "수리하시고 잡템을 판매하세요."
-  note "새로운 스킬을 습득하세요: 변이 (1 레벨), 얼음 화살 (2 레벨)" only Mage
+  task "수리하시고 잡템을 판매하세요." optional
+  task "새로운 스킬을 습득하세요: 변이 (1 레벨), 얼음 화살 (2 레벨)" optional only Mage
   collect 277128 quest 97223.1 @68.8,71.8 map 1411
 
 step
@@ -898,14 +898,14 @@ step
 step
   tip 전투호위병과 사막길잡이를 처치해 완수하세요: 영토 침범영토 침범
   zone map 1411
-  note "레벨이 모자라 아직 못 받는 퀘스트: 불의 부름(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Shaman
-  note "레벨이 모자라 아직 못 받는 퀘스트: Hex of Weakness(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Priest
-  note "레벨이 모자라 아직 못 받는 퀘스트: 테르조크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Rogue,Orc
-  note "레벨이 모자라 아직 못 받는 퀘스트: 간룰의 소환(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Warlock
-  note "레벨이 모자라 아직 못 받는 퀘스트: 노련한 우제크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Warrior
-  note "레벨이 모자라 아직 못 받는 퀘스트: 호드의 징병(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." only Warrior,Shaman
-  note "수리/잡템 판매"
-  note "필요하다면 레벨 5 물빵을 구매하세요."
+  task "레벨이 모자라 아직 못 받는 퀘스트: 불의 부름(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Shaman
+  task "레벨이 모자라 아직 못 받는 퀘스트: Hex of Weakness(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Priest
+  task "레벨이 모자라 아직 못 받는 퀘스트: 테르조크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Rogue,Orc
+  task "레벨이 모자라 아직 못 받는 퀘스트: 간룰의 소환(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warlock
+  task "레벨이 모자라 아직 못 받는 퀘스트: 노련한 우제크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warrior
+  task "레벨이 모자라 아직 못 받는 퀘스트: 호드의 징병(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warrior,Shaman
+  task "수리/잡템 판매" optional
+  task "필요하다면 레벨 5 물빵을 구매하세요." optional
   kill 3113 quest 837.3 @43.98,40.19 map 1411
   kill 3114 quest 837.4 @43.98,40.19 map 1411
 
@@ -930,7 +930,7 @@ step
 step
   tip 로 돌아가서 퀘스트 완료: 사막의 바람
   zone map 1411
-  note "( 지도에 위치를 표기한 아이콘을 확인하세요.)"
+  task "( 지도에 위치를 표기한 아이콘을 확인하세요.)" optional
   turnin 834 npc 3293
 
 step
@@ -960,7 +960,7 @@ step
 step
   tip 오르그닐 소울스카에게 퀘스트 수락: 실종된 요원 (포에버 신규)
   zone map 1411
-  note "카운트다운은 신경쓰지 마세요."
+  task "카운트다운은 신경쓰지 마세요." optional
   accept 99048 npc 3142
 
 step
@@ -1002,11 +1002,11 @@ step
 step
   tip 동쪽 해안 언덕의 헤글란 셰이드아이에게 퀘스트 완료: 실종된 요원
   zone map 1411
-  note "새로운 스킬을 습득하세요" only Shaman
-  note "새로운 스킬을 습득하세요: 하급 치유 (3 레벨), 부활 (1 레벨), 정신 분열 (1 레벨), 어둠의 권능: 고통 (2 레벨)" only Priest
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요." only Rogue
-  note "새로운 스킬을 습득하세요: 영혼 흡수 (1 레벨), 악마의 피부 (2 레벨), 생명석 창조(최하급), 제물 (2 레벨)" only Warlock
-  note "새로운 스킬을 습득하세요." only Warrior
+  task "새로운 스킬을 습득하세요" optional only Shaman
+  task "새로운 스킬을 습득하세요: 하급 치유 (3 레벨), 부활 (1 레벨), 정신 분열 (1 레벨), 어둠의 권능: 고통 (2 레벨)" optional only Priest
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요." optional only Rogue
+  task "새로운 스킬을 습득하세요: 영혼 흡수 (1 레벨), 악마의 피부 (2 레벨), 생명석 창조(최하급), 제물 (2 레벨)" optional only Warlock
+  task "새로운 스킬을 습득하세요." optional only Warrior
   turnin 99048 npc 275657
 
 step
@@ -1065,7 +1065,7 @@ step
   only Shaman
   tip 산봉우리를 올라가 퀘스트 완료: 불의 부름
   zone map 1411
-  note "숨겨진 길로 이동하세요. ( 지도에 위치를 표기한 아이콘을 확인하세요. 확대하면 더 잘 보입니다.)"
+  task "숨겨진 길로 이동하세요. ( 지도에 위치를 표기한 아이콘을 확인하세요. 확대하면 더 잘 보입니다.)" optional
   turnin 1524 npc 5900
 
 step
@@ -1147,7 +1147,7 @@ step
   only Hunter
   tip 사나운 점박이멧돼지를 찾아 조련용 막대로 길들이세요: 야수 길들이기
   zone map 1411
-  note "벙커 안으로 들어가 새로운 스킬을 습득하세요."
+  task "벙커 안으로 들어가 새로운 스킬을 습득하세요." optional
   kill 3099 quest 6062.1 @52.83,48.9 map 1411
 
 step
@@ -1238,18 +1238,18 @@ step
 step
   tip 스랄에게 이동하여 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
-  note "▶ 다음 지역 듀로타 (주요 퀘스트 Lv9~12): 지금 예상 Lv10 · 수월하려면 Lv11 · 최소 Lv8."
-  note "필요하다면 물빵을 구매하세요."
-  note "새로운 스킬을 습득하세요: 얼음 회오리 (1 레벨), 냉기 갑옷 (2 레벨), 음료 창조 (2 레벨)" only Mage
-  note "마법사 직업 퀘스트는 생략하세요." only Mage
-  note "기술 전문가 위치: 재봉술"
-  note "무두질과 가죽세공"
-  note "마법부여"
-  note "연금술"
-  note "채광"
-  note "대장기술"
-  note "기계공학"
-  note "약초채집"
+  task "▶ 다음 지역 듀로타 (주요 퀘스트 Lv9~12): 지금 예상 Lv10 · 수월하려면 Lv11 · 최소 Lv8." optional
+  task "필요하다면 물빵을 구매하세요." optional
+  task "새로운 스킬을 습득하세요: 얼음 회오리 (1 레벨), 냉기 갑옷 (2 레벨), 음료 창조 (2 레벨)" optional only Mage
+  task "마법사 직업 퀘스트는 생략하세요." optional only Mage
+  task "기술 전문가 위치: 재봉술" optional
+  task "무두질과 가죽세공" optional
+  task "마법부여" optional
+  task "연금술" optional
+  task "채광" optional
+  task "대장기술" optional
+  task "기계공학" optional
+  task "약초채집" optional
   accept 5726 npc 4949
 
 step
@@ -1377,7 +1377,7 @@ step
 step
   tip 동굴 내부에서 다음 퀘스트를 완수하세요: 해골 바위굴
   zone map 1411
-  note "수리하시고 잡템을 판매하세요."
+  task "수리하시고 잡템을 판매하세요." optional
   collect 4871 quest 827.1 @54.06,9.01 map 1411
 
 step
@@ -1417,8 +1417,8 @@ step
 step
   tip 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
-  note "(무두질의 경우) 오그리마에 가기 전까지 숙련도 50에 도달하도록 하세요."
-  note "오그리마로 이동하세요."
+  task "(무두질의 경우) 오그리마에 가기 전까지 숙련도 50에 도달하도록 하세요." optional
+  task "오그리마로 이동하세요." optional
   turnin 5726 npc 4949
 
 step
@@ -1488,11 +1488,11 @@ step
 step
   tip 오그리마 정문으로 나가세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)
   zone map 1411
-  note "새로운 스킬을 습득하세요" only Priest
-  note "새로운 스킬을 습득하세요" only Shaman
-  note "새로운 스킬을 습득하세요: 음료 창조 (2 레벨), 마법 감쇠 (1 레벨), 화염구 (3 레벨)" only Mage
-  note "새로운 스킬을 습득하세요" only Hunter
-  note "새로운 스킬을 습득하세요" only Warrior
+  task "새로운 스킬을 습득하세요" optional only Priest
+  task "새로운 스킬을 습득하세요" optional only Shaman
+  task "새로운 스킬을 습득하세요: 음료 창조 (2 레벨), 마법 감쇠 (1 레벨), 화염구 (3 레벨)" optional only Mage
+  task "새로운 스킬을 습득하세요" optional only Hunter
+  task "새로운 스킬을 습득하세요" optional only Warrior
   goto 45.5,12 r 20 map 1411
 
 step
@@ -1577,9 +1577,9 @@ step
   label q99051
   tip 받아 둔 오르그닐 퀘스트가 끝났다면 보고: 저 아래에서 온 위협
   zone map 1411
-  note "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." only Mage,Priest
-  note "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." only Warlock,Warrior,Rogue,Hunter,Shaman
-  note "칼바위 언덕으로 귀환하세요." only Mage,Priest,Hunter,Warlock,Rogue
+  task "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." optional only Mage,Priest
+  task "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." optional only Warlock,Warrior,Rogue,Hunter,Shaman
+  task "칼바위 언덕으로 귀환하세요." optional only Mage,Priest,Hunter,Warlock,Rogue
   turnin 99051 npc 3142
 
 step
@@ -1600,7 +1600,7 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1413
-  note "※ 귀환석이 칼바위 언덕으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 칼바위 언덕까지 비행하거나 달려가세요."
+  task "※ 귀환석이 칼바위 언덕으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 칼바위 언덕까지 비행하거나 달려가세요." optional
   turnin 840 npc 3337
 
 step

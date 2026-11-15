@@ -14,9 +14,9 @@ step
 
 step
   tip Thunder Bluff Fly to Thunder Bluff (a quick stop for a Razorfen Kraul quest).
-  note "* Razorfen Kraul — Lv31.3 -> about Lv32.0 · recommended Lv30-31 (healer 30 · tank/DPS 31)"
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
-  note "Orgrimmar Hearth to Orgrimmar (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity)."
+  task "* Razorfen Kraul — Lv31.3 -> about Lv32.0 · recommended Lv30-31 (healer 30 · tank/DPS 31)" optional
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
+  task "Orgrimmar Hearth to Orgrimmar (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity)." optional
   fly "Thunder Bluff"
 
 step
@@ -115,7 +115,7 @@ step
 step
   tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
   zone map 1411
-  note "* Scarlet Monastery (Graveyard and Library together) — Lv32.0 -> about Lv33.5 · Graveyard recommended Lv31-32 (healer 31 · tank/DPS 32), Library recommended Lv32-33 (healer 32 · tank/DPS 33)"
+  task "* Scarlet Monastery (Graveyard and Library together) — Lv32.0 -> about Lv33.5 · Graveyard recommended Lv31-32 (healer 31 · tank/DPS 32), Library recommended Lv32-33 (healer 32 · tank/DPS 33)" optional
   goto 50.8,13.6 r 20 map 1411
 
 step
@@ -181,7 +181,7 @@ step
 
 step
   tip == Scarlet Monastery (Graveyard) turn-ins == Tarren Mill Fly to Tarren Mill (if you don't have the flight path, run).
-  note "Clear the Library up to Arcanist Doan and leave the Monastery (the Compendium is turned in when you pass through Thunder Bluff)."
+  task "Clear the Library up to Arcanist Doan and leave the Monastery (the Compendium is turned in when you pass through Thunder Bluff)." optional
   fly "Tarren Mill"
 
 step
@@ -193,8 +193,8 @@ step
 step
   tip Accept from Deathguard Humbert: Humbert's Sword
   zone map 1424
-  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running the Graveyard/Library again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Drowned City Lv37.5) is close, go back to zone quests."
-  note ">> Next dungeon: The Drowned City (at about Lv37.5 — new in Forever) — about Lv33.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)."
+  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running the Graveyard/Library again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Drowned City Lv37.5) is close, go back to zone quests." optional
+  task ">> Next dungeon: The Drowned City (at about Lv37.5 — new in Forever) — about Lv33.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)." optional
   accept 547 npc 2419
 
 step
@@ -272,7 +272,7 @@ step
   tip Enter the Alterac Mountains.
   zone map 1416
   goto 57.6,69.4 r 20 map 1416
-  note "! Your Hearthstone must be set to Tarren Mill. If it's set elsewhere, fly or run to Tarren Mill instead of hearthing."
+  task "! Your Hearthstone must be set to Tarren Mill. If it's set elsewhere, fly or run to Tarren Mill instead of hearthing." optional
 
 step
   when level<38
@@ -298,7 +298,7 @@ step
 step
   when level<38
   zone map 1424
-  note "Tarren Mill Hearth to Tarren Mill."
+  task "Tarren Mill Hearth to Tarren Mill." optional
   turnin 533 npc 2229
 
 step
@@ -882,7 +882,7 @@ step
 step
   when level<43
   zone map 1443
-  note "Head south into Desolace."
+  task "Head south into Desolace." optional
   accept 5501 npc 11438
 
 step
@@ -1008,7 +1008,7 @@ step
   when level<39
   tip Kill the Khan: Khan Dez'hepah
   zone map 1443
-  note "Khan Dez'hepah spawns at one of three spots."
+  task "Khan Dez'hepah spawns at one of three spots." optional
   collect 6066 quest 1365.1
 
 step
@@ -1268,13 +1268,13 @@ step
 step
   when onquest 1436
   zone map 1454
-  note "Orgrimmar Hearth to Orgrimmar."
+  task "Orgrimmar Hearth to Orgrimmar." optional
   turnin 1436 npc 5640
 
 step
   tip Take the zeppelin to Grom'gol (Stranglethorn Vale) from the tower outside Orgrimmar's north gate.
   zone map 1411
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
@@ -1450,8 +1450,8 @@ step
 step
   tip Swim west from Grom'gol past the Vile Reef and enter the underwater cave (form your group in Grom'gol).
   zone map 1434
-  note "* The Drowned City — about Lv37.5 -> about Lv38.3 · recommended Lv35-40 (healer 35 · tank/DPS 36) · new Forever dungeon"
-  note "! The entrance is an underwater cave, so watch your breath. Undead are fine; warlocks use Unending Breath; others bring Water Breathing potions."
+  task "* The Drowned City — about Lv37.5 -> about Lv38.3 · recommended Lv35-40 (healer 35 · tank/DPS 36) · new Forever dungeon" optional
+  task "! The entrance is an underwater cave, so watch your breath. Undead are fine; warlocks use Unending Breath; others bring Water Breathing potions." optional
   goto 21.4,27.9 r 20 map 1434
 
 step
@@ -1461,7 +1461,7 @@ step
 
 step
   tip Make rubbings of the four Tablets of I'lalai with the hide and charcoal: The Drowned City
-  note "! Pick up any other quests offered inside (two Saltseer quests and others) and do them too."
+  task "! Pick up any other quests offered inside (two Saltseer quests and others) and do them too." optional
   complete 95775
 
 step
@@ -1473,7 +1473,7 @@ step
   label q95776
   tip Back in Grom'gol, turn in: The Only Good Brinescale... (turn-in NPC not confirmed — if not Commander Aggro'gosh, check your quest log)
   zone map 1434
-  note "Clear to the last boss, Captain Dreadrise, then leave the dungeon."
+  task "Clear to the last boss, Captain Dreadrise, then leave the dungeon." optional
   turnin 95776 @32.2,28.9 map 1434
 
 step
@@ -1603,8 +1603,8 @@ step
 step
   tip Accept from Dran Droffers (or get it shared): Necklace Recovery (Uldaman prep — requires level 37)
   zone map 1454
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
-  note "Orgrimmar Hearth to Orgrimmar."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
+  task "Orgrimmar Hearth to Orgrimmar." optional
   accept 2283 npc 6986
 
 step
@@ -1624,7 +1624,7 @@ step
 step
   tip In the Undercity Magic Quarter, accept from Andrew Brownell (or get it shared): Bring the End (Razorfen Downs — requires level 37, prep for the next dungeon)
   zone map 1458
-  note "* Scarlet Monastery (Armory + Cathedral together) — about Lv39.0 -> about Lv40.3 · recommended Lv38.5-39 (healer 38 · tank/DPS 38.5-39)"
+  task "* Scarlet Monastery (Armory + Cathedral together) — about Lv39.0 -> about Lv40.3 · recommended Lv38.5-39 (healer 38 · tank/DPS 38.5-39)" optional
   accept 3341 npc 2308
 
 step
@@ -1639,7 +1639,7 @@ step
 step
   tip Finish collecting 20 Hearts of Zeal from Scarlet mobs: Hearts of Zeal
   zone map 1420
-  note "After the Armory, go straight into the Cathedral wing with the same group."
+  task "After the Armory, go straight into the Cathedral wing with the same group." optional
   collect 5805 quest 1113.1
 
 step
@@ -1649,7 +1649,7 @@ step
 step
   tip Kill High Inquisitor Whitemane (she revives Mograine): Into The Scarlet Monastery
   kill 3977 quest 1048.1
-  note "== Scarlet Monastery turn-ins == Leave the dungeon and Undercity hearth to Undercity (if it is on cooldown, run west to Undercity)."
+  task "== Scarlet Monastery turn-ins == Leave the dungeon and Undercity hearth to Undercity (if it is on cooldown, run west to Undercity)." optional
 
 step
   hearth "Undercity"
@@ -1681,7 +1681,7 @@ step
 step
   tip Follow the road south to the Razorfen Downs entrance at the southern edge of the Barrens.
   zone map 1413
-  note "* Razorfen Downs — about Lv40.3 -> about Lv41.2 · recommended Lv40-41 (healer 40 · tank/DPS 40.5) · a 40-50 dungeon in Forever"
+  task "* Razorfen Downs — about Lv40.3 -> about Lv41.2 · recommended Lv40-41 (healer 40 · tank/DPS 40.5) · a 40-50 dungeon in Forever" optional
   goto 49,93 r 20 map 1413
 
 step
@@ -1716,7 +1716,7 @@ step
   tip == Razorfen Downs turn-ins == Near the entrance, turn in to Myriam Moonsinger: A Host of Evil (An Unholy Alliance and Bring the End are turned in at Undercity)
   zone map 1413
   turnin 6626 npc 12866
-  note "! Your Hearthstone should be set to Undercity (set above). The Hearthstone you used after the Monastery comes off cooldown while you run Razorfen Downs. If it is still on cooldown or set elsewhere, fly to Orgrimmar and take the zeppelin to Undercity."
+  task "! Your Hearthstone should be set to Undercity (set above). The Hearthstone you used after the Monastery comes off cooldown while you run Razorfen Downs. If it is still on cooldown or set elsewhere, fly to Orgrimmar and take the zeppelin to Undercity." optional
 
 step
   hearth "Undercity"
@@ -1724,11 +1724,11 @@ step
 step
   tip In the Royal Quarter, turn in to Varimathras: An Unholy Alliance (Ambassador Malcin's Head from outside Razorfen Downs)
   zone map 1458
-  note "Undercity Hearth to Undercity."
+  task "Undercity Hearth to Undercity." optional
   turnin 6521 npc 2425
 
 step
   tip In the Magic Quarter, turn in to Andrew Brownell: Bring the End
   zone map 1458
   turnin 3341 npc 2308
-  note "That's the end of 30-40. Move on to the 40-50 guide (Krol'dok Stronghold, Uldaman, ZF, Maraudon)."
+  task "That's the end of 30-40. Move on to the 40-50 guide (Krol'dok Stronghold, Uldaman, ZF, Maraudon)." optional

@@ -194,7 +194,9 @@ def goal_lines(g, lang, along, stats):
     if t in ('sethome', 'hearth', 'getfp', 'fly'):
         return ['%s %s' % (t, quoted(g['location'])) + tail + note]
     if t == 'note':
-        return ['note ' + quoted(txt(g['text'], lang)) + tail]
+        # a ticked-off line: an optional task gets a checkbox in the guide window and never holds the step
+        # (BalCon's notes were written to be clicked shut: "확인했으면 눌러 닫기")
+        return ['task ' + quoted(txt(g['text'], lang)) + ('' if ' optional' in tail else ' optional') + tail]
     raise ValueError(t)
 
 

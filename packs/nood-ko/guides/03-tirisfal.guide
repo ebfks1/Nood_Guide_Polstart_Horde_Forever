@@ -12,7 +12,7 @@ next nood-ko/05-12-25
 
 step
   zone map 1420
-  note "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다."
+  task "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다." optional
   accept 363 npc 1568
 
 step
@@ -90,7 +90,7 @@ step
 
 step
   tip 사냥해서 레벨 3으로 올리세요 (말라의 마지막 소원은 3레벨부터 받을 수 있습니다).
-  note "상인에게 물이나 빵을 구매합니다."
+  task "상인에게 물이나 빵을 구매합니다." optional
   level 3
 
 step
@@ -180,9 +180,9 @@ step
 
 step
   zone map 1420
-  note "잡템을 판매하고 필요하다면 물빵을 구매하세요."
-  note "직업 상급자에게 레벨 4 스킬을 습득하세요." only Priest
-  note "직업 상급자에게 레벨 4 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
+  task "잡템을 판매하고 필요하다면 물빵을 구매하세요." optional
+  task "직업 상급자에게 레벨 4 스킬을 습득하세요." optional only Priest
+  task "직업 상급자에게 레벨 4 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
   accept 381 npc 1570
 
 step
@@ -358,9 +358,9 @@ step
 step
   tip 고르도를 찾으세요. 티리스팔 숲 오솔길을 순찰하고 있습니다. 고르도에게 퀘스트 수락: 고르도의 임무
   zone map 1420
-  note "레벨이 모자라 아직 못 받는 퀘스트: 죽음의 한기(7레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다. 직업 상급자에게 레벨 6 스킬을 습득하세요." only Priest
-  note "직업 상급자에게 레벨 6 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "잡템을 판매하시고 필요하다면 물빵을 구매하세요."
+  task "레벨이 모자라 아직 못 받는 퀘스트: 죽음의 한기(7레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다. 직업 상급자에게 레벨 6 스킬을 습득하세요." optional only Priest
+  task "직업 상급자에게 레벨 6 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   accept 5481 @56.1,52.4 map 1420
 
 step
@@ -492,9 +492,9 @@ step
 
 step
   zone map 1420
-  note "직업 상급자에게 레벨 8 스킬을 습득하세요." only Priest
-  note "직업 상급자에게 레벨 8 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "잡템을 판매하시고, 필요하다면 물빵과 *가방*을 구매하세요."
+  task "직업 상급자에게 레벨 8 스킬을 습득하세요." optional only Priest
+  task "직업 상급자에게 레벨 8 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "잡템을 판매하시고, 필요하다면 물빵과 *가방*을 구매하세요." optional
   collect 2831 quest 362.1
   collect 2829 quest 354.1
   collect 2828 quest 354.2
@@ -539,7 +539,7 @@ step
 
 step
   zone map 1420
-  note "굵은 실타래 하나를 구매하세요."
+  task "굵은 실타래 하나를 구매하세요." optional
   turnin 354 npc 1500
 
 step
@@ -560,9 +560,9 @@ step
 
 step
   zone map 1420
-  note "직업 상급자에게 레벨 10 스킬을 습득하세요." only Priest
-  note "직업 상급자에게 레벨 10 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
-  note "잡템을 판매하시고 필요하다면 물빵을 구매하세요."
+  task "직업 상급자에게 레벨 10 스킬을 습득하세요." optional only Priest
+  task "직업 상급자에게 레벨 10 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
+  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   turnin 355 npc 1499
 
 step
@@ -603,7 +603,7 @@ step
 
 step
   zone map 1421
-  note "잡템을 판매하시고 필요하다면 물빵을 구매하세요."
+  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   accept 6321 npc 6389
 
 step
@@ -749,15 +749,15 @@ step
 step
   zone map 1420
   turnin 492 npc 2211
-  note "※ 귀환석이 언더시티로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 언더시티까지 비행하거나 달려가세요."
+  task "※ 귀환석이 언더시티로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 언더시티까지 비행하거나 달려가세요." optional
 
 step
   hearth "Undercity"
 
 step
   zone map 1458
-  note "언더시티로 귀환합니다."
-  note "잡템을 판매하시고 필요하다면 물빵을 구매하세요."
+  task "언더시티로 귀환합니다." optional
+  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   turnin 6322 npc 4551
 
 step
@@ -768,8 +768,8 @@ step
   tip 왕실 지구 바리마트라스에게 퀘스트 수락: 파괴해야 할 힘 (성난불길 협곡 퀘스트)
   zone map 1458
   accept 5725 npc 2425
-  note "직업 상급자에게 레벨 12 스킬을 습득하세요." only Priest
-  note "직업 상급자에게 레벨 12 스킬을 습득하세요." only Warrior,Rogue,Mage,Warlock,Paladin
+  task "직업 상급자에게 레벨 12 스킬을 습득하세요." optional only Priest
+  task "직업 상급자에게 레벨 12 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
 
 step
   along

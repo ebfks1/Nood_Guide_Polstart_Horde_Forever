@@ -12,7 +12,7 @@ next nood/05-12-25
 
 step
   zone map 1411
-  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
+  task "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation." optional
   accept 4641 npc 10176
 
 step
@@ -35,10 +35,10 @@ step
 
 step
   zone map 1411
-  note "Not available yet (level too low): Vile Familiars (level 2) — you'll pick it up the next time you're in town." only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  note "Not available yet (level too low): Lazy Peons (level 3) — you'll pick it up the next time you're in town."
-  note "Unequip your legs, boots and weapon and sell them with the Tough Jerky to the vendor." only Warlock
-  note "You should end up with at least 10 copper. Train: Immolate (Rank 1)." only Warlock
+  task "Not available yet (level too low): Vile Familiars (level 2) — you'll pick it up the next time you're in town." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "Not available yet (level too low): Lazy Peons (level 3) — you'll pick it up the next time you're in town." optional
+  task "Unequip your legs, boots and weapon and sell them with the Tough Jerky to the vendor." optional only Warlock
+  task "You should end up with at least 10 copper. Train: Immolate (Rank 1)." optional only Warlock
   accept 790 npc 3287
 
 step
@@ -212,8 +212,8 @@ step
 
 step
   zone map 1411
-  note "Go deeper into the cave and sell junk" only Warlock
-  note "Train: Corruption (Rank 1)" only Warlock
+  task "Go deeper into the cave and sell junk" optional only Warlock
+  task "Train: Corruption (Rank 1)" optional only Warlock
   accept 4402 npc 9796
 
 step
@@ -272,11 +272,11 @@ step
 
 step
   zone map 1411
-  note "Sell your junk here."
-  note "Train: Arcane Intellect (Rank 1)" only Mage
-  note "Train: Power Word: Fortitude (Rank 1)" only Priest
-  note "Train: Rockbiter Weapon (Rank 1)" only Shaman
-  note "Train: Battle Shout (Rank 1)" only Warrior
+  task "Sell your junk here." optional
+  task "Train: Arcane Intellect (Rank 1)" optional only Mage
+  task "Train: Power Word: Fortitude (Rank 1)" optional only Priest
+  task "Train: Rockbiter Weapon (Rank 1)" optional only Shaman
+  task "Train: Battle Shout (Rank 1)" optional only Warrior
   accept 5441 npc 11378
 
 step
@@ -307,7 +307,7 @@ step
   only Warlock
   tip Once Lazy Peons is done, head back to town first. The other quests don't need to be finished yet. Turn in Lazy Peons
   zone map 1411
-  note "(check the icons on your map.)"
+  task "(check the icons on your map.)" optional
   turnin 5441 npc 11378
 
 step
@@ -333,7 +333,7 @@ step
   tip Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion
   zone map 1411
   collect 4859 quest 794.1 @42.7,53 map 1411
-  note "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing."
+  task "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing." optional
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -345,7 +345,7 @@ step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip At the same time: finish Galgar's Cactus Apple Surprise
   zone map 1411
-  note "(check the icons on your map.)"
+  task "(check the icons on your map.)" optional
   collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
@@ -367,8 +367,8 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  note "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing."
-  note "Valley of Trials Hearth to the Valley of Trials."
+  task "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing." optional
+  task "Valley of Trials Hearth to the Valley of Trials." optional
   turnin 5441 npc 11378
 
 step
@@ -378,12 +378,12 @@ step
 
 step
   zone map 1411
-  note "Valley of Trials Hearth to the Valley of Trials." only Warlock
+  task "Valley of Trials Hearth to the Valley of Trials." optional only Warlock
   turnin 4402 npc 9796
 
 step
   zone map 1411
-  note "Sell your junk."
+  task "Sell your junk." optional
   turnin 789 npc 3143
 
 step
@@ -412,18 +412,18 @@ step
   only Shaman
   tip Kill the felhounds inside the cave: Call of Earth.
   zone map 1411
-  note "Train: Earth Shock (Rank 1)"
+  task "Train: Earth Shock (Rank 1)" optional
   collect 6640 quest 1516.1
 
 step
   zone map 1411
-  note "Train: Shadow Word: Pain (Rank 1), Lesser Heal (Rank 2)" only Priest
-  note "Train: Conjure Water (Rank 1), Frostbolt (Rank 1)" only Mage
-  note "Not available yet (level too low): In Favor of Spirituality (level 5) — you'll pick it up the next time you're in town." only Priest
-  note "Train: Serpent Sting (Rank 1)" only Hunter
-  note "Train: Charge (Rank 1)" only Warrior
-  note "! This step uses the graveyard teleport instead of your Hearthstone." only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  note "At Yarrog's spot, Graveyard teleport use the graveyard teleport (Help \"?\" button > Character Stuck > teleport to graveyard)." only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "Train: Shadow Word: Pain (Rank 1), Lesser Heal (Rank 2)" optional only Priest
+  task "Train: Conjure Water (Rank 1), Frostbolt (Rank 1)" optional only Mage
+  task "Not available yet (level too low): In Favor of Spirituality (level 5) — you'll pick it up the next time you're in town." optional only Priest
+  task "Train: Serpent Sting (Rank 1)" optional only Hunter
+  task "Train: Charge (Rank 1)" optional only Warrior
+  task "! This step uses the graveyard teleport instead of your Hearthstone." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
+  task "At Yarrog's spot, Graveyard teleport use the graveyard teleport (Help \"?\" button > Character Stuck > teleport to graveyard)." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   turnin 794 npc 3145
 
 step
@@ -447,7 +447,7 @@ step
 
 step
   zone map 1411
-  note "Sell your junk here."
+  task "Sell your junk here." optional
   turnin 6394 npc 11378
 
 step
@@ -565,7 +565,7 @@ step
   only Mage
   tip Head north toward Razor Hill. Turn in Report to Orgnil
   zone map 1411
-  note "Train: Fireball (Rank 1), Conjure Food (Rank 1), Fire Blast (Rank 1)"
+  task "Train: Fireball (Rank 1), Conjure Food (Rank 1), Fire Blast (Rank 1)" optional
   turnin 823 npc 3142
 
 step
@@ -576,13 +576,13 @@ step
 step
   tip Accept from Gar'Thok: Vanquish the Betrayers, Encroachment
   zone map 1411
-  note "Buy a *Stiletto* - 4 silver" only Rogue
-  note "Buy a *Hornwood Recurve Bow* - 3 silver" only Hunter
-  note "Buy a *Walking Stick* - 5 silver" only Shaman
-  note "Buy a *Large Axe* - 5 silver" only Warrior
-  note "Profession available: Alchemy"
-  note "Profession available: Herbalism"
-  note "Head north toward Razor Hill."
+  task "Buy a *Stiletto* - 4 silver" optional only Rogue
+  task "Buy a *Hornwood Recurve Bow* - 3 silver" optional only Hunter
+  task "Buy a *Walking Stick* - 5 silver" optional only Shaman
+  task "Buy a *Large Axe* - 5 silver" optional only Warrior
+  task "Profession available: Alchemy" optional
+  task "Profession available: Herbalism" optional
+  task "Head north toward Razor Hill." optional
   accept 784 npc 3139
   accept 837 npc 3139
 
@@ -593,8 +593,8 @@ step
 
 step
   zone map 1411
-  note "Go into the bunker and train: Sinister Strike (Rank 2)" only Rogue
-  note "Go into the bunker and train: Aspect of the Monkey, Arcane Shot (Rank 1), Hunter's Mark (Rank 1)" only Hunter
+  task "Go into the bunker and train: Sinister Strike (Rank 2)" optional only Rogue
+  task "Go into the bunker and train: Aspect of the Monkey, Arcane Shot (Rank 1), Hunter's Mark (Rank 1)" optional only Hunter
   accept 815 npc 3191
 
 step
@@ -610,7 +610,7 @@ step
 step
   tip Go into the inn and turn in A Peon's Burden
   zone map 1411
-  note "Train: Life Tap (Rank 1), Shadow Bolt (Rank 2)" only Warlock
+  task "Train: Life Tap (Rank 1), Shadow Bolt (Rank 2)" optional only Warlock
   turnin 2161 npc 6928
 
 step
@@ -632,18 +632,18 @@ step
   only Priest
   tip Heal Kor'ja: cast Power Word: Fortitude on her: Garments of Spirituality
   zone map 1411
-  note "Train: Power Word: Shield (Rank 1), Smite (Rank 2)"
+  task "Train: Power Word: Shield (Rank 1), Smite (Rank 2)" optional
   kill 12430 quest 5648.1 @53.1,46.5 map 1411
 
 step
   tip Turn in to Brakk at the adventurer camp by the road to the south: The Adventurer
   zone map 1411
-  note "Sell your junk. Buy food/water if needed."
-  note "(Keep 1 silver for First Aid.) Go into the barracks and turn left. *Learn* First Aid."
-  note "From now on, make bandages whenever you have spare time."
-  note "You'll need First Aid skill 40 later."
-  note "Train: Rend (Rank 1), Parry (passive)" only Warrior
-  note "Professions available: Mining, Blacksmithing, Engineering"
+  task "Sell your junk. Buy food/water if needed." optional
+  task "(Keep 1 silver for First Aid.) Go into the barracks and turn left. *Learn* First Aid." optional
+  task "From now on, make bandages whenever you have spare time." optional
+  task "You'll need First Aid skill 40 later." optional
+  task "Train: Rend (Rank 1), Parry (passive)" optional only Warrior
+  task "Professions available: Mining, Blacksmithing, Engineering" optional
   turnin 96652 npc 265809
 
 step
@@ -773,12 +773,12 @@ step
 step
   tip Grind your way south. Burn the Attack Plan: Valley of Trials: Thwarting Kolkar Aggression
   zone map 1411
-  note "Train: Curse of Agony (Rank 1), Fear (Rank 1)" only Warlock
-  note "Go into the bunker and train: Backstab (Rank 1), Evasion, Gouge (Rank 2)" only Rogue
-  note "Go into the bunker and train: Parry (passive), Concussive Shot, Raptor Strike (Rank 2)" only Hunter
-  note "Go into the barracks and train: Lightning Bolt (Rank 2), Lightning Shield (Rank 1), Rockbiter Weapon (Rank 2), Earth Shock (Rank 2), Healing Wave (Rank 2)" only Shaman
-  note "Train: Heroic Strike (Rank 2), Hamstring (Rank 1)" only Warrior
-  note "Train: Renew (Rank 1), Fade (Rank 1)" only Priest
+  task "Train: Curse of Agony (Rank 1), Fear (Rank 1)" optional only Warlock
+  task "Go into the bunker and train: Backstab (Rank 1), Evasion, Gouge (Rank 2)" optional only Rogue
+  task "Go into the bunker and train: Parry (passive), Concussive Shot, Raptor Strike (Rank 2)" optional only Hunter
+  task "Go into the barracks and train: Lightning Bolt (Rank 2), Lightning Shield (Rank 1), Rockbiter Weapon (Rank 2), Earth Shock (Rank 2), Healing Wave (Rank 2)" optional only Shaman
+  task "Train: Heroic Strike (Rank 2), Hamstring (Rank 1)" optional only Warrior
+  task "Train: Renew (Rank 1), Fade (Rank 1)" optional only Priest
   interact 3189 quest 786.1 @49.81,81.31 map 1411
 
 step
@@ -809,7 +809,7 @@ step
 step
   tip Turn in Thwarting Kolkar Aggression (the NPC walks around)
   zone map 1411
-  note "Profession available: Fishing"
+  task "Profession available: Fishing" optional
   turnin 786 npc 3140
 
 step
@@ -824,8 +824,8 @@ step
 step
   tip Before crossing to the Echo Isles, kill the Bloodtalon Matriarch on the coast east of Sen'jin and loot her egg: Bloodtalon Matriarch
   zone map 1411
-  note "Repair and sell junk."
-  note "Train: Polymorph (Rank 1), Frostbolt (Rank 2)" only Mage
+  task "Repair and sell junk." optional
+  task "Train: Polymorph (Rank 1), Frostbolt (Rank 2)" optional only Mage
   collect 277128 quest 97223.1 @68.8,71.8 map 1411
 
 step
@@ -898,14 +898,14 @@ step
 step
   tip Kill Razormane Battleguards and Dustrunners: Encroachment Encroachment
   zone map 1411
-  note "Not available yet (level too low): Call of Fire (level 10) — you'll pick it up the next time you're in town." only Shaman
-  note "Not available yet (level too low): Hex of Weakness (level 10) — you'll pick it up the next time you're in town." only Priest
-  note "Not available yet (level too low): Therzok (level 10) — you'll pick it up the next time you're in town." only Rogue,Orc
-  note "Not available yet (level too low): Gan'rul's Summons (level 10) — you'll pick it up the next time you're in town." only Warlock
-  note "Not available yet (level too low): Veteran Uzzek (level 10) — you'll pick it up the next time you're in town." only Warrior
-  note "Not available yet (level too low): Conscript of the Horde (level 10) — you'll pick it up the next time you're in town." only Warrior,Shaman
-  note "Repair / sell junk"
-  note "Buy level 5 food/water if needed."
+  task "Not available yet (level too low): Call of Fire (level 10) — you'll pick it up the next time you're in town." optional only Shaman
+  task "Not available yet (level too low): Hex of Weakness (level 10) — you'll pick it up the next time you're in town." optional only Priest
+  task "Not available yet (level too low): Therzok (level 10) — you'll pick it up the next time you're in town." optional only Rogue,Orc
+  task "Not available yet (level too low): Gan'rul's Summons (level 10) — you'll pick it up the next time you're in town." optional only Warlock
+  task "Not available yet (level too low): Veteran Uzzek (level 10) — you'll pick it up the next time you're in town." optional only Warrior
+  task "Not available yet (level too low): Conscript of the Horde (level 10) — you'll pick it up the next time you're in town." optional only Warrior,Shaman
+  task "Repair / sell junk" optional
+  task "Buy level 5 food/water if needed." optional
   kill 3113 quest 837.3 @43.98,40.19 map 1411
   kill 3114 quest 837.4 @43.98,40.19 map 1411
 
@@ -930,7 +930,7 @@ step
 step
   tip Go back and turn in Winds in the Desert
   zone map 1411
-  note "( check the icons on your map.)"
+  task "( check the icons on your map.)" optional
   turnin 834 npc 3293
 
 step
@@ -960,7 +960,7 @@ step
 step
   tip Accept from Orgnil Soulscar: A Missing Hand (Forever new)
   zone map 1411
-  note "Ignore the countdown."
+  task "Ignore the countdown." optional
   accept 99048 npc 3142
 
 step
@@ -1002,11 +1002,11 @@ step
 step
   tip Turn in to Heglan Shadeye on the hill by the east coast: A Missing Hand
   zone map 1411
-  note "Train new spells" only Shaman
-  note "Train: Lesser Heal (Rank 3), Resurrection (Rank 1), Mind Blast (Rank 1), Shadow Word: Pain (Rank 2)" only Priest
-  note "Go into the bunker and train new spells." only Rogue
-  note "Train: Drain Soul (Rank 1), Demon Skin (Rank 2), Create Healthstone (Minor), Immolate (Rank 2)" only Warlock
-  note "Train new spells." only Warrior
+  task "Train new spells" optional only Shaman
+  task "Train: Lesser Heal (Rank 3), Resurrection (Rank 1), Mind Blast (Rank 1), Shadow Word: Pain (Rank 2)" optional only Priest
+  task "Go into the bunker and train new spells." optional only Rogue
+  task "Train: Drain Soul (Rank 1), Demon Skin (Rank 2), Create Healthstone (Minor), Immolate (Rank 2)" optional only Warlock
+  task "Train new spells." optional only Warrior
   turnin 99048 npc 275657
 
 step
@@ -1065,7 +1065,7 @@ step
   only Shaman
   tip Climb the peak and turn in Call of Fire
   zone map 1411
-  note "Take the hidden path. ( check the icons on your map — zoom in to see them better.)"
+  task "Take the hidden path. ( check the icons on your map — zoom in to see them better.)" optional
   turnin 1524 npc 5900
 
 step
@@ -1147,7 +1147,7 @@ step
   only Hunter
   tip Find a Dire Mottled Boar and tame it with the Taming Rod: Taming the Beast
   zone map 1411
-  note "Go into the bunker and train new spells."
+  task "Go into the bunker and train new spells." optional
   kill 3099 quest 6062.1 @52.83,48.9 map 1411
 
 step
@@ -1238,18 +1238,18 @@ step
 step
   tip Go to Thrall and accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
-  note ">> Next zone Durotar (main quests Lv9-12): expected now Lv10 · comfortable at Lv11 · minimum Lv8."
-  note "Buy food/water if needed."
-  note "Train: Frost Nova (Rank 1), Frost Armor (Rank 2), Conjure Water (Rank 2)" only Mage
-  note "Skip the Mage class quest." only Mage
-  note "Profession trainers: Tailoring"
-  note "Skinning and Leatherworking"
-  note "Enchanting"
-  note "Alchemy"
-  note "Mining"
-  note "Blacksmithing"
-  note "Engineering"
-  note "Herbalism"
+  task ">> Next zone Durotar (main quests Lv9-12): expected now Lv10 · comfortable at Lv11 · minimum Lv8." optional
+  task "Buy food/water if needed." optional
+  task "Train: Frost Nova (Rank 1), Frost Armor (Rank 2), Conjure Water (Rank 2)" optional only Mage
+  task "Skip the Mage class quest." optional only Mage
+  task "Profession trainers: Tailoring" optional
+  task "Skinning and Leatherworking" optional
+  task "Enchanting" optional
+  task "Alchemy" optional
+  task "Mining" optional
+  task "Blacksmithing" optional
+  task "Engineering" optional
+  task "Herbalism" optional
   accept 5726 npc 4949
 
 step
@@ -1377,7 +1377,7 @@ step
 step
   tip Inside the cave, finish Skull Rock
   zone map 1411
-  note "Repair and sell junk."
+  task "Repair and sell junk." optional
   collect 4871 quest 827.1 @54.06,9.01 map 1411
 
 step
@@ -1417,8 +1417,8 @@ step
 step
   tip Turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
-  note "(If you have Skinning) try to reach skill 50 before going to Orgrimmar."
-  note "Head to Orgrimmar."
+  task "(If you have Skinning) try to reach skill 50 before going to Orgrimmar." optional
+  task "Head to Orgrimmar." optional
   turnin 5726 npc 4949
 
 step
@@ -1488,11 +1488,11 @@ step
 step
   tip Leave through the Orgrimmar front gate. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1411
-  note "Train new spells" only Priest
-  note "Train new spells" only Shaman
-  note "Train: Conjure Water (Rank 2), Dampen Magic (Rank 1), Fireball (Rank 3)" only Mage
-  note "Train new spells" only Hunter
-  note "Train new spells" only Warrior
+  task "Train new spells" optional only Priest
+  task "Train new spells" optional only Shaman
+  task "Train: Conjure Water (Rank 2), Dampen Magic (Rank 1), Fireball (Rank 3)" optional only Mage
+  task "Train new spells" optional only Hunter
+  task "Train new spells" optional only Warrior
   goto 45.5,12 r 20 map 1411
 
 step
@@ -1577,9 +1577,9 @@ step
   label q99051
   tip If you finished Orgnil's quests, turn them in: Threat from Below
   zone map 1411
-  note "- You may need to abandon and re-accept the quest to complete it." only Mage,Priest
-  note "- You may need to abandon and re-accept the quest to complete it." only Warlock,Warrior,Rogue,Hunter,Shaman
-  note "Razor Hill Hearth to Razor Hill." only Mage,Priest,Hunter,Warlock,Rogue
+  task "- You may need to abandon and re-accept the quest to complete it." optional only Mage,Priest
+  task "- You may need to abandon and re-accept the quest to complete it." optional only Warlock,Warrior,Rogue,Hunter,Shaman
+  task "Razor Hill Hearth to Razor Hill." optional only Mage,Priest,Hunter,Warlock,Rogue
   turnin 99051 npc 3142
 
 step
@@ -1600,7 +1600,7 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1413
-  note "! Your Hearthstone must be set to Razor Hill. If it's set elsewhere, run or fly there instead of hearthing."
+  task "! Your Hearthstone must be set to Razor Hill. If it's set elsewhere, run or fly there instead of hearthing." optional
   turnin 840 npc 3337
 
 step

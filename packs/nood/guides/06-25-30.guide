@@ -12,7 +12,7 @@ next nood/07-30-40
 step
   tip From Zoram'gar, cross Ashenvale to the east to Splintertree Post and discover the flight path.
   zone map 1440
-  note ">> Next dungeon: The Excavation Site: Wetlands (at about Lv27) — about Lv25.3 now. Until then, do the Ashenvale and Hillsbrad Foothills quests (dungeon quests are picked up when it's the dungeon's turn)."
+  task ">> Next dungeon: The Excavation Site: Wetlands (at about Lv27) — about Lv25.3 now. Until then, do the Ashenvale and Hillsbrad Foothills quests (dungeon quests are picked up when it's the dungeon's turn)." optional
   getfp "Splintertree Post"
 
 step
@@ -276,7 +276,7 @@ step
 step
   tip From Tarren Mill, cross the Arathi Highlands east to Hammerfall and discover the flight path.
   zone map 1417
-  note "* Excavation Site: Wetlands — Lv27.1 -> about Lv28.1 · recommended Lv26-27 (healer 26 · tank/DPS 27)"
+  task "* Excavation Site: Wetlands — Lv27.1 -> about Lv28.1 · recommended Lv26-27 (healer 26 · tank/DPS 27)" optional
   getfp "Hammerfall"
 
 step
@@ -310,8 +310,8 @@ step
   tip Turn in to the Deathstalker: Open the Maw
   zone map 1437
   turnin 95682 npc 13155
-  note "! Your Hearthstone should be set to the Crossroads (set in the 12-25 guide). If not, fly or run to Splintertree Post instead."
-  note ">> Next dungeon: Dalaran (at about Lv30.1) — about Lv28.1 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, fly from Hammerfall to Tarren Mill, then take the zeppelin to Orgrimmar from the tower east of Undercity)."
+  task "! Your Hearthstone should be set to the Crossroads (set in the 12-25 guide). If not, fly or run to Splintertree Post instead." optional
+  task ">> Next dungeon: Dalaran (at about Lv30.1) — about Lv28.1 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, fly from Hammerfall to Tarren Mill, then take the zeppelin to Orgrimmar from the tower east of Undercity)." optional
 
 step
   hearth "The Crossroads"
@@ -370,7 +370,7 @@ step
 
 step
   tip Camp Taurajo Fly to Camp Taurajo (if you don't have it, fly to the Crossroads and run south).
-  note "! Don't use your Hearthstone here — you just used it (1-hour cooldown). Fly from Splintertree Post to Camp Taurajo."
+  task "! Don't use your Hearthstone here — you just used it (1-hour cooldown). Fly from Splintertree Post to Camp Taurajo." optional
   fly "Camp Taurajo"
 
 step
@@ -432,7 +432,7 @@ step
 
 step
   tip Orgrimmar Fly to Orgrimmar (Camp Taurajo).
-  note "! Instead of hearthing, fly straight to Orgrimmar from the Camp Taurajo flight path (you'll set and use the Hearthstone from Orgrimmar)."
+  task "! Instead of hearthing, fly straight to Orgrimmar from the Camp Taurajo flight path (you'll set and use the Hearthstone from Orgrimmar)." optional
   fly "Orgrimmar"
 
 step
@@ -453,7 +453,7 @@ step
   tip Kill the Laughing Sisters at this point until Shadumbra shows up or comes to you. Go to Satyrnaar at this point.
   zone map 1440
   goto 81,52 r 20 map 1440
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   when level<30
@@ -477,8 +477,8 @@ step
 
 step
   tip Camp Taurajo Fly to Camp Taurajo.
-  note "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Splintertree Post to Orgrimmar)."
-  note "! Order changed: since you hearthed to Orgrimmar, do Thousand Needles in Kalimdor first, then take the zeppelin only once and continue Hillsbrad -> Dalaran."
+  task "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Splintertree Post to Orgrimmar)." optional
+  task "! Order changed: since you hearthed to Orgrimmar, do Thousand Needles in Kalimdor first, then take the zeppelin only once and continue Hillsbrad -> Dalaran." optional
   fly "Camp Taurajo"
 
 step
@@ -520,7 +520,7 @@ step
 step
   tip On the way west to Roguefeather Den, kill 5 each of Screeching Harpies, Roguefeathers and Windcallers: Stop the Screeching
   zone map 1441
-  note "Also check these spots for eggs."
+  task "Also check these spots for eggs." optional
   kill 4100 quest 98070.1 @26.8,54.5 map 1441
   kill 4101 quest 98070.2 @26.8,54.5 map 1441
   kill 4104 quest 98070.3 @26.8,54.5 map 1441
@@ -572,13 +572,13 @@ step
 step
   tip Accept from Doctor Martin Felben in the Apothecarium (or get it shared): Source of Power
   zone map 1458
-  note "== Dalaran prep == Get off the zeppelin and enter Undercity (Prison Break In, Key to the City and Blood in the Streets need Lv30 — you pick them up in Tarren Mill after Hillsbrad)."
+  task "== Dalaran prep == Get off the zeppelin and enter Undercity (Prison Break In, Key to the City and Blood in the Streets need Lv30 — you pick them up in Tarren Mill after Hillsbrad)." optional
   accept 96988 npc 11044
 
 step
   tip Tarren Mill Fly to Tarren Mill.
   fly "Tarren Mill"
-  note "== Hillsbrad Foothills (right after picking up the Dalaran quests) =="
+  task "== Hillsbrad Foothills (right after picking up the Dalaran quests) ==" optional
 
 step
   when level<30
@@ -735,7 +735,7 @@ step
 step
   tip Accept from Melisara in Tarren Mill (or get it shared): The Grave Knight
   zone map 1424
-  note "* Dalaran — Lv30.1 -> about Lv31.3 · recommended Lv30 (quests require level 30)"
+  task "* Dalaran — Lv30.1 -> about Lv31.3 · recommended Lv30 (quests require level 30)" optional
   accept 96986 npc 2278
 
 step
@@ -846,4 +846,4 @@ step
   tip In the Apothecarium, accept from Master Apothecary Faranell (or get it shared): Going, Going, Guano! (Kraul guano from Razorfen Kraul — prerequisite for 'Hearts of Zeal' in 32-45)
   zone map 1458
   accept 1109 npc 2055
-  note "That's the end of 25-30. Move on to the 30-40 guide (RFK, SM Graveyard/Library/Armory, RFD, Cathedral)."
+  task "That's the end of 25-30. Move on to the 30-40 guide (RFK, SM Graveyard/Library/Armory, RFD, Cathedral)." optional

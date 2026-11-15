@@ -19,7 +19,7 @@ step
   only Skyborne
   tip Coming down southeast from Thunder Bluff, discover the Camp Taurajo flight path.
   zone map 1413
-  note "If you ended the 1-12 guide early at level 12: take the skyship from the dock west of Valanaar to Thunder Bluff, then follow the steps below."
+  task "If you ended the 1-12 guide early at level 12: take the skyship from the dock west of Valanaar to Thunder Bluff, then follow the steps below." optional
   getfp "Camp Taurajo"
 
 step
@@ -37,17 +37,17 @@ step
 step
   tip Discover the Orgrimmar flight path (skipped automatically if you already have it).
   zone map 1454
-  note "This guide starts at level 12. First, go to Thrall in Orgrimmar for the Ragefire Chasm prerequisite \"Hidden Enemies\"."
-  note "*Spells*: this note means you can train new spells."
-  note "Save gold for your level 40 mount, though — only train the important spells."
-  note "== Joining from your starting zone =="
-  note "If you finished the 1-12 guide: follow the main road north from Razor Hill to Orgrimmar." only Orc,Troll
+  task "This guide starts at level 12. First, go to Thrall in Orgrimmar for the Ragefire Chasm prerequisite \"Hidden Enemies\"." optional
+  task "*Spells*: this note means you can train new spells." optional
+  task "Save gold for your level 40 mount, though — only train the important spells." optional
+  task "== Joining from your starting zone ==" optional
+  task "If you finished the 1-12 guide: follow the main road north from Razor Hill to Orgrimmar." optional only Orc,Troll
   getfp "Orgrimmar"
 
 step
   tip Accept from Thrall in the Valley of Wisdom: Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
-  note "== Step 1: level 12 — Thrall's \"Hidden Enemies\" (Ragefire Chasm prerequisite) == You need this chain for the Ragefire Chasm quest \"Hidden Enemies\"."
+  task "== Step 1: level 12 — Thrall's \"Hidden Enemies\" (Ragefire Chasm prerequisite) == You need this chain for the Ragefire Chasm quest \"Hidden Enemies\"." optional
   accept 5726 npc 4949
 
 step
@@ -91,7 +91,7 @@ step
   tip Accept from Neeru Fireblade in the Cleft of Shadow (or get it shared): Slaying the Beast
   zone map 1454
   accept 5761 npc 3216
-  note "! If you are level 13 now, skip the optional \"Barrens\" steps below and go straight to \"* Get the Ragefire Chasm quests\". If not, do the Barrens steps to reach level 13."
+  task "! If you are level 13 now, skip the optional \"Barrens\" steps below and go straight to \"* Get the Ragefire Chasm quests\". If not, do the Barrens steps to reach level 13." optional
 
 step
   when level<13
@@ -109,7 +109,7 @@ step
   tip Set your Hearthstone to The Crossroads with the innkeeper (you hearth back here after the Ruins of Lordaeron).
   zone map 1413
   sethome "The Crossroads"
-  note "! Don't go hunting plainstriders, raptors and zhevras separately — kill them whenever you see them while moving. Try to finish Raptor Thieves — its follow-up \"Stolen Silver\" is done at the raptor grounds during the Wailing Caverns prerequisites."
+  task "! Don't go hunting plainstriders, raptors and zhevras separately — kill them whenever you see them while moving. Try to finish Raptor Thieves — its follow-up \"Stolen Silver\" is done at the raptor grounds during the Wailing Caverns prerequisites." optional
 
 step
   when level<13
@@ -228,7 +228,7 @@ step
   label q870
   tip Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
   zone map 1413
-  note "Don't accept Apothecary Zamah (you'll get Serpentbloom directly in Thunder Bluff)."
+  task "Don't accept Apothecary Zamah (you'll get Serpentbloom directly in Thunder Bluff)." optional
   turnin 870 npc 3448
 
 step
@@ -273,8 +273,8 @@ step
 step
   tip Accept from Rahauro on the Elder Rise (or get it shared): Testing an Enemy's Strength
   zone map 1456
-  note "! Stop collecting items here. The rest of the Wailing Caverns prerequisites (Dead Oasis and so on) come after the Ruins of Lordaeron. Get the Ragefire quests and clear the dungeon first — the levels make the remaining quests much easier."
-  note "== Getting the Ragefire Chasm quests == If party members can share the Ragefire Chasm quests, get them shared: Searching for the Lost Satchel and Testing an Enemy's Strength (Thunder Bluff), The Power to Destroy... (Undercity). Shared quests make the accept steps below disappear automatically."
+  task "! Stop collecting items here. The rest of the Wailing Caverns prerequisites (Dead Oasis and so on) come after the Ruins of Lordaeron. Get the Ragefire quests and clear the dungeon first — the levels make the remaining quests much easier." optional
+  task "== Getting the Ragefire Chasm quests == If party members can share the Ragefire Chasm quests, get them shared: Searching for the Lost Satchel and Testing an Enemy's Strength (Thunder Bluff), The Power to Destroy... (Undercity). Shared quests make the accept steps below disappear automatically." optional
   accept 5723 npc 11833
 
 step
@@ -303,10 +303,10 @@ step
 step
   tip == Ragefire Chasm == Ragefire Chasm entrance (Cleft of Shadow)
   zone map 1454
-  note "Getting the Undercity quest \"The Power to Destroy...\" shared is recommended (Undead already picked it up in Tirisfal). The zeppelin round trip is long, so if you can't get it shared you can go without it — in that case click to close this line and the three Undercity lines below."
-  note "(Optional) Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate."
-  note "(Optional) Take the zeppelin to Orgrimmar from the tower east of Undercity."
-  note "* Ragefire Chasm — Lv13.3 -> about Lv14.8 · recommended Lv13-14 (healer 13 · tank/DPS 14)"
+  task "Getting the Undercity quest \"The Power to Destroy...\" shared is recommended (Undead already picked it up in Tirisfal). The zeppelin round trip is long, so if you can't get it shared you can go without it — in that case click to close this line and the three Undercity lines below." optional
+  task "(Optional) Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
+  task "(Optional) Take the zeppelin to Orgrimmar from the tower east of Undercity." optional
+  task "* Ragefire Chasm — Lv13.3 -> about Lv14.8 · recommended Lv13-14 (healer 13 · tank/DPS 14)" optional
   goto 52.6,49.2 r 20 map 1454
 
 step
@@ -353,7 +353,7 @@ step
 
 step
   tip Thunder Bluff Fly to Thunder Bluff (no flight path yet: run down the main road south from the Crossroads).
-  note "== Step 3: Ragefire turn-ins — Orgrimmar -> Thunder Bluff -> Undercity =="
+  task "== Step 3: Ragefire turn-ins — Orgrimmar -> Thunder Bluff -> Undercity ==" optional
   fly "Thunder Bluff"
 
 step
@@ -382,9 +382,9 @@ step
 step
   tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
   zone map 1411
-  note "! If you have \"The Power to Destroy...\" (Varimathras), turn it in in Undercity below."
-  note ">> Next dungeon: Ruins of Lordaeron (at Lv16) — about Lv15.2 now. Until then, do the Ruins prerequisites in Undercity and Silverpine Forest (the \"A Recipe For Death\" chain and \"Rear Guard Patrol\") plus a few Silverpine quests to reach level 16."
-  note "== Step 4: Ruins of Lordaeron prerequisites (Undercity and Silverpine Forest, to level 16) == \"The New Plague\" is only offered after all three steps of \"A Recipe For Death\"."
+  task "! If you have \"The Power to Destroy...\" (Varimathras), turn it in in Undercity below." optional
+  task ">> Next dungeon: Ruins of Lordaeron (at Lv16) — about Lv15.2 now. Until then, do the Ruins prerequisites in Undercity and Silverpine Forest (the \"A Recipe For Death\" chain and \"Rear Guard Patrol\") plus a few Silverpine quests to reach level 16." optional
+  task "== Step 4: Ruins of Lordaeron prerequisites (Undercity and Silverpine Forest, to level 16) == \"The New Plague\" is only offered after all three steps of \"A Recipe For Death\"." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
@@ -461,7 +461,7 @@ step
   tip Then accept: The Decrepit Ferry (done together at the lake)
   zone map 1421
   accept 438 npc 1952
-  note "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"."
+  task "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"." optional
 
 step
   along until q452
@@ -537,7 +537,7 @@ step
 step
   tip Leave Undercity and go east to the camp near Brill. Right next to Kristof, accept from Deathguard Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron) Kristof only offers 'The Wrath of Rath'mael' after both steps of Linnea's 'Rear Guard Patrol' (skipped automatically if you already did it in Tirisfal).
   zone map 1420
-  note "* Ruins of Lordaeron — Lv16.0 -> about Lv18.2 · recommended Lv15-16 (healer 15 · tank/DPS 16)"
+  task "* Ruins of Lordaeron — Lv16.0 -> about Lv18.2 · recommended Lv15-16 (healer 15 · tank/DPS 16)" optional
   accept 356 npc 1495
 
 step
@@ -662,9 +662,9 @@ step
   tip Turn in to Morbin Lightbane: Light's Justice
   zone map 1458
   turnin 92421 npc 266484
-  note "! \"A Frightened Request\" is turned in at the Sepulcher on the way to Shadowfang Keep (keep it)."
-  note "! Your Hearthstone should be set to the Crossroads. If not, take the zeppelin to Orgrimmar from the tower east of Undercity, then fly or run to the Crossroads."
-  note "== Step 5: finish the Wailing Caverns prerequisites (Barrens, Ratchet, Thunder Bluff) == The Crossroads Hearth to the Crossroads."
+  task "! \"A Frightened Request\" is turned in at the Sepulcher on the way to Shadowfang Keep (keep it)." optional
+  task "! Your Hearthstone should be set to the Crossroads. If not, take the zeppelin to Orgrimmar from the tower east of Undercity, then fly or run to the Crossroads." optional
+  task "== Step 5: finish the Wailing Caverns prerequisites (Barrens, Ratchet, Thunder Bluff) == The Crossroads Hearth to the Crossroads." optional
 
 step
   hearth "The Crossroads"
@@ -692,7 +692,7 @@ step
 step
   tip First step of the Wailing Caverns chain — accept from Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)
   zone map 1413
-  note "! If you skipped the Barrens steps before Ragefire, do the steps below (they disappear by themselves if already done)."
+  task "! If you skipped the Barrens steps before Ragefire, do the steps below (they disappear by themselves if already done)." optional
   accept 870 npc 3448
 
 step
@@ -947,7 +947,7 @@ step
 
 step
   tip == Step 6: Wailing Caverns == The Crossroads Fly to the Crossroads.
-  note "*Spells* Train your new spells up to level 19 at your class trainer."
+  task "*Spells* Train your new spells up to level 19 at your class trainer." optional
   fly "Crossroads"
 
 step
@@ -957,7 +957,7 @@ step
 step
   tip Centaur camp next to the Stagnant Oasis to the south: kill centaurs until you hear 'I am here!', then kill Verog the Dervish: Verog the Dervish
   zone map 1413
-  note "* Wailing Caverns — Lv19.2 -> about Lv20.9 · recommended Lv16-17 (healer 16 · tank/DPS 17)"
+  task "* Wailing Caverns — Lv19.2 -> about Lv20.9 · recommended Lv16-17 (healer 16 · tank/DPS 17)" optional
   collect 5023 quest 851.1 @53,41.6 map 1413
 
 step
@@ -1082,8 +1082,8 @@ step
 
 step
   tip Ratchet Fly to Ratchet (if you don't have the flight path, run).
-  note "! \"Leaders of the Fang\", \"Serpentbloom\" and \"In Nightmares\" are turned in when the route passes through Thunder Bluff (keep them)."
-  note "Sell junk to Halija and repair your gear."
+  task "! \"Leaders of the Fang\", \"Serpentbloom\" and \"In Nightmares\" are turned in when the route passes through Thunder Bluff (keep them)." optional
+  task "Sell junk to Halija and repair your gear." optional
   fly "Ratchet"
 
 step
@@ -1129,7 +1129,7 @@ step
   tip Then accept In Nightmares (turned in to Hamuul Runetotem in Thunder Bluff)
   zone map 1413
   accept 3369 npc 8418
-  note "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)"
+  task "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)" optional
 
 step
   only Tauren,Skyborne
@@ -1166,8 +1166,8 @@ step
   only Priest,Warlock
   tip (Option) Discover the flight path at Zoram'gar Outpost.
   zone map 1440
-  note "! (Priest/Warlock option) If a high-level player can help you, run Blackfathom Deeps now for the \"Blackfathom Villainy\" reward wand *Gravestone Scepter*. It makes questing up to 24-25 much faster. With no helper, skip the (Option) steps below."
-  note "(Option) Go with your helper to Zoram'gar Outpost on the west coast of Ashenvale (no flight path yet: from the Crossroads take the north road into Ashenvale and head to the west coast)."
+  task "! (Priest/Warlock option) If a high-level player can help you, run Blackfathom Deeps now for the \"Blackfathom Villainy\" reward wand *Gravestone Scepter*. It makes questing up to 24-25 much faster. With no helper, skip the (Option) steps below." optional
+  task "(Option) Go with your helper to Zoram'gar Outpost on the west coast of Ashenvale (no flight path yet: from the Crossroads take the north road into Ashenvale and head to the west coast)." optional
   getfp "Zoram'gar Outpost"
 
 step
@@ -1183,7 +1183,7 @@ step
 step
   only Priest,Warlock
   tip (Option) Leave the dungeon and fly to Thunder Bluff.
-  note "(Option) Enter Blackfathom Deeps on the north coast (underwater passage). Only the quest below this time - the other Blackfathom quests are for your 24-25 visit."
+  task "(Option) Enter Blackfathom Deeps on the north coast (underwater passage). Only the quest below this time - the other Blackfathom quests are for your 24-25 visit." optional
   fly "Thunder Bluff"
 
 step
@@ -1236,7 +1236,7 @@ step
 
 step
   tip Leave Orgrimmar and go to the zeppelin tower. Take the zeppelin to Undercity. Orgrimmar Fly to Orgrimmar.
-  note "*Spells*: this note means you can train new spells. Save gold for your level 40 mount, though — only train the important spells. Head to Orgrimmar. (Keep your Hearthstone at the Crossroads — you hearth there after Shadowfang Keep.)"
+  task "*Spells*: this note means you can train new spells. Save gold for your level 40 mount, though — only train the important spells. Head to Orgrimmar. (Keep your Hearthstone at the Crossroads — you hearth there after Shadowfang Keep.)" optional
   fly "Orgrimmar"
 
 step
@@ -1322,7 +1322,7 @@ step
 step
   tip Enter Shadowfang Keep to the south
   zone map 1421
-  note "* Shadowfang Keep — Lv22.0 -> about Lv23.1 · recommended Lv21-22 (healer 21 · tank/DPS 22)"
+  task "* Shadowfang Keep — Lv22.0 -> about Lv23.1 · recommended Lv21-22 (healer 21 · tank/DPS 22)" optional
   goto 44.8,67.8 r 20 map 1421
 
 step
@@ -1363,8 +1363,8 @@ step
 step
   tip == Shadowfang Keep turn-ins == Undercity Fly to Undercity (if you don't have the flight path, run).
   fly "Undercity"
-  note ">> Next dungeon: Blackfathom Deeps (at about Lv24) — about Lv23.1 now. You don't have the Zoram'gar flight path yet, so walk there through Stonetalon Mountains via Sun Rock Retreat, doing the quests on the way."
-  note "! Your Hearthstone should be set to the Crossroads. If not, fly or run to the Crossroads instead."
+  task ">> Next dungeon: Blackfathom Deeps (at about Lv24) — about Lv23.1 now. You don't have the Zoram'gar flight path yet, so walk there through Stonetalon Mountains via Sun Rock Retreat, doing the quests on the way." optional
+  task "! Your Hearthstone should be set to the Crossroads. If not, fly or run to the Crossroads instead." optional
 
 step
   when complete 1013
@@ -1377,7 +1377,7 @@ step
 
 step
   tip Ratchet Fly to Ratchet.
-  note "The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity, then go to the Crossroads)."
+  task "The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity, then go to the Crossroads)." optional
   fly "Ratchet"
 
 step
@@ -1459,9 +1459,9 @@ step
 step
   tip Discover the Zoram'gar Outpost flight path.
   zone map 1440
-  note "From Sun Rock Retreat, follow the road north out of Stonetalon Mountains to Zoram'gar Outpost on the west coast of Ashenvale (on foot if you don't have the Zoram'gar flight path yet)."
+  task "From Sun Rock Retreat, follow the road north out of Stonetalon Mountains to Zoram'gar Outpost on the west coast of Ashenvale (on foot if you don't have the Zoram'gar flight path yet)." optional
   getfp "Zoram'gar Outpost"
-  note "! After Shadowfang you are about level 23. Reach 24 with the Zoram Strand naga and the sapphires in the Blackfathom entrance cave (party recommended), then go into Blackfathom Deeps."
+  task "! After Shadowfang you are about level 23. Reach 24 with the Zoram Strand naga and the sapphires in the Blackfathom entrance cave (party recommended), then go into Blackfathom Deeps." optional
 
 step
   when onquest 6562
@@ -1511,7 +1511,7 @@ step
 step
   tip Enter Blackfathom Deeps on the north coast (underwater passage)
   zone map 1440
-  note "* Blackfathom Deeps — Lv24.0 -> about Lv25.3 · recommended Lv24-25 (healer 24 · tank/DPS 25)"
+  task "* Blackfathom Deeps — Lv24.0 -> about Lv25.3 · recommended Lv24-25 (healer 24 · tank/DPS 25)" optional
   goto 14.2,14 r 20 map 1440
 
 step
@@ -1533,4 +1533,4 @@ step
 step
   zone map 1440
   turnin 6922 npc 12736
-  note "That's the end of 12-25. Move on to the 25-30 guide (Excavation Site, Dalaran)."
+  task "That's the end of 12-25. Move on to the 25-30 guide (Excavation Site, Dalaran)." optional

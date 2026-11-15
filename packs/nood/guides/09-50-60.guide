@@ -112,7 +112,7 @@ step
 
 step
   tip Gadgetzan Fly to Gadgetzan.
-  note "! Your Hearthstone is set to Orgrimmar and is saved for after the Sunken Temple. Fly from Camp Mojache to Gadgetzan here."
+  task "! Your Hearthstone is set to Orgrimmar and is saved for after the Sunken Temple. Fly from Camp Mojache to Gadgetzan here." optional
   fly "Gadgetzan"
 
 step
@@ -887,7 +887,7 @@ step
 step
   tip Turn in to Fel'zerul: Return to Fel'Zerul (the quest from The Hinterlands) — Dungeon prereq (Sunken Temple)
   zone map 1435
-  note "* Sunken Temple — Lv52.5 -> about Lv53.2 · recommended Lv51-52 (healer 51 · tank/DPS 52)"
+  task "* Sunken Temple — Lv52.5 -> about Lv53.2 · recommended Lv51-52 (healer 51 · tank/DPS 52)" optional
   turnin 1444 npc 1443
 
 step
@@ -927,7 +927,7 @@ step
   tip == Sunken Temple turn-ins == In Stonard, turn in to Fel'zerul: The Temple of Atal'Hakkar (Jammal'an goes to The Hinterlands and The God Hakkar to Tanaris)
   zone map 1435
   turnin 1445 npc 1443
-  note ">> Next dungeon: Blackrock Depths (at about Lv55.1) — about Lv53.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)."
+  task ">> Next dungeon: Blackrock Depths (at about Lv55.1) — about Lv53.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn)." optional
 
 step
   hearth "Orgrimmar"
@@ -935,7 +935,7 @@ step
 step
   when onquest 32
   zone map 1454
-  note "Orgrimmar Hearth to Orgrimmar (set in the 40-50 guide — if it is on cooldown or set elsewhere, fly from Stonard to Grom'gol and take the zeppelin to Orgrimmar)."
+  task "Orgrimmar Hearth to Orgrimmar (set in the 40-50 guide — if it is on cooldown or set elsewhere, fly from Stonard to Grom'gol and take the zeppelin to Orgrimmar)." optional
   turnin 32 npc 7010
 
 step
@@ -1330,7 +1330,7 @@ step
 step
   tip You can destroy the manual. Gadgetzan Fly to Gadgetzan.
   fly "Gadgetzan"
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   when level<58
@@ -1359,7 +1359,7 @@ step
 
 step
   tip Splintertree Post Fly to Splintertree Post.
-  note "Orgrimmar Hearth to Orgrimmar."
+  task "Orgrimmar Hearth to Orgrimmar." optional
   fly "Splintertree Post"
 
 step
@@ -1547,7 +1547,7 @@ step
   tip Talk to the elf with the blue question mark (Sanath Lim-yo) to be teleported to the top of the tower.
   zone map 1447
   goto 28,50 r 20 map 1447
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   when onquest 3561
@@ -1572,7 +1572,7 @@ step
   when onquest 3541
   tip Turn in Delivery to Jes'rimon (skip the return quest)
   zone map 1454
-  note "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Valormok in Azshara to Orgrimmar)."
+  task "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Valormok in Azshara to Orgrimmar)." optional
   turnin 3541 npc 8659
 
 step
@@ -1602,8 +1602,8 @@ step
 
 step
   tip Orgrimmar Fly to Orgrimmar.
-  note "* Blackrock Depths (1st) — Lv55.1 -> about Lv56.2 · recommended Lv54-55 (healer 54 · tank/DPS 55)"
-  note "! You just used your Hearthstone (cooldown). Fly from Thunder Bluff to Orgrimmar."
+  task "* Blackrock Depths (1st) — Lv55.1 -> about Lv56.2 · recommended Lv54-55 (healer 54 · tank/DPS 55)" optional
+  task "! You just used your Hearthstone (cooldown). Fly from Thunder Bluff to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
@@ -1752,8 +1752,8 @@ step
   tip Turn in to Warlord Goretooth: KILL ON SIGHT: High Ranking Dark Iron Officials
   zone map 1418
   turnin 4082 npc 9077
-  note "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Blackrock Depths again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Lower Blackrock Spire Lv57.2) is close, go back to zone quests."
-  note ">> Next dungeon: Lower Blackrock Spire (at about Lv57.2) — about Lv56.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Blackrock Depths again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Lower Blackrock Spire Lv57.2) is close, go back to zone quests." optional
+  task ">> Next dungeon: Lower Blackrock Spire (at about Lv57.2) — about Lv56.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   hearth "Orgrimmar"
@@ -1761,7 +1761,7 @@ step
 step
   tip In Orgrimmar, turn in to Thrall: What Is Going On? (the quest from Blackrock Depths) — *Reward chain
   zone map 1454
-  note "Orgrimmar Hearth to Orgrimmar."
+  task "Orgrimmar Hearth to Orgrimmar." optional
   turnin 4001 npc 4949
 
 step
@@ -2100,7 +2100,7 @@ step
   tip Turn in (*reward — Linken's Boomerang and more): Linken's Adventure
   zone map 1449
   turnin 3961 npc 8737
-  note "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing."
+  task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   hearth "Orgrimmar"
@@ -2108,7 +2108,7 @@ step
 step
   tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
   zone map 1411
-  note "Orgrimmar Hearth to Orgrimmar."
+  task "Orgrimmar Hearth to Orgrimmar." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
@@ -2138,7 +2138,7 @@ step
 step
   tip Turn in to Shadowmage Vivian Lagrave: Vivian Lagrave and the Darkstone Tablet
   zone map 1418
-  note "* Lower Blackrock Spire — Lv57.2 -> about Lv58.2 · recommended Lv56-57 (healer 56 · tank/DPS 57)"
+  task "* Lower Blackrock Spire — Lv57.2 -> about Lv58.2 · recommended Lv56-57 (healer 56 · tank/DPS 57)" optional
   turnin 4769 npc 9078
 
 step
@@ -2264,7 +2264,7 @@ step
 step
   tip Enter Blackrock Mountain and go down to the Blackrock Depths entrance.
   zone map 1428
-  note "* Blackrock Depths (2nd) — Lv58.2 -> about Lv59.0 · recommended Lv57-58 (healer 57 · tank/DPS 58)"
+  task "* Blackrock Depths (2nd) — Lv58.2 -> about Lv59.0 · recommended Lv57-58 (healer 57 · tank/DPS 58)" optional
   goto 29,38 r 20 map 1428
 
 step
@@ -2325,7 +2325,7 @@ step
   tip Turn in to Shadowmage Vivian Lagrave: The Darkstone Tablet
   zone map 1418
   turnin 4768 npc 9078
-  note ">> Next dungeon: Stratholme (at about Lv59.8) — about Lv59.0 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing."
+  task ">> Next dungeon: Stratholme (at about Lv59.8) — about Lv59.0 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). ! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing." optional
 
 step
   hearth "Undercity"
@@ -2333,7 +2333,7 @@ step
 step
   tip Cross the Western Plaguelands to its east end into the Eastern Plaguelands. Accept Demon Dogs — *Reward chain · Dungeon prereq (Stratholme)
   zone map 1423
-  note "Undercity Hearth to Undercity."
+  task "Undercity Hearth to Undercity." optional
   accept 5542 npc 1855
 
 step
@@ -2600,7 +2600,7 @@ step
 step
   tip Enter Stratholme by the main gate at the northern end of the Eastern Plaguelands.
   zone map 1423
-  note "* Stratholme — Lv59.8 -> about Lv60.0 · recommended Lv58-59 (healer 58 · tank/DPS 59)"
+  task "* Stratholme — Lv59.8 -> about Lv60.0 · recommended Lv58-59 (healer 58 · tank/DPS 59)" optional
   goto 26.6,9.4 r 20 map 1423
 
 step
@@ -2662,7 +2662,7 @@ step
   tip Turn in to Tirion Fordring (*reward): Of Love and Family
   zone map 1423
   turnin 5848 npc 1855
-  note "! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing."
+  task "! Your Hearthstone must be set to Undercity. If it's set elsewhere, fly or run to Undercity instead of hearthing." optional
 
 step
   hearth "Undercity"
@@ -2670,7 +2670,7 @@ step
 step
   tip == Final turn-ins (Kalimdor) == Take the zeppelin to Orgrimmar from the tower east of Undercity.
   zone map 1420
-  note "Undercity Hearth to Undercity."
+  task "Undercity Hearth to Undercity." optional
   goto 60.7,58.8 r 20 map 1420
 
 step
@@ -2696,4 +2696,4 @@ step
   tip To the south, turn in to Haleh: The Matron Protectorate (above the Mazthoril cave)
   zone map 1452
   turnin 5160 npc 10929
-  note "That's the end of the BalCon 1-60 guide. Congratulations on level 60! Do the remaining Stratholme quests (The Active Agent, and the Balnazzar chain unlocked by The Archivist) on your next Stratholme run."
+  task "That's the end of the BalCon 1-60 guide. Congratulations on level 60! Do the remaining Stratholme quests (The Active Agent, and the Balnazzar chain unlocked by The Archivist) on your next Stratholme run." optional
