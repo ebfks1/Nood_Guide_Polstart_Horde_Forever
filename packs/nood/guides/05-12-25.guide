@@ -60,7 +60,7 @@ step
 step
   tip Get the Lieutenant's Insignia from the Burning Blade Fanatics and Apprentices in the Skull Rock cave (about 20% drop — it can take a while; keep killing until it drops): Hidden Enemies
   zone map 1411
-  complete 5726 @51.9,9.6 map 1411
+  collect 14544 quest 5726.1 @51.9,9.6 map 1411
 
 step
   tip Turn in to Thrall: Hidden Enemies — Dungeon prereq (Ragefire Chasm)
@@ -190,7 +190,7 @@ step
   when level<20
   tip Kill Barak Kodobane: Kolkar Leaders
   zone map 1413
-  complete 850 @42.8,23.4 map 1413
+  collect 5022 quest 850.1 @42.8,23.4 map 1413
 
 step
   when complete 850
@@ -310,16 +310,19 @@ step
   goto 52.6,49.2 r 20 map 1454
 
 step
-  complete 5723 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
+  kill 11318 quest 5723.1 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
+  kill 11319 quest 5723.2
   complete 5722 -- Loot the satchel from Maur Grimtotem's corpse: Searching for the Lost Satchel
   turnin 5722 -- Turn it in right at the corpse: Searching for the Lost Satchel
   accept 5724 -- Then accept Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
-  complete 5728 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
-  complete 5761 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
+  kill 11519 quest 5728.1 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
+  kill 11518 quest 5728.2
+  collect 14540 quest 5761.1 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
 
 step
   along until q5725
-  complete 5725 -- Two books (spellbook and tome): The Power to Destroy...
+  collect 14395 quest 5725.1 -- Two books (spellbook and tome): The Power to Destroy...
+  collect 14396 quest 5725.2
 
 step
   tip Leave the dungeon and turn in to Thrall: Hidden Enemies
@@ -426,7 +429,7 @@ step
 step
   tip At the Dead Fields to the north, kill Rot Hide gnolls until Nightlash appears, then kill her and take her essence: The Dead Fields
   zone map 1421
-  complete 437 @45,21 map 1421
+  collect 3622 quest 437.1 @45,21 map 1421
 
 step
   tip Go up to the north coast and collect 6 Skittering Blood from Moss Stalkers and Mist Creepers: A Recipe For Death
@@ -471,7 +474,7 @@ step
 step
   tip Click Berard's Bookshelf in Pyrewood Village to the south for Berard's Journal: A Recipe For Death
   zone map 1421
-  complete 450 @43,73.2 map 1421
+  collect 3255 quest 450.1 @43,73.2 map 1421
 
 step
   along until q452
@@ -543,7 +546,8 @@ step
 step
   tip To the east, kill 8 Bleeding Horrors and 8 Wandering Spirits: Rear Guard Patrol
   zone map 1420
-  complete 356 @76.2,60.6 map 1420
+  kill 1529 quest 356.1 @76.2,60.6 map 1420
+  kill 1532 quest 356.2 @76.2,60.6 map 1420
 
 step
   tip Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)
@@ -558,7 +562,7 @@ step
 step
   tip Kill Riptear, the level 13 elite patrolling the northeast coast, and take its heart: Rear Guard Patrol
   zone map 1420
-  complete 99156 @81.3,44.5 map 1420
+  collect 286326 quest 99156.1 @81.3,44.5 map 1420
 
 step
   tip Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)
@@ -576,8 +580,8 @@ step
   goto 62,68 r 20 map 1420
 
 step
-  complete 95216 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
-  complete 92421 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
+  collect 275443 quest 95216.1 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
+  collect 268580 quest 92421.1 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
   accept 97288 item 280438 -- Accept from the Baron's "Abominable Head": Unending Torment
 
 step
@@ -586,7 +590,7 @@ step
 
 step
   complete 92401 -- Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
-  complete 92422 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
+  kill 250657 quest 92422.1 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
 
 step
   tip Turn in to Deathguard Kristof: The Wrath of Rath'mael
@@ -681,7 +685,7 @@ step
 step
   tip Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener
   zone map 1413
-  complete 97003 @57.8,27 map 1413
+  collect 276070 quest 97003.1 @57.8,27 map 1413
 
 step
   tip Turn in to Gur'ak: Chol'aruk the Ravener
@@ -718,7 +722,7 @@ step
   when level<20
   tip Kill Barak Kodobane: Kolkar Leaders
   zone map 1413
-  complete 850 @42.8,23.4 map 1413
+  collect 5022 quest 850.1 @42.8,23.4 map 1413
 
 step
   when level<20
@@ -757,7 +761,7 @@ step
 step
   tip Plant the seed in the crevasse under the water of the Stagnant Oasis to the south (you only plant the seed and leave, so a low level is fine; avoid the centaur camp next to it): The Stagnant Oasis
   zone map 1413
-  complete 877 @55,42 map 1413
+  interact 3737 quest 877.1 @55,42 map 1413
 
 step
   tip Turn in to Tonga Runetotem: The Stagnant Oasis — Dungeon prereq (Wailing Caverns)
@@ -772,7 +776,7 @@ step
 step
   tip Kill the oasis creatures at the Lushwater Oasis to the southwest (south of Wailing Caverns): Altered Beings
   zone map 1413
-  complete 880 @47.6,40 map 1413
+  collect 5098 quest 880.1 @47.6,40 map 1413
 
 step
   tip Turn in to Tonga Runetotem at the Crossroads: Altered Beings — Dungeon prereq (Wailing Caverns)
@@ -788,7 +792,7 @@ step
   when level<19
   tip On the way east to Ratchet, kill the Savannah Prowlers in the grass: Prowlers of the Barrens
   zone map 1413
-  complete 903 @59,37.6 map 1413
+  collect 5096 quest 903.1 @59,37.6 map 1413
 
 step
   tip Discover the Ratchet flight path.
@@ -830,7 +834,8 @@ step
   when level<18
   tip Kill pirates at the pirate camp on the south coast: Southsea Freebooters
   zone map 1413
-  complete 887 @63.4,49.2 map 1413
+  kill 3381 quest 887.1 @63.4,49.2 map 1413
+  kill 3382 quest 887.2 @63.4,49.2 map 1413
 
 step
   tip 5 Handfuls of Intricate Parts from above the pirate camp: Parts and Pieces
@@ -846,7 +851,7 @@ step
 step
   tip Kill raptors at the raptor grounds to the west for 5 horns: Raptor Horns
   zone map 1413
-  complete 865 @57,52 map 1413
+  collect 5055 quest 865.1 @57,52 map 1413
 
 step
   tip Collect the Stolen Silver from the same raptors: Stolen Silver
@@ -956,7 +961,7 @@ step
   tip Centaur camp next to the Stagnant Oasis to the south: kill centaurs until you hear 'I am here!', then kill Verog the Dervish: Verog the Dervish
   zone map 1413
   note "* Wailing Caverns — Lv19.2 -> about Lv20.9 · recommended Lv16-17 (healer 16 · tank/DPS 17)"
-  complete 851 @53,41.6 map 1413
+  collect 5023 quest 851.1 @53,41.6 map 1413
 
 step
   tip Go back north to Regthar Deathgate and turn in: Verog the Dervish
@@ -971,7 +976,7 @@ step
 step
   tip Hezrul Bloodmark near the Wailing Caverns entrance (2 escorts, group recommended): Hezrul Bloodmark
   zone map 1413
-  complete 852 @46,37.6 map 1413
+  collect 5025 quest 852.1 @46,37.6 map 1413
 
 step
   tip Accept from Nalpak above the entrance (or get it shared): Deviate Hides
@@ -995,7 +1000,10 @@ step
 
 step
   tip 7 each of Deviate Ravagers, Vipers, Shamblers and Dreadfangs: Deviate Eradication
-  complete 1487
+  kill 3636 quest 1487.1
+  kill 5755 quest 1487.2
+  kill 5761 quest 1487.3
+  kill 5056 quest 1487.4
 
 step
   tip Mad Magglish's wine: Trouble at the Docks
@@ -1009,7 +1017,10 @@ step
 
 step
   tip Gems from the 4 Fang leaders (Cobrahn, Anacondra, Pythas, Serpentis): Leaders of the Fang
-  complete 914
+  collect 9738 quest 914.1
+  collect 9739 quest 914.2
+  collect 9740 quest 914.3
+  collect 9741 quest 914.4
 
 step
   tip 6 Wailing Essences: Smart Drinks
@@ -1071,7 +1082,7 @@ step
 step
   tip Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz
   zone map 1413
-  complete 92706 @64.3,41.7 map 1413
+  collect 253710 quest 92706.1 @64.3,41.7 map 1413
 
 step
   tip Turn in to Gazlowe: WANTED: Bruuz
@@ -1176,7 +1187,7 @@ step
 step
   only Priest,Warlock
   along until q6561
-  complete 6561 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
+  collect 5881 quest 6561.1 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
 
 step
   only Priest,Warlock
@@ -1310,7 +1321,8 @@ step
   when level<24
   tip Kill 8 Dalaran Conjurers and 8 Watchers south of the cave: Watching the Roads
   zone map 1421
-  complete 95981 @57,77.4 map 1421
+  kill 1888 quest 95981.1 @57,77.4 map 1421
+  kill 1889 quest 95981.2 @57,77.4 map 1421
 
 step
   along
@@ -1324,8 +1336,8 @@ step
 
 step
   complete 1098 -- Find Deathstalkers Adamant and Vincent: Deathstalkers in Shadowfang
-  complete 1013 -- The Book of Ur (library): The Book of Ur
-  complete 1014 -- Head of the final boss, Archmage Arugal: Arugal Must Die
+  collect 6283 quest 1013.1 -- The Book of Ur (library): The Book of Ur
+  collect 5442 quest 1014.1 -- Head of the final boss, Archmage Arugal: Arugal Must Die
   turnin 1098 -- Turn in to Deathstalker Vincent inside the dungeon: Deathstalkers in Shadowfang
 
 step
@@ -1485,7 +1497,7 @@ step
 step
   tip Kill Wrathtail naga on the coast north of Zoram'gar for 20 heads: Naga at the Zoram Strand
   zone map 1440
-  complete 6442 @13,24 map 1440
+  collect 5490 quest 6442.1 @13,24 map 1440
 
 step
   tip Turn in to Marukai: Naga at the Zoram Strand
@@ -1495,7 +1507,7 @@ step
 step
   tip (party recommended) Mine 20 Sapphires of Aku'Mai from the walls of the Blackfathom entrance cave on the north coast (before the dungeon portal): The Essence of Aku'Mai
   zone map 1440
-  complete 6563 @13.5,12.5 map 1440
+  collect 16784 quest 6563.1 @13.5,12.5 map 1440
 
 step
   zone map 1440
@@ -1514,9 +1526,9 @@ step
 step
   accept 6564 item 16790 -- Pick up the Damp Note near the entrance to accept Allegiance to the Old Gods
   accept 6561 -- Accept from Argent Guard Thaelrid: Blackfathom Villainy
-  complete 6921 -- Fathom Core: Amongst The Ruins
+  collect 16762 quest 6921.1 -- Fathom Core: Amongst The Ruins
   accept 6922 item 16782 -- Accept from Lord Aquanis's Strange Water Globe (Fathom Core -> altar): Baron Aquanis
-  complete 6561 -- Head of Twilight Lord Kelris: Blackfathom Villainy
+  collect 5881 quest 6561.1 -- Head of Twilight Lord Kelris: Blackfathom Villainy
 
 step
   tip Turn in to Je'neu Sancrea at Zoram'gar Outpost: Amongst The Ruins

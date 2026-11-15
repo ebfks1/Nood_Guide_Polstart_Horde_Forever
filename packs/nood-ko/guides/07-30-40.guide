@@ -47,11 +47,11 @@ step
   collect 6684 quest 1221.4
 
 step
-  complete 1109 -- 가시덩굴 박쥐에게서 가시덩굴 조분석을 챙기세요: 조분석을 나에게!
+  collect 5801 quest 1109.1 -- 가시덩굴 박쥐에게서 가시덩굴 조분석을 챙기세요: 조분석을 나에게!
   accept 1144 -- 수입업자 윌릭스에게 퀘스트 수락 (호위): 수입업자 윌릭스
   complete 1144 -- 윌릭스를 입구까지 호위하세요: 수입업자 윌릭스
   turnin 1144 -- 호위가 끝나면 바로 윌릭스에게 퀘스트 완료: 수입업자 윌릭스
-  complete 1102 -- 마지막 보스 샬가 레이저플랭크를 처치하고 레이저플랭크의 심장을 챙기세요: 운명의 복수
+  collect 5793 quest 1102.1 -- 마지막 보스 샬가 레이저플랭크를 처치하고 레이저플랭크의 심장을 챙기세요: 운명의 복수
   accept 6522 item 17008 -- 마지막 보스 샬가 레이저플랭크를 처치하고 "작은 두루마리"를 주워 퀘스트 수락: 사악한 동맹 — ◆던전 선행(가시덩굴 구릉)
 
 step
@@ -177,7 +177,7 @@ step
 step
   only Orc,Troll,Tauren
   tip 신비술사 도안 방 앞 복도 책장에서 '타락의 개요'를 찾으세요: 타락의 개요
-  complete 1049
+  collect 5535 quest 1049.1
 
 step
   tip ── 붉은십자군 수도원 (묘지) 보고 ── 타렌 밀농장로 비행하세요 (비행 지점이 없으면 달려서 이동).
@@ -230,7 +230,7 @@ step
   when level<37
   tip 설인을 처치해 헬쿨라의 마법봉을 획득하세요: 헬쿨라의 복수
   zone map 1424
-  complete 552 @45.4,33.6 map 1424
+  collect 3708 quest 552.1 @45.4,33.6 map 1424
 
 step
   when level<37
@@ -290,7 +290,7 @@ step
   when level<36
   tip 달라란 외곽의 달라란 몹들을 처치해 돌 획득을 완수하세요: 징표의 돌
   zone map 1416
-  complete 556 @21,80 map 1416
+  collect 3714 quest 556.1 @21,80 map 1416
 
 step
   hearth "Tarren Mill"
@@ -419,7 +419,9 @@ step
   when level<36
   tip 트롤들을 처치해 완수하세요: 전장으로
   zone map 1417
-  complete 677 @67,63.4 map 1417
+  kill 2554 quest 677.1 @67,63.4 map 1417
+  kill 2556 quest 677.2 @67,63.4 map 1417
+  kill 2555 quest 677.3 @67,63.4 map 1417
 
 step
   when level<38
@@ -582,12 +584,12 @@ step
 step
   tip 새끼 가시덤불 호랑이를 처치하여 완수: 호랑이 사냥법 익히기
   zone map 1434
-  complete 185 @33.8,13.2 map 1434
+  kill 681 quest 185.1 @33.8,13.2 map 1434
 
 step
   tip 새끼 퓨마들을 처치하여 완수: 퓨마 사냥법 익히기
   zone map 1434
-  complete 190 @42.4,13.2 map 1434
+  kill 683 quest 190.1 @42.4,13.2 map 1434
 
 step
   tip 아제크 루아크에게 퀘스트 완료: 호랑이 사냥법 익히기
@@ -615,7 +617,7 @@ step
   when level<37
   tip 가시덤불 호랑이를 처치해 완수하세요: 호랑이 사냥법 익히기
   zone map 1434
-  complete 186 @31,14.4 map 1434
+  kill 682 quest 186.1 @31,14.4 map 1434
 
 step
   when level<37
@@ -626,7 +628,7 @@ step
 step
   tip 가시덤불랩터들을 처치하세요: 랩터 사냥법 익히기
   zone map 1434
-  complete 194 @27.6,17.4 map 1434
+  kill 685 quest 194.1 @27.6,17.4 map 1434
 
 step
   tip 지점으로 수영하세요.
@@ -647,13 +649,13 @@ step
 step
   tip 동굴 주변 브라인스케일 척후병을 잡아 삼지창 10개를 모으세요: 물속의 적
   zone map 1434
-  complete 95773 @23.1,30.6 map 1434
+  collect 270305 quest 95773.1 @23.1,30.6 map 1434
 
 step
   when level<41
   tip 붉은머리부족 트롤들을 처치해 완수하세요: 피묻은 뼈목걸이
   zone map 1434
-  complete 596 @29.8,21.4 map 1434
+  collect 3915 quest 596.1 @29.8,21.4 map 1434
 
 step
   when level<38
@@ -714,7 +716,7 @@ step
   when level<39
   tip 덩치큰 가시덤불 호랑이들을 처치하세요: 호랑이 사냥법 익히기
   zone map 1434
-  complete 187 @33,19 map 1434
+  kill 1085 quest 187.1 @33,19 map 1434
 
 step
   when level<39
@@ -739,7 +741,7 @@ step
   when level<40
   tip 채찍꼬리랩터들을 처치하여 완수하세요: 랩터 사냥법 익히기
   zone map 1434
-  complete 195 @32.2,22.8 map 1434
+  kill 686 quest 195.1 @32.2,22.8 map 1434
 
 step
   when level<40
@@ -968,7 +970,7 @@ step
   when level<41
   tip 물 속에 있는 가재통발을 클릭하여 가재 10마리를 획득하세요. *지나르질렌*에게 가져다주어 *붉은복어* 2마리 획득하세요: 낚시하는 날
   zone map 1443
-  complete 5386 @22.4,73 map 1443
+  collect 13546 quest 5386.1 @22.4,73 map 1443
 
 step
   when level<38
@@ -1048,7 +1050,10 @@ step
   when level<37
   tip 사티로스들을 처치해 완수하세요: 사티로스의 출몰
   zone map 1443
-  complete 1434 @75,26 map 1443
+  kill 4670 quest 1434.1 @75,26 map 1443
+  kill 4672 quest 1434.2 @75,26 map 1443
+  kill 4673 quest 1434.3 @75,26 map 1443
+  kill 4675 quest 1434.4 @75,26 map 1443
 
 step
   tip 천둥도끼 요새로 이동하여 정문으로 들어가세요.
@@ -1059,13 +1064,13 @@ step
   when level<37
   tip 가방에 있는 '불타는 보석'을 단축창에 올려두세요. 불타는 칼날단을 처치하며 (20% 미만 체력)에 보석을 사용하세요. 감시탑 위에 있는 현자를 처치하세요: 빛의 홀
   zone map 1443
-  complete 5741 @55,30 map 1443
+  collect 15750 quest 5741.1 @55,30 map 1443
 
 step
   when level<42
   tip 이룩소스의 수정을 눌러 악마의 영혼을 처치하고 상자를 획득하세요: 이룩소스의 손
   zone map 1443
-  complete 5381 @55,26.4 map 1443
+  collect 13542 quest 5381.1 @55,26.4 map 1443
 
 step
   when level<37
@@ -1097,7 +1102,7 @@ step
   when level<39
   tip 지점에서 물 속에 있는 조개를 열어 *연갑 조갯살*을 10개 획득하세요: 조개 미끼
   zone map 1443
-  complete 6142 @33,31 map 1443
+  collect 15924 quest 6142.1 @33,31 map 1443
 
 step
   when level<40
@@ -1247,7 +1252,7 @@ step
   when level<42
   tip 만노로크 집회지의 악마 차원문 6개를 추방하세요: 악마의 차원문
   zone map 1443
-  complete 5581 @52.9,79.2 map 1443
+  kill 11937 quest 5581.1 @52.9,79.2 map 1443
 
 step
   when level<42
@@ -1319,7 +1324,7 @@ step
   when level<42
   tip 그림자퓨마, 암호랑이를 처치하여 완수하세요: 퓨마 사냥법 익히기
   zone map 1434
-  complete 192 @39.8,36.8 map 1434
+  kill 684 quest 192.1 @39.8,36.8 map 1434
 
 step
   when level<42
@@ -1332,25 +1337,25 @@ step
   when level<39
   tip 바실리스크들을 처치해 완수하세요: 노래하는 수정 조각
   zone map 1434
-  complete 605 @24,16 map 1434
+  collect 3918 quest 605.1 @24,16 map 1434
 
 step
   when level<39
   tip 붉은머리부족 트롤들을 처치해 귀 획득을 완수하세요: 붉은머리부족의 귀
   zone map 1434
-  complete 189 @29.8,21.4 map 1434
+  collect 1519 quest 189.1 @29.8,21.4 map 1434
 
 step
   when level<41
   tip 트롤들을 처치해 완수하세요: 인간사냥꾼 (쭈그러든 해골은 붉은머리부족 인간사냥꾼만 드롭 · 약 33%)
   zone map 1434
-  complete 582 @21.4,11.4 map 1434
+  collect 1532 quest 582.1 @21.4,11.4 map 1434
 
 step
   when level<41
   tip 신달을 처치하세요: 호랑이 사냥법 익히기
   zone map 1434
-  complete 188 @33.6,19.2 map 1434
+  collect 3879 quest 188.1 @33.6,19.2 map 1434
 
 step
   when level<41
@@ -1388,13 +1393,13 @@ step
   when level<40
   tip 북쪽의 투자개발회사 몹들을 처치해 완수하세요: 적대적 탈취
   zone map 1434
-  complete 213 @42,18 map 1434
+  collect 4106 quest 213.1 @42,18 map 1434
 
 step
   when level<40
   tip 그롬골 주변을 돌며 완수하세요: 그롬골 방어
   zone map 1434
-  complete 568 @32.2,22.8 map 1434
+  kill 686 quest 568.1 @32.2,22.8 map 1434
 
 step
   when level<41
@@ -1462,7 +1467,10 @@ step
 step
   tip 던전 곳곳의 이랄라이 석판 4개를 받은 가죽과 목탄으로 탁본하세요: 가라앉은 도시
   note "※ 던전 안에서 주는 다른 퀘스트(소금선견자 관련 2개 등)도 보이면 받아서 함께 하세요."
-  complete 95775
+  collect 270308 quest 95775.1
+  collect 270309 quest 95775.2
+  collect 270310 quest 95775.3
+  collect 270311 quest 95775.4
 
 step
   tip 브라인스케일 나가의 우두머리 바르타카를 처치하세요: 죽은 브라인스케일만이…
@@ -1563,13 +1571,13 @@ step
   when level<39
   tip 마을 북동쪽에 숨어 있는 테라모어 첩보원 9명을 처치하세요: 테라모어 첩보원
   zone map 1445
-  complete 1201 @39.3,26.2 map 1445
+  kill 4834 quest 1201.1 @39.3,26.2 map 1445
 
 step
   when level<40
   tip 북동쪽 해안 진흙아가미 멀록에게서 머리 12개를 모으세요: 배고픈 오우거
   zone map 1445
-  complete 1177 @58,15 map 1445
+  collect 5847 quest 1177.1 @58,15 map 1445
 
 step
   when level<40
@@ -1692,7 +1700,7 @@ step
 step
   tip 입구 바깥 언덕을 도는 사절 말킨을 처치하고 머리카락을 챙기세요: 사악한 동맹
   zone map 1413
-  complete 6521 @47.8,92 map 1413
+  collect 17009 quest 6521.1 @47.8,92 map 1413
 
 step
   accept 3523 -- 던전 안 벨리스트라즈에게 퀘스트 수락: 가시덩굴 구릉의 스컬지 — ★보상 연계 · ◆던전 선행(가시덩굴 구릉)
@@ -1710,7 +1718,7 @@ step
 
 step
   tip 마지막 보스 혹한의 암네나르를 처치하고 해골을 챙기세요: 암네나르 처치
-  complete 3341
+  collect 10420 quest 3341.1
 
 step
   tip ── 가시덩굴 구릉 보고 ── 입구 앞 미리암 문싱어에게 퀘스트 완료: 악의 무리 (사악한 동맹·암네나르 처치는 언더시티에서 보고)

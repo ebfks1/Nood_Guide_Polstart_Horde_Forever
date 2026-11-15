@@ -41,7 +41,8 @@ step
   when level<42
   tip Kill ogres to complete: Call to Arms
   zone map 1417
-  complete 678 @53,76.8 map 1417
+  kill 2566 quest 678.1 @53,76.8 map 1417
+  kill 2567 quest 678.2 @53,76.8 map 1417
 
 step
   when level<41
@@ -53,7 +54,7 @@ step
   when level<41
   tip Find the Sigil of Strom in Stromgarde to the west (Stromgarde Defenders and Troll Hunters around it): Sigil of Strom
   zone map 1417
-  complete 639 @24,59 map 1417
+  collect 4440 quest 639.1 @24,59 map 1417
 
 step
   tip Head west to Faldir's Cove — follow the small tunnel down to the cove.
@@ -263,7 +264,7 @@ step
   when level<41
   tip Kill elementals to complete: Study of the Elements: Rock
   zone map 1418
-  complete 710 @20.2,46.2 map 1418
+  collect 4626 quest 710.1 @20.2,46.2 map 1418
 
 step
   when level<41
@@ -332,12 +333,12 @@ step
   tip Kill buzzards to complete: Badlands Reagent Run Barbecued Buzzard Wings
   zone map 1418
   collect 7847 quest 2258.1
-  complete 703
+  collect 3404 quest 703.1
 
 step
   tip Kill rock elementals to complete: Study of the Elements: Rock Badlands Reagent Run
   zone map 1418
-  complete 711 @40,78 map 1418
+  collect 4627 quest 711.1 @40,78 map 1418
   collect 7848 quest 2258.3 @40,78 map 1418
 
 step
@@ -371,7 +372,7 @@ step
   when level<46
   tip Kill greater rock elementals to complete: Study of the Elements: Rock
   zone map 1418
-  complete 712 @9.4,73.6 map 1418
+  collect 4628 quest 712.1 @9.4,73.6 map 1418
 
 step
   when level<46
@@ -483,7 +484,7 @@ step
   when level<46
   tip Kill Sawtooth Crocolisks to complete: Lack of Surplus
   zone map 1435
-  complete 699 @83.2,70.2 map 1435
+  collect 6168 quest 699.1 @83.2,70.2 map 1435
 
 step
   when level<46
@@ -523,7 +524,7 @@ step
   when level<48
   tip Kill Monstrous Crawlers on the east coast for 10 legs: Fresh Meat
   zone map 1435
-  complete 1430 @95,58 map 1435
+  collect 6184 quest 1430.1 @95,58 map 1435
 
 step
   when level<47
@@ -651,13 +652,13 @@ step
   when level<47
   tip Kill naga to complete: Akiris by the Bundle
   zone map 1434
-  complete 617 @27.2,63 map 1434
+  collect 4029 quest 617.1 @27.2,63 map 1434
 
 step
   when level<45
   tip Kill gorillas to complete: Scaring Shaky
   zone map 1434
-  complete 606 @33.2,65.8 map 1434
+  collect 3919 quest 606.1 @33.2,65.8 map 1434
 
 step
   when level<45
@@ -802,7 +803,7 @@ step
   when level<45
   tip Kill goblins to complete: Venture Company Mining
   zone map 1434
-  complete 600 @40,44 map 1434
+  collect 3917 quest 600.1 @40,44 map 1434
 
 step
   tip A group is recommended. *Find* Bhag'thera
@@ -821,7 +822,7 @@ step
   when level<45
   tip Kill Jungle Stalkers to complete: Raptor Mastery
   zone map 1434
-  complete 196 @29.8,44.2 map 1434
+  kill 687 quest 196.1 @29.8,44.2 map 1434
 
 step
   when level<45
@@ -1002,7 +1003,7 @@ step
   when level<49
   tip Kill the basilisks inside the cave to complete: The Singing Crystals
   zone map 1434
-  complete 589 @41,51 map 1434
+  collect 3911 quest 589.1 @41,51 map 1434
 
 step
   when level<48
@@ -1206,7 +1207,7 @@ step
   when level<47
   tip *Find* and kill Boss Tho'grun: Broken Alliances
   zone map 1418
-  complete 782 @62,72 map 1418
+  collect 4640 quest 782.1 @62,72 map 1418
 
 step
   when level<47
@@ -1290,7 +1291,7 @@ step
   when level<48
   tip Use the empty vessels on the Scorched Guardians in the east: Badlands Reagent Run II
   zone map 1418
-  complete 2203 @81.4,52.9 map 1418
+  collect 7867 quest 2203.1 @81.4,52.9 map 1418
 
 step
   when level<48
@@ -1377,7 +1378,9 @@ step
   when level<47
   tip Kill the dragons to complete: Army of the Black Dragon
   zone map 1445
-  complete 1168 @46.4,66.4 map 1445
+  kill 4329 quest 1168.1 @46.4,66.4 map 1445
+  kill 4331 quest 1168.2 @46.4,66.4 map 1445
+  kill 4328 quest 1168.3 @46.4,66.4 map 1445
 
 step
   when level<47
@@ -1528,7 +1531,8 @@ step
   when level<47
   tip Kill Wastewanderers to complete: Wastewander Justice
   zone map 1446
-  complete 1690 @63.6,33.6 map 1446
+  kill 5618 quest 1690.1 @63.6,33.6 map 1446
+  kill 5616 quest 1690.2 @63.6,33.6 map 1446
 
 step
   when level<48
@@ -1540,7 +1544,7 @@ step
   when level<50
   tip Kill Caliph Scorpidsting: WANTED: Caliph Scorpidsting
   zone map 1446
-  complete 2781 @61.2,36.4 map 1446
+  collect 8723 quest 2781.1 @61.2,36.4 map 1446
 
 step
   tip At Steamwheedle Port to the northeast, accept from Yeh'kinya (or get it shared): Screecher Spirits (prerequisite for 'The Prophecy of Mosh'aru' in Zul'Farrak — done in Feralas) — *Reward chain · Dungeon prereq (Zul'Farrak)
@@ -1576,7 +1580,10 @@ step
   when level<49
   tip Kill pirates to complete: Southsea Shakedown
   zone map 1446
-  complete 8366 @73.4,46 map 1446
+  kill 7855 quest 8366.1 @73.4,46 map 1446
+  kill 7856 quest 8366.2 @73.4,46 map 1446
+  kill 7857 quest 8366.3 @73.4,46 map 1446
+  kill 7858 quest 8366.4 @73.4,46 map 1446
 
 step
   when level<49
@@ -1588,13 +1595,13 @@ step
   when level<49
   tip Kill Andre: WANTED: Andre Firebeard
   zone map 1446
-  complete 2875 @73.4,47 map 1446
+  collect 9246 quest 2875.1 @73.4,47 map 1446
 
 step
   when level<49
   tip Get Stoley's Shipment on the second floor of the building: Stoley's Shipment
   zone map 1446
-  complete 2873 @72.2,46.7 map 1446
+  collect 9244 quest 2873.1 @72.2,46.7 map 1446
 
 step
   when level<49
@@ -1734,7 +1741,7 @@ step
   when level<46
   tip Kill Woodpaw gnolls: War on the Woodpaw
   zone map 1444
-  complete 2862 @76,54 map 1444
+  collect 9237 quest 2862.1 @76,54 map 1444
 
 step
   when level<46
@@ -1756,7 +1763,7 @@ step
   when level<47
   tip Kill all the leaders before the time runs out: Alpha Strike
   zone map 1444
-  complete 2863 @71.6,55.2 map 1444
+  kill 5258 quest 2863.1 @71.6,55.2 map 1444
 
 step
   when level<47
@@ -1778,13 +1785,15 @@ step
   when level<47
   tip Kill ogres to complete: The Ogres of Feralas
   zone map 1444
-  complete 2975 @75,36 map 1444
+  kill 5229 quest 2975.1 @75,36 map 1444
+  kill 5237 quest 2975.2 @75,36 map 1444
+  kill 5232 quest 2975.3 @75,36 map 1444
 
 step
   when level<47
   tip Use Olwin's shovel from your bags on the glowing blue ground. Finish collecting the cobalt: Gordunni Cobalt
   zone map 1444
-  complete 2987 @76.3,34.4 map 1444
+  collect 9463 quest 2987.1 @76.3,34.4 map 1444
 
 step
   tip *Find* and take the Gordunni Scroll.
@@ -1800,7 +1809,7 @@ step
   when level<49
   tip Kill Sprite Darters to complete: A New Cloak's Sheen
   zone map 1444
-  complete 2973 @67.8,48 map 1444
+  collect 9369 quest 2973.1 @67.8,48 map 1444
 
 step
   when onquest 2902
@@ -1885,31 +1894,33 @@ step
   when level<51
   tip *Find* and kill Stinglasher: Stinglasher
   zone map 1444
-  complete 7731 @75,62.6 map 1444
+  collect 18962 quest 7731.1 @75,62.6 map 1444
 
 step
   when level<49
   tip Kill Zukk'ash to complete: Zukk'ash Infestation
   zone map 1444
-  complete 7730 @74,62 map 1444
+  collect 18961 quest 7730.1 @74,62 map 1444
 
 step
   when level<48
   tip Kill ogres to complete: The Ogres of Feralas
   zone map 1444
-  complete 2980 @59.4,62.8 map 1444
+  kill 5236 quest 2980.1 @59.4,62.8 map 1444
+  kill 5240 quest 2980.2 @59.4,62.8 map 1444
+  kill 5234 quest 2980.3 @59.4,62.8 map 1444
 
 step
   when level<50
   tip Kill the ogre mage-lord to complete: Dark Ceremony
   zone map 1444
-  complete 2979 @59.2,73.6 map 1444
+  collect 9371 quest 2979.1 @59.2,73.6 map 1444
 
 step
   when level<50
   tip Go here and kill Rage Scar Yetis: The Mark of Quality
   zone map 1444
-  complete 2822 @55,56 map 1444
+  collect 8973 quest 2822.1 @55,56 map 1444
 
 step
   tip Kill Vale Screechers and use *Yeh'kinya's Bramble* on the corpses to collect their spirits.
@@ -1925,7 +1936,7 @@ step
   when level<49
   tip Kill the Grimtotem at the Grimtotem camp just west of Camp Mojache to complete: A Grim Discovery
   zone map 1444
-  complete 2974 @68.8,47 map 1444
+  collect 9460 quest 2974.1 @68.8,47 map 1444
 
 step
   when level<49
@@ -2040,7 +2051,7 @@ step
   when level<50
   tip On the way to Zul'Farrak, click the surveying equipment to fill it: Gadgetzan Water Survey
   zone map 1446
-  complete 992 @39,30 map 1446
+  collect 8585 quest 992.1 @39,30 map 1446
 
 step
   tip Enter Zul'Farrak in the northwest.
@@ -2048,15 +2059,16 @@ step
   goto 38.7,20 r 20 map 1446
 
 step
-  complete 2865 -- Kill the scarabs inside for 5 Uncracked Scarab Shells: Scarab Shells
-  complete 3042 -- Collect 20 Vials of Troll Temper from the Sandfury trolls: Troll Temper
-  complete 2768 -- Kill Sergeant Bly and take the Divino-matic Rod: Divino-matic Rod
-  complete 3527 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets: The Prophecy of Mosh'aru
-  complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
+  collect 9238 quest 2865.1 -- Kill the scarabs inside for 5 Uncracked Scarab Shells: Scarab Shells
+  collect 9523 quest 3042.1 -- Collect 20 Vials of Troll Temper from the Sandfury trolls: Troll Temper
+  collect 8548 quest 2768.1 -- Kill Sergeant Bly and take the Divino-matic Rod: Divino-matic Rod
+  collect 10660 quest 3527.1 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets: The Prophecy of Mosh'aru
+  collect 10661 quest 3527.2
+  collect 9234 quest 2846.1 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
 
 step
   along until q2770
-  complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
+  collect 8707 quest 2770.1 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
 
 step
   hearth "Gadgetzan"
@@ -2134,7 +2146,7 @@ step
 step
   tip Open the chest in Marvon's workshop in Ratchet for the Stone Circle: The Stone Circle
   zone map 1413
-  complete 3444 @62.5,38.5 map 1413
+  collect 10556 quest 3444.1 @62.5,38.5 map 1413
 
 step
   tip >> Next dungeon: Maraudon (at about Lv49.0) — about Lv47.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Orgrimmar Fly to Orgrimmar.
@@ -2220,7 +2232,7 @@ step
 step
   tip Find the Horde supplies around here to complete: A Sticky Situation
   zone map 1425
-  complete 77 @58,43 map 1425
+  collect 8684 quest 77.1 @58,43 map 1425
 
 step
   tip Go here and jump into the water.
@@ -2281,7 +2293,7 @@ step
   when level<54
   tip Kill Saltwater Snapjaws to complete: Snapjaws, Mon!
   zone map 1425
-  complete 7815 @77,65 map 1425
+  kill 2505 quest 7815.1 @77,65 map 1425
 
 step
   when level<52
@@ -2314,13 +2326,16 @@ step
   when level<52
   tip Kill the leader of the gryphons to complete: Avenging the Fallen
   zone map 1425
-  complete 7830 @57.2,49.8 map 1425
+  collect 19025 quest 7830.1 @57.2,49.8 map 1425
 
 step
   when level<52
   tip Kill elves to complete: Message to the Wildhammer
   zone map 1425
-  complete 7841 @33,51.2 map 1425
+  kill 2692 quest 7841.1 @33,51.2 map 1425
+  kill 2691 quest 7841.2 @33,51.2 map 1425
+  kill 2694 quest 7841.3 @33,51.2 map 1425
+  kill 2693 quest 7841.4 @33,51.2 map 1425
 
 step
   zone map 1425
@@ -2335,12 +2350,13 @@ step
   when level<52
   tip Kill trolls to complete: Cannibalistic Cousins
   zone map 1425
-  complete 7844 @45,62.4 map 1425
+  kill 4466 quest 7844.1 @45,62.4 map 1425
+  kill 4467 quest 7844.2 @45,62.4 map 1425
 
 step
   tip Take the Ancient Egg from the nest below the south side of Jintha'Alor: The Ancient Egg
   zone map 1425
-  complete 4787 @57.6,86.8 map 1425
+  collect 12402 quest 4787.1 @57.6,86.8 map 1425
 
 step
   tip Click Rhapsody's lunch.
@@ -2508,13 +2524,14 @@ step
   collect 17696 quest 7029.2
 
 step
-  complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions
-  complete 7044 -- Kill Lord Vyletongue (Celebrian Rod) and Noxxion (Celebrian Diamond): Legends of Maraudon
+  collect 17758 quest 7067.1 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions
+  collect 17703 quest 7044.1 -- Kill Lord Vyletongue (Celebrian Rod) and Noxxion (Celebrian Diamond): Legends of Maraudon
+  collect 17702 quest 7044.2
   turnin 7044 -- Turn in to Celebras the Redeemed: Legends of Maraudon
   accept 7046
   complete 7046 -- Protect Celebras while he creates the scepter: The Scepter of Celebras
   turnin 7046 -- Turn in to Celebras: The Scepter of Celebras
-  complete 7064 -- Kill the final boss Princess Theradras: Corruption of Earth and Seed
+  kill 12201 quest 7064.1 -- Kill the final boss Princess Theradras: Corruption of Earth and Seed
   accept 7066 -- Accept from Zaetar's Spirit, who appears after Theradras dies (Remulos in Moonglade — later): Seed of Life
 
 step

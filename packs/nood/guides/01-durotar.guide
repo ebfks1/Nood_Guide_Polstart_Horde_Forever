@@ -49,12 +49,12 @@ step
 step
   tip Kill boars and pick up 6 Discarded Training Weapons from the ground: Wayward Weapons
   zone map 1411
-  complete 97279 @43.4,62.8 map 1411
+  collect 277653 quest 97279.1 @43.4,62.8 map 1411
 
 step
   tip Kill Sarkoth: Sarkoth
   zone map 1411
-  complete 790 @40.5,67.3 map 1411
+  collect 4905 quest 790.1 @40.5,67.3 map 1411
 
 step
   zone map 1411
@@ -71,7 +71,7 @@ step
 step
   only Warlock
   zone map 1411
-  complete 1485 @44.7,57 map 1411
+  collect 6487 quest 1485.1 @44.7,57 map 1411
 
 step
   only Warlock
@@ -289,19 +289,19 @@ step
   only Warlock
   tip Focus on Lazy Peons while you
   zone map 1411
-  complete 5441 @46.29,60.62 map 1411
+  kill 10556 quest 5441.1 @46.29,60.62 map 1411
 
 step
   only Warlock
   along
   zone map 1411
-  complete 4402 @46.29,60.62 map 1411 -- Also do: Galgar's Cactus Apple Surprise - loot the Cactus Apples near the cacti.
+  collect 11583 quest 4402.1 @46.29,60.62 map 1411 -- Also do: Galgar's Cactus Apple Surprise - loot the Cactus Apples near the cacti.
 
 step
   only Warlock
   along
   zone map 1411
-  complete 789 @46.29,60.62 map 1411 -- Sting of the Scorpid - kill scorpids.
+  collect 4862 quest 789.1 @46.29,60.62 map 1411 -- Sting of the Scorpid - kill scorpids.
 
 step
   only Warlock
@@ -319,20 +319,20 @@ step
   only Warlock
   tip Head to the cave in the north while working on Galgar's Cactus Apple Surprise and Sting of the Scorpid.
   zone map 1411
-  complete 4402 @44.7,57 map 1411
-  complete 789 @44.7,57 map 1411
+  collect 11583 quest 4402.1 @44.7,57 map 1411
+  collect 4862 quest 789.1 @44.7,57 map 1411
 
 step
   only Warlock
   tip Enter the cave and loot the pick: Thazz'ril's Pick
   zone map 1411
-  complete 6394 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Warlock
   tip Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion
   zone map 1411
-  complete 794 @42.7,53 map 1411
+  collect 4859 quest 794.1 @42.7,53 map 1411
   note "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing."
 
 step
@@ -346,18 +346,18 @@ step
   tip At the same time: finish Galgar's Cactus Apple Surprise
   zone map 1411
   note "(check the icons on your map.)"
-  complete 4402 @46.29,60.62 map 1411
+  collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  complete 789 @46.29,60.62 map 1411
+  collect 4862 quest 789.1 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip Kill Vile Familiars: Vile Familiars
   zone map 1411
-  complete 792 @45.3,57.2 map 1411
+  kill 3101 quest 792.1 @45.3,57.2 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -400,13 +400,13 @@ step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip Enter the cave in the north and loot the pick: Thazz'ril's Pick
   zone map 1411
-  complete 6394 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion
   zone map 1411
-  complete 794 @42.7,53 map 1411
+  collect 4859 quest 794.1 @42.7,53 map 1411
 
 step
   only Shaman
@@ -633,7 +633,7 @@ step
   tip Heal Kor'ja: cast Power Word: Fortitude on her: Garments of Spirituality
   zone map 1411
   note "Train: Power Word: Shield (Rank 1), Smite (Rank 2)"
-  complete 5648 @53.1,46.5 map 1411
+  kill 12430 quest 5648.1 @53.1,46.5 map 1411
 
 step
   tip Turn in to Brakk at the adventurer camp by the road to the south: The Adventurer
@@ -667,7 +667,8 @@ step
 step
   tip Kill Ridgeshade Creepers and Lurkers on the ridge to the south: Legging It
   zone map 1411
-  complete 96821 @50.4,54.6 map 1411
+  kill 266850 quest 96821.1 @50.4,54.6 map 1411
+  kill 266849 quest 96821.2 @50.4,54.6 map 1411
 
 step
   tip Go to Tiragarde Keep and work on: Vanquish the Betrayers Vanquish the Betrayers
@@ -745,8 +746,9 @@ step
 step
   tip Go to the east coast and finish: A Solvent Spirit, From The Wreckage....
   zone map 1411
-  complete 818 @62.02,46.35 map 1411
-  complete 825 @62.02,46.35 map 1411
+  collect 4887 quest 818.1 @62.02,46.35 map 1411
+  collect 4888 quest 818.2 @62.02,46.35 map 1411
+  collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step
   tip Head southwest of Razor Hill and do half of Encroachment Encroachment.
@@ -825,7 +827,7 @@ step
   zone map 1411
   note "Repair and sell junk."
   note "Train: Polymorph (Rank 1), Frostbolt (Rank 2)" only Mage
-  complete 97223 @68.8,71.8 map 1411
+  collect 277128 quest 97223.1 @68.8,71.8 map 1411
 
 step
   tip Go to the Echo Isles and work on all 4 quests: Break a Few Eggs - pick up Taillasher Eggs (don't kill raptors for them)
@@ -840,17 +842,19 @@ step
 step
   tip Minshina's Skull - on the small hill ringed with candles
   zone map 1411
-  complete 808 @67.4,87.8 map 1411
+  collect 4864 quest 808.1 @67.4,87.8 map 1411
 
 step
   tip Zalazane - kill trolls and Zalazane
   zone map 1411
-  complete 826 @67.19,86.98 map 1411
+  kill 3207 quest 826.1 @67.19,86.98 map 1411
+  kill 3206 quest 826.2 @67.19,86.98 map 1411
+  collect 4866 quest 826.3 @67.19,86.98 map 1411
 
 step
   tip Forgotten Loa Idols - 8 Forgotten Loa Idols around the islands
   zone map 1411
-  complete 97225 @66.5,85.5 map 1411
+  collect 277135 quest 97225.1 @66.5,85.5 map 1411
 
 step
   tip Die to get back to Sen'jin Village and talk to the Spirit Healer to resurrect instantly. Turn in Practical Prey
@@ -1145,7 +1149,7 @@ step
   tip Find a Dire Mottled Boar and tame it with the Taming Rod: Taming the Beast
   zone map 1411
   note "Go into the bunker and train new spells."
-  complete 6062 @52.83,48.9 map 1411
+  kill 3099 quest 6062.1 @52.83,48.9 map 1411
 
 step
   only Hunter
@@ -1162,7 +1166,7 @@ step
   only Hunter
   tip Find a Surf Crawler and tame it with the Taming Rod: Taming the Beast
   zone map 1411
-  complete 6083 @59.05,28.75 map 1411
+  kill 3107 quest 6083.1 @59.05,28.75 map 1411
 
 step
   only Hunter
@@ -1178,7 +1182,7 @@ step
   only Hunter
   tip Find an Armored Scorpid and tame it with the Taming Rod: Taming the Beast
   zone map 1411
-  complete 6082 @48.87,38.41 map 1411
+  kill 3126 quest 6082.1 @48.87,38.41 map 1411
 
 step
   only Hunter
@@ -1281,7 +1285,8 @@ step
 
 step
   zone map 1411
-  complete 835 @53.85,25.09 map 1411
+  kill 3117 quest 835.1 @53.85,25.09 map 1411
+  kill 3118 quest 835.2 @53.85,25.09 map 1411
 
 step
   tip When done, walk west to Rezlak and turn in Securing the Lines
@@ -1291,12 +1296,12 @@ step
 step
   tip Kill Venomtail Scorpids: Finding the Antidote
   zone map 1411
-  complete 813 @42.93,17.88 map 1411
+  collect 4886 quest 813.1 @42.93,17.88 map 1411
 
 step
   tip Kill Armored Crocolisks along the river: Lost But Not Forgotten
   zone map 1411
-  complete 816 @37.03,18.22 map 1411
+  collect 4891 quest 816.1 @37.03,18.22 map 1411
 
 step
   along until q97281
@@ -1305,12 +1310,12 @@ step
 step
   only Warrior
   zone map 1411
-  complete 1498 @39.2,28.5 map 1411
+  collect 6486 quest 1498.1 @39.2,28.5 map 1411
 
 step
   tip Kill Fizzle Darkstorm: Dark Storms
   zone map 1411
-  complete 806 @42.07,26.63 map 1411
+  collect 4869 quest 806.1 @42.07,26.63 map 1411
 
 step
   when onquest 97281
@@ -1346,7 +1351,7 @@ step
 step
   along until q99051
   zone map 1411
-  complete 99051 @58.6,26 map 1411 -- On the way to Margoz, loot 9 Spinefin from the Spinefin naga (scouts/servants) on the east coast: Threat from Below
+  collect 286008 quest 99051.1 @58.6,26 map 1411 -- On the way to Margoz, loot 9 Spinefin from the Spinefin naga (scouts/servants) on the east coast: Threat from Below
 
 step
   only Shaman
@@ -1374,12 +1379,12 @@ step
   tip Inside the cave, finish Skull Rock
   zone map 1411
   note "Repair and sell junk."
-  complete 827 @54.06,9.01 map 1411
+  collect 4871 quest 827.1 @54.06,9.01 map 1411
 
 step
   tip Kill Gazz'uz: Hidden Enemies
   zone map 1411
-  complete 5726 @51.88,9.56 map 1411
+  collect 14544 quest 5726.1 @51.88,9.56 map 1411
 
 step
   tip - If he's hard, use the *Faintly Glowing Skull*. Click the Eye of Burning Shadow to accept Burning Shadows
@@ -1389,7 +1394,7 @@ step
   only Warlock
   tip Finish Creature of the Void. The chest is on the ledge behind Gazz'uz — jump onto the small rock first, then jump up from there.
   zone map 1411
-  complete 1501 @51.61,9.74 map 1411
+  collect 6535 quest 1501.1 @51.61,9.74 map 1411
 
 step
   tip Try to reach First Aid 40 here (Linen Cloth), or you may have to buy it from the Auction House later. Grind your way back to Margoz and turn in Skull Rock
@@ -1452,7 +1457,7 @@ step
 step
   only Warlock
   zone map 1454
-  complete 1504 @49.43,50.21 map 1454
+  kill 5676 quest 1504.1 @49.43,50.21 map 1454
 
 step
   only Warlock
@@ -1533,7 +1538,7 @@ step
   only Shaman
   tip Kill the Minor Manifestation of Fire at the top of the shrine and light the brazier: Call of Fire
   zone map 1411
-  complete 1526 @39,58.6 map 1411
+  collect 6655 quest 1526.1 @39,58.6 map 1411
 
 step
   only Shaman

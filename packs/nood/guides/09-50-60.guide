@@ -17,7 +17,10 @@ step
   when level<54
   tip Kill Windwalker harpies to complete: Vengeance on the Northspring
   zone map 1444
-  complete 3063 @40,15 map 1444
+  kill 5362 quest 3063.1 @40,15 map 1444
+  kill 5363 quest 3063.2 @40,15 map 1444
+  kill 5364 quest 3063.3 @40,15 map 1444
+  kill 5366 quest 3063.4 @40,15 map 1444
 
 step
   when level<52
@@ -74,7 +77,7 @@ step
   when level<52
   tip Kill Ironfur yetis to complete: Improved Quality
   zone map 1444
-  complete 7734 @55,34 map 1444
+  collect 18947 quest 7734.1 @55,34 map 1444
 
 step
   along until q7738
@@ -176,13 +179,15 @@ step
   when level<53
   tip Kill ogres to complete: The Dunemaul Compound
   zone map 1446
-  complete 5863 @48,61 map 1446
+  kill 5474 quest 5863.1 @48,61 map 1446
+  kill 5472 quest 5863.2 @48,61 map 1446
+  kill 12046 quest 5863.3 @48,61 map 1446
 
 step
   when level<52
   tip Finish collecting the Gahz'ridian ornaments: Gahz'ridian
   zone map 1446
-  complete 3161 @40,73.4 map 1446
+  collect 8443 quest 3161.1 @40,73.4 map 1446
 
 step
   when level<53
@@ -194,13 +199,14 @@ step
   when level<51
   tip Kill Centipaar to complete: Noxious Lair Investigation
   zone map 1446
-  complete 82 @36,50 map 1446
+  collect 8587 quest 82.1 @36,50 map 1446
 
 step
   when level<54
   tip Kill Thistleshrubs to complete: Thistleshrub Valley
   zone map 1446
-  complete 3362 @29.4,67.8 map 1446
+  kill 5490 quest 3362.1 @29.4,67.8 map 1446
+  kill 5485 quest 3362.2 @29.4,67.8 map 1446
 
 step
   when level<52
@@ -294,7 +300,7 @@ step
   when level<52
   tip At the first fork in the tunnel go right and pass the round room. At the next fork go right again to reach a large square room. Take Scrimshank's Surveying Gear in the west corner: The Scrimshank Redemption
   zone map 1446
-  complete 10 @55,71 map 1446
+  collect 8593 quest 10.1 @55,71 map 1446
 
 step
   when level<52
@@ -579,7 +585,7 @@ step
   when level<53
   tip Kill golems to complete: Curse These Fat Fingers
   zone map 1427
-  complete 7723 @37.2,45.1 map 1427
+  kill 5854 quest 7723.1 @37.2,45.1 map 1427
 
 step
   when level<52
@@ -620,7 +626,7 @@ step
   when level<54
   tip Hunt inside the Slag Pit while you look for a group. Take the secret formula behind the elites: What the Flux?
   zone map 1427
-  complete 7722 @40.6,35.7 map 1427
+  collect 18922 quest 7722.1 @40.6,35.7 map 1427
 
 step
   tip Go to the iron bridge opposite the 3 elites. At the far side of the bridge, jump down to the lower level. Head east from here to find the Incendosaurs.
@@ -909,8 +915,8 @@ step
   turnin 3446 -- Turn in right at the altar: Into the Depths
   complete 3447 -- Walk the circle of statues to discover its secret: Secret of the Circle
   turnin 3447 -- Open the chest that appears to turn in Secret of the Circle
-  complete 1446 -- Kill Jammal'an the Prophet and take his head: Jammal'an the Prophet
-  complete 3528 -- Summon and kill the Avatar of Hakkar, then fill the Ancient Egg (*reward): The God Hakkar
+  collect 6212 quest 1446.1 -- Kill Jammal'an the Prophet and take his head: Jammal'an the Prophet
+  collect 10662 quest 3528.1 -- Summon and kill the Avatar of Hakkar, then fill the Ancient Egg (*reward): The God Hakkar
 
 step
   along until q3373
@@ -1036,7 +1042,7 @@ step
   when level<57
   tip Click a threshadon carcass to get a chunk: The Fare of Lar'korwi
   zone map 1449
-  complete 4290 @68.6,56.7 map 1449
+  collect 11504 quest 4290.1 @68.6,56.7 map 1449
 
 step
   when level<57
@@ -1118,7 +1124,9 @@ step
 
 step
   tip Open the small pack in your bags: It's a Secret to Everybody
-  complete 3845
+  collect 11104 quest 3845.1
+  collect 11105 quest 3845.2
+  collect 11106 quest 3845.3
 
 step
   tip Turn in It's a Secret to Everybody — *Reward chain
@@ -1177,7 +1185,9 @@ step
   when level<59
   tip Go further north and kill 3 pterrordaxes. From now on kill Bloodpetal sprouts, pterrordaxes and diemetradons whenever you see them. Kill gorillas to complete: The Apes of Un'Goro
   zone map 1449
-  complete 4289 @63.4,18 map 1449
+  collect 11478 quest 4289.1 @63.4,18 map 1449
+  collect 11479 quest 4289.2 @63.4,18 map 1449
+  collect 11480 quest 4289.3 @63.4,18 map 1449
 
 step
   when onquest 4243
@@ -1189,7 +1199,7 @@ step
   when level<58
   tip Kill tar beasts to complete: Super Sticky
   zone map 1449
-  complete 4504 @60,26 map 1449
+  collect 11834 quest 4504.1 @60,26 map 1449
 
 step
   when level<57
@@ -1659,7 +1669,7 @@ step
 
 step
   tip Kill Overmaster Pyron in the quarry near the entrance: Disharmony of Flame
-  complete 3906
+  kill 9026 quest 3906.1
 
 step
   tip Kill the Dark Iron dwarves: KILL ON SIGHT: Dark Iron Dwarves
@@ -1670,7 +1680,7 @@ step
 
 step
   along until q4134
-  complete 4134 -- Find the Lost Thunderbrew Recipe in the Grim Guzzler tavern: Lost Thunderbrew Recipe
+  collect 11312 quest 4134.1 -- Find the Lost Thunderbrew Recipe in the Grim Guzzler tavern: Lost Thunderbrew Recipe
 
 step
   tip == 1st run turn-ins == Leave the dungeon and fly to Kargath.
@@ -1724,12 +1734,15 @@ step
   turnin 3982 -- Turn in to Gor'shak: What Is Going On? — *Reward chain
   accept 4001 -- Then accept (report to Thrall): What Is Going On? — *Reward chain
   complete 4001 -- Talk to Kharan Mighthammer in the next cell about the princess: What Is Going On?
-  complete 3907 -- Kill Lord Incendius and take the information he drops: Disharmony of Fire
-  complete 7201 -- Collect 10 Essence of the Elements from golems and golem makers: The Last Element
+  kill 9017 quest 3907.1 -- Kill Lord Incendius and take the information he drops: Disharmony of Fire
+  collect 11126 quest 3907.2
+  collect 11129 quest 7201.1 -- Collect 10 Essence of the Elements from golems and golem makers: The Last Element
 
 step
   tip Kill the high-ranking Dark Iron officials: KILL ON SIGHT: High Ranking Dark Iron Officials
-  complete 4082
+  kill 8894 quest 4082.1
+  kill 8893 quest 4082.2
+  kill 8895 quest 4082.3
 
 step
   tip == 2nd run turn-ins == Leave the dungeon and fly to Kargath.
@@ -2216,21 +2229,24 @@ step
   accept 4742 optional -- If you can, accept from the Scarshield spy (Vaelan) near the entrance: Seal of Ascension
 
 step
-  complete 4729 -- Catch a Bloodaxe Worg Pup with the cage: Kibler's Exotic Pets
-  complete 4724 -- Kill Halycon, the Bloodaxe pack mistress: The Pack Mistress
-  complete 4862 -- Collect 15 Spire Spider Eggs: En-Ay-Es-Tee-Why
+  collect 12263 quest 4729.1 -- Catch a Bloodaxe Worg Pup with the cage: Kibler's Exotic Pets
+  kill 10220 quest 4724.1 -- Kill Halycon, the Bloodaxe pack mistress: The Pack Mistress
+  collect 12530 quest 4862.1 -- Collect 15 Spire Spider Eggs: En-Ay-Es-Tee-Why
   complete 4866 -- Get poisoned by Mother Smolderweb (go to Ragged John while still poisoned): Mother's Milk
   turnin 4981 -- Turn in to Bijou near the prison: Operative Bijou — Dungeon prereq (Lower Blackrock Spire)
   accept 4982
-  complete 4982 -- Find Bijou's belongings on the bottom floor: Bijou's Belongings
+  collect 12345 quest 4982.1 -- Find Bijou's belongings on the bottom floor: Bijou's Belongings
   turnin 4982 -- Go back to Bijou and turn in Bijou's Belongings
 
 step
   accept 4983 -- Then accept (report to Lexlort in Kargath): Bijou's Reconnaissance Report — Dungeon chain (Lower Blackrock Spire)
   accept 5047 -- Accept from Pip Quickwit, who's held captive (Everlook in Winterspring — at the end): Pip Quickwit, At Your Service!
   accept 5160 -- Accept from Awbee by the eggs (Haleh in Winterspring — at the end): The Matron Protectorate
-  complete 4768 -- Find the Darkstone Tablet: The Darkstone Tablet
-  complete 4903 -- Kill Highlord Omokk, War Master Voone and Overlord Wyrmthalak, and recover the documents: Warlord's Command
+  collect 12358 quest 4768.1 -- Find the Darkstone Tablet: The Darkstone Tablet
+  kill 9568 quest 4903.1 -- Kill Highlord Omokk, War Master Voone and Overlord Wyrmthalak, and recover the documents: Warlord's Command
+  kill 9196 quest 4903.2
+  kill 9237 quest 4903.3
+  collect 12562 quest 4903.4
   turnin 4867 -- Summon Urok Doomhowl as Warosh's scroll explains, kill him and turn in to Warosh: Urok Doomhowl
 
 step
@@ -2266,14 +2282,14 @@ step
 
 step
   tip Kill Ribbly Screwspigot in the Grim Guzzler kitchen and take his head: Ribbly Screwspigot
-  complete 4136
+  collect 11313 quest 4136.1
 
 step
   along until q4123
-  complete 4123 -- Find the Heart of the Mountain in the Vault (the vault must be opened): The Heart of the Mountain
+  collect 11309 quest 4123.1 -- Find the Heart of the Mountain in the Vault (the vault must be opened): The Heart of the Mountain
 
 step
-  complete 4003 -- Kill Emperor Dagran Thaurissan to free Princess Moira: The Royal Rescue
+  kill 9019 quest 4003.1 -- Kill Emperor Dagran Thaurissan to free Princess Moira: The Royal Rescue
   turnin 4003 -- Turn in to Princess Moira Bronzebeard: The Royal Rescue — *Reward chain
   accept 4004 -- Then accept (Thrall in Orgrimmar — *reward): The Princess Saved?
 
@@ -2375,7 +2391,7 @@ step
 step
   when level<59
   tip Now you need the three parts of Pamela's doll. They're in the buildings near Pamela — look for brown items on the floor. Each time you get close to a doll part, a level 55 ghost appears and attacks. When you have the left side, right side and head of Pamela's doll, click them in your bags to combine: Pamela's Doll
-  complete 5149
+  collect 12885 quest 5149.1
 
 step
   when level<59
@@ -2541,7 +2557,7 @@ step
 
 step
   tip Run southwest toward Corin's Crossing. Kill undead until you have 7 Living Rot. Living Rot disappears 10 minutes after you loot it, so hurry. When you have 7, grind them with the mortar in your bags into Coagulated Rot: To Kill With Purpose
-  complete 6022
+  collect 15448 quest 6022.1
 
 step
   tip Go west, then slightly south to the Undercroft. There's a different dirt mound from before.
@@ -2601,11 +2617,12 @@ step
   goto 26.6,9.4 r 20 map 1423
 
 step
-  complete 5212 -- Collect 10 Plagued Flesh Samples from creatures in Stratholme: The Flesh Does Not Lie
-  complete 5243 -- Collect 5 Stratholme Holy Water from the supply crates in the streets: Houses of the Holy
-  complete 5214 -- Find the box of Grimm's Premium Tobacco in Ezra Grimm's smoke shop: The Great Ezra Grimm
-  complete 5251 -- Kill Archivist Galford in the Scarlet Bastion and burn the archive: The Archivist
-  complete 5848 -- Find the painting "Of Love and Family" inside the Bastion: Of Love and Family
+  collect 13174 quest 5212.1 -- Collect 10 Plagued Flesh Samples from creatures in Stratholme: The Flesh Does Not Lie
+  collect 13180 quest 5243.1 -- Collect 5 Stratholme Holy Water from the supply crates in the streets: Houses of the Holy
+  collect 13172 quest 5214.1 -- Find the box of Grimm's Premium Tobacco in Ezra Grimm's smoke shop: The Great Ezra Grimm
+  kill 10811 quest 5251.1 -- Kill Archivist Galford in the Scarlet Bastion and burn the archive: The Archivist
+  interact 176245 quest 5251.2
+  collect 14679 quest 5848.1 -- Find the painting "Of Love and Family" inside the Bastion: Of Love and Family
 
 step
   tip If the Medallion of Faith drops, bring it to Aurius, accept and turn in right away, then accept the follow-up: The Medallion of Faith The Medallion of Faith Aurius' Reckoning

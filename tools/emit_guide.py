@@ -129,19 +129,25 @@ def goal_lines(g, lang, along, stats):
             s += ' lvl %d' % g['qlvl']
         return [s + tail + note]
     if t == 'complete':
-        if written or not known:
-            s = 'complete %d' % g['quest']
-            if not known:
-                s += ' ' + quoted(txt(g['title'], lang))
-            if 'map' in g:
-                s += ' ' + at(g)
-            return [s + tail + note]
-        objs = quest_objectives(g['quest']) if 'map' in g else None
+        # one goal per objective wherever the data allows: Polestar's "While you're here" panel (Dynamic Questing)
+        # offers kill/collect/interact goals of later steps when you pass them, never a whole-quest `complete`
+        objs = quest_objectives(g['quest']) if known else None
         if objs:
-            stats['complete: one goal per objective'] += 1
+            if written:
+                stats['complete: one goal per objective, at the guide\'s place'] += 1
+                objs = [o + ' ' + at(g) for o in objs]
+            else:
+                stats['complete: one goal per objective'] += 1
             return [o + tail + (note if i == 0 else '') for i, o in enumerate(objs)]
-        stats['complete: whole quest, no place'] += 1
-        return ['complete %d' % g['quest'] + tail + note]
+        s = 'complete %d' % g['quest']
+        if not known:
+            s += ' ' + quoted(txt(g['title'], lang))
+        if 'map' in g and (written or not known):
+            s += ' ' + at(g)
+            stats['complete: whole quest, at the guide\'s place'] += 1
+        else:
+            stats['complete: whole quest, no place'] += 1
+        return [s + tail + note]
     if t in OBJ_VERBS:
         if not known:
             s = 'complete %d %s' % (g['quest'], quoted(txt(g['title'], lang)))

@@ -41,7 +41,8 @@ step
   when level<42
   tip 오우거를 처치하여 완수하세요: 전장으로
   zone map 1417
-  complete 678 @53,76.8 map 1417
+  kill 2566 quest 678.1 @53,76.8 map 1417
+  kill 2567 quest 678.2 @53,76.8 map 1417
 
 step
   when level<41
@@ -53,7 +54,7 @@ step
   when level<41
   tip 서쪽 스트롬가드에서 스트롬의 인장을 찾으세요 (주변 스트롬가드 수호병·트롤사냥꾼): 스트롬의 인장
   zone map 1417
-  complete 639 @24,59 map 1417
+  collect 4440 quest 639.1 @24,59 map 1417
 
 step
   tip 서쪽 팔디르의 만으로 가세요. 작은 터널을 따라가면 팔디르의 만에 도착할 수 있습니다.
@@ -263,7 +264,7 @@ step
   when level<41
   tip 정령들을 처치해 완수하세요: 바위의 정령 연구
   zone map 1418
-  complete 710 @20.2,46.2 map 1418
+  collect 4626 quest 710.1 @20.2,46.2 map 1418
 
 step
   when level<41
@@ -332,12 +333,12 @@ step
   tip 독수리를 처치해 완수하세요: 모래주머니 획득날개 획득
   zone map 1418
   collect 7847 quest 2258.1
-  complete 703
+  collect 3404 quest 703.1
 
 step
   tip 바위 정령을 처치해 완수하세요: 바위의 정령 연구정령 파편 획득
   zone map 1418
-  complete 711 @40,78 map 1418
+  collect 4627 quest 711.1 @40,78 map 1418
   collect 7848 quest 2258.3 @40,78 map 1418
 
 step
@@ -371,7 +372,7 @@ step
   when level<46
   tip 상급 정령을 처치해 완수하세요: 바위의 정령 연구
   zone map 1418
-  complete 712 @9.4,73.6 map 1418
+  collect 4628 quest 712.1 @9.4,73.6 map 1418
 
 step
   when level<46
@@ -483,7 +484,7 @@ step
   when level<46
   tip 무쇠턱 톱니악어를 처치해 완수하세요: 보급품 보충
   zone map 1435
-  complete 699 @83.2,70.2 map 1435
+  collect 6168 quest 699.1 @83.2,70.2 map 1435
 
 step
   when level<46
@@ -523,7 +524,7 @@ step
   when level<48
   tip 동쪽 해안의 괴물게를 처치해 다리 10개를 모으세요: 싱싱한 고기
   zone map 1435
-  complete 1430 @95,58 map 1435
+  collect 6184 quest 1430.1 @95,58 map 1435
 
 step
   when level<47
@@ -651,13 +652,13 @@ step
   when level<47
   tip 나가를 처치해 완수하세요: 아키리스 묶음
   zone map 1434
-  complete 617 @27.2,63 map 1434
+  collect 4029 quest 617.1 @27.2,63 map 1434
 
 step
   when level<45
   tip 고릴라를 처치해 완수하세요: 겁쟁이
   zone map 1434
-  complete 606 @33.2,65.8 map 1434
+  collect 3919 quest 606.1 @33.2,65.8 map 1434
 
 step
   when level<45
@@ -802,7 +803,7 @@ step
   when level<45
   tip 고블린을 처치해 완수하세요: 투자개발회사 채광
   zone map 1434
-  complete 600 @40,44 map 1434
+  collect 3917 quest 600.1 @40,44 map 1434
 
 step
   tip 파티를 권장합니다. 바그테라를 *찾으세요*
@@ -821,7 +822,7 @@ step
   when level<45
   tip 줄무늬정글랩터를 처치해 완수하세요: 랩터 사냥법 익히기
   zone map 1434
-  complete 196 @29.8,44.2 map 1434
+  kill 687 quest 196.1 @29.8,44.2 map 1434
 
 step
   when level<45
@@ -1002,7 +1003,7 @@ step
   when level<49
   tip 동굴 안에 있는 바실리스크를 처치해 완수하세요: 고동치는 푸른 수정
   zone map 1434
-  complete 589 @41,51 map 1434
+  collect 3911 quest 589.1 @41,51 map 1434
 
 step
   when level<48
@@ -1206,7 +1207,7 @@ step
   when level<47
   tip 우두머리 토그룬을 *찾아* 처치하세요: 깨어진 동맹
   zone map 1418
-  complete 782 @62,72 map 1418
+  collect 4640 quest 782.1 @62,72 map 1418
 
 step
   when level<47
@@ -1290,7 +1291,7 @@ step
   when level<48
   tip 동쪽의 화염의 수호비룡에게 빈 그릇을 사용해 채우세요: 황야의 땅에서 재료 찾기
   zone map 1418
-  complete 2203 @81.4,52.9 map 1418
+  collect 7867 quest 2203.1 @81.4,52.9 map 1418
 
 step
   when level<48
@@ -1377,7 +1378,9 @@ step
   when level<47
   tip 용들을 처치해 완수하세요: 검은용군단
   zone map 1445
-  complete 1168 @46.4,66.4 map 1445
+  kill 4329 quest 1168.1 @46.4,66.4 map 1445
+  kill 4331 quest 1168.2 @46.4,66.4 map 1445
+  kill 4328 quest 1168.3 @46.4,66.4 map 1445
 
 step
   when level<47
@@ -1528,7 +1531,8 @@ step
   when level<47
   tip 사막유랑단을 처치해 완수하세요: 사막유랑단 처단
   zone map 1446
-  complete 1690 @63.6,33.6 map 1446
+  kill 5618 quest 1690.1 @63.6,33.6 map 1446
+  kill 5616 quest 1690.2 @63.6,33.6 map 1446
 
 step
   when level<48
@@ -1540,7 +1544,7 @@ step
   when level<50
   tip 칼리프 스콜피드스팅을 처치하세요: 현상수배 칼리프 스콜피드스팅
   zone map 1446
-  complete 2781 @61.2,36.4 map 1446
+  collect 8723 quest 2781.1 @61.2,36.4 map 1446
 
 step
   tip 북동쪽 스팀휘들 항구 예킨야에게 퀘스트 수락 (또는 파티원에게 공유받기): 계곡천둥매의 영혼 (줄파락 '모쉬아루의 예언' 선행 — 페랄라스에서 완수) — ★보상 연계 · ◆던전 선행(줄파락)
@@ -1576,7 +1580,10 @@ step
   when level<49
   tip 해적들을 처치해 완수하세요: 남쪽바다해적단 처리반
   zone map 1446
-  complete 8366 @73.4,46 map 1446
+  kill 7855 quest 8366.1 @73.4,46 map 1446
+  kill 7856 quest 8366.2 @73.4,46 map 1446
+  kill 7857 quest 8366.3 @73.4,46 map 1446
+  kill 7858 quest 8366.4 @73.4,46 map 1446
 
 step
   when level<49
@@ -1588,13 +1595,13 @@ step
   when level<49
   tip 앙드레를 처치하세요: 현상수배 앙드레 파이어비어드
   zone map 1446
-  complete 2875 @73.4,47 map 1446
+  collect 9246 quest 2875.1 @73.4,47 map 1446
 
 step
   when level<49
   tip 건물 2층에서 스톨리의 뱃짐을 획득하세요: 스톨리의 뱃짐
   zone map 1446
-  complete 2873 @72.2,46.7 map 1446
+  collect 9244 quest 2873.1 @72.2,46.7 map 1446
 
 step
   when level<49
@@ -1734,7 +1741,7 @@ step
   when level<46
   tip 덩굴발일족 몬스터를 처치하세요: 덩굴발일족과의 전투
   zone map 1444
-  complete 2862 @76,54 map 1444
+  collect 9237 quest 2862.1 @76,54 map 1444
 
 step
   when level<46
@@ -1756,7 +1763,7 @@ step
   when level<47
   tip 제한시간이 끝나기 전에 우두머리를 모두 처치하세요: 우두머리 공격
   zone map 1444
-  complete 2863 @71.6,55.2 map 1444
+  kill 5258 quest 2863.1 @71.6,55.2 map 1444
 
 step
   when level<47
@@ -1778,13 +1785,15 @@ step
   when level<47
   tip 오우거를 처치해 완수하세요: 페랄라스의 오우거
   zone map 1444
-  complete 2975 @75,36 map 1444
+  kill 5229 quest 2975.1 @75,36 map 1444
+  kill 5237 quest 2975.2 @75,36 map 1444
+  kill 5232 quest 2975.3 @75,36 map 1444
 
 step
   when level<47
   tip 푸르게 빛나는 지면에다 인벤토리에 있는 올윈의 삽을 사용하세요. 코발트 획득을 완수하세요: 골두니 코발트
   zone map 1444
-  complete 2987 @76.3,34.4 map 1444
+  collect 9463 quest 2987.1 @76.3,34.4 map 1444
 
 step
   tip 골두니 두루마리를 *찾아서* 획득하세요.
@@ -1800,7 +1809,7 @@ step
   when level<49
   tip 화살요정용을 처치해 완수하세요: 화려한 새 망토
   zone map 1444
-  complete 2973 @67.8,48 map 1444
+  collect 9369 quest 2973.1 @67.8,48 map 1444
 
 step
   when onquest 2902
@@ -1885,31 +1894,33 @@ step
   when level<51
   tip 채찍쐐기를 *찾아* 처치하세요: 채찍쐐기
   zone map 1444
-  complete 7731 @75,62.6 map 1444
+  collect 18962 quest 7731.1 @75,62.6 map 1444
 
 step
   when level<49
   tip 주크애쉬들을 처치해 완수하세요: 주크애쉬 출몰
   zone map 1444
-  complete 7730 @74,62 map 1444
+  collect 18961 quest 7730.1 @74,62 map 1444
 
 step
   when level<48
   tip 오우거들을 처치해 완수하세요: 페랄라스의 오우거
   zone map 1444
-  complete 2980 @59.4,62.8 map 1444
+  kill 5236 quest 2980.1 @59.4,62.8 map 1444
+  kill 5240 quest 2980.2 @59.4,62.8 map 1444
+  kill 5234 quest 2980.3 @59.4,62.8 map 1444
 
 step
   when level<50
   tip 대마법사를 처치해 완수하세요: 암흑의 의식
   zone map 1444
-  complete 2979 @59.2,73.6 map 1444
+  collect 9371 quest 2979.1 @59.2,73.6 map 1444
 
 step
   when level<50
   tip 지점으로 이동하여 원시 설인을 처치하세요: 품질 표시
   zone map 1444
-  complete 2822 @55,56 map 1444
+  collect 8973 quest 2822.1 @55,56 map 1444
 
 step
   tip 계곡천둥매를 처치하고 시체를 대상으로 *예킨야의 나뭇가지*를 사용해 영혼을 획득할 수 있습니다.
@@ -1925,7 +1936,7 @@ step
   when level<49
   tip 모자케 야영지 바로 서쪽 그림토템 주둔지에서 그림토템 일족을 처치해 완수하세요: 불길한 발견
   zone map 1444
-  complete 2974 @68.8,47 map 1444
+  collect 9460 quest 2974.1 @68.8,47 map 1444
 
 step
   when level<49
@@ -2040,7 +2051,7 @@ step
   when level<50
   tip 줄파락으로 가는 길에 탐사장치를 클릭하여 물을 채우세요: 가젯잔 수자원 측량
   zone map 1446
-  complete 992 @39,30 map 1446
+  collect 8585 quest 992.1 @39,30 map 1446
 
 step
   tip 북서쪽 줄파락 입구로 들어가세요.
@@ -2048,15 +2059,16 @@ step
   goto 38.7,20 r 20 map 1446
 
 step
-  complete 2865 -- 던전 안 쇠똥구리를 처치해 껍질 5개를 모으세요: 왕쇠똥구리 껍질
-  complete 3042 -- 모래폭풍일족 트롤에게서 트롤 경화제 20개를 모으세요: 트롤 경화제
-  complete 2768 -- 하사관 블라이를 처치하고 자동 탐사막대를 챙기세요: 자동 탐사막대
-  complete 3527 -- 순교자 데카와 유체술사 벨라타를 처치해 서판 두 개를 모으세요: 모쉬아루의 예언
-  complete 2846 -- 유체술사 벨라타에게서 심연의 티아라를 챙기세요: 심연의 티아라
+  collect 9238 quest 2865.1 -- 던전 안 쇠똥구리를 처치해 껍질 5개를 모으세요: 왕쇠똥구리 껍질
+  collect 9523 quest 3042.1 -- 모래폭풍일족 트롤에게서 트롤 경화제 20개를 모으세요: 트롤 경화제
+  collect 8548 quest 2768.1 -- 하사관 블라이를 처치하고 자동 탐사막대를 챙기세요: 자동 탐사막대
+  collect 10660 quest 3527.1 -- 순교자 데카와 유체술사 벨라타를 처치해 서판 두 개를 모으세요: 모쉬아루의 예언
+  collect 10661 quest 3527.2
+  collect 9234 quest 2846.1 -- 유체술사 벨라타에게서 심연의 티아라를 챙기세요: 심연의 티아라
 
 step
   along until q2770
-  complete 2770 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요: 가즈릴라
+  collect 8707 quest 2770.1 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요: 가즈릴라
 
 step
   hearth "Gadgetzan"
@@ -2134,7 +2146,7 @@ step
 step
   tip 톱니항 마본의 작업장 궤짝을 열어 돌무리를 획득하세요: 돌무리
   zone map 1413
-  complete 3444 @62.5,38.5 map 1413
+  collect 10556 quest 3444.1 @62.5,38.5 map 1413
 
 step
   tip ▶ 다음 던전: 마라우돈 (약 Lv49.0에 갑니다) — 지금 약 Lv47.5. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 오그리마로 비행하세요.
@@ -2220,7 +2232,7 @@ step
 step
   tip 주변에서 호드 보급품들을 찾아 완수하세요: 까다로운 임무
   zone map 1425
-  complete 77 @58,43 map 1425
+  collect 8684 quest 77.1 @58,43 map 1425
 
 step
   tip 지점으로 이동하여, 물 속으로 뛰어드세요.
@@ -2281,7 +2293,7 @@ step
   when level<54
   tip 무쇠턱바다거북을 처치해 완수하세요: 무쇠턱바다거북 처치
   zone map 1425
-  complete 7815 @77,65 map 1425
+  kill 2505 quest 7815.1 @77,65 map 1425
 
 step
   when level<52
@@ -2314,13 +2326,16 @@ step
   when level<52
   tip 우두머리 뾰족부리 그리핀을 처치해 완수하세요: 트롤의 복수
   zone map 1425
-  complete 7830 @57.2,49.8 map 1425
+  collect 19025 quest 7830.1 @57.2,49.8 map 1425
 
 step
   when level<52
   tip 엘프들을 처치해 완수하세요: 첫 번째 통첩장
   zone map 1425
-  complete 7841 @33,51.2 map 1425
+  kill 2692 quest 7841.1 @33,51.2 map 1425
+  kill 2691 quest 7841.2 @33,51.2 map 1425
+  kill 2694 quest 7841.3 @33,51.2 map 1425
+  kill 2693 quest 7841.4 @33,51.2 map 1425
 
 step
   zone map 1425
@@ -2335,12 +2350,13 @@ step
   when level<52
   tip 트롤들을 처치해 완수하세요: 동족을 잡아먹는 사촌
   zone map 1425
-  complete 7844 @45,62.4 map 1425
+  kill 4466 quest 7844.1 @45,62.4 map 1425
+  kill 4467 quest 7844.2 @45,62.4 map 1425
 
 step
   tip 진타알로 남쪽 아래 둥지에서 고대의 알을 챙기세요: 고대의 알
   zone map 1425
-  complete 4787 @57.6,86.8 map 1425
+  collect 12402 quest 4787.1 @57.6,86.8 map 1425
 
 step
   tip 라드의 점심을 클릭하세요.
@@ -2508,13 +2524,14 @@ step
   collect 17696 quest 7029.2
 
 step
-  complete 7067 -- 켄타우로스 칸의 영혼들에게서 결합의 부적을 모으세요: 추방자의 지시서
-  complete 7044 -- 군주 바일텅(셀레브리안 지팡이)과 녹시온(셀레브리안 다이아몬드)을 처치하세요: 마라우돈의 전설
+  collect 17758 quest 7067.1 -- 켄타우로스 칸의 영혼들에게서 결합의 부적을 모으세요: 추방자의 지시서
+  collect 17703 quest 7044.1 -- 군주 바일텅(셀레브리안 지팡이)과 녹시온(셀레브리안 다이아몬드)을 처치하세요: 마라우돈의 전설
+  collect 17702 quest 7044.2
   turnin 7044 -- 회복된 셀레브라스에게 퀘스트 완료: 마라우돈의 전설
   accept 7046
   complete 7046 -- 셀레브라스가 홀을 만드는 동안 지켜 주세요: 셀레브라스의 홀
   turnin 7046 -- 셀레브라스에게 퀘스트 완료: 셀레브라스의 홀
-  complete 7064 -- 마지막 보스 공주 테라드라스를 처치하세요: 대지와 씨앗의 오염
+  kill 12201 quest 7064.1 -- 마지막 보스 공주 테라드라스를 처치하세요: 대지와 씨앗의 오염
   accept 7066 -- 테라드라스를 처치하면 나타나는 재타르의 영혼에게 퀘스트 수락 (달의 숲 레물로스 — 나중에): 생명의 씨앗
 
 step

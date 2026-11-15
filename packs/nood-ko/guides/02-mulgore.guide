@@ -21,7 +21,8 @@ step
 
 step
   zone map 1412
-  complete 747 @50.2,79.4 map 1412
+  collect 4739 quest 747.1 @50.2,79.4 map 1412
+  collect 4740 quest 747.2 @50.2,79.4 map 1412
 
 step
   along
@@ -38,7 +39,7 @@ step
 step
   tip 우물에 있는 물병을 획득하세요: 작은 부탁
   zone map 1412
-  complete 753 @48.9,81.1 map 1412
+  collect 4755 quest 753.1 @48.9,81.1 map 1412
 
 step
   only Druid
@@ -110,7 +111,7 @@ step
   note "카우니 소프트브리즈에게 소형 탄환을 구매하세요." only Hunter
   note "밀라 던스트라이더를 방문해 스킬을 습득하세요." only Shaman
   note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
-  complete 750 @45.8,90.5 map 1412
+  collect 4742 quest 750.1 @45.8,90.5 map 1412
 
 step
   along
@@ -166,7 +167,7 @@ step
 step
   only Shaman
   zone map 1412
-  complete 1519 @61.3,78.8 map 1412
+  collect 6634 quest 1519.1 @61.3,78.8 map 1412
 
 step
   zone map 1412
@@ -174,7 +175,7 @@ step
   note "가트 미스트러너를 방문해 스킬을 습득하세요." only Druid
   note "랑카 파샷을 방문해 스킬을 습득하세요." only Hunter
   note "하루트 썬더혼을 방문해 스킬을 습득하세요." only Warrior
-  complete 3376 @60.5,77.5 map 1412
+  collect 10459 quest 3376.1 @60.5,77.5 map 1412
 
 step
   tip 뾰족털일족의 작전도를 클릭해 퀘스트 수락: 나라체 야영지에 대한 공격
@@ -187,11 +188,12 @@ step
 
 step
   zone map 1412
-  complete 757 @60.4,78.6 map 1412
+  collect 4770 quest 757.1 @60.4,78.6 map 1412
 
 step
   zone map 1412
-  complete 780 @53.5,83.2 map 1412
+  collect 4848 quest 780.1 @53.5,83.2 map 1412
+  collect 4849 quest 780.2 @53.5,83.2 map 1412
 
 step
   along
@@ -382,7 +384,7 @@ step
 step
   tip 바로 서쪽의 차쿠야크를 처치하고 가죽을 얻으세요: 차쿠야크
   zone map 1412
-  complete 96130 @39.4,66 map 1412
+  collect 270302 quest 96130.1 @39.4,66 map 1412
 
 step
   only Tauren
@@ -399,7 +401,8 @@ step
 step
   only Tauren
   zone map 1412
-  complete 748 @49.4,68.8 map 1412
+  collect 4758 quest 748.1 @49.4,68.8 map 1412
+  collect 4759 quest 748.2 @49.4,68.8 map 1412
 
 step
   along
@@ -448,7 +451,9 @@ step
 step
   zone map 1412
   note "이 근처 다 큰 초원타조를 잡아 \"연한 초원타조 고기\" 1개를 챙기세요 (카일에게 먹일 것)."
-  complete 745 @36.5,65.1 map 1412
+  kill 2949 quest 745.1 @36.5,65.1 map 1412
+  kill 2950 quest 745.2 @36.5,65.1 map 1412
+  kill 2951 quest 745.3 @36.5,65.1 map 1412
 
 step
   tip 남동쪽 우물 주변 바닥의 우물돌 2개를 주우세요: 예언의 의식
@@ -478,11 +483,12 @@ step
 step
   tip 동쪽 언덕 주변 검독수리를 잡으세요 (멀고어 곳곳에 있으니 이동하며 계속 모아도 됩니다): 검독수리 사냥
   zone map 1412
-  complete 761 @59.2,61.8 map 1412
+  collect 4769 quest 761.1 @59.2,61.8 map 1412
 
 step
   zone map 1412
-  complete 771 @51.6,68.1 map 1412
+  collect 4808 quest 771.1 @51.6,68.1 map 1412
+  collect 4809 quest 771.2 @51.6,68.1 map 1412
 
 step
   zone map 1412
@@ -510,7 +516,10 @@ step
 
 step
   zone map 1412
-  complete 766 @51.5,50.9 map 1412
+  collect 4804 quest 766.1 @51.5,50.9 map 1412
+  collect 4805 quest 766.2 @51.5,50.9 map 1412
+  collect 4806 quest 766.3 @51.5,50.9 map 1412
+  collect 4807 quest 766.4 @51.5,50.9 map 1412
 
 step
   tip 크랑 스톤후프에게 퀘스트 수락: Sparring Match (포에버 신규)
@@ -593,7 +602,7 @@ step
 step
   tip 블러드후프 마을 둘레를 시계 방향으로 뛰어다니는 광분한 카일에게 연한 초원타조 고기를 사용하세요: Kyle's Gone Missing!
   zone map 1412
-  complete 99411 @46.4,61.7 map 1412
+  kill 277154 quest 99411.1 @46.4,61.7 map 1412
 
 step
   tip 아합 휘트후프에게 퀘스트 완료: Kyle's Gone Missing!
@@ -631,7 +640,7 @@ step
 
 step
   zone map 1412
-  complete 743 @34,47.5 map 1412
+  collect 4751 quest 743.1 @34,47.5 map 1412
 
 step
   along
@@ -639,12 +648,13 @@ step
 
 step
   zone map 1412
-  complete 746 @33.1,54.8 map 1412
+  collect 4703 quest 746.1 @33.1,54.8 map 1412
 
 step
   only Tauren
   zone map 1412
-  complete 756 @40.8,54.2 map 1412
+  collect 4801 quest 756.1 @40.8,54.2 map 1412
+  collect 4802 quest 756.2 @40.8,54.2 map 1412
 
 step
   zone map 1412
@@ -729,7 +739,7 @@ step
   only Hunter
   zone map 1412
   note "요 샤프메인에게 스킬을 습득하세요."
-  complete 6061 @57.8,60.5 map 1412
+  kill 2956 quest 6061.1 @57.8,60.5 map 1412
 
 step
   only Hunter
@@ -744,7 +754,7 @@ step
 step
   only Hunter
   zone map 1412
-  complete 6087 @47.3,51 map 1412
+  kill 2959 quest 6087.1 @47.3,51 map 1412
 
 step
   only Hunter
@@ -759,7 +769,7 @@ step
 step
   only Hunter
   zone map 1412
-  complete 6088 @47,48.3 map 1412
+  kill 2970 quest 6088.1 @47,48.3 map 1412
 
 step
   only Hunter
@@ -798,7 +808,7 @@ step
 
 step
   zone map 1412
-  complete 833 @58,29.9 map 1412
+  kill 3232 quest 833.1 @58,29.9 map 1412
 
 step
   zone map 1412
@@ -808,20 +818,21 @@ step
   only Tauren
   tip 신성한 묘지에서 서쪽 들판의 초원 늑대 우두머리를 잡아 송곳니를 모으세요: 와일드메인 토템상
   zone map 1412
-  complete 759 @52.6,31 map 1412
+  collect 4803 quest 759.1 @52.6,31 map 1412
 
 step
   zone map 1412
-  complete 861 @51.5,30.7 map 1412
+  collect 5203 quest 861.1 @51.5,30.7 map 1412
 
 step
   zone map 1412
-  complete 764 @58.8,54.1 map 1412
+  kill 2978 quest 764.1 @58.8,54.1 map 1412
+  kill 2979 quest 764.2 @58.8,54.1 map 1412
 
 step
   tip 동굴 입구에서 동쪽으로 쭉 이동하세요. 목재를 달고 있는 크레인 옆에 작은 방이 있습니다. 피즈스프로켓을 처치하세요: 감독관 피즈스프로켓
   zone map 1412
-  complete 765 @61.4,49.3 map 1412
+  collect 4819 quest 765.1 @61.4,49.3 map 1412
 
 step
   along until q98424
@@ -831,13 +842,17 @@ step
 step
   along until q98424
   zone map 1412
-  complete 98424 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
+  collect 281035 quest 98424.1 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
+  collect 281036 quest 98424.2 @61.8,47.3 map 1412
+  collect 281037 quest 98424.3 @61.8,47.3 map 1412
 
 step
   only Tauren
   tip 갈라크 켄타우로스 6·정찰꾼 4를 처치하고 약탈자 헤라크의 머리를 얻으세요: 몰아내기
   zone map 1412
-  complete 99080 @64,61.6 map 1412
+  kill 2967 quest 99080.1 @64,61.6 map 1412
+  kill 2968 quest 99080.2 @64,61.6 map 1412
+  collect 286075 quest 99080.3 @64,61.6 map 1412
 
 step
   zone map 1412
@@ -983,7 +998,8 @@ step
 
 step
   zone map 1412
-  complete 744 @33.4,36.7 map 1412
+  collect 4752 quest 744.1 @33.4,36.7 map 1412
+  collect 4753 quest 744.2 @33.4,36.7 map 1412
 
 step
   only Druid
@@ -1018,7 +1034,7 @@ step
 
 step
   zone map 1412
-  complete 776 @47.6,26.6 map 1412
+  collect 4841 quest 776.1 @47.6,26.6 map 1412
 
 step
   only Tauren

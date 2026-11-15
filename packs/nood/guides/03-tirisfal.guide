@@ -119,7 +119,7 @@ step
   only Paladin,Undead
   tip Talk to the frightened paladin on the way to the spider cave: Coming to Terms
   zone map 1420
-  complete 91208 @27.6,63.8 map 1420
+  kill 246143 quest 91208.1 @27.6,63.8 map 1420
 
 step
   along until q3902
@@ -140,7 +140,7 @@ step
   only Undead
   tip Free 6 web-wrapped Forsaken inside the spider cave: A Light in the Darkness
   zone map 1420
-  complete 98389 @24.5,59.3 map 1420
+  kill 271961 quest 98389.1 @24.5,59.3 map 1420
 
 step
   tip *Die or use the graveyard teleport (Help '?' button at the bottom right > Character Stuck > teleport to graveyard), then resurrect instantly at the Spirit Healer.* Bury Samuel's remains: Marla's Last Wish
@@ -285,7 +285,9 @@ step
   only Undead
   tip Get the report from Deathguard Dillinger: Patience
   zone map 1420
-  complete 99141 @58.2,51.4 map 1420
+  collect 286200 quest 99141.1 @58.2,51.4 map 1420
+  collect 286201 quest 99141.2 @58.2,51.4 map 1420
+  collect 286202 quest 99141.3 @58.2,51.4 map 1420
 
 step
   only Paladin,Undead
@@ -567,7 +569,9 @@ step
 
 step
   zone map 1420
-  complete 370 @51.8,67.4 map 1420
+  kill 1662 quest 370.1 @51.8,67.4 map 1420
+  kill 1537 quest 370.2 @51.8,67.4 map 1420
+  kill 1536 quest 370.3 @51.8,67.4 map 1420
 
 step
   zone map 1420
@@ -622,7 +626,7 @@ step
 
 step
   zone map 1421
-  complete 421 @49.2,37.8 map 1421
+  kill 1769 quest 421.1 @49.2,37.8 map 1421
 
 step
   zone map 1421
@@ -675,7 +679,9 @@ step
   only Undead
   tip Get the report from Deathguard Kristof right next to him: Patience
   zone map 1420
-  complete 99141 @65.2,60.2 map 1420
+  collect 286200 quest 99141.1 @65.2,60.2 map 1420
+  collect 286201 quest 99141.2 @65.2,60.2 map 1420
+  collect 286202 quest 99141.3 @65.2,60.2 map 1420
 
 step
   zone map 1420
@@ -684,26 +690,28 @@ step
 
 step
   zone map 1420
-  complete 356 @76,62 map 1420
+  kill 1529 quest 356.1 @76,62 map 1420
+  kill 1532 quest 356.2 @76,62 map 1420
 
 step
   tip Pick up 5 Tomb Weed growing on the ground at Balnir Farmstead: Tomb Weed
   zone map 1420
-  complete 99142 @75,59.4 map 1420
+  collect 286204 quest 99142.1 @75,59.4 map 1420
 
 step
   zone map 1420
-  complete 371 @80.2,54.4 map 1420
-  complete 374 @80.2,54.4 map 1420
+  kill 1664 quest 371.1 @80.2,54.4 map 1420
+  kill 1538 quest 371.2 @80.2,54.4 map 1420
+  collect 2875 quest 374.1 @80.2,54.4 map 1420
 
 step
   zone map 1420
-  complete 369 @86.2,53.4 map 1420
+  collect 2872 quest 369.1 @86.2,53.4 map 1420
 
 step
   tip On Gunther's island, loot the Lich's Spellbook from Gunther's Books: The Lich's Identity
   zone map 1420
-  complete 357 @67.9,42 map 1420
+  collect 2833 quest 357.1 @67.9,42 map 1420
 
 step
   along

@@ -49,12 +49,12 @@ step
 step
   tip 멧돼지를 잡으며 바닥에 떨어진 버려진 훈련용 무기 6개를 주우세요: 주인 잃은 무기
   zone map 1411
-  complete 97279 @43.4,62.8 map 1411
+  collect 277653 quest 97279.1 @43.4,62.8 map 1411
 
 step
   tip 사르코스를 처치하여 완수하세요: 사르코스
   zone map 1411
-  complete 790 @40.5,67.3 map 1411
+  collect 4905 quest 790.1 @40.5,67.3 map 1411
 
 step
   zone map 1411
@@ -71,7 +71,7 @@ step
 step
   only Warlock
   zone map 1411
-  complete 1485 @44.7,57 map 1411
+  collect 6487 quest 1485.1 @44.7,57 map 1411
 
 step
   only Warlock
@@ -289,19 +289,19 @@ step
   only Warlock
   tip 게으른 일꾼들퀘스트를 수행하는 데 집중하면서,
   zone map 1411
-  complete 5441 @46.29,60.62 map 1411
+  kill 10556 quest 5441.1 @46.29,60.62 map 1411
 
 step
   only Warlock
   along
   zone map 1411
-  complete 4402 @46.29,60.62 map 1411 -- 다음 퀘스트도 함께 수행하세요: 갈가르의 선인장 사과 별미 - 식물 근처의 선인장 사과를 주우세요.
+  collect 11583 quest 4402.1 @46.29,60.62 map 1411 -- 다음 퀘스트도 함께 수행하세요: 갈가르의 선인장 사과 별미 - 식물 근처의 선인장 사과를 주우세요.
 
 step
   only Warlock
   along
   zone map 1411
-  complete 789 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요.
+  collect 4862 quest 789.1 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요.
 
 step
   only Warlock
@@ -319,20 +319,20 @@ step
   only Warlock
   tip 북쪽에 있는 동굴을 향하며 갈가르의 선인장 사과 별미와 전갈의 독침퀘스트를 수행하세요.
   zone map 1411
-  complete 4402 @44.7,57 map 1411
-  complete 789 @44.7,57 map 1411
+  collect 11583 quest 4402.1 @44.7,57 map 1411
+  collect 4862 quest 789.1 @44.7,57 map 1411
 
 step
   only Warlock
   tip 동굴에 들어가 곡괭이를 획득하세요: 타즈릴의 곡괭이
   zone map 1411
-  complete 6394 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Warlock
   tip 동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요: 불타는 칼날단 메달
   zone map 1411
-  complete 794 @42.7,53 map 1411
+  collect 4859 quest 794.1 @42.7,53 map 1411
   note "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요."
 
 step
@@ -346,18 +346,18 @@ step
   tip 함께 수행하세요: 완수하세요: 갈가르의 선인장 사과 별미
   zone map 1411
   note "(지도에 있는 아이콘 위치를 보세요.)"
-  complete 4402 @46.29,60.62 map 1411
+  collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  complete 789 @46.29,60.62 map 1411
+  collect 4862 quest 789.1 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip 악마의 하수인을 처치해 완수: 악마의 하수인
   zone map 1411
-  complete 792 @45.3,57.2 map 1411
+  kill 3101 quest 792.1 @45.3,57.2 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -400,13 +400,13 @@ step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip 북쪽에 있는 동굴로 들어가 곡괭이를 획득하세요: 타즈릴의 곡괭이
   zone map 1411
-  complete 6394 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   tip 동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요: 불타는 칼날단 메달
   zone map 1411
-  complete 794 @42.7,53 map 1411
+  collect 4859 quest 794.1 @42.7,53 map 1411
 
 step
   only Shaman
@@ -633,7 +633,7 @@ step
   tip 코르자를 치유하세요. 코르자에게 신의 권능: 인내를 시전하세요: 신비한 주술의 로브
   zone map 1411
   note "새로운 스킬을 습득하세요: 신의 권능: 보호막 (1 레벨), 성스러운 일격 (2 레벨)"
-  complete 5648 @53.1,46.5 map 1411
+  kill 12430 quest 5648.1 @53.1,46.5 map 1411
 
 step
   tip 남쪽 길가 모험가 야영지의 브라크에게 퀘스트 완료: 모험가
@@ -667,7 +667,8 @@ step
 step
   tip 남쪽 능선의 능선그늘 거미·잠복꾼을 처치하세요: 길을 막는 거미
   zone map 1411
-  complete 96821 @50.4,54.6 map 1411
+  kill 266850 quest 96821.1 @50.4,54.6 map 1411
+  kill 266849 quest 96821.2 @50.4,54.6 map 1411
 
 step
   tip 타이라가드 요새로 이동하여 수행하세요: 배신자 처단배신자 처단
@@ -745,8 +746,9 @@ step
 step
   tip 동쪽 해변으로 이동하여 완수하세요: 나약한 정신, 난파선
   zone map 1411
-  complete 818 @62.02,46.35 map 1411
-  complete 825 @62.02,46.35 map 1411
+  collect 4887 quest 818.1 @62.02,46.35 map 1411
+  collect 4888 quest 818.2 @62.02,46.35 map 1411
+  collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step
   tip 칼바위 언덕의 남서쪽으로 향해 영토 침범영토 침범의 절반을 수행하세요.
@@ -825,7 +827,7 @@ step
   zone map 1411
   note "수리하시고 잡템을 판매하세요."
   note "새로운 스킬을 습득하세요: 변이 (1 레벨), 얼음 화살 (2 레벨)" only Mage
-  complete 97223 @68.8,71.8 map 1411
+  collect 277128 quest 97223.1 @68.8,71.8 map 1411
 
 step
   tip 메아리 섬으로 가서 다음 4개의 퀘스트를 모두 진행하세요: 알 요리 - 붉은발톱랩터 알을 주우세요. (랩터 잡는거 아님)
@@ -840,17 +842,19 @@ step
 step
   tip 민시나의 해골 - 초가 둘러져 있는 작은 언덕에 있음
   zone map 1411
-  complete 808 @67.4,87.8 map 1411
+  collect 4864 quest 808.1 @67.4,87.8 map 1411
 
 step
   tip 잘라제인 - 트롤과 잘라제인을 처치하세요.
   zone map 1411
-  complete 826 @67.19,86.98 map 1411
+  kill 3207 quest 826.1 @67.19,86.98 map 1411
+  kill 3206 quest 826.2 @67.19,86.98 map 1411
+  collect 4866 quest 826.3 @67.19,86.98 map 1411
 
 step
   tip 잊힌 로아 우상 - 섬 곳곳의 잊힌 로아 우상 8개
   zone map 1411
-  complete 97225 @66.5,85.5 map 1411
+  collect 277135 quest 97225.1 @66.5,85.5 map 1411
 
 step
   tip 셴진 마을로 돌아가기 위해 자살하세요. 치유사에게 말을 걸어 즉시 부활하세요. 퀘스트 완료: 유용한 사냥감
@@ -1145,7 +1149,7 @@ step
   tip 사나운 점박이멧돼지를 찾아 조련용 막대로 길들이세요: 야수 길들이기
   zone map 1411
   note "벙커 안으로 들어가 새로운 스킬을 습득하세요."
-  complete 6062 @52.83,48.9 map 1411
+  kill 3099 quest 6062.1 @52.83,48.9 map 1411
 
 step
   only Hunter
@@ -1162,7 +1166,7 @@ step
   only Hunter
   tip 붉은톱니게를 찾아 조련용 막대로 길들이세요: 야수 길들이기
   zone map 1411
-  complete 6083 @59.05,28.75 map 1411
+  kill 3107 quest 6083.1 @59.05,28.75 map 1411
 
 step
   only Hunter
@@ -1178,7 +1182,7 @@ step
   only Hunter
   tip 을등껍질전갈을 찾아 조련용 막대로 길들이세요: 야수 길들이기
   zone map 1411
-  complete 6082 @48.87,38.41 map 1411
+  kill 3126 quest 6082.1 @48.87,38.41 map 1411
 
 step
   only Hunter
@@ -1281,7 +1285,8 @@ step
 
 step
   zone map 1411
-  complete 835 @53.85,25.09 map 1411
+  kill 3117 quest 835.1 @53.85,25.09 map 1411
+  kill 3118 quest 835.2 @53.85,25.09 map 1411
 
 step
   tip 완료되면 서쪽 레즐락에게 걸어가 퀘스트 완료: 보급로 확보
@@ -1291,12 +1296,12 @@ step
 step
   tip 맹독전갈을 처치하여 완수하세요: 해독약 구하기
   zone map 1411
-  complete 813 @42.93,17.88 map 1411
+  collect 4886 quest 813.1 @42.93,17.88 map 1411
 
 step
   tip 강가에 있는 철갑악어를 처치하여 완수하세요: 크론의 흔적
   zone map 1411
-  complete 816 @37.03,18.22 map 1411
+  collect 4891 quest 816.1 @37.03,18.22 map 1411
 
 step
   along until q97281
@@ -1305,12 +1310,12 @@ step
 step
   only Warrior
   zone map 1411
-  complete 1498 @39.2,28.5 map 1411
+  collect 6486 quest 1498.1 @39.2,28.5 map 1411
 
 step
   tip 피즐을 처치하여 완수하세요: 다크스톰
   zone map 1411
-  complete 806 @42.07,26.63 map 1411
+  collect 4869 quest 806.1 @42.07,26.63 map 1411
 
 step
   when onquest 97281
@@ -1346,7 +1351,7 @@ step
 step
   along until q99051
   zone map 1411
-  complete 99051 @58.6,26 map 1411 -- 마르고즈에게 가는 길에 동쪽 해안의 가시지느러미 나가(척후병·시종)에게서 가시지느러미 9개: 저 아래에서 온 위협
+  collect 286008 quest 99051.1 @58.6,26 map 1411 -- 마르고즈에게 가는 길에 동쪽 해안의 가시지느러미 나가(척후병·시종)에게서 가시지느러미 9개: 저 아래에서 온 위협
 
 step
   only Shaman
@@ -1374,12 +1379,12 @@ step
   tip 동굴 내부에서 다음 퀘스트를 완수하세요: 해골 바위굴
   zone map 1411
   note "수리하시고 잡템을 판매하세요."
-  complete 827 @54.06,9.01 map 1411
+  collect 4871 quest 827.1 @54.06,9.01 map 1411
 
 step
   tip 가즈우즈를 처치하여 완수하세요: 내부의 배신자
   zone map 1411
-  complete 5726 @51.88,9.56 map 1411
+  collect 14544 quest 5726.1 @51.88,9.56 map 1411
 
 step
   tip - 잡기가 어렵다면 *희미하게 빛나는 해골*을 활용하세요. 이글거리는 그림자의 눈을 클릭하여 퀘스트 수락: 이글거리는 그림자
@@ -1389,7 +1394,7 @@ step
   only Warlock
   tip 공허의 존재를 완수하세요. 상자는 가즈우즈 뒤쪽 단상 위에 있습니다. 작은 돌 위로 먼저 점프하고 그 위에서 점프해 도달할 수 있습니다.
   zone map 1411
-  complete 1501 @51.61,9.74 map 1411
+  collect 6535 quest 1501.1 @51.61,9.74 map 1411
 
 step
   tip 여기서 응급치료 숙련도 40에 도달할 수 있도록 하십시오. (리넨 옷감) 아니면 나중에 경매장에서 사야할 수도 있습니다. 마르고즈에게 되돌아오며 사냥하세요. 퀘스트 완료: 해골 바위굴
@@ -1452,7 +1457,7 @@ step
 step
   only Warlock
   zone map 1454
-  complete 1504 @49.43,50.21 map 1454
+  kill 5676 quest 1504.1 @49.43,50.21 map 1454
 
 step
   only Warlock
@@ -1533,7 +1538,7 @@ step
   only Shaman
   tip 성지 꼭대기에서 하급 불꽃의 현신을 처치하고 화로에 불씨를 올리세요: 불의 부름
   zone map 1411
-  complete 1526 @39,58.6 map 1411
+  collect 6655 quest 1526.1 @39,58.6 map 1411
 
 step
   only Shaman

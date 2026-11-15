@@ -235,7 +235,7 @@ step
   when level<29
   tip Kill peasants: Battle of Hillsbrad
   zone map 1424
-  complete 528 @35.2,47 map 1424
+  kill 2267 quest 528.1 @35.2,47 map 1424
 
 step
   when level<32
@@ -296,7 +296,9 @@ step
 
 step
   tip Enter the Excavation Site dungeon right below. Kill Dragonmaw Guardians and Saboteurs and recover the items from the Dragonmaw Magi: Open the Maw
-  complete 95682
+  kill 275045 quest 95682.1
+  kill 275044 quest 95682.2
+  collect 284844 quest 95682.3
 
 step
   along
@@ -304,7 +306,7 @@ step
 
 step
   along
-  complete 95697 -- If you got "Changing Tastes" from Vorstan in Orgrimmar, collect the Thicket Raptor meat: Changing Tastes
+  collect 271100 quest 95697.1 -- If you got "Changing Tastes" from Vorstan in Orgrimmar, collect the Thicket Raptor meat: Changing Tastes
 
 step
   tip Turn in to the Deathstalker: Open the Maw
@@ -521,11 +523,13 @@ step
   tip On the way west to Roguefeather Den, kill 5 each of Screeching Harpies, Roguefeathers and Windcallers: Stop the Screeching
   zone map 1441
   note "Also check these spots for eggs."
-  complete 98070 @26.8,54.5 map 1441
+  kill 4100 quest 98070.1 @26.8,54.5 map 1441
+  kill 4101 quest 98070.2 @26.8,54.5 map 1441
+  kill 4104 quest 98070.3 @26.8,54.5 map 1441
 
 step
   tip Collect 8 Stolen Freewind Supplies in the same area: Stolen Freewind Supplies
-  complete 98069
+  collect 279383 quest 98069.1
 
 step
   tip Go to the Roguefeather Den at this point.
@@ -582,7 +586,9 @@ step
   when level<30
   tip Finish the quest at the farms: Battle of Hillsbrad
   zone map 1424
-  complete 529 @33,48.8 map 1424
+  kill 2404 quest 529.1 @33,48.8 map 1424
+  kill 2265 quest 529.2 @33,48.8 map 1424
+  collect 3564 quest 529.3 @33,48.8 map 1424
 
 step
   when level<30
@@ -749,12 +755,15 @@ step
 step
   tip Loot the Grimy Key from the Jailor's Locker in southwestern Alterac Mountains (toward Lordamere Lake): Key to the City
   zone map 1416
-  complete 93680 @16.4,89.3 map 1416
+  collect 279469 quest 93680.1 @16.4,89.3 map 1416
 
 step
   tip Just north, at the Dalaran internment camp: loot 4 Bloodstones from the 4 undead traitors (Ricter, Alina, Dermot, Kegan): Prison Break In
   zone map 1416
-  complete 544 @21,84 map 1416
+  collect 3691 quest 544.1 @21,84 map 1416
+  collect 3689 quest 544.2 @21,84 map 1416
+  collect 3690 quest 544.3 @21,84 map 1416
+  collect 3688 quest 544.4 @21,84 map 1416
 
 step
   tip Go back to Tarren Mill and turn in to Wordeen: Key to the City — Dungeon prereq (Dalaran)
@@ -772,8 +781,8 @@ step
   accept 545 npc 2410
 
 step
-  complete 96988 -- Enter the Dalaran dungeon and collect 6 Cracked Warden Cores from the Broken Wardens: Source of Power
-  complete 96986 -- Kill the Grave Knight Atrexis: The Grave Knight
+  collect 275997 quest 96988.1 -- Enter the Dalaran dungeon and collect 6 Cracked Warden Cores from the Broken Wardens: Source of Power
+  kill 247126 quest 96986.1 -- Kill the Grave Knight Atrexis: The Grave Knight
 
 step
   along until q96987
@@ -781,7 +790,7 @@ step
 
 step
   along until q96987
-  complete 96987 -- The book "The Founding of Dalaran": Opportunistic Education
+  collect 275996 quest 96987.1 -- The book "The Founding of Dalaran": Opportunistic Education
 
 step
   when complete 96987
@@ -792,7 +801,8 @@ step
 step
   tip Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 Enslaved Earth Elementals: Dalaran Patrols
   zone map 1416
-  complete 545 @21,80 map 1416
+  kill 2358 quest 545.1 @21,80 map 1416
+  kill 2359 quest 545.2 @21,80 map 1416
 
 step
   tip Turn in to Melisara in Tarren Mill: The Grave Knight
@@ -824,7 +834,7 @@ step
   accept 96984 npc 269127
 
 step
-  complete 96984 -- Collect the arcane motes inside Dalaran: Heart of Disruption
+  collect 251961 quest 96984.1 -- Collect the arcane motes inside Dalaran: Heart of Disruption
 
 step
   tip Turn in to Magus Wordeen Voidglare: Heart of Disruption
