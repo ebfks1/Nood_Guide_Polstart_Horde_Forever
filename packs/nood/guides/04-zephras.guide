@@ -37,6 +37,11 @@ step
   turnin 92461 npc 251361
 
 step
+  tip Grind to level 2 on the cirrusflies by the village (the class quests need level 2).
+  note "Class intro quest: only the one for your class is shown."
+  level 2
+
+step
   only Hunter
   tip Accept The Way of the Hunter (Rorian the Dayseeker)
   zone map 2521
@@ -99,7 +104,6 @@ step
 step
   tip Accept Infestation Investigation (Elatrell Featherlight)
   zone map 2521
-  note "Class intro quest: only the one for your class is shown."
   accept 92462 npc 251368
 
 step
@@ -488,11 +492,6 @@ step
   accept 93036 npc 251523
 
 step
-  tip Turn in Infiltrating the Cult (Sania Silverstream)
-  zone map 2521
-  turnin 93036 npc 251904
-
-step
   when complete 93318
   label q93318
   tip Turn in WANTED: Vulgara the Insatiable (Danarii Bellowveil)
@@ -545,6 +544,11 @@ step
   turnin 94411 npc 251902
 
 step
+  tip Turn in Infiltrating the Cult (Sania Silverstream)
+  zone map 2521
+  turnin 93036 npc 251904
+
+step
   tip == Shen'dar Village == Turn in Among the Faithful (Constable Aonda)
   zone map 2521
   turnin 92528 npc 251523
@@ -555,24 +559,9 @@ step
   accept 92551 npc 252172
 
 step
-  tip Click the supply caches (small bags) east of Falas: Stolen Supplies
-  zone map 2521
-  complete 92551 @49.3,55.9 map 2521
-
-step
-  tip Turn in Stolen Supplies (Danarii Bellowveil)
-  zone map 2521
-  turnin 92551 npc 252172
-
-step
   tip Accept The Western Watch (Constable Aonda)
   zone map 2521
   accept 93926 npc 251523
-
-step
-  tip Turn in The Western Watch (Peacekeeper Vaaniel)
-  zone map 2521
-  turnin 93926 npc 252155
 
 step
   tip Turn in A Last Request (Constable Aonda)
@@ -583,6 +572,11 @@ step
   tip Accept Havoc in the Highlands (Constable Aonda)
   zone map 2521
   accept 92550 npc 251523
+
+step
+  tip Click the supply caches (small bags) east of Falas: Stolen Supplies
+  zone map 2521
+  complete 92551 @49.3,55.9 map 2521
 
 step
   tip Kill Living Lightning and Al'Aketh Stormcallers, and Commander Cyclas (50.1,56.7): Havoc in the Highlands
@@ -603,6 +597,16 @@ step
   tip Accept Deliver the Signet (Constable Aonda)
   zone map 2521
   accept 93948 npc 251523
+
+step
+  tip Turn in Stolen Supplies (Danarii Bellowveil)
+  zone map 2521
+  turnin 92551 npc 252172
+
+step
+  tip Turn in The Western Watch (Peacekeeper Vaaniel)
+  zone map 2521
+  turnin 93926 npc 252155
 
 step
   tip == Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)
@@ -648,6 +652,11 @@ step
 
 step
   only Hunter
+  tip Grind to level 10 (the taming quests need level 10).
+  level 10
+
+step
+  only Hunter
   tip Accept Taming the Beast (Quel'ana Quickgale)
   zone map 2521
   accept 94978 npc 252389
@@ -685,33 +694,6 @@ step
   tip Accept Taming the Beast (Quel'ana Quickgale)
   zone map 2521
   accept 94013 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 250874 quest 94013.1
-
-step
-  only Hunter
-  tip Turn in Taming the Beast (Quel'ana Quickgale)
-  zone map 2521
-  turnin 94013 npc 252389
-
-step
-  only Hunter
-  tip Accept Training the Beast (Quel'ana Quickgale)
-  zone map 2521
-  accept 94050 npc 252389
-
-step
-  only Hunter
-  complete 94050
-
-step
-  only Hunter
-  tip Turn in Training the Beast (Quel'dora Quickgale)
-  zone map 2521
-  turnin 94050 npc 254411
 
 step
   only Warrior
@@ -764,6 +746,11 @@ step
   accept 93736 npc 254344
 
 step
+  only Hunter
+  zone map 2521
+  kill 250874 quest 94013.1
+
+step
   tip Kill Windsong Crawlers to the northwest for their meat: Crab Season
   zone map 2521
   complete 93317 @53.9,64.1 map 2521
@@ -806,28 +793,6 @@ step
 step
   zone map 2521
   accept 93746 npc 251968
-
-step
-  tip Go to the marked spot to the north: A Firm Response
-  zone map 2521
-  complete 93746 @59.8,57 map 2521
-
-step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
-  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
-  zone map 2521
-  complete 93740 @64,65 map 2521
-
-step
-  zone map 2521
-  turnin 93740 npc 251968
 
 step
   tip Turn in A Grand Adventure (Ayessa Dawnsinger)
@@ -910,6 +875,21 @@ step
   turnin 92698 npc 252800
 
 step
+  tip Accept Standing Our Ground (Aamelia Windfield)
+  zone map 2521
+  accept 92693 npc 252800
+
+step
+  tip Tell Aamelia you're ready, then defeat the attackers:
+  zone map 2521
+  kill 252863 quest 92693.1
+
+step
+  tip Turn in Standing Our Ground (Aamelia Windfield)
+  zone map 2521
+  turnin 92693 npc 252800
+
+step
   tip Accept Deliver the News (Aamelia Windfield)
   zone map 2521
   accept 92703 npc 252800
@@ -925,6 +905,28 @@ step
   tip Accept Call of Fire (Olariaan Swiftburn)
   zone map 2521
   accept 97244 npc 268592
+
+step
+  only Hunter
+  tip Turn in Taming the Beast (Quel'ana Quickgale)
+  zone map 2521
+  turnin 94013 npc 252389
+
+step
+  only Hunter
+  tip Accept Training the Beast (Quel'ana Quickgale)
+  zone map 2521
+  accept 94050 npc 252389
+
+step
+  only Hunter
+  complete 94050
+
+step
+  only Hunter
+  tip Turn in Training the Beast (Quel'dora Quickgale)
+  zone map 2521
+  turnin 94050 npc 254411
 
 step
   only Shaman
@@ -992,6 +994,11 @@ step
   tip Turn in Al'Aketh Assassins (Fendaal Windstone)
   zone map 2521
   turnin 98512 npc 273017
+
+step
+  tip Go to the marked spot to the north: A Firm Response
+  zone map 2521
+  complete 93746 @59.8,57 map 2521
 
 step
   tip Turn in Unnerving Silence (Elegael Thornpaw)
@@ -1113,16 +1120,6 @@ step
   accept 94488 npc 257944
 
 step
-  tip Kill Commander Haalien: The Ties That Bind
-  zone map 2521
-  complete 94488 @65.4,36.6 map 2521
-
-step
-  tip Turn in The Ties That Bind (Elegael Thornpaw)
-  zone map 2521
-  turnin 94488 npc 257944
-
-step
   tip Turn in The Wounds of Betrayal (Elegael Thornpaw)
   zone map 2521
   turnin 94489 npc 257944
@@ -1140,6 +1137,16 @@ step
   accept 94491 npc 257944
 
 step
+  tip Kill Commander Haalien: The Ties That Bind
+  zone map 2521
+  complete 94488 @65.4,36.6 map 2521
+
+step
+  tip Turn in The Ties That Bind (Elegael Thornpaw)
+  zone map 2521
+  turnin 94488 npc 257944
+
+step
   tip Turn in The Strange Hermit (Strange Hermit))
   zone map 2521
   turnin 93159 npc 251684
@@ -1150,14 +1157,14 @@ step
   accept 93172 npc 251684
 
 step
-  tip Free the Wind Hollows to the north: Free the Hollows
-  zone map 2521
-  complete 93172 @58.2,32.2 map 2521
-
-step
   tip Accept The Forest's Bounty (Strange Hermit))
   zone map 2521
   accept 93160 npc 251684
+
+step
+  tip Free the Wind Hollows to the north: Free the Hollows
+  zone map 2521
+  complete 93172 @58.2,32.2 map 2521
 
 step
   tip Click the Zephyrseeds, especially around trees: The Forest's Bounty
@@ -1194,6 +1201,14 @@ step
   zone map 2521
   turnin 94897 npc 259012
   note "== Not level 12 yet? (optional) == Fill up with the Watchtower quests east of Valanaar. If you are already 12, skip them and head straight to Thunder Bluff."
+
+step
+  zone map 2521
+  turnin 93746 npc 251968
+
+step
+  zone map 2521
+  accept 93740 npc 251968
 
 step
   along until q92871
@@ -1278,6 +1293,11 @@ step
   accept 94638 npc 255853
 
 step
+  tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
+  zone map 2521
+  complete 93740 @64,65 map 2521
+
+step
   only Druid
   zone map 2521
   kill 258443 quest 94638.1
@@ -1287,6 +1307,10 @@ step
   tip Turn in Strength and Mercy (Urs'endris)
   zone map 2521
   turnin 94638 npc 255853
+
+step
+  zone map 2521
+  turnin 93740 npc 251968
 
 step
   level 12

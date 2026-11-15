@@ -25,6 +25,29 @@ step
 
 step
   only Paladin,Undead
+  tip 성기사는 좀비 퀘스트를 먼저 끝내야 합니다. 퀘스트 완료: 각성의 시간
+  zone map 1420
+  turnin 363 npc 1569
+
+step
+  only Paladin,Undead
+  zone map 1420
+  accept 364 npc 1569
+
+step
+  only Paladin,Undead
+  tip 예배당 주변의 좀비를 처치하세요: 얼빠진 좀비
+  zone map 1420
+  kill 1501 quest 364.1
+  kill 1502 quest 364.2
+
+step
+  only Paladin,Undead
+  zone map 1420
+  turnin 364 npc 1569
+
+step
+  only Paladin,Undead
   tip 어둠의사제 사비스에게 퀘스트 수락: 어려운 길 (포에버 신규)
   zone map 1420
   accept 98601 npc 1569
@@ -66,8 +89,12 @@ step
   turnin 363 npc 1569
 
 step
-  zone map 1420
+  tip 사냥해서 레벨 3으로 올리세요 (말라의 마지막 소원은 3레벨부터 받을 수 있습니다).
   note "상인에게 물이나 빵을 구매합니다."
+  level 3
+
+step
+  zone map 1420
   accept 6395 npc 1661
   accept 380 npc 1570
   accept 3902 npc 1740
@@ -77,6 +104,11 @@ step
   tip 아라미스 해머핸드에게 퀘스트 수락: 어둠 속의 빛 (포에버 신규)
   zone map 1420
   accept 98389 npc 244808
+
+step
+  only Paladin,Undead
+  tip 사냥해서 레벨 4로 올리세요 (현실 순응은 4레벨부터 받을 수 있습니다).
+  level 4
 
 step
   only Paladin,Undead

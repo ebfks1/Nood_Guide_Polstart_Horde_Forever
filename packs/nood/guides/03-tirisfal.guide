@@ -25,6 +25,29 @@ step
 
 step
   only Paladin,Undead
+  tip Paladins need the zombie quest first. Turn in Rude Awakening
+  zone map 1420
+  turnin 363 npc 1569
+
+step
+  only Paladin,Undead
+  zone map 1420
+  accept 364 npc 1569
+
+step
+  only Paladin,Undead
+  tip Kill the zombies around the church: The Mindless Ones
+  zone map 1420
+  kill 1501 quest 364.1
+  kill 1502 quest 364.2
+
+step
+  only Paladin,Undead
+  zone map 1420
+  turnin 364 npc 1569
+
+step
+  only Paladin,Undead
   tip Accept from Shadow Priest Sarvis: A Difficult Path (Forever new)
   zone map 1420
   accept 98601 npc 1569
@@ -66,8 +89,12 @@ step
   turnin 363 npc 1569
 
 step
-  zone map 1420
+  tip Grind to level 3 (Marla's Last Wish needs level 3).
   note "Buy water or bread from the vendor."
+  level 3
+
+step
+  zone map 1420
   accept 6395 npc 1661
   accept 380 npc 1570
   accept 3902 npc 1740
@@ -77,6 +104,11 @@ step
   tip Accept from Aramis Hammerhand: A Light in the Darkness (Forever new)
   zone map 1420
   accept 98389 npc 244808
+
+step
+  only Paladin,Undead
+  tip Grind to level 4 (Coming to Terms needs level 4).
+  level 4
 
 step
   only Paladin,Undead

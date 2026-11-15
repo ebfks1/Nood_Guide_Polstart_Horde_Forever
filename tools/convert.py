@@ -57,6 +57,50 @@ ALL_RACES = ['Orc', 'Troll', 'Tauren', 'Scourge', 'Skyborne']
 # Quests the official data (client race mask) offers to these races only; BalCon lists them for others.
 RACE_ONLY = {98024: ['Skyborne']}
 
+# Lines added to the BalCon source for this pack, each list placed before the first English line holding the anchor.
+# They follow the order the game data (and Polestar's own guides) need: a prerequisite the route skipped, or the
+# level a quest asks for. (English line, Korean line), in BalCon's own notation.
+PATCHES = {
+    '03_1-12_Tirisfal': [
+        ('[QA98601', [
+            ('[G30.9,66.1 Tirisfal Glades]Paladins need the zombie quest first. Turn in [QT363 Rude Awakening][A Undead, Paladin]',
+             '[G30.9,66.1 Tirisfal Glades]성기사는 좀비 퀘스트를 먼저 끝내야 합니다. 퀘스트 완료: [QT363 각성의 시간][A Undead, Paladin]'),
+            ('Accept [QA364 The Mindless Ones][A Undead, Paladin]',
+             '퀘스트 수락: [QA364 얼빠진 좀비][A Undead, Paladin]'),
+            ('Kill the zombies around the church: [QC364 The Mindless Ones][A Undead, Paladin]',
+             '예배당 주변의 좀비를 처치하세요: [QC364 얼빠진 좀비][A Undead, Paladin]'),
+            ('[G30.9,66.1 Tirisfal Glades]Turn in [QT364 The Mindless Ones][A Undead, Paladin]',
+             '[G30.9,66.1 Tirisfal Glades]퀘스트 완료: [QT364 얼빠진 좀비][A Undead, Paladin]'),
+        ]),
+        ('[QA6395', [
+            ("Grind to [XP3 level 3] (Marla's Last Wish needs level 3).",
+             '사냥해서 레벨 [XP3 3]으로 올리세요 (말라의 마지막 소원은 3레벨부터 받을 수 있습니다).'),
+        ]),
+        ('[QA91208', [
+            ('Grind to [XP4 level 4] (Coming to Terms needs level 4).[A Undead, Paladin]',
+             '사냥해서 레벨 [XP4 4]로 올리세요 (현실 순응은 4레벨부터 받을 수 있습니다).[A Undead, Paladin]'),
+        ]),
+    ],
+    '04_1-12_Zephras': [
+        ('[QA92482', [
+            ('Grind to [XP2 level 2] on the cirrusflies by the village (the class quests need level 2).',
+             '마을 옆 구름벌레를 사냥해서 레벨 [XP2 2]로 올리세요 (직업 퀘스트는 2레벨부터 받을 수 있습니다).'),
+        ]),
+        ('[QA94978', [
+            ('Grind to [XP10 level 10] (the taming quests need level 10).[A Hunter]',
+             '사냥해서 레벨 [XP10 10]으로 올리세요 (야수 길들이기는 10레벨부터 받을 수 있습니다).[A Hunter]'),
+        ]),
+        ('[QA92703', [
+            ('Accept [QA92693 Standing Our Ground] (Aamelia Windfield)[G46.6,81.8Zephras Isle]',
+             '수락: [QA92693 Standing Our Ground] (아멜리아 윈드필드)[G46.6,81.8Zephras Isle]'),
+            ("Tell Aamelia you're ready, then defeat the attackers: [QC92693]",
+             '아멜리아에게 준비됐다고 말한 뒤 습격자들을 처치하세요: [QC92693]'),
+            ('Turn in [QT92693 Standing Our Ground] (Aamelia Windfield)[G46.6,81.8Zephras Isle]',
+             '완료: [QT92693 Standing Our Ground] (아멜리아 윈드필드)[G46.6,81.8Zephras Isle]'),
+        ]),
+    ],
+}
+
 report = collections.Counter()
 notes_log = []
 
@@ -274,11 +318,37 @@ def objective_refs(q):
     return refs
 
 
+def spot(st):
+    """Where a step happens: its first goal with a place."""
+    for g in st['goals']:
+        if 'map' in g and 'x' in g:
+            return (g['map'], g['x'], g['y'])
+    return None
+
+
+def far(a, b):
+    """Rough travel between two places, in map percent; another map counts as a long trip."""
+    if a is None or b is None:
+        return 0.0
+    if a[0] != b[0]:
+        return 60.0
+    return ((a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2) ** 0.5
+
+
 class Guide:
     def __init__(self, stem, slug, races, zone, zone_name):
         self.stem, self.slug, self.races = stem, slug, races
         self.zone, self.zone_name = zone, zone_name
         en, ko = body('%s/%s_en.lua' % (SRC, stem)), body('%s/%s.lua' % (SRC, stem))
+        if len(en) == len(ko):
+            for anchor, lines in PATCHES.get(stem, []):
+                at = next((i for i, l in enumerate(en) if anchor in l), None)
+                if at is None:
+                    notes_log.append('PATCH %s: anchor %r not found' % (stem, anchor))
+                    continue
+                en[at:at] = [a for a, _ in lines]
+                ko[at:at] = [b for _, b in lines]
+                report['lines added for the official quest order'] += len(lines)
         if len(en) != len(ko):
             notes_log.append('%s: Korean and English files have different line counts; English text used' % stem)
             ko = [None] * len(en)
@@ -538,7 +608,9 @@ class Guide:
                     break
             self.pending = []
         self.merge_runs()
+        before = self.path_length()
         self.fix_prereqs()
+        notes_log.append('PATH %s: %.0f -> %.0f map-percent' % (self.stem, before, self.path_length()))
         # an along step is listed until its quest's turn-in step, when a later step carries that label
         for i, st in enumerate(self.steps):
             for qid in st.get('_until') or []:
@@ -547,12 +619,21 @@ class Guide:
                     st['until'] = lab
                     break
 
+    def path_length(self):
+        n, prev = 0.0, None
+        for st in self.steps:
+            p = spot(st)
+            if p and not st.get('along'):
+                n += far(prev, p)
+                prev = p
+        return n
+
     def fix_prereqs(self):
         """A quest taken before its prerequisite is handed in (as Polestar's data and its own guides order them) moves to
         right after that hand-in: the accept, and any of the quest's own steps that came before that point."""
         def quests(st):
             return {g['quest'] for g in st['goals'] if 'quest' in g}
-        for _ in range(60):
+        for _ in range(300):
             last = {}
             for i, st in enumerate(self.steps):
                 for g in st['goals']:
@@ -572,7 +653,7 @@ class Guide:
             if not move:
                 break
             q, first, target = move
-            taken, kept = [], []
+            taken, kept, cut = [], [], None
             for i, st in enumerate(self.steps):
                 if first <= i <= target and q in quests(st):
                     mine = [g for g in st['goals'] if g.get('quest') == q]
@@ -585,12 +666,34 @@ class Guide:
                         kept.append(st)
                     else:
                         taken.append(st)
-                        notes = [g for g in rest if g['t'] == 'note' and not g.get('_pre')]
                     report['prerequisite order: steps moved'] += 1
                 else:
                     kept.append(st)
                 if i == target:
-                    kept.extend(taken)
+                    cut = len(kept)
+            # the accept (and anything without a place) goes right after the hand-in; work and hand-in steps go where
+            # the route passes closest from there on, before the quest's own later steps
+            head = [st for st in taken if spot(st) is None or any(g['t'] == 'accept' for g in st['goals'])]
+            tail = [st for st in taken if st not in head]
+            kept[cut:cut] = head
+            lo = cut + len(head)
+            for st in tail:
+                hi = next((j for j in range(lo, len(kept)) if q in quests(kept[j])), len(kept))
+                hi = min(hi, lo + 60)
+                best, cost = lo, None
+                for j in range(lo, hi + 1):
+                    a = next((spot(kept[k]) for k in range(j - 1, -1, -1) if spot(kept[k])), None)
+                    b = next((spot(kept[k]) for k in range(j, len(kept)) if spot(kept[k])), None)
+                    # never between a step and its level-rule twin, or into a run of gated steps
+                    if 0 < j < len(kept) and kept[j].get('when') and kept[j - 1].get('when') and quests(kept[j]) == quests(kept[j - 1]):
+                        continue
+                    c = far(a, spot(st)) + far(spot(st), b) - far(a, b)
+                    if cost is None or c < cost - 0.05:
+                        best, cost = j, c
+                kept.insert(best, st)
+                if best > lo:
+                    report['prerequisite order: steps placed further along the route'] += 1
+                lo = best + 1
             self.steps = kept
             report['prerequisite order: quests moved'] += 1
             notes_log.append('PREREQ %s: quest %d now follows the turn-in of %s (was step %d, hand-in at step %d; %d steps: %s)' % (self.stem, q, PREREQ[q], first, target, len(taken), '+'.join(g['t'] for st in taken for g in st['goals'] if g.get('quest') == q)))

@@ -37,6 +37,11 @@ step
   turnin 92461 npc 251361
 
 step
+  tip 마을 옆 구름벌레를 사냥해서 레벨 2로 올리세요 (직업 퀘스트는 2레벨부터 받을 수 있습니다).
+  note "직업 입문 퀘스트: 내 직업 것만 표시됩니다."
+  level 2
+
+step
   only Hunter
   tip 수락: The Way of the Hunter (낮의 탐구자 로리안)
   zone map 2521
@@ -99,7 +104,6 @@ step
 step
   tip 수락: 들끓는 해충 조사 (엘라트렐 페더라이트)
   zone map 2521
-  note "직업 입문 퀘스트: 내 직업 것만 표시됩니다."
   accept 92462 npc 251368
 
 step
@@ -488,11 +492,6 @@ step
   accept 93036 npc 251523
 
 step
-  tip 완료: 이교도 잠입 (사니아 실버스트림)
-  zone map 2521
-  turnin 93036 npc 251904
-
-step
   when complete 93318
   label q93318
   tip 완료: 현상 수배: 탐욕의 불가라 (다나리 벨로베일)
@@ -545,6 +544,11 @@ step
   turnin 94411 npc 251902
 
 step
+  tip 완료: 이교도 잠입 (사니아 실버스트림)
+  zone map 2521
+  turnin 93036 npc 251904
+
+step
   tip ── 셴다르 마을 ── 완료: 신도들 사이에서 (순경 아온다)
   zone map 2521
   turnin 92528 npc 251523
@@ -555,24 +559,9 @@ step
   accept 92551 npc 252172
 
 step
-  tip 팔라스 마을 동쪽 보급품 상자:
-  zone map 2521
-  complete 92551 @49.3,55.9 map 2521
-
-step
-  tip 완료: 도난당한 보급품 (다나리 벨로베일)
-  zone map 2521
-  turnin 92551 npc 252172
-
-step
   tip 수락: 서부 감시터 (순경 아온다)
   zone map 2521
   accept 93926 npc 251523
-
-step
-  tip 완료: 서부 감시터 (평화감시자 바니엘)
-  zone map 2521
-  turnin 93926 npc 252155
 
 step
   tip 완료: 마지막 부탁 (순경 아온다)
@@ -583,6 +572,11 @@ step
   tip 수락: 고원의 혼란 (순경 아온다)
   zone map 2521
   accept 92550 npc 251523
+
+step
+  tip 팔라스 마을 동쪽 보급품 상자:
+  zone map 2521
+  complete 92551 @49.3,55.9 map 2521
 
 step
   tip 살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):
@@ -603,6 +597,16 @@ step
   tip 수락: 인장 전달 (순경 아온다)
   zone map 2521
   accept 93948 npc 251523
+
+step
+  tip 완료: 도난당한 보급품 (다나리 벨로베일)
+  zone map 2521
+  turnin 92551 npc 252172
+
+step
+  tip 완료: 서부 감시터 (평화감시자 바니엘)
+  zone map 2521
+  turnin 93926 npc 252155
 
 step
   tip ── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)
@@ -648,6 +652,11 @@ step
 
 step
   only Hunter
+  tip 사냥해서 레벨 10으로 올리세요 (야수 길들이기는 10레벨부터 받을 수 있습니다).
+  level 10
+
+step
+  only Hunter
   tip 수락: Taming the Beast (퀠라나 퀵게일)
   zone map 2521
   accept 94978 npc 252389
@@ -685,33 +694,6 @@ step
   tip 수락: Taming the Beast (퀠라나 퀵게일)
   zone map 2521
   accept 94013 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 250874 quest 94013.1
-
-step
-  only Hunter
-  tip 완료: Taming the Beast (퀠라나 퀵게일)
-  zone map 2521
-  turnin 94013 npc 252389
-
-step
-  only Hunter
-  tip 수락: Training the Beast (퀠라나 퀵게일)
-  zone map 2521
-  accept 94050 npc 252389
-
-step
-  only Hunter
-  complete 94050
-
-step
-  only Hunter
-  tip 완료: Training the Beast (퀠도라 퀵게일)
-  zone map 2521
-  turnin 94050 npc 254411
 
 step
   only Warrior
@@ -764,6 +746,11 @@ step
   accept 93736 npc 254344
 
 step
+  only Hunter
+  zone map 2521
+  kill 250874 quest 94013.1
+
+step
   tip 북서쪽 바람노래 집게발:
   zone map 2521
   complete 93317 @53.9,64.1 map 2521
@@ -806,28 +793,6 @@ step
 step
   zone map 2521
   accept 93746 npc 251968
-
-step
-  tip 북쪽 벨라탄 브라이트위시:
-  zone map 2521
-  complete 93746 @59.8,57 map 2521
-
-step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
-  tip 발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:
-  zone map 2521
-  complete 93740 @64,65 map 2521
-
-step
-  zone map 2521
-  turnin 93740 npc 251968
 
 step
   tip 완료: 위대한 모험 (아에사 돈싱어)
@@ -910,6 +875,21 @@ step
   turnin 92698 npc 252800
 
 step
+  tip 수락: Standing Our Ground (아멜리아 윈드필드)
+  zone map 2521
+  accept 92693 npc 252800
+
+step
+  tip 아멜리아에게 준비됐다고 말한 뒤 습격자들을 처치하세요:
+  zone map 2521
+  kill 252863 quest 92693.1
+
+step
+  tip 완료: Standing Our Ground (아멜리아 윈드필드)
+  zone map 2521
+  turnin 92693 npc 252800
+
+step
   tip 수락: 소식 전달 (아멜리아 윈드필드)
   zone map 2521
   accept 92703 npc 252800
@@ -925,6 +905,28 @@ step
   tip 수락: 불의 부름 (올라리안 스위프트번)
   zone map 2521
   accept 97244 npc 268592
+
+step
+  only Hunter
+  tip 완료: Taming the Beast (퀠라나 퀵게일)
+  zone map 2521
+  turnin 94013 npc 252389
+
+step
+  only Hunter
+  tip 수락: Training the Beast (퀠라나 퀵게일)
+  zone map 2521
+  accept 94050 npc 252389
+
+step
+  only Hunter
+  complete 94050
+
+step
+  only Hunter
+  tip 완료: Training the Beast (퀠도라 퀵게일)
+  zone map 2521
+  turnin 94050 npc 254411
 
 step
   only Shaman
@@ -992,6 +994,11 @@ step
   tip 완료: 알아케스 암살자 (펜달 윈드스톤)
   zone map 2521
   turnin 98512 npc 273017
+
+step
+  tip 북쪽 벨라탄 브라이트위시:
+  zone map 2521
+  complete 93746 @59.8,57 map 2521
 
 step
   tip 완료: 불길한 침묵 (엘레게일 쏜포우)
@@ -1113,16 +1120,6 @@ step
   accept 94488 npc 257944
 
 step
-  tip 사령관 할리엔:
-  zone map 2521
-  complete 94488 @65.4,36.6 map 2521
-
-step
-  tip 완료: 하나로 묶는 유대 (엘레게일 쏜포우)
-  zone map 2521
-  turnin 94488 npc 257944
-
-step
   tip 완료: 배신이 남긴 상처 (엘레게일 쏜포우)
   zone map 2521
   turnin 94489 npc 257944
@@ -1140,6 +1137,16 @@ step
   accept 94491 npc 257944
 
 step
+  tip 사령관 할리엔:
+  zone map 2521
+  complete 94488 @65.4,36.6 map 2521
+
+step
+  tip 완료: 하나로 묶는 유대 (엘레게일 쏜포우)
+  zone map 2521
+  turnin 94488 npc 257944
+
+step
   tip 완료: 수상한 은둔자 ((이름 미확인))
   zone map 2521
   turnin 93159 npc 251684
@@ -1150,14 +1157,14 @@ step
   accept 93172 npc 251684
 
 step
-  tip 북쪽 바람의 유령:
-  zone map 2521
-  complete 93172 @58.2,32.2 map 2521
-
-step
   tip 수락: 숲이 내린 선물 ((이름 미확인))
   zone map 2521
   accept 93160 npc 251684
+
+step
+  tip 북쪽 바람의 유령:
+  zone map 2521
+  complete 93172 @58.2,32.2 map 2521
 
 step
   tip 서풍씨앗 방울:
@@ -1194,6 +1201,14 @@ step
   zone map 2521
   turnin 94897 npc 259012
   note "── 12레벨이 안 됐다면 (선택) ── 발라나르 동쪽 감시탑 퀘스트로 채우세요. 12레벨이면 건너뛰고 바로 썬더 블러프로 가도 됩니다."
+
+step
+  zone map 2521
+  turnin 93746 npc 251968
+
+step
+  zone map 2521
+  accept 93740 npc 251968
 
 step
   along until q92871
@@ -1278,6 +1293,11 @@ step
   accept 94638 npc 255853
 
 step
+  tip 발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:
+  zone map 2521
+  complete 93740 @64,65 map 2521
+
+step
   only Druid
   zone map 2521
   kill 258443 quest 94638.1
@@ -1287,6 +1307,10 @@ step
   tip 완료: 힘과 자비 (우르센드리스)
   zone map 2521
   turnin 94638 npc 255853
+
+step
+  zone map 2521
+  turnin 93740 npc 251968
 
 step
   level 12
