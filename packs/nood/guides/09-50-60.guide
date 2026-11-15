@@ -179,9 +179,7 @@ step
   when level<53
   tip Kill ogres to complete: The Dunemaul Compound
   zone map 1446
-  kill 5474 quest 5863.1 @48,61 map 1446
-  kill 5472 quest 5863.2 @48,61 map 1446
-  kill 12046 quest 5863.3 @48,61 map 1446
+  complete 5863 @48,61 map 1446
 
 step
   when level<52
@@ -620,7 +618,7 @@ step
   when level<54
   tip Cross the bridge inside the pit. Go through the gate on the left and head north until you reach a large area with a captured archaeologist. A huge level 52 elite golem lies there (ignore it). Go up the iron ramp; about halfway there is a fork — keep going up. You'll find overseers paired with slavers. Further in, on the right, is Overseer Maltorius with his guards. They are 3 elites, so you can't solo them — find other players to do it together. Kill Maltorius: WANTED: Overseer Maltorius
   zone map 1427
-  complete 7701
+  collect 18946 quest 7701.1
 
 step
   when level<54
@@ -760,7 +758,7 @@ step
   when level<54
   tip Kill the Twilight's Hammer to complete: The Flame's Casing
   zone map 1427
-  complete 3452
+  collect 10552 quest 3452.1
 
 step
   when level<54
@@ -908,7 +906,7 @@ step
 step
   tip Collect 20 Fetishes of Hakkar from the Atal'ai trolls: The Temple of Atal'Hakkar
   zone map 1435
-  complete 1445
+  collect 6181 quest 1445.1
 
 step
   complete 3446 -- Find the Altar of Hakkar (lower level, in the middle): Into the Depths
@@ -1672,7 +1670,9 @@ step
 step
   tip Kill the Dark Iron dwarves: KILL ON SIGHT: Dark Iron Dwarves
   zone map 1427
-  complete 4081
+  kill 8891 quest 4081.1
+  kill 8890 quest 4081.2
+  kill 8892 quest 4081.3
 
 step
   along until q4134

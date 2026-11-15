@@ -584,9 +584,7 @@ step
   when level<30
   tip Finish the quest at the farms: Battle of Hillsbrad
   zone map 1424
-  kill 2404 quest 529.1 @33,48.8 map 1424
-  kill 2265 quest 529.2 @33,48.8 map 1424
-  collect 3564 quest 529.3 @33,48.8 map 1424
+  complete 529 @33,48.8 map 1424
 
 step
   when level<30
@@ -758,10 +756,7 @@ step
 step
   tip Just north, at the Dalaran internment camp: loot 4 Bloodstones from the 4 undead traitors (Ricter, Alina, Dermot, Kegan): Prison Break In
   zone map 1416
-  collect 3691 quest 544.1 @21,84 map 1416
-  collect 3689 quest 544.2 @21,84 map 1416
-  collect 3690 quest 544.3 @21,84 map 1416
-  collect 3688 quest 544.4 @21,84 map 1416
+  complete 544 @21,84 map 1416
 
 step
   tip Go back to Tarren Mill and turn in to Wordeen: Key to the City — Dungeon prereq (Dalaran)
@@ -799,8 +794,7 @@ step
 step
   tip Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 Enslaved Earth Elementals: Dalaran Patrols
   zone map 1416
-  kill 2358 quest 545.1 @21,80 map 1416
-  kill 2359 quest 545.2 @21,80 map 1416
+  complete 545 @21,80 map 1416
 
 step
   tip Turn in to Melisara in Tarren Mill: The Grave Knight

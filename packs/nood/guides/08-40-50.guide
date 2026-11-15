@@ -333,7 +333,7 @@ step
   tip Kill buzzards to complete: Badlands Reagent Run Barbecued Buzzard Wings
   zone map 1418
   collect 7847 quest 2258.1
-  collect 3404 quest 703.1
+  complete 703
 
 step
   tip Kill rock elementals to complete: Study of the Elements: Rock Badlands Reagent Run
@@ -372,7 +372,7 @@ step
   when level<46
   tip Kill greater rock elementals to complete: Study of the Elements: Rock
   zone map 1418
-  collect 4628 quest 712.1 @9.4,73.6 map 1418
+  complete 712 @9.4,73.6 map 1418
 
 step
   when level<46
@@ -484,7 +484,7 @@ step
   when level<46
   tip Kill Sawtooth Crocolisks to complete: Lack of Surplus
   zone map 1435
-  collect 6168 quest 699.1 @83.2,70.2 map 1435
+  complete 699 @83.2,70.2 map 1435
 
 step
   when level<46
@@ -816,7 +816,7 @@ step
   tip Kill Bhag'thera: Panther Mastery
   zone map 1434
   note "If she's not there, check this spot too."
-  complete 193
+  collect 3876 quest 193.1
 
 step
   when level<45
@@ -1233,7 +1233,8 @@ step
 step
   tip Collect 8 Dentrium and 8 An'Alleum Power Stones from Shadowforge dwarves: Power Stones
   zone map 1418
-  complete 2418
+  collect 8009 quest 2418.1
+  collect 8052 quest 2418.2
 
 step
   tip Take the Garrett family treasure from the chest in the South Common Hall: Reclaimed Treasures
@@ -1243,7 +1244,7 @@ step
 step
   tip Find the valuable necklace inside (a damaged one counts): Necklace Recovery
   zone map 1418
-  complete 2283
+  collect 7666 quest 2283.1
 
 step
   tip Collect 12 Magenta Fungus Caps inside: Uldaman Reagent Run
@@ -1377,9 +1378,7 @@ step
   when level<47
   tip Kill the dragons to complete: Army of the Black Dragon
   zone map 1445
-  kill 4329 quest 1168.1 @46.4,66.4 map 1445
-  kill 4331 quest 1168.2 @46.4,66.4 map 1445
-  kill 4328 quest 1168.3 @46.4,66.4 map 1445
+  complete 1168 @46.4,66.4 map 1445
 
 step
   when level<47
@@ -2330,10 +2329,7 @@ step
   when level<52
   tip Kill elves to complete: Message to the Wildhammer
   zone map 1425
-  kill 2692 quest 7841.1 @33,51.2 map 1425
-  kill 2691 quest 7841.2 @33,51.2 map 1425
-  kill 2694 quest 7841.3 @33,51.2 map 1425
-  kill 2693 quest 7841.4 @33,51.2 map 1425
+  complete 7841 @33,51.2 map 1425
 
 step
   zone map 1425
@@ -2348,8 +2344,7 @@ step
   when level<52
   tip Kill trolls to complete: Cannibalistic Cousins
   zone map 1425
-  kill 4466 quest 7844.1 @45,62.4 map 1425
-  kill 4467 quest 7844.2 @45,62.4 map 1425
+  complete 7844 @45,62.4 map 1425
 
 step
   tip Take the Ancient Egg from the nest below the south side of Jintha'Alor: The Ancient Egg
@@ -2508,7 +2503,7 @@ step
 step
   tip Collect 10 Shadowshard Fragments (from the crystal mobs inside): Shadowshard Fragments
   zone map 1443
-  complete 7068
+  collect 17756 quest 7068.1
 
 step
   tip Collect 15 Theradric Crystal Carvings: Twisted Evils
@@ -2518,7 +2513,8 @@ step
 step
   tip Fill the Coated Cerulean Vial at the orange crystal pool: Vyletongue Corruption
   zone map 1443
-  complete 7029
+  kill 13696 quest 7029.1
+  collect 17696 quest 7029.2
 
 step
   complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions

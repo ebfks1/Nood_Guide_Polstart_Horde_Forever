@@ -1590,7 +1590,7 @@ step
 step
   along until q99052
   zone map 1411
-  complete 99052 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
+  collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
 
 step
   when complete 99052

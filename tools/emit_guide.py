@@ -95,7 +95,7 @@ def splittable(qid, place):
         spots = [(mp, x, y) for r in refs for e in [db.entity(r)] if e for mp, era, x, y, rr in e[1]]
         if not spots:
             return False
-        if place and not any(mp == place['map'] and C.dist((x, y), (place['x'], place['y'])) <= 8 for mp, x, y in spots):
+        if place and not any(mp == place['map'] and C.dist((x, y), (place['x'], place['y'])) <= 3 for mp, x, y in spots):
             return False
     return True
 
@@ -151,7 +151,10 @@ def goal_lines(g, lang, along, stats):
     if t == 'complete':
         # one goal per objective wherever the data allows: Polestar's "While you're here" panel (Dynamic Questing)
         # offers kill/collect/interact goals of later steps when you pass them, never a whole-quest `complete`
-        objs = quest_objectives(g['quest']) if known and splittable(g['quest'], g if written else None) else None
+        if written:  # the guide's hunting spot: split only when nothing is lost
+            objs = quest_objectives(g['quest']) if known and splittable(g['quest'], g) else None
+        else:  # placed by the data, as before
+            objs = quest_objectives(g['quest']) if known and 'map' in g else None
         if objs:
             if written:
                 stats['complete: one goal per objective, at the guide\'s place'] += 1

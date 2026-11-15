@@ -451,9 +451,7 @@ step
 step
   zone map 1412
   note "Kill an Adult Plainstrider nearby and keep 1 \"Tender Strider Meat\" (to feed Kyle)."
-  kill 2949 quest 745.1 @36.5,65.1 map 1412
-  kill 2950 quest 745.2 @36.5,65.1 map 1412
-  kill 2951 quest 745.3 @36.5,65.1 map 1412
+  complete 745 @36.5,65.1 map 1412
 
 step
   tip Pick up 2 Well Stones on the ground around the southeast well: Rite of Vision
@@ -839,17 +837,13 @@ step
 step
   along until q98424
   zone map 1412
-  collect 281035 quest 98424.1 @61.8,47.3 map 1412 -- Collect the other 4 documents: Fizsprocket's Notes
-  collect 281036 quest 98424.2 @61.8,47.3 map 1412
-  collect 281037 quest 98424.3 @61.8,47.3 map 1412
+  complete 98424 @61.8,47.3 map 1412 -- Collect the other 4 documents: Fizsprocket's Notes
 
 step
   only Tauren
   tip Kill 6 Galak centaurs and 4 scouts and loot Raider Herak's head: Drive Them Out
   zone map 1412
-  kill 2967 quest 99080.1 @64,61.6 map 1412
-  kill 2968 quest 99080.2 @64,61.6 map 1412
-  collect 286075 quest 99080.3 @64,61.6 map 1412
+  complete 99080 @64,61.6 map 1412
 
 step
   zone map 1412
@@ -1031,7 +1025,7 @@ step
 
 step
   zone map 1412
-  collect 4841 quest 776.1 @47.6,26.6 map 1412
+  complete 776 @47.6,26.6 map 1412
 
 step
   only Tauren

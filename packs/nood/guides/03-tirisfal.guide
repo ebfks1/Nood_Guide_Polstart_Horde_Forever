@@ -483,7 +483,8 @@ step
 step
   along
   zone map 1420
-  complete 375
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
 
 step
   along
@@ -502,7 +503,8 @@ step
   collect 3163 quest 426.2
   collect 2859 quest 368.1
   kill 1535 quest 427.1
-  complete 375
+  collect 2876 quest 375.1
+  collect 2320 quest 375.2
 
 step
   along

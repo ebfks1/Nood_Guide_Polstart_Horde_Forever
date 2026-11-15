@@ -179,9 +179,7 @@ step
   when level<53
   tip 오우거를 처치해 완수하세요: 모래망치 주둔지
   zone map 1446
-  kill 5474 quest 5863.1 @48,61 map 1446
-  kill 5472 quest 5863.2 @48,61 map 1446
-  kill 12046 quest 5863.3 @48,61 map 1446
+  complete 5863 @48,61 map 1446
 
 step
   when level<52
@@ -620,7 +618,7 @@ step
   when level<54
   tip 채석장 내부에서 다리를 가로질러 이동하세요. 왼편에 채석장 문이 있을텐데 이를 통과하세요. 사로잡힌 고고학자를 발견할 수 있는 넓은 장소가 나올 때까지, 북쪽으로 이동하세요. 거대한 레벨 52 정예 골렘이 누워있지만 (무시하세요) 철로 된 경사를 올라가면 중간 즈음에 갈림길이 있습니다. 그대로 올라가세요. 감독관들과 노예상인들이 짝지어 있는 곳을 발견할 수 있습니다. 여기서 안쪽으로 들어가면 오른편에 감독관 말토류스와 호위들이 있습니다. 정예 3마리이므로 솔플은 불가능하므로, 다른 유저들을 찾아 함께 진행하세요. 말토류스를 처치하세요: 말토류스 처치
   zone map 1427
-  complete 7701
+  collect 18946 quest 7701.1
 
 step
   when level<54
@@ -760,7 +758,7 @@ step
   when level<54
   tip 황혼의망치단을 처치하여 완수하세요: 불꽃의 테두리
   zone map 1427
-  complete 3452
+  collect 10552 quest 3452.1
 
 step
   when level<54
@@ -908,7 +906,7 @@ step
 step
   tip 아탈라이 트롤에게서 학카르의 우상 20개를 모으세요: 아탈학카르 신전
   zone map 1435
-  complete 1445
+  collect 6181 quest 1445.1
 
 step
   complete 3446 -- 학카르의 제단(가운데 아래층)을 찾으세요: 심연의 늪
@@ -1672,7 +1670,9 @@ step
 step
   tip 검은무쇠단 드워프를 처치하세요: 죽음의 본보기: 검은무쇠단 드워프
   zone map 1427
-  complete 4081
+  kill 8891 quest 4081.1
+  kill 8890 quest 4081.2
+  kill 8892 quest 4081.3
 
 step
   along until q4134

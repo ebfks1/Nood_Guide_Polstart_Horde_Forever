@@ -701,7 +701,7 @@ step
 step
   tip Kill Windsong Crawlers to the northwest for their meat: Crab Season
   zone map 2521
-  collect 257941 quest 93317.1 @53.9,64.1 map 2521
+  complete 93317 @53.9,64.1 map 2521
 
 step
   tip Turn in Crab Season (Nyalah Brightfire)
@@ -792,7 +792,7 @@ step
 step
   tip Tell Aamelia you're ready, then defeat the attackers:
   zone map 2521
-  kill 252863 quest 92693.2 @46.6,81.8 map 2521
+  complete 92693 @46.6,81.8 map 2521
 
 step
   tip Turn in Standing Our Ground (Aamelia Windfield)
@@ -993,7 +993,7 @@ step
 step
   tip Same Al'Aketh (collect their ears): Mercy Falls on Deaf Ears
   zone map 2521
-  collect 258771 quest 93165.1 @63.7,37.3 map 2521
+  complete 93165 @63.7,37.3 map 2521
 
 step
   tip Turn in Mercy Falls on Deaf Ears (Vayn Moongaze)

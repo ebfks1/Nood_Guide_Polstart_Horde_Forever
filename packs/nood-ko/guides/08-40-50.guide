@@ -333,7 +333,7 @@ step
   tip 독수리를 처치해 완수하세요: 모래주머니 획득날개 획득
   zone map 1418
   collect 7847 quest 2258.1
-  collect 3404 quest 703.1
+  complete 703
 
 step
   tip 바위 정령을 처치해 완수하세요: 바위의 정령 연구정령 파편 획득
@@ -372,7 +372,7 @@ step
   when level<46
   tip 상급 정령을 처치해 완수하세요: 바위의 정령 연구
   zone map 1418
-  collect 4628 quest 712.1 @9.4,73.6 map 1418
+  complete 712 @9.4,73.6 map 1418
 
 step
   when level<46
@@ -484,7 +484,7 @@ step
   when level<46
   tip 무쇠턱 톱니악어를 처치해 완수하세요: 보급품 보충
   zone map 1435
-  collect 6168 quest 699.1 @83.2,70.2 map 1435
+  complete 699 @83.2,70.2 map 1435
 
 step
   when level<46
@@ -816,7 +816,7 @@ step
   tip 바그테라를 처치하세요: 퓨마 사냥법 익히기
   zone map 1434
   note "없다면 위치도 확인해 보세요."
-  complete 193
+  collect 3876 quest 193.1
 
 step
   when level<45
@@ -1233,7 +1233,8 @@ step
 step
   tip 그림자괴철로 드워프에게서 덴트리움·안알레움 마법석을 8개씩 모으세요: 마법석
   zone map 1418
-  complete 2418
+  collect 8009 quest 2418.1
+  collect 8052 quest 2418.2
 
 step
   tip 남쪽 대전당의 궤짝에서 가레트가의 보물을 꺼내세요: 보물 되찾기
@@ -1243,7 +1244,7 @@ step
 step
   tip 던전 안에서 값진 목걸이를 찾으세요 (부서진 것도 됩니다): 목걸이 회수
   zone map 1418
-  complete 2283
+  collect 7666 quest 2283.1
 
 step
   tip 던전 안의 자홍버섯 12개를 모으세요: 울다만에서 재료 찾기
@@ -1377,9 +1378,7 @@ step
   when level<47
   tip 용들을 처치해 완수하세요: 검은용군단
   zone map 1445
-  kill 4329 quest 1168.1 @46.4,66.4 map 1445
-  kill 4331 quest 1168.2 @46.4,66.4 map 1445
-  kill 4328 quest 1168.3 @46.4,66.4 map 1445
+  complete 1168 @46.4,66.4 map 1445
 
 step
   when level<47
@@ -2330,10 +2329,7 @@ step
   when level<52
   tip 엘프들을 처치해 완수하세요: 첫 번째 통첩장
   zone map 1425
-  kill 2692 quest 7841.1 @33,51.2 map 1425
-  kill 2691 quest 7841.2 @33,51.2 map 1425
-  kill 2694 quest 7841.3 @33,51.2 map 1425
-  kill 2693 quest 7841.4 @33,51.2 map 1425
+  complete 7841 @33,51.2 map 1425
 
 step
   zone map 1425
@@ -2348,8 +2344,7 @@ step
   when level<52
   tip 트롤들을 처치해 완수하세요: 동족을 잡아먹는 사촌
   zone map 1425
-  kill 4466 quest 7844.1 @45,62.4 map 1425
-  kill 4467 quest 7844.2 @45,62.4 map 1425
+  complete 7844 @45,62.4 map 1425
 
 step
   tip 진타알로 남쪽 아래 둥지에서 고대의 알을 챙기세요: 고대의 알
@@ -2508,7 +2503,7 @@ step
 step
   tip 음영석 조각 10개를 모으세요 (안쪽 수정 몹): 음영석 조각
   zone map 1443
-  complete 7068
+  collect 17756 quest 7068.1
 
 step
   tip 테라드릭 수정 조각품 15개를 모으세요: 뒤틀린 악마
@@ -2518,7 +2513,8 @@ step
 step
   tip 주황색 수정 웅덩이에서 코팅된 하늘빛 약병을 채우세요: 바일텅의 타락
   zone map 1443
-  complete 7029
+  kill 13696 quest 7029.1
+  collect 17696 quest 7029.2
 
 step
   complete 7067 -- 켄타우로스 칸의 영혼들에게서 결합의 부적을 모으세요: 추방자의 지시서

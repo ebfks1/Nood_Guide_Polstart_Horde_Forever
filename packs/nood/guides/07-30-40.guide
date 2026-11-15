@@ -41,7 +41,10 @@ step
 step
   tip Use the crate with air holes to summon Snufflenose and collect 6 Blueleaf Tubers: Blueleaf Tubers
   zone map 1413
-  complete 1221
+  collect 5876 quest 1221.1
+  collect 5880 quest 1221.2
+  collect 5897 quest 1221.3
+  collect 6684 quest 1221.4
 
 step
   complete 1109 -- Get the Kraul Guano from the Kraul bats: Going, Going, Guano!
@@ -156,7 +159,7 @@ step
 step
   tip Clear the Graveyard up to Bloodmage Thalnos. When you get Vorrel's Wedding Ring: Vorrel's Revenge
   zone map 1416
-  complete 1051
+  collect 5538 quest 1051.1
 
 step
   tip 33 The Library is better at Lv33 (healers can go at 32). Varimathras' 'Into The Scarlet Monastery' needs level 33, so at 32 accept it once you reach 33 (its Houndmaster Loksey objective is only in the Library).
@@ -287,7 +290,7 @@ step
   when level<36
   tip Kill the Dalaran mobs outside Dalaran to finish collecting the stones: Stone Tokens
   zone map 1416
-  collect 3714 quest 556.1 @21,80 map 1416
+  complete 556 @21,80 map 1416
 
 step
   hearth "Tarren Mill"
@@ -348,12 +351,15 @@ step
 step
   tip Kill dwarves to complete: Battle of Hillsbrad
   zone map 1424
-  complete 541
+  kill 2344 quest 541.1
+  kill 2345 quest 541.2
+  kill 2346 quest 541.3
+  kill 2304 quest 541.4
 
 step
   tip Humbert's Sword drops randomly from Dun Garok dwarves (Mountaineers, Riflemen, Priests) — if it hasn't dropped after your kill counts are done, keep killing until it does: Humbert's Sword
   zone map 1424
-  complete 547
+  collect 3693 quest 547.1
 
 step
   tip Head east into the Arathi Highlands!
@@ -413,9 +419,7 @@ step
   when level<36
   tip Kill trolls to complete: Call to Arms
   zone map 1417
-  kill 2554 quest 677.1 @67,63.4 map 1417
-  kill 2556 quest 677.2 @67,63.4 map 1417
-  kill 2555 quest 677.3 @67,63.4 map 1417
+  complete 677 @67,63.4 map 1417
 
 step
   when level<38
@@ -1044,10 +1048,7 @@ step
   when level<37
   tip Kill satyrs to complete: Befouled by Satyr
   zone map 1443
-  kill 4670 quest 1434.1 @75,26 map 1443
-  kill 4672 quest 1434.2 @75,26 map 1443
-  kill 4673 quest 1434.3 @75,26 map 1443
-  kill 4675 quest 1434.4 @75,26 map 1443
+  complete 1434 @75,26 map 1443
 
 step
   tip Go to Thunder Axe Fortress and enter through the front gate.
@@ -1639,7 +1640,7 @@ step
   tip Finish collecting 20 Hearts of Zeal from Scarlet mobs: Hearts of Zeal
   zone map 1420
   note "After the Armory, go straight into the Cathedral wing with the same group."
-  complete 1113
+  collect 5805 quest 1113.1
 
 step
   tip Kill Scarlet Commander Mograine: Into The Scarlet Monastery
@@ -1703,7 +1704,9 @@ step
 step
   tip Kill 8 each of Razorfen Battleguards, Thornweavers and Death's Head Cultists: A Host of Evil
   zone map 1413
-  complete 6626
+  kill 7873 quest 6626.1
+  kill 7874 quest 6626.2
+  kill 7872 quest 6626.3
 
 step
   tip Kill the final boss Amnennar the Coldbringer and take his skull: Bring the End

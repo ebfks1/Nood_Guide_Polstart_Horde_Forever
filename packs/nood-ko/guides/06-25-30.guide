@@ -584,9 +584,7 @@ step
   when level<30
   tip 농장에서 퀘스트를 완수하세요: 힐스브래드 전투
   zone map 1424
-  kill 2404 quest 529.1 @33,48.8 map 1424
-  kill 2265 quest 529.2 @33,48.8 map 1424
-  collect 3564 quest 529.3 @33,48.8 map 1424
+  complete 529 @33,48.8 map 1424
 
 step
   when level<30
@@ -758,10 +756,7 @@ step
 step
   tip 바로 북쪽 달라란 수용소: 언데드 배반자 4명(릭터·알리나·더모트·케건)에게서 혈석 4개: 감옥 습격
   zone map 1416
-  collect 3691 quest 544.1 @21,84 map 1416
-  collect 3689 quest 544.2 @21,84 map 1416
-  collect 3690 quest 544.3 @21,84 map 1416
-  collect 3688 quest 544.4 @21,84 map 1416
+  complete 544 @21,84 map 1416
 
 step
   tip 타렌 밀농장으로 돌아와 워딘에게 퀘스트 완료: Key to the City — ◆던전 선행(달라란)
@@ -799,8 +794,7 @@ step
 step
   tip 던전을 나와 달라란 외곽에서 달라란 소환사 6명·노예 바위 정령 8마리: 달라란 순찰
   zone map 1416
-  kill 2358 quest 545.1 @21,80 map 1416
-  kill 2359 quest 545.2 @21,80 map 1416
+  complete 545 @21,80 map 1416
 
 step
   tip 타렌 밀농장 멜리사라에게 퀘스트 완료: 무덤 기사

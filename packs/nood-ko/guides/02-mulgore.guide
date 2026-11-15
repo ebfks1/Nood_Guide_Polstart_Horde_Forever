@@ -451,9 +451,7 @@ step
 step
   zone map 1412
   note "이 근처 다 큰 초원타조를 잡아 \"연한 초원타조 고기\" 1개를 챙기세요 (카일에게 먹일 것)."
-  kill 2949 quest 745.1 @36.5,65.1 map 1412
-  kill 2950 quest 745.2 @36.5,65.1 map 1412
-  kill 2951 quest 745.3 @36.5,65.1 map 1412
+  complete 745 @36.5,65.1 map 1412
 
 step
   tip 남동쪽 우물 주변 바닥의 우물돌 2개를 주우세요: 예언의 의식
@@ -839,17 +837,13 @@ step
 step
   along until q98424
   zone map 1412
-  collect 281035 quest 98424.1 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
-  collect 281036 quest 98424.2 @61.8,47.3 map 1412
-  collect 281037 quest 98424.3 @61.8,47.3 map 1412
+  complete 98424 @61.8,47.3 map 1412 -- 나머지 문서 4종을 모으세요: 피즈스프로켓의 기록
 
 step
   only Tauren
   tip 갈라크 켄타우로스 6·정찰꾼 4를 처치하고 약탈자 헤라크의 머리를 얻으세요: 몰아내기
   zone map 1412
-  kill 2967 quest 99080.1 @64,61.6 map 1412
-  kill 2968 quest 99080.2 @64,61.6 map 1412
-  collect 286075 quest 99080.3 @64,61.6 map 1412
+  complete 99080 @64,61.6 map 1412
 
 step
   zone map 1412
@@ -1031,7 +1025,7 @@ step
 
 step
   zone map 1412
-  collect 4841 quest 776.1 @47.6,26.6 map 1412
+  complete 776 @47.6,26.6 map 1412
 
 step
   only Tauren

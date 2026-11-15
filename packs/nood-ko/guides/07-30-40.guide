@@ -41,7 +41,10 @@ step
 step
   tip 구멍 뚫린 상자로 코킁킁을 불러 청엽수 줄기 6개: 청엽수 줄기
   zone map 1413
-  complete 1221
+  collect 5876 quest 1221.1
+  collect 5880 quest 1221.2
+  collect 5897 quest 1221.3
+  collect 6684 quest 1221.4
 
 step
   complete 1109 -- 가시덩굴 박쥐에게서 가시덩굴 조분석을 챙기세요: 조분석을 나에게!
@@ -156,7 +159,7 @@ step
 step
   tip 피의마법사 탈노스까지 묘지를 정리하세요. 보렐의 결혼반지를 얻으면: 보렐의 복수
   zone map 1416
-  complete 1051
+  collect 5538 quest 1051.1
 
 step
   tip 33 도서관은 Lv33 이상이 좋습니다 (힐러는 Lv32부터 가도 됩니다). 바리마트라스의 '붉은십자군 수도원으로'는 요구 레벨 33이라, 32라면 33이 된 뒤 받으세요 (도서관 목표 '사냥개조련사 록시'는 도서관에만 있습니다).
@@ -287,7 +290,7 @@ step
   when level<36
   tip 달라란 외곽의 달라란 몹들을 처치해 돌 획득을 완수하세요: 징표의 돌
   zone map 1416
-  collect 3714 quest 556.1 @21,80 map 1416
+  complete 556 @21,80 map 1416
 
 step
   hearth "Tarren Mill"
@@ -348,12 +351,15 @@ step
 step
   tip 드워프들을 처치해 완수하세요: 힐스브래드 전투
   zone map 1424
-  complete 541
+  kill 2344 quest 541.1
+  kill 2345 quest 541.2
+  kill 2346 quest 541.3
+  kill 2304 quest 541.4
 
 step
   tip 험버트의 검은 던 가록 드워프(산악대원·소총병·사제)에게서 무작위로 나옵니다 — 퀘스트 처치 수를 채운 뒤에도 안 나왔으면 나올 때까지 조금 더 잡으세요: 험버트의 검
   zone map 1424
-  complete 547
+  collect 3693 quest 547.1
 
 step
   tip 동쪽에 있는 아라시 고원으로 이동하세요!
@@ -413,9 +419,7 @@ step
   when level<36
   tip 트롤들을 처치해 완수하세요: 전장으로
   zone map 1417
-  kill 2554 quest 677.1 @67,63.4 map 1417
-  kill 2556 quest 677.2 @67,63.4 map 1417
-  kill 2555 quest 677.3 @67,63.4 map 1417
+  complete 677 @67,63.4 map 1417
 
 step
   when level<38
@@ -1044,10 +1048,7 @@ step
   when level<37
   tip 사티로스들을 처치해 완수하세요: 사티로스의 출몰
   zone map 1443
-  kill 4670 quest 1434.1 @75,26 map 1443
-  kill 4672 quest 1434.2 @75,26 map 1443
-  kill 4673 quest 1434.3 @75,26 map 1443
-  kill 4675 quest 1434.4 @75,26 map 1443
+  complete 1434 @75,26 map 1443
 
 step
   tip 천둥도끼 요새로 이동하여 정문으로 들어가세요.
@@ -1639,7 +1640,7 @@ step
   tip 붉은십자군 몹에게서 열정의 증거 20개를 마저 모으세요: 열정의 증거
   zone map 1420
   note "무기고를 마치면 같은 파티로 바로 대성당 날개로 들어가세요."
-  complete 1113
+  collect 5805 quest 1113.1
 
 step
   tip 붉은십자군 사령관 모그레인을 처치하세요: 붉은십자군 수도원으로
@@ -1703,7 +1704,9 @@ step
 step
   tip 가시덩굴일족 전투호위병·가시마술사·죽음의 머리교 신도를 8마리씩 처치하세요: 악의 무리
   zone map 1413
-  complete 6626
+  kill 7873 quest 6626.1
+  kill 7874 quest 6626.2
+  kill 7872 quest 6626.3
 
 step
   tip 마지막 보스 혹한의 암네나르를 처치하고 해골을 챙기세요: 암네나르 처치
