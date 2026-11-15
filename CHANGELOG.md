@@ -1,5 +1,12 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.4
+- 첫 정식(Release) 배포입니다. 내용은 1.0.4-beta 와 같습니다.
+- 지금까지 베타로 올린 내용(1.0.0~1.0.4-beta)이 모두 들어 있습니다: 호드 1-60 던전 중심 레벨업, 한국어·영어 팩, "퀘스트 레벨+4" 자동 건너뛰기, 1-12 퀘스트 순서 보정, 12레벨 대기 단계, 근처에서 할 일용 목표 분리, 메모 체크박스.
+
+- First full (Release) version; the same content as 1.0.4-beta.
+- Everything from the betas (1.0.0 to 1.0.4-beta): dungeon-focused Horde leveling 1-60, Korean and English packs, the "quest level + 4" auto-skip, the 1-12 prerequisite order, the level-12 step, objectives split for Dynamic Questing, and checkboxes on the notes.
+
 ## 1.0.4-beta
 - 가이드의 설명·선택 메모(ⓘ 줄)에 체크박스를 달았습니다. 체크하면 완료로 접혀 화면이 정리되고, 체크하지 않아도 가이드는 그대로 넘어갑니다.
 
