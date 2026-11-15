@@ -1113,67 +1113,9 @@ step
   accept 92700 npc 252383
 
 step
-  along until q93320
-  zone map 2521
-  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
-
-step
   tip Turn in Deliver the Signet (Talaanis Shadowsong)
   zone map 2521
   turnin 93948 npc 252476
-
-step
-  when onquest 93320
-  label q93320
-  tip Turn in Tower Defense (Yorana Windyreed)
-  zone map 2521
-  turnin 93320 npc 252378
-
-step
-  along until q92642
-  zone map 2521
-  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
-
-step
-  along until q92645
-  zone map 2521
-  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
-
-step
-  along until q92642
-  zone map 2521
-  complete 92642 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
-
-step
-  along until q92645
-  zone map 2521
-  complete 92645 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
-
-step
-  when complete 92642
-  label q92642
-  tip Turn in Disrupting Logistics (Yorana Windyreed)
-  zone map 2521
-  turnin 92642 npc 252378
-
-step
-  when complete 92645
-  label q92645
-  tip Turn in Breaking the Breaker (Yorana Windyreed)
-  zone map 2521
-  turnin 92645 npc 252378
-
-step
-  along until q92880
-  zone map 2521
-  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
-
-step
-  when onquest 92880
-  label q92880
-  tip Turn in Return to Valanaar (Valennia Stormfist)
-  zone map 2521
-  turnin 92880 npc 252383
 
 step
   only Druid
@@ -1312,9 +1254,67 @@ step
   turnin 92871 npc 252383
 
 step
+  along until q93320
+  zone map 2521
+  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
+
+step
+  when onquest 93320
+  label q93320
+  tip Turn in Tower Defense (Yorana Windyreed)
+  zone map 2521
+  turnin 93320 npc 252378
+
+step
+  along until q92645
+  zone map 2521
+  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
+
+step
+  along until q92642
+  zone map 2521
+  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
+
+step
+  along until q92642
+  zone map 2521
+  complete 92642 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
+
+step
   tip Kill the Al'Aketh cultists north of Valanaar: Blood for Blood
   zone map 2521
   complete 93740 @64,65 map 2521
+
+step
+  along until q92645
+  zone map 2521
+  complete 92645 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
+
+step
+  when complete 92645
+  label q92645
+  tip Turn in Breaking the Breaker (Yorana Windyreed)
+  zone map 2521
+  turnin 92645 npc 252378
+
+step
+  when complete 92642
+  label q92642
+  tip Turn in Disrupting Logistics (Yorana Windyreed)
+  zone map 2521
+  turnin 92642 npc 252378
+
+step
+  along until q92880
+  zone map 2521
+  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
+
+step
+  when onquest 92880
+  label q92880
+  tip Turn in Return to Valanaar (Valennia Stormfist)
+  zone map 2521
+  turnin 92880 npc 252383
 
 step
   zone map 2521

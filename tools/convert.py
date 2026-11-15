@@ -641,7 +641,7 @@ class Guide:
             some = [last[p] for p in q['pre'] if p in last]
             if some and len(some) == len(q['pre']):
                 at.append(min(some))
-        elif qid in PREREQ:
+        if qid in PREREQ and not at:
             have = [last[p] for p in PREREQ[qid] if p in last]
             if have:
                 at.append(max(have))

@@ -1113,67 +1113,9 @@ step
   accept 92700 npc 252383
 
 step
-  along until q93320
-  zone map 2521
-  accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
-
-step
   tip 완료: 인장 전달 (탈라니스 섀도송)
   zone map 2521
   turnin 93948 npc 252476
-
-step
-  when onquest 93320
-  label q93320
-  tip 완료: 감시탑 방어 (요라나 윈디리드)
-  zone map 2521
-  turnin 93320 npc 252378
-
-step
-  along until q92642
-  zone map 2521
-  accept 92642 npc 252378 optional -- 수락: 보급 교란 (요라나 윈디리드)
-
-step
-  along until q92645
-  zone map 2521
-  accept 92645 npc 252378 optional -- 수락: 파괴자 파괴하기 (요라나 윈디리드)
-
-step
-  along until q92642
-  zone map 2521
-  complete 92642 @65.5,67 map 2521 -- 감시탑 서쪽 알아케스 치유사·싸움꾼:
-
-step
-  along until q92645
-  zone map 2521
-  complete 92645 @65.6,65.5 map 2521 -- 사령관 벨길로스:
-
-step
-  when complete 92642
-  label q92642
-  tip 완료: 보급 교란 (요라나 윈디리드)
-  zone map 2521
-  turnin 92642 npc 252378
-
-step
-  when complete 92645
-  label q92645
-  tip 완료: 파괴자 파괴하기 (요라나 윈디리드)
-  zone map 2521
-  turnin 92645 npc 252378
-
-step
-  along until q92880
-  zone map 2521
-  accept 92880 npc 252378 optional -- 수락: 발라나르로의 귀환 (요라나 윈디리드)
-
-step
-  when onquest 92880
-  label q92880
-  tip 완료: 발라나르로의 귀환 (발레니아 스톰피스트)
-  zone map 2521
-  turnin 92880 npc 252383
 
 step
   only Druid
@@ -1312,9 +1254,67 @@ step
   turnin 92871 npc 252383
 
 step
+  along until q93320
+  zone map 2521
+  accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
+
+step
+  when onquest 93320
+  label q93320
+  tip 완료: 감시탑 방어 (요라나 윈디리드)
+  zone map 2521
+  turnin 93320 npc 252378
+
+step
+  along until q92645
+  zone map 2521
+  accept 92645 npc 252378 optional -- 수락: 파괴자 파괴하기 (요라나 윈디리드)
+
+step
+  along until q92642
+  zone map 2521
+  accept 92642 npc 252378 optional -- 수락: 보급 교란 (요라나 윈디리드)
+
+step
+  along until q92642
+  zone map 2521
+  complete 92642 @65.5,67 map 2521 -- 감시탑 서쪽 알아케스 치유사·싸움꾼:
+
+step
   tip 발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:
   zone map 2521
   complete 93740 @64,65 map 2521
+
+step
+  along until q92645
+  zone map 2521
+  complete 92645 @65.6,65.5 map 2521 -- 사령관 벨길로스:
+
+step
+  when complete 92645
+  label q92645
+  tip 완료: 파괴자 파괴하기 (요라나 윈디리드)
+  zone map 2521
+  turnin 92645 npc 252378
+
+step
+  when complete 92642
+  label q92642
+  tip 완료: 보급 교란 (요라나 윈디리드)
+  zone map 2521
+  turnin 92642 npc 252378
+
+step
+  along until q92880
+  zone map 2521
+  accept 92880 npc 252378 optional -- 수락: 발라나르로의 귀환 (요라나 윈디리드)
+
+step
+  when onquest 92880
+  label q92880
+  tip 완료: 발라나르로의 귀환 (발레니아 스톰피스트)
+  zone map 2521
+  turnin 92880 npc 252383
 
 step
   zone map 2521
