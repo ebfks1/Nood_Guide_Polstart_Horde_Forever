@@ -423,8 +423,7 @@ step
 step
   tip Kill Highlands Bandits to the northeast, and 'Badwind' Bennic (50.5,33.6): The Criminal Element
   zone map 2521
-  kill 251918 quest 92517.1 @49,36.4 map 2521
-  kill 255534 quest 92517.2 @49,36.4 map 2521
+  complete 92517 @49,36.4 map 2521
 
 step
   tip Same place: loot Pilfered Windstones from the Highlands Bandits and Bennic: Pilfered Windstones

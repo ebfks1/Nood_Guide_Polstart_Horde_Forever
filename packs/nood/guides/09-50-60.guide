@@ -17,10 +17,7 @@ step
   when level<54
   tip Kill Windwalker harpies to complete: Vengeance on the Northspring
   zone map 1444
-  kill 5362 quest 3063.1 @40,15 map 1444
-  kill 5363 quest 3063.2 @40,15 map 1444
-  kill 5364 quest 3063.3 @40,15 map 1444
-  kill 5366 quest 3063.4 @40,15 map 1444
+  complete 3063 @40,15 map 1444
 
 step
   when level<52
@@ -197,7 +194,7 @@ step
   when level<51
   tip Kill Centipaar to complete: Noxious Lair Investigation
   zone map 1446
-  collect 8587 quest 82.1 @36,50 map 1446
+  complete 82 @36,50 map 1446
 
 step
   when level<54
@@ -298,7 +295,7 @@ step
   when level<52
   tip At the first fork in the tunnel go right and pass the round room. At the next fork go right again to reach a large square room. Take Scrimshank's Surveying Gear in the west corner: The Scrimshank Redemption
   zone map 1446
-  collect 8593 quest 10.1 @55,71 map 1446
+  complete 10 @55,71 map 1446
 
 step
   when level<52

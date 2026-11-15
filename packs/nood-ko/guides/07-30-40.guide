@@ -1344,13 +1344,13 @@ step
   when level<41
   tip 트롤들을 처치해 완수하세요: 인간사냥꾼 (쭈그러든 해골은 붉은머리부족 인간사냥꾼만 드롭 · 약 33%)
   zone map 1434
-  collect 1532 quest 582.1 @21.4,11.4 map 1434
+  complete 582 @21.4,11.4 map 1434
 
 step
   when level<41
   tip 신달을 처치하세요: 호랑이 사냥법 익히기
   zone map 1434
-  collect 3879 quest 188.1 @33.6,19.2 map 1434
+  complete 188 @33.6,19.2 map 1434
 
 step
   when level<41

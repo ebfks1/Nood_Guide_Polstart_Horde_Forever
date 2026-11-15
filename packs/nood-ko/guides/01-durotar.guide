@@ -301,7 +301,7 @@ step
   only Warlock
   along
   zone map 1411
-  collect 4862 quest 789.1 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요.
+  complete 789 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요.
 
 step
   only Warlock
@@ -320,7 +320,7 @@ step
   tip 북쪽에 있는 동굴을 향하며 갈가르의 선인장 사과 별미와 전갈의 독침퀘스트를 수행하세요.
   zone map 1411
   collect 11583 quest 4402.1 @44.7,57 map 1411
-  collect 4862 quest 789.1 @44.7,57 map 1411
+  complete 789 @44.7,57 map 1411
 
 step
   only Warlock
@@ -351,7 +351,7 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  collect 4862 quest 789.1 @46.29,60.62 map 1411
+  complete 789 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -746,8 +746,7 @@ step
 step
   tip 동쪽 해변으로 이동하여 완수하세요: 나약한 정신, 난파선
   zone map 1411
-  collect 4887 quest 818.1 @62.02,46.35 map 1411
-  collect 4888 quest 818.2 @62.02,46.35 map 1411
+  complete 818 @62.02,46.35 map 1411
   collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step

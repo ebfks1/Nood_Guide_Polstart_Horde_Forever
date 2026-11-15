@@ -18,7 +18,7 @@ for l in open(sys.argv[1], encoding='utf-8'):
     if not m:
         continue
     msg = m.group(4)
-    if 'elite' in msg and ('`kill`' in msg or '`collect`' in msg):
+    if ('elite' in msg and ('`kill`' in msg or '`collect`' in msg)) or 'yards from every known spawn' in msg:
         # the quest of that goal line: whole-quest goals stay whole for it (a dungeon quest, done in a group)
         src = os.path.join(GUIDES, m.group(1)) if GUIDES else None
         try:

@@ -1344,13 +1344,13 @@ step
   when level<41
   tip Kill trolls to complete: Headhunting (Shrunken Heads drop only from Bloodscalp Headhunters · about 33%)
   zone map 1434
-  collect 1532 quest 582.1 @21.4,11.4 map 1434
+  complete 582 @21.4,11.4 map 1434
 
 step
   when level<41
   tip Kill Sin'Dall: Tiger Mastery
   zone map 1434
-  collect 3879 quest 188.1 @33.6,19.2 map 1434
+  complete 188 @33.6,19.2 map 1434
 
 step
   when level<41

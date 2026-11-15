@@ -17,10 +17,7 @@ step
   when level<54
   tip 바람계곡일족 하피를 처치해 완수하세요: 바람계곡일족에 대한 복수
   zone map 1444
-  kill 5362 quest 3063.1 @40,15 map 1444
-  kill 5363 quest 3063.2 @40,15 map 1444
-  kill 5364 quest 3063.3 @40,15 map 1444
-  kill 5366 quest 3063.4 @40,15 map 1444
+  complete 3063 @40,15 map 1444
 
 step
   when level<52
@@ -197,7 +194,7 @@ step
   when level<51
   tip 센티파르들을 처치해 완수하세요: 맹독의 둥지 조사
   zone map 1446
-  collect 8587 quest 82.1 @36,50 map 1446
+  complete 82 @36,50 map 1446
 
 step
   when level<54
@@ -298,7 +295,7 @@ step
   when level<52
   tip 터널 안에서의 첫 갈림길에서는 오른쪽으로, 원형 공간을 지나쳐 가세요. 그 다음 첫 갈림길에서 오른쪽으로 이동하시면 큰 사각형 공간으로 들어갈 수 있습니다. 서쪽 모서리에 있는 슈생크의 측량장비를 획득하세요: 슈생크 탈출
   zone map 1446
-  collect 8593 quest 10.1 @55,71 map 1446
+  complete 10 @55,71 map 1446
 
 step
   when level<52

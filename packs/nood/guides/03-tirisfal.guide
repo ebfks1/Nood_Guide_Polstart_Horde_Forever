@@ -696,8 +696,7 @@ step
 
 step
   zone map 1420
-  kill 1664 quest 371.1 @80.2,54.4 map 1420
-  kill 1538 quest 371.2 @80.2,54.4 map 1420
+  complete 371 @80.2,54.4 map 1420
   collect 2875 quest 374.1 @80.2,54.4 map 1420
 
 step

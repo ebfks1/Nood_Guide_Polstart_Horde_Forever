@@ -758,7 +758,7 @@ step
 step
   tip Plant the seed in the crevasse under the water of the Stagnant Oasis to the south (you only plant the seed and leave, so a low level is fine; avoid the centaur camp next to it): The Stagnant Oasis
   zone map 1413
-  interact 3737 quest 877.1 @55,42 map 1413
+  complete 877 @55,42 map 1413
 
 step
   tip Turn in to Tonga Runetotem: The Stagnant Oasis — Dungeon prereq (Wailing Caverns)
@@ -789,7 +789,7 @@ step
   when level<19
   tip On the way east to Ratchet, kill the Savannah Prowlers in the grass: Prowlers of the Barrens
   zone map 1413
-  collect 5096 quest 903.1 @59,37.6 map 1413
+  complete 903 @59,37.6 map 1413
 
 step
   tip Discover the Ratchet flight path.
@@ -1488,7 +1488,7 @@ step
 step
   tip Kill Wrathtail naga on the coast north of Zoram'gar for 20 heads: Naga at the Zoram Strand
   zone map 1440
-  collect 5490 quest 6442.1 @13,24 map 1440
+  complete 6442 @13,24 map 1440
 
 step
   tip Turn in to Marukai: Naga at the Zoram Strand

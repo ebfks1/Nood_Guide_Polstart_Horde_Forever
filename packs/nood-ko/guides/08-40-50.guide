@@ -1003,7 +1003,7 @@ step
   when level<49
   tip 동굴 안에 있는 바실리스크를 처치해 완수하세요: 고동치는 푸른 수정
   zone map 1434
-  collect 3911 quest 589.1 @41,51 map 1434
+  complete 589 @41,51 map 1434
 
 step
   when level<48
@@ -1542,7 +1542,7 @@ step
   when level<50
   tip 칼리프 스콜피드스팅을 처치하세요: 현상수배 칼리프 스콜피드스팅
   zone map 1446
-  collect 8723 quest 2781.1 @61.2,36.4 map 1446
+  complete 2781 @61.2,36.4 map 1446
 
 step
   tip 북동쪽 스팀휘들 항구 예킨야에게 퀘스트 수락 (또는 파티원에게 공유받기): 계곡천둥매의 영혼 (줄파락 '모쉬아루의 예언' 선행 — 페랄라스에서 완수) — ★보상 연계 · ◆던전 선행(줄파락)
@@ -1578,10 +1578,7 @@ step
   when level<49
   tip 해적들을 처치해 완수하세요: 남쪽바다해적단 처리반
   zone map 1446
-  kill 7855 quest 8366.1 @73.4,46 map 1446
-  kill 7856 quest 8366.2 @73.4,46 map 1446
-  kill 7857 quest 8366.3 @73.4,46 map 1446
-  kill 7858 quest 8366.4 @73.4,46 map 1446
+  complete 8366 @73.4,46 map 1446
 
 step
   when level<49
@@ -1783,9 +1780,7 @@ step
   when level<47
   tip 오우거를 처치해 완수하세요: 페랄라스의 오우거
   zone map 1444
-  kill 5229 quest 2975.1 @75,36 map 1444
-  kill 5237 quest 2975.2 @75,36 map 1444
-  kill 5232 quest 2975.3 @75,36 map 1444
+  complete 2975 @75,36 map 1444
 
 step
   when level<47
@@ -1892,7 +1887,7 @@ step
   when level<51
   tip 채찍쐐기를 *찾아* 처치하세요: 채찍쐐기
   zone map 1444
-  collect 18962 quest 7731.1 @75,62.6 map 1444
+  complete 7731 @75,62.6 map 1444
 
 step
   when level<49

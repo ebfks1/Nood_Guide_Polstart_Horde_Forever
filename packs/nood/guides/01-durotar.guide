@@ -301,7 +301,7 @@ step
   only Warlock
   along
   zone map 1411
-  collect 4862 quest 789.1 @46.29,60.62 map 1411 -- Sting of the Scorpid - kill scorpids.
+  complete 789 @46.29,60.62 map 1411 -- Sting of the Scorpid - kill scorpids.
 
 step
   only Warlock
@@ -320,7 +320,7 @@ step
   tip Head to the cave in the north while working on Galgar's Cactus Apple Surprise and Sting of the Scorpid.
   zone map 1411
   collect 11583 quest 4402.1 @44.7,57 map 1411
-  collect 4862 quest 789.1 @44.7,57 map 1411
+  complete 789 @44.7,57 map 1411
 
 step
   only Warlock
@@ -351,7 +351,7 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  collect 4862 quest 789.1 @46.29,60.62 map 1411
+  complete 789 @46.29,60.62 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
@@ -746,8 +746,7 @@ step
 step
   tip Go to the east coast and finish: A Solvent Spirit, From The Wreckage....
   zone map 1411
-  collect 4887 quest 818.1 @62.02,46.35 map 1411
-  collect 4888 quest 818.2 @62.02,46.35 map 1411
+  complete 818 @62.02,46.35 map 1411
   collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step
