@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: Nood Guide - Setup
+## Title-koKR: Nood 가이드 - 자동 설정
+## Notes: Sets a few Polestar options once so Nood Guide behaves like the BalCon guide. Undo: /nood undo
+## Notes-koKR: Nood 가이드가 발컨 가이드처럼 동작하도록 Polestar 옵션 몇 가지를 처음 한 번 맞춥니다. 되돌리기: /nood undo
+## Author: 씨가
+## Version: @project-version@
+## Dependencies: Polestar
+## SavedVariables: NoodGuideDB
+## X-License: All rights reserved
+## X-Website: https://github.com/ebfks1/Nood_Guide_Polstart_Horde_Forever
+
+Setup.lua
