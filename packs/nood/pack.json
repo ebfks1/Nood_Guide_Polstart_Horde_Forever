@@ -2,10 +2,10 @@
 	"id": "nood",
 	"title": "Nood Guide - Dungeon Leveling (Forever)",
 	"author": "씨가",
-	"version": "1.0.1-beta",
+	"version": "1.0.2-beta",
 	"license": "All rights reserved",
 	"website": "https://github.com/ebfks1/Nood_Guide_Polstart_Horde_Forever",
-	"source": "Based on the BalCon Guidelime guide 1.2.2",
+	"source": "Based on the BalCon Guidelime guide 1.2.3",
 	"notes": "Dungeon-focused Horde leveling 1-60, in English. Based on the BalCon Guidelime guide.",
 	"folder": "PolestarPack_Nood"
 }

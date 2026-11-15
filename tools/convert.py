@@ -7,7 +7,7 @@ SRC = '/home/claude/ebfks1/balcon_guidlime_horde_forever'
 OUT = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/out'
 PACK_ID = 'nood'
 FOLDER = 'PolestarPack_Nood'
-SRC_VERSION = '1.2.2'
+SRC_VERSION = '1.2.3'
 VERSION = '1.0.0-test1'
 
 db = DB()

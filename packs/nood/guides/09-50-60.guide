@@ -6,7 +6,7 @@ faction Horde
 folder Nood Guide
 why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 50-60: Sunken Temple 52 -> Blackrock Depths 55 -> Lower Blackrock Spire 57 -> Black…
 coords era
-# Written by tools/emit_guide.py from 09_50-60_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 09_50-60_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   tip >> Next dungeon: Sunken Temple (at about Lv52.5) — about Lv50.0 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Take the road south out of Desolace into Feralas.

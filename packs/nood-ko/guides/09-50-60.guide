@@ -6,7 +6,7 @@ faction Horde
 folder Nood 가이드
 why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 50-60 구간: 아탈학카르 신전 52 → 검은바위 나락 55 → 검은바위 첨탑 하층 57 → 검은바위 나락 2차 58 → 스트라솔름 59 (이 구간은 다음 버전에서 다시 다듬습니다).
 coords era
-# Written by tools/emit_guide.py from 09_50-60_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 09_50-60_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   tip ▶ 다음 던전: 아탈학카르 신전 (약 Lv52.5에 갑니다) — 지금 약 Lv50.0. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 잊혀진 땅 남쪽 길로 페랄라스에 들어가세요.

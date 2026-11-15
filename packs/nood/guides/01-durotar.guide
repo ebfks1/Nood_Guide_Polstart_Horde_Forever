@@ -8,7 +8,7 @@ folder Nood Guide
 why Levels 1-12 starting-zone guide. Coordinates follow the WoW Forever client data and quests follow Wowhead Forever, with WoW Forever's new quests and new race/class combos (Orc Mage, Troll Warlock, Undead Paladin, Skyborne) added…
 coords era
 next nood/05-12-25
-# Written by tools/emit_guide.py from 01_1-12_Durotar.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 01_1-12_Durotar.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   zone map 1411

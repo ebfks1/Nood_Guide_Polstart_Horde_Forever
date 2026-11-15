@@ -7,7 +7,7 @@ folder Nood Guide
 why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 40-50: Krol'dok Stronghold 42.5 (new in Forever) -> Uldaman 43.5 -> Zul'Farrak 46 -…
 coords era
 next nood/09-50-60
-# Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   tip >> Next dungeon: Krol'dok Stronghold (at about Lv42.5 — new in Forever) — about Lv41.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Hammerfall Fly to Hammerfall.

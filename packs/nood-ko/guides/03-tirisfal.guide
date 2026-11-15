@@ -8,7 +8,7 @@ folder Nood 가이드
 why 1~12 시작 지역 가이드입니다. 좌표는 포에버 클라이언트 자료, 퀘스트는 와우헤드 포에버 기준으로 맞췄고, 포에버 신규 퀘스트와 신규 직업 조합(오크 마법사·트롤 흑마법사·언데드 성기사·스카이본)을 넣었으며, 동선에서 지나가는 던전 선행 퀘스트와 선택형 던전 단계(★)를 추가했습니다. 던전·선택 표시가 붙은 단계는 건너뛰어도 진행이 멈추지 않습니다.
 coords era
 next nood-ko/05-12-25
-# Written by tools/emit_guide.py from 03_1-12_Tirisfal.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 03_1-12_Tirisfal.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   zone map 1420

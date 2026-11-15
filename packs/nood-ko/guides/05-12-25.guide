@@ -7,7 +7,7 @@ folder Nood 가이드
 why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 12-25 구간: 12레벨 스랄 '내부의 배신자' → (13레벨 전이면 불모의 땅) → 13레벨 성난불길 협곡 → 오그리마·썬더 블러프·언더시티 보고 → 폐허 선행과 은빛소나무 숲으로 16레벨 → 로데론의 폐허 → 귀환석으로 크로스로드, 통곡 선행 → 통곡의 동굴 → 22레벨…
 coords era
 next nood-ko/06-25-30
-# Written by tools/emit_guide.py from 05_12-25_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 05_12-25_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   only Tauren
@@ -1030,16 +1030,6 @@ step
   turnin 1487 npc 5768
 
 step
-  tip 동굴 위 언덕 팔라 세이지윈드에게 퀘스트 완료: 빛나는 조각
-  zone map 1413
-  turnin 6981 npc 8418
-
-step
-  tip 이어서 퀘스트 수락: 악몽 (썬더 블러프 하뮬 룬토템에게 보고)
-  zone map 1413
-  accept 3369 npc 8418
-
-step
   tip 켄타우로스의 팔보호구 15개를 다 채우세요 (베로그·헤즈룰 주변 켄타우로스): 켄타우로스의 팔보호구
   zone map 1413
   collect 5030 quest 855.1
@@ -1057,6 +1047,11 @@ step
 step
   tip 크로스로드로 달려가 톱니항으로 비행하세요.
   fly "Ratchet"
+
+step
+  tip 비행 조련사와 부두 사이의 고블린 스퍼터밸브에게 말을 걸어 '빛나는 조각' 대화를 고르세요 (빛나는 조각 진행 — 보고는 크로스로드로 돌아가 세이지윈드에게).
+  zone map 1413
+  goto 63,37.2 r 20 map 1413
 
 step
   tip 메보크 미지릭스에게 퀘스트 완료: 영리해지는 음료
@@ -1117,12 +1112,22 @@ step
 step
   tip 사자는 수풀에만 있습니다. 크로스로드로 비행하세요.
   fly "Crossroads"
-  note "*스킬* 직업 상급자에게 20레벨까지의 새 스킬을 습득하세요. (도적, 흑마는 나중에 오그리마에서 습득하세요.)"
 
 step
   when level<24
   zone map 1413
   accept 4921 npc 3432
+
+step
+  tip 크로스로드 서쪽, 통곡의 동굴 위 언덕의 팔라 세이지윈드에게 퀘스트 완료: 빛나는 조각
+  zone map 1413
+  turnin 6981 npc 8418
+
+step
+  tip 이어서 퀘스트 수락: 악몽 (썬더 블러프 하뮬 룬토템에게 보고)
+  zone map 1413
+  accept 3369 npc 8418
+  note "*스킬* 직업 상급자에게 20레벨까지의 새 스킬을 습득하세요. (도적, 흑마는 나중에 오그리마에서 습득하세요.)"
 
 step
   only Tauren,Skyborne

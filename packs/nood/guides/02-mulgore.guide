@@ -8,7 +8,7 @@ folder Nood Guide
 why Levels 1-12 starting-zone guide. Coordinates follow the WoW Forever client data and quests follow Wowhead Forever, with WoW Forever's new quests and new race/class combos (Orc Mage, Troll Warlock, Undead Paladin, Skyborne) added…
 coords era
 next nood/05-12-25
-# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   zone map 1412
@@ -476,8 +476,9 @@ step
   accept 749 npc 2988
 
 step
+  tip Kill swoops on the eastern hills (they are all over Mulgore, so you can keep collecting as you travel): Swoop Hunting
   zone map 1412
-  complete 761 @49.8,23.7 map 1412
+  complete 761 @59.2,61.8 map 1412
 
 step
   zone map 1412
@@ -643,7 +644,7 @@ step
 step
   only Tauren
   zone map 1412
-  complete 756 @55.6,53.7 map 1412
+  complete 756 @40.8,54.2 map 1412
 
 step
   zone map 1412
@@ -728,7 +729,7 @@ step
   only Hunter
   zone map 1412
   note "Train spells at Yaw Sharpmane."
-  complete 6061 @41,59.6 map 1412
+  complete 6061 @57.8,60.5 map 1412
 
 step
   only Hunter
@@ -758,7 +759,7 @@ step
 step
   only Hunter
   zone map 1412
-  complete 6088 @47.2,41.3 map 1412
+  complete 6088 @47,48.3 map 1412
 
 step
   only Hunter
@@ -805,12 +806,13 @@ step
 
 step
   only Tauren
+  tip From the Sacred Burial Ground, kill Prairie Wolf Alphas in the fields to the west for their teeth: Wildmane Totem
   zone map 1412
-  complete 759 @63.2,66.5 map 1412
+  complete 759 @52.6,31 map 1412
 
 step
   zone map 1412
-  complete 861 @44.3,27.7 map 1412
+  complete 861 @51.5,30.7 map 1412
 
 step
   zone map 1412

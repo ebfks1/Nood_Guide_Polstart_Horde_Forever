@@ -8,7 +8,7 @@ folder Nood 가이드
 why 1~12 시작 지역 가이드입니다. 좌표는 포에버 클라이언트 자료, 퀘스트는 와우헤드 포에버 기준으로 맞췄고, 포에버 신규 퀘스트와 신규 직업 조합(오크 마법사·트롤 흑마법사·언데드 성기사·스카이본)을 넣었으며, 동선에서 지나가는 던전 선행 퀘스트와 선택형 던전 단계(★)를 추가했습니다. 던전·선택 표시가 붙은 단계는 건너뛰어도 진행이 멈추지 않습니다.
 coords era
 next nood-ko/05-12-25
-# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 02_1-12_Mulgore.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   zone map 1412
@@ -476,8 +476,9 @@ step
   accept 749 npc 2988
 
 step
+  tip 동쪽 언덕 주변 검독수리를 잡으세요 (멀고어 곳곳에 있으니 이동하며 계속 모아도 됩니다): 검독수리 사냥
   zone map 1412
-  complete 761 @49.8,23.7 map 1412
+  complete 761 @59.2,61.8 map 1412
 
 step
   zone map 1412
@@ -643,7 +644,7 @@ step
 step
   only Tauren
   zone map 1412
-  complete 756 @55.6,53.7 map 1412
+  complete 756 @40.8,54.2 map 1412
 
 step
   zone map 1412
@@ -728,7 +729,7 @@ step
   only Hunter
   zone map 1412
   note "요 샤프메인에게 스킬을 습득하세요."
-  complete 6061 @41,59.6 map 1412
+  complete 6061 @57.8,60.5 map 1412
 
 step
   only Hunter
@@ -758,7 +759,7 @@ step
 step
   only Hunter
   zone map 1412
-  complete 6088 @47.2,41.3 map 1412
+  complete 6088 @47,48.3 map 1412
 
 step
   only Hunter
@@ -805,12 +806,13 @@ step
 
 step
   only Tauren
+  tip 신성한 묘지에서 서쪽 들판의 초원 늑대 우두머리를 잡아 송곳니를 모으세요: 와일드메인 토템상
   zone map 1412
-  complete 759 @63.2,66.5 map 1412
+  complete 759 @52.6,31 map 1412
 
 step
   zone map 1412
-  complete 861 @44.3,27.7 map 1412
+  complete 861 @51.5,30.7 map 1412
 
 step
   zone map 1412

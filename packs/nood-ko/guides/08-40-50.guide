@@ -7,7 +7,7 @@ folder Nood 가이드
 why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 40-50 구간: 크롤독 보루 42.5 (포에버 신규) → 울다만 43.5 → 줄파락 46 → 마라우돈 49.
 coords era
 next nood-ko/09-50-60
-# Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   tip ▶ 다음 던전: 크롤독 보루 (약 Lv42.5에 갑니다 — 포에버 신규) — 지금 약 Lv41.2. 그때까지 아래 지역 퀘스트를 합니다 (던전 퀘스트는 던전 차례에 받습니다). 해머폴로 비행하세요.

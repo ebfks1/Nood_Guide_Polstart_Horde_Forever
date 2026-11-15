@@ -7,7 +7,7 @@ folder Nood Guide
 why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 30-40: Razorfen Kraul 31 -> SM Graveyard and Library 32-33 (together) -> The Drowne…
 coords era
 next nood/08-40-50
-# Written by tools/emit_guide.py from 07_30-40_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 07_30-40_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   hearth "Orgrimmar"

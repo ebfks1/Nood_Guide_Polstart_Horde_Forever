@@ -7,7 +7,7 @@ folder Nood 가이드
 why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 25-30 구간: 잿빛 골짜기·힐스브래드·아라시 → 27레벨 발굴 현장: 저습지 → 지역 퀘스트 → 30레벨 달라란 (퀘스트 요구 레벨 30).
 coords era
 next nood-ko/07-30-40
-# Written by tools/emit_guide.py from 06_25-30_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 06_25-30_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   tip 조람가르에서 동쪽으로 잿빛 골짜기를 가로질러 토막나무 주둔지로 가서 새로운 비행 지점을 발견하세요.

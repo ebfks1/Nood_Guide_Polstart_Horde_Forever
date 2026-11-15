@@ -7,7 +7,7 @@ folder Nood 가이드
 why 던전을 목표로 레벨업합니다. 던전 레벨이 되면 던전을 먼저 다녀오고, 다음 던전 레벨이 될 때까지 효율 좋은 지역 퀘스트만 합니다. 30-40 구간: 가시덩굴 우리 31 → 붉은십자군 묘지·도서관 32~33 (함께) → 가라앉은 도시 37.5 (포에버 신규) → 붉은십자군 무기고·대성당 39 (함께) → 가시덩굴 구릉 40.5 (포에버에서 40-50 던전). 무기고·대성당 전에 언더시티를 귀환 장소로 지정…
 coords era
 next nood-ko/08-40-50
-# Written by tools/emit_guide.py from 07_30-40_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 07_30-40_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   hearth "Orgrimmar"

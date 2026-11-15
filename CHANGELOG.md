@@ -1,5 +1,16 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.2-beta
+- 발컨 가이드 1.2.3 의 수정 사항을 반영했습니다.
+- 멀고어 1-12: 사냥터 위치 보정 (검독수리, 썬더혼 토템상, 와일드메인 토템상, 사냥꾼의 길, 사냥꾼 길들이기 2종).
+- 제프라스: 현상 수배 게시판(벌가라) 위치 보정.
+- 12-25 "빛나는 조각": 톱니항 스퍼터밸브와 대화하는 단계를 추가하고, 팔라 세이지윈드 보고는 톱니항을 다녀온 뒤로 옮겼습니다.
+
+- Brings in the fixes from the BalCon guide 1.2.3.
+- Mulgore 1-12: corrected hunting spots (Swoop Hunting, Thunderhorn Totem, Wildmane Totem, The Hunter's Way, two Taming the Beast quests).
+- Zephras: corrected the wanted poster (Vulgara) location.
+- 12-25 "The Glowing Shard": added the talk with Sputtervalve in Ratchet; the turn-in to Falla Sagewind now comes after Ratchet.
+
 ## 1.0.1-beta
 - 1-12 가이드(듀로타·멀고어·티리스팔·제프라스)의 퀘스트 순서를 게임의 선행 퀘스트 관계에 맞췄습니다. 선행 퀘스트를 끝내기 전에 받게 되어 있던 퀘스트를 선행 완료 뒤로 옮겼습니다.
 - 제프라스(스카이본): 메인 줄거리 순서를 바로잡았습니다. 사냥꾼 야수 길들이기는 하나씩 받아 완료합니다. "Standing Our Ground" 를 추가했습니다.

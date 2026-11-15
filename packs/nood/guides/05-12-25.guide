@@ -7,7 +7,7 @@ folder Nood Guide
 why Dungeon-focused leveling. When you reach a dungeon's level you run it first, then do only the most efficient zone quests until the next dungeon. 12-25: Thrall's 'Hidden Enemies' at 12 -> (Barrens if not 13 yet) -> Ragefire Chasm…
 coords era
 next nood/06-25-30
-# Written by tools/emit_guide.py from 05_12-25_BalCon.lua (BalCon 1.2.2). Edit the converter, not this file.
+# Written by tools/emit_guide.py from 05_12-25_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
   only Tauren
@@ -1030,16 +1030,6 @@ step
   turnin 1487 npc 5768
 
 step
-  tip Turn in to Falla Sagewind on the hill above the cave: The Glowing Shard
-  zone map 1413
-  turnin 6981 npc 8418
-
-step
-  tip Then accept In Nightmares (turned in to Hamuul Runetotem in Thunder Bluff)
-  zone map 1413
-  accept 3369 npc 8418
-
-step
   tip Fill up the 15 Centaur Bracers (centaurs around Verog and Hezrul): Centaur Bracers
   zone map 1413
   collect 5030 quest 855.1
@@ -1057,6 +1047,11 @@ step
 step
   tip Run to the Crossroads and Ratchet fly to Ratchet.
   fly "Ratchet"
+
+step
+  tip Talk to Sputtervalve, the goblin between the flight master and the dock, and pick the 'glowing shard' dialogue (progresses The Glowing Shard; turned in to Falla Sagewind back near the Crossroads).
+  zone map 1413
+  goto 63,37.2 r 20 map 1413
 
 step
   tip Turn in to Mebok Mizzyrix: Smart Drinks
@@ -1117,12 +1112,22 @@ step
 step
   tip The lions are only found in the grass. The Crossroads Fly to the Crossroads.
   fly "Crossroads"
-  note "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)"
 
 step
   when level<24
   zone map 1413
   accept 4921 npc 3432
+
+step
+  tip Run west of the Crossroads to the hill above the Wailing Caverns and turn in to Falla Sagewind: The Glowing Shard
+  zone map 1413
+  turnin 6981 npc 8418
+
+step
+  tip Then accept In Nightmares (turned in to Hamuul Runetotem in Thunder Bluff)
+  zone map 1413
+  accept 3369 npc 8418
+  note "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)"
 
 step
   only Tauren,Skyborne
