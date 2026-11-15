@@ -21,9 +21,15 @@ RACE_WORD = {'Scourge': 'Undead'}
 OBJ_VERBS = ('kill', 'collect', 'interact')
 
 
+GUIDE_NAMES = [('12-25 발컨', '12-25 Nood'), ('발컨 12-25', 'Nood 12-25'), ('12-25 BalCon', '12-25 Nood'), ('BalCon 12-25', 'Nood 12-25')]
+
+
 def txt(v, lang):
     if isinstance(v, T):
-        return (v.ko if (lang == 'ko' and v.ko) else v.en)
+        v = (v.ko if (lang == 'ko' and v.ko) else v.en)
+    if isinstance(v, str):
+        for a, b in GUIDE_NAMES:  # the next guide is called Nood here
+            v = v.replace(a, b)
     return v
 
 

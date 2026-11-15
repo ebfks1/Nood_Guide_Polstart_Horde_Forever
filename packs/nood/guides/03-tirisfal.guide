@@ -12,7 +12,7 @@ next nood/05-12-25
 
 step
   zone map 1420
-  note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
+  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
   accept 363 npc 1568
 
 step
@@ -771,3 +771,7 @@ step
 step
   along
   level 12 -- You should now be level 12. If not, grind until you are!
+
+step
+  tip Reach level 12; then the 12-25 Nood guide follows.
+  level 12

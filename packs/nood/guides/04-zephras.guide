@@ -13,7 +13,7 @@ next nood/05-12-25
 step
   tip Zephras Isle — Skyborne only, levels 1-12. You only see the class quests for your own class. == Starting village (1-5) == Accept Coming of Age (Ailee Farheart)
   zone map 2521
-  note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
+  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
   accept 92460 npc 251362
 
 step
@@ -1341,5 +1341,9 @@ step
   tip Turn in to Turak Runetotem on the Elder Rise in Thunder Bluff: Child of Nature
   zone map 1456
   turnin 94911 npc 3033
-  note "== Level 12: on to BalCon 12-25 =="
-  note "Continue with the next guide \"12-25 BalCon: RFC, Ruins of Lordaeron, WC, SFK, BFD\" (it starts at the Crossroads)."
+  note "== Level 12: on to Nood 12-25 =="
+  note "Continue with the next guide \"12-25 Nood: RFC, Ruins of Lordaeron, WC, SFK, BFD\" (it starts at the Crossroads)."
+
+step
+  tip Reach level 12; then the 12-25 Nood guide follows.
+  level 12

@@ -12,7 +12,7 @@ next nood/05-12-25
 
 step
   zone map 1412
-  note "! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar's guide menu. Quests you leave undone here give no reputation."
+  note "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation."
   accept 747 npc 2980
 
 step
@@ -1162,3 +1162,7 @@ step
   tip Set your Hearthstone to The Crossroads with the innkeeper.
   zone map 1413
   sethome "The Crossroads"
+
+step
+  tip Reach level 12; then the 12-25 Nood guide follows.
+  level 12

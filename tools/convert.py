@@ -142,8 +142,11 @@ def tokens(line):
     return out
 
 
-LEVEL12 = ('! At level 12 we recommend ending this guide here and moving on to the 12-25 Nood guide: pick it in Polestar\'s guide menu. Quests you leave undone here give no reputation.',
-           '※ 12레벨이 되면 이 가이드를 여기서 마치고 12-25 Nood 가이드로 넘어가는 것을 권장합니다. Polestar 가이드 메뉴에서 "12-25 Nood"를 고르세요. 여기 남긴 퀘스트의 평판은 받지 못합니다.')
+LEVEL12 = ('! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar\'s guide menu). Quests you leave undone here give no reputation.',
+           '※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 "12-25 Nood"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다.')
+# The last step of a starting guide: wait for level 12, so the guide does not end (and chain into 12-25) before it.
+END12 = ('Reach level 12; then the 12-25 Nood guide follows.',
+         '12레벨이 되면 12-25 Nood 가이드로 이어집니다. 아직이라면 근처에서 사냥하세요.')
 
 
 def clean(s):
@@ -611,6 +614,14 @@ class Guide:
         before = self.path_length()
         self.fix_prereqs()
         notes_log.append('PATH %s: %.0f -> %.0f map-percent' % (self.stem, before, self.path_length()))
+        # a starting guide ends at level 12: its BalCon level-12 lines are "with the next step", so without a step
+        # that holds the guide ended (and Polestar moved on) at level 11, as soon as the last quest step was done
+        if self.races and self.max == 12:
+            last = self.steps[-1] if self.steps else None
+            if not (last and not last.get('along') and not last.get('when') and not last.get('only')
+                    and [g['t'] for g in last['goals']] == ['level'] and last['goals'][0]['level'] >= 12):
+                self.steps.append({'note': T(*END12), 'goals': [{'t': 'level', 'level': 12}], '_holds': True})
+                report['level-12 step at the end of a starting guide'] += 1
         # an along step is listed until its quest's turn-in step, when a later step carries that label
         for i, st in enumerate(self.steps):
             for qid in st.get('_until') or []:
