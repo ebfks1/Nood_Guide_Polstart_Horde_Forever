@@ -1,0 +1,12 @@
+## Interface: 16001
+## Title: Nood Guide - Step Lines (test)
+## Title-koKR: Nood 가이드 - 단계 연결선 (시험판)
+## Notes: On the world map, joins the guide's current goal and the next steps' goals with lines, as many steps as Polestar's "Up next" shows. /noodlines
+## Notes-koKR: 세계 지도에서 지금 목표와 다음 단계 목표들을 선으로 잇습니다. 개수는 Polestar "다음 단계" 개수를 따릅니다. /noodlines
+## Author: 씨가
+## Version: 0.1.0-test
+## Dependencies: Polestar
+## SavedVariables: NoodStepLinesDB
+## X-License: GPL-3.0-or-later
+
+StepLines.lua
