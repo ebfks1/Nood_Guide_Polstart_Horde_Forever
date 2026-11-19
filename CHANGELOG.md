@@ -1,5 +1,12 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.5
+- 단계 맨 위 설명에도 체크박스를 달았습니다. 몹 처치·퀘템 루팅처럼 오래 걸리는 단계에서도 한 번 읽고 체크하면 접혀서 사라집니다.
+- 귀환석을 쓰기 몇 단계 전에 "[알림]" 줄로 미리 알려 줍니다 (귀환석을 아껴 두고 재사용 대기시간 확인).
+
+- The description at the top of each step now has a checkbox too: tick it once read and it folds away, even in long kill or loot steps.
+- A "[Heads-up]" line a few steps before each Hearthstone step tells you to keep the stone (and check its cooldown).
+
 ## 1.0.4
 - 첫 정식(Release) 배포입니다. 내용은 1.0.4-beta 와 같습니다.
 - 지금까지 베타로 올린 내용(1.0.0~1.0.4-beta)이 모두 들어 있습니다: 호드 1-60 던전 중심 레벨업, 한국어·영어 팩, "퀘스트 레벨+4" 자동 건너뛰기, 1-12 퀘스트 순서 보정, 12레벨 대기 단계, 근처에서 할 일용 목표 분리, 메모 체크박스.
