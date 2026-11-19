@@ -29,8 +29,8 @@ step
   accept 788 npc 3143
 
 step
-  tip Accept Wayward Weapons (Forever new)
   zone map 1411
+  task "Accept Wayward Weapons (Forever new)" optional
   accept 97279 npc 3143
 
 step
@@ -47,13 +47,13 @@ step
   kill 3098 quest 788.1 -- Work on Cutting Teeth on the way.
 
 step
-  tip Kill boars and pick up 6 Discarded Training Weapons from the ground: Wayward Weapons
   zone map 1411
+  task "Kill boars and pick up 6 Discarded Training Weapons from the ground: Wayward Weapons" optional
   collect 277653 quest 97279.1 @43.4,62.8 map 1411
 
 step
-  tip Kill Sarkoth: Sarkoth
   zone map 1411
+  task "Kill Sarkoth: Sarkoth" optional
   collect 4905 quest 790.1 @40.5,67.3 map 1411
 
 step
@@ -93,8 +93,8 @@ step
   accept 1499 npc 5765
 
 step
-  tip Turn in to the NPC next to him: Vile Familiars
   zone map 1411
+  task "Turn in to the NPC next to him: Vile Familiars" optional
   turnin 1499 npc 3145
 
 step
@@ -171,43 +171,43 @@ step
 
 step
   only Mage,Orc
-  tip Accept Glyphic Parchment (Forever new)
   zone map 1411
+  task "Accept Glyphic Parchment (Forever new)" optional
   accept 98576 npc 3143
 
 step
   only Warlock,Troll
-  tip Accept Tainted Tablet (Forever new)
   zone map 1411
+  task "Accept Tainted Tablet (Forever new)" optional
   accept 98575 npc 3143
 
 step
-  tip Turn in to Kzan Thornslash inside the cave barracks: Wayward Weapons
   zone map 1411
+  task "Turn in to Kzan Thornslash inside the cave barracks: Wayward Weapons" optional
   turnin 97279 npc 3159
 
 step
   only Rogue,Troll
-  tip Enter the cave and turn in Encrypted Tablet
   zone map 1411
+  task "Enter the cave and turn in Encrypted Tablet" optional
   turnin 3083 npc 3155
 
 step
   only Rogue,Orc
-  tip Enter the cave and turn in Encrypted Parchment
   zone map 1411
+  task "Enter the cave and turn in Encrypted Parchment" optional
   turnin 3088 npc 3155
 
 step
   only Warlock,Orc
-  tip Right next to it, turn in Tainted Parchment
   zone map 1411
+  task "Right next to it, turn in Tainted Parchment" optional
   turnin 3090 npc 3156
 
 step
   only Warlock,Troll
-  tip Turn in to Nartok: Tainted Tablet
   zone map 1411
+  task "Turn in to Nartok: Tainted Tablet" optional
   turnin 98575 npc 3156
 
 step
@@ -223,8 +223,8 @@ step
 
 step
   only Mage,Orc
-  tip Turn in to Mai'ah: Glyphic Parchment
   zone map 1411
+  task "Turn in to Mai'ah: Glyphic Parchment" optional
   turnin 98576 npc 5884
 
 step
@@ -244,8 +244,8 @@ step
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip Accept next to the cart: Vile Familiars
   zone map 1411
+  task "Accept next to the cart: Vile Familiars" optional
   accept 792 npc 3145
 
 step
@@ -260,14 +260,14 @@ step
 
 step
   only Hunter,Troll
-  tip Turn in to Jen'shan: Etched Tablet
   zone map 1411
+  task "Turn in to Jen'shan: Etched Tablet" optional
   turnin 3082 npc 3154
 
 step
   only Hunter,Orc
-  tip Turn in to Jen'shan: Etched Parchment
   zone map 1411
+  task "Turn in to Jen'shan: Etched Parchment" optional
   turnin 3087 npc 3154
 
 step
@@ -281,14 +281,14 @@ step
 
 step
   only Shaman
-  tip Accept Call of Earth (picked up early)
   zone map 1411
+  task "Accept Call of Earth (picked up early)" optional
   accept 1516 npc 5887
 
 step
   only Warlock
-  tip Focus on Lazy Peons while you
   zone map 1411
+  task "Focus on Lazy Peons while you" optional
   kill 10556 quest 5441.1 @46.29,60.62 map 1411
 
 step
@@ -305,8 +305,8 @@ step
 
 step
   only Warlock
-  tip Once Lazy Peons is done, head back to town first. The other quests don't need to be finished yet. Turn in Lazy Peons
   zone map 1411
+  task "Once Lazy Peons is done, head back to town first. The other quests don't need to be finished yet. Turn in Lazy Peons" optional
   task "(check the icons on your map.)" optional
   turnin 5441 npc 11378
 
@@ -317,34 +317,34 @@ step
 
 step
   only Warlock
-  tip Head to the cave in the north while working on Galgar's Cactus Apple Surprise and Sting of the Scorpid.
   zone map 1411
+  task "Head to the cave in the north while working on Galgar's Cactus Apple Surprise and Sting of the Scorpid." optional
   collect 11583 quest 4402.1 @44.7,57 map 1411
   complete 789 @44.7,57 map 1411
 
 step
   only Warlock
-  tip Enter the cave and loot the pick: Thazz'ril's Pick
   zone map 1411
+  task "Enter the cave and loot the pick: Thazz'ril's Pick" optional
   collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Warlock
-  tip Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion
   zone map 1411
+  task "Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion" optional
   collect 4859 quest 794.1 @42.7,53 map 1411
   task "! Your Hearthstone must be set to Valley of Trials. If it's set elsewhere, run or fly there instead of hearthing." optional
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip From here, work on Lazy Peons
   zone map 1411
+  task "From here, work on Lazy Peons" optional
   kill 10556 quest 5441.1
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip At the same time: finish Galgar's Cactus Apple Surprise
   zone map 1411
+  task "At the same time: finish Galgar's Cactus Apple Surprise" optional
   task "(check the icons on your map.)" optional
   collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
@@ -355,8 +355,8 @@ step
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip Kill Vile Familiars: Vile Familiars
   zone map 1411
+  task "Kill Vile Familiars: Vile Familiars" optional
   kill 3101 quest 792.1 @45.3,57.2 map 1411
 
 step
@@ -398,20 +398,20 @@ step
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip Enter the cave in the north and loot the pick: Thazz'ril's Pick
   zone map 1411
+  task "Enter the cave in the north and loot the pick: Thazz'ril's Pick" optional
   collect 16332 quest 6394.1 @43.7,53.8 map 1411
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  tip Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion
   zone map 1411
+  task "Go deep into the cave and kill Yarrog Baneshadow: Burning Blade Medallion" optional
   collect 4859 quest 794.1 @42.7,53 map 1411
 
 step
   only Shaman
-  tip Kill the felhounds inside the cave: Call of Earth.
   zone map 1411
+  task "Kill the felhounds inside the cave: Call of Earth." optional
   task "Train: Earth Shock (Rank 1)" optional
   collect 6640 quest 1516.1
 
@@ -451,32 +451,32 @@ step
   turnin 6394 npc 11378
 
 step
-  tip Click the Lost Journal in town to accept The Adventurer (Forever new)
   zone map 1411
+  task "Click the Lost Journal in town to accept The Adventurer (Forever new)" optional
   accept 96652 object 654925
 
 step
   only Shaman
-  tip Go to this point.
   zone map 1411
+  task "Go to this point." optional
   goto 41.7,73.2 r 20 map 1411
 
 step
   only Shaman
-  tip Climb the hill toward this point.
   zone map 1411
+  task "Climb the hill toward this point." optional
   goto 40.7,74.2 r 20 map 1411
 
 step
   only Shaman
-  tip Keep going until you see a large stone tablet.
   zone map 1411
+  task "Keep going until you see a large stone tablet." optional
   goto 44,76.2 r 20 map 1411
 
 step
   only Shaman
-  tip Open your bags and drink the quest item Earth Sapta. Turn in Call of Earth
   zone map 1411
+  task "Open your bags and drink the quest item Earth Sapta. Turn in Call of Earth" optional
   turnin 1517 npc 5891
 
 step
@@ -486,13 +486,13 @@ step
 
 step
   only Shaman
-  tip Use the graveyard teleport. Turn in Call of Earth
   zone map 1411
+  task "Use the graveyard teleport. Turn in Call of Earth" optional
   turnin 1518 npc 5887
 
 step
-  tip Leave the starting area and accept A Peon's Burden
   zone map 1411
+  task "Leave the starting area and accept A Peon's Burden" optional
   accept 2161 npc 6786
 
 step
@@ -502,18 +502,18 @@ step
   level 6 -- Grind around Sen'jin Village until level 6.
 
 step
-  tip Accept Thwarting Kolkar Aggression (the NPC walks around)
   zone map 1411
+  task "Accept Thwarting Kolkar Aggression (the NPC walks around)" optional
   accept 786 npc 3140
 
 step
-  tip Head to Sen'jin Village. Accept Practical Prey (inside the hut)
   zone map 1411
+  task "Head to Sen'jin Village. Accept Practical Prey (inside the hut)" optional
   accept 817 npc 3194
 
 step
-  tip Accept Legging It (Forever new)
   zone map 1411
+  task "Accept Legging It (Forever new)" optional
   accept 96821 npc 3194
 
 step
@@ -521,8 +521,8 @@ step
   accept 818 npc 3304
 
 step
-  tip Accept from Sharti: Bloodtalon Matriarch (Forever new)
   zone map 1411
+  task "Accept from Sharti: Bloodtalon Matriarch (Forever new)" optional
   accept 97223 npc 7953
 
 step
@@ -530,8 +530,8 @@ step
   turnin 805 npc 3188
 
 step
-  tip Accept Forgotten Loa Idols (Forever new)
   zone map 1411
+  task "Accept Forgotten Loa Idols (Forever new)" optional
   accept 97225 npc 3304
 
 step
@@ -563,8 +563,8 @@ step
 
 step
   only Mage
-  tip Head north toward Razor Hill. Turn in Report to Orgnil
   zone map 1411
+  task "Head north toward Razor Hill. Turn in Report to Orgnil" optional
   task "Train: Fireball (Rank 1), Conjure Food (Rank 1), Fire Blast (Rank 1)" optional
   turnin 823 npc 3142
 
@@ -574,8 +574,8 @@ step
   accept 806 npc 3142
 
 step
-  tip Accept from Gar'Thok: Vanquish the Betrayers, Encroachment
   zone map 1411
+  task "Accept from Gar'Thok: Vanquish the Betrayers, Encroachment" optional
   task "Buy a *Stiletto* - 4 silver" optional only Rogue
   task "Buy a *Hornwood Recurve Bow* - 3 silver" optional only Hunter
   task "Buy a *Walking Stick* - 5 silver" optional only Shaman
@@ -587,8 +587,8 @@ step
   accept 837 npc 3139
 
 step
-  tip Accept from Turok: For Honor (Forever new)
   zone map 1411
+  task "Accept from Turok: For Honor (Forever new)" optional
   accept 96822 npc 266940
 
 step
@@ -598,24 +598,24 @@ step
   accept 815 npc 3191
 
 step
-  tip Accept This Fruit Could Bite Back (Forever new)
   zone map 1411
+  task "Accept This Fruit Could Bite Back (Forever new)" optional
   accept 96825 npc 3191
 
 step
-  tip Climb to the top of the Razor Hill watchtower and accept Carry Your Weight
   zone map 1411
+  task "Climb to the top of the Razor Hill watchtower and accept Carry Your Weight" optional
   accept 791 npc 3147
 
 step
-  tip Go into the inn and turn in A Peon's Burden
   zone map 1411
+  task "Go into the inn and turn in A Peon's Burden" optional
   task "Train: Life Tap (Rank 1), Shadow Bolt (Rank 2)" optional only Warlock
   turnin 2161 npc 6928
 
 step
-  tip Set your Hearthstone to Razor Hill.
   zone map 1411
+  task "Set your Hearthstone to Razor Hill." optional
   sethome "Razor Hill"
 
 step
@@ -630,14 +630,14 @@ step
 
 step
   only Priest
-  tip Heal Kor'ja: cast Power Word: Fortitude on her: Garments of Spirituality
   zone map 1411
+  task "Heal Kor'ja: cast Power Word: Fortitude on her: Garments of Spirituality" optional
   task "Train: Power Word: Shield (Rank 1), Smite (Rank 2)" optional
   kill 12430 quest 5648.1 @53.1,46.5 map 1411
 
 step
-  tip Turn in to Brakk at the adventurer camp by the road to the south: The Adventurer
   zone map 1411
+  task "Turn in to Brakk at the adventurer camp by the road to the south: The Adventurer" optional
   task "Sell your junk. Buy food/water if needed." optional
   task "(Keep 1 silver for First Aid.) Go into the barracks and turn left. *Learn* First Aid." optional
   task "From now on, make bandages whenever you have spare time." optional
@@ -647,12 +647,12 @@ step
   turnin 96652 npc 265809
 
 step
-  tip Accept The Great Outdoors (Forever new)
   zone map 1411
+  task "Accept The Great Outdoors (Forever new)" optional
   accept 96604 npc 265809
 
 step
-  tip Type /sit next to the campfire and get the 'Boosted Rest' buff: The Great Outdoors
+  task "Type /sit next to the campfire and get the \"Boosted Rest\" buff: The Great Outdoors" optional
   complete 96604
 
 step
@@ -660,25 +660,25 @@ step
   turnin 96604 npc 265809
 
 step
-  tip Accept Camping 101: Cooking (Forever new)
   zone map 1411
+  task "Accept Camping 101: Cooking (Forever new)" optional
   accept 96655 npc 265809
 
 step
-  tip Kill Ridgeshade Creepers and Lurkers on the ridge to the south: Legging It
   zone map 1411
+  task "Kill Ridgeshade Creepers and Lurkers on the ridge to the south: Legging It" optional
   kill 266850 quest 96821.1 @50.4,54.6 map 1411
   kill 266849 quest 96821.2 @50.4,54.6 map 1411
 
 step
-  tip Go to Tiragarde Keep and work on: Vanquish the Betrayers Vanquish the Betrayers
   zone map 1411
+  task "Go to Tiragarde Keep and work on: Vanquish the Betrayers Vanquish the Betrayers" optional
   kill 3128 quest 784.1 @58.17,57.13 map 1411
   kill 3129 quest 784.2 @58.17,57.13 map 1411
 
 step
-  tip Pick up the Raider's Battleaxe, Raider's Bow and Assault Shield around the outside of the keep: For Honor
   zone map 1411
+  task "Pick up the Raider's Battleaxe, Raider's Bow and Assault Shield around the outside of the keep: For Honor" optional
   collect 275713 quest 96822.1
   collect 275716 quest 96822.2
   collect 275717 quest 96822.3
@@ -689,35 +689,35 @@ step
   collect 4870 quest 791.1
 
 step
-  tip Kill Lieutenant Benedict: Vanquish the Betrayers.
   zone map 1411
+  task "Kill Lieutenant Benedict: Vanquish the Betrayers." optional
   kill 3192 quest 784.3 @59.73,58.28 map 1411
 
 step
-  tip Loot Benedict's Key. Go to Benedict's Chest on the roof.
   zone map 1411
+  task "Loot Benedict's Key. Go to Benedict's Chest on the roof." optional
   goto 59.32,57.65 r 20 map 1411
 
 step
-  tip Open the chest and loot the Aged Envelope to accept The Admiral's Orders
+  task "Open the chest and loot the Aged Envelope to accept The Admiral's Orders" optional
   accept 830 item 4881
 
 step
-  tip Jump down and finish: Vanquish the Betrayers, Carry Your Weight
   zone map 1411
+  task "Jump down and finish: Vanquish the Betrayers, Carry Your Weight" optional
   kill 3128 quest 784.1
   kill 3129 quest 784.2
   kill 3192 quest 784.3
   collect 4870 quest 791.1
 
 step
-  tip Your choice: grind your way back to Razor Hill, or die / use the graveyard teleport. Turn in Vanquish the Betrayers, The Admiral's Orders
   zone map 1411
+  task "Your choice: grind your way back to Razor Hill, or die / use the graveyard teleport. Turn in Vanquish the Betrayers, The Admiral's Orders" optional
   turnin 784 npc 3139
 
 step
-  tip Your choice: grind your way back to Razor Hill, or die / use the graveyard teleport. Turn in Vanquish the Betrayers, The Admiral's Orders
   zone map 1411
+  task "Your choice: grind your way back to Razor Hill, or die / use the graveyard teleport. Turn in Vanquish the Betrayers, The Admiral's Orders" optional
   turnin 830 npc 3139
 
 step
@@ -730,8 +730,8 @@ step
   accept 831 npc 3139
 
 step
-  tip Climb the watchtower and turn in Carry Your Weight
   zone map 1411
+  task "Climb the watchtower and turn in Carry Your Weight" optional
   turnin 791 npc 3147
 
 step
@@ -744,20 +744,20 @@ step
   turnin 5648 npc 3706
 
 step
-  tip Go to the east coast and finish: A Solvent Spirit, From The Wreckage....
   zone map 1411
+  task "Go to the east coast and finish: A Solvent Spirit, From The Wreckage...." optional
   complete 818 @62.02,46.35 map 1411
   collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step
-  tip Head southwest of Razor Hill and do half of Encroachment Encroachment.
   zone map 1411
+  task "Head southwest of Razor Hill and do half of Encroachment Encroachment." optional
   kill 3111 quest 837.1 @50.02,49.37 map 1411
   kill 3112 quest 837.2 @50.02,49.37 map 1411
 
 step
-  tip Gather 8 Prickly Pears in Razormane territory: This Fruit Could Bite Back
   zone map 1411
+  task "Gather 8 Prickly Pears in Razormane territory: This Fruit Could Bite Back" optional
   collect 275718 quest 96825.1
 
 step
@@ -766,13 +766,13 @@ step
   level 7.87 -- Grind here or close to Razor Hill until you are 600 XP short of level 8.
 
 step
-  tip Return to Razor Hill and turn in From The Wreckage....
   zone map 1411
+  task "Return to Razor Hill and turn in From The Wreckage...." optional
   turnin 825 npc 3139
 
 step
-  tip Grind your way south. Burn the Attack Plan: Valley of Trials: Thwarting Kolkar Aggression
   zone map 1411
+  task "Grind your way south. Burn the Attack Plan: Valley of Trials: Thwarting Kolkar Aggression" optional
   task "Train: Curse of Agony (Rank 1), Fear (Rank 1)" optional only Warlock
   task "Go into the bunker and train: Backstab (Rank 1), Evasion, Gouge (Rank 2)" optional only Rogue
   task "Go into the bunker and train: Parry (passive), Concussive Shot, Raptor Strike (Rank 2)" optional only Hunter
@@ -782,23 +782,23 @@ step
   interact 3189 quest 786.1 @49.81,81.31 map 1411
 
 step
-  tip Burn the Attack Plan: Sen'jin Village: Thwarting Kolkar Aggression
   zone map 1411
+  task "Burn the Attack Plan: Sen'jin Village: Thwarting Kolkar Aggression" optional
   interact 3190 quest 786.2 @47.67,77.39 map 1411
 
 step
-  tip Burn the Attack Plan: Orgrimmar: Thwarting Kolkar Aggression
   zone map 1411
+  task "Burn the Attack Plan: Orgrimmar: Thwarting Kolkar Aggression" optional
   interact 3192 quest 786.3 @46.26,78.98 map 1411
 
 step
-  tip Accept from Pal'juh inside the cave: Lost in the Shadows (Forever new)
   zone map 1411
+  task "Accept from Pal'juh inside the cave: Lost in the Shadows (Forever new)" optional
   accept 99123 npc 275811
 
 step
-  tip Escort Pal'juh out of the cave: Lost in the Shadows
   zone map 1411
+  task "Escort Pal'juh out of the cave: Lost in the Shadows" optional
   complete 99123 @51.4,79.2 map 1411
 
 step
@@ -807,14 +807,14 @@ step
   level 8 -- Grind here until level 8.
 
 step
-  tip Turn in Thwarting Kolkar Aggression (the NPC walks around)
   zone map 1411
+  task "Turn in Thwarting Kolkar Aggression (the NPC walks around)" optional
   task "Profession available: Fishing" optional
   turnin 786 npc 3140
 
 step
-  tip Turn in A Solvent Spirit — keep the *Sticky Spider Glue*, you'll need it later.
   zone map 1411
+  task "Turn in A Solvent Spirit — keep the *Sticky Spider Glue*, you'll need it later." optional
   turnin 818 npc 3304
 
 step
@@ -822,42 +822,42 @@ step
   turnin 99123 npc 3304
 
 step
-  tip Before crossing to the Echo Isles, kill the Bloodtalon Matriarch on the coast east of Sen'jin and loot her egg: Bloodtalon Matriarch
   zone map 1411
+  task "Before crossing to the Echo Isles, kill the Bloodtalon Matriarch on the coast east of Sen'jin and loot her egg: Bloodtalon Matriarch" optional
   task "Repair and sell junk." optional
   task "Train: Polymorph (Rank 1), Frostbolt (Rank 2)" optional only Mage
   collect 277128 quest 97223.1 @68.8,71.8 map 1411
 
 step
-  tip Go to the Echo Isles and work on all 4 quests: Break a Few Eggs - pick up Taillasher Eggs (don't kill raptors for them)
   zone map 1411
+  task "Go to the Echo Isles and work on all 4 quests: Break a Few Eggs - pick up Taillasher Eggs (don't kill raptors for them)" optional
   collect 4890 quest 815.1
 
 step
-  tip Practical Prey - kill Durotar Tigers
   zone map 1411
+  task "Practical Prey - kill Durotar Tigers" optional
   collect 4892 quest 817.1
 
 step
-  tip Minshina's Skull - on the small hill ringed with candles
   zone map 1411
+  task "Minshina's Skull - on the small hill ringed with candles" optional
   collect 4864 quest 808.1 @67.4,87.8 map 1411
 
 step
-  tip Zalazane - kill trolls and Zalazane
   zone map 1411
+  task "Zalazane - kill trolls and Zalazane" optional
   kill 3207 quest 826.1 @67.19,86.98 map 1411
   kill 3206 quest 826.2 @67.19,86.98 map 1411
   collect 4866 quest 826.3 @67.19,86.98 map 1411
 
 step
-  tip Forgotten Loa Idols - 8 Forgotten Loa Idols around the islands
   zone map 1411
+  task "Forgotten Loa Idols - 8 Forgotten Loa Idols around the islands" optional
   collect 277135 quest 97225.1 @66.5,85.5 map 1411
 
 step
-  tip Die to get back to Sen'jin Village and talk to the Spirit Healer to resurrect instantly. Turn in Practical Prey
   zone map 1411
+  task "Die to get back to Sen'jin Village and talk to the Spirit Healer to resurrect instantly. Turn in Practical Prey" optional
   turnin 817 npc 3194
 
 step
@@ -865,8 +865,8 @@ step
   turnin 808 npc 3188
 
 step
-  tip Keep the *Faintly Glowing Skull*, you'll use it later. Turn in Zalazane
   zone map 1411
+  task "Keep the *Faintly Glowing Skull*, you'll use it later. Turn in Zalazane" optional
   turnin 826 npc 3188
 
 step
@@ -878,8 +878,8 @@ step
   turnin 97223 npc 7953
 
 step
-  tip Grind your way back to Razor Hill.
   zone map 1411
+  task "Grind your way back to Razor Hill." optional
   goto 51.1,42.4 r 20 map 1411
 
 step
@@ -887,8 +887,8 @@ step
   turnin 815 npc 3191
 
 step
-  tip Learn Cooking from Cook Torka and turn in Camping 101: Cooking
   zone map 1411
+  task "Learn Cooking from Cook Torka and turn in Camping 101: Cooking" optional
   turnin 96655 npc 3191
 
 step
@@ -896,8 +896,8 @@ step
   turnin 96825 npc 3191
 
 step
-  tip Kill Razormane Battleguards and Dustrunners: Encroachment Encroachment
   zone map 1411
+  task "Kill Razormane Battleguards and Dustrunners: Encroachment Encroachment" optional
   task "Not available yet (level too low): Call of Fire (level 10) — you'll pick it up the next time you're in town." optional only Shaman
   task "Not available yet (level too low): Hex of Weakness (level 10) — you'll pick it up the next time you're in town." optional only Priest
   task "Not available yet (level too low): Therzok (level 10) — you'll pick it up the next time you're in town." optional only Rogue,Orc
@@ -910,8 +910,8 @@ step
   kill 3114 quest 837.4 @43.98,40.19 map 1411
 
 step
-  tip Grind your way to the small house to the north.
   zone map 1411
+  task "Grind your way to the small house to the north." optional
   goto 43.09,30.34 r 20 map 1411
 
 step
@@ -923,13 +923,13 @@ step
   accept 834 npc 3293
 
 step
-  tip Loot the supply crates around the harpies: Winds in the Desert
   zone map 1411
+  task "Loot the supply crates around the harpies: Winds in the Desert" optional
   collect 4918 quest 834.1
 
 step
-  tip Go back and turn in Winds in the Desert
   zone map 1411
+  task "Go back and turn in Winds in the Desert" optional
   task "( check the icons on your map.)" optional
   turnin 834 npc 3293
 
@@ -938,8 +938,8 @@ step
   accept 835 npc 3293
 
 step
-  tip Go northwest and accept Need for a Cure
   zone map 1411
+  task "Go northwest and accept Need for a Cure" optional
   accept 812 npc 3190
 
 step
@@ -958,8 +958,8 @@ step
   turnin 837 npc 3139
 
 step
-  tip Accept from Orgnil Soulscar: A Missing Hand (Forever new)
   zone map 1411
+  task "Accept from Orgnil Soulscar: A Missing Hand (Forever new)" optional
   task "Ignore the countdown." optional
   accept 99048 npc 3142
 
@@ -995,13 +995,13 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue
-  tip Accept Conscript of the Horde (picked up early)
   zone map 1411
+  task "Accept Conscript of the Horde (picked up early)" optional
   accept 840 npc 3336
 
 step
-  tip Turn in to Heglan Shadeye on the hill by the east coast: A Missing Hand
   zone map 1411
+  task "Turn in to Heglan Shadeye on the hill by the east coast: A Missing Hand" optional
   task "Train new spells" optional only Shaman
   task "Train: Lesser Heal (Rank 3), Resurrection (Rank 1), Mind Blast (Rank 1), Shadow Word: Pain (Rank 2)" optional only Priest
   task "Go into the bunker and train new spells." optional only Rogue
@@ -1014,15 +1014,15 @@ step
   accept 99049 npc 275657
 
 step
-  tip Find the Orcish Dagger, Banner Scrap and Broken Bone Trident nearby: Threat from Below
   zone map 1411
+  task "Find the Orcish Dagger, Banner Scrap and Broken Bone Trident nearby: Threat from Below" optional
   collect 286012 quest 99049.1
   collect 286011 quest 99049.2
   collect 286010 quest 99049.3
 
 step
-  tip Turn in to Orgnil in Razor Hill: Threat from Below
   zone map 1411
+  task "Turn in to Orgnil in Razor Hill: Threat from Below" optional
   turnin 99049 npc 3142
 
 step
@@ -1031,8 +1031,8 @@ step
 
 step
   only Warrior,Shaman
-  tip Head west into the Barrens.
   zone map 1413
+  task "Head west into the Barrens." optional
   goto 62.39,19.39 r 20 map 1413
 
 step
@@ -1057,14 +1057,14 @@ step
 
 step
   only Shaman
-  tip Cross the river east back into Durotar.
   zone map 1411
+  task "Cross the river east back into Durotar." optional
   goto 38.53,58.9 r 20 map 1411
 
 step
   only Shaman
-  tip Climb the peak and turn in Call of Fire
   zone map 1411
+  task "Climb the peak and turn in Call of Fire" optional
   task "Take the hidden path. ( check the icons on your map — zoom in to see them better.)" optional
   turnin 1524 npc 5900
 
@@ -1075,20 +1075,20 @@ step
 
 step
   only Shaman
-  tip Cross the river west back into the Barrens.
   zone map 1413
+  task "Cross the river west back into the Barrens." optional
   goto 54.6,25.57 r 20 map 1413
 
 step
   only Shaman
-  tip Kill *Razormane Geomancers* and *Razormane Thornweavers*: Call of Fire
   zone map 1413
+  task "Kill *Razormane Geomancers* and *Razormane Thornweavers*: Call of Fire" optional
   collect 5026 quest 1525.1
 
 step
   only Shaman
-  tip Run to the Crossroads. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1413
+  task "Run to the Crossroads. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)" optional
   goto 52.24,31.03 r 20 map 1413
 
 step
@@ -1103,8 +1103,8 @@ step
 
 step
   only Warrior
-  tip Run to the Crossroads. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1413
+  task "Run to the Crossroads. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)" optional
   goto 52.24,31.03 r 20 map 1413
 
 step
@@ -1129,13 +1129,13 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll
-  tip Accept Meats to Orgrimmar (picked up early)
   zone map 1413
+  task "Accept Meats to Orgrimmar (picked up early)" optional
   accept 6365 npc 3489
 
 step
   only Warrior,Shaman,Orc,Troll
-  tip Orgrimmar Take the wind rider to Orgrimmar.
+  task "Orgrimmar Take the wind rider to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
@@ -1145,15 +1145,15 @@ step
 
 step
   only Hunter
-  tip Find a Dire Mottled Boar and tame it with the Taming Rod: Taming the Beast
   zone map 1411
+  task "Find a Dire Mottled Boar and tame it with the Taming Rod: Taming the Beast" optional
   task "Go into the bunker and train new spells." optional
   kill 3099 quest 6062.1 @52.83,48.9 map 1411
 
 step
   only Hunter
-  tip The Dire Mottled Boars are south of Razor Hill. Turn in Taming the Beast
   zone map 1411
+  task "The Dire Mottled Boars are south of Razor Hill. Turn in Taming the Beast" optional
   turnin 6062 npc 3171
 
 step
@@ -1163,8 +1163,8 @@ step
 
 step
   only Hunter
-  tip Find a Surf Crawler and tame it with the Taming Rod: Taming the Beast
   zone map 1411
+  task "Find a Surf Crawler and tame it with the Taming Rod: Taming the Beast" optional
   kill 3107 quest 6083.1 @59.05,28.75 map 1411
 
 step
@@ -1179,8 +1179,8 @@ step
 
 step
   only Hunter
-  tip Find an Armored Scorpid and tame it with the Taming Rod: Taming the Beast
   zone map 1411
+  task "Find an Armored Scorpid and tame it with the Taming Rod: Taming the Beast" optional
   kill 3126 quest 6082.1 @48.87,38.41 map 1411
 
 step
@@ -1195,14 +1195,14 @@ step
 
 step
   only Warrior,Shaman
-  tip Visit the Orgrimmar bank and store the *Sticky Spider Glue*.
   zone map 1454
+  task "Visit the Orgrimmar bank and store the *Sticky Spider Glue*." optional
   goto 49.52,69.34 r 20 map 1454
 
 step
   only Mage,Priest,Warlock,Rogue,Hunter
-  tip Head north into Orgrimmar. Visit the bank and store the *Sticky Spider Glue*.
   zone map 1454
+  task "Head north into Orgrimmar. Visit the bank and store the *Sticky Spider Glue*." optional
   goto 49.52,69.34 r 20 map 1454
 
 step
@@ -1236,8 +1236,8 @@ step
   turnin 6081 npc 3352
 
 step
-  tip Go to Thrall and accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
+  task "Go to Thrall and accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   task ">> Next zone Durotar (main quests Lv9-12): expected now Lv10 · comfortable at Lv11 · minimum Lv8." optional
   task "Buy food/water if needed." optional
   task "Train: Frost Nova (Rank 1), Frost Armor (Rank 2), Conjure Water (Rank 2)" optional only Mage
@@ -1253,13 +1253,13 @@ step
   accept 5726 npc 4949
 
 step
-  tip Turn in to Nazgrel: The Admiral's Orders
   zone map 1454
+  task "Turn in to Nazgrel: The Admiral's Orders" optional
   turnin 831 npc 3230
 
 step
-  tip Go to the Cleft of Shadow and accept Finding the Antidote
   zone map 1454
+  task "Go to the Cleft of Shadow and accept Finding the Antidote" optional
   accept 813 npc 3189
 
 step
@@ -1278,8 +1278,8 @@ step
   accept 1501 npc 5875
 
 step
-  tip Leave through the Orgrimmar front gate and head southeast. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1411
+  task "Leave through the Orgrimmar front gate and head southeast. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)" optional
   goto 45.5,12 r 20 map 1411
 
 step
@@ -1288,18 +1288,18 @@ step
   kill 3118 quest 835.2 @53.85,25.09 map 1411
 
 step
-  tip When done, walk west to Rezlak and turn in Securing the Lines
   zone map 1411
+  task "When done, walk west to Rezlak and turn in Securing the Lines" optional
   turnin 835 npc 3293
 
 step
-  tip Kill Venomtail Scorpids: Finding the Antidote
   zone map 1411
+  task "Kill Venomtail Scorpids: Finding the Antidote" optional
   collect 4886 quest 813.1 @42.93,17.88 map 1411
 
 step
-  tip Kill Armored Crocolisks along the river: Lost But Not Forgotten
   zone map 1411
+  task "Kill Armored Crocolisks along the river: Lost But Not Forgotten" optional
   collect 4891 quest 816.1 @37.03,18.22 map 1411
 
 step
@@ -1312,15 +1312,15 @@ step
   collect 6486 quest 1498.1 @39.2,28.5 map 1411
 
 step
-  tip Kill Fizzle Darkstorm: Dark Storms
   zone map 1411
+  task "Kill Fizzle Darkstorm: Dark Storms" optional
   collect 4869 quest 806.1 @42.07,26.63 map 1411
 
 step
   when onquest 97281
   label q97281
-  tip If you have the orb, turn in to Rezlak: A Simmering Storm
   zone map 1411
+  task "If you have the orb, turn in to Rezlak: A Simmering Storm" optional
   turnin 97281 npc 3293
 
 step
@@ -1328,8 +1328,8 @@ step
   turnin 816 npc 3193
 
 step
-  tip Go back to Razor Hill and turn in Dark Storms
   zone map 1411
+  task "Go back to Razor Hill and turn in Dark Storms" optional
   turnin 806 npc 3142
 
 step
@@ -1343,8 +1343,8 @@ step
 
 step
   only Shaman
-  tip Kill Burning Blade cultists: Call of Fire
   zone map 1411
+  task "Kill Burning Blade cultists: Call of Fire" optional
   collect 6652 quest 1525.2 @52.82,29.2 map 1411
 
 step
@@ -1354,8 +1354,8 @@ step
 
 step
   only Shaman
-  tip Leave the cave and head east. Grind your way north to Margoz. Turn in Margoz
   zone map 1411
+  task "Leave the cave and head east. Grind your way north to Margoz. Turn in Margoz" optional
   turnin 828 npc 3208
 
 step
@@ -1365,8 +1365,8 @@ step
 
 step
   only Warrior,Hunter,Rogue,Priest,Warlock,Mage
-  tip Grind your way to Margoz. Turn in Margoz
   zone map 1411
+  task "Grind your way to Margoz. Turn in Margoz" optional
   turnin 828 npc 3208
 
 step
@@ -1375,29 +1375,29 @@ step
   accept 827 npc 3208
 
 step
-  tip Inside the cave, finish Skull Rock
   zone map 1411
+  task "Inside the cave, finish Skull Rock" optional
   task "Repair and sell junk." optional
   collect 4871 quest 827.1 @54.06,9.01 map 1411
 
 step
-  tip Kill Gazz'uz: Hidden Enemies
   zone map 1411
+  task "Kill Gazz'uz: Hidden Enemies" optional
   collect 14544 quest 5726.1 @51.88,9.56 map 1411
 
 step
-  tip - If he's hard, use the *Faintly Glowing Skull*. Click the Eye of Burning Shadow to accept Burning Shadows
+  task "- If he's hard, use the *Faintly Glowing Skull*. Click the Eye of Burning Shadow to accept Burning Shadows" optional
   accept 832 item 4903
 
 step
   only Warlock
-  tip Finish Creature of the Void. The chest is on the ledge behind Gazz'uz — jump onto the small rock first, then jump up from there.
   zone map 1411
+  task "Finish Creature of the Void. The chest is on the ledge behind Gazz'uz — jump onto the small rock first, then jump up from there." optional
   collect 6535 quest 1501.1 @51.61,9.74 map 1411
 
 step
-  tip Try to reach First Aid 40 here (Linen Cloth), or you may have to buy it from the Auction House later. Grind your way back to Margoz and turn in Skull Rock
   zone map 1411
+  task "Try to reach First Aid 40 here (Linen Cloth), or you may have to buy it from the Auction House later. Grind your way back to Margoz and turn in Skull Rock" optional
   turnin 827 npc 3208
 
 step
@@ -1410,25 +1410,25 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue
-  tip Discover the Orgrimmar flight path.
   zone map 1454
+  task "Discover the Orgrimmar flight path." optional
   getfp "Orgrimmar"
 
 step
-  tip Turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
+  task "Turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   task "(If you have Skinning) try to reach skill 50 before going to Orgrimmar." optional
   task "Head to Orgrimmar." optional
   turnin 5726 npc 4949
 
 step
-  tip Accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
+  task "Accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   accept 5727 npc 4949
 
 step
-  tip Go down into the Cleft of Shadow and turn in Finding the Antidote
   zone map 1454
+  task "Go down into the Cleft of Shadow and turn in Finding the Antidote" optional
   turnin 813 npc 3189
 
 step
@@ -1440,7 +1440,7 @@ step
   turnin 832 npc 3216
 
 step
-  tip Talk to Neeru Fireblade: Hidden Enemies
+  task "Talk to Neeru Fireblade: Hidden Enemies" optional
   complete 5727
 
 step
@@ -1460,13 +1460,13 @@ step
 
 step
   only Warlock
-  tip - Go to the summoning circle next to Neeru Fireblade. - Use the *Glyphs of Summoning*. - Kill the Voidwalker. Go back and turn in The Binding
   zone map 1454
+  task "- Go to the summoning circle next to Neeru Fireblade. - Use the *Glyphs of Summoning*. - Kill the Voidwalker. Go back and turn in The Binding" optional
   turnin 1504 npc 5875
 
 step
-  tip Go back to Thrall and turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)
   zone map 1454
+  task "Go back to Thrall and turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   turnin 5727 npc 4949
 
 step
@@ -1475,19 +1475,19 @@ step
 
 step
   only Rogue
-  tip Train new spells
   zone map 1454
+  task "Train new spells" optional
   goto 42.6,53 r 20 map 1454
 
 step
   only Warlock
-  tip Train new spells
   zone map 1454
+  task "Train new spells" optional
   goto 48.2,45.2 r 20 map 1454
 
 step
-  tip Leave through the Orgrimmar front gate. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)
   zone map 1411
+  task "Leave through the Orgrimmar front gate. (From level 10, resurrecting at the Spirit Healer gives Resurrection Sickness, so we walk instead of dying.)" optional
   task "Train new spells" optional only Priest
   task "Train new spells" optional only Shaman
   task "Train: Conjure Water (Rank 2), Dampen Magic (Rank 1), Fireball (Rank 3)" optional only Mage
@@ -1507,8 +1507,8 @@ step
 
 step
   only Warrior
-  tip Cross the bridge west of Orgrimmar and turn in to Uzzek at Far Watch Post: Path of Defense
   zone map 1413
+  task "Cross the bridge west of Orgrimmar and turn in to Uzzek at Far Watch Post: Path of Defense" optional
   turnin 1498 npc 5810
 
 step
@@ -1518,14 +1518,14 @@ step
 
 step
   only Warrior
-  tip On the way to the Crossroads, turn in to Thun'grim Firegaze: Thun'grim Firegaze
   zone map 1413
+  task "On the way to the Crossroads, turn in to Thun'grim Firegaze: Thun'grim Firegaze" optional
   turnin 1502 npc 5878
 
 step
   only Shaman
-  tip Follow the river south to the Shrine of the Dormant Flame and turn in to Telf Joolam: Call of Fire
   zone map 1411
+  task "Follow the river south to the Shrine of the Dormant Flame and turn in to Telf Joolam: Call of Fire" optional
   turnin 1525 npc 5900
 
 step
@@ -1535,32 +1535,32 @@ step
 
 step
   only Shaman
-  tip Kill the Minor Manifestation of Fire at the top of the shrine and light the brazier: Call of Fire
   zone map 1411
+  task "Kill the Minor Manifestation of Fire at the top of the shrine and light the brazier: Call of Fire" optional
   collect 6655 quest 1526.1 @39,58.6 map 1411
 
 step
   only Shaman
-  tip Turn in at the brazier: Call of Fire
   zone map 1411
+  task "Turn in at the brazier: Call of Fire" optional
   turnin 1526 object 61934
 
 step
   only Shaman
-  tip Accept at the brazier: Call of Fire
   zone map 1411
+  task "Accept at the brazier: Call of Fire" optional
   accept 1527 object 61934
 
 step
   only Shaman
-  tip Cross the river and turn in to Kranal Fiss at Far Watch Post: Call of Fire — you get your Fire Totem
   zone map 1413
+  task "Cross the river and turn in to Kranal Fiss at Far Watch Post: Call of Fire — you get your Fire Totem" optional
   turnin 1527 npc 5907
 
 step
   only Warrior,Shaman
-  tip Head southwest to the Crossroads.
   zone map 1413
+  task "Head southwest to the Crossroads." optional
   goto 52.2,31 r 20 map 1413
 
 step
@@ -1575,8 +1575,8 @@ step
 step
   when complete 99051
   label q99051
-  tip If you finished Orgnil's quests, turn them in: Threat from Below
   zone map 1411
+  task "If you finished Orgnil's quests, turn them in: Threat from Below" optional
   task "- You may need to abandon and re-accept the quest to complete it." optional only Mage,Priest
   task "- You may need to abandon and re-accept the quest to complete it." optional only Warlock,Warrior,Rogue,Hunter,Shaman
   task "Razor Hill Hearth to Razor Hill." optional only Mage,Priest,Hunter,Warlock,Rogue
@@ -1610,8 +1610,8 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue
-  tip Run to the Crossroads, killing mobs on the way. Turn in Crossroads Conscription
   zone map 1413
+  task "Run to the Crossroads, killing mobs on the way. Turn in Crossroads Conscription" optional
   turnin 842 npc 3338
 
 step
@@ -1620,8 +1620,8 @@ step
   turnin 6365 npc 3615
 
 step
-  tip Discover the The Crossroads flight path.
   zone map 1413
+  task "Discover the The Crossroads flight path." optional
   getfp "Crossroads"
 
 step
@@ -1631,7 +1631,7 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll
-  tip Orgrimmar Fly to Orgrimmar.
+  task "Orgrimmar Fly to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
@@ -1656,7 +1656,7 @@ step
 
 step
   only Orc,Troll
-  tip The Crossroads Fly to the Crossroads.
+  task "The Crossroads Fly to the Crossroads." optional
   fly "Crossroads"
 
 step
@@ -1665,10 +1665,10 @@ step
   turnin 6386 npc 3489
 
 step
-  tip Set your Hearthstone to The Crossroads with the innkeeper.
   zone map 1413
+  task "Set your Hearthstone to The Crossroads with the innkeeper." optional
   sethome "The Crossroads"
 
 step
-  tip Reach level 12; then the 12-25 Nood guide follows.
+  task "Reach level 12; then the 12-25 Nood guide follows." optional
   level 12

@@ -10,8 +10,8 @@ next nood/07-30-40
 # Written by tools/emit_guide.py from 06_25-30_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
-  tip From Zoram'gar, cross Ashenvale to the east to Splintertree Post and discover the flight path.
   zone map 1440
+  task "From Zoram'gar, cross Ashenvale to the east to Splintertree Post and discover the flight path." optional
   task ">> Next dungeon: The Excavation Site: Wetlands (at about Lv27) — about Lv25.3 now. Until then, do the Ashenvale and Hillsbrad Foothills quests (dungeon quests are picked up when it's the dungeon's turn)." optional
   getfp "Splintertree Post"
 
@@ -32,33 +32,33 @@ step
 
 step
   when level<34
-  tip Combine the shredder pages and turn in The Lost Pages
   zone map 1440
+  task "Combine the shredder pages and turn in The Lost Pages" optional
   turnin 6504 npc 12718
 
 step
   when level>=34
   when complete 6504
-  tip Combine the shredder pages and turn in The Lost Pages
   zone map 1440
+  task "Combine the shredder pages and turn in The Lost Pages" optional
   turnin 6504 npc 12718
 
 step
-  tip Orgrimmar Fly to Orgrimmar.
+  task "Orgrimmar Fly to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
-  tip Accept from Vorstan in Orgrimmar: Changing Tastes (Forever new · Excavation Site dungeon quest)
   zone map 1454
+  task "Accept from Vorstan in Orgrimmar: Changing Tastes (Forever new · Excavation Site dungeon quest)" optional
   accept 95697 npc 3368
 
 step
-  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
   zone map 1411
+  task "Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
-  tip The Sepulcher Fly to the Sepulcher (Silverpine Forest).
+  task "The Sepulcher Fly to the Sepulcher (Silverpine Forest)." optional
   fly "The Sepulcher"
 
 step
@@ -67,8 +67,8 @@ step
   accept 493 npc 1937
 
 step
-  tip Follow the road into Hillsbrad Foothills.
   zone map 1424
+  task "Follow the road into Hillsbrad Foothills." optional
   goto 20.8,47.4 r 20 map 1424
 
 step
@@ -77,8 +77,8 @@ step
   accept 494 npc 2214
 
 step
-  tip Keep following the main road. Go straight at the first fork and turn left at the second — you'll soon reach Tarren Mill. Discover the Tarren Mill flight path.
   zone map 1424
+  task "Keep following the main road. Go straight at the first fork and turn left at the second — you'll soon reach Tarren Mill. Discover the Tarren Mill flight path." optional
   getfp "Tarren Mill"
 
 step
@@ -108,49 +108,49 @@ step
 
 step
   when level<26
-  tip Click the Wanted poster to accept WANTED: Syndicate Personnel
   zone map 1424
+  task "Click the Wanted poster to accept WANTED: Syndicate Personnel" optional
   accept 549 object 556670
 
 step
   when level<32
-  tip Click the poster to accept Dangerous!
   zone map 1424
+  task "Click the poster to accept Dangerous!" optional
   accept 567 object 556669
 
 step
-  tip Grind your way to Durnholde Keep at this point.
   zone map 1424
+  task "Grind your way to Durnholde Keep at this point." optional
   goto 76,46 r 20 map 1424
 
 step
-  tip Go inside the keep. Kill Jailor Marlgen at this point and loot the key
   zone map 1424
+  task "Go inside the keep. Kill Jailor Marlgen at this point and loot the key" optional
   goto 78,40.5 r 20 map 1424
 
 step
   when level<26
-  tip Free Tog'thar: The Rescue
   zone map 1424
+  task "Free Tog'thar: The Rescue" optional
   interact 1722 quest 498.2
 
 step
   when level<26
-  tip Jailor Eston is somewhere nearby too. Kill him, loot the key and free Drull: The Rescue
   zone map 1424
+  task "Jailor Eston is somewhere nearby too. Kill him, loot the key and free Drull: The Rescue" optional
   interact 1721 quest 498.1
 
 step
   when level<26
-  tip Kill Syndicate members: WANTED: Syndicate Personnel
   zone map 1424
+  task "Kill Syndicate members: WANTED: Syndicate Personnel" optional
   kill 2260 quest 549.1
   kill 2261 quest 549.2
 
 step
   when level<26
-  tip Go back to Tarren Mill. Kill bears and spiders on the way: Elixir of Suffering
   zone map 1424
+  task "Go back to Tarren Mill. Kill bears and spiders on the way: Elixir of Suffering" optional
   collect 3476 quest 496.1
   collect 3477 quest 496.2
 
@@ -198,8 +198,8 @@ step
   turnin 499 npc 2230
 
 step
-  tip Go to the farms to the west.
   zone map 1424
+  task "Go to the farms to the west." optional
   goto 35.2,42.6 r 20 map 1424
 
 step
@@ -227,20 +227,20 @@ step
   accept 528 npc 2215
 
 step
-  tip Go back to the farms.
   zone map 1424
+  task "Go back to the farms." optional
   goto 32.6,35.4 r 20 map 1424
 
 step
   when level<29
-  tip Kill peasants: Battle of Hillsbrad
   zone map 1424
+  task "Kill peasants: Battle of Hillsbrad" optional
   kill 2267 quest 528.1 @35.2,47 map 1424
 
 step
   when level<32
-  tip Kill Farmer Kalaba: Dangerous!
   zone map 1424
+  task "Kill Farmer Kalaba: Dangerous!" optional
   kill 2451 quest 567.4 @36,46 map 1424
 
 step
@@ -274,28 +274,28 @@ step
   level 27 -- You need to be level 27 (healers can go at 26). If not, grind a little more in Hillsbrad Foothills.
 
 step
-  tip From Tarren Mill, cross the Arathi Highlands east to Hammerfall and discover the flight path.
   zone map 1417
+  task "From Tarren Mill, cross the Arathi Highlands east to Hammerfall and discover the flight path." optional
   task "* Excavation Site: Wetlands — Lv27.1 -> about Lv28.1 · recommended Lv26-27 (healer 26 · tank/DPS 27)" optional
   getfp "Hammerfall"
 
 step
-  tip Accept from Zaruk in Hammerfall: Dragonmaw Rumors
   zone map 1417
+  task "Accept from Zaruk in Hammerfall: Dragonmaw Rumors" optional
   accept 95663 npc 2787
 
 step
-  tip Turn in to the Deathstalker on the hill above the Dragonmaw camp: Dragonmaw Rumors
   zone map 1437
+  task "Turn in to the Deathstalker on the hill above the Dragonmaw camp: Dragonmaw Rumors" optional
   turnin 95663 npc 13155
 
 step
-  tip Then accept (or get it shared): Open the Maw
   zone map 1437
+  task "Then accept (or get it shared): Open the Maw" optional
   accept 95682 npc 13155
 
 step
-  tip Enter the Excavation Site dungeon right below. Kill Dragonmaw Guardians and Saboteurs and recover the items from the Dragonmaw Magi: Open the Maw
+  task "Enter the Excavation Site dungeon right below. Kill Dragonmaw Guardians and Saboteurs and recover the items from the Dragonmaw Magi: Open the Maw" optional
   complete 95682
 
 step
@@ -307,8 +307,9 @@ step
   complete 95697 -- If you got "Changing Tastes" from Vorstan in Orgrimmar, collect the Thicket Raptor meat: Changing Tastes
 
 step
-  tip Turn in to the Deathstalker: Open the Maw
   zone map 1437
+  task "[Heads-up] Soon you hearth to The Crossroads. Keep your Hearthstone until then and check its cooldown now." optional
+  task "Turn in to the Deathstalker: Open the Maw" optional
   turnin 95682 npc 13155
   task "! Your Hearthstone should be set to the Crossroads (set in the 12-25 guide). If not, fly or run to Splintertree Post instead." optional
   task ">> Next dungeon: Dalaran (at about Lv30.1) — about Lv28.1 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, fly from Hammerfall to Tarren Mill, then take the zeppelin to Orgrimmar from the tower east of Undercity)." optional
@@ -317,39 +318,39 @@ step
   hearth "The Crossroads"
 
 step
-  tip Splintertree Post Fly to Splintertree Post.
+  task "Splintertree Post Fly to Splintertree Post." optional
   fly "Splintertree Post"
 
 step
-  tip Go to this point.
   zone map 1440
+  task "Go to this point." optional
   goto 66,74 r 20 map 1440
 
 step
   when level<29
-  tip Clear all the night elves at Silverwing Outpost. Kill the elementals in the lake: Stonetalon Standstill
   zone map 1440
+  task "Clear all the night elves at Silverwing Outpost. Kill the elementals in the lake: Stonetalon Standstill" optional
   kill 3917 quest 25.1
 
 step
   when level<29
-  tip Kill Tideress near the hut on the small island in the middle: Stonetalon Standstill
   zone map 1440
+  task "Kill Tideress near the hut on the small island in the middle: Stonetalon Standstill" optional
   kill 3917 quest 25.1
 
 step
   when level<31
-  tip Pick up the item it drops and accept The Befouled Element
+  task "Pick up the item it drops and accept The Befouled Element" optional
   accept 1918 item 16408
 
 step
-  tip Go to this point.
   zone map 1440
+  task "Go to this point." optional
   goto 40,65 r 20 map 1440
 
 step
-  tip Ursangous, the white bear, wanders around. Go to this point.
   zone map 1440
+  task "Ursangous, the white bear, wanders around. Go to this point." optional
   goto 54,62 r 20 map 1440
 
 step
@@ -369,60 +370,60 @@ step
   turnin 1918 npc 12737
 
 step
-  tip Camp Taurajo Fly to Camp Taurajo (if you don't have it, fly to the Crossroads and run south).
+  task "Camp Taurajo Fly to Camp Taurajo (if you don't have it, fly to the Crossroads and run south)." optional
   task "! Don't use your Hearthstone here — you just used it (1-hour cooldown). Fly from Splintertree Post to Camp Taurajo." optional
   fly "Camp Taurajo"
 
 step
-  tip Pick up all the Bloodstone Shards, you'll need them later. Follow the road a bit north, then head east toward the Northwatch Hold. Go to at Northwatch Hold,
   zone map 1413
+  task "Pick up all the Bloodstone Shards, you'll need them later. Follow the road a bit north, then head east toward the Northwatch Hold. Go to at Northwatch Hold," optional
   goto 63.2,56.6 r 20 map 1413
 
 step
-  tip come down from the tower and go to,
   zone map 1413
+  task "come down from the tower and go to," optional
   goto 60.4,54.8 r 20 map 1413
 
 step
-  tip go down the hill to.
   zone map 1413
+  task "go down the hill to." optional
   goto 61.9,54.6 r 20 map 1413
 
 step
   when level<24
-  tip Then take the stairs down to the lower floor of the tower. It's a long escort, so a group is a good idea. Turn in Deepmoss Spider Eggs
   zone map 1413
+  task "Then take the stairs down to the lower floor of the tower. It's a long escort, so a group is a good idea. Turn in Deepmoss Spider Eggs" optional
   turnin 1069 npc 3446
 
 step
   when level>=24
   when complete 1069
-  tip Then take the stairs down to the lower floor of the tower. It's a long escort, so a group is a good idea. Turn in Deepmoss Spider Eggs
   zone map 1413
+  task "Then take the stairs down to the lower floor of the tower. It's a long escort, so a group is a good idea. Turn in Deepmoss Spider Eggs" optional
   turnin 1069 npc 3446
 
 step
-  tip Camp Taurajo Fly to Camp Taurajo.
+  task "Camp Taurajo Fly to Camp Taurajo." optional
   fly "Camp Taurajo"
 
 step
-  tip At this point, look for Washte Pawne.
   zone map 1413
+  task "At this point, look for Washte Pawne." optional
   goto 42,80 r 20 map 1413
 
 step
   when level<29
-  tip It's a red wind serpent roaming the Field of Giants. Loot its feather to accept Washte Pawne
+  task "It's a red wind serpent roaming the Field of Giants. Loot its feather to accept Washte Pawne" optional
   accept 885 item 5103
 
 step
-  tip Find Gann Stonespire, who patrols up and down the road. At Bael Modan excavation
   zone map 1413
+  task "Find Gann Stonespire, who patrols up and down the road. At Bael Modan excavation" optional
   goto 47.6,85.2 r 20 map 1413
 
 step
-  tip enter the dwarven fortress above the excavation
   zone map 1413
+  task "enter the dwarven fortress above the excavation" optional
   goto 48.4,84 r 20 map 1413
 
 step
@@ -431,34 +432,35 @@ step
   turnin 885 npc 3387
 
 step
-  tip Orgrimmar Fly to Orgrimmar (Camp Taurajo).
+  task "Orgrimmar Fly to Orgrimmar (Camp Taurajo)." optional
   task "! Instead of hearthing, fly straight to Orgrimmar from the Camp Taurajo flight path (you'll set and use the Hearthstone from Orgrimmar)." optional
   fly "Orgrimmar"
 
 step
-  tip Set your Hearthstone to Orgrimmar with the innkeeper in the Valley of Strength (the rest of the guides hearth to Orgrimmar).
   zone map 1454
+  task "Set your Hearthstone to Orgrimmar with the innkeeper in the Valley of Strength (the rest of the guides hearth to Orgrimmar)." optional
   sethome "Orgrimmar"
 
 step
-  tip Splintertree Post Fly to Splintertree Post.
+  task "Splintertree Post Fly to Splintertree Post." optional
   fly "Splintertree Post"
 
 step
-  tip Go to this point.
   zone map 1440
+  task "Go to this point." optional
   goto 57,56 r 20 map 1440
 
 step
-  tip Kill the Laughing Sisters at this point until Shadumbra shows up or comes to you. Go to Satyrnaar at this point.
   zone map 1440
+  task "[Heads-up] Soon you hearth to Orgrimmar. Keep your Hearthstone until then and check its cooldown now." optional
+  task "Kill the Laughing Sisters at this point until Shadumbra shows up or comes to you. Go to Satyrnaar at this point." optional
   goto 81,52 r 20 map 1440
   task "! Your Hearthstone must be set to Orgrimmar. If it's set elsewhere, fly or run to Orgrimmar instead of hearthing." optional
 
 step
   when level<30
-  tip Kill satyrs to finish: Satyr Horns
   zone map 1440
+  task "Kill satyrs to finish: Satyr Horns" optional
   collect 5481 quest 6441.1
 
 step
@@ -476,34 +478,34 @@ step
   hearth "Orgrimmar"
 
 step
-  tip Camp Taurajo Fly to Camp Taurajo.
+  task "Camp Taurajo Fly to Camp Taurajo." optional
   task "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Splintertree Post to Orgrimmar)." optional
   task "! Order changed: since you hearthed to Orgrimmar, do Thousand Needles in Kalimdor first, then take the zeppelin only once and continue Hillsbrad -> Dalaran." optional
   fly "Camp Taurajo"
 
 step
-  tip Go to the Great Lift at this point.
   zone map 1441
+  task "Go to the Great Lift at this point." optional
   goto 32,22 r 20 map 1441
 
 step
-  tip Go to Freewind Post at this point.
   zone map 1441
+  task "Go to Freewind Post at this point." optional
   goto 45.6,50.6 r 20 map 1441
 
 step
-  tip Discover the Freewind Post flight path.
   zone map 1441
+  task "Discover the Freewind Post flight path." optional
   getfp "Freewind Post"
 
 step
-  tip Accept from Jandia: Stolen Freewind Supplies (new in Forever)
   zone map 1441
+  task "Accept from Jandia: Stolen Freewind Supplies (new in Forever)" optional
   accept 98069 npc 4877
 
 step
-  tip Accept from Jandia: Stop the Screeching (new in Forever)
   zone map 1441
+  task "Accept from Jandia: Stop the Screeching (new in Forever)" optional
   accept 98070 npc 4877
 
 step
@@ -513,36 +515,36 @@ step
 
 step
   when onquest 1149
-  tip After you're teleported, jump off. Turn in Test of Faith
   zone map 1441
+  task "After you're teleported, jump off. Turn in Test of Faith" optional
   turnin 1149 npc 2986
 
 step
-  tip On the way west to Roguefeather Den, kill 5 each of Screeching Harpies, Roguefeathers and Windcallers: Stop the Screeching
   zone map 1441
+  task "On the way west to Roguefeather Den, kill 5 each of Screeching Harpies, Roguefeathers and Windcallers: Stop the Screeching" optional
   task "Also check these spots for eggs." optional
   kill 4100 quest 98070.1 @26.8,54.5 map 1441
   kill 4101 quest 98070.2 @26.8,54.5 map 1441
   kill 4104 quest 98070.3 @26.8,54.5 map 1441
 
 step
-  tip Collect 8 Stolen Freewind Supplies in the same area: Stolen Freewind Supplies
+  task "Collect 8 Stolen Freewind Supplies in the same area: Stolen Freewind Supplies" optional
   complete 98069
 
 step
-  tip Go to the Roguefeather Den at this point.
   zone map 1441
+  task "Go to the Roguefeather Den at this point." optional
   goto 12,32 r 20 map 1441
 
 step
   when level<33
-  tip Pick up eggs while killing wind serpents. Accept Homeward Bound
   zone map 1441
+  task "Pick up eggs while killing wind serpents. Accept Homeward Bound" optional
   accept 4770 npc 10427
 
 step
   when level<33
-  tip A simple escort quest. Escort to finish: Homeward Bound
+  task "A simple escort quest. Escort to finish: Homeward Bound" optional
   complete 4770
 
 step
@@ -551,39 +553,39 @@ step
   turnin 4770 npc 10428
 
 step
-  tip Back at Freewind Post, turn in to Jandia: Stolen Freewind Supplies
   zone map 1441
+  task "Back at Freewind Post, turn in to Jandia: Stolen Freewind Supplies" optional
   turnin 98069 npc 4877
 
 step
-  tip Turn in to Jandia: Stop the Screeching
   zone map 1441
+  task "Turn in to Jandia: Stop the Screeching" optional
   turnin 98070 npc 4877
 
 step
-  tip Orgrimmar Fly to Orgrimmar.
+  task "Orgrimmar Fly to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
-  tip Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate.
   zone map 1411
+  task "Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
-  tip Accept from Doctor Martin Felben in the Apothecarium (or get it shared): Source of Power
   zone map 1458
+  task "Accept from Doctor Martin Felben in the Apothecarium (or get it shared): Source of Power" optional
   task "== Dalaran prep == Get off the zeppelin and enter Undercity (Prison Break In, Key to the City and Blood in the Streets need Lv30 — you pick them up in Tarren Mill after Hillsbrad)." optional
   accept 96988 npc 11044
 
 step
-  tip Tarren Mill Fly to Tarren Mill.
+  task "Tarren Mill Fly to Tarren Mill." optional
   fly "Tarren Mill"
   task "== Hillsbrad Foothills (right after picking up the Dalaran quests) ==" optional
 
 step
   when level<30
-  tip Finish the quest at the farms: Battle of Hillsbrad
   zone map 1424
+  task "Finish the quest at the farms: Battle of Hillsbrad" optional
   complete 529 @33,48.8 map 1424
 
 step
@@ -604,51 +606,51 @@ step
 
 step
   when level<32
-  tip Go into the town hall and kill Clerk Horace Whitesteed: Dangerous!
   zone map 1424
+  task "Go into the town hall and kill Clerk Horace Whitesteed: Dangerous!" optional
   kill 2448 quest 567.1 @29.4,43 map 1424
 
 step
   when level<30
-  tip Kill Magistrate Burnside: Battle of Hillsbrad
   zone map 1424
+  task "Kill Magistrate Burnside: Battle of Hillsbrad" optional
   kill 2335 quest 532.1 @30,42.8 map 1424
 
 step
   when level<30
-  tip Destroy the proclamation in front of Burnside: Battle of Hillsbrad
   zone map 1424
+  task "Destroy the proclamation in front of Burnside: Battle of Hillsbrad" optional
   interact 1761 quest 532.3
 
 step
   when level<30
-  tip Take the town registry: Battle of Hillsbrad
   zone map 1424
+  task "Take the town registry: Battle of Hillsbrad" optional
   collect 3657 quest 532.4 @29.6,41.6 map 1424
 
 step
   when level<30
-  tip Finish killing the Hillsbrad councilmen: Battle of Hillsbrad
   zone map 1424
+  task "Finish killing the Hillsbrad councilmen: Battle of Hillsbrad" optional
   kill 2387 quest 532.2
 
 step
   when level<32
-  tip *Find* and kill Citizen Wilkes: Dangerous!
   zone map 1424
+  task "*Find* and kill Citizen Wilkes: Dangerous!" optional
   kill 2449 quest 567.2 @34,38.8 map 1424
 
 step
   when level<30
-  tip Go back to Tarren Mill. Turn in Battle of Hillsbrad
   zone map 1424
+  task "Go back to Tarren Mill. Turn in Battle of Hillsbrad" optional
   turnin 532 npc 2215
 
 step
   when level>=30
   when complete 532
-  tip Go back to Tarren Mill. Turn in Battle of Hillsbrad
   zone map 1424
+  task "Go back to Tarren Mill. Turn in Battle of Hillsbrad" optional
   turnin 532 npc 2215
 
 step
@@ -657,52 +659,52 @@ step
   accept 539 npc 2215
 
 step
-  tip Head southwest to the Azurelode Mine and enter through the low entrance at this point.
   zone map 1424
+  task "Head southwest to the Azurelode Mine and enter through the low entrance at this point." optional
   goto 26,58 r 20 map 1424
 
 step
   when level<32
-  tip Find and kill Miner Hackett: Dangerous!
   zone map 1424
+  task "Find and kill Miner Hackett: Dangerous!" optional
   kill 2450 quest 567.3
 
 step
   when level<32
-  tip Kill Hillsbrad miners and Foreman Bonds: Battle of Hillsbrad
   zone map 1424
+  task "Kill Hillsbrad miners and Foreman Bonds: Battle of Hillsbrad" optional
   kill 2305 quest 539.1
   kill 2269 quest 539.2
 
 step
-  tip Leave the mine and go to.
   zone map 1424
+  task "Leave the mine and go to." optional
   goto 65,60 r 20 map 1424
 
 step
   when level<32
-  tip Collect Mudsnout Blossoms: Elixir of Agony
   zone map 1424
+  task "Collect Mudsnout Blossoms: Elixir of Agony" optional
   collect 3502 quest 509.1
 
 step
   when onquest 98094
   label q98094
-  tip Turn in to Deathstalker Mathoz outside Durnholde: Scout Support
   zone map 1424
+  task "Turn in to Deathstalker Mathoz outside Durnholde: Scout Support" optional
   turnin 98094 npc 270438
 
 step
   when level<32
-  tip Go back to Tarren Mill. Turn in Dangerous!
   zone map 1424
+  task "Go back to Tarren Mill. Turn in Dangerous!" optional
   turnin 567 npc 2215
 
 step
   when level>=32
   when complete 567
-  tip Go back to Tarren Mill. Turn in Dangerous!
   zone map 1424
+  task "Go back to Tarren Mill. Turn in Dangerous!" optional
   turnin 567 npc 2215
 
 step
@@ -717,8 +719,8 @@ step
   turnin 539 npc 2215
 
 step
-  tip Then accept from High Executor Darthalia: Battle of Hillsbrad (Dun Garok elites — done in the 30-40 guide together with Humbert's Sword in a group of 2-3)
   zone map 1424
+  task "Then accept from High Executor Darthalia: Battle of Hillsbrad (Dun Garok elites — done in the 30-40 guide together with Humbert's Sword in a group of 2-3)" optional
   accept 541 npc 2215
 
 step
@@ -733,44 +735,44 @@ step
   turnin 509 npc 2216
 
 step
-  tip Accept from Melisara in Tarren Mill (or get it shared): The Grave Knight
   zone map 1424
+  task "Accept from Melisara in Tarren Mill (or get it shared): The Grave Knight" optional
   task "* Dalaran — Lv30.1 -> about Lv31.3 · recommended Lv30 (quests require level 30)" optional
   accept 96986 npc 2278
 
 step
-  tip Accept from Magus Wordeen Voidglare (or get it shared): Key to the City — Dungeon prereq (Dalaran)
   zone map 1424
+  task "Accept from Magus Wordeen Voidglare (or get it shared): Key to the City — Dungeon prereq (Dalaran)" optional
   accept 93680 npc 2410
 
 step
-  tip Accept (or get it shared): Prison Break In — Dungeon prereq (Dalaran)
   zone map 1424
+  task "Accept (or get it shared): Prison Break In — Dungeon prereq (Dalaran)" optional
   accept 544 npc 2410
 
 step
-  tip Loot the Grimy Key from the Jailor's Locker in southwestern Alterac Mountains (toward Lordamere Lake): Key to the City
   zone map 1416
+  task "Loot the Grimy Key from the Jailor's Locker in southwestern Alterac Mountains (toward Lordamere Lake): Key to the City" optional
   complete 93680 @16.4,89.3 map 1416
 
 step
-  tip Just north, at the Dalaran internment camp: loot 4 Bloodstones from the 4 undead traitors (Ricter, Alina, Dermot, Kegan): Prison Break In
   zone map 1416
+  task "Just north, at the Dalaran internment camp: loot 4 Bloodstones from the 4 undead traitors (Ricter, Alina, Dermot, Kegan): Prison Break In" optional
   complete 544 @21,84 map 1416
 
 step
-  tip Go back to Tarren Mill and turn in to Wordeen: Key to the City — Dungeon prereq (Dalaran)
   zone map 1424
+  task "Go back to Tarren Mill and turn in to Wordeen: Key to the City — Dungeon prereq (Dalaran)" optional
   turnin 93680 npc 2410
 
 step
-  tip Turn in Prison Break In — Dungeon prereq (Dalaran)
   zone map 1424
+  task "Turn in Prison Break In — Dungeon prereq (Dalaran)" optional
   turnin 544 npc 2410
 
 step
-  tip Then accept (or get it shared): Dalaran Patrols — Dungeon chain (Dalaran)
   zone map 1424
+  task "Then accept (or get it shared): Dalaran Patrols — Dungeon chain (Dalaran)" optional
   accept 545 npc 2410
 
 step
@@ -788,62 +790,62 @@ step
 step
   when complete 96987
   label q96987
-  tip Turn in to Lexi Copperclutch: Opportunistic Education
+  task "Turn in to Lexi Copperclutch: Opportunistic Education" optional
   turnin 96987
 
 step
-  tip Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 Enslaved Earth Elementals: Dalaran Patrols
   zone map 1416
+  task "Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 Enslaved Earth Elementals: Dalaran Patrols" optional
   complete 545 @21,80 map 1416
 
 step
-  tip Turn in to Melisara in Tarren Mill: The Grave Knight
   zone map 1424
+  task "Turn in to Melisara in Tarren Mill: The Grave Knight" optional
   turnin 96986 npc 2278
 
 step
-  tip Turn in Dalaran Patrols — Dungeon chain (Dalaran)
   zone map 1424
+  task "Turn in Dalaran Patrols — Dungeon chain (Dalaran)" optional
   turnin 545 npc 2410
 
 step
-  tip Then accept Blood in the Streets — Dungeon prereq (Dalaran)
   zone map 1424
+  task "Then accept Blood in the Streets — Dungeon prereq (Dalaran)" optional
   accept 92434 npc 2410
 
 step
-  tip Find the way into Dalaran along Lordamere Lake: Blood in the Streets
+  task "Find the way into Dalaran along Lordamere Lake: Blood in the Streets" optional
   complete 92434
 
 step
-  tip Turn in to the image of Archmage Modera: Blood in the Streets — Dungeon prereq (Dalaran)
   zone map 1421
+  task "Turn in to the image of Archmage Modera: Blood in the Streets — Dungeon prereq (Dalaran)" optional
   turnin 92434 npc 269127
 
 step
-  tip Then accept (or get it shared): Heart of Disruption
   zone map 1421
+  task "Then accept (or get it shared): Heart of Disruption" optional
   accept 96984 npc 269127
 
 step
   complete 96984 -- Collect the arcane motes inside Dalaran: Heart of Disruption
 
 step
-  tip Turn in to Magus Wordeen Voidglare: Heart of Disruption
   zone map 1424
+  task "Turn in to Magus Wordeen Voidglare: Heart of Disruption" optional
   turnin 96984 npc 2410
 
 step
-  tip Undercity Fly to Undercity.
+  task "Undercity Fly to Undercity." optional
   fly "Undercity"
 
 step
-  tip Turn in to Doctor Martin Felben in the Apothecarium: Source of Power
   zone map 1458
+  task "Turn in to Doctor Martin Felben in the Apothecarium: Source of Power" optional
   turnin 96988 npc 11044
 
 step
-  tip In the Apothecarium, accept from Master Apothecary Faranell (or get it shared): Going, Going, Guano! (Kraul guano from Razorfen Kraul — prerequisite for 'Hearts of Zeal' in 32-45)
   zone map 1458
+  task "In the Apothecarium, accept from Master Apothecary Faranell (or get it shared): Going, Going, Guano! (Kraul guano from Razorfen Kraul — prerequisite for \"Hearts of Zeal\" in 32-45)" optional
   accept 1109 npc 2055
   task "That's the end of 25-30. Move on to the 30-40 guide (RFK, SM Graveyard/Library/Armory, RFD, Cathedral)." optional

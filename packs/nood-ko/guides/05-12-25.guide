@@ -11,32 +11,32 @@ next nood-ko/06-25-30
 
 step
   only Tauren
-  tip 멀고어 북쪽 길을 따라 불모의 땅 크로스로드로 가서 비행 지점을 발견한 뒤, 북쪽 큰길로 오그리마까지 달려가세요.
   zone map 1413
+  task "멀고어 북쪽 길을 따라 불모의 땅 크로스로드로 가서 비행 지점을 발견한 뒤, 북쪽 큰길로 오그리마까지 달려가세요." optional
   getfp "Crossroads"
 
 step
   only Skyborne
-  tip 썬더 블러프에서 남동쪽으로 내려와 타우라조 야영지를 발견하세요.
   zone map 1413
+  task "썬더 블러프에서 남동쪽으로 내려와 타우라조 야영지를 발견하세요." optional
   task "1-12 가이드를 12레벨에 중간에 마쳤다면: 발라나르 서쪽 선착장에서 하늘배를 타고 썬더 블러프로 간 뒤 아래 단계를 따라오세요." optional
   getfp "Camp Taurajo"
 
 step
   only Skyborne
-  tip 썬더 블러프에서 남동쪽으로 내려와 큰길을 따라 크로스로드로 간 뒤, 북쪽 큰길로 오그리마까지 달려가세요.
   zone map 1413
+  task "썬더 블러프에서 남동쪽으로 내려와 큰길을 따라 크로스로드로 간 뒤, 북쪽 큰길로 오그리마까지 달려가세요." optional
   getfp "Crossroads"
 
 step
   only Undead
-  tip 언더시티 동쪽 탑에서 오그리마행 비행선을 타세요.
   zone map 1420
+  task "언더시티 동쪽 탑에서 오그리마행 비행선을 타세요." optional
   goto 60.7,58.8 r 20 map 1420
 
 step
-  tip 오그리마 비행 조련사에게 오그리마를 발견하세요 (이미 있으면 저절로 넘어갑니다).
   zone map 1454
+  task "오그리마 비행 조련사에게 오그리마를 발견하세요 (이미 있으면 저절로 넘어갑니다)." optional
   task "이 가이드는 12레벨에서 시작합니다. 먼저 오그리마 스랄에게 성난불길 협곡 선행 퀘스트(\"내부의 배신자\")를 받으러 갑니다." optional
   task "*스킬*: 이 안내는 스킬을 배울 수 있다는 뜻입니다." optional
   task "하지만 40레벨 탈것 구매를 위해 골드를 아껴야 하므로, 중요한 스킬만 습득하시길 권장합니다." optional
@@ -45,69 +45,69 @@ step
   getfp "Orgrimmar"
 
 step
-  tip 지혜의 골짜기 스랄에게 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
+  task "지혜의 골짜기 스랄에게 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   task "── 1단계: 12레벨 — 스랄의 \"내부의 배신자\" (성난불길 협곡 선행) ── 이 연계를 끝내야 성난불길 협곡 퀘스트 \"내부의 배신자\"를 받을 수 있습니다." optional
   accept 5726 npc 4949
 
 step
   only Skyborne
   when onquest 95350
-  tip 스카이본은 여기서 스랄에게 퀘스트 완료: 아제로스에 오신 걸 환영합니다
   zone map 1454
+  task "스카이본은 여기서 스랄에게 퀘스트 완료: 아제로스에 오신 걸 환영합니다" optional
   turnin 95350 npc 4949
 
 step
-  tip 해골 바위 동굴의 불타는 칼날단 광신자·견습생에게서 부관의 휘장 (드롭률 약 20% — 운이 나쁘면 오래 걸립니다. 나올 때까지 잡으세요): 내부의 배신자
   zone map 1411
+  task "해골 바위 동굴의 불타는 칼날단 광신자·견습생에게서 부관의 휘장 (드롭률 약 20% — 운이 나쁘면 오래 걸립니다. 나올 때까지 잡으세요): 내부의 배신자" optional
   collect 14544 quest 5726.1 @51.9,9.6 map 1411
 
 step
-  tip 스랄에게 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
+  task "스랄에게 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   turnin 5726 npc 4949
 
 step
-  tip 이어서 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
+  task "이어서 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   accept 5727 npc 4949
 
 step
-  tip 어둠의 틈 네루 파이어블레이드와 대화하세요: 내부의 배신자
   zone map 1454
+  task "어둠의 틈 네루 파이어블레이드와 대화하세요: 내부의 배신자" optional
   complete 5727 @49.4,50.5 map 1454
 
 step
-  tip 스랄에게 돌아가 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)
   zone map 1454
+  task "스랄에게 돌아가 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   turnin 5727 npc 4949
 
 step
-  tip 이어서 퀘스트 수락: 내부의 배신자 (성난불길 협곡)
   zone map 1454
+  task "이어서 퀘스트 수락: 내부의 배신자 (성난불길 협곡)" optional
   accept 5728 npc 4949
 
 step
-  tip 어둠의 틈 네루 파이어블레이드에게 퀘스트 수락 (또는 공유받기): 야수 처단
   zone map 1454
+  task "어둠의 틈 네루 파이어블레이드에게 퀘스트 수락 (또는 공유받기): 야수 처단" optional
   accept 5761 npc 3216
   task "※ 지금 13레벨이 됐다면 아래 \"불모의 땅\" 선택 단계는 건너뛰고 바로 \"★ 성난불길 협곡 퀘스트 받기\"로 가세요. 아직 13레벨 전이면 불모의 땅 단계를 하며 13레벨을 채웁니다." optional
 
 step
   when level<13
-  tip ── 2단계 (선택): 13레벨 전이면 불모의 땅 — 통곡 연계 시작 ── 오그리마 서문으로 나가 남쪽 큰길로 크로스로드까지 가세요 (비행 지점이 있으면 크로스로드로 비행).
+  task "── 2단계 (선택): 13레벨 전이면 불모의 땅 — 통곡 연계 시작 ── 오그리마 서문으로 나가 남쪽 큰길로 크로스로드까지 가세요 (비행 지점이 있으면 크로스로드로 비행)." optional
   fly "Crossroads"
 
 step
   when level<13
-  tip 새로운 비행 지점을 발견하세요 (이미 있으면 저절로 넘어갑니다).
   zone map 1413
+  task "새로운 비행 지점을 발견하세요 (이미 있으면 저절로 넘어갑니다)." optional
   getfp "Crossroads"
 
 step
   when level<13
-  tip 여관주인에게 크로스로드를 귀환 장소로 설정하세요 (로데론의 폐허 뒤 귀환석으로 돌아옵니다).
   zone map 1413
+  task "여관주인에게 크로스로드를 귀환 장소로 설정하세요 (로데론의 폐허 뒤 귀환석으로 돌아옵니다)." optional
   sethome "The Crossroads"
   task "※ 초원타조·도둑 랩터·얼룩말은 따로 사냥하러 가지 말고 이동하면서 보일 때마다 잡으세요. 도둑 랩터는 가능하면 끝내 두세요 — 다음 연계 \"도둑맞은 은화\"를 통곡 선행 때 랩터 서식지에서 하게 됩니다." optional
 
@@ -137,15 +137,15 @@ step
 
 step
   when level<13
-  tip 통곡의 동굴 연계 첫 단계 — 통가 룬토템에게 퀘스트 수락: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "통곡의 동굴 연계 첫 단계 — 통가 룬토템에게 퀘스트 수락: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)" optional
   accept 870 npc 3448
 
 step
   when level<13
   when level<16
-  tip 한 번에 도둑 랩터를 완수하지 않고, 주변을 돌아다닐 때마다 수행하세요. 크로스로드 주변을 돌며 초원타조의 위협를 완수하세요.
   zone map 1413
+  task "한 번에 도둑 랩터를 완수하지 않고, 주변을 돌아다닐 때마다 수행하세요. 크로스로드 주변을 돌며 초원타조의 위협를 완수하세요." optional
   collect 5087 quest 844.1
 
 step
@@ -168,41 +168,41 @@ step
 
 step
   when level<13
-  tip 레그타르 데스게이트에게 퀘스트 수락: 켄타우로스의 팔보호구 — 한 번에 다 모으지 않아도 됩니다. 켄타우로스(우두머리 포함)를 잡을 때마다 모으고, 마지막 헤즈룰 블러드마크 때 15개를 채우세요.
   zone map 1413
+  task "레그타르 데스게이트에게 퀘스트 수락: 켄타우로스의 팔보호구 — 한 번에 다 모으지 않아도 됩니다. 켄타우로스(우두머리 포함)를 잡을 때마다 모으고, 마지막 헤즈룰 블러드마크 때 15개를 채우세요." optional
   accept 855 npc 3389
 
 step
   when level<13
   when level<19
-  tip 가는 도중에, 랩터와 얼룩말을 사냥하세요. 켄타우로스 주둔지를 향해 북쪽으로 이동하세요. 호수 주변에 있는 버섯을 주워 완수하세요: 버섯 포자
   zone map 1413
+  task "가는 도중에, 랩터와 얼룩말을 사냥하세요. 켄타우로스 주둔지를 향해 북쪽으로 이동하세요. 호수 주변에 있는 버섯을 주워 완수하세요: 버섯 포자" optional
   collect 5012 quest 848.1
 
 step
   when level<13
-  tip 호수 밑바닥 균열을 확인하세요 (탐험만 하면 되므로 레벨이 낮아도 됩니다): 잊혀진 웅덩이
   zone map 1413
+  task "호수 밑바닥 균열을 확인하세요 (탐험만 하면 되므로 레벨이 낮아도 됩니다): 잊혀진 웅덩이" optional
   complete 870 @44,22 map 1413
 
 step
   when level<13
   when level<20
-  tip 바라크 코도베인을 처치하세요: 콜카르 지도자
   zone map 1413
+  task "바라크 코도베인을 처치하세요: 콜카르 지도자" optional
   collect 5022 quest 850.1 @42.8,23.4 map 1413
 
 step
   when complete 850
   label q850
-  tip 레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자
   zone map 1413
+  task "레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자" optional
   turnin 850 npc 3389
 
 step
   when level<13
-  tip 퀘스트 수락: 광신자 베로그 (통곡의 동굴 가기 직전에 합니다)
   zone map 1413
+  task "퀘스트 수락: 광신자 베로그 (통곡의 동굴 가기 직전에 합니다)" optional
   accept 851 npc 3389
 
 step
@@ -226,35 +226,35 @@ step
 step
   when onquest 870
   label q870
-  tip 통가 룬토템에게 퀘스트 완료: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "통가 룬토템에게 퀘스트 완료: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)" optional
   task "연금술사 자마 퀘스트는 받지 마세요 (불뱀꽃은 썬더 블러프에서 바로 받습니다)." optional
   turnin 870 npc 3448
 
 step
   when level<13
-  tip 퀘스트 수락: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "퀘스트 수락: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)" optional
   accept 877 npc 3448
 
 step
   when level<13
   when level<17
-  tip 랩터 머리를 완수하세요: 도둑 랩터
   zone map 1413
+  task "랩터 머리를 완수하세요: 도둑 랩터" optional
   collect 5062 quest 869.1
 
 step
   when complete 869
   label q869
-  tip 가즈로그에게 퀘스트 완료: 도둑 랩터
   zone map 1413
+  task "가즈로그에게 퀘스트 완료: 도둑 랩터" optional
   turnin 869 npc 3464
 
 step
   when level<13
-  tip 가즈로그에게 이어서 퀘스트 수락: 도둑맞은 은화 — 통곡 선행 때 랩터 서식지에서 랩터를 잡으며 함께 합니다.
   zone map 1413
+  task "가즈로그에게 이어서 퀘스트 수락: 도둑맞은 은화 — 통곡 선행 때 랩터 서식지에서 랩터를 잡으며 함께 합니다." optional
   accept 3281 npc 3464
 
 step
@@ -267,28 +267,28 @@ step
 
 step
   only Undead,Orc,Troll,Skyborne
-  tip (썬더 블러프 퀘스트를 공유받지 못했다면) 크로스로드에서 남쪽 큰길을 따라 타우라조 야영지를 지나 멀고어의 썬더 블러프로 가세요 (비행 지점이 있으면 썬더 블러프로 비행). 타우렌은 멀고어에서 이미 받아 왔습니다.
+  task "(썬더 블러프 퀘스트를 공유받지 못했다면) 크로스로드에서 남쪽 큰길을 따라 타우라조 야영지를 지나 멀고어의 썬더 블러프로 가세요 (비행 지점이 있으면 썬더 블러프로 비행). 타우렌은 멀고어에서 이미 받아 왔습니다." optional
   fly "Thunder Bluff"
 
 step
-  tip 장로의 봉우리 라하우로에게 퀘스트 수락 (또는 파티원에게 공유받기): 성난불길 협곡의 트로그
   zone map 1456
+  task "장로의 봉우리 라하우로에게 퀘스트 수락 (또는 파티원에게 공유받기): 성난불길 협곡의 트로그" optional
   task "※ 여기서 아이템 모으기를 멈추세요. 죽은 오아시스 등 남은 통곡 선행은 로데론의 폐허 뒤에 합니다. 먼저 성난불길 퀘스트를 받고 던전부터 클리어하세요 — 레벨이 올라 나머지 퀘스트가 훨씬 쉬워집니다." optional
   task "── 성난불길 협곡 퀘스트 받기 ── 성난불길 퀘스트는 파티원에게 공유받을 수 있으면 공유받으세요: 성난불길 협곡의 트로그·잃어버린 가방 찾기(썬더 블러프), 파괴해야 할 힘(언더시티). 공유받으면 아래 수락 단계는 저절로 사라집니다." optional
   accept 5723 npc 11833
 
 step
-  tip 퀘스트 수락 (또는 공유받기): 잃어버린 가방 찾기
   zone map 1456
+  task "퀘스트 수락 (또는 공유받기): 잃어버린 가방 찾기" optional
   accept 5722 npc 11833
 
 step
-  tip 비행 조련사에게 썬더 블러프를 발견하세요.
   zone map 1456
+  task "비행 조련사에게 썬더 블러프를 발견하세요." optional
   getfp "Thunder Bluff"
 
 step
-  tip 오그리마로 비행하세요 (썬더 블러프에 들르지 않았다면 크로스로드에서 오그리마로 비행하거나 북쪽으로 달려가세요).
+  task "오그리마로 비행하세요 (썬더 블러프에 들르지 않았다면 크로스로드에서 오그리마로 비행하거나 북쪽으로 달려가세요)." optional
   fly "Orgrimmar"
 
 step
@@ -301,8 +301,8 @@ step
   level 13 -- 레벨 13이 되어야 합니다. 아직이라면 크로스로드 주변에서 조금 사냥하세요.
 
 step
-  tip ── 성난불길 협곡 ── 성난불길 협곡 입구 (어둠의 틈)
   zone map 1454
+  task "── 성난불길 협곡 ── 성난불길 협곡 입구 (어둠의 틈)" optional
   task "언더시티 퀘스트 \"파괴해야 할 힘\"은 파티원에게 공유받기를 권장합니다 (언데드는 티리스팔에서 이미 받아 왔습니다). 비행선 왕복이 길어서, 공유를 못 받았다면 이 퀘스트 없이 가도 됩니다 — 그럴 때는 이 줄과 아래 언더시티 세 줄을 눌러 닫으세요." optional
   task "(선택) 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요." optional
   task "(선택) 언더시티 동쪽 탑에서 오그리마행 비행선을 타세요." optional
@@ -322,66 +322,66 @@ step
   complete 5725 -- 책 두 권 (주술서·마법서): 파괴해야 할 힘
 
 step
-  tip 던전을 나와 스랄에게 퀘스트 완료: 내부의 배신자
   zone map 1454
+  task "던전을 나와 스랄에게 퀘스트 완료: 내부의 배신자" optional
   turnin 5728 npc 4949
 
 step
-  tip 이어서 퀘스트 수락: 내부의 배신자 — ◆던전 연계(성난불길 협곡)
   zone map 1454
+  task "이어서 퀘스트 수락: 내부의 배신자 — ◆던전 연계(성난불길 협곡)" optional
   accept 5729 npc 4949
 
 step
-  tip 네루 파이어블레이드에게 퀘스트 완료: 야수 처단
   zone map 1454
+  task "네루 파이어블레이드에게 퀘스트 완료: 야수 처단" optional
   turnin 5761 npc 3216
 
 step
-  tip 네루와 대화해 퀘스트 완료: 내부의 배신자 — ◆던전 연계(성난불길 협곡)
   zone map 1454
+  task "네루와 대화해 퀘스트 완료: 내부의 배신자 — ◆던전 연계(성난불길 협곡)" optional
   turnin 5729 npc 3216
 
 step
-  tip 이어서 퀘스트 수락: 내부의 배신자 — ◆던전 연계(성난불길 협곡)
   zone map 1454
+  task "이어서 퀘스트 수락: 내부의 배신자 — ◆던전 연계(성난불길 협곡)" optional
   accept 5730 npc 3216
 
 step
-  tip 스랄에게 퀘스트 완료: 내부의 배신자 — ◆던전 연계(성난불길 협곡)
   zone map 1454
+  task "스랄에게 퀘스트 완료: 내부의 배신자 — ◆던전 연계(성난불길 협곡)" optional
   turnin 5730 npc 4949
 
 step
-  tip 썬더 블러프로 비행하세요 (비행 지점이 없으면 크로스로드에서 남쪽 큰길로 달려가세요).
+  task "썬더 블러프로 비행하세요 (비행 지점이 없으면 크로스로드에서 남쪽 큰길로 달려가세요)." optional
   task "── 3단계: 성난불길 보고 — 오그리마 → 썬더 블러프 → 언더시티 ──" optional
   fly "Thunder Bluff"
 
 step
   when complete 5723
   label q5723
-  tip 장로의 봉우리 라하우로에게 퀘스트 완료: 성난불길 협곡의 트로그
   zone map 1456
+  task "장로의 봉우리 라하우로에게 퀘스트 완료: 성난불길 협곡의 트로그" optional
   turnin 5723 npc 11833
 
 step
   when onquest 5724
   label q5724
-  tip 퀘스트 완료: 잃어버린 가방 돌려주기 — ◆던전 연계(성난불길 협곡)
   zone map 1456
+  task "퀘스트 완료: 잃어버린 가방 돌려주기 — ◆던전 연계(성난불길 협곡)" optional
   turnin 5724 npc 11833
 
 step
-  tip 비행 조련사에게 썬더 블러프를 발견하세요 (이미 있으면 저절로 넘어갑니다).
   zone map 1456
+  task "비행 조련사에게 썬더 블러프를 발견하세요 (이미 있으면 저절로 넘어갑니다)." optional
   getfp "Thunder Bluff"
 
 step
-  tip 오그리마로 비행하세요.
+  task "오그리마로 비행하세요." optional
   fly "Orgrimmar"
 
 step
-  tip 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요.
   zone map 1411
+  task "오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요." optional
   task "※ \"파괴해야 할 힘\"(바리마트라스)을 갖고 있다면 아래 언더시티에서 보고합니다." optional
   task "▶ 다음 던전: 로데론의 폐허 (Lv16에 갑니다) — 지금 약 Lv15.2. 그때까지 언더시티·은빛소나무 숲에서 폐허 선행 퀘스트(\"죽음의 비법\" 연계·\"후방 경비\")와 은빛소나무 숲 퀘스트를 하며 16레벨을 채웁니다." optional
   task "── 4단계: 로데론의 폐허 선행 퀘스트 (언더시티·은빛소나무 숲, 16레벨까지) ── \"새로운 역병\"은 \"죽음의 비법\" 연계 3단계를 끝내야 받을 수 있습니다." optional
@@ -394,72 +394,72 @@ step
   turnin 5725 npc 2425
 
 step
-  tip 왕실 지구 모빈 라이트베인에게 퀘스트 수락 (또는 파티원에게 공유받기): 빛의 정의
   zone map 1458
+  task "왕실 지구 모빈 라이트베인에게 퀘스트 수락 (또는 파티원에게 공유받기): 빛의 정의" optional
   accept 92421 npc 266484
 
 step
-  tip 언더시티를 나와 서쪽 길로 은빛소나무 숲 공동묘지까지 달려가 타비사 하트위버에게 퀘스트 수락 (또는 파티원에게 공유받기): 두려움에 찬 부탁
   zone map 1421
+  task "언더시티를 나와 서쪽 길로 은빛소나무 숲 공동묘지까지 달려가 타비사 하트위버에게 퀘스트 수락 (또는 파티원에게 공유받기): 두려움에 찬 부탁" optional
   accept 92401 npc 250686
 
 step
-  tip 공동묘지 비행 조련사에게 공동묘지를 발견하세요.
   zone map 1421
+  task "공동묘지 비행 조련사에게 공동묘지를 발견하세요." optional
   getfp "The Sepulcher"
 
 step
-  tip 고위집행관 하드렉에게 퀘스트 수락: 죽음의 농장
   zone map 1421
+  task "고위집행관 하드렉에게 퀘스트 수락: 죽음의 농장" optional
   accept 437 npc 1952
 
 step
-  tip 공동묘지 연금술사 렌퍼럴에게 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1421
+  task "공동묘지 연금술사 렌퍼럴에게 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   accept 447 npc 1937
 
 step
-  tip 공동묘지 북동쪽 언덕에서 사나운 불곰을 잡아 불곰 심장 6개를 모으세요: 죽음의 비법
   zone map 1421
+  task "공동묘지 북동쪽 언덕에서 사나운 불곰을 잡아 불곰 심장 6개를 모으세요: 죽음의 비법" optional
   collect 3253 quest 447.1 @49.6,34 map 1421
 
 step
-  tip 북쪽 죽음의 농장에서 썩은가죽 놀을 잡다 보면 나타나는 나이트래쉬를 처치하고 정수를 챙기세요: 죽음의 농장
   zone map 1421
+  task "북쪽 죽음의 농장에서 썩은가죽 놀을 잡다 보면 나타나는 나이트래쉬를 처치하고 정수를 챙기세요: 죽음의 농장" optional
   collect 3622 quest 437.1 @45,21 map 1421
 
 step
-  tip 북쪽 해안으로 올라가 이끼땅거미·안개땅거미에게서 땅거미 점액 6개를 모으세요: 죽음의 비법
   zone map 1421
+  task "북쪽 해안으로 올라가 이끼땅거미·안개땅거미에게서 땅거미 점액 6개를 모으세요: 죽음의 비법" optional
   collect 3254 quest 447.2 @35.4,12 map 1421
 
 step
-  tip 북쪽 길로 은빛소나무 숲을 나와 언더시티로 돌아가세요.
   zone map 1420
+  task "북쪽 길로 은빛소나무 숲을 나와 언더시티로 돌아가세요." optional
   goto 60.7,58.8 r 20 map 1420
 
 step
-  tip 연금술 실험실 수석 연금술사 파라넬에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1458
+  task "연금술 실험실 수석 연금술사 파라넬에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   turnin 447 npc 2055
 
 step
-  tip 이어서 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1458
+  task "이어서 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   accept 450 npc 2055
 
 step
-  tip 공동묘지로 비행하세요.
+  task "공동묘지로 비행하세요." optional
   fly "The Sepulcher"
 
 step
-  tip 공동묘지 하드렉에게 퀘스트 완료: 죽음의 농장
   zone map 1421
+  task "공동묘지 하드렉에게 퀘스트 완료: 죽음의 농장" optional
   turnin 437 npc 1952
 
 step
-  tip 이어서 퀘스트 수락: 오래된 나루터 (호숫가에서 함께 합니다)
   zone map 1421
+  task "이어서 퀘스트 수락: 오래된 나루터 (호숫가에서 함께 합니다)" optional
   accept 438 npc 1952
   task "※ 장작나무 마을의 파수병·보초·장로는 13~15레벨 정예입니다. 파티가 있으면 함께 가세요. 혼자라면: 마을 서쪽 언덕 쪽에서 접근해, 베랄드의 책장이 있는 집까지 가는 길의 정예만 하나씩 끌어내 잡으세요 (여러 마리가 붙으면 바로 빠지세요). 그래도 어렵다면 아래 호숫가 단계로 레벨을 조금 더 올린 뒤 다시 오세요 — 이 책이 없으면 \"새로운 역병\"을 받을 수 없습니다." optional
 
@@ -469,8 +469,8 @@ step
   accept 452 npc 2058 optional -- (파티일 때만) 장작나무 마을 남동쪽 죽음의추적자 페를레이아에게 퀘스트 수락: 장작나무 마을 매복 — 정예 원로원이 여러 명 나오므로 혼자라면 받지 마세요.
 
 step
-  tip 남쪽 장작나무 마을의 베랄드의 책장을 클릭해 베랄드의 일지를 챙기세요: 죽음의 비법
   zone map 1421
+  task "남쪽 장작나무 마을의 베랄드의 책장을 클릭해 베랄드의 일지를 챙기세요: 죽음의 비법" optional
   collect 3255 quest 450.1 @43,73.2 map 1421
 
 step
@@ -481,53 +481,53 @@ step
 step
   when onquest 452
   label q452
-  tip (파티일 때만) 페를레이아에게 퀘스트 완료: 장작나무 마을 매복
   zone map 1421
+  task "(파티일 때만) 페를레이아에게 퀘스트 완료: 장작나무 마을 매복" optional
   turnin 452 npc 2058
 
 step
-  tip 공동묘지로 돌아와 렌퍼럴에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1421
+  task "공동묘지로 돌아와 렌퍼럴에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   turnin 450 npc 1937
 
 step
-  tip 이어서 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1421
+  task "이어서 퀘스트 수락: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   accept 451 npc 1937
 
 step
-  tip 동쪽 로더미어 호숫가에서 호수덤불괴물을 잡아 호수덤불이끼 6개: 죽음의 비법
   zone map 1421
+  task "동쪽 로더미어 호숫가에서 호수덤불괴물을 잡아 호수덤불이끼 6개: 죽음의 비법" optional
   collect 3256 quest 451.1 @72,35 map 1421
 
 step
-  tip 호숫가 시체 더미 나룻배를 살펴 퀘스트 완료: 오래된 나루터
   zone map 1421
+  task "호숫가 시체 더미 나룻배를 살펴 퀘스트 완료: 오래된 나루터" optional
   turnin 438 object 1593
 
 step
-  tip 호숫가 북쪽에서 호수늪지괴물(17~18레벨)을 잡아 호수늪지이끼 6개: 죽음의 비법
   zone map 1421
+  task "호숫가 북쪽에서 호수늪지괴물(17~18레벨)을 잡아 호수늪지이끼 6개: 죽음의 비법" optional
   collect 3257 quest 451.2 @77,26 map 1421
 
 step
-  tip 호숫가 썩은지느러미멀록에게서 굳어진 종양 1개 (드롭률 약 5% — 이끼를 모으며 멀록이 보이면 함께 잡으세요): 죽음의 비법
   zone map 1421
+  task "호숫가 썩은지느러미멀록에게서 굳어진 종양 1개 (드롭률 약 5% — 이끼를 모으며 멀록이 보이면 함께 잡으세요): 죽음의 비법" optional
   collect 3258 quest 451.3
 
 step
-  tip 호수 북쪽 길로 언더시티로 돌아가세요.
   zone map 1420
+  task "호수 북쪽 길로 언더시티로 돌아가세요." optional
   goto 60.7,58.8 r 20 map 1420
 
 step
-  tip 파라넬에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)
   zone map 1458
+  task "파라넬에게 퀘스트 완료: 죽음의 비법 — ◆던전 선행(로데론의 폐허)" optional
   turnin 451 npc 2055
 
 step
-  tip 바로 옆 시어도어 그리프스에게 퀘스트 수락 (또는 파티원에게 공유받기): 새로운 역병
   zone map 1458
+  task "바로 옆 시어도어 그리프스에게 퀘스트 수락 (또는 파티원에게 공유받기): 새로운 역병" optional
   accept 95216 npc 11835
 
 step
@@ -535,45 +535,45 @@ step
   level 16 -- 레벨 16이 되어야 합니다. 아직이라면 아래 "후방 경비"를 하며 티리스팔 동쪽에서 조금 사냥하거나, 로데론의 폐허를 15레벨(힐러)에 가도 됩니다.
 
 step
-  tip 언더시티를 나와 동쪽 브릴 근처 야영지로 가서, 크리스토프 바로 옆 죽음의경비병 리니아에게 퀘스트 수락: 후방 경비 — ◆던전 선행(로데론의 폐허) 크리스토프의 '라스마엘의 격노'는 리니아의 '후방 경비' 두 단계를 끝내야 받을 수 있습니다 (티리스팔에서 이미 했다면 저절로 넘어갑니다).
   zone map 1420
+  task "언더시티를 나와 동쪽 브릴 근처 야영지로 가서, 크리스토프 바로 옆 죽음의경비병 리니아에게 퀘스트 수락: 후방 경비 — ◆던전 선행(로데론의 폐허) 크리스토프의 \"라스마엘의 격노\"는 리니아의 \"후방 경비\" 두 단계를 끝내야 받을 수 있습니다 (티리스팔에서 이미 했다면 저절로 넘어갑니다)." optional
   task "★ 로데론의 폐허 — Lv16.0 → 약 Lv18.2 · 권장 Lv15~16 (힐러 15 · 탱커·딜러 16)" optional
   accept 356 npc 1495
 
 step
-  tip 동쪽에서 피투성이 좀비 8마리와 떠도는 영혼 8마리를 처치하세요: 후방 경비
   zone map 1420
+  task "동쪽에서 피투성이 좀비 8마리와 떠도는 영혼 8마리를 처치하세요: 후방 경비" optional
   kill 1529 quest 356.1 @76.2,60.6 map 1420
   kill 1532 quest 356.2 @76.2,60.6 map 1420
 
 step
-  tip 리니아에게 퀘스트 완료: 후방 경비 — ◆던전 선행(로데론의 폐허)
   zone map 1420
+  task "리니아에게 퀘스트 완료: 후방 경비 — ◆던전 선행(로데론의 폐허)" optional
   turnin 356 npc 1495
 
 step
-  tip 이어서 퀘스트 수락: 후방 경비 (포에버 신규) — ◆던전 선행(로데론의 폐허)
   zone map 1420
+  task "이어서 퀘스트 수락: 후방 경비 (포에버 신규) — ◆던전 선행(로데론의 폐허)" optional
   accept 99156 npc 1495
 
 step
-  tip 북동쪽 해안을 도는 정예 너덜토막(13레벨)을 처치하고 심장을 챙기세요: 후방 경비
   zone map 1420
+  task "북동쪽 해안을 도는 정예 너덜토막(13레벨)을 처치하고 심장을 챙기세요: 후방 경비" optional
   complete 99156 @81.3,44.5 map 1420
 
 step
-  tip 리니아에게 퀘스트 완료: 후방 경비 — ◆던전 선행(로데론의 폐허)
   zone map 1420
+  task "리니아에게 퀘스트 완료: 후방 경비 — ◆던전 선행(로데론의 폐허)" optional
   turnin 99156 npc 1495
 
 step
-  tip 죽음경비병 크리스토프에게 퀘스트 수락 (또는 파티원에게 공유받기): 라스마엘의 격노
   zone map 1420
+  task "죽음경비병 크리스토프에게 퀘스트 수락 (또는 파티원에게 공유받기): 라스마엘의 격노" optional
   accept 92422 npc 251001
 
 step
-  tip 언더시티 입구 위 로데론의 폐허로 들어가세요 (입구 위치는 대략)
   zone map 1420
+  task "언더시티 입구 위 로데론의 폐허로 들어가세요 (입구 위치는 대략)" optional
   goto 62,68 r 20 map 1420
 
 step
@@ -590,18 +590,18 @@ step
   complete 92422 -- 울타리 너머로 보이는 마지막 보스 라스마엘을 처치하세요: 라스마엘의 격노
 
 step
-  tip 죽음경비병 크리스토프에게 퀘스트 완료: 라스마엘의 격노
   zone map 1420
+  task "죽음경비병 크리스토프에게 퀘스트 완료: 라스마엘의 격노" optional
   turnin 92422 npc 251001
 
 step
-  tip 시어도어 그리프스에게 퀘스트 완료: 새로운 역병
   zone map 1458
+  task "시어도어 그리프스에게 퀘스트 완료: 새로운 역병" optional
   turnin 95216 npc 11835
 
 step
-  tip 수석 연금술사 파라넬에게 퀘스트 완료: 끝없는 고통
   zone map 1458
+  task "수석 연금술사 파라넬에게 퀘스트 완료: 끝없는 고통" optional
   turnin 97288 npc 2055
 
 step
@@ -609,8 +609,8 @@ step
   accept 97289 npc 2055
 
 step
-  tip 미완성 누더기골렘(오스마르의 몸)에게 퀘스트 완료: 끝없는 고통
   zone map 1458
+  task "미완성 누더기골렘(오스마르의 몸)에게 퀘스트 완료: 끝없는 고통" optional
   turnin 97289 npc 271613
 
 step
@@ -618,8 +618,8 @@ step
   accept 97290 npc 271613
 
 step
-  tip 파라넬에게 퀘스트 완료: 끝없는 고통
   zone map 1458
+  task "파라넬에게 퀘스트 완료: 끝없는 고통" optional
   turnin 97290 npc 2055
 
 step
@@ -627,15 +627,15 @@ step
   accept 97291 npc 2055
 
 step
-  tip 해골갓(상업 지구 타우니)·물집풀(약초채집사)·괴로움의 정수(도적 지구 독 상인): 끝없는 고통
   zone map 1458
+  task "해골갓(상업 지구 타우니)·물집풀(약초채집사)·괴로움의 정수(도적 지구 독 상인): 끝없는 고통" optional
   collect 281246 quest 97291.1
   collect 281300 quest 97291.2
   collect 8923 quest 97291.3
 
 step
-  tip 파라넬에게 퀘스트 완료: 끝없는 고통
   zone map 1458
+  task "파라넬에게 퀘스트 완료: 끝없는 고통" optional
   turnin 97291 npc 2055
 
 step
@@ -643,24 +643,25 @@ step
   accept 97292 npc 2055
 
 step
-  tip 오스마르의 몸 위 장치에 쉭쉭거리는 혈청을 주입하세요: 끝없는 고통
+  task "오스마르의 몸 위 장치에 쉭쉭거리는 혈청을 주입하세요: 끝없는 고통" optional
   complete 97292
 
 step
-  tip 파라넬에게 퀘스트 완료: 끝없는 고통
   zone map 1458
+  task "파라넬에게 퀘스트 완료: 끝없는 고통" optional
   turnin 97292 npc 2055
 
 step
   when onquest 95204
   label q95204
-  tip 오란 스네이크레이드에게 퀘스트 완료: 로데론의 문장
   zone map 1458
+  task "오란 스네이크레이드에게 퀘스트 완료: 로데론의 문장" optional
   turnin 95204 npc 7825
 
 step
-  tip 모빈 라이트베인에게 퀘스트 완료: 빛의 정의
   zone map 1458
+  task "[알림] 곧 귀환석으로 크로스로드에 갑니다. 그때까지 귀환석을 쓰지 말고, 재사용 대기시간이 남았는지 지금 확인하세요." optional
+  task "모빈 라이트베인에게 퀘스트 완료: 빛의 정의" optional
   turnin 92421 npc 266484
   task "※ \"두려움에 찬 부탁\"은 그림자송곳니 성채 갈 때 공동묘지에서 보고합니다 (그대로 가지고 있으세요)." optional
   task "※ 귀환석이 크로스로드로 지정돼 있어야 합니다. 아니라면 언더시티 동쪽 탑에서 오그리마행 비행선을 탄 뒤 크로스로드로 비행하거나 달려가세요." optional
@@ -670,8 +671,8 @@ step
   hearth "The Crossroads"
 
 step
-  tip 여관주인에게 크로스로드를 귀환 장소로 설정하세요 (로데론의 폐허 뒤 귀환석으로 돌아옵니다).
   zone map 1413
+  task "여관주인에게 크로스로드를 귀환 장소로 설정하세요 (로데론의 폐허 뒤 귀환석으로 돌아옵니다)." optional
   sethome "The Crossroads"
 
 step
@@ -680,29 +681,29 @@ step
   accept 97003 npc 267310 optional -- 구락에게 퀘스트 수락: 약탈자 촐아룩 — 그룹 퀘스트 (포에버 신규 · 경험치 4,100). 지금 Lv18 정도가 경험치 효율이 가장 좋습니다 — 파티 2~3명 권장, 혼자면 받아 두고 통곡 파티와 함께 잡으세요.
 
 step
-  tip 크로스로드 바로 동쪽 언덕의 약탈자 촐아룩(20)을 처치하고 전리품을 챙기세요: 약탈자 촐아룩
   zone map 1413
+  task "크로스로드 바로 동쪽 언덕의 약탈자 촐아룩(20)을 처치하고 전리품을 챙기세요: 약탈자 촐아룩" optional
   complete 97003 @57.8,27 map 1413
 
 step
-  tip 구락에게 퀘스트 완료: 약탈자 촐아룩
   zone map 1413
+  task "구락에게 퀘스트 완료: 약탈자 촐아룩" optional
   turnin 97003 npc 267310
 
 step
-  tip 통곡의 동굴 연계 첫 단계 — 통가 룬토템에게 퀘스트 수락: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "통곡의 동굴 연계 첫 단계 — 통가 룬토템에게 퀘스트 수락: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)" optional
   task "※ 성난불길 전에 불모의 땅 단계를 못 했다면 아래 단계를 하세요 (이미 했으면 저절로 넘어갑니다)." optional
   accept 870 npc 3448
 
 step
-  tip 호수 밑바닥 균열을 확인하세요 (탐험만 하면 되므로 레벨이 낮아도 됩니다): 잊혀진 웅덩이
   zone map 1413
+  task "호수 밑바닥 균열을 확인하세요 (탐험만 하면 되므로 레벨이 낮아도 됩니다): 잊혀진 웅덩이" optional
   complete 870 @44,22 map 1413
 
 step
-  tip 통가 룬토템에게 퀘스트 완료: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "통가 룬토템에게 퀘스트 완료: 잊혀진 웅덩이 — ◆던전 선행(통곡의 동굴)" optional
   turnin 870 npc 3448
 
 step
@@ -711,89 +712,89 @@ step
   accept 850 npc 3389
 
 step
-  tip 레그타르 데스게이트에게 퀘스트 수락: 켄타우로스의 팔보호구 — 한 번에 다 모으지 않아도 됩니다. 켄타우로스(우두머리 포함)를 잡을 때마다 모으고, 마지막 헤즈룰 블러드마크 때 15개를 채우세요.
   zone map 1413
+  task "레그타르 데스게이트에게 퀘스트 수락: 켄타우로스의 팔보호구 — 한 번에 다 모으지 않아도 됩니다. 켄타우로스(우두머리 포함)를 잡을 때마다 모으고, 마지막 헤즈룰 블러드마크 때 15개를 채우세요." optional
   accept 855 npc 3389
 
 step
   when level<20
-  tip 바라크 코도베인을 처치하세요: 콜카르 지도자
   zone map 1413
+  task "바라크 코도베인을 처치하세요: 콜카르 지도자" optional
   collect 5022 quest 850.1 @42.8,23.4 map 1413
 
 step
   when level<20
-  tip 레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자
   zone map 1413
+  task "레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자" optional
   turnin 850 npc 3389
 
 step
   when level>=20
   when complete 850
-  tip 레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자
   zone map 1413
+  task "레그타르 데스게이트에게 퀘스트 완료: 콜카르 지도자" optional
   turnin 850 npc 3389
 
 step
-  tip 퀘스트 수락: 광신자 베로그 (통곡의 동굴 가기 직전에 합니다)
   zone map 1413
+  task "퀘스트 수락: 광신자 베로그 (통곡의 동굴 가기 직전에 합니다)" optional
   accept 851 npc 3389
 
 step
   when level<19
-  tip 퀘스트 수락: 불모의 땅의 굶주린 사자 (톱니항 가는 길에 합니다)
   zone map 1413
+  task "퀘스트 수락: 불모의 땅의 굶주린 사자 (톱니항 가는 길에 합니다)" optional
   accept 903 npc 3338
 
 step
-  tip 가즈로그에게 이어서 퀘스트 수락: 도둑맞은 은화 — 통곡 선행 때 랩터 서식지에서 랩터를 잡으며 함께 합니다.
   zone map 1413
+  task "가즈로그에게 이어서 퀘스트 수락: 도둑맞은 은화 — 통곡 선행 때 랩터 서식지에서 랩터를 잡으며 함께 합니다." optional
   accept 3281 npc 3464
 
 step
-  tip 퀘스트 수락: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "퀘스트 수락: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)" optional
   accept 877 npc 3448
 
 step
-  tip 남쪽 죽은 오아시스 물속 균열에 씨앗을 심으세요 (씨앗만 심고 빠지면 되므로 레벨이 낮아도 됩니다. 옆 켄타우로스 야영지는 피하세요): 죽은 오아시스
   zone map 1413
+  task "남쪽 죽은 오아시스 물속 균열에 씨앗을 심으세요 (씨앗만 심고 빠지면 되므로 레벨이 낮아도 됩니다. 옆 켄타우로스 야영지는 피하세요): 죽은 오아시스" optional
   complete 877 @55,42 map 1413
 
 step
-  tip 통가 룬토템에게 퀘스트 완료: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "통가 룬토템에게 퀘스트 완료: 죽은 오아시스 — ◆던전 선행(통곡의 동굴)" optional
   turnin 877 npc 3448
 
 step
-  tip 퀘스트 수락: 변화된 생물 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "퀘스트 수락: 변화된 생물 — ◆던전 선행(통곡의 동굴)" optional
   accept 880 npc 3448
 
 step
-  tip 남서쪽 수풀 오아시스(통곡의 동굴 남쪽)에서 오아시스의 생물을 처치하세요: 변화된 생물
   zone map 1413
+  task "남서쪽 수풀 오아시스(통곡의 동굴 남쪽)에서 오아시스의 생물을 처치하세요: 변화된 생물" optional
   collect 5098 quest 880.1 @47.6,40 map 1413
 
 step
-  tip 크로스로드 통가 룬토템에게 퀘스트 완료: 변화된 생물 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "크로스로드 통가 룬토템에게 퀘스트 완료: 변화된 생물 — ◆던전 선행(통곡의 동굴)" optional
   turnin 880 npc 3448
 
 step
-  tip 이어서 퀘스트 수락: 하뮬 룬토템 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "이어서 퀘스트 수락: 하뮬 룬토템 — ◆던전 선행(통곡의 동굴)" optional
   accept 1489 npc 3448
 
 step
   when level<19
-  tip 동쪽 톱니항으로 가는 길에 수풀의 굶주린 사바나 사자를 처치하세요: 불모의 땅의 굶주린 사자
   zone map 1413
+  task "동쪽 톱니항으로 가는 길에 수풀의 굶주린 사바나 사자를 처치하세요: 불모의 땅의 굶주린 사자" optional
   complete 903 @59,37.6 map 1413
 
 step
-  tip 톱니항 비행 조련사에게 톱니항을 발견하세요.
   zone map 1413
+  task "톱니항 비행 조련사에게 톱니항을 발견하세요." optional
   getfp "Ratchet"
 
 step
@@ -802,24 +803,24 @@ step
   accept 887 npc 3391
 
 step
-  tip 비운의 레닉스에게 퀘스트 수락: 부품이 산산조각 (포에버 신규)
   zone map 1413
+  task "비운의 레닉스에게 퀘스트 수락: 부품이 산산조각 (포에버 신규)" optional
   accept 97253 npc 7161
 
 step
   when level<20
-  tip 현상수배지를 클릭해 퀘스트 수락: 롱쇼어 남작 현상수배
   zone map 1413
+  task "현상수배지를 클릭해 퀘스트 수락: 롱쇼어 남작 현상수배" optional
   accept 895 object 3972
 
 step
-  tip 메보크 미지릭스에게 퀘스트 수락: 랩터 뿔 ('영리해지는 음료' 선행) — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "메보크 미지릭스에게 퀘스트 수락: 랩터 뿔 (\"영리해지는 음료\" 선행) — ◆던전 선행(통곡의 동굴)" optional
   accept 865 npc 3446
 
 step
-  tip 크레인 기사 비글퍼즈에게 퀘스트 수락 (또는 파티원에게 공유받기): 99년 묵은 와인 (통곡의 동굴 퀘스트)
   zone map 1413
+  task "크레인 기사 비글퍼즈에게 퀘스트 수락 (또는 파티원에게 공유받기): 99년 묵은 와인 (통곡의 동굴 퀘스트)" optional
   accept 959 npc 3665
 
 step
@@ -829,43 +830,43 @@ step
 
 step
   when level<18
-  tip 남쪽 해안 해적 야영지에서 해적들을 처치하세요: 남쪽바다 해적단
   zone map 1413
+  task "남쪽 해안 해적 야영지에서 해적들을 처치하세요: 남쪽바다 해적단" optional
   kill 3381 quest 887.1 @63.4,49.2 map 1413
   kill 3382 quest 887.2 @63.4,49.2 map 1413
 
 step
-  tip 해적 야영지 위쪽에서 복잡한 부품 한 줌 5개: 부품이 산산조각
   zone map 1413
+  task "해적 야영지 위쪽에서 복잡한 부품 한 줌 5개: 부품이 산산조각" optional
   collect 277331 quest 97253.1
 
 step
   when level<20
-  tip 텐트 주변에 있는 남작 롱쇼어를 처치하세요: 롱쇼어 남작 현상수배
   zone map 1413
+  task "텐트 주변에 있는 남작 롱쇼어를 처치하세요: 롱쇼어 남작 현상수배" optional
   collect 5084 quest 895.1
 
 step
-  tip 서쪽 랩터 서식지에서 랩터를 처치해 뿔 5개: 랩터 뿔
   zone map 1413
+  task "서쪽 랩터 서식지에서 랩터를 처치해 뿔 5개: 랩터 뿔" optional
   collect 5055 quest 865.1 @57,52 map 1413
 
 step
-  tip 같은 랩터에게서 도둑맞은 은화를 모으세요: 도둑맞은 은화
   zone map 1413
+  task "같은 랩터에게서 도둑맞은 은화를 모으세요: 도둑맞은 은화" optional
   collect 5061 quest 3281.1
 
 step
   when level<18
-  tip 톱니항으로 돌아와 퀘스트 완료: 남쪽바다 해적단
   zone map 1413
+  task "톱니항으로 돌아와 퀘스트 완료: 남쪽바다 해적단" optional
   turnin 887 npc 3391
 
 step
   when level>=18
   when complete 887
-  tip 톱니항으로 돌아와 퀘스트 완료: 남쪽바다 해적단
   zone map 1413
+  task "톱니항으로 돌아와 퀘스트 완료: 남쪽바다 해적단" optional
   turnin 887 npc 3391
 
 step
@@ -884,69 +885,69 @@ step
   turnin 97253 npc 7161
 
 step
-  tip 메보크에게 퀘스트 완료: 랩터 뿔 — ◆던전 선행(통곡의 동굴)
   zone map 1413
+  task "메보크에게 퀘스트 완료: 랩터 뿔 — ◆던전 선행(통곡의 동굴)" optional
   turnin 865 npc 3446
 
 step
-  tip 이어서 퀘스트 수락 (또는 파티원에게 공유받기): 영리해지는 음료 (통곡의 동굴 퀘스트)
   zone map 1413
+  task "이어서 퀘스트 수락 (또는 파티원에게 공유받기): 영리해지는 음료 (통곡의 동굴 퀘스트)" optional
   accept 1491 npc 3446
 
 step
   when level<19
-  tip 크로스로드로 돌아가 세르그라에게 퀘스트 완료: 불모의 땅의 굶주린 사자 (에체야키는 받지 않습니다)
   zone map 1413
+  task "크로스로드로 돌아가 세르그라에게 퀘스트 완료: 불모의 땅의 굶주린 사자 (에체야키는 받지 않습니다)" optional
   turnin 903 npc 3338
 
 step
   when level>=19
   when complete 903
-  tip 크로스로드로 돌아가 세르그라에게 퀘스트 완료: 불모의 땅의 굶주린 사자 (에체야키는 받지 않습니다)
   zone map 1413
+  task "크로스로드로 돌아가 세르그라에게 퀘스트 완료: 불모의 땅의 굶주린 사자 (에체야키는 받지 않습니다)" optional
   turnin 903 npc 3338
 
 step
-  tip 가즈로그에게 퀘스트 완료: 도둑맞은 은화
   zone map 1413
+  task "가즈로그에게 퀘스트 완료: 도둑맞은 은화" optional
   turnin 3281 npc 3464
 
 step
-  tip 크로스로드에서 남쪽 큰길을 따라 썬더 블러프로 가세요 (비행 지점이 있으면 썬더 블러프로 비행).
+  task "크로스로드에서 남쪽 큰길을 따라 썬더 블러프로 가세요 (비행 지점이 있으면 썬더 블러프로 비행)." optional
   fly "Thunder Bluff"
 
 step
-  tip 장로의 봉우리 대드루이드 하뮬 룬토템에게 퀘스트 완료: 하뮬 룬토템 — ◆던전 선행(통곡의 동굴)
   zone map 1456
+  task "장로의 봉우리 대드루이드 하뮬 룬토템에게 퀘스트 완료: 하뮬 룬토템 — ◆던전 선행(통곡의 동굴)" optional
   turnin 1489 npc 5769
 
 step
-  tip 이어서 퀘스트 수락: 나라 와일드메인 — ◆던전 선행(통곡의 동굴)
   zone map 1456
+  task "이어서 퀘스트 수락: 나라 와일드메인 — ◆던전 선행(통곡의 동굴)" optional
   accept 1490 npc 5769
 
 step
-  tip 나라 와일드메인에게 퀘스트 완료: 나라 와일드메인 — ◆던전 선행(통곡의 동굴)
   zone map 1456
+  task "나라 와일드메인에게 퀘스트 완료: 나라 와일드메인 — ◆던전 선행(통곡의 동굴)" optional
   turnin 1490 npc 5770
 
 step
-  tip 이어서 퀘스트 수락: 송곳니의 드루이드 우두머리 (통곡의 동굴 퀘스트)
   zone map 1456
+  task "이어서 퀘스트 수락: 송곳니의 드루이드 우두머리 (통곡의 동굴 퀘스트)" optional
   accept 914 npc 5770
 
 step
-  tip 환영의 웅덩이 연금술사 자마에게 퀘스트 수락 (또는 파티원에게 공유받기): 불뱀꽃 (통곡의 동굴 퀘스트)
   zone map 1456
+  task "환영의 웅덩이 연금술사 자마에게 퀘스트 수락 (또는 파티원에게 공유받기): 불뱀꽃 (통곡의 동굴 퀘스트)" optional
   accept 962 npc 3419
 
 step
-  tip 비행 조련사에게 썬더 블러프를 발견하세요.
   zone map 1456
+  task "비행 조련사에게 썬더 블러프를 발견하세요." optional
   getfp "Thunder Bluff"
 
 step
-  tip ── 6단계: 통곡의 동굴 ── 크로스로드로 비행하세요.
+  task "── 6단계: 통곡의 동굴 ── 크로스로드로 비행하세요." optional
   task "*스킬* 직업 상급자에게 19레벨까지의 새 스킬을 습득하세요." optional
   fly "Crossroads"
 
@@ -955,76 +956,76 @@ step
   level 18 -- 레벨 18이 되어야 합니다. 아직이라면 아래 광신자 베로그를 잡으러 가며 켄타우로스를 사냥하세요.
 
 step
-  tip 남쪽 죽은 오아시스 옆 켄타우로스 야영지: '내가 왔다!' 외침이 나올 때까지 켄타우로스를 잡고 광신자 베로그 처치: 광신자 베로그
   zone map 1413
+  task "남쪽 죽은 오아시스 옆 켄타우로스 야영지: \"내가 왔다!\" 외침이 나올 때까지 켄타우로스를 잡고 광신자 베로그 처치: 광신자 베로그" optional
   task "★ 통곡의 동굴 — Lv19.2 → 약 Lv20.9 · 권장 Lv16~17 (힐러 16 · 탱커·딜러 17)" optional
   collect 5023 quest 851.1 @53,41.6 map 1413
 
 step
-  tip 북쪽 레그타르 데스게이트에게 돌아가 퀘스트 완료: 광신자 베로그
   zone map 1413
+  task "북쪽 레그타르 데스게이트에게 돌아가 퀘스트 완료: 광신자 베로그" optional
   turnin 851 npc 3389
 
 step
-  tip 이어서 레그타르에게 퀘스트 수락: 헤즈룰 블러드마크
   zone map 1413
+  task "이어서 레그타르에게 퀘스트 수락: 헤즈룰 블러드마크" optional
   accept 852 npc 3389
 
 step
-  tip 통곡의 동굴 입구 근처 헤즈룰 블러드마크 (호위 2마리, 파티 권장): 헤즈룰 블러드마크
   zone map 1413
+  task "통곡의 동굴 입구 근처 헤즈룰 블러드마크 (호위 2마리, 파티 권장): 헤즈룰 블러드마크" optional
   complete 852 @46,37.6 map 1413
 
 step
-  tip 입구 위 날팍에게 퀘스트 수락 (또는 파티원에게 공유받기): 돌연변이 통가죽
   zone map 1413
+  task "입구 위 날팍에게 퀘스트 수락 (또는 파티원에게 공유받기): 돌연변이 통가죽" optional
   accept 1486 npc 5767
 
 step
-  tip 에브루에게 퀘스트 수락 (또는 파티원에게 공유받기): 돌연변이 짐승 섬멸
   zone map 1413
+  task "에브루에게 퀘스트 수락 (또는 파티원에게 공유받기): 돌연변이 짐승 섬멸" optional
   accept 1487 npc 5768
 
 step
-  tip 통곡의 동굴로 들어가세요
   zone map 1413
+  task "통곡의 동굴로 들어가세요" optional
   goto 46,36.4 r 20 map 1413
 
 step
-  tip 돌연변이 짐승 가죽 20개: 돌연변이 통가죽
   zone map 1413
+  task "돌연변이 짐승 가죽 20개: 돌연변이 통가죽" optional
   collect 6443 quest 1486.1
 
 step
-  tip 돌연변이 약탈자·독사·휘청괴물·공포송곳니 각 7마리: 돌연변이 짐승 섬멸
+  task "돌연변이 약탈자·독사·휘청괴물·공포송곳니 각 7마리: 돌연변이 짐승 섬멸" optional
   complete 1487
 
 step
-  tip 미치광이 매글리시의 포도주: 99년 묵은 와인
   zone map 1413
+  task "미치광이 매글리시의 포도주: 99년 묵은 와인" optional
   collect 5334 quest 959.1
 
 step
-  tip 불뱀꽃 10개: 불뱀꽃
   zone map 1413
+  task "불뱀꽃 10개: 불뱀꽃" optional
   collect 5339 quest 962.1
 
 step
-  tip 드루이드 우두머리 4명(코브란·아나콘드라·피타스·서펜티스)의 보석: 송곳니의 드루이드 우두머리
+  task "드루이드 우두머리 4명(코브란·아나콘드라·피타스·서펜티스)의 보석: 송곳니의 드루이드 우두머리" optional
   complete 914
 
 step
-  tip 통곡의 정수 6개: 영리해지는 음료
   zone map 1413
+  task "통곡의 정수 6개: 영리해지는 음료" optional
   collect 6464 quest 1491.1
 
 step
-  tip 마지막 보스 무타누스에게서 나온 '악몽의 조각'으로 퀘스트 수락: 빛나는 조각
+  task "마지막 보스 무타누스에게서 나온 \"악몽의 조각\"으로 퀘스트 수락: 빛나는 조각" optional
   accept 6981 item 10441
 
 step
-  tip 날팍에게 퀘스트 완료: 돌연변이 통가죽
   zone map 1413
+  task "날팍에게 퀘스트 완료: 돌연변이 통가죽" optional
   turnin 1486 npc 5767
 
 step
@@ -1032,37 +1033,37 @@ step
   turnin 1487 npc 5768
 
 step
-  tip 켄타우로스의 팔보호구 15개를 다 채우세요 (베로그·헤즈룰 주변 켄타우로스): 켄타우로스의 팔보호구
   zone map 1413
+  task "켄타우로스의 팔보호구 15개를 다 채우세요 (베로그·헤즈룰 주변 켄타우로스): 켄타우로스의 팔보호구" optional
   collect 5030 quest 855.1
 
 step
-  tip 북쪽으로 올라가 레그타르에게 퀘스트 완료: 헤즈룰 블러드마크
   zone map 1413
+  task "북쪽으로 올라가 레그타르에게 퀘스트 완료: 헤즈룰 블러드마크" optional
   turnin 852 npc 3389
 
 step
-  tip 레그타르에게 퀘스트 완료: 켄타우로스의 팔보호구
   zone map 1413
+  task "레그타르에게 퀘스트 완료: 켄타우로스의 팔보호구" optional
   turnin 855 npc 3389
 
 step
-  tip 크로스로드로 달려가 톱니항으로 비행하세요.
+  task "크로스로드로 달려가 톱니항으로 비행하세요." optional
   fly "Ratchet"
 
 step
-  tip 비행 조련사와 부두 사이의 고블린 스퍼터밸브에게 말을 걸어 '빛나는 조각' 대화를 고르세요 (빛나는 조각 진행 — 보고는 크로스로드로 돌아가 세이지윈드에게).
   zone map 1413
+  task "비행 조련사와 부두 사이의 고블린 스퍼터밸브에게 말을 걸어 \"빛나는 조각\" 대화를 고르세요 (빛나는 조각 진행 — 보고는 크로스로드로 돌아가 세이지윈드에게)." optional
   goto 63,37.2 r 20 map 1413
 
 step
-  tip 메보크 미지릭스에게 퀘스트 완료: 영리해지는 음료
   zone map 1413
+  task "메보크 미지릭스에게 퀘스트 완료: 영리해지는 음료" optional
   turnin 1491 npc 3446
 
 step
-  tip 크레인 기사 비글퍼즈에게 퀘스트 완료: 99년 묵은 와인
   zone map 1413
+  task "크레인 기사 비글퍼즈에게 퀘스트 완료: 99년 묵은 와인" optional
   turnin 959 npc 3665
 
 step
@@ -1071,17 +1072,17 @@ step
   accept 92706 object 3972 optional -- 톱니항 현상수배 게시판을 클릭해 퀘스트 수락: 수배: 브루즈 — 그룹 퀘스트 (포에버 신규 · 정예 20). 통곡 파티와 함께 하면 좋습니다.
 
 step
-  tip 톱니항 바로 남쪽 해안의 브루즈(정예)를 처치하세요: 수배: 브루즈
   zone map 1413
+  task "톱니항 바로 남쪽 해안의 브루즈(정예)를 처치하세요: 수배: 브루즈" optional
   complete 92706 @64.3,41.7 map 1413
 
 step
-  tip 가즐로에게 퀘스트 완료: 수배: 브루즈
   zone map 1413
+  task "가즐로에게 퀘스트 완료: 수배: 브루즈" optional
   turnin 92706 npc 3391
 
 step
-  tip 톱니항로 비행하세요 (비행 지점이 없으면 달려서 이동).
+  task "톱니항로 비행하세요 (비행 지점이 없으면 달려서 이동)." optional
   task "※ \"송곳니의 드루이드 우두머리\"·\"불뱀꽃\"·\"악몽\"은 동선이 썬더 블러프를 지날 때 보고합니다 (그대로 가지고 있으세요)." optional
   task "할리자에게 잡템을 판매하시고 장비를 수리하세요." optional
   fly "Ratchet"
@@ -1089,21 +1090,21 @@ step
 step
   only Warrior,Tauren
   when onquest 1505
-  tip 먼 망루의 우제크에게 퀘스트 완료: 노련한 우제크
   zone map 1413
+  task "먼 망루의 우제크에게 퀘스트 완료: 노련한 우제크" optional
   turnin 1505 npc 5810
 
 step
   only Shaman,Tauren
   when onquest 2984
   label q2984
-  tip 크라날 피스에게 퀘스트 완료: 불의 부름
   zone map 1413
+  task "크라날 피스에게 퀘스트 완료: 불의 부름" optional
   turnin 2984 npc 5907
 
 step
-  tip 지점으로 이동하여 새로운 비행 지점을 발견하세요.
   zone map 1413
+  task "지점으로 이동하여 새로운 비행 지점을 발견하세요." optional
   getfp "Ratchet"
 
 step
@@ -1112,7 +1113,7 @@ step
   turnin 1492 npc 3453
 
 step
-  tip 사자는 수풀에만 있습니다. 크로스로드로 비행하세요.
+  task "사자는 수풀에만 있습니다. 크로스로드로 비행하세요." optional
   fly "Crossroads"
 
 step
@@ -1121,26 +1122,26 @@ step
   accept 4921 npc 3432
 
 step
-  tip 크로스로드 서쪽, 통곡의 동굴 위 언덕의 팔라 세이지윈드에게 퀘스트 완료: 빛나는 조각
   zone map 1413
+  task "크로스로드 서쪽, 통곡의 동굴 위 언덕의 팔라 세이지윈드에게 퀘스트 완료: 빛나는 조각" optional
   turnin 6981 npc 8418
 
 step
-  tip 이어서 퀘스트 수락: 악몽 (썬더 블러프 하뮬 룬토템에게 보고)
   zone map 1413
+  task "이어서 퀘스트 수락: 악몽 (썬더 블러프 하뮬 룬토템에게 보고)" optional
   accept 3369 npc 8418
   task "*스킬* 직업 상급자에게 20레벨까지의 새 스킬을 습득하세요. (도적, 흑마는 나중에 오그리마에서 습득하세요.)" optional
 
 step
   only Tauren,Skyborne
-  tip 썬더 블러프로 비행하세요.
+  task "썬더 블러프로 비행하세요." optional
   fly "Thunder Bluff"
 
 step
   only Undead,Orc,Troll
   when level<24
-  tip 타우라조 야영지를 향해 큰길을 따라 남쪽으로 이동합니다. 지점에서 흔적을 찾으세요: 전쟁으로 잃은 아내
   zone map 1413
+  task "타우라조 야영지를 향해 큰길을 따라 남쪽으로 이동합니다. 지점에서 흔적을 찾으세요: 전쟁으로 잃은 아내" optional
   complete 4921 @49,50 map 1413
 
 step
@@ -1158,14 +1159,14 @@ step
 step
   when onquest 3369
   label q3369
-  tip 장로의 봉우리 하뮬 룬토템에게 퀘스트 완료: 악몽
   zone map 1456
+  task "장로의 봉우리 하뮬 룬토템에게 퀘스트 완료: 악몽" optional
   turnin 3369 npc 5769
 
 step
   only Priest,Warlock
-  tip (선택) 조람가르 전초기지에서 새로운 비행 지점을 발견하세요.
   zone map 1440
+  task "(선택) 조람가르 전초기지에서 새로운 비행 지점을 발견하세요." optional
   task "※ (사제·흑마법사 선택) 도와줄 높은 레벨 파티원이 있으면 지금 검은심연의 나락에 다녀와 \"검은심연의 음모\" 보상 마법봉 *묘비의 홀*을 받으세요. 24~25까지 지역 퀘스트 사냥이 훨씬 빨라집니다. 도와줄 사람이 없으면 아래 (선택) 단계들은 건너뛰세요." optional
   task "(선택) 도와주는 분과 함께 잿빛 골짜기 서쪽 해안 조람가르 전초기지로 가세요 (비행 지점이 없으면 크로스로드에서 북쪽 큰길로 잿빛 골짜기에 들어가 서쪽 해안까지)." optional
   getfp "Zoram'gar Outpost"
@@ -1182,7 +1183,7 @@ step
 
 step
   only Priest,Warlock
-  tip (선택) 던전을 나와 썬더 블러프로 비행하세요.
+  task "(선택) 던전을 나와 썬더 블러프로 비행하세요." optional
   task "(선택) 북쪽 해안 검은심연의 나락으로 들어가세요 (물속 통로). 이번에는 아래 퀘스트 하나만 합니다 — 다른 검은심연 퀘스트는 24~25에 다시 올 때 합니다." optional
   fly "Thunder Bluff"
 
@@ -1190,38 +1191,38 @@ step
   only Priest,Warlock
   when complete 6561
   label q6561
-  tip (선택) 장로의 봉우리 바샤나 룬토템에게 퀘스트 완료 — 보상으로 *묘비의 홀*(마법봉)을 고르세요: 검은심연의 음모 — ★보상
   zone map 1456
+  task "(선택) 장로의 봉우리 바샤나 룬토템에게 퀘스트 완료 — 보상으로 *묘비의 홀*(마법봉)을 고르세요: 검은심연의 음모 — ★보상" optional
   turnin 6561 npc 9087
 
 step
   only Tauren,Skyborne
-  tip 타우라조 야영지로 비행하세요.
+  task "타우라조 야영지로 비행하세요." optional
   fly "Camp Taurajo"
 
 step
   only Tauren,Skyborne
   when level<24
-  tip 지점에서 흔적을 찾으세요: 전쟁으로 잃은 아내
   zone map 1413
+  task "지점에서 흔적을 찾으세요: 전쟁으로 잃은 아내" optional
   complete 4921 @49,50 map 1413
 
 step
   only Undead,Orc,Troll
-  tip 새로운 비행 지점을 발견하세요.
   zone map 1456
+  task "새로운 비행 지점을 발견하세요." optional
   getfp "Thunder Bluff"
 
 step
   only Undead,Orc,Troll
-  tip 크로스로드로 비행하세요.
+  task "크로스로드로 비행하세요." optional
   fly "Crossroads"
 
 step
   only Tauren,Skyborne
   when onquest 4921
-  tip 크로스로드로 달려가서 퀘스트 완료: 전쟁으로 잃은 아내
   zone map 1413
+  task "크로스로드로 달려가서 퀘스트 완료: 전쟁으로 잃은 아내" optional
   turnin 4921 npc 3432
 
 step
@@ -1231,41 +1232,41 @@ step
   turnin 4921 npc 3432
 
 step
-  tip 오그리마로 비행하세요.
+  task "오그리마로 비행하세요." optional
   fly "Orgrimmar"
 
 step
-  tip 오그리마를 나와 비행선 탑승장으로 이동하세요. 비행선을 타고 언더시티로 이동하세요. 오그리마로 비행하세요.
+  task "오그리마를 나와 비행선 탑승장으로 이동하세요. 비행선을 타고 언더시티로 이동하세요. 오그리마로 비행하세요." optional
   task "*스킬*: 이 안내는 스킬을 배울 수 있다는 뜻입니다. 하지만 40레벨 탈것 구매를 위해 골드를 아껴야 하므로, 중요한 스킬만 습득하시길 권장합니다. 오그리마로 이동하세요. (귀환석은 크로스로드 그대로 둡니다 — 그림자송곳니 뒤 크로스로드로 귀환합니다.)" optional
   fly "Orgrimmar"
 
 step
-  tip 오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요.
   zone map 1411
+  task "오그리마 북문 밖 비행선 탑승장에서 언더시티행 비행선을 타세요." optional
   goto 50.8,13.6 r 20 map 1411
 
 step
-  tip 언더시티로 비행하세요 (비행 지점이 없으면 달려서 이동).
+  task "언더시티로 비행하세요 (비행 지점이 없으면 달려서 이동)." optional
   fly "Undercity"
 
 step
-  tip 새로운 비행 지점을 발견하세요: 언더시티
   zone map 1458
+  task "새로운 비행 지점을 발견하세요: 언더시티" optional
   getfp "Undercity"
 
 step
-  tip 연금술 실험실 관리인 벨두거에게 퀘스트 수락 (또는 파티원에게 공유받기): 우르의 책
   zone map 1458
+  task "연금술 실험실 관리인 벨두거에게 퀘스트 수락 (또는 파티원에게 공유받기): 우르의 책" optional
   accept 1013 npc 2934
 
 step
-  tip ── 언더시티 신규 퀘스트 (선택) ── 언더시티를 나와 은빛소나무 숲으로 이동하세요. 새로운 비행 지점을 발견하세요: 공동묘지
   zone map 1421
+  task "── 언더시티 신규 퀘스트 (선택) ── 언더시티를 나와 은빛소나무 숲으로 이동하세요. 새로운 비행 지점을 발견하세요: 공동묘지" optional
   getfp "The Sepulcher"
 
 step
-  tip 타비사 하트위버에게 퀘스트 완료: 두려움에 찬 부탁 (로데론의 폐허에서 받은 퀘스트)
   zone map 1421
+  task "타비사 하트위버에게 퀘스트 완료: 두려움에 찬 부탁 (로데론의 폐허에서 받은 퀘스트)" optional
   turnin 92401 npc 250686
 
 step
@@ -1276,42 +1277,42 @@ step
 step
   only Orc,Undead,Tauren
   when level<24
-  tip 퀘스트 수락: 길목의 파수꾼 (포에버 신규)
   zone map 1421
+  task "퀘스트 수락: 길목의 파수꾼 (포에버 신규)" optional
   accept 95981 npc 2121
 
 step
-  tip 고위집행관 하드렉에게 퀘스트 수락 (또는 파티원에게 공유받기): 그림자송곳니 성채의 죽음추적자
   zone map 1421
+  task "고위집행관 하드렉에게 퀘스트 수락 (또는 파티원에게 공유받기): 그림자송곳니 성채의 죽음추적자" optional
   accept 1098 npc 1952
 
 step
-  tip 달라 돈위버에게 퀘스트 수락 (또는 파티원에게 공유받기): 아루갈의 최후
   zone map 1421
+  task "달라 돈위버에게 퀘스트 수락 (또는 파티원에게 공유받기): 아루갈의 최후" optional
   accept 1014 npc 1938
 
 step
-  tip 방향으로 이동하세요.
   zone map 1421
+  task "방향으로 이동하세요." optional
   goto 58,77 r 20 map 1421
 
 step
-  tip 지점에 있는
   zone map 1421
+  task "지점에 있는" optional
   goto 60,74 r 20 map 1421
 
 step
   when level<25
-  tip 동굴 안에서 까마귀발톱들을 처치해 완수하세요: 베렌의 동굴
   zone map 1421
+  task "동굴 안에서 까마귀발톱들을 처치해 완수하세요: 베렌의 동굴" optional
   kill 1974 quest 516.1
   kill 1973 quest 516.2
 
 step
   only Orc,Undead,Tauren
   when level<24
-  tip 동굴 남쪽의 달라란 마술사 8·파수꾼 8 처치: 길목의 파수꾼
   zone map 1421
+  task "동굴 남쪽의 달라란 마술사 8·파수꾼 8 처치: 길목의 파수꾼" optional
   kill 1888 quest 95981.1 @57,77.4 map 1421
   kill 1889 quest 95981.2 @57,77.4 map 1421
 
@@ -1320,8 +1321,8 @@ step
   level 22 -- 레벨 22가 되어야 합니다 (힐러는 21부터 가도 됩니다). 모자라면 성채 입구 근처에서 조금 사냥하세요.
 
 step
-  tip 남쪽 그림자송곳니 성채로 들어가세요
   zone map 1421
+  task "남쪽 그림자송곳니 성채로 들어가세요" optional
   task "★ 그림자송곳니 성채 — Lv22.0 → 약 Lv23.1 · 권장 Lv21~22 (힐러 21 · 탱커·딜러 22)" optional
   goto 44.8,67.8 r 20 map 1421
 
@@ -1332,8 +1333,9 @@ step
   turnin 1098 -- 던전 안 죽음추적자 빈센트에게 퀘스트 완료: 그림자송곳니 성채의 죽음추적자
 
 step
-  tip 공동묘지 달라 돈위버에게 퀘스트 완료: 아루갈의 최후
   zone map 1421
+  task "[알림] 곧 귀환석으로 크로스로드에 갑니다. 그때까지 귀환석을 쓰지 말고, 재사용 대기시간이 남았는지 지금 확인하세요." optional
+  task "공동묘지 달라 돈위버에게 퀘스트 완료: 아루갈의 최후" optional
   turnin 1014 npc 1938
 
 step
@@ -1361,7 +1363,7 @@ step
   turnin 95981 npc 2121
 
 step
-  tip ── 그림자송곳니 성채 보고 ── 언더시티로 비행하세요 (비행 지점이 없으면 달려서 이동).
+  task "── 그림자송곳니 성채 보고 ── 언더시티로 비행하세요 (비행 지점이 없으면 달려서 이동)." optional
   fly "Undercity"
   task "▶ 다음 던전: 검은심연의 나락 (약 Lv24에 갑니다) — 지금 약 Lv23.1. 조람가르 비행 지점이 아직 없어서, 돌발톱 산맥 퀘스트를 하며 해바위 야영지를 거쳐 조람가르까지 걸어갑니다." optional
   task "※ 귀환석이 크로스로드로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 크로스로드까지 비행하거나 달려가세요." optional
@@ -1376,33 +1378,33 @@ step
   hearth "The Crossroads"
 
 step
-  tip 톱니항으로 비행하세요.
+  task "톱니항으로 비행하세요." optional
   task "크로스로드로 귀환하세요 (귀환석이 재사용 대기 중이면 언더시티 동쪽 탑 에서 오그리마행 비행선 → 크로스로드)." optional
   fly "Ratchet"
 
 step
   when level<24
-  tip 메보크 미지릭스에게 퀘스트 수락: 동굴이끼거미알
   zone map 1413
+  task "메보크 미지릭스에게 퀘스트 수락: 동굴이끼거미알" optional
   accept 1069 npc 3446
 
 step
-  tip 크로스로드로 비행하세요.
+  task "크로스로드로 비행하세요." optional
   fly "Crossroads"
 
 step
-  tip 지점으로 이동하세요.
   zone map 1442
+  task "지점으로 이동하세요." optional
   goto 70,87 r 20 map 1442
 
 step
-  tip 카야 플랫후프가 나올 때까지 기다리세요.
   zone map 1442
+  task "카야 플랫후프가 나올 때까지 기다리세요." optional
   goto 73.4,85.6 r 20 map 1442
 
 step
-  tip 돌발톱 산맥으로 이동하세요. 지점에서 왼쪽으로 틀면 언덕으로 올라갈 수 있습니다.
   zone map 1442
+  task "돌발톱 산맥으로 이동하세요. 지점에서 왼쪽으로 틀면 언덕으로 올라갈 수 있습니다." optional
   goto 69,88.6 r 20 map 1442
 
 step
@@ -1411,39 +1413,39 @@ step
   accept 6461 npc 12816
 
 step
-  tip 지점에 있는 그물누비 고개로 이동하세요.
   zone map 1442
+  task "지점에 있는 그물누비 고개로 이동하세요." optional
   goto 53,76 r 20 map 1442
 
 step
   when level<23
-  tip 거미를 처치해 완수하세요: 식탐꾼들
   zone map 1442
+  task "거미를 처치해 완수하세요: 식탐꾼들" optional
   kill 4005 quest 6461.1
   kill 4007 quest 6461.2
 
 step
   when level<24
-  tip 알을 주워 완수하세요: 동굴이끼거미알
   zone map 1442
+  task "알을 주워 완수하세요: 동굴이끼거미알" optional
   collect 5570 quest 1069.1
 
 step
   when level<23
-  tip 말라카진에게 되돌아가 퀘스트 완료: 식탐꾼들
   zone map 1442
+  task "말라카진에게 되돌아가 퀘스트 완료: 식탐꾼들" optional
   turnin 6461 npc 12816
 
 step
   when level>=23
   when complete 6461
-  tip 말라카진에게 되돌아가 퀘스트 완료: 식탐꾼들
   zone map 1442
+  task "말라카진에게 되돌아가 퀘스트 완료: 식탐꾼들" optional
   turnin 6461 npc 12816
 
 step
-  tip 지점으로 이동하여, 서쪽으로 향하면 해바위 야영지에 도달하게 됩니다.
   zone map 1442
+  task "지점으로 이동하여, 서쪽으로 향하면 해바위 야영지에 도달하게 됩니다." optional
   goto 52,60 r 20 map 1442
 
 step
@@ -1452,13 +1454,13 @@ step
   accept 6562 npc 11862 optional -- (선택) 츄나만에게 퀘스트 수락: 검은심연의 나락으로 — 조람가르로 가는 안내 퀘스트입니다. 안 해도 검은심연 퀘스트는 모두 받을 수 있습니다.
 
 step
-  tip 새로운 비행 지점을 발견하세요.
   zone map 1442
+  task "새로운 비행 지점을 발견하세요." optional
   getfp "Sun Rock Retreat"
 
 step
-  tip 새로운 비행 지점을 발견하세요.
   zone map 1440
+  task "새로운 비행 지점을 발견하세요." optional
   task "해바위 야영지에서 북쪽 길을 따라 돌발톱 산맥을 나가 잿빛 골짜기 서쪽 해안의 조람가르 전초기지로 가세요 (조람가르 비행 지점이 아직 없으면 걸어서)." optional
   getfp "Zoram'gar Outpost"
   task "※ 그림자송곳니를 마치면 약 23레벨입니다. 조람 해안의 나가와 검은심연 입구 동굴의 사파이어(파티 권장)로 24레벨을 채운 뒤 검은심연에 들어갑니다." optional
@@ -1466,38 +1468,38 @@ step
 step
   when onquest 6562
   label q6562
-  tip (선택) 조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 검은심연의 나락으로
   zone map 1440
+  task "(선택) 조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 검은심연의 나락으로" optional
   turnin 6562 npc 12736
 
 step
-  tip 퀘스트 수락 (또는 파티원에게 공유받기): 아쿠마이의 정수
   zone map 1440
+  task "퀘스트 수락 (또는 파티원에게 공유받기): 아쿠마이의 정수" optional
   accept 6563 npc 12736
 
 step
-  tip 퀘스트 수락 (또는 파티원에게 공유받기): 폐허 사이로
   zone map 1440
+  task "퀘스트 수락 (또는 파티원에게 공유받기): 폐허 사이로" optional
   accept 6921 npc 12736
 
 step
-  tip 조람가르 전초기지 마루카이에게 퀘스트 수락: 조람 해안의 나가
   zone map 1440
+  task "조람가르 전초기지 마루카이에게 퀘스트 수락: 조람 해안의 나가" optional
   accept 6442 npc 12719
 
 step
-  tip 조람가르 북쪽 해안의 성난지느러미일족 나가를 잡아 머리 20개: 조람 해안의 나가
   zone map 1440
+  task "조람가르 북쪽 해안의 성난지느러미일족 나가를 잡아 머리 20개: 조람 해안의 나가" optional
   complete 6442 @13,24 map 1440
 
 step
-  tip 마루카이에게 퀘스트 완료: 조람 해안의 나가
   zone map 1440
+  task "마루카이에게 퀘스트 완료: 조람 해안의 나가" optional
   turnin 6442 npc 12719
 
 step
-  tip (파티 권장) 북쪽 해안 검은심연 입구 동굴(던전 들어가기 전)의 벽에서 아쿠마이 사파이어 20개를 캐세요: 아쿠마이의 정수
   zone map 1440
+  task "(파티 권장) 북쪽 해안 검은심연 입구 동굴(던전 들어가기 전)의 벽에서 아쿠마이 사파이어 20개를 캐세요: 아쿠마이의 정수" optional
   collect 16784 quest 6563.1 @13.5,12.5 map 1440
 
 step
@@ -1509,8 +1511,8 @@ step
   level 24 -- 레벨 24가 되어야 합니다 (탱커·딜러는 25가 좋습니다). 모자라면 조람가르 주변에서 조금 사냥하세요.
 
 step
-  tip 북쪽 해안 검은심연의 나락으로 들어가세요 (물속 통로)
   zone map 1440
+  task "북쪽 해안 검은심연의 나락으로 들어가세요 (물속 통로)" optional
   task "★ 검은심연의 나락 — Lv24.0 → 약 Lv25.3 · 권장 Lv24~25 (힐러 24 · 탱커·딜러 25)" optional
   goto 14.2,14 r 20 map 1440
 
@@ -1522,8 +1524,8 @@ step
   complete 6561 -- 황혼의 군주 켈리스의 머리: 검은심연의 음모
 
 step
-  tip 조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 폐허 사이로
   zone map 1440
+  task "조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 폐허 사이로" optional
   turnin 6921 npc 12736
 
 step

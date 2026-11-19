@@ -200,6 +200,42 @@ def goal_lines(g, lang, along, stats):
     raise ValueError(t)
 
 
+INN_KO = {'Orgrimmar': '오그리마', 'The Crossroads': '크로스로드', 'Undercity': '언더시티', 'Booty Bay': '무법항',
+          'Gadgetzan': '가젯잔', 'Razor Hill': '칼바위 언덕', 'Tarren Mill': '타렌 밀농장'}
+HEADS_UP_AHEAD = 5  # steps before the hearth
+
+
+def hearth_notices(g):
+    """{step index: [(en, ko)]}: a heads-up a few steps before each Hearthstone step, so the player keeps the stone
+    (and its cooldown) for it. It sits in an earlier step, so it is gone by the time the hearth comes."""
+    out, last_use = {}, -1
+    for h, st in enumerate(g.steps):
+        kinds = [x['t'] for x in st['goals']]
+        if 'hearth' in kinds:
+            loc = next(x['location'] for x in st['goals'] if x['t'] == 'hearth')
+
+            def fits(c, gated_ok):
+                if c.get('along') or not c['goals'] or (c.get('when') and not gated_ok):
+                    return False
+                if c.get('only') and c.get('only') != st.get('only'):
+                    return False  # a step for other characters than the hearth's
+                return not any(x['t'] in ('hearth', 'fly') for x in c['goals'])
+            # the nearest step always shown, up to 12 back; else the nearest one within 5 (a level-rule step:
+            # a character far above it skips it, notice and all)
+            pick = next((k for k in range(h - 1, max(last_use, h - 13), -1) if fits(g.steps[k], False)), None)
+            if pick is None:
+                pick = next((k for k in range(h - 1, max(last_use, h - 6), -1) if fits(g.steps[k], True)), None)
+            if pick is not None:
+                out.setdefault(pick, []).append((
+                    '[Heads-up] Soon you hearth to %s. Keep your Hearthstone until then and check its cooldown now.' % loc,
+                    '[알림] 곧 귀환석으로 %s에 갑니다. 그때까지 귀환석을 쓰지 말고, 재사용 대기시간이 남았는지 지금 확인하세요.'
+                    % INN_KO.get(loc, loc)))
+            last_use = h
+        elif 'sethome' in kinds:
+            last_use = max(last_use, h - 1)
+    return out
+
+
 def guide_text(g, guides, lang, pack, stats):
     nxt = None
     if g.next:
@@ -221,7 +257,8 @@ def guide_text(g, guides, lang, pack, stats):
     if nxt:
         L.append('next %s/%s' % (pack['id'], nxt.slug))
     L.append('# Written by tools/emit_guide.py from %s.lua (BalCon %s). Edit the converter, not this file.' % (g.stem, C.SRC_VERSION))
-    for st in g.steps:
+    heads = hearth_notices(g)
+    for si, st in enumerate(g.steps):
         goals = []
         for goal in st['goals']:
             goals += goal_lines(goal, lang, bool(st.get('along')), stats)
@@ -237,11 +274,17 @@ def guide_text(g, guides, lang, pack, stats):
             L.append('  along until ' + st['until'] if st.get('until') else '  along')
         if st.get('label'):
             L.append('  label ' + st['label'])
-        if st.get('note'):
-            L.append('  tip ' + plain(txt(st['note'], lang)))
         maps = [x['map'] for x in st['goals'] if 'map' in x]
         if maps:
             L.append('  zone map %d' % maps[0])
+        # The step's own description is a ticked-off line too (a `tip` box stays on screen until the step is
+        # done, which in a kill or loot step is a long time); a heads-up for a coming hearth comes first.
+        for en, ko in heads.get(si, []):
+            L.append('  task ' + quoted(ko if lang == 'ko' else en) + ' optional')
+            stats['heads-up lines'] += 1
+        if st.get('note'):
+            L.append('  task ' + quoted(txt(st['note'], lang)) + ' optional')
+            stats['step descriptions as tasks'] += 1
         L += ['  ' + x for x in goals]
         stats['steps'] += 1
         stats['goal lines'] += len(goals)
