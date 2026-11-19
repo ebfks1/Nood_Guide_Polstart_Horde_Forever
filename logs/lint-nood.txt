@@ -1,0 +1,265 @@
+packs/nood/guides/01-durotar.guide:280: warning: quest 5441 (Lazy Peons) is accepted but never turned in later in this guide or a guide after it for some of the characters it applies to
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/01-durotar.guide:543: warning: quest 823 (Report to Orgnil) is accepted but never turned in later in this guide or a guide after it for some of the characters it applies to
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/01-durotar.guide:587: warning: quest 837 (Encroachment) is accepted but never turned in later in this guide or a guide after it for some of the characters it applies to
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/01-durotar.guide:677: warning: explicit coordinates 58.17,57.13 are more than 50 yards from every known spawn of npc 3129
+  hint: `polestar find 3129 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/01-durotar.guide:943: warning: quest 812 (Need for a Cure) is accepted but never turned in later in this guide or a guide after it for some of the characters it applies to
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/01-durotar.guide:974: warning: explicit coordinates 54.3,42.9: npc 11407 has no known spawn on map 1411
+  hint: `polestar find 11407 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/01-durotar.guide:1337: warning: quest 828 (Margoz) is accepted but never turned in later in this guide or a guide after it for some of the characters it applies to
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/01-durotar.guide:1348: warning: explicit coordinates 52.82,29.2 are more than 50 yards from every known spawn of npc 3199
+  hint: `polestar find 3199 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/01-durotar.guide:1444: warning: `complete` for quest 5727 (Hidden Enemies) has no place, but its objectives do (5727.1 = talk Neeru Fireblade x1): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 5727.<n>`, `collect <item> quest 5727.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/01-durotar.guide:1501: warning: quest 812 (Need for a Cure) is turned in, but no earlier goal in this guide or a guide chaining into it gets Venomtail Antidote (4904, objective 812.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/01-durotar.guide:1506: warning: quest 812 (Need for a Cure) is turned in, but no earlier goal in this guide or a guide chaining into it gets Venomtail Antidote (4904, objective 812.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/01-durotar.guide:1592: warning: `collect` item 286009 (Aggor's Belt) drops only from elites (Aggor the Young); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Aggor the Young is elite: grouping up is advised."
+packs/nood/guides/02-mulgore.guide:922: warning: quest 768 (Gathering Leather) needs Skinning 1, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Skinning` earlier in the guide
+packs/nood/guides/02-mulgore.guide:922: warning: quest 768 (Gathering Leather) is turned in, but no earlier goal in this guide or a guide chaining into it gets Light Leather (2318, objective 768.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/02-mulgore.guide:934: warning: quest 769 (Kodo Hide Bag) needs Leatherworking 10, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Leatherworking` earlier in the guide
+packs/nood/guides/02-mulgore.guide:934: warning: quest 769 (Kodo Hide Bag) is turned in, but no earlier goal in this guide or a guide chaining into it gets Light Leather (2318, objective 769.1), Coarse Thread (2320, objective 769.2)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/03-tirisfal.guide:276: warning: `complete` for quest 99134 (Discipline) has no place, but its objectives do (99134.1 = kill Deathguard Linnea): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 99134.<n>`, `collect <item> quest 99134.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/03-tirisfal.guide:364: warning: explicit coordinates 56.1,52.4 are more than 50 yards from every known spawn of npc 10666
+  hint: `polestar find 10666 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/03-tirisfal.guide:487: warning: `collect` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/03-tirisfal.guide:507: warning: `collect` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/03-tirisfal.guide:602: warning: quest 421 needs level 12, but the route plausibly reaches only level 11 here
+packs/nood/guides/04-zephras.guide:32: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:132: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:137: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:141: warning: `complete` for quest 94414 (The Anchors of Zephras) has no place, but its objectives do (94414.1 = kill Halaan Hawk-Eye): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 94414.<n>`, `collect <item> quest 94414.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/04-zephras.guide:145: warning: `complete` for quest 92474 (Falling With Style), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/04-zephras.guide:160: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:232: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:233: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:292: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:293: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:298: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:328: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:329: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:330: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:421: warning: quest 94007 needs level 10, but the route plausibly reaches only level 7 here
+packs/nood/guides/04-zephras.guide:426: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:431: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:436: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:441: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:446: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:451: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:456: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:457: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:458: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:463: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:520: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:550: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:658: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:663: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:664: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:665: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:703: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:738: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:743: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:744: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:749: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:774: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:794: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:832: warning: `complete` for quest 94050 (Training the Beast), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/04-zephras.guide:900: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:910: warning: quest 93927 (A Last Request) is turned in, but no earlier goal in this guide or a guide chaining into it gets Bloody Note (254871, objective 93927.1), Raani's Lucky Feather (263415, objective 93927.3), Shadowsong Family Signet (263418, objective 93927.4)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/04-zephras.guide:965: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:970: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:975: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:980: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:985: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:990: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:995: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1010: warning: quest 93459 (More Al'Aketh Ears) is turned in, but no earlier goal in this guide or a guide chaining into it gets Al'Aketh Cultist's Ear (258771, objective 93459.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/04-zephras.guide:1039: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1081: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1086: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1185: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1200: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1215: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1220: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1244: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1290: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1291: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1296: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/04-zephras.guide:1301: warning: `era` coordinates on map 2521, but map-frames.json has no Era bounds for it; compiling them as live-frame
+packs/nood/guides/05-12-25.guide:264: warning: coordinates on map 1412 (Mulgore), but this step's zone is 1413 (The Barrens) and the guide never sets zone 1412; check the target, or add `zone map 1412` if the route really goes there
+packs/nood/guides/05-12-25.guide:265: warning: coordinates on map 1412 (Mulgore), but this step's zone is 1413 (The Barrens) and the guide never sets zone 1412; check the target, or add `zone map 1412` if the route really goes there
+packs/nood/guides/05-12-25.guide:314: warning: `complete` for quest 5722 (Searching for the Lost Satchel), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/05-12-25.guide:632: warning: `collect` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/05-12-25.guide:634: warning: `collect` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/05-12-25.guide:997: warning: `collect` item 6443 (Deviate Hide) drops only from elites (Deviate Creeper, Deviate Lurker, Deviate Stalker, Deviate Stinglash, Deviate Coiler, Deviate Slayer); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Deviate Creeper is elite: grouping up is advised."
+packs/nood/guides/05-12-25.guide:1006: warning: `collect` item 5334 (99-Year-Old Port) drops only from elites (Mad Magglish); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Mad Magglish is elite: grouping up is advised."
+packs/nood/guides/05-12-25.guide:1020: warning: `collect` item 6464 (Wailing Essence) drops only from elites (Devouring Ectoplasm); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Devouring Ectoplasm is elite: grouping up is advised."
+packs/nood/guides/05-12-25.guide:1282: warning: quest 95981 needs 482 (Dalaran's Intentions) turned in first, but the chain never turns it in
+packs/nood/guides/05-12-25.guide:1330: warning: `complete` for quest 1098 (Deathstalkers in Shadowfang), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/06-25-30.guide:40: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:65: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:75: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:393: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:704: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:716: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:732: warning: the step's `when level` never holds for this guide's levels (25-30): no character sees the step
+packs/nood/guides/06-25-30.guide:746: warning: quest 93680 needs level 30, but the route plausibly reaches only level 29 here
+packs/nood/guides/06-25-30.guide:751: warning: quest 544 needs level 30, but the route plausibly reaches only level 29 here
+packs/nood/guides/06-25-30.guide:776: warning: quest 545 needs level 30, but the route plausibly reaches only level 29 here
+packs/nood/guides/06-25-30.guide:831: warning: `complete` for quest 96984 (Heart of Disruption) has no place, but its objectives do (96984.1 = collect Arcane Mote x1): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 96984.<n>`, `collect <item> quest 96984.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/07-30-40.guide:44: warning: `collect` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/07-30-40.guide:148: warning: quest 1048 needs level 33, but the route plausibly reaches only level 30 here
+packs/nood/guides/07-30-40.guide:162: warning: `collect` item 5538 (Vorrel's Wedding Ring) drops only from elites (Nancy Vishas); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Nancy Vishas is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:175: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/07-30-40.guide:175: warning: `kill` npc 3974 (Houndmaster Loksey) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Houndmaster Loksey is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:350: warning: `kill` npc 2304 (Captain Ironhill) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Captain Ironhill is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:355: warning: `kill` npc 2344 (Dun Garok Mountaineer) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Dun Garok Mountaineer is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:356: warning: `kill` npc 2345 (Dun Garok Rifleman) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Dun Garok Rifleman is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:357: warning: `kill` npc 2346 (Dun Garok Priest) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Dun Garok Priest is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:358: warning: `kill` npc 2304 (Captain Ironhill) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Captain Ironhill is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:363: warning: `collect` item 3693 (Humbert's Sword) drops only from elites (Dun Garok Mountaineer, Dun Garok Rifleman, Dun Garok Priest, Tamra Stormpike); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Dun Garok Mountaineer is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:540: warning: quest 95770 needs 95748 (The Gurubashi Legends of Old) turned in first, but the chain never turns it in
+packs/nood/guides/07-30-40.guide:551: warning: quest 95773 needs 95748 (The Gurubashi Legends of Old) turned in first, but the chain never turns it in
+packs/nood/guides/07-30-40.guide:784: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:797: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1006: warning: `complete` for quest 1368 (Gelkis Alliance), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/07-30-40.guide:1032: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1043: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1113: warning: explicit coordinates 33,16.8 are more than 50 yards from every known spawn of the target
+  hint: `polestar find <id>` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/07-30-40.guide:1153: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1224: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1261: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1364: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1377: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1408: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1440: warning: the step's `when level` never holds for this guide's levels (30-40): no character sees the step
+packs/nood/guides/07-30-40.guide:1640: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/07-30-40.guide:1640: warning: `kill` npc 3975 (Herod) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Herod is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1646: warning: `collect` item 5805 (Heart of Zeal) drops only from elites (Scarlet Preserver, Scarlet Scout, Scarlet Magician, Scarlet Sentry, Scarlet Augur, Scarlet Disciple); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Scarlet Preserver is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1650: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/07-30-40.guide:1650: warning: `kill` npc 3976 (Scarlet Commander Mograine) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Scarlet Commander Mograine is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1655: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/07-30-40.guide:1655: warning: `kill` npc 3977 (High Inquisitor Whitemane) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "High Inquisitor Whitemane is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1669: warning: quest 2342 (Reclaimed Treasures) is accepted but never turned in later in this guide or a guide after it
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/07-30-40.guide:1711: warning: `kill` npc 7873 (Razorfen Battleguard) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Razorfen Battleguard is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1712: warning: `kill` npc 7874 (Razorfen Thornweaver) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Razorfen Thornweaver is elite: grouping up is advised."
+packs/nood/guides/07-30-40.guide:1713: warning: `kill` npc 7872 (Death's Head Cultist) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Death's Head Cultist is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:336: warning: `complete` for quest 703 (Barbecued Buzzard Wings) has no place, but its objectives do (703.1 = collect Buzzard Wing x4): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 703.<n>`, `collect <item> quest 703.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/08-40-50.guide:820: warning: `collect` item 3876 (Fang of Bhag'thera) drops only from elites (Bhag'thera); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Bhag'thera is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:1019: warning: explicit coordinates 33.4,52.8 are more than 50 yards from every known spawn of npc 2536
+  hint: `polestar find 2536 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/08-40-50.guide:1058: warning: quest 621 (Zanzil's Secret) is turned in, but no earlier goal in this guide or a guide chaining into it gets Zanzil's Mixture (4016, objective 621.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/08-40-50.guide:1064: warning: quest 621 (Zanzil's Secret) is turned in, but no earlier goal in this guide or a guide chaining into it gets Zanzil's Mixture (4016, objective 621.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/08-40-50.guide:1149: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1153: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1159: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1159: warning: quest 94974 (Key Ingredients) is turned in, but no earlier goal in this guide or a guide chaining into it gets Thick Leather (4304, objective 94974.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/08-40-50.guide:1163: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1163: warning: quest 94975 needs 94768 (Bring Me His Head) turned in first, but the chain never turns it in
+packs/nood/guides/08-40-50.guide:1164: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1164: warning: quest 94972 needs 95278 (It Is Time, Brother...) turned in first, but the chain never turns it in
+packs/nood/guides/08-40-50.guide:1165: warning: quest 95056 is not in data; using the explicit title (new Forever content?)
+packs/nood/guides/08-40-50.guide:1174: warning: quest 95056 is not in data; using the explicit title (new Forever content?)
+packs/nood/guides/08-40-50.guide:1178: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1178: warning: quest 94968 needs 95278 (It Is Time, Brother...) turned in first, but the chain never turns it in
+packs/nood/guides/08-40-50.guide:1184: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1190: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1193: warning: quest 95056 is not in data (new Forever content?)
+packs/nood/guides/08-40-50.guide:1196: warning: quest 95056 is not in data; using the explicit title (new Forever content?)
+packs/nood/guides/08-40-50.guide:1202: warning: coordinates on map 2548 (Riverglades), but this step's zone is 1435 (Swamp of Sorrows) and the guide never sets zone 2548; check the target, or add `zone map 2548` if the route really goes there
+packs/nood/guides/08-40-50.guide:1202: warning: quest 94968 (Eye of Mugg) is turned in, but no earlier goal in this guide or a guide chaining into it gets Eye of Mugg (267086, objective 94968.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/08-40-50.guide:1238: warning: `collect` item 8009 (Dentrium Power Stone) drops only from elites (Shadowforge Surveyor, Shadowforge Ruffian, Shadowforge Digger); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Shadowforge Surveyor is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:1239: warning: `collect` item 8052 (An'Alleum Power Stone) drops only from elites (Shadowforge Surveyor, Shadowforge Ruffian, Shadowforge Digger); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Shadowforge Surveyor is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:1249: warning: `collect` item 7666 (Shattered Necklace) drops only from elites (Stonevault Rockchewer, Stonevault Cave Hunter, Shadowforge Ruffian, Shadowforge Digger, Shadowforge Surveyor); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Stonevault Rockchewer is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:1290: warning: quest 2203 (Badlands Reagent Run II) needs Alchemy 210, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Alchemy` earlier in the guide
+packs/nood/guides/08-40-50.guide:1296: warning: quest 2203 (Badlands Reagent Run II) needs Alchemy 210, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Alchemy` earlier in the guide
+packs/nood/guides/08-40-50.guide:1302: warning: quest 2203 (Badlands Reagent Run II) needs Alchemy 210, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Alchemy` earlier in the guide
+packs/nood/guides/08-40-50.guide:1309: warning: quest 2203 (Badlands Reagent Run II) needs Alchemy 210, and the guide does not train it before here: characters without it never see this goal
+  hint: make the goal `optional`, or `train Alchemy` earlier in the guide
+packs/nood/guides/08-40-50.guide:1353: warning: quest 7068 (Shadowshard Fragments) is accepted but never turned in later in this guide or a guide after it
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/08-40-50.guide:1964: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2226: warning: quest 1446 (Jammal'an the Prophet) is accepted but never turned in later in this guide or a guide after it
+  hint: turn it in later in this guide or in a guide after it, or make the accept `optional` when the player may leave it
+packs/nood/guides/08-40-50.guide:2371: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2383: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2394: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2405: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2416: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2427: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2438: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2449: warning: the step's `when level` never holds for this guide's levels (40-50): no character sees the step
+packs/nood/guides/08-40-50.guide:2506: warning: `collect` item 17756 (Shadowshard Fragment) drops only from elites (Shadowshard Rumbler, Shadowshard Smasher); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Shadowshard Rumbler is elite: grouping up is advised."
+packs/nood/guides/08-40-50.guide:2516: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/09-50-60.guide:173: warning: explicit coordinates 40.8,57.2 are more than 50 yards from every known spawn of npc 12046
+  hint: `polestar find 12046 --kind npc` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/09-50-60.guide:505: warning: quest 3501 (Everything Counts In Large Amounts) is turned in, but no earlier goal in this guide or a guide chaining into it gets Imperfect Draenethyst Fragment (10593, objective 3501.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:618: warning: `collect` item 18946 (Head of Overseer Maltorius) drops only from elites (Overseer Maltorius); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Overseer Maltorius is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:758: warning: `collect` item 10552 (Symbol of Ragnaros) drops only from elites (Twilight Dark Shaman, Twilight Fire Guard, Twilight Geomancer, Twilight Idolater); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Twilight Dark Shaman is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:906: warning: `collect` item 6181 (Fetish of Hakkar) drops only from elites (Cursed Atal'ai, Enthralled Atal'ai, Mummified Atal'ai, Atal'ai Priest, Veyzhak the Cannibal, Zekkis, Kazkaz the Unholy); in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Cursed Atal'ai is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:909: warning: `complete` for quest 3446 (Into the Depths), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/09-50-60.guide:911: warning: `complete` for quest 3447 (Secret of the Circle), which has no objectives: the action is the turn-in; use `turnin`
+packs/nood/guides/09-50-60.guide:1144: warning: quest 4284 (Crystals of Power) is turned in, but no earlier goal in this guide or a guide chaining into it gets Red Power Crystal (11186, objective 4284.1), Yellow Power Crystal (11188, objective 4284.2), Green Power Crystal (11185, objective 4284.3), Blue Power Crystal (11184, objective 4284.4)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:1150: warning: quest 4284 (Crystals of Power) is turned in, but no earlier goal in this guide or a guide chaining into it gets Red Power Crystal (11186, objective 4284.1), Yellow Power Crystal (11188, objective 4284.2), Green Power Crystal (11185, objective 4284.3), Blue Power Crystal (11184, objective 4284.4)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:1668: warning: `complete` for quest 3906 (Disharmony of Flame) has no place, but its objectives do (3906.1 = kill Overmaster Pyron x1): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 3906.<n>`, `collect <item> quest 3906.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/09-50-60.guide:1673: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/09-50-60.guide:1673: warning: `kill` npc 8891 (Anvilrage Guardsman) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Anvilrage Guardsman is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:1674: warning: `kill` npc 8890 (Anvilrage Warden) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Anvilrage Warden is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:1675: warning: `kill` has no coordinates (no known spawns; add @x,y)
+  hint: add @x,y where the player finds the target (the map coordinates the game shows), so the arrow can lead there
+packs/nood/guides/09-50-60.guide:1675: warning: `kill` npc 8892 (Anvilrage Footman) is elite; in a Leveling guide put the goal in a step with `when group <quest>` (the player chooses it), not optional there, or make it `optional` in a step for everyone, with the tip "Anvilrage Footman is elite: grouping up is advised."
+packs/nood/guides/09-50-60.guide:1734: warning: `complete` for quest 7201 (The Last Element) has no place, but its objectives do (7201.1 = collect Essence of the Elements x10): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 7201.<n>`, `collect <item> quest 7201.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/09-50-60.guide:1857: warning: quest 3909 (The Videre Elixir) is turned in, but no earlier goal in this guide or a guide chaining into it gets Videre Elixir (11243, objective 3909.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:2053: warning: explicit coordinates 49,27 are more than 50 yards from every known spawn of the target
+  hint: `polestar find <id>` prints a known spawn: check the coordinates against it, or keep them when the target stands elsewhere in Forever
+packs/nood/guides/09-50-60.guide:2230: warning: `complete` for quest 4866 (Mother's Milk) has no place, but its objectives do (4866.1 = kill Ragged John): the arrow has nowhere to point
+  hint: write a goal per objective (`kill <npc> quest 4866.<n>`, `collect <item> quest 4866.<n>`), or give the `complete` a `goto` or coordinates
+packs/nood/guides/09-50-60.guide:2242: warning: quest 4867 (Urok Doomhowl) is turned in, but no earlier goal in this guide or a guide chaining into it gets Warosh's Mojo (12712, objective 4867.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:2248: warning: quest 4742 (Seal of Ascension) is turned in, but no earlier goal in this guide or a guide chaining into it gets Gemstone of Spirestone (12336, objective 4742.1), Gemstone of Smolderthorn (12335, objective 4742.2), Gemstone of Bloodaxe (12337, objective 4742.3), Unadorned Seal of Ascension (12219, objective 4742.4)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+packs/nood/guides/09-50-60.guide:2627: warning: quest 5122 (The Medallion of Faith) is turned in, but no earlier goal in this guide or a guide chaining into it gets Medallion of Faith (12845, objective 5122.1)
+  hint: add the goal that gets it before the turn-in (`collect <item> quest <Q.O>`, or the `kill`/`interact` that drops it, linked to its objective)
+lint ok: 9 files, 9 guides: 0 errors, 205 warnings

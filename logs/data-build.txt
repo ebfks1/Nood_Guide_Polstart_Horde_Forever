@@ -1,0 +1,31 @@
+fetching https://wago.tools/db2/UiMap/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/UiMapAssignment/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/AreaTable/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/Faction/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/UiMap/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/UiMapAssignment/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/AreaTable/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ChrRaces/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ChrClasses/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/CharBaseInfo/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Faction/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Map/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ItemSparse/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Item/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/SpellName/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/SpellEffect/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/QuestXP/csv?build=1.15.9.70003
+cloning https://github.com/shagu/pfQuest at 104f35678ca3 into /home/runner/work/_temp/polestar/data/sources/pfQuest
+fetching https://raw.githubusercontent.com/cmangos/classic-db/22b51464f1625f6ef6275771de1f5466c6f5d19e/Full_DB/ClassicDB_1_12_1_z2815.sql.gz
+Forever tables: no client or WoWDBDefs checkout found; reading the cached wago.tools CSVs
+loading pfQuest database from /home/runner/work/_temp/polestar/data/sources/pfQuest
+reading QuestieDB store /home/runner/work/_temp/questie/x-QuestieDB-1.1.0-Forever/QuestieDB/QuestieDB_Forever.toc
+private corrections: none found (public corrections only)
+summoned vendors: 4 dropped as sellers (14337, 235164, 242498, 254695)
+learned layer: 8 quest fields from /home/runner/work/_temp/polestar/data/recorded/quests.json
+  Forever TDB: no /home/runner/work/_temp/polestar/data/local/forever-tdb/world.sqlite and no extract: the world builds without it
+warning: uiMap 947: spans 2 continents (0, 1); no single Era frame
+warning: forever uiMap 947: spans 2 continents (0, 1); no single Era frame
+data build: no last good statistics (/home/runner/work/_temp/polestar/data/forever/stats-good.json): this build's become them
+wrote data/forever: 6068 quests, 15830 npcs, 10758 objects, 26569 items, 60 zones, 53 map frames, 75 factions, 0 recordings (35.0 MiB); QuestieDB: 5891 quests (1639 Forever-only), 4616 with xp
+data build: 10.64 s
