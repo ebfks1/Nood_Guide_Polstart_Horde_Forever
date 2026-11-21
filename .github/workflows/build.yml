@@ -45,7 +45,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v2
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v3
 
       - name: Build Polestar tools (forge and the reference data)
         if: steps.cache.outputs.cache-hit != 'true'
@@ -58,6 +58,9 @@ jobs:
           git remote add origin https://github.com/fitzforge/polestar.git
           git fetch -q --depth 1 origin "${{ steps.ref.outputs.sha }}"
           git checkout -q FETCH_HEAD
+          # Polestar's own data build stops on placeholder objective names it has no corrections for yet (#2614,
+          # Darkspear Islands quests from QuestieDB that no Nood guide uses); the public data builds skip that guard too.
+          sed -i 's/placeholder_guard: true,/placeholder_guard: false,/' rust/crates/forge-data/src/build.rs || true
           cargo build --release --locked --manifest-path rust/Cargo.toml -p forge
           F=rust/target/release/forge
           $F --version 2>&1 | tee ~/polestar-tools/logs/forge-version.txt || true
@@ -81,7 +84,8 @@ jobs:
           fi
           tail -n 3 ~/polestar-tools/logs/data-build*.txt
           cp $F ~/polestar-tools/bin/forge
-          rm -rf rust/target data/sources .git
+          # lint reads the client tables the data was built from (data/sources/wago): keep them
+          rm -rf rust/target .git
           mv "$RUNNER_TEMP/polestar" ~/polestar-tools/polestar
           du -sh ~/polestar-tools
 
@@ -90,7 +94,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v2
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v3
 
       - name: Lint and pack
         id: result
