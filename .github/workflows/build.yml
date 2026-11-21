@@ -45,7 +45,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v3
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v4
 
       - name: Build Polestar tools (forge and the reference data)
         if: steps.cache.outputs.cache-hit != 'true'
@@ -84,6 +84,15 @@ jobs:
           fi
           tail -n 3 ~/polestar-tools/logs/data-build*.txt
           cp $F ~/polestar-tools/bin/forge
+          # lint reads the client tables the data was built from (data/sources/wago): keep them, and add the class
+          # spell tables it names that `data build` does not fetch (forge's CLASS_SPELLS tables, from wago.tools)
+          for d in data/sources/wago/*/; do
+            b=$(basename "$d")
+            for t in SpellName Spell SkillLineAbility; do
+              [ -f "$d/$t.csv" ] || curl -fsSL "https://wago.tools/db2/$t/csv?build=$b" -o "$d/$t.csv" || echo "could not fetch $t for $b"
+            done
+            ls "$d" | tr '\n' ' '; echo
+          done
           # lint reads the client tables the data was built from (data/sources/wago): keep them
           rm -rf rust/target .git
           mv "$RUNNER_TEMP/polestar" ~/polestar-tools/polestar
@@ -94,7 +103,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ~/polestar-tools
-          key: polestar-tools-${{ steps.ref.outputs.sha }}-v3
+          key: polestar-tools-${{ steps.ref.outputs.sha }}-v4
 
       - name: Lint and pack
         id: result
