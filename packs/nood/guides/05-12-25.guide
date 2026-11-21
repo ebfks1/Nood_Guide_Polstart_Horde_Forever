@@ -360,13 +360,6 @@ step
   turnin 5723 npc 11833
 
 step
-  when onquest 5724
-  label q5724
-  zone map 1456
-  task "Turn in Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)" optional
-  turnin 5724 npc 11833
-
-step
   zone map 1456
   task "Discover the Thunder Bluff flight path (skipped automatically if you already have it)." optional
   getfp "Thunder Bluff"
@@ -589,11 +582,6 @@ step
   zone map 1458
   task "Turn in to Theodore Griffs: The New Plague" optional
   turnin 95216 npc 11835
-
-step
-  zone map 1458
-  task "Turn in to Master Apothecary Faranell: Unending Torment" optional
-  turnin 97288 npc 2055
 
 step
   zone map 1458
@@ -1513,12 +1501,3 @@ step
   zone map 1440
   task "Turn in to Je'neu Sancrea at Zoram'gar Outpost: Amongst The Ruins" optional
   turnin 6921 npc 12736
-
-step
-  zone map 1440
-  turnin 6564 npc 12736
-
-step
-  zone map 1440
-  turnin 6922 npc 12736
-  task "That's the end of 12-25. Move on to the 25-30 guide (Excavation Site, Dalaran)." optional

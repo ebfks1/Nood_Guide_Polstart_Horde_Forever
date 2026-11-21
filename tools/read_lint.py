@@ -9,6 +9,7 @@ unk = collections.defaultdict(set)
 GUIDES = os.environ.get('NOOD_REPO', '/home/claude/nood_guide_polstart_horde_forever')
 pre = collections.defaultdict(set)
 elite = set(old.get('elite', []))
+blocked = set(old.get('race_blocked', []))
 root = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[1])))
 for q, v in old.get('prereq', {}).items():
     pre[int(q)] |= set(v)
@@ -29,6 +30,10 @@ for l in open(sys.argv[1], encoding='utf-8'):
         except (OSError, IndexError, TypeError):
             pass
         continue
+    rb = re.match(r'quest (\d+) \(.*\) is not available to any race this (?:step|goal) applies to', msg)
+    if rb:
+        blocked.add(int(rb.group(1)))
+        continue
     n = re.match(r'quest (\d+) needs (\d+) \(.*?\) turned in first', msg)
     if n:
         pre[int(n.group(1))].add(int(n.group(2)))
@@ -46,5 +51,5 @@ for l in open(sys.argv[1], encoding='utf-8'):
 for k, v in old.get('unknown', {}).items():
     if '--fresh' not in sys.argv:
         unk[k] |= set(v)
-json.dump({'unknown': {k: sorted(v) for k, v in unk.items()}, 'objorder': order, 'prereq': {q: sorted(v) for q, v in pre.items()}, 'elite': sorted(elite)}, open(out, 'w'), indent=0)
+json.dump({'unknown': {k: sorted(v) for k, v in unk.items()}, 'objorder': order, 'prereq': {q: sorted(v) for q, v in pre.items()}, 'elite': sorted(elite), 'race_blocked': sorted(blocked)}, open(out, 'w'), indent=0)
 print({k: len(v) for k, v in unk.items()}, len(order), 'quests with another objective order')

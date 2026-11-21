@@ -582,46 +582,6 @@ step
   level 10
 
 step
-  only Hunter
-  zone map 2521
-  task "Accept Taming the Beast (Quel'ana Quickgale)" optional
-  accept 94978 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 254588 quest 94978.1
-
-step
-  only Hunter
-  zone map 2521
-  task "Turn in Taming the Beast (Quel'ana Quickgale)" optional
-  turnin 94978 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "Accept Taming the Beast (Quel'ana Quickgale)" optional
-  accept 94979 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 251707 quest 94979.1
-
-step
-  only Hunter
-  zone map 2521
-  task "Turn in Taming the Beast (Quel'ana Quickgale)" optional
-  turnin 94979 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "Accept Taming the Beast (Quel'ana Quickgale)" optional
-  accept 94013 npc 252389
-
-step
   only Warrior
   zone map 2521
   task "Accept The Skybreaker Bulwark (Seena Skybreaker)" optional
@@ -643,36 +603,14 @@ step
   accept 93926 npc 251523
 
 step
-  zone map 2521
-  task "Accept Stolen Supplies (Danarii Bellowveil)" optional
-  accept 92551 npc 252172
-
-step
   only Warrior
   zone map 2521
   collect 263993 quest 94003.1
 
 step
   zone map 2521
-  task "Click the supply caches (small bags) east of Falas: Stolen Supplies" optional
-  collect 252760 quest 92551.1 @49.3,55.9 map 2521
-
-step
-  zone map 2521
   task "Kill Living Lightning and Al'Aketh Stormcallers, and Commander Cyclas (50.1,56.7): Havoc in the Highlands" optional
-  kill 252068 quest 92550.1 @48.6,55.7 map 2521
-  kill 251662 quest 92550.2 @48.6,55.7 map 2521
-  collect 252661 quest 92550.3 @48.6,55.7 map 2521
-
-step
-  zone map 2521
-  task "Turn in The Western Watch (Peacekeeper Vaaniel)" optional
-  turnin 93926 npc 252155
-
-step
-  zone map 2521
-  task "Accept A Last Request (Peacekeeper Vaaniel)" optional
-  accept 93927 npc 252155
+  complete 92550 @48.6,55.7 map 2521
 
 step
   only Warrior
@@ -693,9 +631,20 @@ step
   accept 97243 npc 252382
 
 step
-  only Hunter
   zone map 2521
-  kill 250874 quest 94013.1
+  task "Accept The Broken Construct 1 (Ayessa Dawnsinger)" optional
+  task "Class quests (level 10)" optional
+  accept 93735 npc 251968
+
+step
+  zone map 2521
+  task "Accept A Grand Adventure (Ayessa Dawnsinger)" optional
+  accept 92708 npc 251968
+
+step
+  zone map 2521
+  task "Accept Unwelcome Spirits (Endaria Mistgaze) — it's to the north (58,32), so do it later when you go north" optional
+  accept 93736 npc 254344
 
 step
   zone map 2521
@@ -706,6 +655,45 @@ step
   zone map 2521
   task "Turn in Crab Season (Nyalah Brightfire)" optional
   turnin 93317 npc 257006
+
+step
+  zone map 2521
+  task "Turn in The Broken Construct 1 (Riaani Nightwind)" optional
+  turnin 93735 npc 256083
+
+step
+  zone map 2521
+  task "Accept The Broken Construct 2 (Riaani Nightwind)" optional
+  accept 93737 npc 256083
+
+step
+  zone map 2521
+  task "Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2" optional
+  complete 93737 @59,73 map 2521
+
+step
+  zone map 2521
+  task "Turn in The Broken Construct 2 (Riaani Nightwind)" optional
+  turnin 93737 npc 256083
+
+step
+  zone map 2521
+  task "Accept The Broken Construct (Riaani Nightwind)" optional
+  accept 93738 npc 256083
+
+step
+  zone map 2521
+  task "Turn in The Broken Construct (Ayessa Dawnsinger)" optional
+  turnin 93738 npc 251968
+
+step
+  zone map 2521
+  accept 93746 npc 251968
+
+step
+  zone map 2521
+  task "Turn in A Grand Adventure (Ayessa Dawnsinger)" optional
+  turnin 92708 npc 251968
 
 step
   zone map 2521
@@ -816,28 +804,6 @@ step
   accept 97244 npc 268592
 
 step
-  only Hunter
-  zone map 2521
-  task "Turn in Taming the Beast (Quel'ana Quickgale)" optional
-  turnin 94013 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "Accept Training the Beast (Quel'ana Quickgale)" optional
-  accept 94050 npc 252389
-
-step
-  only Hunter
-  complete 94050
-
-step
-  only Hunter
-  zone map 2521
-  task "Turn in Training the Beast (Quel'dora Quickgale)" optional
-  turnin 94050 npc 254411
-
-step
   only Shaman
   zone map 2521
   collect 277267 quest 97244.1
@@ -853,6 +819,16 @@ step
   zone map 2521
   task "Accept Call of Fire (Olariaan Swiftburn)" optional
   accept 97245 npc 268592
+
+step
+  zone map 2521
+  task "Turn in The Western Watch (Peacekeeper Vaaniel)" optional
+  turnin 93926 npc 252155
+
+step
+  zone map 2521
+  task "Accept A Last Request (Peacekeeper Vaaniel)" optional
+  accept 93927 npc 252155
 
 step
   only Shaman
@@ -906,6 +882,11 @@ step
 
 step
   zone map 2521
+  task "Go to the marked spot to the north: A Firm Response" optional
+  kill 256247 quest 93746.1 @59.8,57 map 2521
+
+step
+  zone map 2521
   task "Turn in A Last Request (Constable Aonda)" optional
   turnin 93927 npc 251523
 
@@ -923,11 +904,6 @@ step
   zone map 2521
   task "Accept To Valanaar (Constable Aonda)" optional
   accept 92579 npc 251523
-
-step
-  zone map 2521
-  task "Turn in Stolen Supplies (Danarii Bellowveil)" optional
-  turnin 92551 npc 252172
 
 step
   zone map 2521
@@ -973,6 +949,11 @@ step
   zone map 2521
   task "Click the Lady's Tear Moss on the trees: Tears of the Lady" optional
   collect 265105 quest 94485.1 @60.9,38.4 map 2521
+
+step
+  zone map 2521
+  task "Same place, Wind Hollows: Unwelcome Spirits" optional
+  collect 262357 quest 93736.1 @58.2,32.2 map 2521
 
 step
   zone map 2521
@@ -1062,6 +1043,16 @@ step
 
 step
   zone map 2521
+  task "Kill Commander Haalien: The Ties That Bind" optional
+  collect 265475 quest 94488.1 @65.4,36.6 map 2521
+
+step
+  zone map 2521
+  task "Turn in The Ties That Bind (Elegael Thornpaw)" optional
+  turnin 94488 npc 257944
+
+step
+  zone map 2521
   task "Turn in The Strange Hermit (Strange Hermit))" optional
   turnin 93159 npc 251684
 
@@ -1102,6 +1093,11 @@ step
 
 step
   zone map 2521
+  task "Turn in Unwelcome Spirits (Endaria Mistgaze)" optional
+  turnin 93736 npc 254344
+
+step
+  zone map 2521
   task "Turn in Aid For The Refugees (Ealaane Nimbuswalker)" optional
   turnin 94896 npc 259012
 
@@ -1113,18 +1109,91 @@ step
 
 step
   zone map 2521
+  turnin 93746 npc 251968
+
+step
+  zone map 2521
+  accept 93740 npc 251968
+
+step
+  along until q92871
+  zone map 2521
+  accept 92871 npc 251968 optional
+
+step
+  zone map 2521
   task "== Valanaar (9-12) == Turn in To Valanaar (Valennia Stormfist)" optional
   turnin 92579 npc 252383
 
 step
+  when onquest 92871
+  label q92871
   zone map 2521
-  task "Accept The Grand Skyseer (Valennia Stormfist)" optional
-  accept 92700 npc 252383
+  turnin 92871 npc 252383
+
+step
+  along until q93320
+  zone map 2521
+  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
 
 step
   zone map 2521
   task "Turn in Deliver the Signet (Talaanis Shadowsong)" optional
   turnin 93948 npc 252476
+
+step
+  when onquest 93320
+  label q93320
+  zone map 2521
+  task "Turn in Tower Defense (Yorana Windyreed)" optional
+  turnin 93320 npc 252378
+
+step
+  along until q92642
+  zone map 2521
+  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
+
+step
+  along until q92645
+  zone map 2521
+  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
+
+step
+  along until q92642
+  zone map 2521
+  kill 254596 quest 92642.1 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
+  kill 270201 quest 92642.2 @65.5,67 map 2521
+
+step
+  along until q92645
+  zone map 2521
+  kill 252666 quest 92645.1 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
+
+step
+  when complete 92642
+  label q92642
+  zone map 2521
+  task "Turn in Disrupting Logistics (Yorana Windyreed)" optional
+  turnin 92642 npc 252378
+
+step
+  when complete 92645
+  label q92645
+  zone map 2521
+  task "Turn in Breaking the Breaker (Yorana Windyreed)" optional
+  turnin 92645 npc 252378
+
+step
+  along until q92880
+  zone map 2521
+  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
+
+step
+  when onquest 92880
+  label q92880
+  zone map 2521
+  task "Turn in Return to Valanaar (Valennia Stormfist)" optional
+  turnin 92880 npc 252383
 
 step
   only Druid
@@ -1140,6 +1209,11 @@ step
   accept 94638 npc 255853
 
 step
+  zone map 2521
+  task "Kill the Al'Aketh cultists north of Valanaar: Blood for Blood" optional
+  collect 255658 quest 93740.1 @64,65 map 2521
+
+step
   only Druid
   zone map 2521
   kill 258443 quest 94638.1
@@ -1152,29 +1226,7 @@ step
 
 step
   zone map 2521
-  task "Turn in The Grand Skyseer (Ayessa Dawnsinger)" optional
-  task "Class quests (level 10)" optional
-  turnin 92700 npc 251968
-
-step
-  zone map 2521
-  task "Accept Unwelcome Spirits (Endaria Mistgaze) — it's to the north (58,32), so do it later when you go north" optional
-  accept 93736 npc 254344
-
-step
-  zone map 2521
-  task "Accept A Grand Adventure (Ayessa Dawnsinger)" optional
-  accept 92708 npc 251968
-
-step
-  zone map 2521
-  task "Turn in A Grand Adventure (Ayessa Dawnsinger)" optional
-  turnin 92708 npc 251968
-
-step
-  zone map 2521
-  task "Accept The Broken Construct 1 (Ayessa Dawnsinger)" optional
-  accept 93735 npc 251968
+  turnin 93740 npc 251968
 
 step
   level 12
@@ -1183,152 +1235,6 @@ step
   zone map 2521
   task "== To Thunder Bluff == Take the skyship to Thunder Bluff from the dock west of Valanaar:" optional
   goto 57.9,80.9 r 20 map 2521
-
-step
-  zone map 2521
-  task "Turn in The Broken Construct 1 (Riaani Nightwind)" optional
-  turnin 93735 npc 256083
-
-step
-  zone map 2521
-  task "Accept The Broken Construct 2 (Riaani Nightwind)" optional
-  accept 93737 npc 256083
-
-step
-  zone map 2521
-  task "Talk to Riaani Nightwind, then collect the construct parts: The Broken Construct 2" optional
-  complete 93737 @59,73 map 2521
-
-step
-  zone map 2521
-  task "Turn in The Broken Construct 2 (Riaani Nightwind)" optional
-  turnin 93737 npc 256083
-
-step
-  zone map 2521
-  task "Accept The Broken Construct (Riaani Nightwind)" optional
-  accept 93738 npc 256083
-
-step
-  zone map 2521
-  task "Kill Commander Haalien: The Ties That Bind" optional
-  collect 265475 quest 94488.1 @65.4,36.6 map 2521
-
-step
-  zone map 2521
-  task "Same place, Wind Hollows: Unwelcome Spirits" optional
-  collect 262357 quest 93736.1 @58.2,32.2 map 2521
-
-step
-  zone map 2521
-  task "Turn in The Ties That Bind (Elegael Thornpaw)" optional
-  turnin 94488 npc 257944
-
-step
-  zone map 2521
-  task "Turn in Unwelcome Spirits (Endaria Mistgaze)" optional
-  turnin 93736 npc 254344
-
-step
-  zone map 2521
-  task "Turn in The Broken Construct (Ayessa Dawnsinger)" optional
-  turnin 93738 npc 251968
-
-step
-  zone map 2521
-  accept 93746 npc 251968
-
-step
-  zone map 2521
-  task "Go to the marked spot to the north: A Firm Response" optional
-  kill 256247 quest 93746.1 @59.8,57 map 2521
-
-step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  along until q92871
-  zone map 2521
-  accept 92871 npc 251968 optional
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
-  when onquest 92871
-  label q92871
-  zone map 2521
-  turnin 92871 npc 252383
-
-step
-  along until q93320
-  zone map 2521
-  accept 93320 npc 252383 optional -- Then accept Tower Defense (Valennia Stormfist)
-
-step
-  when onquest 93320
-  label q93320
-  zone map 2521
-  task "Turn in Tower Defense (Yorana Windyreed)" optional
-  turnin 93320 npc 252378
-
-step
-  along until q92645
-  zone map 2521
-  accept 92645 npc 252378 optional -- Accept Breaking the Breaker (Yorana Windyreed)
-
-step
-  along until q92642
-  zone map 2521
-  accept 92642 npc 252378 optional -- Accept Disrupting Logistics (Yorana Windyreed)
-
-step
-  along until q92642
-  zone map 2521
-  kill 254596 quest 92642.1 @65.5,67 map 2521 -- Kill Al'Aketh Healers and Brawlers west of the watchtower: Disrupting Logistics
-  kill 270201 quest 92642.2 @65.5,67 map 2521
-
-step
-  zone map 2521
-  task "Kill the Al'Aketh cultists north of Valanaar: Blood for Blood" optional
-  collect 255658 quest 93740.1 @64,65 map 2521
-
-step
-  along until q92645
-  zone map 2521
-  kill 252666 quest 92645.1 @65.6,65.5 map 2521 -- Kill Commander Belguilos on the second floor of the house: Breaking the Breaker
-
-step
-  when complete 92645
-  label q92645
-  zone map 2521
-  task "Turn in Breaking the Breaker (Yorana Windyreed)" optional
-  turnin 92645 npc 252378
-
-step
-  when complete 92642
-  label q92642
-  zone map 2521
-  task "Turn in Disrupting Logistics (Yorana Windyreed)" optional
-  turnin 92642 npc 252378
-
-step
-  along until q92880
-  zone map 2521
-  accept 92880 npc 252378 optional -- Accept Return to Valanaar (Yorana Windyreed)
-
-step
-  when onquest 92880
-  label q92880
-  zone map 2521
-  task "Turn in Return to Valanaar (Valennia Stormfist)" optional
-  turnin 92880 npc 252383
-
-step
-  zone map 2521
-  turnin 93740 npc 251968
 
 step
   zone map 1456

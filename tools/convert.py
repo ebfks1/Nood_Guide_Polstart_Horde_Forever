@@ -56,6 +56,9 @@ def log_index(qid, mine):
 ALL_RACES = ['Orc', 'Troll', 'Tauren', 'Scourge', 'Skyborne']
 # Quests the official data (client race mask) offers to these races only; BalCon lists them for others.
 RACE_ONLY = {98024: ['Skyborne']}
+# Quests the official data offers to none of the races of the guide that lists them (lint: "not available to any race")
+for _q in CI.get('race_blocked', []) if 'CI' in globals() else []:
+    RACE_ONLY.setdefault(int(_q), [])
 
 # Lines added to the BalCon source for this pack, each list placed before the first English line holding the anchor.
 # They follow the order the game data (and Polestar's own guides) need: a prerequisite the route skipped, or the

@@ -44,6 +44,7 @@ EN_NAME = {'성난불길 협곡': 'Ragefire Chasm', '로데론의 폐허': 'Ruin
 
 def apply(g, log):
     out, i, steps = [], 0, g.steps
+    taken_inside = set()
     pending = None  # (names, index in out) of the last ★ line not yet matched to a run
     while i < len(steps):
         st = steps[i]
@@ -70,10 +71,22 @@ def apply(g, log):
                     '%s 던전 탭(던전·제출)을 마쳤으면 체크하세요. 레벨업 동선을 이어 갑니다.' % ko)},
             ], '_holds': True, '_block': None, '_gated': False})
             out.extend(kept_along)
+            taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')
             log.append('%s: %s run (%d steps, quests %s) -> dungeon tab step' % (g.stem, en, len(run) - len(kept_along), quests))
             pending = None
             i = j
             continue
         out.append(st)
         i += 1
-    g.steps = out
+    # quests picked up only inside a run that went to its tab: their later goals go too (the hand-in guide has them)
+    outside = {x['quest'] for st in out for x in st['goals'] if x['t'] == 'accept'}
+    gone = taken_inside - outside
+    final = []
+    for st in out:
+        if gone and any(x.get('quest') in gone for x in st['goals']):
+            st = dict(st, goals=[x for x in st['goals'] if x.get('quest') not in gone])
+            if not [x for x in st['goals'] if x['t'] != 'note']:
+                log.append('%s: dropped a step of %s (picked up inside a run)' % (g.stem, sorted(gone)))
+                continue
+        final.append(st)
+    g.steps = final

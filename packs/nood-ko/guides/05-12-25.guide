@@ -360,13 +360,6 @@ step
   turnin 5723 npc 11833
 
 step
-  when onquest 5724
-  label q5724
-  zone map 1456
-  task "퀘스트 완료: 잃어버린 가방 돌려주기 — ◆던전 연계(성난불길 협곡)" optional
-  turnin 5724 npc 11833
-
-step
   zone map 1456
   task "비행 조련사에게 썬더 블러프를 발견하세요 (이미 있으면 저절로 넘어갑니다)." optional
   getfp "Thunder Bluff"
@@ -589,11 +582,6 @@ step
   zone map 1458
   task "시어도어 그리프스에게 퀘스트 완료: 새로운 역병" optional
   turnin 95216 npc 11835
-
-step
-  zone map 1458
-  task "수석 연금술사 파라넬에게 퀘스트 완료: 끝없는 고통" optional
-  turnin 97288 npc 2055
 
 step
   zone map 1458
@@ -1513,12 +1501,3 @@ step
   zone map 1440
   task "조람가르 전초기지 제네우 생크리에게 퀘스트 완료: 폐허 사이로" optional
   turnin 6921 npc 12736
-
-step
-  zone map 1440
-  turnin 6564 npc 12736
-
-step
-  zone map 1440
-  turnin 6922 npc 12736
-  task "12-25 구간은 여기까지입니다. 25-30 가이드(발굴 현장·달라란)로 넘어가세요." optional

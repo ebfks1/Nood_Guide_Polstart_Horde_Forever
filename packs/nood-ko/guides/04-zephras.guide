@@ -582,46 +582,6 @@ step
   level 10
 
 step
-  only Hunter
-  zone map 2521
-  task "수락: Taming the Beast (퀠라나 퀵게일)" optional
-  accept 94978 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 254588 quest 94978.1
-
-step
-  only Hunter
-  zone map 2521
-  task "완료: Taming the Beast (퀠라나 퀵게일)" optional
-  turnin 94978 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "수락: Taming the Beast (퀠라나 퀵게일)" optional
-  accept 94979 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  kill 251707 quest 94979.1
-
-step
-  only Hunter
-  zone map 2521
-  task "완료: Taming the Beast (퀠라나 퀵게일)" optional
-  turnin 94979 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "수락: Taming the Beast (퀠라나 퀵게일)" optional
-  accept 94013 npc 252389
-
-step
   only Warrior
   zone map 2521
   task "수락: The Skybreaker Bulwark (시나 스카이브레이커)" optional
@@ -643,36 +603,14 @@ step
   accept 93926 npc 251523
 
 step
-  zone map 2521
-  task "수락: 도난당한 보급품 (다나리 벨로베일)" optional
-  accept 92551 npc 252172
-
-step
   only Warrior
   zone map 2521
   collect 263993 quest 94003.1
 
 step
   zone map 2521
-  task "팔라스 마을 동쪽 보급품 상자:" optional
-  collect 252760 quest 92551.1 @49.3,55.9 map 2521
-
-step
-  zone map 2521
   task "살아 있는 번개·알아케스 폭풍소환사, 사령관 사이클라스(50.1,56.7):" optional
-  kill 252068 quest 92550.1 @48.6,55.7 map 2521
-  kill 251662 quest 92550.2 @48.6,55.7 map 2521
-  collect 252661 quest 92550.3 @48.6,55.7 map 2521
-
-step
-  zone map 2521
-  task "완료: 서부 감시터 (평화감시자 바니엘)" optional
-  turnin 93926 npc 252155
-
-step
-  zone map 2521
-  task "수락: 마지막 부탁 (평화감시자 바니엘)" optional
-  accept 93927 npc 252155
+  complete 92550 @48.6,55.7 map 2521
 
 step
   only Warrior
@@ -693,9 +631,20 @@ step
   accept 97243 npc 252382
 
 step
-  only Hunter
   zone map 2521
-  kill 250874 quest 94013.1
+  task "수락: 부서진 피조물 (아에사 돈싱어)" optional
+  task "직업 퀘스트 (10레벨)" optional
+  accept 93735 npc 251968
+
+step
+  zone map 2521
+  task "수락: 위대한 모험 (아에사 돈싱어)" optional
+  accept 92708 npc 251968
+
+step
+  zone map 2521
+  task "수락: 반갑지 않은 정령 (엔다리아 미스트게이즈) — 북쪽(58,32)이라 나중에 북쪽 갈 때 처리" optional
+  accept 93736 npc 254344
 
 step
   zone map 2521
@@ -706,6 +655,45 @@ step
   zone map 2521
   task "완료: 게잡이 철 (니알라 브라이트파이어)" optional
   turnin 93317 npc 257006
+
+step
+  zone map 2521
+  task "완료: 부서진 피조물 (리아니 나이트윈드)" optional
+  turnin 93735 npc 256083
+
+step
+  zone map 2521
+  task "수락: 부서진 피조물 (리아니 나이트윈드)" optional
+  accept 93737 npc 256083
+
+step
+  zone map 2521
+  task "리아니 나이트윈드:" optional
+  complete 93737 @59,73 map 2521
+
+step
+  zone map 2521
+  task "완료: 부서진 피조물 (리아니 나이트윈드)" optional
+  turnin 93737 npc 256083
+
+step
+  zone map 2521
+  task "수락: The Broken Construct (리아니 나이트윈드)" optional
+  accept 93738 npc 256083
+
+step
+  zone map 2521
+  task "완료: The Broken Construct (아에사 돈싱어)" optional
+  turnin 93738 npc 251968
+
+step
+  zone map 2521
+  accept 93746 npc 251968
+
+step
+  zone map 2521
+  task "완료: 위대한 모험 (아에사 돈싱어)" optional
+  turnin 92708 npc 251968
 
 step
   zone map 2521
@@ -816,28 +804,6 @@ step
   accept 97244 npc 268592
 
 step
-  only Hunter
-  zone map 2521
-  task "완료: Taming the Beast (퀠라나 퀵게일)" optional
-  turnin 94013 npc 252389
-
-step
-  only Hunter
-  zone map 2521
-  task "수락: Training the Beast (퀠라나 퀵게일)" optional
-  accept 94050 npc 252389
-
-step
-  only Hunter
-  complete 94050
-
-step
-  only Hunter
-  zone map 2521
-  task "완료: Training the Beast (퀠도라 퀵게일)" optional
-  turnin 94050 npc 254411
-
-step
   only Shaman
   zone map 2521
   collect 277267 quest 97244.1
@@ -853,6 +819,16 @@ step
   zone map 2521
   task "수락: 불의 부름 (올라리안 스위프트번)" optional
   accept 97245 npc 268592
+
+step
+  zone map 2521
+  task "완료: 서부 감시터 (평화감시자 바니엘)" optional
+  turnin 93926 npc 252155
+
+step
+  zone map 2521
+  task "수락: 마지막 부탁 (평화감시자 바니엘)" optional
+  accept 93927 npc 252155
 
 step
   only Shaman
@@ -906,6 +882,11 @@ step
 
 step
   zone map 2521
+  task "북쪽 벨라탄 브라이트위시:" optional
+  kill 256247 quest 93746.1 @59.8,57 map 2521
+
+step
+  zone map 2521
   task "완료: 마지막 부탁 (순경 아온다)" optional
   turnin 93927 npc 251523
 
@@ -923,11 +904,6 @@ step
   zone map 2521
   task "수락: 발라나르로 (순경 아온다)" optional
   accept 92579 npc 251523
-
-step
-  zone map 2521
-  task "완료: 도난당한 보급품 (다나리 벨로베일)" optional
-  turnin 92551 npc 252172
 
 step
   zone map 2521
@@ -973,6 +949,11 @@ step
   zone map 2521
   task "여신의 눈물 이끼:" optional
   collect 265105 quest 94485.1 @60.9,38.4 map 2521
+
+step
+  zone map 2521
+  task "같은 곳 바람의 유령:" optional
+  collect 262357 quest 93736.1 @58.2,32.2 map 2521
 
 step
   zone map 2521
@@ -1062,6 +1043,16 @@ step
 
 step
   zone map 2521
+  task "사령관 할리엔:" optional
+  collect 265475 quest 94488.1 @65.4,36.6 map 2521
+
+step
+  zone map 2521
+  task "완료: 하나로 묶는 유대 (엘레게일 쏜포우)" optional
+  turnin 94488 npc 257944
+
+step
+  zone map 2521
   task "완료: 수상한 은둔자 ((이름 미확인))" optional
   turnin 93159 npc 251684
 
@@ -1102,6 +1093,11 @@ step
 
 step
   zone map 2521
+  task "완료: 반갑지 않은 정령 (엔다리아 미스트게이즈)" optional
+  turnin 93736 npc 254344
+
+step
+  zone map 2521
   task "완료: 피난민 지원 (엘라네 님버스워커)" optional
   turnin 94896 npc 259012
 
@@ -1113,18 +1109,91 @@ step
 
 step
   zone map 2521
+  turnin 93746 npc 251968
+
+step
+  zone map 2521
+  accept 93740 npc 251968
+
+step
+  along until q92871
+  zone map 2521
+  accept 92871 npc 251968 optional
+
+step
+  zone map 2521
   task "── 발라나르 (9~12) ── 완료: 발라나르로 (발레니아 스톰피스트)" optional
   turnin 92579 npc 252383
 
 step
+  when onquest 92871
+  label q92871
   zone map 2521
-  task "수락: 대하늘선견자 (발레니아 스톰피스트)" optional
-  accept 92700 npc 252383
+  turnin 92871 npc 252383
+
+step
+  along until q93320
+  zone map 2521
+  accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
 
 step
   zone map 2521
   task "완료: 인장 전달 (탈라니스 섀도송)" optional
   turnin 93948 npc 252476
+
+step
+  when onquest 93320
+  label q93320
+  zone map 2521
+  task "완료: 감시탑 방어 (요라나 윈디리드)" optional
+  turnin 93320 npc 252378
+
+step
+  along until q92642
+  zone map 2521
+  accept 92642 npc 252378 optional -- 수락: 보급 교란 (요라나 윈디리드)
+
+step
+  along until q92645
+  zone map 2521
+  accept 92645 npc 252378 optional -- 수락: 파괴자 파괴하기 (요라나 윈디리드)
+
+step
+  along until q92642
+  zone map 2521
+  kill 254596 quest 92642.1 @65.5,67 map 2521 -- 감시탑 서쪽 알아케스 치유사·싸움꾼:
+  kill 270201 quest 92642.2 @65.5,67 map 2521
+
+step
+  along until q92645
+  zone map 2521
+  kill 252666 quest 92645.1 @65.6,65.5 map 2521 -- 사령관 벨길로스:
+
+step
+  when complete 92642
+  label q92642
+  zone map 2521
+  task "완료: 보급 교란 (요라나 윈디리드)" optional
+  turnin 92642 npc 252378
+
+step
+  when complete 92645
+  label q92645
+  zone map 2521
+  task "완료: 파괴자 파괴하기 (요라나 윈디리드)" optional
+  turnin 92645 npc 252378
+
+step
+  along until q92880
+  zone map 2521
+  accept 92880 npc 252378 optional -- 수락: 발라나르로의 귀환 (요라나 윈디리드)
+
+step
+  when onquest 92880
+  label q92880
+  zone map 2521
+  task "완료: 발라나르로의 귀환 (발레니아 스톰피스트)" optional
+  turnin 92880 npc 252383
 
 step
   only Druid
@@ -1140,6 +1209,11 @@ step
   accept 94638 npc 255853
 
 step
+  zone map 2521
+  task "발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:" optional
+  collect 255658 quest 93740.1 @64,65 map 2521
+
+step
   only Druid
   zone map 2521
   kill 258443 quest 94638.1
@@ -1152,29 +1226,7 @@ step
 
 step
   zone map 2521
-  task "완료: 대하늘선견자 (아에사 돈싱어)" optional
-  task "직업 퀘스트 (10레벨)" optional
-  turnin 92700 npc 251968
-
-step
-  zone map 2521
-  task "수락: 반갑지 않은 정령 (엔다리아 미스트게이즈) — 북쪽(58,32)이라 나중에 북쪽 갈 때 처리" optional
-  accept 93736 npc 254344
-
-step
-  zone map 2521
-  task "수락: 위대한 모험 (아에사 돈싱어)" optional
-  accept 92708 npc 251968
-
-step
-  zone map 2521
-  task "완료: 위대한 모험 (아에사 돈싱어)" optional
-  turnin 92708 npc 251968
-
-step
-  zone map 2521
-  task "수락: 부서진 피조물 (아에사 돈싱어)" optional
-  accept 93735 npc 251968
+  turnin 93740 npc 251968
 
 step
   level 12
@@ -1183,152 +1235,6 @@ step
   zone map 2521
   task "── 썬더 블러프로 이동 ── 발라나르 서쪽 선착장에서 썬더 블러프행 하늘배 탑승:" optional
   goto 57.9,80.9 r 20 map 2521
-
-step
-  zone map 2521
-  task "완료: 부서진 피조물 (리아니 나이트윈드)" optional
-  turnin 93735 npc 256083
-
-step
-  zone map 2521
-  task "수락: 부서진 피조물 (리아니 나이트윈드)" optional
-  accept 93737 npc 256083
-
-step
-  zone map 2521
-  task "리아니 나이트윈드:" optional
-  complete 93737 @59,73 map 2521
-
-step
-  zone map 2521
-  task "완료: 부서진 피조물 (리아니 나이트윈드)" optional
-  turnin 93737 npc 256083
-
-step
-  zone map 2521
-  task "수락: The Broken Construct (리아니 나이트윈드)" optional
-  accept 93738 npc 256083
-
-step
-  zone map 2521
-  task "사령관 할리엔:" optional
-  collect 265475 quest 94488.1 @65.4,36.6 map 2521
-
-step
-  zone map 2521
-  task "같은 곳 바람의 유령:" optional
-  collect 262357 quest 93736.1 @58.2,32.2 map 2521
-
-step
-  zone map 2521
-  task "완료: 하나로 묶는 유대 (엘레게일 쏜포우)" optional
-  turnin 94488 npc 257944
-
-step
-  zone map 2521
-  task "완료: 반갑지 않은 정령 (엔다리아 미스트게이즈)" optional
-  turnin 93736 npc 254344
-
-step
-  zone map 2521
-  task "완료: The Broken Construct (아에사 돈싱어)" optional
-  turnin 93738 npc 251968
-
-step
-  zone map 2521
-  accept 93746 npc 251968
-
-step
-  zone map 2521
-  task "북쪽 벨라탄 브라이트위시:" optional
-  kill 256247 quest 93746.1 @59.8,57 map 2521
-
-step
-  zone map 2521
-  turnin 93746 npc 251968
-
-step
-  along until q92871
-  zone map 2521
-  accept 92871 npc 251968 optional
-
-step
-  zone map 2521
-  accept 93740 npc 251968
-
-step
-  when onquest 92871
-  label q92871
-  zone map 2521
-  turnin 92871 npc 252383
-
-step
-  along until q93320
-  zone map 2521
-  accept 93320 npc 252383 optional -- 이어서 수락: 감시탑 방어 (발레니아 스톰피스트)
-
-step
-  when onquest 93320
-  label q93320
-  zone map 2521
-  task "완료: 감시탑 방어 (요라나 윈디리드)" optional
-  turnin 93320 npc 252378
-
-step
-  along until q92645
-  zone map 2521
-  accept 92645 npc 252378 optional -- 수락: 파괴자 파괴하기 (요라나 윈디리드)
-
-step
-  along until q92642
-  zone map 2521
-  accept 92642 npc 252378 optional -- 수락: 보급 교란 (요라나 윈디리드)
-
-step
-  along until q92642
-  zone map 2521
-  kill 254596 quest 92642.1 @65.5,67 map 2521 -- 감시탑 서쪽 알아케스 치유사·싸움꾼:
-  kill 270201 quest 92642.2 @65.5,67 map 2521
-
-step
-  zone map 2521
-  task "발라나르 북쪽 알아케스 전도사·약탈자·싸움꾼:" optional
-  collect 255658 quest 93740.1 @64,65 map 2521
-
-step
-  along until q92645
-  zone map 2521
-  kill 252666 quest 92645.1 @65.6,65.5 map 2521 -- 사령관 벨길로스:
-
-step
-  when complete 92645
-  label q92645
-  zone map 2521
-  task "완료: 파괴자 파괴하기 (요라나 윈디리드)" optional
-  turnin 92645 npc 252378
-
-step
-  when complete 92642
-  label q92642
-  zone map 2521
-  task "완료: 보급 교란 (요라나 윈디리드)" optional
-  turnin 92642 npc 252378
-
-step
-  along until q92880
-  zone map 2521
-  accept 92880 npc 252378 optional -- 수락: 발라나르로의 귀환 (요라나 윈디리드)
-
-step
-  when onquest 92880
-  label q92880
-  zone map 2521
-  task "완료: 발라나르로의 귀환 (발레니아 스톰피스트)" optional
-  turnin 92880 npc 252383
-
-step
-  zone map 2521
-  turnin 93740 npc 251968
 
 step
   zone map 1456
