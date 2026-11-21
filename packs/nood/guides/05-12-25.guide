@@ -310,12 +310,8 @@ step
   goto 52.6,49.2 r 20 map 1454
 
 step
-  complete 5723 -- Kill troggs and trogg shamans: Testing an Enemy's Strength
-  complete 5722 -- Loot the satchel from Maur Grimtotem's corpse: Searching for the Lost Satchel
-  turnin 5722 -- Turn it in right at the corpse: Searching for the Lost Satchel
-  accept 5724 -- Then accept Returning the Lost Satchel — Dungeon chain (Ragefire Chasm)
-  complete 5728 -- Kill Bazzalan and Jergosh the Invoker: Hidden Enemies
-  complete 5761 -- Kill the final boss, Taragaman the Hungerer, and loot his heart: Slaying the Beast
+  task "[Dungeon] Ragefire Chasm: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Ragefire Chasm). The tab leads you to the door, then hands the quests in." optional
+  task "Done with Ragefire Chasm in its tab (run and hand-ins)? Tick this to go on with the leveling route."
 
 step
   along until q5725
@@ -577,17 +573,12 @@ step
   goto 62,68 r 20 map 1420
 
 step
-  complete 95216 -- Kill the Decayfangs patrolling the spider area at the entrance for the Highly Toxic Strain: The New Plague
-  complete 92421 -- Every mob drops several Intact Limbs, collect 25: Light's Justice
-  accept 97288 item 280438 -- Accept from the Baron's "Abominable Head": Unending Torment
+  task "[Dungeon] Ruins of Lordaeron: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Ruins of Lordaeron). The tab leads you to the door, then hands the quests in." optional
+  task "Done with Ruins of Lordaeron in its tab (run and hand-ins)? Tick this to go on with the leveling route."
 
 step
   along until q95204
   accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lordaeron
-
-step
-  complete 92401 -- Investigate Edward Heartweaver's remains in the graveyard area where Rath'mael is: A Frightened Request
-  complete 92422 -- Kill the final boss Rath'mael, visible beyond the fence: The Wrath of Rath'mael
 
 step
   zone map 1420
@@ -997,8 +988,8 @@ step
   collect 6443 quest 1486.1
 
 step
-  task "7 each of Deviate Ravagers, Vipers, Shamblers and Dreadfangs: Deviate Eradication" optional
-  complete 1487
+  task "[Dungeon] Wailing Caverns: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Wailing Caverns). The tab leads you to the door, then hands the quests in." optional
+  task "Done with Wailing Caverns in its tab (run and hand-ins)? Tick this to go on with the leveling route."
 
 step
   zone map 1413
@@ -1327,10 +1318,8 @@ step
   goto 44.8,67.8 r 20 map 1421
 
 step
-  complete 1098 -- Find Deathstalkers Adamant and Vincent: Deathstalkers in Shadowfang
-  complete 1013 -- The Book of Ur (library): The Book of Ur
-  complete 1014 -- Head of the final boss, Archmage Arugal: Arugal Must Die
-  turnin 1098 -- Turn in to Deathstalker Vincent inside the dungeon: Deathstalkers in Shadowfang
+  task "[Dungeon] Shadowfang Keep: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Shadowfang Keep). The tab leads you to the door, then hands the quests in." optional
+  task "Done with Shadowfang Keep in its tab (run and hand-ins)? Tick this to go on with the leveling route."
 
 step
   zone map 1421
@@ -1517,11 +1506,8 @@ step
   goto 14.2,14 r 20 map 1440
 
 step
-  accept 6564 item 16790 -- Pick up the Damp Note near the entrance to accept Allegiance to the Old Gods
-  accept 6561 -- Accept from Argent Guard Thaelrid: Blackfathom Villainy
-  complete 6921 -- Fathom Core: Amongst The Ruins
-  accept 6922 item 16782 -- Accept from Lord Aquanis's Strange Water Globe (Fathom Core -> altar): Baron Aquanis
-  complete 6561 -- Head of Twilight Lord Kelris: Blackfathom Villainy
+  task "[Dungeon] Blackfathom Deeps: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Blackfathom Deeps). The tab leads you to the door, then hands the quests in." optional
+  task "Done with Blackfathom Deeps in its tab (run and hand-ins)? Tick this to go on with the leveling route."
 
 step
   zone map 1440

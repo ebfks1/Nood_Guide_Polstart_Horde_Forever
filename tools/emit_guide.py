@@ -196,6 +196,8 @@ def goal_lines(g, lang, along, stats):
     if t == 'note':
         # a ticked-off line: an optional task gets a checkbox in the guide window and never holds the step
         # (BalCon's notes were written to be clicked shut: "확인했으면 눌러 닫기")
+        if g.get('hold'):  # a line the player ticks to go on (it holds the step)
+            return ['task ' + quoted(txt(g['text'], lang)) + tail]
         return ['task ' + quoted(txt(g['text'], lang)) + ('' if ' optional' in tail else ' optional') + tail]
     raise ValueError(t)
 
@@ -311,9 +313,15 @@ addon lists those sources in LICENSE-DATA.txt.
 def main():
     import collections
     guides = []
+    tabs = [x for x in os.environ.get('NOOD_DUNGEON_TABS', '').split(',') if x]  # test builds: guides whose runs go to tabs
     for spec in C.GUIDES:
         g = C.Guide(*spec)
         g.convert()
+        if any(g.stem.startswith(t) for t in tabs):
+            import dungeon_tabs
+            log = []
+            dungeon_tabs.apply(g, log)
+            print('\n'.join(log))
         guides.append(g)
     for lang, pack in PACKS.items():
         stats = collections.Counter()
