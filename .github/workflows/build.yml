@@ -105,6 +105,15 @@ jobs:
           path: ~/polestar-tools
           key: polestar-tools-${{ steps.ref.outputs.sha }}-v4
 
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Playtest tools (Node CLI and Lua 5.1)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lua5.1
+          cd ~/polestar-tools/polestar && npm link >/dev/null 2>&1 && polestar --version || echo "polestar CLI not available"
+
       - name: Lint and pack
         id: result
         run: |
@@ -127,6 +136,14 @@ jobs:
             fi
           done
           for z in out/zips/*.zip; do [ -f "$z" ] && unzip -q -o "$z" -d out/addons; done
+          # the honest playtest: Polestar plays each guide to its end in the real addon against a simulated world,
+          # per race and class it can take (ok / stuck at step N / fail)
+          if command -v polestar >/dev/null; then
+            for p in nood nood-ko; do
+              (cd "packs/$p" && timeout 40m polestar playtest > "../../out/logs/playtest-$p.txt" 2>&1; echo "exit $?" >> "../../out/logs/playtest-$p.txt") || true
+              tail -n 5 "out/logs/playtest-$p.txt"
+            done
+          fi
           ls -la out/addons out/zips || true
           echo "version=$(jq -r .version packs/nood/pack.json)" >> "$GITHUB_OUTPUT"
           echo "errors=$errors" >> "$GITHUB_OUTPUT"
