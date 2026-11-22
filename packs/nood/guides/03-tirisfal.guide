@@ -12,7 +12,6 @@ next nood/05-12-25
 
 step
   zone map 1420
-  task "! At level 12 we recommend moving on to the 12-25 Nood guide: skip the steps left here (or pick 12-25 Nood in Polestar's guide menu). Quests you leave undone here give no reputation." optional
   accept 363 npc 1568
 
 step
@@ -26,7 +25,6 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "Paladins need the zombie quest first. Turn in Rude Awakening" optional
   turnin 363 npc 1569
 
 step
@@ -37,8 +35,7 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "Kill the zombies around the church: The Mindless Ones" optional
-  kill 1501 quest 364.1
+  kill 1501 quest 364.1 -- Kill the zombies around the church
   kill 1502 quest 364.2
 
 step
@@ -49,13 +46,11 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "Accept from Shadow Priest Sarvis: A Difficult Path (Forever new)" optional
   accept 98601 npc 1569
 
 step
   only Paladin,Undead
   zone map 1420
-  task "Turn in to Aramis Hammerhand inside the chapel: A Difficult Path" optional
   turnin 98601 npc 244808
 
 step
@@ -66,8 +61,7 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "Heal 5 wounded Deathguards with Holy Light: Rediscovering the Light" optional
-  complete 90902 @31.4,64.8 map 1420
+  complete 90902 @31.4,64.8 map 1420 -- Heal 5 wounded Deathguards with Holy Light
 
 step
   only Paladin,Undead
@@ -76,8 +70,7 @@ step
 
 step
   zone map 1420
-  task "Skip the Mindless Zombies / Rattlecage Skeletons quest unless there are few players and no competition for mobs. Then accept and do your class quest. Kill bats and wolves: The Damned" optional
-  collect 3265 quest 376.1
+  collect 3265 quest 376.1 -- Skip the Mindless Zombies / Rattlecage Skeletons quest unless there…
   collect 3264 quest 376.2
 
 step
@@ -89,8 +82,6 @@ step
   turnin 363 npc 1569
 
 step
-  task "Grind to level 3 (Marla's Last Wish needs level 3)." optional
-  task "Buy water or bread from the vendor." optional
   level 3
 
 step
@@ -102,12 +93,10 @@ step
 step
   only Undead
   zone map 1420
-  task "Accept from Aramis Hammerhand: A Light in the Darkness (Forever new)" optional
   accept 98389 npc 244808
 
 step
   only Paladin,Undead
-  task "Grind to level 4 (Coming to Terms needs level 4)." optional
   level 4
 
 step
@@ -118,18 +107,16 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "Talk to the frightened paladin on the way to the spider cave: Coming to Terms" optional
-  kill 246143 quest 91208.1 @27.6,63.8 map 1420
+  kill 246143 quest 91208.1 @27.6,63.8 map 1420 -- Talk to the frightened paladin on the way to the spider cave
 
 step
   along until q3902
   zone map 1420
-  collect 11127 quest 3902.1 -- Check supply crates while you're in Deathknell: Scavenging Deathknell
+  collect 11127 quest 3902.1 -- Check supply crates while you're in Deathknell
 
 step
   zone map 1420
-  task "While doing Scavenging Deathknell, check the supply crates around you. (optional) Kill Samuel Fipps and loot his remains. Marla's Last Wish" optional
-  interact 178090 quest 6395.1
+  interact 178090 quest 6395.1 -- While doing Scavenging Deathknell, check the supply crates around you
 
 step
   zone map 1420
@@ -139,13 +126,11 @@ step
 step
   only Undead
   zone map 1420
-  task "Free 6 web-wrapped Forsaken inside the spider cave: A Light in the Darkness" optional
-  kill 271961 quest 98389.1 @24.5,59.3 map 1420
+  kill 271961 quest 98389.1 @24.5,59.3 map 1420 -- Free 6 web-wrapped Forsaken inside the spider cave
 
 step
   zone map 1420
-  task "*Die or use the graveyard teleport (Help \"?\" button at the bottom right > Character Stuck > teleport to graveyard), then resurrect instantly at the Spirit Healer.* Bury Samuel's remains: Marla's Last Wish" optional
-  interact 178090 quest 6395.1
+  interact 178090 quest 6395.1 -- *Die or use the graveyard teleport, then resurrect instantly at the…
 
 step
   zone map 1420
@@ -159,13 +144,11 @@ step
   when complete 3902
   label q3902
   zone map 1420
-  task "If you collected all the supplies, turn in to Deathguard Saltain: Scavenging Deathknell" optional
   turnin 3902 npc 1740
 
 step
   only Undead
   zone map 1420
-  task "Turn in to Aramis Hammerhand: A Light in the Darkness" optional
   turnin 98389 npc 244808
 
 step
@@ -180,9 +163,6 @@ step
 
 step
   zone map 1420
-  task "Sell junk and buy food/water if needed." optional
-  task "Train level 4 spells at your class trainer." optional only Priest
-  task "Train level 4 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
   accept 381 npc 1570
 
 step
@@ -217,12 +197,10 @@ step
 step
   only Undead
   zone map 1420
-  task "Accept from Executor Arren: The Adventurer (Forever new)" optional
   accept 96656 npc 1570
 
 step
   zone map 1420
-  task "Time to leave Deathknell! Accept A Rogue's Deal, Fields of Grief" optional
   accept 8 npc 6784
   accept 365 npc 1519
 
@@ -232,11 +210,10 @@ step
 
 step
   along
-  level 5.53 -- Grind until you are level 5 with 1475 XP.
+  level 5.53 -- Grind until you are level 5 with 1475 XP
 
 step
   zone map 1420
-  task "*Die or use the graveyard teleport (Help \"?\" button at the bottom right > Character Stuck > teleport to graveyard), then resurrect instantly at the Spirit Healer.* Accept A Putrid Task" optional
   accept 404 npc 1496
 
 step
@@ -261,36 +238,30 @@ step
 step
   only Undead
   zone map 1420
-  task "Accept Discipline (Forever new)" optional
   accept 99134 npc 1515
 
 step
   only Undead
   zone map 1420
-  task "Accept Patience (Forever new)" optional
   accept 99141 npc 1515
 
 step
   only Undead
-  task "Talk sternly to 5 Deathguards around Brill: Discipline" optional
-  complete 99134
+  complete 99134 -- Talk sternly to 5 Deathguards around Brill
 
 step
   only Undead
   zone map 1420
-  task "Turn in to Executor Zygand: Discipline" optional
   turnin 99134 npc 1515
 
 step
   only Undead
   zone map 1420
-  task "Get the report from Deathguard Dillinger: Patience" optional
-  complete 99141 @58.2,51.4 map 1420
+  complete 99141 @58.2,51.4 map 1420 -- Get the report from Deathguard Dillinger
 
 step
   only Paladin,Undead
   zone map 1420
-  task "Turn in to Shari Stilwell: Continue Your Training" optional
   turnin 91209 npc 246152
 
 step
@@ -314,7 +285,6 @@ step
 step
   only Undead
   zone map 1420
-  task "Turn in to Eleanor Shackleton at the adventurer camp south of Brill: The Adventurer" optional
   turnin 96656 npc 265812
 
 step
@@ -324,8 +294,7 @@ step
 
 step
   only Undead
-  task "Type /sit next to the campfire and get the \"Boosted Rest\" buff: The Great Outdoors" optional
-  complete 96607
+  complete 96607 -- Type /sit next to the campfire and get the "Boosted Rest" buff
 
 step
   only Undead
@@ -335,20 +304,17 @@ step
 step
   only Undead
   zone map 1420
-  task "Accept Camping 101: Cooking (Forever new)" optional
   accept 96658 npc 265812
 
 step
   only Undead
   zone map 1420
-  task "Accept from Deathguard Bartholomew: Sticks and Bones" optional
   accept 86784 npc 1742
 
 step
   only Undead
   zone map 1420
-  task "Pick up 6 dry sticks around the camp: Sticks and Bones" optional
-  collect 279991 quest 86784.1
+  collect 279991 quest 86784.1 -- Pick up 6 dry sticks around the camp
 
 step
   only Undead
@@ -357,17 +323,12 @@ step
 
 step
   zone map 1420
-  task "Find Gordo. He patrols the paths of Tirisfal Glades. Accept from Gordo: Gordo's Task" optional
-  task "Not available yet (level too low): The Chill of Death (level 7) — you'll pick it up the next time you're in town. Train level 6 spells at your class trainer." optional only Priest
-  task "Train level 6 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "Sell junk and buy food/water if needed." optional
   accept 5481 @56.1,52.4 map 1420
 
 step
   only Undead
   zone map 1420
-  task "Get the report from Gordo: Patience" optional
-  collect 286200 quest 99141.1
+  collect 286200 quest 99141.1 -- Get the report from Gordo
   collect 286201 quest 99141.2
   collect 286202 quest 99141.3
 
@@ -418,16 +379,14 @@ step
 
 step
   along
-  level 7.26 -- Grind until you are level 7 with at least 1170 XP.
+  level 7.26 -- Grind until you are level 7 with at least 1170 XP
 
 step
   zone map 1420
-  task "Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in Doom Weed" optional
   turnin 5482 npc 10665
 
 step
   zone map 1420
-  task "Accept the follow-up Tomb Weed (Forever new)" optional
   accept 99142 npc 10665
 
 step
@@ -437,7 +396,6 @@ step
 step
   only Priest
   zone map 1420
-  task "Turn in to Dark Cleric Beryl: Garments of Darkness" optional
   turnin 5650 npc 2129
 
 step
@@ -477,7 +435,6 @@ step
 step
   only Undead
   zone map 1420
-  task "Learn Cooking from William Pickman and turn in Camping 101: Cooking" optional
   turnin 96658 npc 265944
 
 step
@@ -488,13 +445,10 @@ step
 
 step
   along
-  accept 361 item 2839 optional -- If you loot the quest item *Thurman's Letter*, click it to accept A Letter Undelivered
+  accept 361 item 2839 optional -- If you loot the quest item *Thurman's Letter*, click it to accept A…
 
 step
   zone map 1420
-  task "Train level 8 spells at your class trainer." optional only Priest
-  task "Train level 8 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "Sell junk, and buy food/water and *bags* if needed." optional
   collect 2831 quest 362.1
   collect 2829 quest 354.1
   collect 2828 quest 354.2
@@ -508,11 +462,10 @@ step
 
 step
   along
-  level 9.26 -- Grind until you are level 9 with 1675 XP.
+  level 9.26 -- Grind until you are level 9 with 1675 XP
 
 step
   zone map 1420
-  task "Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in The Mills Overrun" optional
   turnin 426 npc 1496
 
 step
@@ -530,7 +483,6 @@ step
 
 step
   zone map 1420
-  task "Accept Proof of Demise (picked up early)" optional
   accept 374 npc 1652
 
 step
@@ -539,7 +491,6 @@ step
 
 step
   zone map 1420
-  task "Buy one Coarse Thread." optional
   turnin 354 npc 1500
 
 step
@@ -560,9 +511,6 @@ step
 
 step
   zone map 1420
-  task "Train level 10 spells at your class trainer." optional only Priest
-  task "Train level 10 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "Sell junk and buy food/water if needed." optional
   turnin 355 npc 1499
 
 step
@@ -581,12 +529,10 @@ step
 
 step
   zone map 1421
-  task "Head to Silverpine Forest. Keep any Discolored Worg Hearts, you'll need them for a later quest. Accept from Deathstalker Erland at this point (wait if he isn't there): Escorting Erland" optional
   accept 435 npc 1978
 
 step
-  task "Finish the escort: Escorting Erland" optional
-  complete 435
+  complete 435 -- Finish the escort
 
 step
   zone map 1421
@@ -598,12 +544,10 @@ step
 
 step
   zone map 1421
-  task "Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Accept Prove Your Worth" optional
   accept 421 npc 1938
 
 step
   zone map 1421
-  task "Sell junk and buy food/water if needed." optional
   accept 6321 npc 6389
 
 step
@@ -640,16 +584,13 @@ step
 
 step
   zone map 1421
-  task "Discover the The Sepulcher flight path." optional
   getfp "The Sepulcher"
 
 step
-  task "Undercity Fly to Undercity." optional
   fly "Undercity"
 
 step
   zone map 1458
-  task ">> Next zone Tirisfal Glades (main quests Lv6-11): expected now Lv10 · comfortable at Lv10 · minimum Lv7. Set your Hearthstone to Undercity." optional
   sethome "Undercity"
 
 step
@@ -670,14 +611,12 @@ step
 
 step
   zone map 1420
-  task "Die or use the graveyard teleport, then resurrect instantly at the *Spirit Healer*. Turn in Forsaken Duties" optional
   turnin 359 npc 1495
 
 step
   only Undead
   zone map 1420
-  task "Get the report from Deathguard Kristof right next to him: Patience" optional
-  complete 99141 @65.2,60.2 map 1420
+  complete 99141 @65.2,60.2 map 1420 -- Get the report from Deathguard Kristof right next to him
 
 step
   zone map 1420
@@ -691,8 +630,7 @@ step
 
 step
   zone map 1420
-  task "Pick up 5 Tomb Weed growing on the ground at Balnir Farmstead: Tomb Weed" optional
-  collect 286204 quest 99142.1 @75,59.4 map 1420
+  collect 286204 quest 99142.1 @75,59.4 map 1420 -- Pick up 5 Tomb Weed growing on the ground at Balnir Farmstead
 
 step
   zone map 1420
@@ -705,12 +643,11 @@ step
 
 step
   zone map 1420
-  task "On Gunther's island, loot the Lich's Spellbook from Gunther's Books: The Lich's Identity" optional
-  collect 2833 quest 357.1 @67.9,42 map 1420
+  collect 2833 quest 357.1 @67.9,42 map 1420 -- On Gunther's island, loot the Lich's Spellbook from Gunther's Books
 
 step
   along
-  level 11.05 -- Grind until you are level 11 with 445 XP.
+  level 11.05 -- Grind until you are level 11 with 445 XP
 
 step
   zone map 1420
@@ -722,7 +659,6 @@ step
 
 step
   zone map 1420
-  task "Turn in to Junior Apothecary Holland, who patrols the Brill graveyard: Tomb Weed" optional
   turnin 99142 npc 10665
 
 step
@@ -748,17 +684,13 @@ step
 
 step
   zone map 1420
-  task "[Heads-up] Soon you hearth to Undercity. Keep your Hearthstone until then and check its cooldown now." optional
-  turnin 492 npc 2211
-  task "! Your Hearthstone must be set to Undercity. If it's set elsewhere, run or fly there instead of hearthing." optional
+  turnin 492 npc 2211 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone
 
 step
   hearth "Undercity"
 
 step
   zone map 1458
-  task "Undercity Hearth to Undercity." optional
-  task "Sell junk and buy food/water if needed." optional
   turnin 6322 npc 4551
 
 step
@@ -767,15 +699,11 @@ step
 
 step
   zone map 1458
-  task "Accept from Varimathras in the Royal Quarter: The Power to Destroy... (Ragefire Chasm quest)" optional
   accept 5725 npc 2425
-  task "Train level 12 spells at your class trainer." optional only Priest
-  task "Train level 12 spells at your class trainer." optional only Warrior,Rogue,Mage,Warlock,Paladin
 
 step
   along
-  level 12 -- You should now be level 12. If not, grind until you are!
+  level 12 -- You should now be level 12
 
 step
-  task "Reach level 12; then the 12-25 Nood guide follows." optional
   level 12

@@ -12,7 +12,6 @@ next nood-ko/05-12-25
 
 step
   zone map 1420
-  task "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다." optional
   accept 363 npc 1568
 
 step
@@ -26,7 +25,6 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "성기사는 좀비 퀘스트를 먼저 끝내야 합니다. 퀘스트 완료: 각성의 시간" optional
   turnin 363 npc 1569
 
 step
@@ -37,8 +35,7 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "예배당 주변의 좀비를 처치하세요: 얼빠진 좀비" optional
-  kill 1501 quest 364.1
+  kill 1501 quest 364.1 -- 예배당 주변의 좀비를 처치하세요
   kill 1502 quest 364.2
 
 step
@@ -49,13 +46,11 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "어둠의사제 사비스에게 퀘스트 수락: 어려운 길 (포에버 신규)" optional
   accept 98601 npc 1569
 
 step
   only Paladin,Undead
   zone map 1420
-  task "예배당 안 아라미스 해머핸드에게 퀘스트 완료: 어려운 길" optional
   turnin 98601 npc 244808
 
 step
@@ -66,8 +61,7 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "성스러운 빛으로 상처 입은 죽음의경비병 5명을 치유하세요: 빛의 재발견" optional
-  complete 90902 @31.4,64.8 map 1420
+  complete 90902 @31.4,64.8 map 1420 -- 성스러운 빛으로 상처 입은 죽음의경비병 5명을 치유하세요
 
 step
   only Paladin,Undead
@@ -76,8 +70,7 @@ step
 
 step
   zone map 1420
-  task "얼빠진 좀비와 덜그럭거리는 해골 퀘스트는 생략하세요. 단, 유저가 적어 몹 경쟁이 없을 때는 수행하세요. 이후, 직업 퀘스트를 수락하시고 수행하세요. 박쥐와 승냥이를 처치하여 완수하세요: 저주받은 존재" optional
-  collect 3265 quest 376.1
+  collect 3265 quest 376.1 -- 얼빠진 좀비와 덜그럭거리는 해골 퀘스트는 생략하세요
   collect 3264 quest 376.2
 
 step
@@ -89,8 +82,6 @@ step
   turnin 363 npc 1569
 
 step
-  task "사냥해서 레벨 3으로 올리세요 (말라의 마지막 소원은 3레벨부터 받을 수 있습니다)." optional
-  task "상인에게 물이나 빵을 구매합니다." optional
   level 3
 
 step
@@ -102,12 +93,10 @@ step
 step
   only Undead
   zone map 1420
-  task "아라미스 해머핸드에게 퀘스트 수락: 어둠 속의 빛 (포에버 신규)" optional
   accept 98389 npc 244808
 
 step
   only Paladin,Undead
-  task "사냥해서 레벨 4로 올리세요 (현실 순응은 4레벨부터 받을 수 있습니다)." optional
   level 4
 
 step
@@ -118,18 +107,16 @@ step
 step
   only Paladin,Undead
   zone map 1420
-  task "거미굴 가는 길의 겁에 질린 성기사에게 말을 거세요: 현실 순응" optional
-  kill 246143 quest 91208.1 @27.6,63.8 map 1420
+  kill 246143 quest 91208.1 @27.6,63.8 map 1420 -- 거미굴 가는 길의 겁에 질린 성기사에게 말을 거세요
 
 step
   along until q3902
   zone map 1420
-  collect 11127 quest 3902.1 -- 데스넬에 있는 동안 보급 상자들을 확인하여 완수하세요: 데스넬에서의 폐품 수집
+  collect 11127 quest 3902.1 -- 데스넬에 있는 동안 보급 상자들을 확인하여 완수하세요
 
 step
   zone map 1420
-  task "데스넬에서의 폐품 수집 퀘스트를 진행하는 동안, 주변의 보급품 상자를 확인하세요. (생략가능) 사무엘 핍스를 처치하고 그의 유골을 획득하세요. 말라의 마지막 소원" optional
-  interact 178090 quest 6395.1
+  interact 178090 quest 6395.1 -- 데스넬에서의 폐품 수집 퀘스트를 진행하는 동안, 주변의 보급품 상자를 확인하세요
 
 step
   zone map 1420
@@ -139,13 +126,11 @@ step
 step
   only Undead
   zone map 1420
-  task "거미굴 안에서 거미줄에 감긴 포세이큰 6명을 풀어 주세요: 어둠 속의 빛" optional
-  kill 271961 quest 98389.1 @24.5,59.3 map 1420
+  kill 271961 quest 98389.1 @24.5,59.3 map 1420 -- 거미굴 안에서 거미줄에 감긴 포세이큰 6명을 풀어 주세요
 
 step
   zone map 1420
-  task "*죽거나 무덤으로 순간이동을 이용하세요. 무덤으로 순간이동 우측 하단 물음표 버튼 캐릭터 고립 > 무덤으로 순간이동을 누르세요. 영혼의 치유사에게 즉시 부활하세요.* 사무엘의 유골을 묻어 퀘스트를 완수하세요:말라의 마지막 소원" optional
-  interact 178090 quest 6395.1
+  interact 178090 quest 6395.1 -- *죽거나 무덤으로 순간이동을 이용하세요
 
 step
   zone map 1420
@@ -159,13 +144,11 @@ step
   when complete 3902
   label q3902
   zone map 1420
-  task "보급품을 다 모았다면 죽음의경비병 살테인에게: 데스넬에서의 폐품 수집" optional
   turnin 3902 npc 1740
 
 step
   only Undead
   zone map 1420
-  task "아라미스 해머핸드에게 퀘스트 완료: 어둠 속의 빛" optional
   turnin 98389 npc 244808
 
 step
@@ -180,9 +163,6 @@ step
 
 step
   zone map 1420
-  task "잡템을 판매하고 필요하다면 물빵을 구매하세요." optional
-  task "직업 상급자에게 레벨 4 스킬을 습득하세요." optional only Priest
-  task "직업 상급자에게 레벨 4 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
   accept 381 npc 1570
 
 step
@@ -217,12 +197,10 @@ step
 step
   only Undead
   zone map 1420
-  task "집행관 아렌에게 퀘스트 수락: 모험가 (포에버 신규)" optional
   accept 96656 npc 1570
 
 step
   zone map 1420
-  task "이제 데스넬을 떠납시다! 퀘스트 수락: 도적의 거래, 오염된 농장" optional
   accept 8 npc 6784
   accept 365 npc 1519
 
@@ -232,11 +210,10 @@ step
 
 step
   along
-  level 5.53 -- 레벨 5에 경험치 1475XP가 되도록 사냥하세요.
+  level 5.53 -- 레벨 5에 경험치 1475XP가 되도록 사냥하세요
 
 step
   zone map 1420
-  task "*죽거나 무덤으로 순간이동을 이용하세요. 무덤으로 순간이동: 우측 하단 물음표 버튼 캐릭터 고립 > 무덤으로 순간이동을 누르세요. 영혼의 치유사에게 즉시 부활하세요.* 퀘스트 수락:더러운 임무" optional
   accept 404 npc 1496
 
 step
@@ -261,36 +238,30 @@ step
 step
   only Undead
   zone map 1420
-  task "퀘스트 수락: Discipline (포에버 신규)" optional
   accept 99134 npc 1515
 
 step
   only Undead
   zone map 1420
-  task "퀘스트 수락: Patience (포에버 신규)" optional
   accept 99141 npc 1515
 
 step
   only Undead
-  task "브릴 곳곳의 죽음의경비병 5명을 다그치세요: Discipline" optional
-  complete 99134
+  complete 99134 -- 브릴 곳곳의 죽음의경비병 5명을 다그치세요
 
 step
   only Undead
   zone map 1420
-  task "집행관 자이건드에게 퀘스트 완료: Discipline" optional
   turnin 99134 npc 1515
 
 step
   only Undead
   zone map 1420
-  task "죽음의경비병 딜링거에게 보고서를 받으세요: Patience" optional
-  complete 99141 @58.2,51.4 map 1420
+  complete 99141 @58.2,51.4 map 1420 -- 죽음의경비병 딜링거에게 보고서를 받으세요
 
 step
   only Paladin,Undead
   zone map 1420
-  task "샤리 스틸웰에게 퀘스트 완료: 훈련은 계속되어야 한다" optional
   turnin 91209 npc 246152
 
 step
@@ -314,7 +285,6 @@ step
 step
   only Undead
   zone map 1420
-  task "브릴 남쪽 모험가 야영지의 엘리노어 섀클턴에게 퀘스트 완료: 모험가" optional
   turnin 96656 npc 265812
 
 step
@@ -324,8 +294,7 @@ step
 
 step
   only Undead
-  task "모닥불 옆에서 /앉기 를 입력해 \"휴식 강화\" 효과를 받으세요: 드넓은 야외" optional
-  complete 96607
+  complete 96607 -- 모닥불 옆에서 /앉기 를 입력해 "휴식 강화" 효과를 받으세요
 
 step
   only Undead
@@ -335,20 +304,17 @@ step
 step
   only Undead
   zone map 1420
-  task "퀘스트 수락: 야영 입문: 요리 (포에버 신규)" optional
   accept 96658 npc 265812
 
 step
   only Undead
   zone map 1420
-  task "죽음의경비병 바르솔로뮤에게 퀘스트 수락: 막대기와 뼈" optional
   accept 86784 npc 1742
 
 step
   only Undead
   zone map 1420
-  task "야영지 주변에서 마른 가지 6개를 주우세요: 막대기와 뼈" optional
-  collect 279991 quest 86784.1
+  collect 279991 quest 86784.1 -- 야영지 주변에서 마른 가지 6개를 주우세요
 
 step
   only Undead
@@ -357,17 +323,12 @@ step
 
 step
   zone map 1420
-  task "고르도를 찾으세요. 티리스팔 숲 오솔길을 순찰하고 있습니다. 고르도에게 퀘스트 수락: 고르도의 임무" optional
-  task "레벨이 모자라 아직 못 받는 퀘스트: 죽음의 한기(7레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다. 직업 상급자에게 레벨 6 스킬을 습득하세요." optional only Priest
-  task "직업 상급자에게 레벨 6 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   accept 5481 @56.1,52.4 map 1420
 
 step
   only Undead
   zone map 1420
-  task "고르도에게 보고서를 받으세요: Patience" optional
-  collect 286200 quest 99141.1
+  collect 286200 quest 99141.1 -- 고르도에게 보고서를 받으세요
   collect 286201 quest 99141.2
   collect 286202 quest 99141.3
 
@@ -418,16 +379,14 @@ step
 
 step
   along
-  level 7.26 -- 레벨 7에 1170XP 이상이 되도록 사냥하세요.
+  level 7.26 -- 레벨 7에 1170XP 이상이 되도록 사냥하세요
 
 step
   zone map 1420
-  task "죽거나 무덤으로 순간이동을 이용하세요. *영혼의 치유사*에게 즉시 부활하세요. 퀘스트 완료: 죽음풀" optional
   turnin 5482 npc 10665
 
 step
   zone map 1420
-  task "이어서 퀘스트 수락: Tomb Weed (포에버 신규)" optional
   accept 99142 npc 10665
 
 step
@@ -437,7 +396,6 @@ step
 step
   only Priest
   zone map 1420
-  task "어둠의 사제 베릴에게 퀘스트 완료: 어둠의 로브" optional
   turnin 5650 npc 2129
 
 step
@@ -477,7 +435,6 @@ step
 step
   only Undead
   zone map 1420
-  task "요리 전문가 윌리엄 픽맨에게 요리를 배우고 퀘스트 완료: 야영 입문: 요리" optional
   turnin 96658 npc 265944
 
 step
@@ -488,13 +445,10 @@ step
 
 step
   along
-  accept 361 item 2839 optional -- 퀘스트 아이템 *투르만의 편지*가 나왔다면 클릭하여 퀘스트 수락: 배달되지 않은 편지
+  accept 361 item 2839 optional -- 퀘스트 아이템 *투르만의 편지*가 나왔다면 클릭하여 퀘스트 수락
 
 step
   zone map 1420
-  task "직업 상급자에게 레벨 8 스킬을 습득하세요." optional only Priest
-  task "직업 상급자에게 레벨 8 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "잡템을 판매하시고, 필요하다면 물빵과 *가방*을 구매하세요." optional
   collect 2831 quest 362.1
   collect 2829 quest 354.1
   collect 2828 quest 354.2
@@ -508,11 +462,10 @@ step
 
 step
   along
-  level 9.26 -- 레벨 9에 경험치 1675XP가 되도록 사냥하세요.
+  level 9.26 -- 레벨 9에 경험치 1675XP가 되도록 사냥하세요
 
 step
   zone map 1420
-  task "죽거나 무덤으로 순간이동을 이용하세요. *영혼의 치유사*에게 즉시 부활하세요. 퀘스트 완료: 밀농장 습격" optional
   turnin 426 npc 1496
 
 step
@@ -530,7 +483,6 @@ step
 
 step
   zone map 1420
-  task "퀘스트 수락: 죽음의 증거 (미리 수락)" optional
   accept 374 npc 1652
 
 step
@@ -539,7 +491,6 @@ step
 
 step
   zone map 1420
-  task "굵은 실타래 하나를 구매하세요." optional
   turnin 354 npc 1500
 
 step
@@ -560,9 +511,6 @@ step
 
 step
   zone map 1420
-  task "직업 상급자에게 레벨 10 스킬을 습득하세요." optional only Priest
-  task "직업 상급자에게 레벨 10 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
-  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   turnin 355 npc 1499
 
 step
@@ -581,12 +529,10 @@ step
 
 step
   zone map 1421
-  task "은빛소나무 숲으로 이동하세요. 변색된 검은늑대 심장은 추후 퀘스트에 필요하므로 버리지 마세요. 지점에 있는 죽음의추적자 엘런드(없다면 기다리세요)에게 퀘스트 수락 엘런드 경호" optional
   accept 435 npc 1978
 
 step
-  task "호위 퀘스트를 완수하세요: 엘런드 경호" optional
-  complete 435
+  complete 435 -- 호위 퀘스트를 완수하세요
 
 step
   zone map 1421
@@ -598,12 +544,10 @@ step
 
 step
   zone map 1421
-  task "죽거나 무덤으로 순간이동을 이용하세요. *영혼의 치유사*에게 즉시 부활하세요. 퀘스트 수락: 실력 검증" optional
   accept 421 npc 1938
 
 step
   zone map 1421
-  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   accept 6321 npc 6389
 
 step
@@ -640,16 +584,13 @@ step
 
 step
   zone map 1421
-  task "새로운 비행 지점을 발견하세요." optional
   getfp "The Sepulcher"
 
 step
-  task "언더시티로 비행하세요." optional
   fly "Undercity"
 
 step
   zone map 1458
-  task "▶ 다음 지역 티리스팔 숲 (주요 퀘스트 Lv6~11): 지금 예상 Lv10 · 수월하려면 Lv10 · 최소 Lv7. 언더시티를 귀환 장소로 설정하세요." optional
   sethome "Undercity"
 
 step
@@ -670,14 +611,12 @@ step
 
 step
   zone map 1420
-  task "죽거나 무덤으로 순간이동을 이용하세요. *영혼의 치유사*에게 즉시 부활하세요. 퀘스트 완료: 포세이큰의 의무" optional
   turnin 359 npc 1495
 
 step
   only Undead
   zone map 1420
-  task "옆의 죽음경비병 크리스토프에게 보고서를 받으세요: Patience" optional
-  complete 99141 @65.2,60.2 map 1420
+  complete 99141 @65.2,60.2 map 1420 -- 옆의 죽음경비병 크리스토프에게 보고서를 받으세요
 
 step
   zone map 1420
@@ -691,8 +630,7 @@ step
 
 step
   zone map 1420
-  task "발니르 농장 바닥에 난 무덤풀 5개를 주우세요: Tomb Weed" optional
-  collect 286204 quest 99142.1 @75,59.4 map 1420
+  collect 286204 quest 99142.1 @75,59.4 map 1420 -- 발니르 농장 바닥에 난 무덤풀 5개를 주우세요
 
 step
   zone map 1420
@@ -705,12 +643,11 @@ step
 
 step
   zone map 1420
-  task "군터의 은신처 섬, 군터의 책 더미에서 마술사의 마법책을 얻으세요: 마술사의 정체" optional
-  collect 2833 quest 357.1 @67.9,42 map 1420
+  collect 2833 quest 357.1 @67.9,42 map 1420 -- 군터의 은신처 섬, 군터의 책 더미에서 마술사의 마법책을 얻으세요
 
 step
   along
-  level 11.05 -- 레벨 11에 경험치 4450XP이 되도록 사냥하세요.
+  level 11.05 -- 레벨 11에 경험치 4450XP이 되도록 사냥하세요
 
 step
   zone map 1420
@@ -722,7 +659,6 @@ step
 
 step
   zone map 1420
-  task "브릴 묘지를 순찰하는 견습 약제사 홀랜드에게 퀘스트 완료: Tomb Weed" optional
   turnin 99142 npc 10665
 
 step
@@ -748,17 +684,13 @@ step
 
 step
   zone map 1420
-  task "[알림] 곧 귀환석으로 언더시티에 갑니다. 그때까지 귀환석을 쓰지 말고, 재사용 대기시간이 남았는지 지금 확인하세요." optional
-  turnin 492 npc 2211
-  task "※ 귀환석이 언더시티로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 언더시티까지 비행하거나 달려가세요." optional
+  turnin 492 npc 2211 -- [알림] 곧 귀환석으로 언더시티 — 귀환석 아껴 두기
 
 step
   hearth "Undercity"
 
 step
   zone map 1458
-  task "언더시티로 귀환합니다." optional
-  task "잡템을 판매하시고 필요하다면 물빵을 구매하세요." optional
   turnin 6322 npc 4551
 
 step
@@ -767,15 +699,11 @@ step
 
 step
   zone map 1458
-  task "왕실 지구 바리마트라스에게 퀘스트 수락: 파괴해야 할 힘 (성난불길 협곡 퀘스트)" optional
   accept 5725 npc 2425
-  task "직업 상급자에게 레벨 12 스킬을 습득하세요." optional only Priest
-  task "직업 상급자에게 레벨 12 스킬을 습득하세요." optional only Warrior,Rogue,Mage,Warlock,Paladin
 
 step
   along
-  level 12 -- 이제 레벨 12가 되어야 합니다. 아직 아니라면 사냥하여 도달하세요!
+  level 12 -- 이제 레벨 12가 되어야 합니다
 
 step
-  task "12레벨이 되면 12-25 Nood 가이드로 이어집니다. 아직이라면 근처에서 사냥하세요." optional
   level 12

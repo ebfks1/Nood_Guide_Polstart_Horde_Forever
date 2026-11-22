@@ -12,7 +12,6 @@ next nood-ko/05-12-25
 
 step
   zone map 1411
-  task "※ 12레벨이 되면 12-25 Nood 가이드로 넘어가는 것을 권장합니다. 남은 단계를 건너뛰면 이어서 12-25 가 열립니다 (Polestar 가이드 메뉴에서 \"12-25 Nood\"를 골라도 됩니다). 여기 남긴 퀘스트의 평판은 받지 못합니다." optional
   accept 4641 npc 10176
 
 step
@@ -30,31 +29,24 @@ step
 
 step
   zone map 1411
-  task "퀘스트 수락: 주인 잃은 무기 (포에버 신규)" optional
   accept 97279 npc 3143
 
 step
   zone map 1411
-  task "레벨이 모자라 아직 못 받는 퀘스트: 악마의 하수인(2레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  task "레벨이 모자라 아직 못 받는 퀘스트: 게으른 일꾼들(3레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional
-  task "다리, 신발, 무기 장비를 해제하고 질긴 쇠고기와 함께 행상인에게 판매하세요." optional only Warlock
-  task "적어도 10코퍼는 획득할 겁니다. 새로운 스킬을 배우세요: 제물 (1 레벨)." optional only Warlock
   accept 790 npc 3287
 
 step
   along
   zone map 1411
-  kill 3098 quest 788.1 -- 가는 길에 몸 풀기를 수행하세요.
+  kill 3098 quest 788.1 -- 가는 길에 몸 풀기를 수행하세요
 
 step
   zone map 1411
-  task "멧돼지를 잡으며 바닥에 떨어진 버려진 훈련용 무기 6개를 주우세요: 주인 잃은 무기" optional
-  collect 277653 quest 97279.1 @43.4,62.8 map 1411
+  collect 277653 quest 97279.1 @43.4,62.8 map 1411 -- 멧돼지를 잡으며 바닥에 떨어진 버려진 훈련용 무기 6개를 주우세요
 
 step
   zone map 1411
-  task "사르코스를 처치하여 완수하세요: 사르코스" optional
-  collect 4905 quest 790.1 @40.5,67.3 map 1411
+  collect 4905 quest 790.1 @40.5,67.3 map 1411 -- 사르코스를 처치하여 완수하세요
 
 step
   zone map 1411
@@ -76,12 +68,12 @@ step
 step
   only Warlock
   along
-  level 3.57 -- 4레벨 도달에 600XP가 남게 될 때까지 사냥하세요.
+  level 3.57 -- 4레벨 도달에 600XP가 남게 될 때까지 사냥하세요
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   along
-  level 2.72 -- 3레벨 도달에 250XP가 남게 될 때까지 사냥하세요.
+  level 2.72 -- 3레벨 도달에 250XP가 남게 될 때까지 사냥하세요
 
 step
   zone map 1411
@@ -94,7 +86,6 @@ step
 
 step
   zone map 1411
-  task "옆 NPC에게 퀘스트 완료: 악마의 하수인" optional
   turnin 1499 npc 3145
 
 step
@@ -172,48 +163,39 @@ step
 step
   only Mage,Orc
   zone map 1411
-  task "퀘스트 수락: 상형 문자가 새겨진 양피지 (포에버 신규)" optional
   accept 98576 npc 3143
 
 step
   only Warlock,Troll
   zone map 1411
-  task "퀘스트 수락: 오염된 서판 (포에버 신규)" optional
   accept 98575 npc 3143
 
 step
   zone map 1411
-  task "동굴 막사 안의 크잔 손슬래시에게 퀘스트 완료: 주인 잃은 무기" optional
   turnin 97279 npc 3159
 
 step
   only Rogue,Troll
   zone map 1411
-  task "동굴 안으로 들어가서 퀘스트 완료 암호화된 서판" optional
   turnin 3083 npc 3155
 
 step
   only Rogue,Orc
   zone map 1411
-  task "동굴 안으로 들어가서 퀘스트 완료 암호화된 양피지" optional
   turnin 3088 npc 3155
 
 step
   only Warlock,Orc
   zone map 1411
-  task "바로 옆에, 퀘스트 완료 오래된 양피지" optional
   turnin 3090 npc 3156
 
 step
   only Warlock,Troll
   zone map 1411
-  task "나르톡에게 퀘스트 완료 오염된 서판" optional
   turnin 98575 npc 3156
 
 step
   zone map 1411
-  task "동굴 안으로 더 들어가서 아이템 판매" optional only Warlock
-  task "새로운 스킬을 습득하세요: 부패 (1 레벨)" optional only Warlock
   accept 4402 npc 9796
 
 step
@@ -224,7 +206,6 @@ step
 step
   only Mage,Orc
   zone map 1411
-  task "마이아에게 퀘스트 완료 상형 문자가 새겨진 양피지" optional
   turnin 98576 npc 5884
 
 step
@@ -245,7 +226,6 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "마차 옆에서 퀘스트 수락: 악마의 하수인" optional
   accept 792 npc 3145
 
 step
@@ -261,53 +241,42 @@ step
 step
   only Hunter,Troll
   zone map 1411
-  task "젠샨에게 퀘스트 완료 글이 새겨진 서판" optional
   turnin 3082 npc 3154
 
 step
   only Hunter,Orc
   zone map 1411
-  task "젠샨에게 퀘스트 완료 글이 새겨진 양피지" optional
   turnin 3087 npc 3154
 
 step
   zone map 1411
-  task "여기서 잡템을 판매하세요." optional
-  task "새로운 스킬을 습득하세요: 신비한 지능 (1 레벨)" optional only Mage
-  task "새로운 스킬을 습득하세요: 신의 권능: 인내 (1 레벨)" optional only Priest
-  task "새로운 스킬을 습득하세요: 대지의 무기 (1 레벨)" optional only Shaman
-  task "새로운 스킬을 습득하세요: 전투의 외침 (1 레벨)" optional only Warrior
   accept 5441 npc 11378
 
 step
   only Shaman
   zone map 1411
-  task "퀘스트 수락: 대지의 부름 (미리 수락)" optional
   accept 1516 npc 5887
 
 step
   only Warlock
   zone map 1411
-  task "게으른 일꾼들퀘스트를 수행하는 데 집중하면서," optional
   kill 10556 quest 5441.1 @46.29,60.62 map 1411
 
 step
   only Warlock
   along
   zone map 1411
-  collect 11583 quest 4402.1 @46.29,60.62 map 1411 -- 다음 퀘스트도 함께 수행하세요: 갈가르의 선인장 사과 별미 - 식물 근처의 선인장 사과를 주우세요.
+  collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
   only Warlock
   along
   zone map 1411
-  complete 789 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요.
+  complete 789 @46.29,60.62 map 1411 -- 전갈의 독침 - 전갈을 잡으세요
 
 step
   only Warlock
   zone map 1411
-  task "게으른 일꾼 퀘스트가 완료되면 우선 마을로 돌아갑니다. 다른 퀘스트를 지금 완료할 필요는 없습니다. 퀘스트 완료: 게으른 일꾼들" optional
-  task "(지도에 있는 아이콘 위치를 보세요.)" optional
   turnin 5441 npc 11378
 
 step
@@ -318,34 +287,27 @@ step
 step
   only Warlock
   zone map 1411
-  task "북쪽에 있는 동굴을 향하며 갈가르의 선인장 사과 별미와 전갈의 독침퀘스트를 수행하세요." optional
-  collect 11583 quest 4402.1 @44.7,57 map 1411
+  collect 11583 quest 4402.1 @44.7,57 map 1411 -- 북쪽에 있는 동굴을 향하며 갈가르의 선인장 사과 별미와 전갈의 독침퀘스트를 수행하세요
   complete 789 @44.7,57 map 1411
 
 step
   only Warlock
   zone map 1411
-  task "동굴에 들어가 곡괭이를 획득하세요: 타즈릴의 곡괭이" optional
-  collect 16332 quest 6394.1 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411 -- 동굴에 들어가 곡괭이를 획득하세요
 
 step
   only Warlock
   zone map 1411
-  task "동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요: 불타는 칼날단 메달" optional
-  collect 4859 quest 794.1 @42.7,53 map 1411
-  task "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요." optional
+  collect 4859 quest 794.1 @42.7,53 map 1411 -- 동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "여기서부터는 다음 퀘스트를 수행하세요: 게으른 일꾼들" optional
-  kill 10556 quest 5441.1
+  kill 10556 quest 5441.1 -- 여기서부터는 다음 퀘스트를 수행하세요
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "함께 수행하세요: 완수하세요: 갈가르의 선인장 사과 별미" optional
-  task "(지도에 있는 아이콘 위치를 보세요.)" optional
   collect 11583 quest 4402.1 @46.29,60.62 map 1411
 
 step
@@ -356,19 +318,16 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "악마의 하수인을 처치해 완수: 악마의 하수인" optional
-  kill 3101 quest 792.1 @45.3,57.2 map 1411
+  kill 3101 quest 792.1 @45.3,57.2 map 1411 -- 악마의 하수인을 처치해 완수
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   along
-  level 3.29 -- 4레벨 도달에 1000XP가 남을 때까지 사냥하세요.
+  level 3.29 -- 4레벨 도달에 1000XP가 남을 때까지 사냥하세요
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "※ 귀환석이 시험의 골짜기로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 시험의 골짜기까지 비행하거나 달려가세요." optional
-  task "시험의 골짜기로 귀환하세요." optional
   turnin 5441 npc 11378
 
 step
@@ -378,12 +337,10 @@ step
 
 step
   zone map 1411
-  task "시험의 골짜기로 귀환하세요." optional only Warlock
   turnin 4402 npc 9796
 
 step
   zone map 1411
-  task "잡템을 정리하세요." optional
   turnin 789 npc 3143
 
 step
@@ -399,31 +356,20 @@ step
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "북쪽에 있는 동굴로 들어가 곡괭이를 획득하세요: 타즈릴의 곡괭이" optional
-  collect 16332 quest 6394.1 @43.7,53.8 map 1411
+  collect 16332 quest 6394.1 @43.7,53.8 map 1411 -- 북쪽에 있는 동굴로 들어가 곡괭이를 획득하세요
 
 step
   only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   zone map 1411
-  task "동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요: 불타는 칼날단 메달" optional
-  collect 4859 quest 794.1 @42.7,53 map 1411
+  collect 4859 quest 794.1 @42.7,53 map 1411 -- 동굴 깊숙이 들어가 야로그 베인섀도를 처치하여 완수하세요
 
 step
   only Shaman
   zone map 1411
-  task "동굴 안에 있는 지옥사냥개를 처치하여 완수하세요: 대지의 부름." optional
-  task "새로운 스킬을 습득하세요: 대지 충격(1 레벨)" optional
-  collect 6640 quest 1516.1
+  collect 6640 quest 1516.1 -- 동굴 안에 있는 지옥사냥개를 처치하여 완수하세요
 
 step
   zone map 1411
-  task "새로운 스킬을 습득하세요: 어둠의 권능: 고통 (1 레벨), 하급 치유 (2 레벨)" optional only Priest
-  task "새로운 스킬을 습득하세요: 음료 창조 (1 레벨), 얼음 화살 (1 레벨)" optional only Mage
-  task "레벨이 모자라 아직 못 받는 퀘스트: 숭고한 정신의 추종자(5레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Priest
-  task "새로운 스킬을 습득하세요: 전갈 쐐기 (1 레벨)" optional only Hunter
-  task "새로운 스킬을 습득하세요: 돌진 (1 레벨)" optional only Warrior
-  task "※ 이 단계는 귀환석 대신 무덤으로 순간이동을 씁니다." optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
-  task "야로그가 있는 지점에서 무덤으로 순간이동 (우측 하단 물음표 버튼>캐릭터 고립>무덤으로 순간이동)" optional only Mage,Warrior,Hunter,Rogue,Shaman,Priest
   turnin 794 npc 3145
 
 step
@@ -447,36 +393,30 @@ step
 
 step
   zone map 1411
-  task "여기서 잡템을 판매하세요." optional
   turnin 6394 npc 11378
 
 step
   zone map 1411
-  task "마을 안 잃어버린 일지를 클릭해 퀘스트 수락: 모험가 (포에버 신규)" optional
   accept 96652 object 654925
 
 step
   only Shaman
   zone map 1411
-  task "지점으로 이동하세요." optional
   goto 41.7,73.2 r 20 map 1411
 
 step
   only Shaman
   zone map 1411
-  task "지점을 향해 언덕을 오르세요." optional
-  goto 40.7,74.2 r 20 map 1411
+  goto 40.7,74.2 r 20 map 1411 -- 지점을 향해 언덕을 오르세요
 
 step
   only Shaman
   zone map 1411
-  task "큰 비석을 볼 때까지 쭉 가줍니다." optional
-  goto 44,76.2 r 20 map 1411
+  goto 44,76.2 r 20 map 1411 -- 큰 비석을 볼 때까지 쭉 가줍니다
 
 step
   only Shaman
   zone map 1411
-  task "인벤토리를 열고 퀘스트 아이템인 대지의 정기를 마시세요. 퀘스트 완료: 대지의 부름" optional
   turnin 1517 npc 5891
 
 step
@@ -487,33 +427,28 @@ step
 step
   only Shaman
   zone map 1411
-  task "무덤으로 순간이동을 사용하세요. 퀘스트 완료: 대지의 부름" optional
   turnin 1518 npc 5887
 
 step
   zone map 1411
-  task "시작 지점을 떠나서 퀘스트 수락: 일꾼의 짐" optional
   accept 2161 npc 6786
 
 step
   only Mage
   along
   zone map 1411
-  level 6 -- 센진 마을 주변에서 레벨 6이 될 때까지 사냥하세요.
+  level 6 -- 센진 마을 주변에서 레벨 6이 될 때까지 사냥하세요
 
 step
   zone map 1411
-  task "퀘스트 수락: 콜카르일족 침략 저지(NPC 돌아다님)" optional
   accept 786 npc 3140
 
 step
   zone map 1411
-  task "셴진 마을로 이동하세요. 퀘스트 수락: 유용한 사냥감 (움막 안에 있음)" optional
   accept 817 npc 3194
 
 step
   zone map 1411
-  task "퀘스트 수락: 길을 막는 거미 (포에버 신규)" optional
   accept 96821 npc 3194
 
 step
@@ -522,7 +457,6 @@ step
 
 step
   zone map 1411
-  task "샤르티에게 퀘스트 수락: 붉은발톱랩터 어미 (포에버 신규)" optional
   accept 97223 npc 7953
 
 step
@@ -531,7 +465,6 @@ step
 
 step
   zone map 1411
-  task "퀘스트 수락: 잊힌 로아 우상 (포에버 신규)" optional
   accept 97225 npc 3304
 
 step
@@ -549,7 +482,7 @@ step
 step
   only Warlock,Warrior,Hunter,Rogue,Shaman,Priest
   along
-  level 6 -- 도착하기 전 반드시 레벨 6에 도달하세요.
+  level 6 -- 도착하기 전 반드시 레벨 6에 도달하세요
 
 step
   only Warlock,Warrior,Hunter,Rogue,Shaman,Priest
@@ -564,8 +497,6 @@ step
 step
   only Mage
   zone map 1411
-  task "칼바위 언덕을 향해 북쪽으로 향하세요. 퀘스트 완료: 오르그닐에게 보고" optional
-  task "새로운 스킬을 습득하세요: 화염구 (1 레벨), 음식 창조 (1 레벨), 화염 작렬 (1 레벨)" optional
   turnin 823 npc 3142
 
 step
@@ -575,47 +506,31 @@ step
 
 step
   zone map 1411
-  task "가르톡에게 퀘스트 수락: 배신자 처단, 영토 침범" optional
-  task "*스틸레토*를 구매하세요 - 4 실버" optional only Rogue
-  task "*뿔나무 곡궁*을 구매하세요 - 3 실버" optional only Hunter
-  task "*보행용 지팡이*를 구매하세요 - 5 실버" optional only Shaman
-  task "*큰 도끼*를 구매하세요 - 5 실버" optional only Warrior
-  task "전문기술 습득 가능: 연금술" optional
-  task "전문기술 습득 가능: 약초채집" optional
-  task "칼바위 언덕을 향해 북쪽으로 향하세요." optional
   accept 784 npc 3139
   accept 837 npc 3139
 
 step
   zone map 1411
-  task "투로크에게 퀘스트 수락: 명예를 위하여 (포에버 신규)" optional
   accept 96822 npc 266940
 
 step
   zone map 1411
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 사악한 일격 (2 레벨)" optional only Rogue
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 원숭이의 상, 신비한 사격 (1 레벨), 사냥꾼의 징표 (1 레벨)" optional only Hunter
   accept 815 npc 3191
 
 step
   zone map 1411
-  task "퀘스트 수락: 한입 물다 물릴라 (포에버 신규)" optional
   accept 96825 npc 3191
 
 step
   zone map 1411
-  task "칼바위 언덕 망루 꼭대기로 이동하여 퀘스트 수락: 보급품 조달" optional
   accept 791 npc 3147
 
 step
   zone map 1411
-  task "여관으로 들어가서 퀘스트 완료: 일꾼의 짐" optional
-  task "새로운 스킬을 습득하세요: 생명력 전환 (1 레벨), 어둠의 화살 (2 레벨)" optional only Warlock
   turnin 2161 npc 6928
 
 step
   zone map 1411
-  task "칼바위 언덕을 귀환 위치로 지정하세요." optional
   sethome "Razor Hill"
 
 step
@@ -631,29 +546,18 @@ step
 step
   only Priest
   zone map 1411
-  task "코르자를 치유하세요. 코르자에게 신의 권능: 인내를 시전하세요: 신비한 주술의 로브" optional
-  task "새로운 스킬을 습득하세요: 신의 권능: 보호막 (1 레벨), 성스러운 일격 (2 레벨)" optional
-  kill 12430 quest 5648.1 @53.1,46.5 map 1411
+  kill 12430 quest 5648.1 @53.1,46.5 map 1411 -- 코르자를 치유하세요
 
 step
   zone map 1411
-  task "남쪽 길가 모험가 야영지의 브라크에게 퀘스트 완료: 모험가" optional
-  task "잡템을 판매하세요. 필요하다면 물빵을 구매하세요." optional
-  task "(단, 응급치료 습득에 필요한 1실버는 남기세요). 병영 안으로 들어가서, 좌회전하세요. 응급치료를 *습득*하세요." optional
-  task "지금부터는 한가할 때마다 붕대를 만들 수 있습니다." optional
-  task "추후에 응급치료 숙련도 40이 필요합니다." optional
-  task "새로운 스킬을 습득하세요: 분쇄 (1 레벨), 무기 막기 (패시브)" optional only Warrior
-  task "전문기술 습득 가능: 채광, 대장기술, 기계공학" optional
   turnin 96652 npc 265809
 
 step
   zone map 1411
-  task "퀘스트 수락: 드넓은 야외 (포에버 신규)" optional
   accept 96604 npc 265809
 
 step
-  task "모닥불 옆에서 채팅창에 /앉기 를 입력하고 \"휴식 강화\" 효과를 받으세요: 드넓은 야외" optional
-  complete 96604
+  complete 96604 -- 모닥불 옆에서 채팅창에 /앉기 를 입력하고 "휴식 강화" 효과를 받으세요
 
 step
   zone map 1411
@@ -661,25 +565,21 @@ step
 
 step
   zone map 1411
-  task "퀘스트 수락: 야영 입문: 요리 (포에버 신규)" optional
   accept 96655 npc 265809
 
 step
   zone map 1411
-  task "남쪽 능선의 능선그늘 거미·잠복꾼을 처치하세요: 길을 막는 거미" optional
-  kill 266850 quest 96821.1 @50.4,54.6 map 1411
+  kill 266850 quest 96821.1 @50.4,54.6 map 1411 -- 남쪽 능선의 능선그늘 거미·잠복꾼을 처치하세요
   kill 266849 quest 96821.2 @50.4,54.6 map 1411
 
 step
   zone map 1411
-  task "타이라가드 요새로 이동하여 수행하세요: 배신자 처단배신자 처단" optional
-  kill 3128 quest 784.1 @58.17,57.13 map 1411
+  kill 3128 quest 784.1 @58.17,57.13 map 1411 -- 타이라가드 요새로 이동하여 수행하세요
   kill 3129 quest 784.2 @58.17,57.13 map 1411
 
 step
   zone map 1411
-  task "요새 외곽에서 약탈병의 전투도끼·약탈병의 활·공격대 방패를 주우세요: 명예를 위하여" optional
-  collect 275713 quest 96822.1
+  collect 275713 quest 96822.1 -- 요새 외곽에서 약탈병의 전투도끼·약탈병의 활·공격대 방패를 주우세요
   collect 275716 quest 96822.2
   collect 275717 quest 96822.3
 
@@ -690,34 +590,28 @@ step
 
 step
   zone map 1411
-  task "부대장 베네딕트를 처치하세요: 배신자 처단." optional
-  kill 3192 quest 784.3 @59.73,58.28 map 1411
+  kill 3192 quest 784.3 @59.73,58.28 map 1411 -- 부대장 베네딕트를 처치하세요
 
 step
   zone map 1411
-  task "베네딕트의 열쇠를 습득하세요. 옥상에 있는 베네딕트의 상자로 이동하세요." optional
-  goto 59.32,57.65 r 20 map 1411
+  goto 59.32,57.65 r 20 map 1411 -- 베네딕트의 열쇠를 습득하세요
 
 step
-  task "상자를 열고 낡은 봉투를 습득해 퀘스트 수락: 함장의 명령서" optional
   accept 830 item 4881
 
 step
   zone map 1411
-  task "아래로 뛰어내려 퀘스트를 완수하세요: 배신자 처단, 보급품 조달" optional
-  kill 3128 quest 784.1
+  kill 3128 quest 784.1 -- 아래로 뛰어내려 퀘스트를 완수하세요
   kill 3129 quest 784.2
   kill 3192 quest 784.3
   collect 4870 quest 791.1
 
 step
   zone map 1411
-  task "택일하세요: 칼바위 언덕으로 사냥하면서 돌아가기 사망하기, 무덤으로 순간이동하기 중 아무거나 이용하세요. 퀘스트 완료: 배신자 처단, 함장의 명령서" optional
   turnin 784 npc 3139
 
 step
   zone map 1411
-  task "택일하세요: 칼바위 언덕으로 사냥하면서 돌아가기 사망하기, 무덤으로 순간이동하기 중 아무거나 이용하세요. 퀘스트 완료: 배신자 처단, 함장의 명령서" optional
   turnin 830 npc 3139
 
 step
@@ -731,7 +625,6 @@ step
 
 step
   zone map 1411
-  task "망루로 올라가 퀘스트 완료: 보급품 조달" optional
   turnin 791 npc 3147
 
 step
@@ -745,76 +638,58 @@ step
 
 step
   zone map 1411
-  task "동쪽 해변으로 이동하여 완수하세요: 나약한 정신, 난파선" optional
-  complete 818 @62.02,46.35 map 1411
+  complete 818 @62.02,46.35 map 1411 -- 동쪽 해변으로 이동하여 완수하세요
   collect 4863 quest 825.1 @62.02,46.35 map 1411
 
 step
   zone map 1411
-  task "칼바위 언덕의 남서쪽으로 향해 영토 침범영토 침범의 절반을 수행하세요." optional
-  kill 3111 quest 837.1 @50.02,49.37 map 1411
+  kill 3111 quest 837.1 @50.02,49.37 map 1411 -- 칼바위 언덕의 남서쪽으로 향해 영토 침범영토 침범의 절반을 수행하세요
   kill 3112 quest 837.2 @50.02,49.37 map 1411
 
 step
   zone map 1411
-  task "서슬갈기 영토에서 가시투성이 배 8개를 채집하세요: 한입 물다 물릴라" optional
-  collect 275718 quest 96825.1
+  collect 275718 quest 96825.1 -- 서슬갈기 영토에서 가시투성이 배 8개를 채집하세요
 
 step
   only Warlock,Warrior,Hunter,Rogue,Shaman,Priest
   along
-  level 7.87 -- 레벨 8 도달에 600XP가 남을 때까지 여기나 칼바위 언덕에서 가까운 곳에서 사냥하세요.
+  level 7.87 -- 레벨 8 도달에 600XP가 남을 때까지 여기나 칼바위 언덕에서 가까운 곳에서 사냥하세요
 
 step
   zone map 1411
-  task "칼바위 언덕으로 돌아가 퀘스트 완료: 난파선" optional
   turnin 825 npc 3139
 
 step
   zone map 1411
-  task "남쪽으로 내려가며 사냥하세요. 시험의 골짜기 공격 계획서를 불태우세요: 콜카르일족 침략 저지" optional
-  task "새로운 스킬을 습득하세요: 고통의 저주 (1 레벨), 공포 (1 레벨)" optional only Warlock
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 후려치기 (1 레벨), 회피, 절개 (2 레벨)" optional only Rogue
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요: 무기 막기 (패시브), 충격포, 랩터의 일격 (2 레벨)" optional only Hunter
-  task "병영 안으로 들어가 새로운 스킬을 습득하세요: 번개 화살 (2 레벨), 번개 보호막 (1 레벨), 대지의 무기 (2 레벨), 대지 충격 (2 레벨), 치유의 물결 (2 레벨))" optional only Shaman
-  task "새로운 스킬을 습득하세요: 영웅의 일격 (2 레벨), 무력화 (1 레벨)" optional only Warrior
-  task "새로운 스킬을 습득하세요: 소생 (1 레벨), 소실 (1 레벨))" optional only Priest
-  interact 3189 quest 786.1 @49.81,81.31 map 1411
+  interact 3189 quest 786.1 @49.81,81.31 map 1411 -- 남쪽으로 내려가며 사냥하세요
 
 step
   zone map 1411
-  task "센진 마을 공격 계획서를 불태우세요: 콜카르일족 침략 저지" optional
-  interact 3190 quest 786.2 @47.67,77.39 map 1411
+  interact 3190 quest 786.2 @47.67,77.39 map 1411 -- 센진 마을 공격 계획서를 불태우세요
 
 step
   zone map 1411
-  task "오그리마 공격 계획서를 불태우세요: 콜카르일족 침략 저지" optional
-  interact 3192 quest 786.3 @46.26,78.98 map 1411
+  interact 3192 quest 786.3 @46.26,78.98 map 1411 -- 오그리마 공격 계획서를 불태우세요
 
 step
   zone map 1411
-  task "바윗골 안쪽의 팔주에게 퀘스트 수락: 어둠 속 방황 (포에버 신규)" optional
   accept 99123 npc 275811
 
 step
   zone map 1411
-  task "팔주를 바윗골 밖까지 호위하세요: 어둠 속 방황" optional
-  complete 99123 @51.4,79.2 map 1411
+  complete 99123 @51.4,79.2 map 1411 -- 팔주를 바윗골 밖까지 호위하세요
 
 step
   only Mage
   along
-  level 8 -- 여기서 레벨 8이 될 때까지 사냥하세요.
+  level 8 -- 여기서 레벨 8이 될 때까지 사냥하세요
 
 step
   zone map 1411
-  task "퀘스트 완료: 콜카르일족 침략 저지(NPC 돌아다님)" optional
-  task "전문기술 습득 가능: 낚시" optional
   turnin 786 npc 3140
 
 step
   zone map 1411
-  task "퀘스트 완료: 나약한 정신 *끈끈한 아교*는 나중에 사용하니 버리지 마세요." optional
   turnin 818 npc 3304
 
 step
@@ -823,41 +698,32 @@ step
 
 step
   zone map 1411
-  task "메아리 섬으로 건너가기 전, 센진 마을 동쪽 해안의 붉은발톱랩터 어미를 처치해 알을 획득: 붉은발톱랩터 어미" optional
-  task "수리하시고 잡템을 판매하세요." optional
-  task "새로운 스킬을 습득하세요: 변이 (1 레벨), 얼음 화살 (2 레벨)" optional only Mage
-  collect 277128 quest 97223.1 @68.8,71.8 map 1411
+  collect 277128 quest 97223.1 @68.8,71.8 map 1411 -- 메아리 섬으로 건너가기 전, 센진 마을 동쪽 해안의 붉은발톱랩터 어미를 처치해 알을 획득
 
 step
   zone map 1411
-  task "메아리 섬으로 가서 다음 4개의 퀘스트를 모두 진행하세요: 알 요리 - 붉은발톱랩터 알을 주우세요. (랩터 잡는거 아님)" optional
-  collect 4890 quest 815.1
+  collect 4890 quest 815.1 -- 메아리 섬으로 가서 다음 4개의 퀘스트를 모두 진행하세요
 
 step
   zone map 1411
-  task "유용한 사냥감 - 듀로타 호랑이 잡기" optional
-  collect 4892 quest 817.1
+  collect 4892 quest 817.1 -- 유용한 사냥감 - 듀로타 호랑이 잡기
 
 step
   zone map 1411
-  task "민시나의 해골 - 초가 둘러져 있는 작은 언덕에 있음" optional
-  collect 4864 quest 808.1 @67.4,87.8 map 1411
+  collect 4864 quest 808.1 @67.4,87.8 map 1411 -- 민시나의 해골 - 초가 둘러져 있는 작은 언덕에 있음
 
 step
   zone map 1411
-  task "잘라제인 - 트롤과 잘라제인을 처치하세요." optional
-  kill 3207 quest 826.1 @67.19,86.98 map 1411
+  kill 3207 quest 826.1 @67.19,86.98 map 1411 -- 잘라제인 - 트롤과 잘라제인을 처치하세요
   kill 3206 quest 826.2 @67.19,86.98 map 1411
   collect 4866 quest 826.3 @67.19,86.98 map 1411
 
 step
   zone map 1411
-  task "잊힌 로아 우상 - 섬 곳곳의 잊힌 로아 우상 8개" optional
-  collect 277135 quest 97225.1 @66.5,85.5 map 1411
+  collect 277135 quest 97225.1 @66.5,85.5 map 1411 -- 잊힌 로아 우상 - 섬 곳곳의 잊힌 로아 우상 8개
 
 step
   zone map 1411
-  task "셴진 마을로 돌아가기 위해 자살하세요. 치유사에게 말을 걸어 즉시 부활하세요. 퀘스트 완료: 유용한 사냥감" optional
   turnin 817 npc 3194
 
 step
@@ -866,7 +732,6 @@ step
 
 step
   zone map 1411
-  task "*희미하게 빛나는 해골*은 나중에 사용하니 버리지 마세요. 퀘스트 완료: 잘라제인" optional
   turnin 826 npc 3188
 
 step
@@ -879,8 +744,7 @@ step
 
 step
   zone map 1411
-  task "칼바위 언덕으로 돌아가며 사냥하세요." optional
-  goto 51.1,42.4 r 20 map 1411
+  goto 51.1,42.4 r 20 map 1411 -- 칼바위 언덕으로 돌아가며 사냥하세요
 
 step
   zone map 1411
@@ -888,7 +752,6 @@ step
 
 step
   zone map 1411
-  task "요리사 토르카에게 요리를 배우고 퀘스트 완료: 야영 입문: 요리" optional
   turnin 96655 npc 3191
 
 step
@@ -897,22 +760,12 @@ step
 
 step
   zone map 1411
-  task "전투호위병과 사막길잡이를 처치해 완수하세요: 영토 침범영토 침범" optional
-  task "레벨이 모자라 아직 못 받는 퀘스트: 불의 부름(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Shaman
-  task "레벨이 모자라 아직 못 받는 퀘스트: Hex of Weakness(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Priest
-  task "레벨이 모자라 아직 못 받는 퀘스트: 테르조크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Rogue,Orc
-  task "레벨이 모자라 아직 못 받는 퀘스트: 간룰의 소환(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warlock
-  task "레벨이 모자라 아직 못 받는 퀘스트: 노련한 우제크(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warrior
-  task "레벨이 모자라 아직 못 받는 퀘스트: 호드의 징병(10레벨) — 레벨이 되면 다음에 이 마을에 들를 때 받습니다." optional only Warrior,Shaman
-  task "수리/잡템 판매" optional
-  task "필요하다면 레벨 5 물빵을 구매하세요." optional
-  kill 3113 quest 837.3 @43.98,40.19 map 1411
+  kill 3113 quest 837.3 @43.98,40.19 map 1411 -- 전투호위병과 사막길잡이를 처치해 완수하세요
   kill 3114 quest 837.4 @43.98,40.19 map 1411
 
 step
   zone map 1411
-  task "북쪽에 있는 작은 집으로 이동하며 사냥하세요." optional
-  goto 43.09,30.34 r 20 map 1411
+  goto 43.09,30.34 r 20 map 1411 -- 북쪽에 있는 작은 집으로 이동하며 사냥하세요
 
 step
   zone map 1411
@@ -924,13 +777,10 @@ step
 
 step
   zone map 1411
-  task "하피 주변에 있는 보급품을 획득하여 완수하세요: 사막의 바람" optional
-  collect 4918 quest 834.1
+  collect 4918 quest 834.1 -- 하피 주변에 있는 보급품을 획득하여 완수하세요
 
 step
   zone map 1411
-  task "로 돌아가서 퀘스트 완료: 사막의 바람" optional
-  task "( 지도에 위치를 표기한 아이콘을 확인하세요.)" optional
   turnin 834 npc 3293
 
 step
@@ -939,18 +789,17 @@ step
 
 step
   zone map 1411
-  task "북서쪽으로 이동하여 퀘스트 수락: 해독약 구하기" optional
   accept 812 npc 3190
 
 step
   only Mage
   along
-  level 10 -- 북쪽으로 (오그리마 입구 근처) 이동하며 레벨 10이 될 때까지 사냥하세요.
+  level 10 -- 북쪽으로 이동하며 레벨 10이 될 때까지 사냥하세요
 
 step
   only Warlock,Warrior,Rogue,Hunter,Priest,Shaman
   along
-  level 9.91 -- 칼바위 언덕으로 되돌아가며 레벨 10 도달에 600XP가 남을 때까지 사냥하세요.
+  level 9.91 -- 칼바위 언덕으로 되돌아가며 레벨 10 도달에 600XP가 남을 때까지 사냥하세요
 
 step
   only Warlock,Rogue,Hunter,Warrior,Priest,Shaman
@@ -959,8 +808,6 @@ step
 
 step
   zone map 1411
-  task "오르그닐 소울스카에게 퀘스트 수락: 실종된 요원 (포에버 신규)" optional
-  task "카운트다운은 신경쓰지 마세요." optional
   accept 99048 npc 3142
 
 step
@@ -996,17 +843,10 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1411
-  task "퀘스트 수락: 호드의 징병 (미리 수락)" optional
   accept 840 npc 3336
 
 step
   zone map 1411
-  task "동쪽 해안 언덕의 헤글란 셰이드아이에게 퀘스트 완료: 실종된 요원" optional
-  task "새로운 스킬을 습득하세요" optional only Shaman
-  task "새로운 스킬을 습득하세요: 하급 치유 (3 레벨), 부활 (1 레벨), 정신 분열 (1 레벨), 어둠의 권능: 고통 (2 레벨)" optional only Priest
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요." optional only Rogue
-  task "새로운 스킬을 습득하세요: 영혼 흡수 (1 레벨), 악마의 피부 (2 레벨), 생명석 창조(최하급), 제물 (2 레벨)" optional only Warlock
-  task "새로운 스킬을 습득하세요." optional only Warrior
   turnin 99048 npc 275657
 
 step
@@ -1015,25 +855,22 @@ step
 
 step
   zone map 1411
-  task "주변에서 오크 단검·깃발 조각·부러진 뼈 삼지창을 찾으세요: 저 아래에서 온 위협" optional
-  collect 286012 quest 99049.1
+  collect 286012 quest 99049.1 -- 주변에서 오크 단검·깃발 조각·부러진 뼈 삼지창을 찾으세요
   collect 286011 quest 99049.2
   collect 286010 quest 99049.3
 
 step
   zone map 1411
-  task "칼바위 언덕의 오르그닐에게 퀘스트 완료: 저 아래에서 온 위협" optional
   turnin 99049 npc 3142
 
 step
   along until q99051
-  accept 99051 npc 3142 optional -- 이어지는 저 아래에서 온 위협 (나가 가시지느러미)를 받으세요.
+  accept 99051 npc 3142 optional -- 이어지는 저 아래에서 온 위협를 받으세요
 
 step
   only Warrior,Shaman
   zone map 1413
-  task "서쪽으로 이동해 불모의 땅에 도달하세요." optional
-  goto 62.39,19.39 r 20 map 1413
+  goto 62.39,19.39 r 20 map 1413 -- 서쪽으로 이동해 불모의 땅에 도달하세요
 
 step
   only Warrior,Shaman
@@ -1058,14 +895,11 @@ step
 step
   only Shaman
   zone map 1411
-  task "동쪽으로 강을 건너 듀로타로 이동하세요." optional
-  goto 38.53,58.9 r 20 map 1411
+  goto 38.53,58.9 r 20 map 1411 -- 동쪽으로 강을 건너 듀로타로 이동하세요
 
 step
   only Shaman
   zone map 1411
-  task "산봉우리를 올라가 퀘스트 완료: 불의 부름" optional
-  task "숨겨진 길로 이동하세요. ( 지도에 위치를 표기한 아이콘을 확인하세요. 확대하면 더 잘 보입니다.)" optional
   turnin 1524 npc 5900
 
 step
@@ -1076,20 +910,17 @@ step
 step
   only Shaman
   zone map 1413
-  task "서쪽으로 강을 건너 다시 불모의 땅으로 이동하세요." optional
-  goto 54.6,25.57 r 20 map 1413
+  goto 54.6,25.57 r 20 map 1413 -- 서쪽으로 강을 건너 다시 불모의 땅으로 이동하세요
 
 step
   only Shaman
   zone map 1413
-  task "*서슬갈기일족 풍수사*와 *서슬갈기일족 가시마술사*를 처치하여 퀘스트를 완수하세요: 불의 부름" optional
-  collect 5026 quest 1525.1
+  collect 5026 quest 1525.1 -- *서슬갈기일족 풍수사*와 *서슬갈기일족 가시마술사*를 처치하여 퀘스트를 완수하세요
 
 step
   only Shaman
   zone map 1413
-  task "크로스로드로 달려가세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)" optional
-  goto 52.24,31.03 r 20 map 1413
+  goto 52.24,31.03 r 20 map 1413 -- 크로스로드로 달려가세요
 
 step
   only Warrior
@@ -1104,8 +935,7 @@ step
 step
   only Warrior
   zone map 1413
-  task "크로스로드로 달려가세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)" optional
-  goto 52.24,31.03 r 20 map 1413
+  goto 52.24,31.03 r 20 map 1413 -- 크로스로드로 달려가세요
 
 step
   only Warrior,Shaman
@@ -1130,12 +960,10 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll
   zone map 1413
-  task "퀘스트 수락: 오그리마로 고기 배달 (미리 수락)" optional
   accept 6365 npc 3489
 
 step
   only Warrior,Shaman,Orc,Troll
-  task "오그리마로 와이번을 타고 날아갑니다." optional
   fly "Orgrimmar"
 
 step
@@ -1146,14 +974,11 @@ step
 step
   only Hunter
   zone map 1411
-  task "사나운 점박이멧돼지를 찾아 조련용 막대로 길들이세요: 야수 길들이기" optional
-  task "벙커 안으로 들어가 새로운 스킬을 습득하세요." optional
-  kill 3099 quest 6062.1 @52.83,48.9 map 1411
+  kill 3099 quest 6062.1 @52.83,48.9 map 1411 -- 사나운 점박이멧돼지를 찾아 조련용 막대로 길들이세요
 
 step
   only Hunter
   zone map 1411
-  task "칼바위 언덕 남쪽에 사나운 점박이멧돼지가 있습니다. 퀘스트 완료: 야수 길들이기" optional
   turnin 6062 npc 3171
 
 step
@@ -1164,8 +989,7 @@ step
 step
   only Hunter
   zone map 1411
-  task "붉은톱니게를 찾아 조련용 막대로 길들이세요: 야수 길들이기" optional
-  kill 3107 quest 6083.1 @59.05,28.75 map 1411
+  kill 3107 quest 6083.1 @59.05,28.75 map 1411 -- 붉은톱니게를 찾아 조련용 막대로 길들이세요
 
 step
   only Hunter
@@ -1180,8 +1004,7 @@ step
 step
   only Hunter
   zone map 1411
-  task "을등껍질전갈을 찾아 조련용 막대로 길들이세요: 야수 길들이기" optional
-  kill 3126 quest 6082.1 @48.87,38.41 map 1411
+  kill 3126 quest 6082.1 @48.87,38.41 map 1411 -- 을등껍질전갈을 찾아 조련용 막대로 길들이세요
 
 step
   only Hunter
@@ -1196,14 +1019,12 @@ step
 step
   only Warrior,Shaman
   zone map 1454
-  task "오그리마에서 은행을 방문하여 *끈끈한 아교*를 보관하세요." optional
-  goto 49.52,69.34 r 20 map 1454
+  goto 49.52,69.34 r 20 map 1454 -- 오그리마에서 은행을 방문하여 *끈끈한 아교*를 보관하세요
 
 step
   only Mage,Priest,Warlock,Rogue,Hunter
   zone map 1454
-  task "북쪽 오그리마 방향으로 이동해 진입합니다. 은행을 방문하여 *끈끈한 아교*를 보관하세요." optional
-  goto 49.52,69.34 r 20 map 1454
+  goto 49.52,69.34 r 20 map 1454 -- 북쪽 오그리마 방향으로 이동해 진입합니다
 
 step
   only Warrior,Shaman,Orc,Troll
@@ -1237,29 +1058,14 @@ step
 
 step
   zone map 1454
-  task "스랄에게 이동하여 퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
-  task "▶ 다음 지역 듀로타 (주요 퀘스트 Lv9~12): 지금 예상 Lv10 · 수월하려면 Lv11 · 최소 Lv8." optional
-  task "필요하다면 물빵을 구매하세요." optional
-  task "새로운 스킬을 습득하세요: 얼음 회오리 (1 레벨), 냉기 갑옷 (2 레벨), 음료 창조 (2 레벨)" optional only Mage
-  task "마법사 직업 퀘스트는 생략하세요." optional only Mage
-  task "기술 전문가 위치: 재봉술" optional
-  task "무두질과 가죽세공" optional
-  task "마법부여" optional
-  task "연금술" optional
-  task "채광" optional
-  task "대장기술" optional
-  task "기계공학" optional
-  task "약초채집" optional
   accept 5726 npc 4949
 
 step
   zone map 1454
-  task "나즈그렐에게 퀘스트 완료: 함장의 명령서" optional
   turnin 831 npc 3230
 
 step
   zone map 1454
-  task "어둠의 틈으로 이동하여 퀘스트 수락: 해독약 구하기" optional
   accept 813 npc 3189
 
 step
@@ -1279,8 +1085,7 @@ step
 
 step
   zone map 1411
-  task "오그리마 정문으로 나가 남동쪽으로 이동하세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)" optional
-  goto 45.5,12 r 20 map 1411
+  goto 45.5,12 r 20 map 1411 -- 오그리마 정문으로 나가 남동쪽으로 이동하세요
 
 step
   zone map 1411
@@ -1289,22 +1094,19 @@ step
 
 step
   zone map 1411
-  task "완료되면 서쪽 레즐락에게 걸어가 퀘스트 완료: 보급로 확보" optional
   turnin 835 npc 3293
 
 step
   zone map 1411
-  task "맹독전갈을 처치하여 완수하세요: 해독약 구하기" optional
-  collect 4886 quest 813.1 @42.93,17.88 map 1411
+  collect 4886 quest 813.1 @42.93,17.88 map 1411 -- 맹독전갈을 처치하여 완수하세요
 
 step
   zone map 1411
-  task "강가에 있는 철갑악어를 처치하여 완수하세요: 크론의 흔적" optional
-  collect 4891 quest 816.1 @37.03,18.22 map 1411
+  collect 4891 quest 816.1 @37.03,18.22 map 1411 -- 강가에 있는 철갑악어를 처치하여 완수하세요
 
 step
   along until q97281
-  accept 97281 item 277661 optional -- 천둥도마뱀에게서 흐릿한 폭풍 구슬을 얻으면 클릭해 수락: A Simmering Storm
+  accept 97281 item 277661 optional -- 천둥도마뱀에게서 흐릿한 폭풍 구슬을 얻으면 클릭해 수락
 
 step
   only Warrior
@@ -1313,14 +1115,12 @@ step
 
 step
   zone map 1411
-  task "피즐을 처치하여 완수하세요: 다크스톰" optional
-  collect 4869 quest 806.1 @42.07,26.63 map 1411
+  collect 4869 quest 806.1 @42.07,26.63 map 1411 -- 피즐을 처치하여 완수하세요
 
 step
   when onquest 97281
   label q97281
   zone map 1411
-  task "구슬이 있다면 레즐락에게: A Simmering Storm" optional
   turnin 97281 npc 3293
 
 step
@@ -1329,7 +1129,6 @@ step
 
 step
   zone map 1411
-  task "칼바위 언덕으로 돌아가 퀘스트 완료: 다크스톰" optional
   turnin 806 npc 3142
 
 step
@@ -1344,18 +1143,16 @@ step
 step
   only Shaman
   zone map 1411
-  task "이교도를 처치해 완수하세요: 불의 부름" optional
-  collect 6652 quest 1525.2 @52.82,29.2 map 1411
+  collect 6652 quest 1525.2 @52.82,29.2 map 1411 -- 이교도를 처치해 완수하세요
 
 step
   along until q99051
   zone map 1411
-  collect 286008 quest 99051.1 @58.6,26 map 1411 -- 마르고즈에게 가는 길에 동쪽 해안의 가시지느러미 나가(척후병·시종)에게서 가시지느러미 9개: 저 아래에서 온 위협
+  collect 286008 quest 99051.1 @58.6,26 map 1411 -- 마르고즈에게 가는 길에 동쪽 해안의 가시지느러미 나가에게서 가시지느러미 9개
 
 step
   only Shaman
   zone map 1411
-  task "동굴 밖으로 나와 동쪽으로 이동하세요. 북쪽에 마르고즈가 있는 위치까지 이동하며 사냥하세요. 퀘스트 완료: 마르고즈" optional
   turnin 828 npc 3208
 
 step
@@ -1366,7 +1163,6 @@ step
 step
   only Warrior,Hunter,Rogue,Priest,Warlock,Mage
   zone map 1411
-  task "마르고즈가 있는 곳으로 이동하며 사냥하세요. 퀘스트 완료: 마르고즈" optional
   turnin 828 npc 3208
 
 step
@@ -1376,28 +1172,22 @@ step
 
 step
   zone map 1411
-  task "동굴 내부에서 다음 퀘스트를 완수하세요: 해골 바위굴" optional
-  task "수리하시고 잡템을 판매하세요." optional
-  collect 4871 quest 827.1 @54.06,9.01 map 1411
+  collect 4871 quest 827.1 @54.06,9.01 map 1411 -- 동굴 내부에서 다음 퀘스트를 완수하세요
 
 step
   zone map 1411
-  task "가즈우즈를 처치하여 완수하세요: 내부의 배신자" optional
-  collect 14544 quest 5726.1 @51.88,9.56 map 1411
+  collect 14544 quest 5726.1 @51.88,9.56 map 1411 -- 가즈우즈를 처치하여 완수하세요
 
 step
-  task "- 잡기가 어렵다면 *희미하게 빛나는 해골*을 활용하세요. 이글거리는 그림자의 눈을 클릭하여 퀘스트 수락: 이글거리는 그림자" optional
   accept 832 item 4903
 
 step
   only Warlock
   zone map 1411
-  task "공허의 존재를 완수하세요. 상자는 가즈우즈 뒤쪽 단상 위에 있습니다. 작은 돌 위로 먼저 점프하고 그 위에서 점프해 도달할 수 있습니다." optional
-  collect 6535 quest 1501.1 @51.61,9.74 map 1411
+  collect 6535 quest 1501.1 @51.61,9.74 map 1411 -- 공허의 존재를 완수하세요
 
 step
   zone map 1411
-  task "여기서 응급치료 숙련도 40에 도달할 수 있도록 하십시오. (리넨 옷감) 아니면 나중에 경매장에서 사야할 수도 있습니다. 마르고즈에게 되돌아오며 사냥하세요. 퀘스트 완료: 해골 바위굴" optional
   turnin 827 npc 3208
 
 step
@@ -1406,29 +1196,23 @@ step
 
 step
   along
-  level 11.77 -- 레벨 12 도달에 2000XP가 남을 때까지 북쪽에 있는 어떤 몹이든 사냥하세요.
+  level 11.77 -- 레벨 12 도달에 2000XP가 남을 때까지 북쪽에 있는 어떤 몹이든 사냥하세요
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1454
-  task "새로운 비행 지점을 발견하세요." optional
   getfp "Orgrimmar"
 
 step
   zone map 1454
-  task "퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
-  task "(무두질의 경우) 오그리마에 가기 전까지 숙련도 50에 도달하도록 하세요." optional
-  task "오그리마로 이동하세요." optional
   turnin 5726 npc 4949
 
 step
   zone map 1454
-  task "퀘스트 수락: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   accept 5727 npc 4949
 
 step
   zone map 1454
-  task "어둠의 틈으로 내려가서 퀘스트 완료: 해독약 구하기" optional
   turnin 813 npc 3189
 
 step
@@ -1440,8 +1224,7 @@ step
   turnin 832 npc 3216
 
 step
-  task "네루 파이어블레이드와 대화하여 퀘스트 완료: 내부의 배신자" optional
-  complete 5727
+  complete 5727 -- 네루 파이어블레이드와 대화하여 퀘스트 완료
 
 step
   only Warlock
@@ -1461,39 +1244,29 @@ step
 step
   only Warlock
   zone map 1454
-  task "- 네루 파이어블레이드 옆에 있는 소환 마법진으로 이동하세요. - *소환의 문양*을 사용하세요. - 보이드워커를 처치하세요. 돌아가서 퀘스트 완료: 결속" optional
   turnin 1504 npc 5875
 
 step
   zone map 1454
-  task "스랄에게 돌아가 퀘스트 완료: 내부의 배신자 — ◆던전 선행(성난불길 협곡)" optional
   turnin 5727 npc 4949
 
 step
   along
-  accept 5728 npc 4949 optional -- 퀘스트 수락: 내부의 배신자 (성난불길 협곡 던전 퀘스트, 선택)
+  accept 5728 npc 4949 optional
 
 step
   only Rogue
   zone map 1454
-  task "새로운 스킬을 습득하세요" optional
-  goto 42.6,53 r 20 map 1454
+  goto 42.6,53 r 20 map 1454 -- 새로운 스킬을 습득하세요
 
 step
   only Warlock
   zone map 1454
-  task "새로운 스킬을 습득하세요" optional
-  goto 48.2,45.2 r 20 map 1454
+  goto 48.2,45.2 r 20 map 1454 -- 새로운 스킬을 습득하세요
 
 step
   zone map 1411
-  task "오그리마 정문으로 나가세요. (10레벨부터는 죽어서 영혼의 치유사에게 부활하면 부활 후유증이 생기므로 걸어서 이동합니다)" optional
-  task "새로운 스킬을 습득하세요" optional only Priest
-  task "새로운 스킬을 습득하세요" optional only Shaman
-  task "새로운 스킬을 습득하세요: 음료 창조 (2 레벨), 마법 감쇠 (1 레벨), 화염구 (3 레벨)" optional only Mage
-  task "새로운 스킬을 습득하세요" optional only Hunter
-  task "새로운 스킬을 습득하세요" optional only Warrior
-  goto 45.5,12 r 20 map 1411
+  goto 45.5,12 r 20 map 1411 -- 오그리마 정문으로 나가세요
 
 step
   only Mage,Priest
@@ -1508,7 +1281,6 @@ step
 step
   only Warrior
   zone map 1413
-  task "오그리마 서문 다리를 건너 먼 망루의 우제크에게 퀘스트 완료: 수호자의 길" optional
   turnin 1498 npc 5810
 
 step
@@ -1519,13 +1291,11 @@ step
 step
   only Warrior
   zone map 1413
-  task "크로스로드로 가는 길에 툰그림 파이어게이즈에게 퀘스트 완료: 툰그림 파이어게이즈" optional
   turnin 1502 npc 5878
 
 step
   only Shaman
   zone map 1411
-  task "강을 따라 남쪽 불꽃 성지로 가서 텔프 줄람에게 퀘스트 완료: 불의 부름" optional
   turnin 1525 npc 5900
 
 step
@@ -1536,32 +1306,27 @@ step
 step
   only Shaman
   zone map 1411
-  task "성지 꼭대기에서 하급 불꽃의 현신을 처치하고 화로에 불씨를 올리세요: 불의 부름" optional
-  collect 6655 quest 1526.1 @39,58.6 map 1411
+  collect 6655 quest 1526.1 @39,58.6 map 1411 -- 성지 꼭대기에서 하급 불꽃의 현신을 처치하고 화로에 불씨를 올리세요
 
 step
   only Shaman
   zone map 1411
-  task "화로에 퀘스트 완료: 불의 부름" optional
   turnin 1526 object 61934
 
 step
   only Shaman
   zone map 1411
-  task "화로에서 퀘스트 수락: 불의 부름" optional
   accept 1527 object 61934
 
 step
   only Shaman
   zone map 1413
-  task "강을 건너 먼 망루의 크라날 피스에게 퀘스트 완료: 불의 부름 — 불의 토템 획득" optional
   turnin 1527 npc 5907
 
 step
   only Warrior,Shaman
   zone map 1413
-  task "남서쪽 크로스로드로 이동하세요." optional
-  goto 52.2,31 r 20 map 1413
+  goto 52.2,31 r 20 map 1413 -- 남서쪽 크로스로드로 이동하세요
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue
@@ -1570,26 +1335,22 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   along
-  level 12 -- 응급치료 숙련도가 40에 도달하면, 두꺼운 리넨 붕대를 익히세요. 레벨 12가 되어야 합니다. 아직 아니라면, 사냥하여 12레벨에 도달하세요.
+  level 12 -- 응급치료 숙련도가 40에 도달하면, 두꺼운 리넨 붕대를 익히세요
 
 step
   when complete 99051
   label q99051
   zone map 1411
-  task "받아 둔 오르그닐 퀘스트가 끝났다면 보고: 저 아래에서 온 위협" optional
-  task "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." optional only Mage,Priest
-  task "- 완료하기 위해서는 퀘스트를 포기하고 다시 수락해야 할 것입니다." optional only Warlock,Warrior,Rogue,Hunter,Shaman
-  task "칼바위 언덕으로 귀환하세요." optional only Mage,Priest,Hunter,Warlock,Rogue
   turnin 99051 npc 3142
 
 step
   along until q99052
-  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협 (북쪽 해안 바다 거인)도 받으세요.
+  accept 99052 npc 3142 optional -- 함께 주면 저 아래에서 온 위협도 받으세요
 
 step
   along until q99052
   zone map 1411
-  collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠: 저 아래에서 온 위협
+  collect 286009 quest 99052.1 -- 북쪽 해안의 바다 거인을 처치해 아고르의 허리띠
 
 step
   when complete 99052
@@ -1600,7 +1361,6 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1413
-  task "※ 귀환석이 칼바위 언덕으로 지정돼 있어야 합니다. 다른 곳에 지정했다면 귀환석 대신 칼바위 언덕까지 비행하거나 달려가세요." optional
   turnin 840 npc 3337
 
 step
@@ -1611,7 +1371,6 @@ step
 step
   only Mage,Priest,Hunter,Warlock,Rogue
   zone map 1413
-  task "크로스로드를 향해 달리시고, 가는 길에 보이는 몹들을 사냥하세요. 퀘스트 완료: 크로스로드의 징병" optional
   turnin 842 npc 3338
 
 step
@@ -1621,7 +1380,6 @@ step
 
 step
   zone map 1413
-  task "새로운 비행 지점을 발견하세요." optional
   getfp "Crossroads"
 
 step
@@ -1631,7 +1389,6 @@ step
 
 step
   only Mage,Priest,Hunter,Warlock,Rogue,Orc,Troll
-  task "오그리마로 비행하세요." optional
   fly "Orgrimmar"
 
 step
@@ -1656,7 +1413,6 @@ step
 
 step
   only Orc,Troll
-  task "크로스로드로 비행하세요." optional
   fly "Crossroads"
 
 step
@@ -1666,9 +1422,7 @@ step
 
 step
   zone map 1413
-  task "여관주인에게 크로스로드를 귀환 장소로 설정하세요." optional
   sethome "The Crossroads"
 
 step
-  task "12레벨이 되면 12-25 Nood 가이드로 이어집니다. 아직이라면 근처에서 사냥하세요." optional
   level 12

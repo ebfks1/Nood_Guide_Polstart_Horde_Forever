@@ -10,56 +10,47 @@ next nood/09-50-60
 # Written by tools/emit_guide.py from 08_40-50_BalCon.lua (BalCon 1.2.3). Edit the converter, not this file.
 
 step
-  task ">> Next dungeon: Krol'dok Stronghold (at about Lv42.5 — new in Forever) — about Lv41.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Hammerfall Fly to Hammerfall." optional
   fly "Hammerfall"
 
 step
   when onquest 638
   zone map 1417
-  task "Turn in to Zengu: Trollbane (the quest from Grom'gol)" optional
   turnin 638 npc 2703
 
 step
   when level<42
   zone map 1417
-  task "Accept from Drum Fel: Call to Arms" optional
   accept 678 npc 2771
 
 step
   when level<41
   zone map 1417
-  task "Accept from Tor'gan: Guile of the Raptor" optional
   accept 701 npc 2706
 
 step
   when level<41
   zone map 1417
-  task "Accept from Zengu: Sigil of Strom" optional
   accept 639 npc 2703
 
 step
   when level<42
   zone map 1417
-  task "Kill ogres to complete: Call to Arms" optional
-  kill 2566 quest 678.1 @53,76.8 map 1417
+  kill 2566 quest 678.1 @53,76.8 map 1417 -- Kill ogres to complete
   kill 2567 quest 678.2 @53,76.8 map 1417
 
 step
   when level<41
   zone map 1417
-  task "Kill raptors to complete: Guile of the Raptor" optional
-  collect 4513 quest 701.1
+  collect 4513 quest 701.1 -- Kill raptors to complete
 
 step
   when level<41
   zone map 1417
-  task "Find the Sigil of Strom in Stromgarde to the west (Stromgarde Defenders and Troll Hunters around it): Sigil of Strom" optional
-  complete 639 @24,59 map 1417
+  complete 639 @24,59 map 1417 -- Find the Sigil of Strom in Stromgarde to the west
 
 step
   zone map 1417
-  task "Head west to Faldir's Cove — follow the small tunnel down to the cove." optional
-  goto 31,64 r 20 map 1417
+  goto 31,64 r 20 map 1417 -- Head west to Faldir's Cove — follow the small tunnel down to the cove
 
 step
   zone map 1417
@@ -86,8 +77,7 @@ step
 
 step
   when level<44
-  task "Complete the escort quest: Sunken Treasure" optional
-  complete 665
+  complete 665 -- Complete the escort quest
 
 step
   when onquest 665
@@ -102,38 +92,32 @@ step
 step
   when level<44
   zone map 1417
-  task "Put on the Goggles of Gem Hunting and drink a Water Breathing potion (Undead don't need one). Kill naga to complete: Drowned Sorrows" optional
-  kill 2595 quest 664.1
+  kill 2595 quest 664.1 -- Put on the Goggles of Gem Hunting and drink a Water Breathing potion
   kill 2596 quest 664.2
 
 step
   when level<44
   zone map 1417
-  task "Get the elven gems to complete: Sunken Treasure" optional
-  collect 4492 quest 666.1
+  collect 4492 quest 666.1 -- Get the elven gems to complete
 
 step
   when level<44
   zone map 1417
-  task "Get it here: Deep Sea Salvage" optional
   collect 4488 quest 662.3 @20.4,85.6 map 1417
 
 step
   when level<44
   zone map 1417
-  task "Get it here: Deep Sea Salvage" optional
   collect 4490 quest 662.4 @20.7,85.1 map 1417
 
 step
   when level<44
   zone map 1417
-  task "Get it here: Deep Sea Salvage" optional
   collect 4489 quest 662.2 @23.4,85.1 map 1417
 
 step
   when level<44
   zone map 1417
-  task "Get it here: Deep Sea Salvage" optional
   collect 4487 quest 662.1 @23,84.4 map 1417
 
 step
@@ -182,78 +166,65 @@ step
 step
   when level<44
   zone map 1417
-  task "Accept Sunken Treasure (deliver to Booty Bay — later)" optional
   accept 669 npc 2610
 
 step
-  task "Hammerfall Fly to Hammerfall (if you don't have the flight path, run)." optional
   fly "Hammerfall"
 
 step
   when level<41
   zone map 1417
-  task "Turn in to Tor'gan: Guile of the Raptor" optional
   turnin 701 npc 2706
 
 step
   when level>=41
   when complete 701
   zone map 1417
-  task "Turn in to Tor'gan: Guile of the Raptor" optional
   turnin 701 npc 2706
 
 step
   when level<41
   zone map 1417
-  task "Then accept from Tor'gan: Guile of the Raptor" optional
   accept 702 npc 2706
 
 step
   when onquest 702
   zone map 1417
-  task "Turn in to Gor'mul: Guile of the Raptor" optional
   turnin 702 npc 2792
 
 step
   when level<41
   zone map 1417
-  task "Turn in to Zengu: Sigil of Strom (skip the rest of the sigil chain)" optional
   turnin 639 npc 2703
 
 step
   when level>=41
   when complete 639
   zone map 1417
-  task "Turn in to Zengu: Sigil of Strom (skip the rest of the sigil chain)" optional
   turnin 639 npc 2703
 
 step
   when level<42
   zone map 1417
-  task "Turn in to Drum Fel: Call to Arms" optional
   turnin 678 npc 2771
 
 step
   when level>=42
   when complete 678
   zone map 1417
-  task "Turn in to Drum Fel: Call to Arms" optional
   turnin 678 npc 2771
 
 step
   zone map 1417
-  task "Go south across Thandol Span into the Wetlands." optional
-  goto 48,85 r 20 map 1417
+  goto 48,85 r 20 map 1417 -- Go south across Thandol Span into the Wetlands
 
 step
   zone map 1437
-  task "Go to Dun Algaz here." optional
-  goto 54,70 r 20 map 1437
+  goto 54,70 r 20 map 1437 -- Go to Dun Algaz here
 
 step
   zone map 1432
-  task "Follow the tunnel into Loch Modan. Go here to enter the Badlands." optional
-  goto 47,76.4 r 20 map 1432
+  goto 47,76.4 r 20 map 1432 -- Follow the tunnel into Loch Modan
 
 step
   when level<41
@@ -263,8 +234,7 @@ step
 step
   when level<41
   zone map 1418
-  task "Kill elementals to complete: Study of the Elements: Rock" optional
-  collect 4626 quest 710.1 @20.2,46.2 map 1418
+  collect 4626 quest 710.1 @20.2,46.2 map 1418 -- Kill elementals to complete: Study of the Elements
 
 step
   when level<41
@@ -284,13 +254,11 @@ step
 
 step
   zone map 1418
-  task "Discover the flight path: Kargath" optional
   getfp "Kargath"
 
 step
   when level<44
   zone map 1418
-  task "Accept Report to Helgrum (deliver to the Swamp of Sorrows)" optional
   accept 1420 npc 5394
 
 step
@@ -300,7 +268,6 @@ step
 
 step
   zone map 1418
-  task "Accept Badlands Reagent Run — Dungeon prereq (Uldaman)" optional
   accept 2258 npc 6868
 
 step
@@ -315,30 +282,25 @@ step
 
 step
   zone map 1418
-  task "Accept from Rigglefuzz (or get it shared): Power Stones (Uldaman prep)" optional
   accept 2418 npc 2817
 
 step
   zone map 1418
-  task "Accept from Theldurin the Lost (or get it shared): Solution to Doom (Uldaman prep)" optional
   accept 709 npc 2785
 
 step
   zone map 1418
-  task "Kill coyotes to complete: Coyote Thieves Badlands Reagent Run" optional
-  collect 6166 quest 1419.1
+  collect 6166 quest 1419.1 -- Kill coyotes to complete
   collect 7846 quest 2258.2
 
 step
   zone map 1418
-  task "Kill buzzards to complete: Badlands Reagent Run Barbecued Buzzard Wings" optional
-  collect 7847 quest 2258.1
+  collect 7847 quest 2258.1 -- Kill buzzards to complete: Badlands Reagent Run Barbecued Buzzard Wi…
   complete 703
 
 step
   zone map 1418
-  task "Kill rock elementals to complete: Study of the Elements: Rock Badlands Reagent Run" optional
-  collect 4627 quest 711.1 @40,78 map 1418
+  collect 4627 quest 711.1 @40,78 map 1418 -- Kill rock elementals to complete: Study of the Elements
   collect 7848 quest 2258.3 @40,78 map 1418
 
 step
@@ -371,20 +333,17 @@ step
 step
   when level<46
   zone map 1418
-  task "Kill greater rock elementals to complete: Study of the Elements: Rock" optional
-  complete 712 @9.4,73.6 map 1418
+  complete 712 @9.4,73.6 map 1418 -- Kill greater rock elementals to complete: Study of the Elements
 
 step
   when level<46
   zone map 1418
-  task "Turn in Study of the Elements: Rock (skip the follow-up alchemy/engineering material quests)" optional
   turnin 712 npc 2921
 
 step
   when level>=46
   when complete 712
   zone map 1418
-  task "Turn in Study of the Elements: Rock (skip the follow-up alchemy/engineering material quests)" optional
   turnin 712 npc 2921
 
 step
@@ -400,36 +359,29 @@ step
 
 step
   zone map 1418
-  task "Turn in Badlands Reagent Run — Dungeon prereq (Uldaman)" optional
   turnin 2258 npc 6868
 
 step
   zone map 1418
-  task "Then accept from Jarkal Mossmeld (or get it shared): Uldaman Reagent Run (Uldaman prep)" optional
   accept 2202 npc 6868
 
 step
-  task "Grom'gol Base Camp Fly to Grom'gol Base Camp." optional
   fly "Grom'gol"
 
 step
   zone map 1434
-  task "Go north from here into Duskwood." optional
-  goto 39.8,6.6 r 20 map 1434
+  goto 39.8,6.6 r 20 map 1434 -- Go north from here into Duskwood
 
 step
   zone map 1431
-  task "Go here and follow the road east;" optional
-  goto 81.8,19.8 r 20 map 1431
+  goto 81.8,19.8 r 20 map 1431 -- Go here and follow the road east;
 
 step
   zone map 1435
-  task "you'll reach Deadwind Pass. Keep following the road east to reach the Swamp of Sorrows! Now run into the Swamp of Sorrows." optional
-  goto 43,55 r 20 map 1435
+  goto 43,55 r 20 map 1435 -- you'll reach Deadwind Pass
 
 step
   zone map 1435
-  task "Discover the flight path: Stonard" optional
   getfp "Stonard"
 
 step
@@ -439,7 +391,6 @@ step
 
 step
   zone map 1435
-  task "Accept from Fel'zerul: Pool of Tears (start of the Sunken Temple chain) — Dungeon prereq (Sunken Temple)" optional
   accept 1424 npc 1443
 
 step
@@ -450,19 +401,16 @@ step
 step
   when level<48
   zone map 1435
-  task "Accept from Dar: Fresh Meat" optional
   accept 1430 npc 5591
 
 step
   when level<44
   zone map 1435
-  task "Kill Sawtooth Snappers around Stonard to complete: Lack of Surplus" optional
-  collect 6169 quest 698.1
+  collect 6169 quest 698.1 -- Kill Sawtooth Snappers around Stonard to complete
 
 step
   zone map 1435
-  task "Finish collecting the artifacts around the Pool of Tears: Pool of Tears" optional
-  collect 6175 quest 1424.1
+  collect 6175 quest 1424.1 -- Finish collecting the artifacts around the Pool of Tears
 
 step
   when level<44
@@ -483,8 +431,7 @@ step
 step
   when level<46
   zone map 1435
-  task "Kill Sawtooth Crocolisks to complete: Lack of Surplus" optional
-  complete 699 @83.2,70.2 map 1435
+  complete 699 @83.2,70.2 map 1435 -- Kill Sawtooth Crocolisks to complete
 
 step
   when level<46
@@ -515,16 +462,14 @@ step
 step
   when level<47
   zone map 1435
-  task "Kill the nearby murlocs to complete: Threat From the Sea" optional
-  kill 747 quest 1426.1
+  kill 747 quest 1426.1 -- Kill the nearby murlocs to complete
   kill 750 quest 1426.2
   kill 751 quest 1426.3
 
 step
   when level<48
   zone map 1435
-  task "Kill Monstrous Crawlers on the east coast for 10 legs: Fresh Meat" optional
-  collect 6184 quest 1430.1 @95,58 map 1435
+  collect 6184 quest 1430.1 @95,58 map 1435 -- Kill Monstrous Crawlers on the east coast for 10 legs
 
 step
   when level<47
@@ -555,8 +500,7 @@ step
 step
   when level<49
   zone map 1435
-  task "Kill murlocs to complete: Continued Threat" optional
-  kill 750 quest 1428.1
+  kill 750 quest 1428.1 -- Kill murlocs to complete
   kill 751 quest 1428.2
   kill 752 quest 1428.3
 
@@ -574,28 +518,23 @@ step
 step
   when level<48
   zone map 1435
-  task "Back in Stonard, turn in to Dar: Fresh Meat" optional
   turnin 1430 npc 5591
 
 step
   when level>=48
   when complete 1430
   zone map 1435
-  task "Back in Stonard, turn in to Dar: Fresh Meat" optional
   turnin 1430 npc 5591
 
 step
   zone map 1435
-  task "Turn in to Fel'zerul: Pool of Tears — Dungeon prereq (Sunken Temple)" optional
   turnin 1424 npc 1443
 
 step
   zone map 1435
-  task "Then accept from Fel'zerul: The Atal'ai Exile (The Hinterlands — turned in during 45-60) — Dungeon prereq (Sunken Temple)" optional
   accept 1429 npc 1443
 
 step
-  task "Booty Bay Fly to Booty Bay." optional
   fly "Booty Bay"
 
 step
@@ -615,7 +554,6 @@ step
 
 step
   zone map 1434
-  task "Booty Bay Set your Hearthstone to Booty Bay." optional
   sethome "Booty Bay"
 
 step
@@ -651,14 +589,12 @@ step
 step
   when level<47
   zone map 1434
-  task "Kill naga to complete: Akiris by the Bundle" optional
-  collect 4029 quest 617.1 @27.2,63 map 1434
+  collect 4029 quest 617.1 @27.2,63 map 1434 -- Kill naga to complete
 
 step
   when level<45
   zone map 1434
-  task "Kill gorillas to complete: Scaring Shaky" optional
-  collect 3919 quest 606.1 @33.2,65.8 map 1434
+  collect 3919 quest 606.1 @33.2,65.8 map 1434 -- Kill gorillas to complete
 
 step
   when level<45
@@ -730,33 +666,27 @@ step
 step
   when level<47
   zone map 1434
-  task "Get the charts: The Bloodsail Buccaneers" optional
-  collect 3920 quest 604.2 @27.7,83.1 map 1434
+  collect 3920 quest 604.2 @27.7,83.1 map 1434 -- Get the charts
 
 step
   when level<47
   zone map 1434
-  task "Get the orders: The Bloodsail Buccaneers" optional
-  collect 3921 quest 604.3
+  collect 3921 quest 604.3 -- Get the orders
 
 step
   when level<47
   zone map 1434
-  task "Kill the Swashbucklers to complete: The Bloodsail Buccaneers" optional
-  kill 1563 quest 604.1
+  kill 1563 quest 604.1 -- Kill the Swashbucklers to complete
 
 step
   when level<45
   zone map 1434
-  task "Any Bloodsail pirate can drop it. Finish collecting the snuff: Up to Snuff" optional
-  collect 3910 quest 587.1
+  collect 3910 quest 587.1 -- Any Bloodsail pirate can drop it
 
 step
   when level<46
   zone map 1434
-  task "[Heads-up] Soon you hearth to Booty Bay. Keep your Hearthstone until then and check its cooldown now." optional
-  task "Get Dizzy's Eye: Keep An Eye Out" optional
-  collect 3897 quest 576.1
+  collect 3897 quest 576.1 -- [Heads-up] Hearth to Booty Bay soon — keep your Hearthstone · Get Dizzy's Eye
 
 step
   hearth "Booty Bay"
@@ -764,7 +694,6 @@ step
 step
   when level<47
   zone map 1434
-  task "Booty Bay Hearth to Booty Bay." optional
   turnin 604 npc 2487
 
 step
@@ -803,44 +732,35 @@ step
 step
   when level<45
   zone map 1434
-  task "Kill goblins to complete: Venture Company Mining" optional
-  collect 3917 quest 600.1 @40,44 map 1434
+  collect 3917 quest 600.1 @40,44 map 1434 -- Kill goblins to complete
 
 step
   zone map 1434
-  task "A group is recommended. *Find* Bhag'thera" optional
-  task "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing." optional
-  goto 48,20 r 20 map 1434
+  goto 48,20 r 20 map 1434 -- A group is recommended
 
 step
   when level<44
   zone map 1434
-  task "Kill Bhag'thera: Panther Mastery" optional
-  task "If she's not there, check this spot too." optional
-  collect 3876 quest 193.1
+  collect 3876 quest 193.1 -- Kill Bhag'thera
 
 step
   when level<45
   zone map 1434
-  task "Kill Jungle Stalkers to complete: Raptor Mastery" optional
-  kill 687 quest 196.1 @29.8,44.2 map 1434
+  kill 687 quest 196.1 @29.8,44.2 map 1434 -- Kill Jungle Stalkers to complete
 
 step
   when level<45
   zone map 1434
-  task "Collect 10 Jungle Stalker Feathers from them too: Mok'thardin's Enchantment" optional
-  collect 3863 quest 572.1
+  collect 3863 quest 572.1 -- Collect 10 Jungle Stalker Feathers from them too
 
 step
   zone map 1434
-  task "A group is recommended." optional
-  goto 23,9 r 20 map 1434
+  goto 23,9 r 20 map 1434 -- A group is recommended
 
 step
   when level<45
   zone map 1434
-  task "Find and kill Gan'zulah and Nezzliok: Bloodscalp Clan Heads" optional
-  collect 3904 quest 584.1
+  collect 3904 quest 584.1 -- Find and kill Gan'zulah and Nezzliok
   collect 3905 quest 584.2
 
 step
@@ -868,27 +788,23 @@ step
 step
   when level<45
   zone map 1434
-  task "Turn in to Far Seer Mok'thardin: Mok'thardin's Enchantment (skip the follow-up)" optional
   turnin 572 npc 2465
 
 step
   when level>=45
   when complete 572
   zone map 1434
-  task "Turn in to Far Seer Mok'thardin: Mok'thardin's Enchantment (skip the follow-up)" optional
   turnin 572 npc 2465
 
 step
   when level<45
   zone map 1434
-  task "Click the cauldron to turn in Bloodscalp Clan Heads" optional
   turnin 584 object 2076
 
 step
   when level>=45
   when complete 584
   zone map 1434
-  task "Click the cauldron to turn in Bloodscalp Clan Heads" optional
   turnin 584 object 2076
 
 step
@@ -904,32 +820,27 @@ step
 step
   when level<46
   zone map 1434
-  task "Accept from Kin'weelay: Split Bone Necklace (available after the two necklace/reef quests)" optional
   accept 598 npc 2519
 
 step
   when level<44
   zone map 1434
-  task "Get the trophy skull: Speaking with Nezzliok" optional
-  collect 3907 quest 585.2 @42.2,36.1 map 1434
+  collect 3907 quest 585.2 @42.2,36.1 map 1434 -- Get the trophy skull
 
 step
   when level<44
   zone map 1434
-  task "Get the trophy skull: Speaking with Nezzliok" optional
-  collect 3906 quest 585.1 @46.1,32.4 map 1434
+  collect 3906 quest 585.1 @46.1,32.4 map 1434 -- Get the trophy skull
 
 step
   when level<44
   zone map 1434
-  task "Get the trophy skull: Speaking with Nezzliok" optional
-  collect 3908 quest 585.3 @47.6,39.5 map 1434
+  collect 3908 quest 585.3 @47.6,39.5 map 1434 -- Get the trophy skull
 
 step
   when level<50
   zone map 1434
-  task "Kill Skullsplitter trolls to complete: Speaking with Gan'zulah" optional
-  kill 669 quest 586.1
+  kill 669 quest 586.1 -- Kill Skullsplitter trolls to complete
   kill 781 quest 586.2
   kill 783 quest 586.3
   collect 3909 quest 586.4
@@ -937,20 +848,17 @@ step
 step
   when level<46
   zone map 1434
-  task "Finish collecting the tusks: Skullsplitter Tusks" optional
-  collect 1524 quest 209.1
+  collect 1524 quest 209.1 -- Finish collecting the tusks
 
 step
   when level<46
   zone map 1434
-  task "Finish collecting the bone necklaces: Split Bone Necklace" optional
-  collect 3916 quest 598.1
+  collect 3916 quest 598.1 -- Finish collecting the bone necklaces
 
 step
   when level<50
   zone map 1434
-  task "*Find* and kill Ana'thek: Speaking with Gan'zulah" optional
-  collect 3909 quest 586.4 @44,44 map 1434
+  collect 3909 quest 586.4 @44,44 map 1434 -- *Find* and kill Ana'thek
 
 step
   when level<46
@@ -1003,50 +911,40 @@ step
 step
   when level<49
   zone map 1434
-  task "Kill the basilisks inside the cave to complete: The Singing Crystals" optional
-  complete 589 @41,51 map 1434
+  complete 589 @41,51 map 1434 -- Kill the basilisks inside the cave to complete
 
 step
   when level<48
   zone map 1434
-  task "Kill Maury: Voodoo Dues" optional
-  collect 3924 quest 609.1 @35,51 map 1434
+  collect 3924 quest 609.1 @35,51 map 1434 -- Kill Maury
 
 step
   when level<48
   zone map 1434
-  task "Kill Jon-Jon: Voodoo Dues" optional
-  collect 3925 quest 609.2 @33.4,52.8 map 1434
+  collect 3925 quest 609.2 @33.4,52.8 map 1434 -- Kill Jon-Jon
 
 step
   when level<48
   zone map 1434
-  task "Kill Chucky: Voodoo Dues" optional
-  collect 3926 quest 609.3 @40,58.2 map 1434
+  collect 3926 quest 609.3 @40,58.2 map 1434 -- Kill Chucky
 
 step
   when level<49
   zone map 1434
-  task "There are 3 ships off the small island at the far south. Kill Captain Keelhaul: The Bloodsail Buccaneers" optional
-  kill 2548 quest 608.2 @29.2,88.4 map 1434
+  kill 2548 quest 608.2 @29.2,88.4 map 1434 -- There are 3 ships off the small island at the far south
 
 step
   when level<49
   zone map 1434
-  task "Kill Fleet Master Firallon: The Bloodsail Buccaneers" optional
-  kill 2546 quest 608.3 @30.6,90.4 map 1434
+  kill 2546 quest 608.3 @30.6,90.4 map 1434 -- Kill Fleet Master Firallon
 
 step
   when level<49
   zone map 1434
-  task "Kill Captain Stillwater: The Bloodsail Buccaneers" optional
-  kill 2550 quest 608.1 @33,88.2 map 1434
+  kill 2550 quest 608.1 @33,88.2 map 1434 -- Kill Captain Stillwater
 
 step
-  task "[Heads-up] Soon you hearth to Booty Bay. Keep your Hearthstone until then and check its cooldown now." optional
-  task "Find Cortello's Riddle (it's on one of the 3 ships) and accept (*reward chain): Cortello's Riddle" optional
-  accept 624 item 4056
-  task "! Your Hearthstone must be set to Booty Bay. If it's set elsewhere, fly or run to Booty Bay instead of hearthing." optional
+  accept 624 item 4056 -- [Heads-up] Hearth to Booty Bay soon — keep your Hearthstone
 
 step
   hearth "Booty Bay"
@@ -1054,7 +952,6 @@ step
 step
   when level<48
   zone map 1434
-  task "Booty Bay Hearth to Booty Bay." optional
   turnin 621 npc 2498
 
 step
@@ -1108,7 +1005,6 @@ step
   turnin 609 npc 2501
 
 step
-  task "Grom'gol Base Camp Fly to Grom'gol Base Camp." optional
   fly "Grom'gol"
 
 step
@@ -1123,93 +1019,78 @@ step
   turnin 589 npc 2519
 
 step
-  task "Stonard Fly to Stonard." optional
   fly "Stonard"
 
 step
   zone map 1435
-  task "Turn in Cortello's Riddle — *Reward chain" optional
   turnin 624 object 2553
 
 step
   zone map 1435
-  task "Accept Cortello's Riddle (Dustwallow Marsh — 45-60 part) — *Reward chain" optional
   accept 625 object 2553
-  task "== Krol'dok Stronghold (new Forever dungeon) == The Riverglades is a new zone, so there are no map-arrow coordinates yet. Go north of the Swamp of Sorrows (north of Stonard) into the Riverglades and find the Horde base Rog'mar and its flight path. If the way is blocked, take the boat from Steamwheedle Port (east Tanaris) to Powderfuse Port." optional
-  task "* Krol'dok Stronghold — about Lv42.5 -> about Lv43.5 · recommended Lv40-45 (healer 40 · tank/DPS 41) · new Forever dungeon" optional
 
 step
   along until q94973
-  accept 94973 "Krol'dok Moulding" optional -- If you looted a Krol'dok Moulding (Riverglades ogre drop), accept: Krol'dok Moulding — Dungeon prereq (Krol'dok Stronghold)
+  accept 94973 "Krol'dok Moulding" optional -- If you looted a Krol'dok Moulding, accept
 
 step
   when onquest 94973
   label q94973
-  task "Find someone in Rog'mar who knows about the mould and turn in: Krol'dok Moulding" optional
   turnin 94973 "Krol'dok Moulding"
 
 step
   along until q94974
-  accept 94974 "Key Ingredients" optional -- Then accept from Kreza Darkthorn: Key Ingredients — Dungeon prereq (Krol'dok Stronghold)
+  accept 94974 "Key Ingredients" optional -- Then accept from Kreza Darkthorn
 
 step
   when onquest 94974
   label q94974
-  task "Bring 4 Thick Leather and 12 Iron Bars (auction house) to Kreza Darkthorn for the Krol'dok key: Key Ingredients" optional
   turnin 94974 "Key Ingredients"
 
 step
   along until q94975
-  accept 94975 "A Token of Vengeance" optional -- * Get the dungeon quests inside (only the ones you are missing): A Token of Vengeance Tome of Twilight Krol'dok No More!
+  accept 94975 "A Token of Vengeance" optional -- * Get the dungeon quests inside: A Token of Vengeance Tome of Twilig…
   accept 94972 "Tome of Twilight" optional
   accept 95056 "Krol'dok No More!" optional
 
 step
-  task "Collect 15 Cultist Ears from the Twilight's Hammer: A Token of Vengeance" optional
-  task "Enter the cave west of the fortress gates in the north of the Riverglades (map 37.5, 37.5)." optional
-  complete 94975 "A Token of Vengeance"
+  complete 94975 "A Token of Vengeance" -- Collect 15 Cultist Ears from the Twilight's Hammer
 
 step
-  complete 94972 "Tome of Twilight" -- Kill Nar'gurk for the Tome of Twilight: Tome of Twilight
-  complete 95056 "Krol'dok No More!" -- Complete the dungeon quest: Krol'dok No More!
+  complete 94972 "Tome of Twilight" -- Kill Nar'gurk for the Tome of Twilight
+  complete 95056 "Krol'dok No More!" -- Complete the dungeon quest
 
 step
   along until q94968
-  accept 94968 "Eye of Mugg" optional -- Kill Overlord Mugg; if you loot the Eye of Mugg, accept: Eye of Mugg
+  accept 94968 "Eye of Mugg" optional -- Kill Overlord Mugg; if you loot the Eye of Mugg, accept
 
 step
   when onquest 94975
   label q94975
-  task "Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!" optional
   turnin 94975 "A Token of Vengeance"
 
 step
   when onquest 94972
   label q94972
-  task "Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!" optional
   turnin 94972 "Tome of Twilight"
 
 step
   when onquest 95056
   label q95056
-  task "Leave the dungeon and turn in at Rog'mar (turn-in NPC not confirmed — check your quest log): A Token of Vengeance Tome of Twilight Krol'dok No More!" optional
   turnin 95056 "Krol'dok No More!"
 
 step
   when onquest 94968
   label q94968
-  task "Turn in to Krom'rosh in Rog'mar: Eye of Mugg" optional
   turnin 94968 "Eye of Mugg"
 
 step
-  task "Kargath Fly to Kargath (from Rog'mar, or back at Stonard)." optional
   fly "Kargath"
 
 step
   when level<47
   zone map 1418
-  task "*Find* and kill Boss Tho'grun: Broken Alliances" optional
-  complete 782 @62,72 map 1418
+  complete 782 @62,72 map 1418 -- *Find* and kill Boss Tho'grun
 
 step
   when level<47
@@ -1223,138 +1104,111 @@ step
   turnin 782 npc 1068
 
 step
-  task "43 You should be at least Lv43 (healers can go from Lv42). If you are short, run SM Cathedral once more or kill mobs in the areas you just passed." optional
   level 43
 
 step
   zone map 1418
-  task "Enter Uldaman in northern Badlands (the Shadowforge dwarves in the dig site outside also drop Power Stones)." optional
-  task "* Uldaman — Lv43.5 -> about Lv44.2 · recommended Lv42-43 (healer 42 · tank/DPS 43)" optional
-  goto 44.4,12.2 r 20 map 1418
+  goto 44.4,12.2 r 20 map 1418 -- Enter Uldaman in northern Badlands
 
 step
   zone map 1418
-  task "Collect 8 Dentrium and 8 An'Alleum Power Stones from Shadowforge dwarves: Power Stones" optional
-  collect 8009 quest 2418.1
+  collect 8009 quest 2418.1 -- Collect 8 Dentrium and 8 An'Alleum Power Stones from Shadowforge dwa…
   collect 8052 quest 2418.2
 
 step
   zone map 1418
-  task "Take the Garrett family treasure from the chest in the South Common Hall: Reclaimed Treasures" optional
-  collect 8026 quest 2342.1
+  collect 8026 quest 2342.1 -- Take the Garrett family treasure from the chest in the South Common…
 
 step
   zone map 1418
-  task "Find the valuable necklace inside (a damaged one counts): Necklace Recovery" optional
-  collect 7666 quest 2283.1
+  collect 7666 quest 2283.1 -- Find the valuable necklace inside
 
 step
   zone map 1418
-  task "Collect 12 Magenta Fungus Caps inside: Uldaman Reagent Run" optional
-  collect 8047 quest 2202.1
+  collect 8047 quest 2202.1 -- Collect 12 Magenta Fungus Caps inside
 
 step
   zone map 1418
-  task "Find the Tablet of Ryun'eh: Solution to Doom" optional
-  collect 4631 quest 709.1
+  collect 4631 quest 709.1 -- Find the Tablet of Ryun'eh
 
 step
-  accept 2278 -- Speak with the stone watcher in front of the Discs of Norgannon, then activate the discs: The Platinum Discs — *Reward chain
+  accept 2278 -- Speak with the stone watcher in front of the Discs of Norgannon, the…
   complete 2278
-  turnin 2278 -- Talk to the Stone Watcher again to turn in The Platinum Discs — *Reward chain
-  accept 2280 -- Click the discs again for the follow-up (turned in to a sage in Thunder Bluff during 45-60): The Platinum Discs — *Reward
+  turnin 2278 -- Talk to the Stone Watcher again to turn in The Platinum Discs — *Rew…
+  accept 2280 -- Click the discs again for the follow-up
 
 step
   zone map 1418
-  task "== Uldaman turn-ins == Turn in to Rigglefuzz: Power Stones" optional
-  task "Clear up to the final boss Archaedas." optional
   turnin 2418 npc 2817
 
 step
   zone map 1418
-  task "Turn in to Theldurin the Lost: Solution to Doom" optional
   turnin 709 npc 2785
 
 step
-  task "Kargath Fly to Kargath (if you don't have the flight path, run)." optional
   fly "Kargath"
 
 step
   zone map 1418
-  task "Turn in to Jarkal Mossmeld: Uldaman Reagent Run" optional
   turnin 2202 npc 6868
 
 step
   when level<48
   zone map 1418
-  task "Then accept from Jarkal Mossmeld: Badlands Reagent Run II — Dungeon chain (Uldaman)" optional
   accept 2203 npc 6868
 
 step
   when level<48
   zone map 1418
-  task "Use the empty vessels on the Scorched Guardians in the east: Badlands Reagent Run II" optional
-  complete 2203 @81.4,52.9 map 1418
+  complete 2203 @81.4,52.9 map 1418 -- Use the empty vessels on the Scorched Guardians in the east
 
 step
   when level<48
   zone map 1418
-  task "Back in Kargath, turn in to Jarkal Mossmeld: Badlands Reagent Run II — Dungeon chain (Uldaman)" optional
   turnin 2203 npc 6868
 
 step
   when level>=48
   when complete 2203
   zone map 1418
-  task "Back in Kargath, turn in to Jarkal Mossmeld: Badlands Reagent Run II — Dungeon chain (Uldaman)" optional
   turnin 2203 npc 6868
 
 step
-  task ">> Next dungeon: Zul'Farrak (at about Lv46.3) — about Lv44.2 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Grom'gol Base Camp Fly to Grom'gol Base Camp (if you're already in Kalimdor, go to Orgrimmar)." optional
   fly "Grom'gol"
 
 step
-  task "Grom'gol Fly to Grom'gol." optional
   fly "Grom'gol"
 
 step
   zone map 1434
-  task "Take the zeppelin to Orgrimmar from the Grom'gol tower." optional
-  goto 32.4,29.2 r 20 map 1434
+  goto 32.4,29.2 r 20 map 1434 -- Take the zeppelin to Orgrimmar from the Grom'gol tower
 
 step
   zone map 1454
-  task "In Orgrimmar, turn in to Dran Droffers: Necklace Recovery (the necklace from Uldaman — skip the \"Take 2\" follow-up)" optional
   turnin 2283 npc 6986
 
 step
   zone map 1454
-  task "Then accept from Dran Droffers: Ripple Recovery (Hinterlands chain — deliver to Malton right next to him)" optional
   accept 649 npc 6986
 
 step
   zone map 1454
-  task "Turn in to Malton Droffers: Ripple Recovery" optional
   turnin 649 npc 6987
 
 step
   zone map 1454
-  task "Then accept from Malton Droffers: Ripple Recovery (The Hinterlands — later)" optional
   accept 650 npc 6987
 
 step
   when level<47
   zone map 1454
-  task "Accept from Belgrom Rockmaul: A Threat in Feralas (Feralas — later)" optional
   accept 2981 npc 4485
 
 step
   zone map 1454
-  task "Accept from Uthel'nay (or get it shared): Shadowshard Fragments (Maraudon prep)" optional
   accept 7068 npc 7311
 
 step
-  task "Brackenwall Village Fly to Brackenwall Village." optional
   fly "Brackenwall Village"
 
 step
@@ -1374,53 +1228,44 @@ step
 
 step
   zone map 1445
-  task "To the south, accept from Tabetha (or get it shared): Tiara of the Deep (Zul'Farrak prep *reward)" optional
   accept 2846 npc 6546
 
 step
   when level<47
   zone map 1445
-  task "Kill the dragons to complete: Army of the Black Dragon" optional
-  complete 1168 @46.4,66.4 map 1445
+  complete 1168 @46.4,66.4 map 1445 -- Kill the dragons to complete
 
 step
   when level<47
   zone map 1445
-  task "Finish collecting the tongues and hearts: Identifying the Brood" optional
-  collect 5840 quest 1169.1
+  collect 5840 quest 1169.1 -- Finish collecting the tongues and hearts
   collect 5841 quest 1169.2
 
 step
   when level<47
   zone map 1445
-  task "Get the snuffbox: Overlord Mok'Morokk's Concern" optional
-  collect 5834 quest 1166.1 @44.4,66 map 1445
+  collect 5834 quest 1166.1 @44.4,66 map 1445 -- Get the snuffbox
 
 step
   when level<47
   zone map 1445
-  task "Get the grog: Overlord Mok'Morokk's Concern" optional
-  collect 5835 quest 1166.2 @38.7,65.5 map 1445
+  collect 5835 quest 1166.2 @38.7,65.5 map 1445 -- Get the grog
 
 step
   when level<47
   zone map 1445
-  task "Get the strongbox: Overlord Mok'Morokk's Concern" optional
-  collect 5836 quest 1166.3 @36.6,69.6 map 1445
+  collect 5836 quest 1166.3 @36.6,69.6 map 1445 -- Get the strongbox
 
 step
   zone map 1445
-  task "Go here and enter the cave." optional
-  goto 33,66 r 20 map 1445
+  goto 33,66 r 20 map 1445 -- Go here and enter the cave
 
 step
   zone map 1445
-  task "Turn in Cortello's Riddle — *Reward chain" optional
   turnin 625 object 2555
 
 step
   zone map 1445
-  task "Accept Cortello's Riddle (The Hinterlands — *reward, later)" optional
   accept 626 object 2555
 
 step
@@ -1448,33 +1293,27 @@ step
 step
   when level<47
   zone map 1445
-  task "Turn in Identifying the Brood (skip the following Brood of Onyxia chain)" optional
   turnin 1169 npc 4501
 
 step
   when level>=47
   when complete 1169
   zone map 1445
-  task "Turn in Identifying the Brood (skip the following Brood of Onyxia chain)" optional
   turnin 1169 npc 4501
 
 step
-  task "Freewind Post Fly to Freewind Post." optional
   fly "Freewind Post"
 
 step
   zone map 1441
-  task "Run east to the Shimmering Flats." optional
-  goto 78,77 r 20 map 1441
+  goto 78,77 r 20 map 1441 -- Run east to the Shimmering Flats
 
 step
   zone map 1441
-  task "Accept from Wizzle Brassbolts (or get it shared): Gahz'rilla (Zul'Farrak — doable if someone in your group has the Mallet of Zul'Farrak, *reward)" optional
   accept 2770 npc 4453
 
 step
   zone map 1446
-  task "Head south into Tanaris. Discover the flight path: Gadgetzan" optional
   getfp "Gadgetzan"
 
 step
@@ -1484,17 +1323,14 @@ step
 
 step
   zone map 1446
-  task "Then accept from Tran'rek (or get it shared): Scarab Shells (Zul'Farrak prep)" optional
   accept 2865 npc 7876
 
 step
   zone map 1446
-  task "Accept from Trenton Lighthammer (or get it shared): Troll Temper (Zul'Farrak prep)" optional
   accept 3042 npc 7804
 
 step
   zone map 1446
-  task "Accept from Chief Engineer Bilgewhizzle (or get it shared): Divino-matic Rod (Zul'Farrak prep)" optional
   accept 2768 npc 7407
 
 step
@@ -1515,7 +1351,6 @@ step
 step
   when level<50
   zone map 1446
-  task "Click the wanted poster to accept WANTED: Caliph Scorpidsting" optional
   accept 2781 object 150075
 
 step
@@ -1525,31 +1360,26 @@ step
 
 step
   zone map 1446
-  task "Gadgetzan Set your Hearthstone to Gadgetzan." optional
   sethome "Gadgetzan"
 
 step
   when level<47
   zone map 1446
-  task "Kill Wastewanderers to complete: Wastewander Justice" optional
-  kill 5618 quest 1690.1 @63.6,33.6 map 1446
+  kill 5618 quest 1690.1 @63.6,33.6 map 1446 -- Kill Wastewanderers to complete
   kill 5616 quest 1690.2 @63.6,33.6 map 1446
 
 step
   when level<48
   zone map 1446
-  task "Finish collecting the water pouches: Water Pouch Bounty" optional
-  collect 8483 quest 1707.1
+  collect 8483 quest 1707.1 -- Finish collecting the water pouches
 
 step
   when level<50
   zone map 1446
-  task "Kill Caliph Scorpidsting: WANTED: Caliph Scorpidsting" optional
-  complete 2781 @61.2,36.4 map 1446
+  complete 2781 @61.2,36.4 map 1446 -- Kill Caliph Scorpidsting: WANTED
 
 step
   zone map 1446
-  task "At Steamwheedle Port to the northeast, accept from Yeh'kinya (or get it shared): Screecher Spirits (prerequisite for \"The Prophecy of Mosh'aru\" in Zul'Farrak — done in Feralas) — *Reward chain · Dungeon prereq (Zul'Farrak)" optional
   accept 3520 npc 8579
 
 step
@@ -1574,32 +1404,27 @@ step
 
 step
   zone map 1446
-  task "Go here and enter the pirate cove." optional
-  goto 68,41 r 20 map 1446
+  goto 68,41 r 20 map 1446 -- Go here and enter the pirate cove
 
 step
   when level<49
   zone map 1446
-  task "Kill pirates to complete: Southsea Shakedown" optional
-  complete 8366 @73.4,46 map 1446
+  complete 8366 @73.4,46 map 1446 -- Kill pirates to complete
 
 step
   when level<49
   zone map 1446
-  task "Finish collecting the hats: Pirate Hats Ahoy!" optional
-  collect 20519 quest 8365.1
+  collect 20519 quest 8365.1 -- Finish collecting the hats
 
 step
   when level<49
   zone map 1446
-  task "Kill Andre: WANTED: Andre Firebeard" optional
-  collect 9246 quest 2875.1 @73.4,47 map 1446
+  collect 9246 quest 2875.1 @73.4,47 map 1446 -- Kill Andre: WANTED
 
 step
   when level<49
   zone map 1446
-  task "Get Stoley's Shipment on the second floor of the building: Stoley's Shipment" optional
-  collect 9244 quest 2873.1 @72.2,46.7 map 1446
+  collect 9244 quest 2873.1 @72.2,46.7 map 1446 -- Get Stoley's Shipment on the second floor of the building
 
 step
   when level<49
@@ -1637,7 +1462,6 @@ step
 step
   when level<49
   zone map 1446
-  task "Accept Deliver to MacKinley (Booty Bay — later)" optional
   accept 2874 npc 7881
 
 step
@@ -1654,14 +1478,12 @@ step
 step
   when level<48
   zone map 1446
-  task "Back in Gadgetzan, turn in WANTED: Water Pouch Bounty" optional
   turnin 1707 npc 7408
 
 step
   when level>=48
   when complete 1707
   zone map 1446
-  task "Back in Gadgetzan, turn in WANTED: Water Pouch Bounty" optional
   turnin 1707 npc 7408
 
 step
@@ -1687,12 +1509,10 @@ step
   turnin 2781 npc 7407
 
 step
-  task "Freewind Post Fly to Freewind Post." optional
   fly "Freewind Post"
 
 step
   zone map 1444
-  task "Run west past the Thousand Needles into Feralas to Camp Mojache. Discover the flight path: Camp Mojache" optional
   getfp "Camp Mojache"
 
 step
@@ -1732,14 +1552,12 @@ step
 
 step
   zone map 1444
-  task "Accept from Witch Doctor Uzer'i (or get it shared): The Sunken Temple (Sunken Temple prep) — Dungeon prereq (Sunken Temple)" optional
   accept 3380 npc 8115
 
 step
   when level<46
   zone map 1444
-  task "Kill Woodpaw gnolls: War on the Woodpaw" optional
-  collect 9237 quest 2862.1 @76,54 map 1444
+  collect 9237 quest 2862.1 @76,54 map 1444 -- Kill Woodpaw gnolls
 
 step
   when level<46
@@ -1760,8 +1578,7 @@ step
 step
   when level<47
   zone map 1444
-  task "Kill all the leaders before the time runs out: Alpha Strike" optional
-  kill 5258 quest 2863.1 @71.6,55.2 map 1444
+  kill 5258 quest 2863.1 @71.6,55.2 map 1444 -- Kill all the leaders before the time runs out
 
 step
   when level<47
@@ -1782,35 +1599,29 @@ step
 step
   when level<47
   zone map 1444
-  task "Kill ogres to complete: The Ogres of Feralas" optional
-  complete 2975 @75,36 map 1444
+  complete 2975 @75,36 map 1444 -- Kill ogres to complete
 
 step
   when level<47
   zone map 1444
-  task "Use Olwin's shovel from your bags on the glowing blue ground. Finish collecting the cobalt: Gordunni Cobalt" optional
-  collect 9463 quest 2987.1 @76.3,34.4 map 1444
+  collect 9463 quest 2987.1 @76.3,34.4 map 1444 -- Use Olwin's shovel from your bags on the glowing blue ground
 
 step
   zone map 1444
-  task "*Find* and take the Gordunni Scroll." optional
-  goto 75.1,29.8 r 20 map 1444
+  goto 75.1,29.8 r 20 map 1444 -- *Find* and take the Gordunni Scroll
 
 step
   when level<47
-  task "Click the scroll to accept The Gordunni Scroll" optional
   accept 2978 item 9370
 
 step
   when level<49
   zone map 1444
-  task "Kill Sprite Darters to complete: A New Cloak's Sheen" optional
-  collect 9369 quest 2973.1 @67.8,48 map 1444
+  collect 9369 quest 2973.1 @67.8,48 map 1444 -- Kill Sprite Darters to complete
 
 step
   when onquest 2902
   zone map 1444
-  task "Click the battle plans to turn in Woodpaw Investigation" optional
   turnin 2902 object 142195
 
 step
@@ -1889,50 +1700,42 @@ step
 step
   when level<51
   zone map 1444
-  task "*Find* and kill Stinglasher: Stinglasher" optional
-  complete 7731 @75,62.6 map 1444
+  complete 7731 @75,62.6 map 1444 -- *Find* and kill Stinglasher
 
 step
   when level<49
   zone map 1444
-  task "Kill Zukk'ash to complete: Zukk'ash Infestation" optional
-  collect 18961 quest 7730.1 @74,62 map 1444
+  collect 18961 quest 7730.1 @74,62 map 1444 -- Kill Zukk'ash to complete
 
 step
   when level<48
   zone map 1444
-  task "Kill ogres to complete: The Ogres of Feralas" optional
-  kill 5236 quest 2980.1 @59.4,62.8 map 1444
+  kill 5236 quest 2980.1 @59.4,62.8 map 1444 -- Kill ogres to complete
   kill 5240 quest 2980.2 @59.4,62.8 map 1444
   kill 5234 quest 2980.3 @59.4,62.8 map 1444
 
 step
   when level<50
   zone map 1444
-  task "Kill the ogre mage-lord to complete: Dark Ceremony" optional
-  collect 9371 quest 2979.1 @59.2,73.6 map 1444
+  collect 9371 quest 2979.1 @59.2,73.6 map 1444 -- Kill the ogre mage-lord to complete
 
 step
   when level<50
   zone map 1444
-  task "Go here and kill Rage Scar Yetis: The Mark of Quality" optional
-  collect 8973 quest 2822.1 @55,56 map 1444
+  collect 8973 quest 2822.1 @55,56 map 1444 -- Go here and kill Rage Scar Yetis
 
 step
   zone map 1444
-  task "Kill Vale Screechers and use *Yeh'kinya's Bramble* on the corpses to collect their spirits." optional
-  goto 57.2,52.4 r 20 map 1444
+  goto 57.2,52.4 r 20 map 1444 -- Kill Vale Screechers and use *Yeh'kinya's Bramble* on the corpses to…
 
 step
   zone map 1444
-  task "Finish collecting the spirits: Screecher Spirits" optional
-  kill 8612 quest 3520.1
+  kill 8612 quest 3520.1 -- Finish collecting the spirits
 
 step
   when level<49
   zone map 1444
-  task "Kill the Grimtotem at the Grimtotem camp just west of Camp Mojache to complete: A Grim Discovery" optional
-  collect 9460 quest 2974.1 @68.8,47 map 1444
+  collect 9460 quest 2974.1 @68.8,47 map 1444 -- Kill the Grimtotem at the Grimtotem camp just west of Camp Mojache t…
 
 step
   when level<49
@@ -1970,7 +1773,6 @@ step
 step
   when level<52
   zone map 1444
-  task "Accept Zukk'ash Report (Orgrimmar — later)" optional
   accept 7732 npc 7875
 
 step
@@ -2003,7 +1805,6 @@ step
 step
   when level<51
   zone map 1444
-  task "Accept The Gordunni Orb (Orgrimmar — later)" optional
   accept 3002 npc 7777
 
 step
@@ -2020,60 +1821,47 @@ step
 step
   when level<49
   zone map 1444
-  task "Accept A Grim Discovery (Orgrimmar — later)" optional
   accept 2976 npc 4544
 
 step
-  task "[Heads-up] Soon you hearth to Gadgetzan. Keep your Hearthstone until then and check its cooldown now." optional
-  task "46 You should be at least Lv46 (healers can go from Lv45). If you are short, run Uldaman once more or kill mobs in the areas you just passed." optional
-  level 46
-  task "* Zul'Farrak — Lv46.3 -> about Lv47.5 · recommended Lv45-46 (healer 45 · tank/DPS 46)" optional
-  task "! Your Hearthstone must be set to Gadgetzan. If it's set elsewhere, fly or run to Gadgetzan instead of hearthing." optional
+  level 46 -- [Heads-up] Hearth to Gadgetzan soon — keep your Hearthstone
 
 step
   hearth "Gadgetzan"
 
 step
   zone map 1446
-  task "At Steamwheedle Port, turn in to Yeh'kinya: Screecher Spirits — *Reward chain · Dungeon prereq (Zul'Farrak)" optional
-  task "Gadgetzan Hearth to Gadgetzan." optional
   turnin 3520 npc 8579
 
 step
   zone map 1446
-  task "Then accept from Yeh'kinya (or get it shared): The Prophecy of Mosh'aru — *Reward chain" optional
   accept 3527 npc 8579
 
 step
   when level<50
   zone map 1446
-  task "On the way to Zul'Farrak, click the surveying equipment to fill it: Gadgetzan Water Survey" optional
-  collect 8585 quest 992.1 @39,30 map 1446
+  collect 8585 quest 992.1 @39,30 map 1446 -- On the way to Zul'Farrak, click the surveying equipment to fill it
 
 step
   zone map 1446
-  task "Enter Zul'Farrak in the northwest." optional
-  goto 38.7,20 r 20 map 1446
+  goto 38.7,20 r 20 map 1446 -- Enter Zul'Farrak in the northwest
 
 step
-  task "[Heads-up] Soon you hearth to Gadgetzan. Keep your Hearthstone until then and check its cooldown now." optional
-  complete 2865 -- Kill the scarabs inside for 5 Uncracked Scarab Shells: Scarab Shells
-  complete 3042 -- Collect 20 Vials of Troll Temper from the Sandfury trolls: Troll Temper
-  complete 2768 -- Kill Sergeant Bly and take the Divino-matic Rod: Divino-matic Rod
-  complete 3527 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets: The Prophecy of Mosh'aru
-  complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha: Tiara of the Deep
+  complete 2865 -- [Heads-up] Hearth to Gadgetzan soon — keep your Hearthstone
+  complete 3042 -- Collect 20 Vials of Troll Temper from the Sandfury trolls
+  complete 2768 -- Kill Sergeant Bly and take the Divino-matic Rod
+  complete 3527 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets
+  complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha
 
 step
   along until q2770
-  complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool and kill Gahz'rilla: Gahz'rilla
+  complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool a…
 
 step
   hearth "Gadgetzan"
 
 step
   zone map 1446
-  task "== Zul'Farrak turn-ins == Back in Gadgetzan, turn in Troll Temper" optional
-  task "Leave the dungeon and Gadgetzan hearth to Gadgetzan (the Hearthstone you used before the dungeon comes off cooldown during the run; if not, ride southeast to Gadgetzan)." optional
   turnin 3042 npc 7804
 
 step
@@ -2102,52 +1890,41 @@ step
 
 step
   zone map 1446
-  task "At Steamwheedle Port, turn in to Yeh'kinya: The Prophecy of Mosh'aru — *Reward chain" optional
   turnin 3527 npc 8579
 
 step
   zone map 1446
-  task "Then accept from Yeh'kinya (or get it shared): The Ancient Egg (fetch the egg in The Hinterlands — prerequisite for the Sunken Temple *reward quest \"The God Hakkar\")" optional
   accept 4787 npc 8579
 
 step
   zone map 1446
-  task "South of Gadgetzan, turn in to Marvon Rivetseeker: The Sunken Temple — Dungeon prereq (Sunken Temple)" optional
   turnin 3380 npc 7771
 
 step
   zone map 1446
-  task "Then accept from Marvon Rivetseeker (or get it shared): The Stone Circle (the chest in Marvon's workshop in Ratchet) — Dungeon prereq (Sunken Temple)" optional
   accept 3444 npc 7771
 
 step
   when complete 2770
   label q2770
   zone map 1441
-  task "If you killed Gahz'rilla, go north to the Shimmering Flats and turn in (*reward): Gahz'rilla" optional
   turnin 2770 npc 4453
 
 step
-  task "Brackenwall Village Fly to Brackenwall Village." optional
   fly "Brackenwall Village"
 
 step
   zone map 1445
-  task "Turn in to Tabetha: Tiara of the Deep (*reward)" optional
   turnin 2846 npc 6546
 
 step
-  task "Ratchet Fly to Ratchet." optional
   fly "Ratchet"
 
 step
   zone map 1413
-  task "Open the chest in Marvon's workshop in Ratchet for the Stone Circle: The Stone Circle" optional
-  collect 10556 quest 3444.1 @62.5,38.5 map 1413
+  collect 10556 quest 3444.1 @62.5,38.5 map 1413 -- Open the chest in Marvon's workshop in Ratchet for the Stone Circle
 
 step
-  task ">> Next dungeon: Maraudon (at about Lv49.0) — about Lv47.5 now. Until then, do the zone quests below (dungeon quests are picked up when it's that dungeon's turn). Orgrimmar Fly to Orgrimmar." optional
-  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Zul'Farrak again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Maraudon Lv49) is close, go back to zone quests." optional
   fly "Orgrimmar"
 
 step
@@ -2167,26 +1944,22 @@ step
 
 step
   zone map 1454
-  task "Set your Hearthstone to Orgrimmar with the innkeeper in the Valley of Strength (you hearth straight back after The Hinterlands — and again after the Sunken Temple)." optional
   sethome "Orgrimmar"
 
 step
   zone map 1411
-  task "Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
-  goto 50.8,13.6 r 20 map 1411
+  goto 50.8,13.6 r 20 map 1411 -- Take the zeppelin to Undercity from the tower outside Orgrimmar's no…
 
 step
   zone map 1458
   accept 2995 npc 7825
 
 step
-  task "Tarren Mill Fly to Tarren Mill." optional
   fly "Tarren Mill"
 
 step
   zone map 1424
-  task "Go here to enter The Hinterlands." optional
-  goto 84,32 r 20 map 1424
+  goto 84,32 r 20 map 1424 -- Go here to enter The Hinterlands
 
 step
   zone map 1425
@@ -2198,52 +1971,42 @@ step
 
 step
   zone map 1425
-  task "Destroy the records: Lines of Communication" optional
-  interact 144071 quest 2995.1 @32,47 map 1425
+  interact 144071 quest 2995.1 @32,47 map 1425 -- Destroy the records
 
 step
   zone map 1425
-  task "Destroy the memo: Lines of Communication" optional
-  interact 144072 quest 2995.2 @30,49 map 1425
+  interact 144072 quest 2995.2 @30,49 map 1425 -- Destroy the memo
 
 step
   zone map 1425
-  task "Destroy the report: Lines of Communication" optional
-  interact 144073 quest 2995.3 @29,46 map 1425
+  interact 144073 quest 2995.3 @29,46 map 1425 -- Destroy the report
 
 step
   zone map 1425
-  task "Turn in to the Atal'ai Exile on the hill to the south: The Atal'ai Exile — Dungeon prereq (Sunken Temple)" optional
   turnin 1429 npc 5598
 
 step
   zone map 1425
-  task "Then accept from Atal'ai Exile: Return to Fel'Zerul (Fel'Zerul in the Swamp of Sorrows — at Sunken Temple time) — Dungeon prereq (Sunken Temple)" optional
   accept 1444 npc 5598
 
 step
   zone map 1425
-  task "Then accept from Atal'ai Exile (or get it shared): Jammal'an the Prophet (Sunken Temple prep)" optional
   accept 1446 npc 5598
 
 step
   zone map 1425
-  task "Find the Horde supplies around here to complete: A Sticky Situation" optional
-  collect 8684 quest 77.1 @58,43 map 1425
+  collect 8684 quest 77.1 @58,43 map 1425 -- Find the Horde supplies around here to complete
 
 step
   zone map 1425
-  task "Go here and jump into the water." optional
-  goto 79,48 r 20 map 1425
+  goto 79,48 r 20 map 1425 -- Go here and jump into the water
 
 step
   zone map 1425
-  task "Click the chest to turn in (*reward): Cortello's Riddle" optional
   turnin 626 object 2556
 
 step
   zone map 1425
-  task "Swim south, go ashore and run to Revantusk Village. Discover the flight path: Revantusk Village" optional
   getfp "Revantusk Village"
 
 step
@@ -2289,47 +2052,39 @@ step
 step
   when level<54
   zone map 1425
-  task "Kill Saltwater Snapjaws to complete: Snapjaws, Mon!" optional
-  kill 2505 quest 7815.1 @77,65 map 1425
+  kill 2505 quest 7815.1 @77,65 map 1425 -- Kill Saltwater Snapjaws to complete
 
 step
   when level<52
   zone map 1425
-  task "Kill Silvermane wolves to complete: Stalking the Stalkers" optional
-  kill 2926 quest 7828.1
+  kill 2926 quest 7828.1 -- Kill Silvermane wolves to complete
   kill 2925 quest 7828.2
 
 step
   when level<52
   zone map 1425
-  task "Find and take the lost tools: Vilebranch Hooligans" optional
-  task "It's at one of the 5 spots:" optional
-  collect 19033 quest 7839.1
+  collect 19033 quest 7839.1 -- Find and take the lost tools
 
 step
   when level<52
   zone map 1425
-  task "Kill Vilebranch trolls: Cannibalistic Cousins" optional
-  kill 4466 quest 7844.1
+  kill 4466 quest 7844.1 -- Kill Vilebranch trolls
   kill 4467 quest 7844.2
 
 step
   when level<52
   zone map 1425
-  task "Kill owlbeasts to complete: Hunt the Savages" optional
-  kill 2929 quest 7829.1
+  kill 2929 quest 7829.1 -- Kill owlbeasts to complete
 
 step
   when level<52
   zone map 1425
-  task "Kill the leader of the gryphons to complete: Avenging the Fallen" optional
-  collect 19025 quest 7830.1 @57.2,49.8 map 1425
+  collect 19025 quest 7830.1 @57.2,49.8 map 1425 -- Kill the leader of the gryphons to complete
 
 step
   when level<52
   zone map 1425
-  task "Kill elves to complete: Message to the Wildhammer" optional
-  complete 7841 @33,51.2 map 1425
+  complete 7841 @33,51.2 map 1425 -- Kill elves to complete
 
 step
   zone map 1425
@@ -2337,42 +2092,35 @@ step
 
 step
   zone map 1425
-  task "Accept Ripple Delivery (Orgrimmar — later)" optional
   accept 81 npc 7801
 
 step
   when level<52
   zone map 1425
-  task "Kill trolls to complete: Cannibalistic Cousins" optional
-  complete 7844 @45,62.4 map 1425
+  complete 7844 @45,62.4 map 1425 -- Kill trolls to complete
 
 step
   zone map 1425
-  task "Take the Ancient Egg from the nest below the south side of Jintha'Alor: The Ancient Egg" optional
-  collect 12402 quest 4787.1 @57.6,86.8 map 1425
+  collect 12402 quest 4787.1 @57.6,86.8 map 1425 -- Take the Ancient Egg from the nest below the south side of Jintha'Alor
 
 step
   zone map 1425
-  task "Click Rhapsody's lunch." optional
-  goto 84,41 r 20 map 1425
+  goto 84,41 r 20 map 1425 -- Click Rhapsody's lunch
 
 step
   when level<53
   zone map 1425
-  task "Three of them appear; kill just one and take it: Lard Lost His Lunch" optional
-  collect 19034 quest 7840.1
+  collect 19034 quest 7840.1 -- Three of them appear; kill just one and take it
 
 step
   when level<54
   zone map 1425
-  task "You can run away after that. Turn in Snapjaws, Mon!" optional
   turnin 7815 npc 14740
 
 step
   when level>=54
   when complete 7815
   zone map 1425
-  task "You can run away after that. Turn in Snapjaws, Mon!" optional
   turnin 7815 npc 14740
 
 step
@@ -2450,101 +2198,80 @@ step
   when level>=53
   when complete 7840
   zone map 1425
-  task "[Heads-up] Soon you hearth to Orgrimmar. Keep your Hearthstone until then and check its cooldown now." optional
-  turnin 7840 npc 14731
+  turnin 7840 npc 14731 -- [Heads-up] Hearth to Orgrimmar soon — keep your Hearthstone
 
 step
   hearth "Orgrimmar"
 
 step
   zone map 1454
-  task "! Your Hearthstone should be set to Orgrimmar (set above). \"Lines of Communication\" is turned in later when you pass through Undercity (50-60 guide)." optional
-  task "Orgrimmar Hearth to Orgrimmar (if it is on cooldown, fly from Revantusk Village to Undercity and take the zeppelin to Orgrimmar)." optional
   turnin 81 npc 6986
 
 step
-  task "Shadowprey Village Fly to Shadowprey Village." optional
   fly "Shadowprey Village"
 
 step
-  task "49 You should be at least Lv49 (healers can go from Lv48). If you are short, run Zul'Farrak once more or kill mobs in the areas you just passed." optional
   level 49
 
 step
   zone map 1443
-  task "In Shadowprey Village, accept from Vark Battlescar (or get it shared): Vyletongue Corruption" optional
-  task "* Maraudon — Lv49.0 -> about Lv50.0 · recommended Lv48-49 (healer 48 · tank/DPS 49)" optional
   accept 7029 npc 11823
 
 step
   zone map 1443
-  task "Accept from Selendra (or get it shared): Corruption of Earth and Seed (requires level 45) — *Reward" optional
   accept 7064 npc 13699
 
 step
   zone map 1443
-  task "In front of the Maraudon entrance, accept from Cavindra (or get it shared): Legends of Maraudon" optional
   accept 7044 npc 13697
 
 step
   zone map 1443
-  task "South of Mannoroc Coven to the southeast, accept from Centaur Pariah (or get it shared): The Pariah's Instructions" optional
   accept 7067 npc 13717
 
 step
   zone map 1443
-  task "North of the Kodo Graveyard to the northeast, accept from Willow (or get it shared): Twisted Evils" optional
   accept 7028 npc 13656
 
 step
   zone map 1443
-  task "Enter Maraudon in western Desolace (inside it splits into purple and orange paths)." optional
-  goto 29.1,62.5 r 20 map 1443
+  goto 29.1,62.5 r 20 map 1443 -- Enter Maraudon in western Desolace
 
 step
   zone map 1443
-  task "Collect 10 Shadowshard Fragments (from the crystal mobs inside): Shadowshard Fragments" optional
-  collect 17756 quest 7068.1
+  collect 17756 quest 7068.1 -- Collect 10 Shadowshard Fragments
 
 step
   zone map 1443
-  task "Collect 15 Theradric Crystal Carvings: Twisted Evils" optional
-  collect 17684 quest 7028.1
+  collect 17684 quest 7028.1 -- Collect 15 Theradric Crystal Carvings
 
 step
   zone map 1443
-  task "Fill the Coated Cerulean Vial at the orange crystal pool: Vyletongue Corruption" optional
-  kill 13696 quest 7029.1
+  kill 13696 quest 7029.1 -- Fill the Coated Cerulean Vial at the orange crystal pool
   collect 17696 quest 7029.2
 
 step
-  complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits: The Pariah's Instructions
-  complete 7044 -- Kill Lord Vyletongue (Celebrian Rod) and Noxxion (Celebrian Diamond): Legends of Maraudon
-  turnin 7044 -- Turn in to Celebras the Redeemed: Legends of Maraudon
+  complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits
+  complete 7044 -- Kill Lord Vyletongue and Noxxion
+  turnin 7044 -- Turn in to Celebras the Redeemed
   accept 7046
-  complete 7046 -- Protect Celebras while he creates the scepter: The Scepter of Celebras
-  turnin 7046 -- Turn in to Celebras: The Scepter of Celebras
-  complete 7064 -- Kill the final boss Princess Theradras: Corruption of Earth and Seed
-  accept 7066 -- Accept from Zaetar's Spirit, who appears after Theradras dies (Remulos in Moonglade — later): Seed of Life
+  complete 7046 -- Protect Celebras while he creates the scepter
+  turnin 7046 -- Turn in to Celebras
+  complete 7064 -- Kill the final boss Princess Theradras
+  accept 7066 -- Accept from Zaetar's Spirit, who appears after Theradras dies
 
 step
   zone map 1443
-  task "== Maraudon turn-ins == Turn in to Selendra: Corruption of Earth and Seed (*reward)" optional
   turnin 7064 npc 13699
 
 step
   zone map 1443
-  task "Turn in to Vark Battlescar: Vyletongue Corruption" optional
   turnin 7029 npc 11823
 
 step
   zone map 1443
-  task "Turn in to Willow: Twisted Evils" optional
   turnin 7028 npc 13656
 
 step
   zone map 1443
-  task "Turn in to Centaur Pariah: The Pariah's Instructions" optional
   turnin 7067 npc 13717
-  task "! One more run (optional): since Nov 8, dungeon kill XP is up 50%. If your group is fast, running Maraudon again is worth it — we recommend gathering the group for \"2 runs\" from the start. Runs after the first give no quest XP, so if the next dungeon level (Sunken Temple Lv52.5) is close, go back to zone quests." optional
-  task "That's the end of 40-50. Move on to the 50-60 guide." optional

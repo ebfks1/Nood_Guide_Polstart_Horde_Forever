@@ -12,104 +12,78 @@ next nood/06-25-30
 step
   only Tauren
   zone map 1413
-  task "Follow the road north out of Mulgore to the Crossroads in the Barrens, discover the flight path, then run up the main road north to Orgrimmar." optional
   getfp "Crossroads"
 
 step
   only Skyborne
   zone map 1413
-  task "Coming down southeast from Thunder Bluff, discover the Camp Taurajo flight path." optional
-  task "If you ended the 1-12 guide early at level 12: take the skyship from the dock west of Valanaar to Thunder Bluff, then follow the steps below." optional
   getfp "Camp Taurajo"
 
 step
   only Skyborne
   zone map 1413
-  task "From Thunder Bluff head southeast, follow the main road to the Crossroads, then run up the main road north to Orgrimmar." optional
   getfp "Crossroads"
 
 step
   only Undead
   zone map 1420
-  task "Take the zeppelin to Orgrimmar from the tower east of Undercity." optional
-  goto 60.7,58.8 r 20 map 1420
+  goto 60.7,58.8 r 20 map 1420 -- Take the zeppelin to Orgrimmar from the tower east of Undercity
 
 step
   zone map 1454
-  task "Discover the Orgrimmar flight path (skipped automatically if you already have it)." optional
-  task "This guide starts at level 12. First, go to Thrall in Orgrimmar for the Ragefire Chasm prerequisite \"Hidden Enemies\"." optional
-  task "*Spells*: this note means you can train new spells." optional
-  task "Save gold for your level 40 mount, though — only train the important spells." optional
-  task "== Joining from your starting zone ==" optional
-  task "If you finished the 1-12 guide: follow the main road north from Razor Hill to Orgrimmar." optional only Orc,Troll
   getfp "Orgrimmar"
 
 step
   zone map 1454
-  task "Accept from Thrall in the Valley of Wisdom: Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
-  task "== Step 1: level 12 — Thrall's \"Hidden Enemies\" (Ragefire Chasm prerequisite) == You need this chain for the Ragefire Chasm quest \"Hidden Enemies\"." optional
   accept 5726 npc 4949
 
 step
   only Skyborne
   when onquest 95350
   zone map 1454
-  task "Skyborne: turn in to Thrall here: Welcome to Azeroth" optional
   turnin 95350 npc 4949
 
 step
   zone map 1411
-  task "Get the Lieutenant's Insignia from the Burning Blade Fanatics and Apprentices in the Skull Rock cave (about 20% drop — it can take a while; keep killing until it drops): Hidden Enemies" optional
-  collect 14544 quest 5726.1 @51.9,9.6 map 1411
+  collect 14544 quest 5726.1 @51.9,9.6 map 1411 -- Get the Lieutenant's Insignia from the Burning Blade Fanatics and Ap…
 
 step
   zone map 1454
-  task "Turn in to Thrall: Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   turnin 5726 npc 4949
 
 step
   zone map 1454
-  task "Then accept Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   accept 5727 npc 4949
 
 step
   zone map 1454
-  task "Talk to Neeru Fireblade in the Cleft of Shadow: Hidden Enemies" optional
-  complete 5727 @49.4,50.5 map 1454
+  complete 5727 @49.4,50.5 map 1454 -- Talk to Neeru Fireblade in the Cleft of Shadow
 
 step
   zone map 1454
-  task "Go back to Thrall and turn in Hidden Enemies — Dungeon prereq (Ragefire Chasm)" optional
   turnin 5727 npc 4949
 
 step
   zone map 1454
-  task "Then accept Hidden Enemies (Ragefire Chasm)" optional
   accept 5728 npc 4949
 
 step
   zone map 1454
-  task "Accept from Neeru Fireblade in the Cleft of Shadow (or get it shared): Slaying the Beast" optional
   accept 5761 npc 3216
-  task "! If you are level 13 now, skip the optional \"Barrens\" steps below and go straight to \"* Get the Ragefire Chasm quests\". If not, do the Barrens steps to reach level 13." optional
 
 step
   when level<13
-  task "== Step 2 (optional): Barrens if you are not 13 yet — start the Wailing Caverns chain == Leave Orgrimmar by the west gate and take the main road south to the Crossroads (if you have the flight path, The Crossroads fly there)." optional
   fly "Crossroads"
 
 step
   when level<13
   zone map 1413
-  task "Discover the The Crossroads flight path (skipped automatically if you already have it)." optional
   getfp "Crossroads"
 
 step
   when level<13
   zone map 1413
-  task "Set your Hearthstone to The Crossroads with the innkeeper (you hearth back here after the Ruins of Lordaeron)." optional
   sethome "The Crossroads"
-  task "! Don't go hunting plainstriders, raptors and zhevras separately — kill them whenever you see them while moving. Try to finish Raptor Thieves — its follow-up \"Stolen Silver\" is done at the raptor grounds during the Wailing Caverns prerequisites." optional
 
 step
   when level<13
@@ -138,15 +112,13 @@ step
 step
   when level<13
   zone map 1413
-  task "First step of the Wailing Caverns chain — accept from Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)" optional
   accept 870 npc 3448
 
 step
   when level<13
   when level<16
   zone map 1413
-  task "Don't finish Raptor Thieves in one go; work on it whenever you're around. Walk around the Crossroads and finish Plainstrider Menace" optional
-  collect 5087 quest 844.1
+  collect 5087 quest 844.1 -- Don't finish Raptor Thieves in one go; work on it whenever you're ar…
 
 step
   when complete 844
@@ -169,40 +141,34 @@ step
 step
   when level<13
   zone map 1413
-  task "Accept from Regthar Deathgate: Centaur Bracers — no need to finish at once. Collect them whenever you kill centaurs (leaders too) and fill up the 15 when you kill Hezrul Bloodmark at the end." optional
   accept 855 npc 3389
 
 step
   when level<13
   when level<19
   zone map 1413
-  task "On the way, kill raptors and zhevra. Head north toward the centaur camp. Pick up the mushrooms around the pools: Fungal Spores" optional
-  collect 5012 quest 848.1
+  collect 5012 quest 848.1 -- On the way, kill raptors and zhevra
 
 step
   when level<13
   zone map 1413
-  task "Explore the crevasse at the bottom of the pool (exploration only, so a low level is fine): The Forgotten Pools" optional
-  complete 870 @44,22 map 1413
+  complete 870 @44,22 map 1413 -- Explore the crevasse at the bottom of the pool
 
 step
   when level<13
   when level<20
   zone map 1413
-  task "Kill Barak Kodobane: Kolkar Leaders" optional
-  collect 5022 quest 850.1 @42.8,23.4 map 1413
+  collect 5022 quest 850.1 @42.8,23.4 map 1413 -- Kill Barak Kodobane
 
 step
   when complete 850
   label q850
   zone map 1413
-  task "Turn in to Regthar Deathgate: Kolkar Leaders" optional
   turnin 850 npc 3389
 
 step
   when level<13
   zone map 1413
-  task "Accept Verog the Dervish (done right before Wailing Caverns)" optional
   accept 851 npc 3389
 
 step
@@ -227,39 +193,33 @@ step
   when onquest 870
   label q870
   zone map 1413
-  task "Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)" optional
-  task "Don't accept Apothecary Zamah (you'll get Serpentbloom directly in Thunder Bluff)." optional
   turnin 870 npc 3448
 
 step
   when level<13
   zone map 1413
-  task "Accept The Stagnant Oasis — Dungeon prereq (Wailing Caverns)" optional
   accept 877 npc 3448
 
 step
   when level<13
   when level<17
   zone map 1413
-  task "Finish the raptor heads: Raptor Thieves" optional
-  collect 5062 quest 869.1
+  collect 5062 quest 869.1 -- Finish the raptor heads
 
 step
   when complete 869
   label q869
   zone map 1413
-  task "Turn in to Gazrog: Raptor Thieves" optional
   turnin 869 npc 3464
 
 step
   when level<13
   zone map 1413
-  task "Then accept from Gazrog: Stolen Silver — done at the raptor grounds during the Wailing Caverns prerequisites." optional
   accept 3281 npc 3464
 
 step
   along until q5723
-  accept 5728 npc 4949 optional -- * Get the Ragefire Chasm quests (each gets checked when you accept it or get it shared — unchecked ones are the quests you are missing): Hidden Enemies(not shareable) Slaying the Beast(shareable) Testing an Enemy's Strength(shareable) Searching for the Lost Satchel(shareable) The Power to Destroy...(shareable)
+  accept 5728 npc 4949 optional -- * Get the Ragefire Chasm quests: Hidden Enemies Slaying the Beast Te…
   accept 5761 npc 3216 optional
   accept 5723 npc 11833 optional
   accept 5722 npc 11833 optional
@@ -267,115 +227,87 @@ step
 
 step
   only Undead,Orc,Troll,Skyborne
-  task "(If you couldn't get the Thunder Bluff quests shared) follow the main road south from the Crossroads past Camp Taurajo to Thunder Bluff in Mulgore (if you have the flight path, Thunder Bluff fly there). Tauren already picked these up in Mulgore." optional
   fly "Thunder Bluff"
 
 step
   zone map 1456
-  task "Accept from Rahauro on the Elder Rise (or get it shared): Testing an Enemy's Strength" optional
-  task "! Stop collecting items here. The rest of the Wailing Caverns prerequisites (Dead Oasis and so on) come after the Ruins of Lordaeron. Get the Ragefire quests and clear the dungeon first — the levels make the remaining quests much easier." optional
-  task "== Getting the Ragefire Chasm quests == If party members can share the Ragefire Chasm quests, get them shared: Searching for the Lost Satchel and Testing an Enemy's Strength (Thunder Bluff), The Power to Destroy... (Undercity). Shared quests make the accept steps below disappear automatically." optional
   accept 5723 npc 11833
 
 step
   zone map 1456
-  task "Accept (or get it shared): Searching for the Lost Satchel" optional
   accept 5722 npc 11833
 
 step
   zone map 1456
-  task "Discover the Thunder Bluff flight path at the flight master." optional
   getfp "Thunder Bluff"
 
 step
-  task "Orgrimmar Fly to Orgrimmar (if you didn't go to Thunder Bluff, Orgrimmar fly to Orgrimmar from the Crossroads or run north)." optional
   fly "Orgrimmar"
 
 step
   along until q5725
   zone map 1458
-  accept 5725 npc 2425 optional -- Accept from Varimathras in the Royal Quarter (sharing recommended): The Power to Destroy...
+  accept 5725 npc 2425 optional -- Accept from Varimathras in the Royal Quarter
 
 step
   along
-  level 13 -- You need to be level 13. If not, grind a little around the Crossroads.
+  level 13 -- You need to be level 13
 
 step
   zone map 1454
-  task "== Ragefire Chasm == Ragefire Chasm entrance (Cleft of Shadow)" optional
-  task "Getting the Undercity quest \"The Power to Destroy...\" shared is recommended (Undead already picked it up in Tirisfal). The zeppelin round trip is long, so if you can't get it shared you can go without it — in that case click to close this line and the three Undercity lines below." optional
-  task "(Optional) Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
-  task "(Optional) Take the zeppelin to Orgrimmar from the tower east of Undercity." optional
-  task "* Ragefire Chasm — Lv13.3 -> about Lv14.8 · recommended Lv13-14 (healer 13 · tank/DPS 14)" optional
-  goto 52.6,49.2 r 20 map 1454
+  goto 52.6,49.2 r 20 map 1454 -- == Ragefire Chasm == Ragefire Chasm entrance
 
 step
-  task "[Dungeon] Ragefire Chasm: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Ragefire Chasm). The tab leads you to the door, then hands the quests in." optional
-  task "Done with Ragefire Chasm in its tab (run and hand-ins)? Tick this to go on with the leveling route."
+  task "[Dungeon] Ragefire Chasm: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ragefire Chasm). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q5725
-  complete 5725 -- Two books (spellbook and tome): The Power to Destroy...
+  complete 5725 -- Two books
 
 step
   zone map 1454
-  task "Leave the dungeon and turn in to Thrall: Hidden Enemies" optional
   complete 5728
   turnin 5728 npc 4949
 
 step
   zone map 1454
-  task "Then accept Hidden Enemies — Dungeon chain (Ragefire Chasm)" optional
   accept 5729 npc 4949
 
 step
   zone map 1454
-  task "Turn in to Neeru Fireblade: Slaying the Beast" optional
   turnin 5761 npc 3216
 
 step
   zone map 1454
-  task "Talk to Neeru to turn in Hidden Enemies — Dungeon chain (Ragefire Chasm)" optional
   turnin 5729 npc 3216
 
 step
   zone map 1454
-  task "Then accept Hidden Enemies — Dungeon chain (Ragefire Chasm)" optional
   accept 5730 npc 3216
 
 step
   zone map 1454
-  task "Turn in to Thrall: Hidden Enemies — Dungeon chain (Ragefire Chasm)" optional
   turnin 5730 npc 4949
 
 step
-  task "Thunder Bluff Fly to Thunder Bluff (no flight path yet: run down the main road south from the Crossroads)." optional
-  task "== Step 3: Ragefire turn-ins — Orgrimmar -> Thunder Bluff -> Undercity ==" optional
   fly "Thunder Bluff"
 
 step
   when complete 5723
   label q5723
   zone map 1456
-  task "Turn in to Rahauro on the Elder Rise: Testing an Enemy's Strength" optional
   turnin 5723 npc 11833
 
 step
   zone map 1456
-  task "Discover the Thunder Bluff flight path (skipped automatically if you already have it)." optional
   getfp "Thunder Bluff"
 
 step
-  task "Orgrimmar Fly to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
   zone map 1411
-  task "Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
-  task "! If you have \"The Power to Destroy...\" (Varimathras), turn it in in Undercity below." optional
-  task ">> Next dungeon: Ruins of Lordaeron (at Lv16) — about Lv15.2 now. Until then, do the Ruins prerequisites in Undercity and Silverpine Forest (the \"A Recipe For Death\" chain and \"Rear Guard Patrol\") plus a few Silverpine quests to reach level 16." optional
-  task "== Step 4: Ruins of Lordaeron prerequisites (Undercity and Silverpine Forest, to level 16) == \"The New Plague\" is only offered after all three steps of \"A Recipe For Death\"." optional
-  goto 50.8,13.6 r 20 map 1411
+  goto 50.8,13.6 r 20 map 1411 -- Take the zeppelin to Undercity from the tower outside Orgrimmar's no…
 
 step
   when complete 5725
@@ -385,203 +317,165 @@ step
 
 step
   zone map 1458
-  task "Accept from Morbin Lightbane in the Royal Quarter (or get it shared): Light's Justice" optional
   accept 92421 npc 266484
 
 step
   zone map 1421
-  task "Leave Undercity, run west to the Sepulcher in Silverpine Forest and accept from Tabitha Heartweaver (or get it shared): A Frightened Request" optional
   accept 92401 npc 250686
 
 step
   zone map 1421
-  task "Discover the The Sepulcher flight path at the Sepulcher flight master." optional
   getfp "The Sepulcher"
 
 step
   zone map 1421
-  task "Accept from High Executor Hadrec: The Dead Fields" optional
   accept 437 npc 1952
 
 step
   zone map 1421
-  task "Accept from Apothecary Renferrel at the Sepulcher: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   accept 447 npc 1937
 
 step
   zone map 1421
-  task "Kill Ferocious Grizzled Bears on the hills northeast of the Sepulcher for 6 Grizzled Bear Hearts: A Recipe For Death" optional
-  collect 3253 quest 447.1 @49.6,34 map 1421
+  collect 3253 quest 447.1 @49.6,34 map 1421 -- Kill Ferocious Grizzled Bears on the hills northeast of the Sepulche…
 
 step
   zone map 1421
-  task "At the Dead Fields to the north, kill Rot Hide gnolls until Nightlash appears, then kill her and take her essence: The Dead Fields" optional
-  complete 437 @45,21 map 1421
+  complete 437 @45,21 map 1421 -- At the Dead Fields to the north, kill Rot Hide gnolls until Nightlas…
 
 step
   zone map 1421
-  task "Go up to the north coast and collect 6 Skittering Blood from Moss Stalkers and Mist Creepers: A Recipe For Death" optional
-  collect 3254 quest 447.2 @35.4,12 map 1421
+  collect 3254 quest 447.2 @35.4,12 map 1421 -- Go up to the north coast and collect 6 Skittering Blood from Moss St…
 
 step
   zone map 1420
-  task "Leave Silverpine by the north road and go back to Undercity." optional
-  goto 60.7,58.8 r 20 map 1420
+  goto 60.7,58.8 r 20 map 1420 -- Leave Silverpine by the north road and go back to Undercity
 
 step
   zone map 1458
-  task "Turn in to Master Apothecary Faranell in the Apothecarium: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   turnin 447 npc 2055
 
 step
   zone map 1458
-  task "Then accept: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   accept 450 npc 2055
 
 step
-  task "The Sepulcher Fly to the Sepulcher." optional
   fly "The Sepulcher"
 
 step
   zone map 1421
-  task "Turn in to Hadrec at the Sepulcher: The Dead Fields" optional
   turnin 437 npc 1952
 
 step
   zone map 1421
-  task "Then accept: The Decrepit Ferry (done together at the lake)" optional
   accept 438 npc 1952
-  task "! The Pyrewood Watchers, Sentries and Elders are level 13-15 elites. Go with a party if you can. Solo: approach from the hill on the west side of the village and pull only the elites on the way to the house with Berard's Bookshelf, one at a time (back off right away if several come). If it is still too hard, level a little more at the lake steps below and come back — without this journal you cannot get \"The New Plague\"." optional
 
 step
   along until q452
   zone map 1421
-  accept 452 npc 2058 optional -- (party only) Accept from Deathstalker Faerleia southeast of Pyrewood Village: Pyrewood Ambush — several elite council members show up, so skip it if you are solo.
+  accept 452 npc 2058 optional -- Accept from Deathstalker Faerleia southeast of Pyrewood Village: Pyr…
 
 step
   zone map 1421
-  task "Click Berard's Bookshelf in Pyrewood Village to the south for Berard's Journal: A Recipe For Death" optional
-  collect 3255 quest 450.1 @43,73.2 map 1421
+  collect 3255 quest 450.1 @43,73.2 map 1421 -- Click Berard's Bookshelf in Pyrewood Village to the south for Berard…
 
 step
   along until q452
   zone map 1421
-  complete 452 @46.5,74.4 map 1421 -- (party only) Help Faerleia kill the Pyrewood council: Pyrewood Ambush
+  complete 452 @46.5,74.4 map 1421 -- Help Faerleia kill the Pyrewood council
 
 step
   when onquest 452
   label q452
   zone map 1421
-  task "(party only) Turn in to Faerleia: Pyrewood Ambush" optional
   turnin 452 npc 2058
 
 step
   zone map 1421
-  task "Back at the Sepulcher, turn in to Renferrel: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   turnin 450 npc 1937
 
 step
   zone map 1421
-  task "Then accept: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   accept 451 npc 1937
 
 step
   zone map 1421
-  task "On the east shore of Lordamere Lake, kill Lake Skulkers for 6 Lake Skulker Moss: A Recipe For Death" optional
-  collect 3256 quest 451.1 @72,35 map 1421
+  collect 3256 quest 451.1 @72,35 map 1421 -- On the east shore of Lordamere Lake, kill Lake Skulkers for 6 Lake S…
 
 step
   zone map 1421
-  task "Check the Corpse Laden Boat on the lake shore to turn in The Decrepit Ferry" optional
   turnin 438 object 1593
 
 step
   zone map 1421
-  task "Further north along the shore, kill Lake Creepers (level 17-18) for 6 Lake Creeper Moss: A Recipe For Death" optional
-  collect 3257 quest 451.2 @77,26 map 1421
+  collect 3257 quest 451.2 @77,26 map 1421 -- Further north along the shore, kill Lake Creepers for 6 Lake Creeper…
 
 step
   zone map 1421
-  task "Get 1 Hardened Tumor from the Vile Fin murlocs along the shore (about 5% drop - kill murlocs whenever you see them while collecting the moss): A Recipe For Death" optional
-  collect 3258 quest 451.3
+  collect 3258 quest 451.3 -- Get 1 Hardened Tumor from the Vile Fin murlocs along the shore
 
 step
   zone map 1420
-  task "Take the road north of the lake back to Undercity." optional
-  goto 60.7,58.8 r 20 map 1420
+  goto 60.7,58.8 r 20 map 1420 -- Take the road north of the lake back to Undercity
 
 step
   zone map 1458
-  task "Turn in to Faranell: A Recipe For Death — Dungeon prereq (Ruins of Lordaeron)" optional
   turnin 451 npc 2055
 
 step
   zone map 1458
-  task "Accept from Theodore Griffs right next to him (or get it shared): The New Plague" optional
   accept 95216 npc 11835
 
 step
   along
-  level 16 -- You need to be level 16. If not, grind a little in eastern Tirisfal while doing "Rear Guard Patrol" below, or go to the Ruins of Lordaeron at 15 (healers).
+  level 16 -- You need to be level 16
 
 step
   zone map 1420
-  task "Leave Undercity and go east to the camp near Brill. Right next to Kristof, accept from Deathguard Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron) Kristof only offers \"The Wrath of Rath'mael\" after both steps of Linnea's \"Rear Guard Patrol\" (skipped automatically if you already did it in Tirisfal)." optional
-  task "* Ruins of Lordaeron — Lv16.0 -> about Lv18.2 · recommended Lv15-16 (healer 15 · tank/DPS 16)" optional
   accept 356 npc 1495
 
 step
   zone map 1420
-  task "To the east, kill 8 Bleeding Horrors and 8 Wandering Spirits: Rear Guard Patrol" optional
-  kill 1529 quest 356.1 @76.2,60.6 map 1420
+  kill 1529 quest 356.1 @76.2,60.6 map 1420 -- To the east, kill 8 Bleeding Horrors and 8 Wandering Spirits
   kill 1532 quest 356.2 @76.2,60.6 map 1420
 
 step
   zone map 1420
-  task "Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)" optional
   turnin 356 npc 1495
 
 step
   zone map 1420
-  task "Then accept: Rear Guard Patrol (new in Forever) — Dungeon prereq (Ruins of Lordaeron)" optional
   accept 99156 npc 1495
 
 step
   zone map 1420
-  task "Kill Riptear, the level 13 elite patrolling the northeast coast, and take its heart: Rear Guard Patrol" optional
-  complete 99156 @81.3,44.5 map 1420
+  complete 99156 @81.3,44.5 map 1420 -- Kill Riptear, the level 13 elite patrolling the northeast coast, and…
 
 step
   zone map 1420
-  task "Turn in to Linnea: Rear Guard Patrol — Dungeon prereq (Ruins of Lordaeron)" optional
   turnin 99156 npc 1495
 
 step
   zone map 1420
-  task "Accept from Deathguard Kristof (or get it shared): The Wrath of Rath'mael" optional
   accept 92422 npc 251001
 
 step
   zone map 1420
-  task "Enter the Ruins of Lordaeron above the Undercity entrance (approximate entrance location)" optional
-  goto 62,68 r 20 map 1420
+  goto 62,68 r 20 map 1420 -- Enter the Ruins of Lordaeron above the Undercity entrance
 
 step
-  task "[Dungeon] Ruins of Lordaeron: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Ruins of Lordaeron). The tab leads you to the door, then hands the quests in." optional
-  task "Done with Ruins of Lordaeron in its tab (run and hand-ins)? Tick this to go on with the leveling route."
+  task "[Dungeon] Ruins of Lordaeron: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ruins of Lordaeron). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q95204
-  accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lordaeron
+  accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lord…
 
 step
   zone map 1420
-  task "Turn in to Deathguard Kristof: The Wrath of Rath'mael" optional
   turnin 92422 npc 251001
 
 step
   zone map 1458
-  task "Turn in to Theodore Griffs: The New Plague" optional
   turnin 95216 npc 11835
 
 step
@@ -590,7 +484,6 @@ step
 
 step
   zone map 1458
-  task "Turn in to the Unfinished Abomination (Osmar's body): Unending Torment" optional
   turnin 97289 npc 271613
 
 step
@@ -599,7 +492,6 @@ step
 
 step
   zone map 1458
-  task "Turn in to Faranell: Unending Torment" optional
   turnin 97290 npc 2055
 
 step
@@ -608,14 +500,12 @@ step
 
 step
   zone map 1458
-  task "Toxic Skullcap (Tawny Grisette, Trade Quarter), Blisterweed (pot behind the herbalist), Essence of Agony (poison vendor, Rogues' Quarter): Unending Torment" optional
-  collect 281246 quest 97291.1
+  collect 281246 quest 97291.1 -- Toxic Skullcap, Blisterweed, Essence of Agony
   collect 281300 quest 97291.2
   collect 8923 quest 97291.3
 
 step
   zone map 1458
-  task "Turn in to Faranell: Unending Torment" optional
   turnin 97291 npc 2055
 
 step
@@ -623,67 +513,52 @@ step
   accept 97292 npc 2055
 
 step
-  task "Inject the Hissing Serum into the device on Osmar's body: Unending Torment" optional
-  complete 97292
+  complete 97292 -- Inject the Hissing Serum into the device on Osmar's body
 
 step
   zone map 1458
-  task "Turn in to Faranell: Unending Torment" optional
   turnin 97292 npc 2055
 
 step
   when onquest 95204
   label q95204
   zone map 1458
-  task "Turn in to Oran Snakewrithe: Crest of Lordaeron" optional
   turnin 95204 npc 7825
 
 step
   zone map 1458
-  task "[Heads-up] Soon you hearth to The Crossroads. Keep your Hearthstone until then and check its cooldown now." optional
-  task "Turn in to Morbin Lightbane: Light's Justice" optional
-  turnin 92421 npc 266484
-  task "! \"A Frightened Request\" is turned in at the Sepulcher on the way to Shadowfang Keep (keep it)." optional
-  task "! Your Hearthstone should be set to the Crossroads. If not, take the zeppelin to Orgrimmar from the tower east of Undercity, then fly or run to the Crossroads." optional
-  task "== Step 5: finish the Wailing Caverns prerequisites (Barrens, Ratchet, Thunder Bluff) == The Crossroads Hearth to the Crossroads." optional
+  turnin 92421 npc 266484 -- [Heads-up] Hearth to The Crossroads soon — keep your Hearthstone
 
 step
   hearth "The Crossroads"
 
 step
   zone map 1413
-  task "Set your Hearthstone to The Crossroads with the innkeeper (you hearth back here after the Ruins of Lordaeron)." optional
   sethome "The Crossroads"
 
 step
   along
   zone map 1413
-  accept 97003 npc 267310 optional -- Accept from Gur'ak: Chol'aruk the Ravener — group quest (new in Forever · 4,100 XP). Doing it at about Lv18 gives the best XP — 2-3 players recommended; if solo, keep it and kill him with your Wailing Caverns group.
+  accept 97003 npc 267310 optional -- Accept from Gur'ak
 
 step
   zone map 1413
-  task "Kill Chol'aruk the Ravener (20) on the hill just east of the Crossroads and loot his item: Chol'aruk the Ravener" optional
-  complete 97003 @57.8,27 map 1413
+  complete 97003 @57.8,27 map 1413 -- Kill Chol'aruk the Ravener on the hill just east of the Crossroads a…
 
 step
   zone map 1413
-  task "Turn in to Gur'ak: Chol'aruk the Ravener" optional
   turnin 97003 npc 267310
 
 step
   zone map 1413
-  task "First step of the Wailing Caverns chain — accept from Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)" optional
-  task "! If you skipped the Barrens steps before Ragefire, do the steps below (they disappear by themselves if already done)." optional
   accept 870 npc 3448
 
 step
   zone map 1413
-  task "Explore the crevasse at the bottom of the pool (exploration only, so a low level is fine): The Forgotten Pools" optional
-  complete 870 @44,22 map 1413
+  complete 870 @44,22 map 1413 -- Explore the crevasse at the bottom of the pool
 
 step
   zone map 1413
-  task "Turn in to Tonga Runetotem: The Forgotten Pools — Dungeon prereq (Wailing Caverns)" optional
   turnin 870 npc 3448
 
 step
@@ -693,88 +568,72 @@ step
 
 step
   zone map 1413
-  task "Accept from Regthar Deathgate: Centaur Bracers — no need to finish at once. Collect them whenever you kill centaurs (leaders too) and fill up the 15 when you kill Hezrul Bloodmark at the end." optional
   accept 855 npc 3389
 
 step
   when level<20
   zone map 1413
-  task "Kill Barak Kodobane: Kolkar Leaders" optional
-  collect 5022 quest 850.1 @42.8,23.4 map 1413
+  collect 5022 quest 850.1 @42.8,23.4 map 1413 -- Kill Barak Kodobane
 
 step
   when level<20
   zone map 1413
-  task "Turn in to Regthar Deathgate: Kolkar Leaders" optional
   turnin 850 npc 3389
 
 step
   when level>=20
   when complete 850
   zone map 1413
-  task "Turn in to Regthar Deathgate: Kolkar Leaders" optional
   turnin 850 npc 3389
 
 step
   zone map 1413
-  task "Accept Verog the Dervish (done right before Wailing Caverns)" optional
   accept 851 npc 3389
 
 step
   when level<19
   zone map 1413
-  task "Accept Prowlers of the Barrens (done on the way to Ratchet)" optional
   accept 903 npc 3338
 
 step
   zone map 1413
-  task "Then accept from Gazrog: Stolen Silver — done at the raptor grounds during the Wailing Caverns prerequisites." optional
   accept 3281 npc 3464
 
 step
   zone map 1413
-  task "Accept The Stagnant Oasis — Dungeon prereq (Wailing Caverns)" optional
   accept 877 npc 3448
 
 step
   zone map 1413
-  task "Plant the seed in the crevasse under the water of the Stagnant Oasis to the south (you only plant the seed and leave, so a low level is fine; avoid the centaur camp next to it): The Stagnant Oasis" optional
-  complete 877 @55,42 map 1413
+  complete 877 @55,42 map 1413 -- Plant the seed in the crevasse under the water of the Stagnant Oasis…
 
 step
   zone map 1413
-  task "Turn in to Tonga Runetotem: The Stagnant Oasis — Dungeon prereq (Wailing Caverns)" optional
   turnin 877 npc 3448
 
 step
   zone map 1413
-  task "Accept Altered Beings (done after Ragefire Chasm) — Dungeon prereq (Wailing Caverns)" optional
   accept 880 npc 3448
 
 step
   zone map 1413
-  task "Kill the oasis creatures at the Lushwater Oasis to the southwest (south of Wailing Caverns): Altered Beings" optional
-  collect 5098 quest 880.1 @47.6,40 map 1413
+  collect 5098 quest 880.1 @47.6,40 map 1413 -- Kill the oasis creatures at the Lushwater Oasis to the southwest
 
 step
   zone map 1413
-  task "Turn in to Tonga Runetotem at the Crossroads: Altered Beings — Dungeon prereq (Wailing Caverns)" optional
   turnin 880 npc 3448
 
 step
   zone map 1413
-  task "Then accept Hamuul Runetotem — Dungeon prereq (Wailing Caverns)" optional
   accept 1489 npc 3448
 
 step
   when level<19
   zone map 1413
-  task "On the way east to Ratchet, kill the Savannah Prowlers in the grass: Prowlers of the Barrens" optional
-  complete 903 @59,37.6 map 1413
+  complete 903 @59,37.6 map 1413 -- On the way east to Ratchet, kill the Savannah Prowlers in the grass
 
 step
   zone map 1413
-  task "Discover the Ratchet flight path." optional
   getfp "Ratchet"
 
 step
@@ -784,23 +643,19 @@ step
 
 step
   zone map 1413
-  task "Accept from Wrenix the Wretched: Parts and Pieces (Forever new)" optional
   accept 97253 npc 7161
 
 step
   when level<20
   zone map 1413
-  task "Click the Wanted poster to accept WANTED: Baron Longshore" optional
   accept 895 object 3972
 
 step
   zone map 1413
-  task "Accept from Mebok Mizzyrix: Raptor Horns (prerequisite for \"Smart Drinks\") — Dungeon prereq (Wailing Caverns)" optional
   accept 865 npc 3446
 
 step
   zone map 1413
-  task "Accept from Crane Operator Bigglefuzz (or get it shared): Trouble at the Docks (Wailing Caverns quest)" optional
   accept 959 npc 3665
 
 step
@@ -811,42 +666,35 @@ step
 step
   when level<18
   zone map 1413
-  task "Kill pirates at the pirate camp on the south coast: Southsea Freebooters" optional
-  kill 3381 quest 887.1 @63.4,49.2 map 1413
+  kill 3381 quest 887.1 @63.4,49.2 map 1413 -- Kill pirates at the pirate camp on the south coast
   kill 3382 quest 887.2 @63.4,49.2 map 1413
 
 step
   zone map 1413
-  task "5 Handfuls of Intricate Parts from above the pirate camp: Parts and Pieces" optional
-  collect 277331 quest 97253.1
+  collect 277331 quest 97253.1 -- 5 Handfuls of Intricate Parts from above the pirate camp
 
 step
   when level<20
   zone map 1413
-  task "Kill Baron Longshore near the tents: WANTED: Baron Longshore" optional
-  collect 5084 quest 895.1
+  collect 5084 quest 895.1 -- Kill Baron Longshore near the tents: WANTED
 
 step
   zone map 1413
-  task "Kill raptors at the raptor grounds to the west for 5 horns: Raptor Horns" optional
-  collect 5055 quest 865.1 @57,52 map 1413
+  collect 5055 quest 865.1 @57,52 map 1413 -- Kill raptors at the raptor grounds to the west for 5 horns
 
 step
   zone map 1413
-  task "Collect the Stolen Silver from the same raptors: Stolen Silver" optional
-  collect 5061 quest 3281.1
+  collect 5061 quest 3281.1 -- Collect the Stolen Silver from the same raptors
 
 step
   when level<18
   zone map 1413
-  task "Go back to Ratchet and turn in Southsea Freebooters" optional
   turnin 887 npc 3391
 
 step
   when level>=18
   when complete 887
   zone map 1413
-  task "Go back to Ratchet and turn in Southsea Freebooters" optional
   turnin 887 npc 3391
 
 step
@@ -866,146 +714,116 @@ step
 
 step
   zone map 1413
-  task "Turn in to Mebok: Raptor Horns — Dungeon prereq (Wailing Caverns)" optional
   turnin 865 npc 3446
 
 step
   zone map 1413
-  task "Then accept (or get it shared): Smart Drinks (Wailing Caverns quest)" optional
   accept 1491 npc 3446
 
 step
   when level<19
   zone map 1413
-  task "Go back to the Crossroads and turn in to Sergra: Prowlers of the Barrens (don't take Echeyakee)" optional
   turnin 903 npc 3338
 
 step
   when level>=19
   when complete 903
   zone map 1413
-  task "Go back to the Crossroads and turn in to Sergra: Prowlers of the Barrens (don't take Echeyakee)" optional
   turnin 903 npc 3338
 
 step
   zone map 1413
-  task "Turn in to Gazrog: Stolen Silver" optional
   turnin 3281 npc 3464
 
 step
-  task "Follow the main road south from the Crossroads to Thunder Bluff (if you have the flight path, Thunder Bluff fly there)." optional
   fly "Thunder Bluff"
 
 step
   zone map 1456
-  task "Turn in to Arch Druid Hamuul Runetotem on the Elder Rise: Hamuul Runetotem — Dungeon prereq (Wailing Caverns)" optional
   turnin 1489 npc 5769
 
 step
   zone map 1456
-  task "Then accept Nara Wildmane — Dungeon prereq (Wailing Caverns)" optional
   accept 1490 npc 5769
 
 step
   zone map 1456
-  task "Turn in to Nara Wildmane: Nara Wildmane — Dungeon prereq (Wailing Caverns)" optional
   turnin 1490 npc 5770
 
 step
   zone map 1456
-  task "Then accept Leaders of the Fang (Wailing Caverns quest)" optional
   accept 914 npc 5770
 
 step
   zone map 1456
-  task "Accept from Apothecary Zamah in the Pools of Vision (or get it shared): Serpentbloom (Wailing Caverns quest)" optional
   accept 962 npc 3419
 
 step
   zone map 1456
-  task "Discover the Thunder Bluff flight path at the flight master." optional
   getfp "Thunder Bluff"
 
 step
-  task "== Step 6: Wailing Caverns == The Crossroads Fly to the Crossroads." optional
-  task "*Spells* Train your new spells up to level 19 at your class trainer." optional
   fly "Crossroads"
 
 step
   along
-  level 18 -- You need to be level 18. If not, kill centaurs on the way to Verog the Dervish below.
+  level 18 -- You need to be level 18
 
 step
   zone map 1413
-  task "Centaur camp next to the Stagnant Oasis to the south: kill centaurs until you hear \"I am here!\", then kill Verog the Dervish: Verog the Dervish" optional
-  task "* Wailing Caverns — Lv19.2 -> about Lv20.9 · recommended Lv16-17 (healer 16 · tank/DPS 17)" optional
-  collect 5023 quest 851.1 @53,41.6 map 1413
+  collect 5023 quest 851.1 @53,41.6 map 1413 -- Centaur camp next to the Stagnant Oasis to the south: kill centaurs…
 
 step
   zone map 1413
-  task "Go back north to Regthar Deathgate and turn in: Verog the Dervish" optional
   turnin 851 npc 3389
 
 step
   zone map 1413
-  task "Then accept from Regthar: Hezrul Bloodmark" optional
   accept 852 npc 3389
 
 step
   zone map 1413
-  task "Hezrul Bloodmark near the Wailing Caverns entrance (2 escorts, group recommended): Hezrul Bloodmark" optional
-  complete 852 @46,37.6 map 1413
+  complete 852 @46,37.6 map 1413 -- Hezrul Bloodmark near the Wailing Caverns entrance
 
 step
   zone map 1413
-  task "Accept from Nalpak above the entrance (or get it shared): Deviate Hides" optional
   accept 1486 npc 5767
 
 step
   zone map 1413
-  task "Accept from Ebru (or get it shared): Deviate Eradication" optional
   accept 1487 npc 5768
 
 step
   zone map 1413
-  task "Enter Wailing Caverns" optional
-  goto 46,36.4 r 20 map 1413
+  goto 46,36.4 r 20 map 1413 -- Enter Wailing Caverns
 
 step
   zone map 1413
-  task "20 Deviate Hides: Deviate Hides" optional
-  collect 6443 quest 1486.1
+  collect 6443 quest 1486.1 -- 20 Deviate Hides
 
 step
-  task "[Dungeon] Wailing Caverns: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Wailing Caverns). The tab leads you to the door, then hands the quests in." optional
-  task "Done with Wailing Caverns in its tab (run and hand-ins)? Tick this to go on with the leveling route."
-
-step
-  zone map 1413
-  task "Mad Magglish's wine: Trouble at the Docks" optional
-  collect 5334 quest 959.1
+  task "[Dungeon] Wailing Caverns: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Wailing Caverns). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1413
-  task "10 Serpentbloom: Serpentbloom" optional
-  collect 5339 quest 962.1
-
-step
-  task "Gems from the 4 Fang leaders (Cobrahn, Anacondra, Pythas, Serpentis): Leaders of the Fang" optional
-  complete 914
+  collect 5334 quest 959.1 -- Mad Magglish's wine
 
 step
   zone map 1413
-  task "6 Wailing Essences: Smart Drinks" optional
-  collect 6464 quest 1491.1
+  collect 5339 quest 962.1 -- 10 Serpentbloom
 
 step
-  task "Accept from the \"Glowing Shard\" dropped by the final boss Mutanus: The Glowing Shard" optional
+  complete 914 -- Gems from the 4 Fang leaders
+
+step
+  zone map 1413
+  collect 6464 quest 1491.1 -- 6 Wailing Essences
+
+step
   accept 6981 item 10441
 
 step
   zone map 1413
-  task "Turn in to Nalpak: Deviate Hides" optional
   turnin 1486 npc 5767
 
 step
@@ -1014,64 +832,51 @@ step
 
 step
   zone map 1413
-  task "Fill up the 15 Centaur Bracers (centaurs around Verog and Hezrul): Centaur Bracers" optional
-  collect 5030 quest 855.1
+  collect 5030 quest 855.1 -- Fill up the 15 Centaur Bracers
 
 step
   zone map 1413
-  task "Go north and turn in to Regthar: Hezrul Bloodmark" optional
   turnin 852 npc 3389
 
 step
   zone map 1413
-  task "Turn in to Regthar: Centaur Bracers" optional
   turnin 855 npc 3389
 
 step
-  task "Run to the Crossroads and Ratchet fly to Ratchet." optional
   fly "Ratchet"
 
 step
   zone map 1413
-  task "Talk to Sputtervalve, the goblin between the flight master and the dock, and pick the \"glowing shard\" dialogue (progresses The Glowing Shard; turned in to Falla Sagewind back near the Crossroads)." optional
-  goto 63,37.2 r 20 map 1413
+  goto 63,37.2 r 20 map 1413 -- Talk to Sputtervalve, the goblin between the flight master and the d…
 
 step
   zone map 1413
-  task "Turn in to Mebok Mizzyrix: Smart Drinks" optional
   turnin 1491 npc 3446
 
 step
   zone map 1413
-  task "Turn in to Crane Operator Bigglefuzz: Trouble at the Docks" optional
   turnin 959 npc 3665
 
 step
   along
   zone map 1413
-  accept 92706 object 3972 optional -- Click the Wanted board in Ratchet to accept: WANTED: Bruuz — group quest (new in Forever · elite 20). Best done with your Wailing Caverns group.
+  accept 92706 object 3972 optional -- Click the Wanted board in Ratchet to accept: WANTED
 
 step
   zone map 1413
-  task "Kill Bruuz (elite) on the shore just south of Ratchet: WANTED: Bruuz" optional
-  complete 92706 @64.3,41.7 map 1413
+  complete 92706 @64.3,41.7 map 1413 -- Kill Bruuz on the shore just south of Ratchet: WANTED
 
 step
   zone map 1413
-  task "Turn in to Gazlowe: WANTED: Bruuz" optional
   turnin 92706 npc 3391
 
 step
-  task "Ratchet Fly to Ratchet (if you don't have the flight path, run)." optional
-  task "! \"Leaders of the Fang\", \"Serpentbloom\" and \"In Nightmares\" are turned in when the route passes through Thunder Bluff (keep them)." optional
-  task "Sell junk to Halija and repair your gear." optional
   fly "Ratchet"
 
 step
   only Warrior,Tauren
   when onquest 1505
   zone map 1413
-  task "Turn in to Uzzek at Far Watch Post: Veteran Uzzek" optional
   turnin 1505 npc 5810
 
 step
@@ -1079,12 +884,10 @@ step
   when onquest 2984
   label q2984
   zone map 1413
-  task "Turn in to Kranal Fiss: Call of Fire" optional
   turnin 2984 npc 5907
 
 step
   zone map 1413
-  task "Go to this point and discover the Ratchet flight path." optional
   getfp "Ratchet"
 
 step
@@ -1093,7 +896,6 @@ step
   turnin 1492 npc 3453
 
 step
-  task "The lions are only found in the grass. The Crossroads Fly to the Crossroads." optional
   fly "Crossroads"
 
 step
@@ -1103,26 +905,21 @@ step
 
 step
   zone map 1413
-  task "Run west of the Crossroads to the hill above the Wailing Caverns and turn in to Falla Sagewind: The Glowing Shard" optional
   turnin 6981 npc 8418
 
 step
   zone map 1413
-  task "Then accept In Nightmares (turned in to Hamuul Runetotem in Thunder Bluff)" optional
   accept 3369 npc 8418
-  task "*Spells* Train your new spells up to level 20 at your class trainer. (Rogues and Warlocks train later in Orgrimmar.)" optional
 
 step
   only Tauren,Skyborne
-  task "Thunder Bluff Fly to Thunder Bluff." optional
   fly "Thunder Bluff"
 
 step
   only Undead,Orc,Troll
   when level<24
   zone map 1413
-  task "Follow the main road south toward Camp Taurajo. Find the clue at this point: Lost in Battle" optional
-  complete 4921 @49,50 map 1413
+  complete 4921 @49,50 map 1413 -- Follow the main road south toward Camp Taurajo
 
 step
   when complete 914
@@ -1140,31 +937,25 @@ step
   when onquest 3369
   label q3369
   zone map 1456
-  task "Turn in to Hamuul Runetotem on the Elder Rise: In Nightmares" optional
   turnin 3369 npc 5769
 
 step
   only Priest,Warlock
   zone map 1440
-  task "(Option) Discover the flight path at Zoram'gar Outpost." optional
-  task "! (Priest/Warlock option) If a high-level player can help you, run Blackfathom Deeps now for the \"Blackfathom Villainy\" reward wand *Gravestone Scepter*. It makes questing up to 24-25 much faster. With no helper, skip the (Option) steps below." optional
-  task "(Option) Go with your helper to Zoram'gar Outpost on the west coast of Ashenvale (no flight path yet: from the Crossroads take the north road into Ashenvale and head to the west coast)." optional
   getfp "Zoram'gar Outpost"
 
 step
   only Priest,Warlock
   along until q6561
-  accept 6561 optional -- (Option) Accept from Argent Guard Thaelrid: Blackfathom Villainy
+  accept 6561 optional -- Accept from Argent Guard Thaelrid
 
 step
   only Priest,Warlock
   along until q6561
-  complete 6561 -- (Option) Kill the last boss Twilight Lord Kelris and loot his head (your helper can do the killing): Blackfathom Villainy
+  complete 6561 -- Kill the last boss Twilight Lord Kelris and loot his head
 
 step
   only Priest,Warlock
-  task "(Option) Leave the dungeon and fly to Thunder Bluff." optional
-  task "(Option) Enter Blackfathom Deeps on the north coast (underwater passage). Only the quest below this time - the other Blackfathom quests are for your 24-25 visit." optional
   fly "Thunder Bluff"
 
 step
@@ -1172,37 +963,31 @@ step
   when complete 6561
   label q6561
   zone map 1456
-  task "(Option) Turn in to Bashana Runetotem on the Elder Rise and pick *Gravestone Scepter* (wand) as your reward: Blackfathom Villainy — *Reward" optional
   turnin 6561 npc 9087
 
 step
   only Tauren,Skyborne
-  task "Camp Taurajo Fly to Camp Taurajo." optional
   fly "Camp Taurajo"
 
 step
   only Tauren,Skyborne
   when level<24
   zone map 1413
-  task "Find the clue at this point: Lost in Battle" optional
-  complete 4921 @49,50 map 1413
+  complete 4921 @49,50 map 1413 -- Find the clue at this point
 
 step
   only Undead,Orc,Troll
   zone map 1456
-  task "Discover the Thunder Bluff flight path." optional
   getfp "Thunder Bluff"
 
 step
   only Undead,Orc,Troll
-  task "The Crossroads Fly to the Crossroads." optional
   fly "Crossroads"
 
 step
   only Tauren,Skyborne
   when onquest 4921
   zone map 1413
-  task "Run to the Crossroads and turn in Lost in Battle" optional
   turnin 4921 npc 3432
 
 step
@@ -1212,41 +997,32 @@ step
   turnin 4921 npc 3432
 
 step
-  task "Orgrimmar Fly to Orgrimmar." optional
   fly "Orgrimmar"
 
 step
-  task "Leave Orgrimmar and go to the zeppelin tower. Take the zeppelin to Undercity. Orgrimmar Fly to Orgrimmar." optional
-  task "*Spells*: this note means you can train new spells. Save gold for your level 40 mount, though — only train the important spells. Head to Orgrimmar. (Keep your Hearthstone at the Crossroads — you hearth there after Shadowfang Keep.)" optional
   fly "Orgrimmar"
 
 step
   zone map 1411
-  task "Take the zeppelin to Undercity from the tower outside Orgrimmar's north gate." optional
-  goto 50.8,13.6 r 20 map 1411
+  goto 50.8,13.6 r 20 map 1411 -- Take the zeppelin to Undercity from the tower outside Orgrimmar's no…
 
 step
-  task "Undercity Fly to Undercity (if you don't have the flight path, run)." optional
   fly "Undercity"
 
 step
   zone map 1458
-  task "Discover the Undercity flight path." optional
   getfp "Undercity"
 
 step
   zone map 1458
-  task "Accept from Keeper Bel'dugur in the Apothecarium (or get it shared): The Book of Ur" optional
   accept 1013 npc 2934
 
 step
   zone map 1421
-  task "== Undercity new quests (optional) == Leave Undercity and head to Silverpine Forest. Discover the The Sepulcher flight path." optional
   getfp "The Sepulcher"
 
 step
   zone map 1421
-  task "Turn in to Tabitha Heartweaver: A Frightened Request (the quest from the Ruins of Lordaeron)" optional
   turnin 92401 npc 250686
 
 step
@@ -1258,63 +1034,51 @@ step
   only Orc,Undead,Tauren
   when level<24
   zone map 1421
-  task "Accept Watching the Roads (Forever new)" optional
   accept 95981 npc 2121
 
 step
   zone map 1421
-  task "Accept from High Executor Hadrec (or get it shared): Deathstalkers in Shadowfang" optional
   accept 1098 npc 1952
 
 step
   zone map 1421
-  task "Accept from Dalar Dawnweaver (or get it shared): Arugal Must Die" optional
   accept 1014 npc 1938
 
 step
   zone map 1421
-  task "Head in this direction." optional
-  goto 58,77 r 20 map 1421
+  goto 58,77 r 20 map 1421 -- Head in this direction
 
 step
   zone map 1421
-  task "At this point:" optional
-  goto 60,74 r 20 map 1421
+  goto 60,74 r 20 map 1421 -- At this point
 
 step
   when level<25
   zone map 1421
-  task "Kill the Ravenclaw mobs inside the cave: Beren's Peril" optional
-  kill 1974 quest 516.1
+  kill 1974 quest 516.1 -- Kill the Ravenclaw mobs inside the cave
   kill 1973 quest 516.2
 
 step
   only Orc,Undead,Tauren
   when level<24
   zone map 1421
-  task "Kill 8 Dalaran Conjurers and 8 Watchers south of the cave: Watching the Roads" optional
-  kill 1888 quest 95981.1 @57,77.4 map 1421
+  kill 1888 quest 95981.1 @57,77.4 map 1421 -- Kill 8 Dalaran Conjurers and 8 Watchers south of the cave
   kill 1889 quest 95981.2 @57,77.4 map 1421
 
 step
   along
-  level 22 -- You need to be level 22 (healers can go at 21). If not, grind a little near the keep entrance.
+  level 22 -- You need to be level 22
 
 step
   zone map 1421
-  task "Enter Shadowfang Keep to the south" optional
-  task "* Shadowfang Keep — Lv22.0 -> about Lv23.1 · recommended Lv21-22 (healer 21 · tank/DPS 22)" optional
-  goto 44.8,67.8 r 20 map 1421
+  goto 44.8,67.8 r 20 map 1421 -- Enter Shadowfang Keep to the south
 
 step
-  task "[Dungeon] Shadowfang Keep: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Shadowfang Keep). The tab leads you to the door, then hands the quests in." optional
-  task "Done with Shadowfang Keep in its tab (run and hand-ins)? Tick this to go on with the leveling route."
+  task "[Dungeon] Shadowfang Keep: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Shadowfang Keep). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1421
-  task "[Heads-up] Soon you hearth to The Crossroads. Keep your Hearthstone until then and check its cooldown now." optional
-  task "Turn in to Dalar Dawnweaver at the Sepulcher: Arugal Must Die" optional
-  turnin 1014 npc 1938
+  turnin 1014 npc 1938 -- [Heads-up] Hearth to The Crossroads soon — keep your Hearthstone
 
 step
   when level<25
@@ -1341,10 +1105,7 @@ step
   turnin 95981 npc 2121
 
 step
-  task "== Shadowfang Keep turn-ins == Undercity Fly to Undercity (if you don't have the flight path, run)." optional
   fly "Undercity"
-  task ">> Next dungeon: Blackfathom Deeps (at about Lv24) — about Lv23.1 now. You don't have the Zoram'gar flight path yet, so walk there through Stonetalon Mountains via Sun Rock Retreat, doing the quests on the way." optional
-  task "! Your Hearthstone should be set to the Crossroads. If not, fly or run to the Crossroads instead." optional
 
 step
   when complete 1013
@@ -1356,34 +1117,27 @@ step
   hearth "The Crossroads"
 
 step
-  task "Ratchet Fly to Ratchet." optional
-  task "The Crossroads Hearth to the Crossroads (if your Hearthstone is on cooldown, take the zeppelin to Orgrimmar from the tower east of Undercity, then go to the Crossroads)." optional
   fly "Ratchet"
 
 step
   when level<24
   zone map 1413
-  task "Accept from Mebok Mizzyrix: Deepmoss Spider Eggs" optional
   accept 1069 npc 3446
 
 step
-  task "The Crossroads Fly to the Crossroads." optional
   fly "Crossroads"
 
 step
   zone map 1442
-  task "Go to this point." optional
   goto 70,87 r 20 map 1442
 
 step
   zone map 1442
-  task "Wait for Kaya Flathoof to appear." optional
-  goto 73.4,85.6 r 20 map 1442
+  goto 73.4,85.6 r 20 map 1442 -- Wait for Kaya Flathoof to appear
 
 step
   zone map 1442
-  task "Head into Stonetalon Mountains. Turn left at this point to get up the hill." optional
-  goto 69,88.6 r 20 map 1442
+  goto 69,88.6 r 20 map 1442 -- Head into Stonetalon Mountains
 
 step
   when level<23
@@ -1392,93 +1146,76 @@ step
 
 step
   zone map 1442
-  task "Go to the Webwinder Path at this point." optional
-  goto 53,76 r 20 map 1442
+  goto 53,76 r 20 map 1442 -- Go to the Webwinder Path at this point
 
 step
   when level<23
   zone map 1442
-  task "Kill spiders: Blood Feeders" optional
-  kill 4005 quest 6461.1
+  kill 4005 quest 6461.1 -- Kill spiders
   kill 4007 quest 6461.2
 
 step
   when level<24
   zone map 1442
-  task "Pick up the eggs: Deepmoss Spider Eggs" optional
-  collect 5570 quest 1069.1
+  collect 5570 quest 1069.1 -- Pick up the eggs
 
 step
   when level<23
   zone map 1442
-  task "Go back to Malaka'jin and turn in Blood Feeders" optional
   turnin 6461 npc 12816
 
 step
   when level>=23
   when complete 6461
   zone map 1442
-  task "Go back to Malaka'jin and turn in Blood Feeders" optional
   turnin 6461 npc 12816
 
 step
   zone map 1442
-  task "Go to this point and head west to reach Sun Rock Retreat." optional
-  goto 52,60 r 20 map 1442
+  goto 52,60 r 20 map 1442 -- Go to this point and head west to reach Sun Rock Retreat
 
 step
   along until q6562
   zone map 1442
-  accept 6562 npc 11862 optional -- (Optional) Accept from Tsunaman: Trouble in the Deeps — a breadcrumb to Zoram'gar. You can get every Blackfathom quest without it.
+  accept 6562 npc 11862 optional -- Accept from Tsunaman: Trouble in the Deeps — a breadcrumb to Zoram'gar
 
 step
   zone map 1442
-  task "Discover the Sun Rock Retreat flight path." optional
   getfp "Sun Rock Retreat"
 
 step
   zone map 1440
-  task "Discover the Zoram'gar Outpost flight path." optional
-  task "From Sun Rock Retreat, follow the road north out of Stonetalon Mountains to Zoram'gar Outpost on the west coast of Ashenvale (on foot if you don't have the Zoram'gar flight path yet)." optional
   getfp "Zoram'gar Outpost"
-  task "! After Shadowfang you are about level 23. Reach 24 with the Zoram Strand naga and the sapphires in the Blackfathom entrance cave (party recommended), then go into Blackfathom Deeps." optional
 
 step
   when onquest 6562
   label q6562
   zone map 1440
-  task "(Optional) Turn in to Je'neu Sancrea at Zoram'gar Outpost: Trouble in the Deeps" optional
   turnin 6562 npc 12736
 
 step
   zone map 1440
-  task "Accept (or get it shared): The Essence of Aku'Mai" optional
   accept 6563 npc 12736
 
 step
   zone map 1440
-  task "Accept (or get it shared): Amongst The Ruins" optional
   accept 6921 npc 12736
 
 step
   zone map 1440
-  task "Accept from Marukai at Zoram'gar Outpost: Naga at the Zoram Strand" optional
   accept 6442 npc 12719
 
 step
   zone map 1440
-  task "Kill Wrathtail naga on the coast north of Zoram'gar for 20 heads: Naga at the Zoram Strand" optional
-  complete 6442 @13,24 map 1440
+  complete 6442 @13,24 map 1440 -- Kill Wrathtail naga on the coast north of Zoram'gar for 20 heads
 
 step
   zone map 1440
-  task "Turn in to Marukai: Naga at the Zoram Strand" optional
   turnin 6442 npc 12719
 
 step
   zone map 1440
-  task "(party recommended) Mine 20 Sapphires of Aku'Mai from the walls of the Blackfathom entrance cave on the north coast (before the dungeon portal): The Essence of Aku'Mai" optional
-  collect 16784 quest 6563.1 @13.5,12.5 map 1440
+  collect 16784 quest 6563.1 @13.5,12.5 map 1440 -- Mine 20 Sapphires of Aku'Mai from the walls of the Blackfathom entra…
 
 step
   zone map 1440
@@ -1486,19 +1223,15 @@ step
 
 step
   along
-  level 24 -- You need to be level 24 (tanks and DPS are better at 25). If not, grind a little around Zoram'gar.
+  level 24 -- You need to be level 24
 
 step
   zone map 1440
-  task "Enter Blackfathom Deeps on the north coast (underwater passage)" optional
-  task "* Blackfathom Deeps — Lv24.0 -> about Lv25.3 · recommended Lv24-25 (healer 24 · tank/DPS 25)" optional
-  goto 14.2,14 r 20 map 1440
+  goto 14.2,14 r 20 map 1440 -- Enter Blackfathom Deeps on the north coast
 
 step
-  task "[Dungeon] Blackfathom Deeps: open its quests in a dungeon tab — on the Polestar heads-up card press \"Pick up the quests\" (no card? type /polestar dungeontoast Blackfathom Deeps). The tab leads you to the door, then hands the quests in." optional
-  task "Done with Blackfathom Deeps in its tab (run and hand-ins)? Tick this to go on with the leveling route."
+  task "[Dungeon] Blackfathom Deeps: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackfathom Deeps). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1440
-  task "Turn in to Je'neu Sancrea at Zoram'gar Outpost: Amongst The Ruins" optional
   turnin 6921 npc 12736

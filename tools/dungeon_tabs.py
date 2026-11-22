@@ -61,14 +61,11 @@ def apply(g, log):
             en, ko = pending
             en = EN_NAME.get(ko, en)
             out.append({'goals': [
-                {'t': 'note', 'text': T(
-                    '[Dungeon] %s: open its quests in a dungeon tab — on the Polestar heads-up card press "Pick up the quests" '
-                    '(no card? type /polestar dungeontoast %s). The tab leads you to the door, then hands the quests in.' % (en, en),
-                    '[던전] %s: 던전 탭으로 진행하세요 — Polestar 던전 알림 카드에서 "퀘스트 수집"을 누르세요 '
-                    '(카드가 없으면 /polestar dungeontoast %s). 탭이 입구까지 데려가고, 끝나면 제출 동선으로 바뀝니다.' % (ko, ko))},
                 {'t': 'note', 'hold': True, 'text': T(
-                    'Done with %s in its tab (run and hand-ins)? Tick this to go on with the leveling route.' % en,
-                    '%s 던전 탭(던전·제출)을 마쳤으면 체크하세요. 레벨업 동선을 이어 갑니다.' % ko)},
+                    '[Dungeon] %s: on the Polestar dungeon card press "Pick up the quests" (no card: /polestar dungeontoast %s). '
+                    'Tick this when the run and hand-ins in that tab are done.' % (en, en),
+                    '[던전] %s: Polestar 던전 알림 카드에서 "퀘스트 수집"을 누르세요 (카드가 없으면 /polestar dungeontoast %s). '
+                    '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, ko))},
             ], '_holds': True, '_block': None, '_gated': False})
             out.extend(kept_along)
             taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')
