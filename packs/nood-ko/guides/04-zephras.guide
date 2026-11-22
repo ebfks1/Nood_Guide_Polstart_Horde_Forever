@@ -373,6 +373,7 @@ step
 step
   zone map 2521
   task "완료: 셴다르 마을에 오신 것을 환영합니다 (순경 아온다)" optional
+  complete 92514
   turnin 92514 npc 251523
 
 step

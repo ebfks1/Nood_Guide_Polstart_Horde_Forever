@@ -416,7 +416,7 @@ step
 step
   zone map 1421
   task "북쪽 죽음의 농장에서 썩은가죽 놀을 잡다 보면 나타나는 나이트래쉬를 처치하고 정수를 챙기세요: 죽음의 농장" optional
-  collect 3622 quest 437.1 @45,21 map 1421
+  complete 437 @45,21 map 1421
 
 step
   zone map 1421

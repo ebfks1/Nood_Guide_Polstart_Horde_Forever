@@ -517,6 +517,7 @@ step
   when onquest 1149
   zone map 1441
   task "순간이동한 뒤에 뛰어내리세요. 퀘스트 완료: 믿음의 시험" optional
+  complete 1149
   turnin 1149 npc 2986
 
 step

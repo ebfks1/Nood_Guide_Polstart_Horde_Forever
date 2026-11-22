@@ -373,6 +373,7 @@ step
 step
   zone map 2521
   task "Turn in Welcome to Shen'dar Village (Constable Aonda)" optional
+  complete 92514
   turnin 92514 npc 251523
 
 step

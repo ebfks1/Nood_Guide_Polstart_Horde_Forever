@@ -416,7 +416,7 @@ step
 step
   zone map 1421
   task "At the Dead Fields to the north, kill Rot Hide gnolls until Nightlash appears, then kill her and take her essence: The Dead Fields" optional
-  collect 3622 quest 437.1 @45,21 map 1421
+  complete 437 @45,21 map 1421
 
 step
   zone map 1421

@@ -517,6 +517,7 @@ step
   when onquest 1149
   zone map 1441
   task "After you're teleported, jump off. Turn in Test of Faith" optional
+  complete 1149
   turnin 1149 npc 2986
 
 step
