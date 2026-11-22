@@ -700,6 +700,7 @@ step
 step
   zone map 2521
   task "== Windfield Orchard (southwest) == Turn in Blood Tithe (Aamelia Windfield)" optional
+  complete 92679
   turnin 92679 npc 252800
 
 step

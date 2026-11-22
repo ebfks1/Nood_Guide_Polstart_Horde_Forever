@@ -700,6 +700,7 @@ step
 step
   zone map 2521
   task "── 윈드필드 과수원 (서남쪽) ── 완료: 붉은 헌금 (아멜리아 윈드필드)" optional
+  complete 92679
   turnin 92679 npc 252800
 
 step
