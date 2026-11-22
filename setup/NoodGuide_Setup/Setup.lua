@@ -1,5 +1,5 @@
 -- Nood Guide for Polestar (NoodGuide_Setup): sets a few Polestar options once, so the guide behaves like the Guidelime BalCon guide it is based on.
--- Nood 가이드: 발컨 가이드처럼 동작하도록 Polestar 옵션 몇 가지를 처음 한 번만 맞춥니다.
+-- Nood 가이드: 발컨 가이드처럼 동작하도록 Polestar 옵션 몇 가지를 처음 한 번만 맞춥니다 (새로 추가된 옵션은 업데이트 후 한 번).
 --   /nood                       다시 적용 · apply again
 --   /nood undo (되돌리기)        바꾸기 전 값으로 · back to the values from before
 local KO = GetLocale and GetLocale() == "koKR"
@@ -19,6 +19,8 @@ local WANT = {
 		"다음 단계 목록을 펼친 채로 둡니다", "the list of next steps starts opened" },
 	{ "behavior.closeSkipped", false,
 		"가이드에 없는 퀘스트 창을 자동으로 닫지 않습니다", "quest windows the guide does not use are not closed for you" },
+	{ "behavior.lostQuests", "skip",
+		"퀘스트를 포기하면 가이드가 그 퀘스트와 이어지는 단계를 건너뜁니다", "abandoning a quest skips it and what follows in the guide" },
 }
 
 local function ready()
@@ -29,19 +31,30 @@ local function apply(again)
 	if not ready() then return end
 	NoodGuideDB = type(NoodGuideDB) == "table" and NoodGuideDB or {}
 	local db = NoodGuideDB
-	if db.applied and not again then return end
 	db.prev = type(db.prev) == "table" and db.prev or {}
-	print(TAG .. (KO and "Polestar 옵션을 Nood 가이드에 맞췄습니다 (되돌리기: /nood undo)" or "Polestar options set for Nood Guide (to undo: /nood undo)"))
+	db.done = type(db.done) == "table" and db.done or {}
+	if db.applied == 1 then -- set by 1.0.5 and before: those options are done already
+		for i = 1, 6 do db.done[WANT[i][1]] = true end
+		db.applied = 2
+	end
+	local said = false
 	for _, w in ipairs(WANT) do
 		local path, value = w[1], w[2]
+		if again or not db.done[path] then
+		db.done[path] = true
+		if not said then
+			said = true
+			print(TAG .. (KO and "Polestar 옵션을 Nood 가이드에 맞췄습니다 (되돌리기: /nood undo)" or "Polestar options set for Nood Guide (to undo: /nood undo)"))
+		end
 		local ok, now = pcall(Polestar.Get, path)
 		if ok and now ~= value then
 			if db.prev[path] == nil then db.prev[path] = { v = now } end
 			pcall(Polestar.Set, path, value)
 			print("  - " .. (KO and w[3] or w[4]))
 		end
+		end
 	end
-	db.applied = 1
+	db.applied = 2
 end
 
 local function undo()
