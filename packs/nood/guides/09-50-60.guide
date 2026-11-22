@@ -2683,6 +2683,7 @@ step
 step
   zone map 1454
   task "In Orgrimmar, turn in to Thrall: Eitrigg's Wisdom (talk to Eitrigg first) — Dungeon chain (Lower Blackrock Spire)" optional
+  complete 4941
   turnin 4941 npc 4949
 
 step

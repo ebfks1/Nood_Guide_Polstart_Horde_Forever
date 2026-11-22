@@ -320,6 +320,7 @@ step
 step
   zone map 1454
   task "던전을 나와 스랄에게 퀘스트 완료: 내부의 배신자" optional
+  complete 5728
   turnin 5728 npc 4949
 
 step

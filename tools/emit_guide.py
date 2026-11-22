@@ -81,6 +81,7 @@ def named(kind, id, name):
 
 
 ELITE = set(C.CI.get('elite', []))
+NEEDS_WORK = set(C.CI.get('needs_work', []))
 
 
 def splittable(qid, place):
@@ -151,7 +152,9 @@ def goal_lines(g, lang, along, stats):
     if t == 'complete':
         # one goal per objective wherever the data allows: Polestar's "While you're here" panel (Dynamic Questing)
         # offers kill/collect/interact goals of later steps when you pass them, never a whole-quest `complete`
-        if written:  # the guide's hunting spot: split only when nothing is lost
+        if g['quest'] in NEEDS_WORK:  # an objective the tables miss (a talk, an event): the quest as a whole
+            objs = None
+        elif written:  # the guide's hunting spot: split only when nothing is lost
             objs = quest_objectives(g['quest']) if known and splittable(g['quest'], g) else None
         else:  # placed by the data, as before
             objs = quest_objectives(g['quest']) if known and 'map' in g else None
@@ -260,9 +263,18 @@ def guide_text(g, guides, lang, pack, stats):
         L.append('next %s/%s' % (pack['id'], nxt.slug))
     L.append('# Written by tools/emit_guide.py from %s.lua (BalCon %s). Edit the converter, not this file.' % (g.stem, C.SRC_VERSION))
     heads = hearth_notices(g)
+    worked = set()
     for si, st in enumerate(g.steps):
         goals = []
         for goal in st['goals']:
+            q = goal.get('quest')
+            if goal['t'] in ('complete', 'kill', 'collect', 'interact'):
+                worked.add(q)
+            elif goal['t'] == 'turnin' and q in NEEDS_WORK and q not in worked:
+                # the playtest could not hand it in: no goal worked an objective; do the quest first
+                goals.append('complete %d' % q)
+                worked.add(q)
+                stats['complete added before a hand-in'] += 1
             goals += goal_lines(goal, lang, bool(st.get('along')), stats)
         if not goals:
             continue

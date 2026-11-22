@@ -320,6 +320,7 @@ step
 step
   zone map 1454
   task "Leave the dungeon and turn in to Thrall: Hidden Enemies" optional
+  complete 5728
   turnin 5728 npc 4949
 
 step

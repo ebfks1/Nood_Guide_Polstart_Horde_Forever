@@ -179,6 +179,7 @@ step
 step
   zone map 2521
   task "완료: 창공안의 선물 (벤타리 브라이트위시)" optional
+  complete 92598
   turnin 92598 npc 251487
 
 step

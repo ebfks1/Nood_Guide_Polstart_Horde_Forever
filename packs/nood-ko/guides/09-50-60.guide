@@ -2683,6 +2683,7 @@ step
 step
   zone map 1454
   task "오그리마 스랄에게 퀘스트 완료: 아이트리그의 지혜 (아이트리그와 먼저 대화) — ◆던전 연계(검은바위 첨탑 하층)" optional
+  complete 4941
   turnin 4941 npc 4949
 
 step

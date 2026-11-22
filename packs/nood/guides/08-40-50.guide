@@ -1260,6 +1260,7 @@ step
 
 step
   accept 2278 -- Speak with the stone watcher in front of the Discs of Norgannon, then activate the discs: The Platinum Discs — *Reward chain
+  complete 2278
   turnin 2278 -- Talk to the Stone Watcher again to turn in The Platinum Discs — *Reward chain
   accept 2280 -- Click the discs again for the follow-up (turned in to a sage in Thunder Bluff during 45-60): The Platinum Discs — *Reward
 

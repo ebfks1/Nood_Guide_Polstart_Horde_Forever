@@ -336,7 +336,7 @@ step
   when level<29
   zone map 1440
   task "Kill Tideress near the hut on the small island in the middle: Stonetalon Standstill" optional
-  kill 3917 quest 25.1
+  complete 25
 
 step
   when level<31

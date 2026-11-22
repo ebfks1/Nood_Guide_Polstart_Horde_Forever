@@ -336,7 +336,7 @@ step
   when level<29
   zone map 1440
   task "가운데에 있는 작은 섬 움막 근처에 있는 타이더레스를 처치하세요: 돌발톱 산맥의 정체 해결" optional
-  kill 3917 quest 25.1
+  complete 25
 
 step
   when level<31

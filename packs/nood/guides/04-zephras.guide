@@ -179,6 +179,7 @@ step
 step
   zone map 2521
   task "Turn in The Gift of Skysight (Ventaari Brightwish)" optional
+  complete 92598
   turnin 92598 npc 251487
 
 step
