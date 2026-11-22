@@ -38,7 +38,16 @@ jobs:
 
       - name: Polestar commit
         id: ref
-        run: echo "sha=$(head -n1 tools/polestar.ref | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+        run: |
+          # tools/polestar.ref: a commit, or "latest" for Polestar's newest release tag (vX.Y.Z[.W])
+          r=$(head -n1 tools/polestar.ref | tr -d '[:space:]')
+          if [ "$r" = "latest" ]; then
+            tag=$(git ls-remote --tags https://github.com/fitzforge/polestar.git | grep -oE 'refs/tags/v[0-9]+(\.[0-9]+)+$' | sed 's#refs/tags/##' | sort -V | tail -n1)
+            r=$(git ls-remote https://github.com/fitzforge/polestar.git "refs/tags/$tag^{}" | cut -f1)
+            [ -n "$r" ] || r=$(git ls-remote https://github.com/fitzforge/polestar.git "refs/tags/$tag" | cut -f1)
+            echo "Polestar latest: $tag ($r)"
+          fi
+          echo "sha=$r" >> "$GITHUB_OUTPUT"
 
       - name: Restore Polestar tools
         id: cache
