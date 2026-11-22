@@ -1022,7 +1022,7 @@ step
 step
   zone map 2521
   task "동쪽 조렐 윈드싱어 일행:" optional
-  kill 258134 quest 94489.1 @64.5,34.5 map 2521
+  complete 94489 @64.5,34.5 map 2521
 
 step
   zone map 2521
