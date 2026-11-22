@@ -854,6 +854,7 @@ step
   only Shaman
   zone map 2521
   task "완료: 불의 부름 (세사리아 스카이스트라이드)" optional
+  complete 97257
   turnin 97257 npc 252382
 
 step
@@ -891,6 +892,7 @@ step
 step
   zone map 2521
   task "완료: 마지막 부탁 (순경 아온다)" optional
+  complete 93927
   turnin 93927 npc 251523
 
 step

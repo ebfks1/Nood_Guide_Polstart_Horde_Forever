@@ -854,6 +854,7 @@ step
   only Shaman
   zone map 2521
   task "Turn in Call of Fire (Sessaria Skystride)" optional
+  complete 97257
   turnin 97257 npc 252382
 
 step
@@ -891,6 +892,7 @@ step
 step
   zone map 2521
   task "Turn in A Last Request (Constable Aonda)" optional
+  complete 93927
   turnin 93927 npc 251523
 
 step
