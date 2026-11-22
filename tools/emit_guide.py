@@ -119,7 +119,7 @@ def quest_objectives(qid):
     return sorted(out, key=lambda x: int(x.rsplit('.', 1)[1]))
 
 
-SIMPLE = bool(os.environ.get('NOOD_SIMPLE'))  # one line per action: no side notes, short goal notes
+SIMPLE = os.environ.get('NOOD_SIMPLE', '1') != '0'  # one line per action: no side notes, short goal notes
 AUTO_TEXT = ('accept', 'turnin', 'getfp', 'fly', 'sethome', 'hearth', 'level')  # Polestar words these itself
 
 
@@ -374,7 +374,7 @@ addon lists those sources in LICENSE-DATA.txt.
 def main():
     import collections
     guides = []
-    tabs = [x for x in os.environ.get('NOOD_DUNGEON_TABS', '').split(',') if x]  # test builds: guides whose runs go to tabs
+    tabs = [x for x in os.environ.get('NOOD_DUNGEON_TABS', '05').split(',') if x]  # guides whose dungeon runs go to Polestar dungeon tabs (1.0.6: 12-25)
     for spec in C.GUIDES:
         g = C.Guide(*spec)
         g.convert()

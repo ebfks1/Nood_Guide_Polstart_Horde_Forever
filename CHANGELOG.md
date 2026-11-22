@@ -1,5 +1,18 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.6
+- 가이드를 단순하게 바꿨습니다: 한 단계에 할 일 한 줄. 하면 그 줄이 사라지고 다음 단계로 넘어갑니다. 되풀이 설명·구간 제목·참고 메모 줄을 없애고, 꼭 필요한 안내만 목표 밑에 짧게 남겼습니다.
+- 퀘스트를 포기하면 가이드가 그 퀘스트와 이어지는 단계를 바로 건너뜁니다 (Polestar 옵션 "가이드 퀘스트를 포기했을 때 → 항상 건너뛰기"를 자동 설정, /nood undo 로 되돌리기).
+- 12-25 던전은 Polestar 던전 탭으로 진행합니다: 던전 알림 카드에서 "퀘스트 수집"을 누르면 새 탭에 수집·던전·제출 안내가 열립니다.
+- Polestar 자동 플레이 시험에서 막히던 퀘스트 12건을 고쳤습니다.
+- Polestar 0.4.2 이상이 필요합니다.
+
+- The guide is simpler: one line per step; do it and the line goes, the next step follows. Restated descriptions, section headers and side notes are gone; only the short tips that matter stay under the goal.
+- Abandon a quest and the guide skips it and what follows at once (sets Polestar's "When you abandon a guide quest" to "Always skip it"; /nood undo to revert).
+- The 12-25 dungeons run in Polestar's dungeon tabs: press "Pick up the quests" on the dungeon card and a new tab guides the pickup, the run and the hand-ins.
+- Fixed 12 quests where Polestar's playtest got stuck.
+- Needs Polestar 0.4.2 or later.
+
 ## 1.0.5
 - 단계 맨 위 설명에도 체크박스를 달았습니다. 몹 처치·퀘템 루팅처럼 오래 걸리는 단계에서도 한 번 읽고 체크하면 접혀서 사라집니다.
 - 귀환석을 쓰기 몇 단계 전에 "[알림]" 줄로 미리 알려 줍니다 (귀환석을 아껴 두고 재사용 대기시간 확인).
