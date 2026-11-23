@@ -80,9 +80,9 @@ def apply(g, log):
             out.extend(kept_along)  # along steps first: they run "until" the run, whose label goes to the tab step
             out.append({'goals': [
                 {'t': 'note', 'hold': True, 'text': T(
-                    '[Dungeon] %s: on the Polestar dungeon card press "Pick up the quests" (no card: /polestar dungeontoast %s). '
-                    'Tick this when the run and hand-ins in that tab are done.' % (en, en),
-                    '[던전] %s: Polestar 던전 알림 카드에서 "퀘스트 수집"을 누르세요 (카드가 없으면 /polestar dungeontoast %s). '
+                    '[Dungeon] %s — the Polestar dungeon card opens by itself: press "Pick up the quests". '
+                    'Tick this when the run and hand-ins in the new tab are done.' % en,
+                    '[던전] %s (%s) — Polestar 던전 카드가 저절로 뜹니다: "퀘스트 수집"을 누르세요. '
                     '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, en))},
             ], '_holds': True, '_block': None, '_gated': False,
                 'label': next((s['label'] for s in run if not s.get('along') and s.get('label')), None)})

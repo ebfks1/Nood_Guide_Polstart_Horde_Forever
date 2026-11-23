@@ -67,13 +67,88 @@ local function undo()
 	print(TAG .. (KO and "Polestar 옵션을 바꾸기 전 값으로 되돌렸습니다." or "Polestar options are back to their values from before."))
 end
 
+
+---------------------------------------------------------------------------
+-- 던전 카드 자동 표시: Nood 가이드의 진행 단계가 "[던전] 이름 (English)" 줄이면
+-- Polestar 던전 카드("퀘스트 수집")를 명령어 없이 띄웁니다. 단계마다 한 번 (다시 접속하면 다시).
+---------------------------------------------------------------------------
+local told, waiting = {}, nil
+
+local function dungeonOfStep(guide, i)
+	local st = guide and guide.steps and guide.steps[i]
+	if not st or not st.goals then return nil end
+	for _, g in ipairs(st.goals) do
+		local t = type(g) == "table" and g.text
+		if type(t) == "string" then
+			local en = t:match("^%[던전%][^(]-%(([^)]+)%)") or t:match("^%[Dungeon%]%s*(.-)%s+—")
+			if en then return (en:gsub("^%s+", ""):gsub("%s+$", "")) end
+		end
+	end
+end
+
+local function showCard(name)
+	local Dg, DT = Polestar.Dungeons, Polestar.UI and Polestar.UI.DungeonToast
+	if not (Dg and Dg.Find and DT and DT.Show) then return true end
+	local key = Dg.Find(name)
+	if not key then return true end
+	local c
+	for _, x in ipairs(DT.Candidates and DT.Candidates(nil, "any") or {}) do
+		if x.key == key then c = x break end
+	end
+	if not c and Dg.Get and Dg.PickupPlan then
+		local d, plan = Dg.Get(key), Dg.PickupPlan(key)
+		local take = plan and plan.take and #plan.take or 0
+		if not d or take == 0 then
+			print(TAG .. (KO and (name .. ": 지금 받을 던전 퀘스트가 없습니다. 던전을 하셨다면 그 줄을 체크하고 넘어가세요.")
+				or (name .. ": no dungeon quests to pick up now. Tick the line to move on.")))
+			return true
+		end
+		c = { key = key, name = d.name, zoneName = d.zoneName, minLevel = d.minLevel, maxLevel = d.maxLevel,
+			take = take, level = UnitLevel("player"), all = true }
+	end
+	return c and DT.Show(c) and true or false
+end
+
+local function checkDungeonStep()
+	if not ready() then return end
+	local E = Polestar.Engine
+	local guide = E and E.GetGuide and E.GetGuide()
+	if not guide or type(guide.id) ~= "string" or not guide.id:lower():find("nood", 1, true) then return end
+	local i = E.GetLiveStep and E.GetLiveStep()
+	if type(i) ~= "number" then return end
+	local name = dungeonOfStep(guide, i)
+	local mark = name and (guide.id .. "#" .. i)
+	if not name or told[mark] then return end
+	if InCombatLockdown() then waiting = true return end
+	local ok, shown = pcall(showCard, name)
+	if not ok or shown then told[mark] = true else waiting = true end
+end
+
+local function soon() C_Timer.After(2, checkDungeonStep) end
+
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LOGIN")
-f:SetScript("OnEvent", function() apply(false) end)
+f:RegisterEvent("PLAYER_REGEN_ENABLED")
+f:SetScript("OnEvent", function(_, event)
+	if event == "PLAYER_LOGIN" then
+		apply(false)
+		if ready() and Polestar.On then
+			Polestar.On("STEP_CHANGED", soon)
+			Polestar.On("GUIDE_CHANGED", soon)
+			Polestar.On("HEADS_UP_HIDDEN", function() if waiting then waiting = nil soon() end end)
+		end
+		C_Timer.After(8, checkDungeonStep)
+	elseif waiting then
+		waiting = nil
+		soon()
+	end
+end)
 
 SLASH_NOODGUIDE1 = "/nood"
 SLASH_NOODGUIDE2 = "/noodguide"
 SlashCmdList["NOODGUIDE"] = function(msg)
 	msg = (msg or ""):lower()
-	if msg:find("undo", 1, true) or msg:find("되돌리기", 1, true) then undo() else apply(true) end
+	if msg:find("undo", 1, true) or msg:find("되돌리기", 1, true) then undo()
+	elseif msg:find("dungeon", 1, true) or msg:find("던전", 1, true) then wipe(told) checkDungeonStep()
+	else apply(true) end
 end
