@@ -73,6 +73,13 @@ end
 -- Polestar 던전 카드("퀘스트 수집")를 명령어 없이 띄웁니다. 단계마다 한 번 (다시 접속하면 다시).
 ---------------------------------------------------------------------------
 local told, waiting = {}, nil
+-- the guide compiler writes a dungeon's name as {area:ID}; its English name for Polestar.Dungeons.Find
+local AREA_EN = {
+	[2437] = "Ragefire Chasm", [153] = "Ruins of Lordaeron", [718] = "Wailing Caverns", [236] = "Shadowfang Keep",
+	[2797] = "Blackfathom Deeps", [17732] = "Excavation Site: Wetlands", [1717] = "Razorfen Kraul", [796] = "Scarlet Monastery",
+	[1517] = "Uldaman", [978] = "Zul'Farrak", [2100] = "Maraudon", [1417] = "Sunken Temple", [1584] = "Blackrock Depths",
+	[1583] = "Blackrock Spire", [2279] = "Stratholme", [722] = "Razorfen Downs",
+}
 
 local function dungeonOfStep(guide, i)
 	local st = guide and guide.steps and guide.steps[i]
@@ -81,7 +88,16 @@ local function dungeonOfStep(guide, i)
 		local t = type(g) == "table" and g.text
 		if type(t) == "string" then
 			local en = t:match("^%[던전%][^(]-%(([^)]+)%)") or t:match("^%[Dungeon%]%s*(.-)%s+—")
-			if en then return (en:gsub("^%s+", ""):gsub("%s+$", "")) end
+			if en then
+				en = en:gsub("^%s+", ""):gsub("%s+$", "")
+				-- the compiler writes a place's name as {area:ID}: the game's own name for it
+				en = en:gsub("{area:(%d+)}", function(id)
+					if AREA_EN[tonumber(id)] then return AREA_EN[tonumber(id)] end
+					local ok, name = pcall(C_Map.GetAreaInfo, tonumber(id))
+					return ok and type(name) == "string" and name or ""
+				end)
+				if en ~= "" then return en end
+			end
 		end
 	end
 end
