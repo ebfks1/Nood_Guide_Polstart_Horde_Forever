@@ -1,5 +1,16 @@
 # Nood 가이드 — 변경 내역 / Changelog
 
+## 1.0.7
+- 25-60 던전도 Polestar 던전 탭으로 진행합니다 (발굴 현장: 저습지, 달라란, 가시덩굴 우리, 붉은십자군 수도원, 울다만, 줄파락, 마라우돈, 아탈학카르 신전, 검은바위 나락, 검은바위 첨탑, 스트라솔름).
+- 던전 차례가 되면 Polestar 던전 카드가 저절로 뜹니다. 명령어 없이 "퀘스트 수집"만 누르면 됩니다.
+- 던전 퀘스트의 제출 단계는 퀘스트를 완료했을 때만 나옵니다 (던전 탭에서 이미 냈거나 던전을 건너뛰면 저절로 지나갑니다).
+- 던전 안에서만 받는 퀘스트의 단계는 본 가이드에서 뺐습니다 (던전 탭이 안내합니다).
+
+- The 25-60 dungeons also run in Polestar's dungeon tabs.
+- At a dungeon step the Polestar dungeon card opens by itself: just press "Pick up the quests", no command needed.
+- A dungeon quest's hand-in step shows only once the quest is done (handed in from the tab, or the dungeon skipped: it passes by itself).
+- Steps of quests picked up only inside a dungeon left the main guide (the dungeon tab has them).
+
 ## 1.0.6
 - 가이드를 단순하게 바꿨습니다: 한 단계에 할 일 한 줄. 하면 그 줄이 사라지고 다음 단계로 넘어갑니다. 되풀이 설명·구간 제목·참고 메모 줄을 없애고, 꼭 필요한 안내만 목표 밑에 짧게 남겼습니다.
 - 퀘스트를 포기하면 가이드가 그 퀘스트와 이어지는 단계를 바로 건너뜁니다 (Polestar 옵션 "가이드 퀘스트를 포기했을 때 → 항상 건너뛰기"를 자동 설정, /nood undo 로 되돌리기).
