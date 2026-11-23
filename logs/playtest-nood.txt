@@ -1,0 +1,66 @@
+ok  nood/01-durotar (Orc Warlock)
+ok  nood/01-durotar (Orc Warrior)
+ok  nood/01-durotar (Orc Hunter)
+ok  nood/01-durotar (Orc Rogue)
+ok  nood/01-durotar (Orc Shaman)
+ok  nood/01-durotar (Orc Mage)
+ok  nood/01-durotar (Troll Warlock)
+ok  nood/01-durotar (Troll Warrior)
+ok  nood/01-durotar (Troll Hunter)
+ok  nood/01-durotar (Troll Rogue)
+ok  nood/01-durotar (Troll Priest)
+ok  nood/01-durotar (Troll Shaman)
+ok  nood/01-durotar (Troll Mage)
+ok  nood/02-mulgore (Tauren Druid)
+ok  nood/02-mulgore (Tauren Hunter)
+ok  nood/02-mulgore (Tauren Shaman)
+ok  nood/02-mulgore (Tauren Warrior)
+ok  nood/03-tirisfal (Undead Paladin)
+ok  nood/03-tirisfal (Undead Priest)
+ok  nood/03-tirisfal (Undead Warrior)
+ok  nood/04-zephras (Skyborne Hunter)
+ok  nood/04-zephras (Skyborne Rogue)
+ok  nood/04-zephras (Skyborne Shaman)
+ok  nood/04-zephras (Skyborne Druid)
+ok  nood/04-zephras (Skyborne Warrior)
+fail nood/05-12-25 (Tauren Warrior): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Tauren Shaman): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Tauren Hunter): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Skyborne Warrior): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Skyborne Shaman): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Skyborne Hunter): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Undead Warrior): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Undead Priest): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Undead Warlock): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Undead Paladin): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Orc Warrior): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Orc Shaman): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Orc Warlock): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Orc Hunter): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Troll Warrior): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Troll Shaman): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Troll Priest): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Troll Warlock): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/05-12-25 (Troll Hunter): no location for step 212 goal 1: accept Blackfathom Villainy
+fail nood/06-25-30 (Orc Warrior): no location for step 144 goal 1: accept Opportunistic Education
+fail nood/07-30-40 (Orc Warrior): no location for step 300 goal 1: accept Scourge of the Downs
+fail nood/07-30-40 (Orc Warrior): no location for step 300 goal 2: turnin Scourge of the Downs
+fail nood/07-30-40 (Orc Warrior): no location for step 300 goal 3: accept Extinguishing the Idol
+fail nood/07-30-40 (Orc Warrior): no location for step 300 goal 5: turnin Extinguishing the Idol
+fail nood/07-30-40 (Troll Warrior): no location for step 300 goal 1: accept Scourge of the Downs
+fail nood/07-30-40 (Troll Warrior): no location for step 300 goal 2: turnin Scourge of the Downs
+fail nood/07-30-40 (Troll Warrior): no location for step 300 goal 3: accept Extinguishing the Idol
+fail nood/07-30-40 (Troll Warrior): no location for step 300 goal 5: turnin Extinguishing the Idol
+fail nood/07-30-40 (Tauren Warrior): no location for step 300 goal 1: accept Scourge of the Downs
+fail nood/07-30-40 (Tauren Warrior): no location for step 300 goal 2: turnin Scourge of the Downs
+fail nood/07-30-40 (Tauren Warrior): no location for step 300 goal 3: accept Extinguishing the Idol
+fail nood/07-30-40 (Tauren Warrior): no location for step 300 goal 5: turnin Extinguishing the Idol
+fail nood/08-40-50 (Orc Warrior): no location for step 209 goal 3: accept Krol'dok No More!
+fail nood/08-40-50 (Orc Warrior): no location for step 215 goal 1: turnin Krol'dok No More!
+fail nood/09-50-60 (Orc Warrior): no location for step 311 goal 1: turnin Commander Gor'shak
+fail nood/09-50-60 (Orc Warrior): no location for step 311 goal 2: accept What Is Going On?
+fail nood/09-50-60 (Orc Warrior): no location for step 311 goal 4: turnin What Is Going On?
+fail nood/09-50-60 (Orc Warrior): no location for step 311 goal 5: accept What Is Going On?
+fail nood/09-50-60 (Orc Warrior): no location for step 406 goal 1: accept Seal of Ascension
+playtest failed: 9 guides, 50 plays: 0 stuck, 25 failed
+exit 1

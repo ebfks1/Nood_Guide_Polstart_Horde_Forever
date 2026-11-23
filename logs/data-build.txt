@@ -1,0 +1,42 @@
+fetching https://wago.tools/db2/UiMap/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/UiMapAssignment/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/AreaTable/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/Faction/csv?build=1.15.9.70576
+fetching https://wago.tools/db2/UiMap/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/UiMapAssignment/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/AreaTable/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ChrRaces/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ChrClasses/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/CharBaseInfo/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Faction/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Map/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/ItemSparse/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/Item/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/SpellName/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/SpellEffect/csv?build=1.60.1.70532
+fetching https://wago.tools/db2/QuestXP/csv?build=1.15.9.70003
+cloning https://github.com/shagu/pfQuest at 104f35678ca3 into /home/runner/work/_temp/polestar/data/sources/pfQuest
+fetching https://raw.githubusercontent.com/cmangos/classic-db/22b51464f1625f6ef6275771de1f5466c6f5d19e/Full_DB/ClassicDB_1_12_1_z2815.sql.gz
+Forever tables: no client or WoWDBDefs checkout found; reading the cached wago.tools CSVs
+loading pfQuest database from /home/runner/work/_temp/polestar/data/sources/pfQuest
+reading QuestieDB store /home/runner/work/_temp/questie/x-QuestieDB-1.1.4-all/QuestieDB/QuestieDB_Forever.toc
+QuestieDB Dynamic Corrections: 8 providers run as Horde and Alliance × 9 classes; 11 giver/ender lists unioned, 3 fields every character reads alike taken, 177 fields kept from the store (6 differ only by class), 0 writes skipped
+  unioned: Quest 7562 startedBy Quest 81951 finishedBy Npc 5676 spawns Npc 5677 spawns Npc 12138 spawns Npc 12144 spawns Npc 13778 spawns Npc 185335 spawns Object 103574 spawns Object 105175 spawns Object 177525 spawns
+  taken: Quest 78150 objectivesText Quest 79536 objectivesText Npc 13778 zoneID
+  kept from the store: Quest 113 nextQuestInChain Quest 709 nextQuestInChain Quest 1198 nextQuestInChain Quest 1198 breadcrumbForQuestId Quest 1393 reputationReward Quest 2954 nextQuestInChain Quest 3741 reputationReward Quest 4507 nextQuestInChain Quest 4985 nextQuestInChain Quest 5021 nextQuestInChain Quest 6804 reputationReward Quest 6981 nextQuestInChain Quest 8315 nextQuestInChain (class) Quest 8619 reputationReward Quest 8635 reputationReward Quest 8636 reputationReward Quest 8642 reputationReward Quest 8643 reputationReward Quest 8644 reputationReward Quest 8645 reputationReward Quest 8646 reputationReward Quest 8647 reputationReward Quest 8648 reputationReward Quest 8649 reputationReward Quest 8650 reputationReward Quest 8651 reputationReward Quest 8652 reputationReward Quest 8653 reputationReward Quest 8654 reputationReward Quest 8670 reputationReward Quest 8671 reputationReward Quest 8672 reputationReward Quest 8673 reputationReward Quest 8674 reputationReward Quest 8675 reputationReward Quest 8676 reputationReward Quest 8677 reputationReward Quest 8678 reputationReward Quest 8679 reputationReward Quest 8680 reputationReward Quest 8681 reputationReward Quest 8682 reputationReward Quest 8683 reputationReward Quest 8684 reputationReward Quest 8685 reputationReward Quest 8686 reputationReward Quest 8688 reputationReward Quest 8713 reputationReward Quest 8714 reputationReward Quest 8715 reputationReward Quest 8716 reputationReward Quest 8717 reputationReward Quest 8718 reputationReward Quest 8719 reputationReward Quest 8720 reputationReward Quest 8721 reputationReward Quest 8722 reputationReward Quest 8723 reputationReward Quest 8724 reputationReward Quest 8725 reputationReward Quest 8726 reputationReward Quest 8727 reputationReward Quest 8866 reputationReward Quest 8928 nextQuestInChain Quest 8977 nextQuestInChain (class) Quest 8978 nextQuestInChain (class) Quest 8996 nextQuestInChain Quest 8997 nextQuestInChain (class) Quest 8998 nextQuestInChain (class) Quest 9015 nextQuestInChain (class) Quest 78124 objectivesText Quest 78124 zoneOrSort Quest 78127 objectivesText Quest 78127 zoneOrSort Quest 78142 objectivesText Quest 78142 zoneOrSort Quest 78143 objectivesText Quest 78143 zoneOrSort Quest 78145 objectivesText Quest 78145 zoneOrSort Quest 78146 objectivesText Quest 78146 zoneOrSort Quest 78147 objectivesText Quest 78147 zoneOrSort Quest 78148 objectivesText Quest 78148 zoneOrSort Quest 78149 objectivesText Quest 78149 zoneOrSort Quest 78150 zoneOrSort Quest 79091 objectivesText Quest 79091 zoneOrSort Quest 79092 objectivesText Quest 79092 zoneOrSort Quest 79093 objectivesText Quest 79093 zoneOrSort Quest 79094 objectivesText Quest 79094 zoneOrSort Quest 79095 objectivesText Quest 79095 zoneOrSort Quest 79096 objectivesText Quest 79096 zoneOrSort Quest 79097 objectivesText Quest 79097 zoneOrSort Quest 79535 objectivesText Quest 79535 zoneOrSort Quest 79536 zoneOrSort Quest 79947 objectivesText Quest 79947 zoneOrSort Quest 79948 objectivesText Quest 79948 zoneOrSort Quest 79949 objectivesText Quest 79949 zoneOrSort Quest 79950 objectivesText Quest 79950 zoneOrSort Quest 79951 objectivesText Quest 79951 zoneOrSort Quest 79952 objectivesText Quest 79952 zoneOrSort Quest 79953 objectivesText Quest 79953 zoneOrSort Quest 81947 objectivesText Quest 81947 zoneOrSort Quest 81949 objectivesText Quest 81949 zoneOrSort Quest 81951 objectivesText Quest 81951 zoneOrSort Quest 81952 objectivesText Quest 81952 zoneOrSort Quest 81953 objectivesText Quest 81953 zoneOrSort Quest 81954 objectivesText Quest 81954 zoneOrSort Quest 81955 objectivesText Quest 81955 zoneOrSort Quest 81956 objectivesText Quest 81956 zoneOrSort Quest 82208 zoneOrSort Quest 84395 objectivesText Quest 84395 zoneOrSort Quest 84396 objectivesText Quest 84396 zoneOrSort Quest 84397 objectivesText Quest 84397 zoneOrSort Quest 84398 objectivesText Quest 84398 zoneOrSort Quest 84399 objectivesText Quest 84399 zoneOrSort Quest 84400 objectivesText Quest 84400 zoneOrSort Quest 84401 objectivesText Quest 84401 zoneOrSort Quest 84402 objectivesText Quest 84402 zoneOrSort Quest 91899 zoneOrSort Quest 91900 zoneOrSort Quest 91901 zoneOrSort Quest 91902 zoneOrSort Quest 91904 zoneOrSort Quest 91905 zoneOrSort Quest 91906 zoneOrSort Quest 91907 zoneOrSort Npc 5676 zoneID Npc 5677 zoneID Npc 6492 zoneID Npc 12138 zoneID Npc 12144 zoneID Npc 15898 zoneID Npc 16788 zoneID Npc 185335 zoneID Object 103574 zoneID Object 177525 zoneID Item 3713 npcDrops Item 3713 relatedQuests Item 15882 objectDrops Item 15883 objectDrops Item 17126 npcDrops Item 20810 npcDrops
+continent copies: 2 spawn points dropped from 2 NPCs and 0 objects
+private corrections: none found (public corrections only)
+recordings: 0 session(s) in /home/runner/work/_temp/polestar/data/recordings, 0 counted
+summoned vendors: 4 dropped as sellers (14337, 235164, 242498, 254695)
+learned layer: 45 quest fields from /home/runner/work/_temp/polestar/data/recorded/quests.json
+  Forever TDB: no /home/runner/work/_temp/polestar/data/local/forever-tdb/world.sqlite and no extract: the world builds without it
+spawn heights: 502 NPC floors from players' recordings (data/npc-floors.json)
+talk objectives: 40 quest(s) whose kill objective is a talk to a friendly NPC
+place-name NPCs: 2 dropped (176552, 176553)
+placeholder targets: 22 quest(s) whose objective names a credit NPC are events
+placeholder names left (public build, no corrections): 6
+warning: uiMap 947: spans 2 continents (0, 1); no single Era frame
+warning: forever uiMap 947: spans 2 continents (0, 1); no single Era frame
+data build: no last good statistics (/home/runner/work/_temp/polestar/data/forever/stats-good.json): this build's become them
+wrote data/forever: 6253 quests, 15828 npcs, 10942 objects, 26688 items, 60 zones, 53 map frames, 75 factions, 0 recordings (35.0 MiB); QuestieDB: 6079 quests (1827 Forever-only), 4732 with xp
+data build: 15.44 s

@@ -1,0 +1,14 @@
+Nood Guide / Nood 가이드
+Copyright (c) 2026 씨가 (ebfks1)
+
+All rights reserved.
+
+The route, the wording and the selection of quests in these guides are the author's own work, based on the
+author's BalCon Guidelime guide. You may install and use this addon in the game. Please ask before you
+redistribute or republish it.
+
+이 가이드의 동선, 문구, 퀘스트 구성은 제작자의 저작물이며, 제작자의 발컨 Guidelime 가이드를 바탕으로 합니다.
+게임에서 자유롭게 설치해 사용할 수 있습니다. 재배포·재게시는 먼저 문의해 주세요.
+
+The names, places and other game facts in the built addon come from Polestar's reference data; the built
+addon lists those sources in LICENSE-DATA.txt.
