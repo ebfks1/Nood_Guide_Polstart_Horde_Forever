@@ -262,9 +262,7 @@ step
   complete 5725 -- 책 두 권
 
 step
-  task "[던전] 성난불길 협곡: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ragefire Chasm). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 5728
   zone map 1454
   complete 5728
   turnin 5728 npc 4949
@@ -274,6 +272,7 @@ step
   accept 5729 npc 4949
 
 step
+  when complete 5761
   zone map 1454
   turnin 5761 npc 3216
 
@@ -468,13 +467,12 @@ step
   accept 95204 item 275521 optional -- "로데론의 문장"이 나오면 주워서 퀘스트 수락
 
 step
-  task "[던전] 로데론의 폐허: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ruins of Lordaeron). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 92422
   zone map 1420
   turnin 92422 npc 251001
 
 step
+  when complete 95216
   zone map 1458
   turnin 95216 npc 11835
 
@@ -517,7 +515,7 @@ step
 
 step
   zone map 1458
-  turnin 97292 npc 2055
+  turnin 97292 npc 2055 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
 
 step
   when onquest 95204
@@ -526,8 +524,9 @@ step
   turnin 95204 npc 7825
 
 step
+  when complete 92421
   zone map 1458
-  turnin 92421 npc 266484 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
+  turnin 92421 npc 266484
 
 step
   hearth "The Crossroads"
@@ -802,9 +801,6 @@ step
   collect 6443 quest 1486.1 -- 돌연변이 짐승 가죽 20개
 
 step
-  task "[던전] 통곡의 동굴: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Wailing Caverns). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   zone map 1413
   collect 5334 quest 959.1 -- 미치광이 매글리시의 포도주
 
@@ -827,6 +823,7 @@ step
   turnin 1486 npc 5767
 
 step
+  when complete 1487
   zone map 1413
   turnin 1487 npc 5768
 
@@ -1022,6 +1019,7 @@ step
   getfp "The Sepulcher"
 
 step
+  when complete 92401
   zone map 1421
   turnin 92401 npc 250686
 
@@ -1071,14 +1069,12 @@ step
 
 step
   zone map 1421
-  goto 44.8,67.8 r 20 map 1421 -- 남쪽 그림자송곳니 성채로 들어가세요
+  goto 44.8,67.8 r 20 map 1421 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기 · 남쪽 그림자송곳니 성채로 들어가세요
 
 step
-  task "[던전] 그림자송곳니 성채: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Shadowfang Keep). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 1014
   zone map 1421
-  turnin 1014 npc 1938 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
+  turnin 1014 npc 1938
 
 step
   when level<25
@@ -1230,8 +1226,6 @@ step
   goto 14.2,14 r 20 map 1440 -- 북쪽 해안 검은심연의 나락으로 들어가세요
 
 step
-  task "[던전] 검은심연의 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackfathom Deeps). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 6921
   zone map 1440
   turnin 6921 npc 12736

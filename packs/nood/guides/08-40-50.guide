@@ -1132,9 +1132,6 @@ step
   collect 4631 quest 709.1 -- Find the Tablet of Ryun'eh
 
 step
-  task "[Dungeon] Uldaman: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Uldaman). Tick this when the run and hand-ins in that tab are done."
-
-step
   zone map 1418
   turnin 2418 npc 2817
 
@@ -1841,27 +1838,27 @@ step
 
 step
   zone map 1446
-  goto 38.7,20 r 20 map 1446 -- Enter Zul'Farrak in the northwest
+  goto 38.7,20 r 20 map 1446 -- [Heads-up] Hearth to Gadgetzan soon — keep your Hearthstone · Enter Zul'Farrak in the northwest
 
 step
   along until q2770
   complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool a…
 
 step
-  task "[Dungeon] Zul'Farrak: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Zul'Farrak). Tick this when the run and hand-ins in that tab are done."
-
-step
   hearth "Gadgetzan"
 
 step
+  when complete 3042
   zone map 1446
   turnin 3042 npc 7804
 
 step
+  when complete 2865
   zone map 1446
   turnin 2865 npc 7876
 
 step
+  when complete 2768
   zone map 1446
   turnin 2768 npc 7407
 
@@ -1882,6 +1879,7 @@ step
   accept 82 npc 7724
 
 step
+  when complete 3527
   zone map 1446
   turnin 3527 npc 8579
 
@@ -1907,6 +1905,7 @@ step
   fly "Brackenwall Village"
 
 step
+  when complete 2846
   zone map 1445
   turnin 2846 npc 6546
 
@@ -2244,11 +2243,8 @@ step
   collect 17696 quest 7029.2
 
 step
-  task "[Dungeon] Maraudon: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Maraudon). Tick this when the run and hand-ins in that tab are done."
-
-step
+  when complete 7064
   zone map 1443
-  complete 7064
   turnin 7064 npc 13699
 
 step
@@ -2260,5 +2256,6 @@ step
   turnin 7028 npc 13656
 
 step
+  when complete 7067
   zone map 1443
   turnin 7067 npc 13717

@@ -812,10 +812,6 @@ step
   accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept
 
 step
-  label q3373
-  task "[Dungeon] Sunken Temple: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Sunken Temple). Tick this when the run and hand-ins in that tab are done."
-
-step
   zone map 1435
   turnin 1445 npc 1443 -- [Heads-up] Hearth to Orgrimmar soon — keep your Hearthstone
 
@@ -863,6 +859,7 @@ step
   fly "Gadgetzan"
 
 step
+  when complete 3528
   zone map 1446
   turnin 3528 npc 8579
 
@@ -1469,9 +1466,6 @@ step
   goto 34.8,83.9 r 20 map 1427 -- Enter Blackrock Mountain to the south and follow the chains down to…
 
 step
-  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
-
-step
   zone map 1427
   kill 8891 quest 4081.1 -- Kill the Dark Iron dwarves: KILL ON SIGHT
   kill 8890 quest 4081.2
@@ -1485,8 +1479,8 @@ step
   fly "Kargath"
 
 step
+  when complete 3906
   zone map 1418
-  complete 3906
   turnin 3906 npc 9084
 
 step
@@ -1919,18 +1913,17 @@ step
   accept 4742 optional -- If you can, accept from the Scarshield spy near the entrance
 
 step
-  label q4742
-  task "[Dungeon] Blackrock Spire: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Spire). Tick this when the run and hand-ins in that tab are done."
-
-step
+  when complete 4866
   zone map 1428
   turnin 4866 npc 9563
 
 step
+  when complete 4729
   zone map 1428
   turnin 4729 npc 10260
 
 step
+  when complete 4862
   zone map 1428
   turnin 4862 npc 10260
 
@@ -1946,13 +1939,11 @@ step
   complete 4123 -- Find the Heart of the Mountain in the Vault
 
 step
-  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
-
-step
   zone map 1428
   goto 65.6,24.2 r 20 map 1428 -- == Blackrock Depths 2nd run turn-ins == Leave through the north exit…
 
 step
+  when complete 4136
   zone map 1428
   turnin 4136 npc 9544
 
@@ -1966,20 +1957,23 @@ step
   fly "Kargath"
 
 step
+  when complete 4903
   zone map 1418
   turnin 4903 npc 9077
 
 step
   zone map 1418
-  accept 4941 npc 9077
+  accept 4941 npc 9077 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone
 
 step
+  when complete 4724
   zone map 1418
   turnin 4724 npc 9081
 
 step
+  when complete 4768
   zone map 1418
-  turnin 4768 npc 9078 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone
+  turnin 4768 npc 9078
 
 step
   hearth "Undercity"
@@ -2210,16 +2204,13 @@ step
 
 step
   zone map 1423
-  goto 26.6,9.4 r 20 map 1423 -- Enter Stratholme by the main gate at the northern end of the Eastern…
-
-step
-  label q5122
-  task "[Dungeon] Stratholme: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Stratholme). Tick this when the run and hand-ins in that tab are done."
+  goto 26.6,9.4 r 20 map 1423 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone · Enter Stratholme by the main gate at the northern end of the Eastern…
 
 step
   fly "Light's Hope Chapel"
 
 step
+  when complete 5212
   zone map 1423
   turnin 5212 npc 11035
 
@@ -2229,20 +2220,24 @@ step
   accept 5213 npc 11035 optional -- Then accept from Betina Bigglezink
 
 step
+  when complete 5214
   zone map 1423
   turnin 5214 npc 11033
 
 step
+  when complete 5243
   zone map 1423
   turnin 5243 npc 11036
 
 step
+  when complete 5251
   zone map 1423
   turnin 5251 npc 11039
 
 step
+  when complete 5848
   zone map 1423
-  turnin 5848 npc 1855 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone
+  turnin 5848 npc 1855
 
 step
   hearth "Undercity"

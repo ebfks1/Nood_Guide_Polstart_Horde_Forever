@@ -812,10 +812,6 @@ step
   accept 3373 item 10454 optional -- 에라니쿠스의 정수가 나오면 눌러 퀘스트 수락
 
 step
-  label q3373
-  task "[던전] 아탈학카르 신전: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Sunken Temple). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   zone map 1435
   turnin 1445 npc 1443 -- [알림] 곧 귀환석으로 오그리마 — 귀환석 아껴 두기
 
@@ -863,6 +859,7 @@ step
   fly "Gadgetzan"
 
 step
+  when complete 3528
   zone map 1446
   turnin 3528 npc 8579
 
@@ -1469,9 +1466,6 @@ step
   goto 34.8,83.9 r 20 map 1427 -- 남쪽 검은바위 산으로 들어가 사슬을 따라 내려가면 검은바위 나락 입구가 있습니다
 
 step
-  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   zone map 1427
   kill 8891 quest 4081.1 -- 검은무쇠단 드워프를 처치하세요: 죽음의 본보기
   kill 8890 quest 4081.2
@@ -1485,8 +1479,8 @@ step
   fly "Kargath"
 
 step
+  when complete 3906
   zone map 1418
-  complete 3906
   turnin 3906 npc 9084
 
 step
@@ -1919,18 +1913,17 @@ step
   accept 4742 optional -- 입구 근처 방패부대 첩보원에게 받을 수 있으면 퀘스트 수락
 
 step
-  label q4742
-  task "[던전] 검은바위 첨탑 하층: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Spire). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 4866
   zone map 1428
   turnin 4866 npc 9563
 
 step
+  when complete 4729
   zone map 1428
   turnin 4729 npc 10260
 
 step
+  when complete 4862
   zone map 1428
   turnin 4862 npc 10260
 
@@ -1946,13 +1939,11 @@ step
   complete 4123 -- 금고 구역에서 산의 정수를 찾으세요
 
 step
-  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   zone map 1428
   goto 65.6,24.2 r 20 map 1428 -- ── 검은바위 나락 2차 보고 ── 검은바위 산 북쪽 출구로 나가 화염 마루로 가세요
 
 step
+  when complete 4136
   zone map 1428
   turnin 4136 npc 9544
 
@@ -1966,20 +1957,23 @@ step
   fly "Kargath"
 
 step
+  when complete 4903
   zone map 1418
   turnin 4903 npc 9077
 
 step
   zone map 1418
-  accept 4941 npc 9077
+  accept 4941 npc 9077 -- [알림] 곧 귀환석으로 언더시티 — 귀환석 아껴 두기
 
 step
+  when complete 4724
   zone map 1418
   turnin 4724 npc 9081
 
 step
+  when complete 4768
   zone map 1418
-  turnin 4768 npc 9078 -- [알림] 곧 귀환석으로 언더시티 — 귀환석 아껴 두기
+  turnin 4768 npc 9078
 
 step
   hearth "Undercity"
@@ -2210,16 +2204,13 @@ step
 
 step
   zone map 1423
-  goto 26.6,9.4 r 20 map 1423 -- 동부 역병지대 북쪽 끝 스트라솔름 정문으로 들어가세요
-
-step
-  label q5122
-  task "[던전] 스트라솔름: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Stratholme). 새 탭에서 던전·제출을 마치면 체크하세요."
+  goto 26.6,9.4 r 20 map 1423 -- [알림] 곧 귀환석으로 언더시티 — 귀환석 아껴 두기 · 동부 역병지대 북쪽 끝 스트라솔름 정문으로 들어가세요
 
 step
   fly "Light's Hope Chapel"
 
 step
+  when complete 5212
   zone map 1423
   turnin 5212 npc 11035
 
@@ -2229,20 +2220,24 @@ step
   accept 5213 npc 11035 optional -- 이어서 베티나 비글징크에게 퀘스트 수락
 
 step
+  when complete 5214
   zone map 1423
   turnin 5214 npc 11033
 
 step
+  when complete 5243
   zone map 1423
   turnin 5243 npc 11036
 
 step
+  when complete 5251
   zone map 1423
   turnin 5251 npc 11039
 
 step
+  when complete 5848
   zone map 1423
-  turnin 5848 npc 1855 -- [알림] 곧 귀환석으로 언더시티 — 귀환석 아껴 두기
+  turnin 5848 npc 1855
 
 step
   hearth "Undercity"

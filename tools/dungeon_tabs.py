@@ -48,11 +48,14 @@ EN_NAME = {'성난불길 협곡': 'Ragefire Chasm', '로데론의 폐허': 'Ruin
 
 GONE = set()  # across guides (applied in guide order, per pack): quests picked up only inside a run that went to its tab
 LAST = ['']
+RUN_Q = set()  # quests whose objectives were done inside a run that went to its tab
+WORK_T = ('complete', 'kill', 'collect', 'interact')
 
 
 def apply(g, log):
     if g.stem <= LAST[0]:
         GONE.clear()  # the next pack starts over
+        RUN_Q.clear()
     LAST[0] = g.stem
     out, i, steps = [], 0, g.steps
     taken_inside = set()
@@ -83,6 +86,8 @@ def apply(g, log):
                     '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, en))},
             ], '_holds': True, '_block': None, '_gated': False,
                 'label': next((s['label'] for s in run if not s.get('along') and s.get('label')), None)})
+            RUN_Q.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] in WORK_T and 'quest' in x)
+            out[-1]['_tab'] = True
             taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')
             log.append('%s: %s run (%d steps, quests %s) -> dungeon tab step' % (g.stem, en, len(run) - len(kept_along), quests))
             pending = None
@@ -102,4 +107,23 @@ def apply(g, log):
                 log.append('%s: dropped a step of %s (picked up inside a run)' % (g.stem, sorted(gone)))
                 continue
         final.append(st)
-    g.steps = final
+    # after a run went to its tab, the main guide's hand-ins of its quests apply only once the quest is done
+    # (the tab's hand-in guide may have turned it in already; skipped the dungeon: the step is passed)
+    seen_tab = any(True for _ in ())
+    out2 = []
+    for st in final:
+        if st.get('_tab'):
+            seen_tab = True
+        if (seen_tab or g.stem > '05') and not st.get('along'):
+            ti = [x['quest'] for x in st['goals'] if x['t'] == 'turnin' and x.get('quest') in RUN_Q]
+            leftover = [x for x in st['goals'] if x['t'] in WORK_T and x.get('quest') in RUN_Q]
+            if leftover:
+                st = dict(st, goals=[x for x in st['goals'] if x not in leftover])
+            if ti:
+                have = {w.get('q') for w in (st.get('when') or []) if w.get('k') == 'complete'}
+                st = dict(st, when=list(st.get('when') or []) + [{'k': 'complete', 'q': q} for q in ti if q not in have])
+                log.append('%s: hand-in of %s waits for the quest to be done (run in a tab)' % (g.stem, ti))
+            if not [x for x in st['goals'] if x['t'] != 'note']:
+                continue
+        out2.append(st)
+    g.steps = out2

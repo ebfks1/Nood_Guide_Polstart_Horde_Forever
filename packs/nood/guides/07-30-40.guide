@@ -38,9 +38,6 @@ step
   collect 6684 quest 1221.4
 
 step
-  task "[Dungeon] Razorfen Kraul: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Razorfen Kraul). Tick this when the run and hand-ins in that tab are done."
-
-step
   fly "Thunder Bluff"
 
 step
@@ -61,6 +58,7 @@ step
   accept 98823 npc 9087 optional -- Then accept from Bashana Runetotem
 
 step
+  when complete 1102
   zone map 1456
   turnin 1102 npc 4451
 
@@ -105,6 +103,7 @@ step
   accept 6521 npc 2425
 
 step
+  when complete 1109
   zone map 1458
   turnin 1109 npc 2055
 
@@ -119,9 +118,6 @@ step
 step
   zone map 1420
   goto 82.6,33.8 r 20 map 1420 -- Scarlet Monastery Graveyard entrance
-
-step
-  task "[Dungeon] Scarlet Monastery: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Scarlet Monastery). Tick this when the run and hand-ins in that tab are done."
 
 step
   level 33

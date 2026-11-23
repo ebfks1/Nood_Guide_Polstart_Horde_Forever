@@ -265,7 +265,7 @@ step
 
 step
   zone map 1437
-  accept 95682 npc 13155
+  accept 95682 npc 13155 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
 
 step
   along
@@ -276,12 +276,9 @@ step
   complete 95697 -- 오그리마 보르스탄의 "달라지는 입맛"을 받아 왔다면 덤불 랩터 고기
 
 step
-  task "[던전] 발굴 현장: 저습지: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Excavation Site: Wetlands). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
+  when complete 95682
   zone map 1437
-  complete 95682
-  turnin 95682 npc 13155 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
+  turnin 95682 npc 13155
 
 step
   hearth "The Crossroads"
@@ -676,14 +673,11 @@ step
   complete 96987 -- "달라란의 창건" 책
 
 step
-  label q96987
-  task "[던전] 달라란: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast City of Dalaran). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   zone map 1416
   complete 545 @21,80 map 1416 -- 던전을 나와 달라란 외곽에서 달라란 소환사 6명·노예 바위 정령 8마리
 
 step
+  when complete 96986
   zone map 1424
   turnin 96986 npc 2278
 
@@ -717,6 +711,7 @@ step
   fly "Undercity"
 
 step
+  when complete 96988
   zone map 1458
   turnin 96988 npc 11044
 

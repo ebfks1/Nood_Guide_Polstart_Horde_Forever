@@ -38,9 +38,6 @@ step
   collect 6684 quest 1221.4
 
 step
-  task "[던전] 가시덩굴 우리: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Razorfen Kraul). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   fly "Thunder Bluff"
 
 step
@@ -61,6 +58,7 @@ step
   accept 98823 npc 9087 optional -- 바샤나 룬토템에게 이어서 퀘스트 수락
 
 step
+  when complete 1102
   zone map 1456
   turnin 1102 npc 4451
 
@@ -105,6 +103,7 @@ step
   accept 6521 npc 2425
 
 step
+  when complete 1109
   zone map 1458
   turnin 1109 npc 2055
 
@@ -119,9 +118,6 @@ step
 step
   zone map 1420
   goto 82.6,33.8 r 20 map 1420 -- 붉은십자군 수도원 묘지 입구
-
-step
-  task "[던전] 붉은십자군 수도원: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Scarlet Monastery). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   level 33
