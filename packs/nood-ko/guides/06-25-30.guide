@@ -673,6 +673,7 @@ step
   complete 96987 -- "달라란의 창건" 책
 
 step
+  label q96987
   zone map 1416
   complete 545 @21,80 map 1416 -- 던전을 나와 달라란 외곽에서 달라란 소환사 6명·노예 바위 정령 8마리
 

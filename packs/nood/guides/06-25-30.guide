@@ -673,6 +673,7 @@ step
   complete 96987 -- The book "The Founding of Dalaran"
 
 step
+  label q96987
   zone map 1416
   complete 545 @21,80 map 1416 -- Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 En…
 

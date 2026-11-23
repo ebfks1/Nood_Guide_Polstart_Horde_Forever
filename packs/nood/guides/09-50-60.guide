@@ -812,6 +812,7 @@ step
   accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept
 
 step
+  label q3373
   zone map 1435
   turnin 1445 npc 1443 -- [Heads-up] Hearth to Orgrimmar soon — keep your Hearthstone
 
@@ -1914,6 +1915,7 @@ step
 
 step
   when complete 4866
+  label q4742
   zone map 1428
   turnin 4866 npc 9563
 
@@ -2203,6 +2205,7 @@ step
   level 59
 
 step
+  label q5122
   zone map 1423
   goto 26.6,9.4 r 20 map 1423 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone · Enter Stratholme by the main gate at the northern end of the Eastern…
 
