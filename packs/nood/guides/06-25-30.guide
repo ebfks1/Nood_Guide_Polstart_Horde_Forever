@@ -667,6 +667,7 @@ step
   accept 545 npc 2410
 
 step
+  label q96987
   task "[Dungeon] City of Dalaran: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast City of Dalaran). Tick this when the run and hand-ins in that tab are done."
 
 step

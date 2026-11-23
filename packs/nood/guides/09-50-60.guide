@@ -808,6 +808,7 @@ step
   collect 6181 quest 1445.1 -- Collect 20 Fetishes of Hakkar from the Atal'ai trolls
 
 step
+  label q3373
   task "[Dungeon] Sunken Temple: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Sunken Temple). Tick this when the run and hand-ins in that tab are done."
 
 step
@@ -857,10 +858,6 @@ step
   when level<54
   zone map 1456
   accept 3761 npc 5769
-
-step
-  zone map 1456
-  turnin 2280 npc 3978
 
 step
   fly "Gadgetzan"
@@ -1583,10 +1580,6 @@ step
   goto 64.8,8.2 r 20 map 1448 -- Enter Timbermaw Hold at the far northeast
 
 step
-  zone map 1450
-  turnin 7066 npc 11832
-
-step
   zone map 1452
   turnin 3908 npc 9298
 
@@ -1921,6 +1914,7 @@ step
   goto 29,38 r 20 map 1428 -- Go back west into Blackrock Mountain and enter Blackrock Spire on th…
 
 step
+  label q4742
   task "[Dungeon] Blackrock Spire: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Spire). Tick this when the run and hand-ins in that tab are done."
 
 step
@@ -2218,6 +2212,7 @@ step
   goto 26.6,9.4 r 20 map 1423 -- Enter Stratholme by the main gate at the northern end of the Eastern…
 
 step
+  label q5122
   task "[Dungeon] Stratholme: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Stratholme). Tick this when the run and hand-ins in that tab are done."
 
 step

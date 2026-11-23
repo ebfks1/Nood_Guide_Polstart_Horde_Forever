@@ -667,6 +667,7 @@ step
   accept 545 npc 2410
 
 step
+  label q96987
   task "[던전] 달라란: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast City of Dalaran). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step

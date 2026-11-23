@@ -46,7 +46,14 @@ EN_NAME = {'성난불길 협곡': 'Ragefire Chasm', '로데론의 폐허': 'Ruin
            '검은바위 첨탑': 'Blackrock Spire', '스트라솔름': 'Stratholme', '가시덩굴 구릉': 'Razorfen Downs'}
 
 
+GONE = set()  # across guides (applied in guide order, per pack): quests picked up only inside a run that went to its tab
+LAST = ['']
+
+
 def apply(g, log):
+    if g.stem <= LAST[0]:
+        GONE.clear()  # the next pack starts over
+    LAST[0] = g.stem
     out, i, steps = [], 0, g.steps
     taken_inside = set()
     pending = None  # (names, index in out) of the last ★ line not yet matched to a run
@@ -73,7 +80,8 @@ def apply(g, log):
                     'Tick this when the run and hand-ins in that tab are done.' % (en, en),
                     '[던전] %s: Polestar 던전 알림 카드에서 "퀘스트 수집"을 누르세요 (카드가 없으면 /polestar dungeontoast %s). '
                     '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, en))},
-            ], '_holds': True, '_block': None, '_gated': False})
+            ], '_holds': True, '_block': None, '_gated': False,
+                'label': next((s['label'] for s in run if not s.get('along') and s.get('label')), None)})
             out.extend(kept_along)
             taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')
             log.append('%s: %s run (%d steps, quests %s) -> dungeon tab step' % (g.stem, en, len(run) - len(kept_along), quests))
@@ -84,7 +92,8 @@ def apply(g, log):
         i += 1
     # quests picked up only inside a run that went to its tab: their later goals go too (the hand-in guide has them)
     outside = {x['quest'] for st in out for x in st['goals'] if x['t'] == 'accept'}
-    gone = taken_inside - outside
+    gone = (taken_inside | GONE) - outside
+    GONE.update(gone)
     final = []
     for st in out:
         if gone and any(x.get('quest') in gone for x in st['goals']):
