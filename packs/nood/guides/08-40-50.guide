@@ -1844,11 +1844,11 @@ step
   goto 38.7,20 r 20 map 1446 -- Enter Zul'Farrak in the northwest
 
 step
-  task "[Dungeon] Zul'Farrak: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Zul'Farrak). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q2770
   complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool a…
+
+step
+  task "[Dungeon] Zul'Farrak: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Zul'Farrak). Tick this when the run and hand-ins in that tab are done."
 
 step
   hearth "Gadgetzan"

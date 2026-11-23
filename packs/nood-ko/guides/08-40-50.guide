@@ -1844,11 +1844,11 @@ step
   goto 38.7,20 r 20 map 1446 -- 북서쪽 줄파락 입구로 들어가세요
 
 step
-  task "[던전] 줄파락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Zul'Farrak). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q2770
   complete 2770 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요
+
+step
+  task "[던전] 줄파락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Zul'Farrak). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   hearth "Gadgetzan"

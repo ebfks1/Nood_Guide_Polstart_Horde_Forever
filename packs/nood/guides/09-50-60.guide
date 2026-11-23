@@ -808,12 +808,12 @@ step
   collect 6181 quest 1445.1 -- Collect 20 Fetishes of Hakkar from the Atal'ai trolls
 
 step
-  label q3373
-  task "[Dungeon] Sunken Temple: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Sunken Temple). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q3373
   accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept
+
+step
+  label q3373
+  task "[Dungeon] Sunken Temple: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Sunken Temple). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1435
@@ -1914,12 +1914,12 @@ step
   goto 29,38 r 20 map 1428 -- Go back west into Blackrock Mountain and enter Blackrock Spire on th…
 
 step
-  label q4742
-  task "[Dungeon] Blackrock Spire: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Spire). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q4742
   accept 4742 optional -- If you can, accept from the Scarshield spy near the entrance
+
+step
+  label q4742
+  task "[Dungeon] Blackrock Spire: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Spire). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1428
@@ -1941,11 +1941,11 @@ step
   goto 29,38 r 20 map 1428 -- Enter Blackrock Mountain and go down to the Blackrock Depths entrance
 
 step
-  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q4123
   complete 4123 -- Find the Heart of the Mountain in the Vault
+
+step
+  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1428

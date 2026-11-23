@@ -808,12 +808,12 @@ step
   collect 6181 quest 1445.1 -- 아탈라이 트롤에게서 학카르의 우상 20개를 모으세요
 
 step
-  label q3373
-  task "[던전] 아탈학카르 신전: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Sunken Temple). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q3373
   accept 3373 item 10454 optional -- 에라니쿠스의 정수가 나오면 눌러 퀘스트 수락
+
+step
+  label q3373
+  task "[던전] 아탈학카르 신전: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Sunken Temple). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1435
@@ -1914,12 +1914,12 @@ step
   goto 29,38 r 20 map 1428 -- 서쪽 검은바위 산으로 돌아가 위층의 검은바위 첨탑 입구로 들어가세요
 
 step
-  label q4742
-  task "[던전] 검은바위 첨탑 하층: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Spire). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q4742
   accept 4742 optional -- 입구 근처 방패부대 첩보원에게 받을 수 있으면 퀘스트 수락
+
+step
+  label q4742
+  task "[던전] 검은바위 첨탑 하층: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Spire). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1428
@@ -1941,11 +1941,11 @@ step
   goto 29,38 r 20 map 1428 -- 검은바위 산으로 들어가 아래로 내려가 검은바위 나락 입구로 들어가세요
 
 step
-  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q4123
   complete 4123 -- 금고 구역에서 산의 정수를 찾으세요
+
+step
+  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1428

@@ -258,11 +258,11 @@ step
   goto 52.6,49.2 r 20 map 1454 -- == Ragefire Chasm == Ragefire Chasm entrance
 
 step
-  task "[Dungeon] Ragefire Chasm: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ragefire Chasm). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q5725
   complete 5725 -- Two books
+
+step
+  task "[Dungeon] Ragefire Chasm: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ragefire Chasm). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1454
@@ -464,11 +464,11 @@ step
   goto 62,68 r 20 map 1420 -- Enter the Ruins of Lordaeron above the Undercity entrance
 
 step
-  task "[Dungeon] Ruins of Lordaeron: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ruins of Lordaeron). Tick this when the run and hand-ins in that tab are done."
-
-step
   along until q95204
   accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lord…
+
+step
+  task "[Dungeon] Ruins of Lordaeron: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Ruins of Lordaeron). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1420

@@ -258,11 +258,11 @@ step
   goto 52.6,49.2 r 20 map 1454 -- ── 성난불길 협곡 ── 성난불길 협곡 입구
 
 step
-  task "[던전] 성난불길 협곡: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ragefire Chasm). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q5725
   complete 5725 -- 책 두 권
+
+step
+  task "[던전] 성난불길 협곡: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ragefire Chasm). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1454
@@ -464,11 +464,11 @@ step
   goto 62,68 r 20 map 1420 -- 언더시티 입구 위 로데론의 폐허로 들어가세요
 
 step
-  task "[던전] 로데론의 폐허: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ruins of Lordaeron). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q95204
   accept 95204 item 275521 optional -- "로데론의 문장"이 나오면 주워서 퀘스트 수락
+
+step
+  task "[던전] 로데론의 폐허: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ruins of Lordaeron). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1420

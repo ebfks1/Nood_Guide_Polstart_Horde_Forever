@@ -268,15 +268,15 @@ step
   accept 95682 npc 13155
 
 step
-  task "[던전] 발굴 현장: 저습지: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Excavation Site: Wetlands). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along
   accept 95664 item 270866 optional -- 유물 수호자에게서 "티탄의 유물"이 나오면 주워서 퀘스트 수락
 
 step
   along
   complete 95697 -- 오그리마 보르스탄의 "달라지는 입맛"을 받아 왔다면 덤불 랩터 고기
+
+step
+  task "[던전] 발굴 현장: 저습지: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Excavation Site: Wetlands). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1437
@@ -667,16 +667,16 @@ step
   accept 545 npc 2410
 
 step
-  label q96987
-  task "[던전] 달라란: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast City of Dalaran). 새 탭에서 던전·제출을 마치면 체크하세요."
-
-step
   along until q96987
   accept 96987 optional -- 입구 근처 렉시 코퍼클러치에게 받을 수 있다면 퀘스트 수락
 
 step
   along until q96987
   complete 96987 -- "달라란의 창건" 책
+
+step
+  label q96987
+  task "[던전] 달라란: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast City of Dalaran). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1416

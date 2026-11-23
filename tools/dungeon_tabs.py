@@ -74,6 +74,7 @@ def apply(g, log):
             en = EN_NAME.get(ko, re.sub(r'\s*\(.*?\)\s*$', '', en).strip())
             if not re.match(r'[A-Za-z]', en):
                 raise SystemExit('dungeon_tabs: no English name for %s' % ko)
+            out.extend(kept_along)  # along steps first: they run "until" the run, whose label goes to the tab step
             out.append({'goals': [
                 {'t': 'note', 'hold': True, 'text': T(
                     '[Dungeon] %s: on the Polestar dungeon card press "Pick up the quests" (no card: /polestar dungeontoast %s). '
@@ -82,7 +83,6 @@ def apply(g, log):
                     '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, en))},
             ], '_holds': True, '_block': None, '_gated': False,
                 'label': next((s['label'] for s in run if not s.get('along') and s.get('label')), None)})
-            out.extend(kept_along)
             taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')
             log.append('%s: %s run (%d steps, quests %s) -> dungeon tab step' % (g.stem, en, len(run) - len(kept_along), quests))
             pending = None
