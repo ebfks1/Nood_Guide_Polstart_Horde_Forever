@@ -808,21 +808,11 @@ step
   collect 6181 quest 1445.1 -- Collect 20 Fetishes of Hakkar from the Atal'ai trolls
 
 step
-  complete 3446 -- Find the Altar of Hakkar
-  turnin 3446 -- Turn in right at the altar
-  complete 3447 -- Walk the circle of statues to discover its secret
-  turnin 3447 -- Open the chest that appears to turn in Secret of the Circle
-  complete 1446 -- Kill Jammal'an the Prophet and take his head
-  complete 3528 -- Summon and kill the Avatar of Hakkar, then fill the Ancient Egg
+  task "[Dungeon] Sunken Temple: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Sunken Temple). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q3373
   accept 3373 item 10454 optional -- If the Essence of Eranikus drops, click it to accept
-
-step
-  when onquest 3373
-  label q3373
-  turnin 3373
 
 step
   zone map 1435
@@ -1482,7 +1472,7 @@ step
   goto 34.8,83.9 r 20 map 1427 -- Enter Blackrock Mountain to the south and follow the chains down to…
 
 step
-  complete 3906 -- Kill Overmaster Pyron in the quarry near the entrance
+  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1427
@@ -1931,34 +1921,11 @@ step
   goto 29,38 r 20 map 1428 -- Go back west into Blackrock Mountain and enter Blackrock Spire on th…
 
 step
-  accept 4867
+  task "[Dungeon] Blackrock Spire: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Spire). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q4742
   accept 4742 optional -- If you can, accept from the Scarshield spy near the entrance
-
-step
-  complete 4729 -- Catch a Bloodaxe Worg Pup with the cage
-  complete 4724 -- Kill Halycon, the Bloodaxe pack mistress
-  complete 4862 -- Collect 15 Spire Spider Eggs
-  complete 4866 -- Get poisoned by Mother Smolderweb
-  turnin 4981 -- Turn in to Bijou near the prison
-  accept 4982
-  complete 4982 -- Find Bijou's belongings on the bottom floor
-  turnin 4982 -- Go back to Bijou and turn in Bijou's Belongings
-
-step
-  accept 4983 -- Then accept: Bijou's Reconnaissance Report — Dungeon chain
-  accept 5047 -- Accept from Pip Quickwit, who's held captive
-  accept 5160 -- Accept from Awbee by the eggs
-  complete 4768 -- Find the Darkstone Tablet
-  complete 4903 -- Kill Highlord Omokk, War Master Voone and Overlord Wyrmthalak, and r…
-  turnin 4867 -- Summon Urok Doomhowl as Warosh's scroll explains, kill him and turn…
-
-step
-  when complete 4742
-  label q4742
-  turnin 4742
 
 step
   zone map 1428
@@ -1980,16 +1947,11 @@ step
   goto 29,38 r 20 map 1428 -- Enter Blackrock Mountain and go down to the Blackrock Depths entrance
 
 step
-  complete 4136 -- Kill Ribbly Screwspigot in the Grim Guzzler kitchen and take his head
+  task "[Dungeon] Blackrock Depths: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Blackrock Depths). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q4123
   complete 4123 -- Find the Heart of the Mountain in the Vault
-
-step
-  complete 4003 -- Kill Emperor Dagran Thaurissan to free Princess Moira
-  turnin 4003 -- Turn in to Princess Moira Bronzebeard
-  accept 4004
 
 step
   zone map 1428
@@ -2019,10 +1981,6 @@ step
 step
   zone map 1418
   turnin 4724 npc 9081
-
-step
-  zone map 1418
-  turnin 4983 npc 9080
 
 step
   zone map 1418
@@ -2260,27 +2218,7 @@ step
   goto 26.6,9.4 r 20 map 1423 -- Enter Stratholme by the main gate at the northern end of the Eastern…
 
 step
-  complete 5212 -- Collect 10 Plagued Flesh Samples from creatures in Stratholme
-  complete 5243 -- Collect 5 Stratholme Holy Water from the supply crates in the streets
-  complete 5214 -- Find the box of Grimm's Premium Tobacco in Ezra Grimm's smoke shop
-  complete 5251 -- Kill Archivist Galford in the Scarlet Bastion and burn the archive
-  complete 5848 -- Find the painting "Of Love and Family" inside the Bastion
-
-step
-  accept 5122
-
-step
-  when complete 5122
-  label q5122
-  turnin 5122
-
-step
-  accept 5125
-
-step
-  when onquest 5125
-  label q5125
-  turnin 5125
+  task "[Dungeon] Stratholme: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Stratholme). Tick this when the run and hand-ins in that tab are done."
 
 step
   fly "Light's Hope Chapel"
@@ -2323,16 +2261,4 @@ step
   turnin 4941 npc 4949
 
 step
-  zone map 1454
-  turnin 4004 npc 4949
-
-step
   fly "Everlook"
-
-step
-  zone map 1452
-  turnin 5047 npc 10637
-
-step
-  zone map 1452
-  turnin 5160 npc 10929

@@ -268,7 +268,7 @@ step
   accept 95682 npc 13155
 
 step
-  complete 95682 -- Enter the Excavation Site dungeon right below
+  task "[Dungeon] Excavation Site: Wetlands: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Excavation Site: Wetlands). Tick this when the run and hand-ins in that tab are done."
 
 step
   along
@@ -667,8 +667,7 @@ step
   accept 545 npc 2410
 
 step
-  complete 96988 -- Enter the Dalaran dungeon and collect 6 Cracked Warden Cores from th…
-  complete 96986 -- Kill the Grave Knight Atrexis
+  task "[Dungeon] City of Dalaran: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast City of Dalaran). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q96987
@@ -677,11 +676,6 @@ step
 step
   along until q96987
   complete 96987 -- The book "The Founding of Dalaran"
-
-step
-  when complete 96987
-  label q96987
-  turnin 96987
 
 step
   zone map 1416

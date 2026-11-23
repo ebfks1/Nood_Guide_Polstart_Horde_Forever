@@ -38,12 +38,7 @@ step
   collect 6684 quest 1221.4
 
 step
-  complete 1109 -- Get the Kraul Guano from the Kraul bats
-  accept 1144 -- Accept from Willix the Importer
-  complete 1144 -- Escort Willix to the entrance
-  turnin 1144 -- When the escort ends, turn in to Willix right away
-  complete 1102 -- Kill the last boss, Charlga Razorflank, and take Razorflank's Heart
-  accept 6522 item 17008 -- Kill the final boss Charlga Razorflank and pick up the "Small Scroll…
+  task "[Dungeon] Razorfen Kraul: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Razorfen Kraul). Tick this when the run and hand-ins in that tab are done."
 
 step
   fly "Thunder Bluff"
@@ -107,10 +102,6 @@ step
 
 step
   zone map 1458
-  turnin 6522 npc 2425
-
-step
-  zone map 1458
   accept 6521 npc 2425
 
 step
@@ -130,11 +121,7 @@ step
   goto 82.6,33.8 r 20 map 1420 -- Scarlet Monastery Graveyard entrance
 
 step
-  accept 1051
-
-step
-  zone map 1416
-  collect 5538 quest 1051.1 -- Clear the Graveyard up to Bloodmage Thalnos
+  task "[Dungeon] Scarlet Monastery: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Scarlet Monastery). Tick this when the run and hand-ins in that tab are done."
 
 step
   level 33
@@ -152,12 +139,6 @@ step
 
 step
   fly "Tarren Mill"
-
-step
-  when complete 1051
-  label q1051
-  zone map 1424
-  turnin 1051 npc 3982
 
 step
   zone map 1424

@@ -39,7 +39,11 @@ def inside(st):
 
 
 EN_NAME = {'성난불길 협곡': 'Ragefire Chasm', '로데론의 폐허': 'Ruins of Lordaeron', '통곡의 동굴': 'Wailing Caverns',
-           '그림자송곳니 성채': 'Shadowfang Keep', '검은심연의 나락': 'Blackfathom Deeps'}
+           '그림자송곳니 성채': 'Shadowfang Keep', '검은심연의 나락': 'Blackfathom Deeps',
+           '발굴 현장: 저습지': 'Excavation Site: Wetlands', '달라란': 'City of Dalaran', '가시덩굴 우리': 'Razorfen Kraul',
+           '붉은십자군 수도원': 'Scarlet Monastery', '울다만': 'Uldaman', '줄파락': "Zul'Farrak", '마라우돈': 'Maraudon',
+           '아탈학카르 신전': 'Sunken Temple', '검은바위 나락': 'Blackrock Depths', '검은바위 첨탑 하층': 'Blackrock Spire',
+           '검은바위 첨탑': 'Blackrock Spire', '스트라솔름': 'Stratholme', '가시덩굴 구릉': 'Razorfen Downs'}
 
 
 def apply(g, log):
@@ -59,13 +63,16 @@ def apply(g, log):
             kept_along = [s for s in run if s.get('along')]
             quests = sorted({x['quest'] for s in run if not s.get('along') for x in s['goals'] if 'quest' in x})
             en, ko = pending
-            en = EN_NAME.get(ko, en)
+            ko = re.sub(r'\s*\(.*?\)\s*$', '', ko).strip()  # "검은바위 나락 (1차)" -> the dungeon's own name
+            en = EN_NAME.get(ko, re.sub(r'\s*\(.*?\)\s*$', '', en).strip())
+            if not re.match(r'[A-Za-z]', en):
+                raise SystemExit('dungeon_tabs: no English name for %s' % ko)
             out.append({'goals': [
                 {'t': 'note', 'hold': True, 'text': T(
                     '[Dungeon] %s: on the Polestar dungeon card press "Pick up the quests" (no card: /polestar dungeontoast %s). '
                     'Tick this when the run and hand-ins in that tab are done.' % (en, en),
                     '[던전] %s: Polestar 던전 알림 카드에서 "퀘스트 수집"을 누르세요 (카드가 없으면 /polestar dungeontoast %s). '
-                    '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, ko))},
+                    '새 탭에서 던전·제출을 마치면 체크하세요.' % (ko, en))},
             ], '_holds': True, '_block': None, '_gated': False})
             out.extend(kept_along)
             taken_inside.update(x['quest'] for s2 in run if not s2.get('along') for x in s2['goals'] if x['t'] == 'accept')

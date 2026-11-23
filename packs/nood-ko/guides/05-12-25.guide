@@ -258,7 +258,7 @@ step
   goto 52.6,49.2 r 20 map 1454 -- ── 성난불길 협곡 ── 성난불길 협곡 입구
 
 step
-  task "[던전] 성난불길 협곡: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast 성난불길 협곡). 새 탭에서 던전·제출을 마치면 체크하세요."
+  task "[던전] 성난불길 협곡: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ragefire Chasm). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q5725
@@ -464,7 +464,7 @@ step
   goto 62,68 r 20 map 1420 -- 언더시티 입구 위 로데론의 폐허로 들어가세요
 
 step
-  task "[던전] 로데론의 폐허: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast 로데론의 폐허). 새 탭에서 던전·제출을 마치면 체크하세요."
+  task "[던전] 로데론의 폐허: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Ruins of Lordaeron). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q95204
@@ -802,7 +802,7 @@ step
   collect 6443 quest 1486.1 -- 돌연변이 짐승 가죽 20개
 
 step
-  task "[던전] 통곡의 동굴: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast 통곡의 동굴). 새 탭에서 던전·제출을 마치면 체크하세요."
+  task "[던전] 통곡의 동굴: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Wailing Caverns). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1413
@@ -1074,7 +1074,7 @@ step
   goto 44.8,67.8 r 20 map 1421 -- 남쪽 그림자송곳니 성채로 들어가세요
 
 step
-  task "[던전] 그림자송곳니 성채: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast 그림자송곳니 성채). 새 탭에서 던전·제출을 마치면 체크하세요."
+  task "[던전] 그림자송곳니 성채: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Shadowfang Keep). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1421
@@ -1230,7 +1230,7 @@ step
   goto 14.2,14 r 20 map 1440 -- 북쪽 해안 검은심연의 나락으로 들어가세요
 
 step
-  task "[던전] 검은심연의 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast 검은심연의 나락). 새 탭에서 던전·제출을 마치면 체크하세요."
+  task "[던전] 검은심연의 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackfathom Deeps). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1440

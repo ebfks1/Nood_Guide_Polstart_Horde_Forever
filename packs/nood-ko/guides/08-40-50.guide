@@ -1132,10 +1132,7 @@ step
   collect 4631 quest 709.1 -- 류네의 서판을 찾으세요
 
 step
-  accept 2278 -- 노르간논의 원반 앞 바위감시자와 대화한 뒤 원반을 가동하세요
-  complete 2278
-  turnin 2278 -- 바위감시자와 다시 대화해 퀘스트 완료
-  accept 2280 -- 원반을 다시 클릭해 이어서 퀘스트 수락
+  task "[던전] 울다만: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Uldaman). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1418
@@ -1847,11 +1844,7 @@ step
   goto 38.7,20 r 20 map 1446 -- 북서쪽 줄파락 입구로 들어가세요
 
 step
-  complete 2865 -- [알림] 곧 귀환석으로 가젯잔 — 귀환석 아껴 두기
-  complete 3042 -- 모래폭풍일족 트롤에게서 트롤 경화제 20개를 모으세요
-  complete 2768 -- 하사관 블라이를 처치하고 자동 탐사막대를 챙기세요
-  complete 3527 -- 순교자 데카와 유체술사 벨라타를 처치해 서판 두 개를 모으세요
-  complete 2846 -- 유체술사 벨라타에게서 심연의 티아라를 챙기세요
+  task "[던전] 줄파락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Zul'Farrak). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q2770
@@ -2251,14 +2244,7 @@ step
   collect 17696 quest 7029.2
 
 step
-  complete 7067 -- 켄타우로스 칸의 영혼들에게서 결합의 부적을 모으세요
-  complete 7044 -- 군주 바일텅과 녹시온을 처치하세요
-  turnin 7044 -- 회복된 셀레브라스에게 퀘스트 완료
-  accept 7046
-  complete 7046 -- 셀레브라스가 홀을 만드는 동안 지켜 주세요
-  turnin 7046
-  complete 7064 -- 마지막 보스 공주 테라드라스를 처치하세요
-  accept 7066 -- 테라드라스를 처치하면 나타나는 재타르의 영혼에게 퀘스트 수락
+  task "[던전] 마라우돈: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Maraudon). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1443

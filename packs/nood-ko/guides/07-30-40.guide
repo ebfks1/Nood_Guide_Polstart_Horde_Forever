@@ -38,12 +38,7 @@ step
   collect 6684 quest 1221.4
 
 step
-  complete 1109 -- 가시덩굴 박쥐에게서 가시덩굴 조분석을 챙기세요
-  accept 1144 -- 수입업자 윌릭스에게 퀘스트 수락
-  complete 1144 -- 윌릭스를 입구까지 호위하세요
-  turnin 1144 -- 호위가 끝나면 바로 윌릭스에게 퀘스트 완료
-  complete 1102 -- 마지막 보스 샬가 레이저플랭크를 처치하고 레이저플랭크의 심장을 챙기세요
-  accept 6522 item 17008 -- 마지막 보스 샬가 레이저플랭크를 처치하고 "작은 두루마리"를 주워 퀘스트 수락
+  task "[던전] 가시덩굴 우리: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Razorfen Kraul). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   fly "Thunder Bluff"
@@ -107,10 +102,6 @@ step
 
 step
   zone map 1458
-  turnin 6522 npc 2425
-
-step
-  zone map 1458
   accept 6521 npc 2425
 
 step
@@ -130,11 +121,7 @@ step
   goto 82.6,33.8 r 20 map 1420 -- 붉은십자군 수도원 묘지 입구
 
 step
-  accept 1051
-
-step
-  zone map 1416
-  collect 5538 quest 1051.1 -- 피의마법사 탈노스까지 묘지를 정리하세요
+  task "[던전] 붉은십자군 수도원: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Scarlet Monastery). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   level 33
@@ -152,12 +139,6 @@ step
 
 step
   fly "Tarren Mill"
-
-step
-  when complete 1051
-  label q1051
-  zone map 1424
-  turnin 1051 npc 3982
 
 step
   zone map 1424

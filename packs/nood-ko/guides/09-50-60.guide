@@ -808,21 +808,11 @@ step
   collect 6181 quest 1445.1 -- 아탈라이 트롤에게서 학카르의 우상 20개를 모으세요
 
 step
-  complete 3446 -- 학카르의 제단을 찾으세요
-  turnin 3446 -- 제단에서 바로 퀘스트 완료
-  complete 3447 -- 석상 둘레를 돌아 돌무리의 비밀을 찾으세요
-  turnin 3447 -- 나타난 상자를 열어 퀘스트 완료
-  complete 1446 -- 예언자 잠말란을 처치하고 머리를 챙기세요
-  complete 3528 -- 학카르의 화신을 불러내 처치한 뒤 고대의 알을 채우세요
+  task "[던전] 아탈학카르 신전: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Sunken Temple). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q3373
   accept 3373 item 10454 optional -- 에라니쿠스의 정수가 나오면 눌러 퀘스트 수락
-
-step
-  when onquest 3373
-  label q3373
-  turnin 3373
 
 step
   zone map 1435
@@ -1482,7 +1472,7 @@ step
   goto 34.8,83.9 r 20 map 1427 -- 남쪽 검은바위 산으로 들어가 사슬을 따라 내려가면 검은바위 나락 입구가 있습니다
 
 step
-  complete 3906 -- 입구 채석장의 멸망의 파이론을 처치하세요
+  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   zone map 1427
@@ -1931,34 +1921,11 @@ step
   goto 29,38 r 20 map 1428 -- 서쪽 검은바위 산으로 돌아가 위층의 검은바위 첨탑 입구로 들어가세요
 
 step
-  accept 4867
+  task "[던전] 검은바위 첨탑 하층: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Spire). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q4742
   accept 4742 optional -- 입구 근처 방패부대 첩보원에게 받을 수 있으면 퀘스트 수락
-
-step
-  complete 4729 -- 도끼부대 새끼 검은늑대를 우리에 담아 오세요
-  complete 4724 -- 검은늑대 무리의 어미 할리콘을 처치하세요
-  complete 4862 -- 첨탑거미 알 15개를 모으세요
-  complete 4866 -- 여왕 불그물거미에게 독을 맞으세요
-  turnin 4981 -- 감옥 쪽 비쥬에게 퀘스트 완료
-  accept 4982
-  complete 4982 -- 아래층에서 비쥬의 물건을 찾으세요
-  turnin 4982 -- 비쥬에게 돌아가 퀘스트 완료
-
-step
-  accept 4983
-  accept 5047 -- 갇혀 있는 핍 퀵윗에게 퀘스트 수락
-  accept 5160 -- 알 무더기 근처 아우비에게 퀘스트 수락
-  complete 4768 -- 다크스톤 서판을 찾으세요
-  complete 4903 -- 대군주 오모크·대장군 부네·대군주 웜타라크를 처치하고 중요 문서를 챙기세요
-  turnin 4867 -- 와로쉬의 두루마리대로 우로크 둠하울을 불러내 처치하고 와로쉬에게 퀘스트 완료
-
-step
-  when complete 4742
-  label q4742
-  turnin 4742
 
 step
   zone map 1428
@@ -1980,16 +1947,11 @@ step
   goto 29,38 r 20 map 1428 -- 검은바위 산으로 들어가 아래로 내려가 검은바위 나락 입구로 들어가세요
 
 step
-  complete 4136 -- 술집 그림 거즐러 부엌의 리블리 스크류스피곳을 처치하고 머리를 챙기세요
+  task "[던전] 검은바위 나락: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Blackrock Depths). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   along until q4123
   complete 4123 -- 금고 구역에서 산의 정수를 찾으세요
-
-step
-  complete 4003 -- 제왕 다그란 타우릿산을 처치해 공주 모이라를 풀어 주세요
-  turnin 4003 -- 공주 모이라 브론즈비어드에게 퀘스트 완료
-  accept 4004
 
 step
   zone map 1428
@@ -2019,10 +1981,6 @@ step
 step
   zone map 1418
   turnin 4724 npc 9081
-
-step
-  zone map 1418
-  turnin 4983 npc 9080
 
 step
   zone map 1418
@@ -2260,27 +2218,7 @@ step
   goto 26.6,9.4 r 20 map 1423 -- 동부 역병지대 북쪽 끝 스트라솔름 정문으로 들어가세요
 
 step
-  complete 5212 -- 스트라솔름 몹에게서 역병 걸린 살점 견본 10개를 모으세요
-  complete 5243 -- 거리의 보급품 상자에서 스트라솔름 성수 5개를 모으세요
-  complete 5214 -- 에즈라 그림의 담배 가게에서 그림 프리미엄 담배 상자를 찾으세요
-  complete 5251 -- 붉은십자군 성채에서 기록관 갈포드를 처치하고 기록 보관소를 불태우세요
-  complete 5848 -- 성채 안쪽에서 "가족과 사랑" 그림을 찾으세요
-
-step
-  accept 5122
-
-step
-  when complete 5122
-  label q5122
-  turnin 5122
-
-step
-  accept 5125
-
-step
-  when onquest 5125
-  label q5125
-  turnin 5125
+  task "[던전] 스트라솔름: Polestar 던전 알림 카드에서 \"퀘스트 수집\"을 누르세요 (카드가 없으면 /polestar dungeontoast Stratholme). 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   fly "Light's Hope Chapel"
@@ -2323,16 +2261,4 @@ step
   turnin 4941 npc 4949
 
 step
-  zone map 1454
-  turnin 4004 npc 4949
-
-step
   fly "Everlook"
-
-step
-  zone map 1452
-  turnin 5047 npc 10637
-
-step
-  zone map 1452
-  turnin 5160 npc 10929

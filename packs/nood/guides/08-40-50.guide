@@ -1132,10 +1132,7 @@ step
   collect 4631 quest 709.1 -- Find the Tablet of Ryun'eh
 
 step
-  accept 2278 -- Speak with the stone watcher in front of the Discs of Norgannon, the…
-  complete 2278
-  turnin 2278 -- Talk to the Stone Watcher again to turn in The Platinum Discs — *Rew…
-  accept 2280 -- Click the discs again for the follow-up
+  task "[Dungeon] Uldaman: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Uldaman). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1418
@@ -1847,11 +1844,7 @@ step
   goto 38.7,20 r 20 map 1446 -- Enter Zul'Farrak in the northwest
 
 step
-  complete 2865 -- [Heads-up] Hearth to Gadgetzan soon — keep your Hearthstone
-  complete 3042 -- Collect 20 Vials of Troll Temper from the Sandfury trolls
-  complete 2768 -- Kill Sergeant Bly and take the Divino-matic Rod
-  complete 3527 -- Kill Theka the Martyr and Hydromancer Velratha for the two tablets
-  complete 2846 -- Take the Tiara of the Deep from Hydromancer Velratha
+  task "[Dungeon] Zul'Farrak: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Zul'Farrak). Tick this when the run and hand-ins in that tab are done."
 
 step
   along until q2770
@@ -2251,14 +2244,7 @@ step
   collect 17696 quest 7029.2
 
 step
-  complete 7067 -- Collect the Amulet of Union from the centaur khans' spirits
-  complete 7044 -- Kill Lord Vyletongue and Noxxion
-  turnin 7044 -- Turn in to Celebras the Redeemed
-  accept 7046
-  complete 7046 -- Protect Celebras while he creates the scepter
-  turnin 7046 -- Turn in to Celebras
-  complete 7064 -- Kill the final boss Princess Theradras
-  accept 7066 -- Accept from Zaetar's Spirit, who appears after Theradras dies
+  task "[Dungeon] Maraudon: on the Polestar dungeon card press \"Pick up the quests\" (no card: /polestar dungeontoast Maraudon). Tick this when the run and hand-ins in that tab are done."
 
 step
   zone map 1443
