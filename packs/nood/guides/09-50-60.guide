@@ -813,6 +813,9 @@ step
 
 step
   label q3373
+  task "[Dungeon] Sunken Temple — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   zone map 1435
   turnin 1445 npc 1443 -- [Heads-up] Hearth to Orgrimmar soon — keep your Hearthstone
 
@@ -1467,6 +1470,9 @@ step
   goto 34.8,83.9 r 20 map 1427 -- Enter Blackrock Mountain to the south and follow the chains down to…
 
 step
+  task "[Dungeon] Blackrock Depths — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   zone map 1427
   kill 8891 quest 4081.1 -- Kill the Dark Iron dwarves: KILL ON SIGHT
   kill 8890 quest 4081.2
@@ -1914,8 +1920,11 @@ step
   accept 4742 optional -- If you can, accept from the Scarshield spy near the entrance
 
 step
-  when complete 4866
   label q4742
+  task "[Dungeon] Blackrock Spire — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
+  when complete 4866
   zone map 1428
   turnin 4866 npc 9563
 
@@ -1939,6 +1948,9 @@ step
 step
   along until q4123
   complete 4123 -- Find the Heart of the Mountain in the Vault
+
+step
+  task "[Dungeon] Blackrock Depths — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   zone map 1428
@@ -2205,9 +2217,12 @@ step
   level 59
 
 step
-  label q5122
   zone map 1423
-  goto 26.6,9.4 r 20 map 1423 -- [Heads-up] Hearth to Undercity soon — keep your Hearthstone · Enter Stratholme by the main gate at the northern end of the Eastern…
+  goto 26.6,9.4 r 20 map 1423 -- Enter Stratholme by the main gate at the northern end of the Eastern…
+
+step
+  label q5122
+  task "[Dungeon] Stratholme — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   fly "Light's Hope Chapel"

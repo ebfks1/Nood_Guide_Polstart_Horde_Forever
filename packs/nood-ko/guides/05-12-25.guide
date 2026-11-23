@@ -262,6 +262,9 @@ step
   complete 5725 -- 책 두 권
 
 step
+  task "[던전] 성난불길 협곡 (Ragefire Chasm) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
+
+step
   when complete 5728
   zone map 1454
   complete 5728
@@ -465,6 +468,9 @@ step
 step
   along until q95204
   accept 95204 item 275521 optional -- "로데론의 문장"이 나오면 주워서 퀘스트 수락
+
+step
+  task "[던전] 로데론의 폐허 (Ruins of Lordaeron) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   when complete 92422
@@ -801,6 +807,9 @@ step
   collect 6443 quest 1486.1 -- 돌연변이 짐승 가죽 20개
 
 step
+  task "[던전] 통곡의 동굴 (Wailing Caverns) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
+
+step
   zone map 1413
   collect 5334 quest 959.1 -- 미치광이 매글리시의 포도주
 
@@ -1069,7 +1078,10 @@ step
 
 step
   zone map 1421
-  goto 44.8,67.8 r 20 map 1421 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기 · 남쪽 그림자송곳니 성채로 들어가세요
+  goto 44.8,67.8 r 20 map 1421 -- 남쪽 그림자송곳니 성채로 들어가세요
+
+step
+  task "[던전] 그림자송곳니 성채 (Shadowfang Keep) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   when complete 1014
@@ -1224,6 +1236,9 @@ step
 step
   zone map 1440
   goto 14.2,14 r 20 map 1440 -- 북쪽 해안 검은심연의 나락으로 들어가세요
+
+step
+  task "[던전] 검은심연의 나락 (Blackfathom Deeps) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   when complete 6921

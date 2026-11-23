@@ -262,6 +262,9 @@ step
   complete 5725 -- Two books
 
 step
+  task "[Dungeon] Ragefire Chasm — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   when complete 5728
   zone map 1454
   complete 5728
@@ -465,6 +468,9 @@ step
 step
   along until q95204
   accept 95204 item 275521 optional -- If a "Crest of Lordaeron" drops, pick it up and accept Crest of Lord…
+
+step
+  task "[Dungeon] Ruins of Lordaeron — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   when complete 92422
@@ -801,6 +807,9 @@ step
   collect 6443 quest 1486.1 -- 20 Deviate Hides
 
 step
+  task "[Dungeon] Wailing Caverns — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   zone map 1413
   collect 5334 quest 959.1 -- Mad Magglish's wine
 
@@ -1069,7 +1078,10 @@ step
 
 step
   zone map 1421
-  goto 44.8,67.8 r 20 map 1421 -- [Heads-up] Hearth to The Crossroads soon — keep your Hearthstone · Enter Shadowfang Keep to the south
+  goto 44.8,67.8 r 20 map 1421 -- Enter Shadowfang Keep to the south
+
+step
+  task "[Dungeon] Shadowfang Keep — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   when complete 1014
@@ -1224,6 +1236,9 @@ step
 step
   zone map 1440
   goto 14.2,14 r 20 map 1440 -- Enter Blackfathom Deeps on the north coast
+
+step
+  task "[Dungeon] Blackfathom Deeps — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   when complete 6921

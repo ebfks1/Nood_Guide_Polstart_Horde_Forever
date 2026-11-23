@@ -109,7 +109,7 @@ def apply(g, log):
         final.append(st)
     # after a run went to its tab, the main guide's hand-ins of its quests apply only once the quest is done
     # (the tab's hand-in guide may have turned it in already; skipped the dungeon: the step is passed)
-    seen_tab = any(True for _ in ())
+    seen_tab = False
     out2, carry = [], []
     for st in final:
         if st.get('_tab'):
@@ -123,7 +123,7 @@ def apply(g, log):
                 have = {w.get('q') for w in (st.get('when') or []) if w.get('k') == 'complete'}
                 st = dict(st, when=list(st.get('when') or []) + [{'k': 'complete', 'q': q} for q in ti if q not in have])
                 log.append('%s: hand-in of %s waits for the quest to be done (run in a tab)' % (g.stem, ti))
-            if not [x for x in st['goals'] if x['t'] != 'note']:
+            if leftover and not [x for x in st['goals'] if x['t'] != 'note']:
                 if st.get('label'):  # an "along until" names it: the label goes to a neighbour
                     prev = out2[-1] if out2 else None
                     if prev is not None and not prev.get('label') and not prev.get('along'):

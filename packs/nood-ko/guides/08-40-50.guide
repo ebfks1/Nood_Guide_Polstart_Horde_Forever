@@ -1132,6 +1132,9 @@ step
   collect 4631 quest 709.1 -- 류네의 서판을 찾으세요
 
 step
+  task "[던전] 울다만 (Uldaman) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
+
+step
   zone map 1418
   turnin 2418 npc 2817
 
@@ -1838,11 +1841,14 @@ step
 
 step
   zone map 1446
-  goto 38.7,20 r 20 map 1446 -- [알림] 곧 귀환석으로 가젯잔 — 귀환석 아껴 두기 · 북서쪽 줄파락 입구로 들어가세요
+  goto 38.7,20 r 20 map 1446 -- 북서쪽 줄파락 입구로 들어가세요
 
 step
   along until q2770
   complete 2770 -- 줄파락의 나무망치가 있으면 연못가의 징을 울려 가즈릴라를 처치하세요
+
+step
+  task "[던전] 줄파락 (Zul'Farrak) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   hearth "Gadgetzan"
@@ -2241,6 +2247,9 @@ step
   zone map 1443
   kill 13696 quest 7029.1 -- 주황색 수정 웅덩이에서 코팅된 하늘빛 약병을 채우세요
   collect 17696 quest 7029.2
+
+step
+  task "[던전] 마라우돈 (Maraudon) — Polestar 던전 카드가 저절로 뜹니다: \"퀘스트 수집\"을 누르세요. 새 탭에서 던전·제출을 마치면 체크하세요."
 
 step
   when complete 7064

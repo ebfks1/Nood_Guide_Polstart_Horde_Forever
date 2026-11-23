@@ -265,7 +265,7 @@ step
 
 step
   zone map 1437
-  accept 95682 npc 13155 -- [Heads-up] Hearth to The Crossroads soon — keep your Hearthstone
+  accept 95682 npc 13155
 
 step
   along
@@ -274,6 +274,9 @@ step
 step
   along
   complete 95697 -- If you got "Changing Tastes" from Vorstan in Orgrimmar, collect the…
+
+step
+  task "[Dungeon] Excavation Site: Wetlands — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   when complete 95682
@@ -674,6 +677,9 @@ step
 
 step
   label q96987
+  task "[Dungeon] City of Dalaran — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   zone map 1416
   complete 545 @21,80 map 1416 -- Leave the dungeon; outside Dalaran kill 6 Dalaran Summoners and 8 En…
 

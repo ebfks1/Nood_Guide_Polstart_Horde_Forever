@@ -1132,6 +1132,9 @@ step
   collect 4631 quest 709.1 -- Find the Tablet of Ryun'eh
 
 step
+  task "[Dungeon] Uldaman — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
+
+step
   zone map 1418
   turnin 2418 npc 2817
 
@@ -1838,11 +1841,14 @@ step
 
 step
   zone map 1446
-  goto 38.7,20 r 20 map 1446 -- [Heads-up] Hearth to Gadgetzan soon — keep your Hearthstone · Enter Zul'Farrak in the northwest
+  goto 38.7,20 r 20 map 1446 -- Enter Zul'Farrak in the northwest
 
 step
   along until q2770
   complete 2770 -- If someone has the Mallet of Zul'Farrak, ring the gong by the pool a…
+
+step
+  task "[Dungeon] Zul'Farrak — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   hearth "Gadgetzan"
@@ -2241,6 +2247,9 @@ step
   zone map 1443
   kill 13696 quest 7029.1 -- Fill the Coated Cerulean Vial at the orange crystal pool
   collect 17696 quest 7029.2
+
+step
+  task "[Dungeon] Maraudon — the Polestar dungeon card opens by itself: press \"Pick up the quests\". Tick this when the run and hand-ins in the new tab are done."
 
 step
   when complete 7064
