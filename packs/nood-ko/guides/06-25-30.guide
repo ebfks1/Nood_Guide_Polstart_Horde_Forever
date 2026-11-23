@@ -280,6 +280,7 @@ step
 
 step
   zone map 1437
+  complete 95682
   turnin 95682 npc 13155 -- [알림] 곧 귀환석으로 크로스로드 — 귀환석 아껴 두기
 
 step

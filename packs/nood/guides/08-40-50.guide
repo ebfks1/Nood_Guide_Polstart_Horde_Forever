@@ -2248,6 +2248,7 @@ step
 
 step
   zone map 1443
+  complete 7064
   turnin 7064 npc 13699
 
 step
