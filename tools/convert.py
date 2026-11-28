@@ -102,6 +102,20 @@ PATCHES = {
              '완료: [QT92693 Standing Our Ground] (아멜리아 윈드필드)[G46.6,81.8Zephras Isle]'),
         ]),
     ],
+    '06_25-30_BalCon': [
+        ('[QC98070', [
+            ('[G53.8,41.6 Thousand Needles]Accept the next test from Dorn: [QA1150 Test of Endurance]',
+             '[G53.8,41.6 Thousand Needles]돈에게 다음 시험을 받으세요: [QA1150 인내의 시험]'),
+        ]),
+        ('[QC98069', [
+            ('[G26.5,55.5 Thousand Needles]Kill Grenka Bloodscreech among the harpies for her claw: [QC1150 Test of Endurance]',
+             '[G26.5,55.5 Thousand Needles]하피들 사이의 그렌카 블러드스크리치를 처치해 발톱을 얻으세요: [QC1150 인내의 시험]'),
+        ]),
+        ('[QT98069', [
+            ('[G53.8,41.6 Thousand Needles]Turn in to Dorn: [QT1150 Test of Endurance]',
+             '[G53.8,41.6 Thousand Needles]돈에게 퀘스트 완료: [QT1150 인내의 시험]'),
+        ]),
+    ],
 }
 
 report = collections.Counter()

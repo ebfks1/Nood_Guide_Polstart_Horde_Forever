@@ -454,9 +454,17 @@ step
 
 step
   zone map 1441
+  accept 1150 npc 2986
+
+step
+  zone map 1441
   kill 4100 quest 98070.1 @26.8,54.5 map 1441 -- 서쪽 마루둥지로 가는 길의 비명 하피 5마리씩 처치
   kill 4101 quest 98070.2 @26.8,54.5 map 1441
   kill 4104 quest 98070.3 @26.8,54.5 map 1441
+
+step
+  zone map 1441
+  collect 5843 quest 1150.1 @26.5,55.5 map 1441 -- 하피들 사이의 그렌카 블러드스크리치를 처치해 발톱을 얻으세요
 
 step
   complete 98069 -- 같은 곳에서 도둑맞은 보급품 8개를 모으세요
@@ -478,6 +486,10 @@ step
   when onquest 4770
   zone map 1441
   turnin 4770 npc 10428
+
+step
+  zone map 1441
+  turnin 1150 npc 2986
 
 step
   zone map 1441

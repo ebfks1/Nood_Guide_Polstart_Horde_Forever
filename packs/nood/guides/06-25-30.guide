@@ -454,9 +454,17 @@ step
 
 step
   zone map 1441
+  accept 1150 npc 2986
+
+step
+  zone map 1441
   kill 4100 quest 98070.1 @26.8,54.5 map 1441 -- On the way west to Roguefeather Den, kill 5 each of Screeching Harpi…
   kill 4101 quest 98070.2 @26.8,54.5 map 1441
   kill 4104 quest 98070.3 @26.8,54.5 map 1441
+
+step
+  zone map 1441
+  collect 5843 quest 1150.1 @26.5,55.5 map 1441 -- Kill Grenka Bloodscreech among the harpies for her claw
 
 step
   complete 98069 -- Collect 8 Stolen Freewind Supplies in the same area
@@ -478,6 +486,10 @@ step
   when onquest 4770
   zone map 1441
   turnin 4770 npc 10428
+
+step
+  zone map 1441
+  turnin 1150 npc 2986
 
 step
   zone map 1441
